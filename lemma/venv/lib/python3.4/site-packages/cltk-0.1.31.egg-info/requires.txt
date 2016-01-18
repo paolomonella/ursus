@@ -1,0 +1,4 @@
+nltk
+gitpython
+regex
+whoosh

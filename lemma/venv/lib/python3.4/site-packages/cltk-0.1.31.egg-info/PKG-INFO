@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: cltk
+Version: 0.1.31
+Summary: NLP for the ancient world.
+Home-page: https://github.com/cltk/cltk
+Author: Kyle P. Johnson
+Author-email: kyle@kyle-p-johnson.com
+License: MIT
+Description: The Classical Language Toolkit (CLTK) is a framework for natural language processing for Classical languages.
+Keywords: nlp,nltk,greek,latin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Greek
+Classifier: Natural Language :: Latin
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Utilities

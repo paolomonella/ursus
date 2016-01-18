@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<?xml-stylesheet type="text/xsl" href="sheet.xsl"?>
+--><!DOCTYPE TEI  SYSTEM '/home/ilbuonme/siti/paolo.monella/ursus/DTD/tei_all.dtd'><!--
+<TEI>
+--><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Codex Casanatensis 1086</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Scholarly digital edition of the manuscript by Paolo Monella.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>The digital images of the manuscript.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change type="agenda">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words:
+</change>
+      <change type="agenda">Ho tolto gli attributi al padre TEI per far runzionare l'XSLT				</change>
+      <change type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype data.enumerated. Questo significa che dovrei limitare formalmente i possibili valori con un elemento  valList?</change>
+	<change type="agenda">Nella documentazione in [sgn4] metti parole vuote con 0 o no?	</change>
+      <change type="agenda">Si potrebbero trascrivere anche le glossae a margine					</change>
+      <change type="agenda">È rispettata o no la regola sulle due forme di 'ti': una con legatura per IPA /tsj/?	</change>
+      <change type="agenda">Find sources for ab006 based on the comments on Donatus (find ab006 and 'note' there)	</change>
+      <change type="agenda">Togli la punteggiatura 'solo contemporanea' (senza corrispondenza nel MS)?			</change>
+      <change type="agenda">Cose da fare alla fine dell'intera trascrizione:						</change>
+      <change type="agenda">	vd. se ci sono 'v', o 'ae', o grafemi non dichiarati in GToS, in grafematica		</change>
+      <change type="agenda">	vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre il signif. che suggerisco nella GToS</change>
+    </revisionDesc>
+  </teiHeader>
+
+<text>
+<body>
+
+<head n="Title of the work" xml:id="ab001">
+<ref cRef="unknown" type="source">
+
+<pb n="1r"/>
+
+<cb n="1r.a"/>
+
+<lb n="1r.a.1"/>
+<note type="script">This title (marked as 'head') is in uncial. Another GToS for the uncial script would be necessary.</note>
+<w ana="adbreuiatio">adbreuiatio</w>
+	<pc ana="space"> </pc>
+<w ana="neut abl pl" lemma="artum" n="artis">artis</w>
+	<pc ana="space"> </pc>
+<w ana="fem nom/voc pl" lemma="grammatica" n="grammaticae">grammatice
+<note type="script">In this case the diphthong 'ae' seems to be written with grapheme 'e', not 'æ', however the writing is too little legible to ascertain this.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="ex">ex</w>
+	<pc ana="space"> </pc>
+<w ana="perf part pass neut abl pl" lemma="divorto" n="diuersis">diuersis</w>
+	<pc ana="space"> </pc>
+</ref>
+</head>
+
+</body>
+</text>
+</TEI>

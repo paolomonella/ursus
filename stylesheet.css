@@ -1,0 +1,180 @@
+div#MSText {
+	font-family: Sans-serif;
+}
+
+.disclaimer {
+	font-family: Serif;
+	border:2px solid black;
+	padding:0.5em;
+	background-color: #D8D8D8;
+}
+
+.disclaimer p {
+	margin: 0.5em 0em 0.5em 0em;
+}
+
+div.abTitle {
+	display: block;
+	margin: 5em 50% 0em 0em;
+	border:2px solid black;
+	padding:0.5em;
+	background-color: #333300;
+	color: #D8D8D8;
+	font-size: 1.5em;
+}
+
+div.source {
+	display:inline-block;
+	vertical-align: bottom;
+	/*width: 15em;*/
+	/*height: 5em;*/
+	font-size: 0.8em;
+	border:0.3em brown;
+	padding:0.2em; 
+	margin: 0.5em 0.5em 0em 0.5em;
+	background-color: #99FF00;
+	color: brown;
+}
+
+div.source.start {
+	border-style: dotted none dotted solid;
+	border-left: solid 0.4em;
+}
+
+div.source.end {
+	border-style: dotted solid dotted none;
+	border-right: solid 0.4em;
+	/* background-color: #CCFF66; */
+}
+
+.LL {
+	color: blue;
+}
+
+.AL {
+	color: orange;
+}
+
+.GL {
+}
+
+td.LLCell {
+	padding-top: 3em;
+}
+
+table {
+	display: inline;
+}
+
+table.wordTable td {
+}
+
+table.lbTable td {
+}
+
+table.gapTable td {
+}
+
+table.spaceTable td {
+}
+
+span.GL.dropcap { 
+	/*font-weight: bold;*/
+	text-shadow: 4px 4px 4px #000;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+span.GL.larger { 
+	/*font-weight: bold;*/
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	/*font-size: 1em;*/
+}
+
+span.AL.gap, span.GL.gap {
+	background-color: #CCFFCC;
+}
+
+.note, .source, .pb, .cb{
+	font-size: 0.8em;
+}
+
+div.note {
+	display:inline-block;
+	vertical-align: bottom;
+	/*height: 5em;*/
+	border:2px dotted black;
+	padding:0.2em; 
+	margin: 0.5em 0.5em 0em 0.5em;
+	background-color: #F2F5A9;
+}
+
+div.note.contentDiv, div.source.contentDiv {
+	width: 15em;
+	border:none;
+}
+
+div.pb, div.cb {
+	display:inline-block;
+	vertical-align: bottom;
+	border:2px dotted white;
+	padding:0.2em; 
+	margin: 0.5em 0.5em 0em 0.5em;
+	width: 5em;
+
+	background-color: #003333;
+	color: grey;
+}
+
+span.lb {
+	color: grey;
+	font-size:xx-small; vertical-align:bottom;
+}
+
+span.LL.space, span.AL.space, span.GL.space {
+	color: white;
+	background-color: white;
+}
+
+span.GL.space {
+	border: 0.1em solid #CCCCCC;
+}
+
+span.GL.base.superscription {
+	color: red;
+}
+
+span.GL.am.superscription {
+	font-size:xx-small; vertical-align:top;
+	color: red;
+}
+
+span.GL.after {
+	color: purple;
+}
+
+span.GL.brevigraph {
+	color: green;
+}
+
+span.AL.abbrExpansion {
+	text-decoration: underline;
+}
+
+span.AL.notAbbreviated {
+}
+
+span.GL.notAbbreviated {
+}
+
+span.unclear.certhigh td.GLCell {
+	background-color: #E0E0E0;
+}
+
+span.unclear.certmedium td.GLCell {
+	background-color: #A8A8A8;
+}
+
+span.unclear.certlow td.GLCell {
+	background-color: #909090;
+}
