@@ -4,7 +4,7 @@ Digital scholarly edition of the IX century Latin grammatical works found in man
 
 Full documentation in `documentation.md`.
 
-## Key files for the editition
+## Key files for the edition
 
 * `casanatensis.xml`: the source XML/TEI transcription of the manuscript
 * `GToS.csv`: the table of signs of the graphematic layer of the edition (a very important part of this edition)
