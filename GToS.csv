@@ -31,7 +31,7 @@ _		 	Space	Space to separate words (sgn - TBA: I'm currently not using this)		1
 ⸟		⸟	Punctuation	Punctuation sign for interrogative sentences. The ink is faded, but it seems to look like a tilde with one dot below only (not with two dots, as it normally is in the Beneventan script).	question.png	1	1r.a.23
 :		:	Punctuation	Punctuation sign looking like a modern colon (:)	colon.png	1	1r.b.16
 ï	 	,̈	Punctuation	It looks like the sign encoded as “|”, but in addition it has two dots (like a diaeresis) above	commadiaeresis.png	1	2r.a.5
-¦		;̇	Punctuation	This punctuation sign is composed of three signs. The bottom sign looks like a comma, the middle one like a dot (allograph vertical1.png) or like a horizontal dash(allograph vertical2.png) and the top one like a dot. It is used starting from folio 2v, column a, line 35 and seems to be due to the second hand, that writes in black ink.	vertical1.png vertical2.png	1	2v.a.35
+¦		;̇	Punctuation	This punctuation sign is composed by a comma with two dots above it, in a vertical row. It is used starting from folio 2v, column a, line 35 and seems to be due to the second hand, that writes in black ink.	vertical.png	1	2v.a.35
 8		8	Abbreviation mark	Written over another grapheme, mostly for a missing 'm'	8.png	1	1r.a.18
 2		⸊	Abbreviation mark	Written over another grapheme, mostly for a missing 's' or 'm'. In 1r its shape resambles a '2' (see 2a.png), then, starting from 1v, it takes a less curved allograph (2b.png)	2a.png 2b.png	1	1r.a.7
 7		7	Abbreviation mark	Written over another grapheme, mostly for a missing m'	7.png	1	1r.a.18

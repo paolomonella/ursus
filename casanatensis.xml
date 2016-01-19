@@ -8507,7 +8507,12 @@ priis</w>
 <w ana="in">in</w>
 <w ana="appellatiuis">appellatiuis</w>
 	<pc ana="space"> </pc>
-<pc ana=",">¦</pc>
+<w ana="est">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
 <w ana="ut">ut</w>
 	<pc ana="space"> </pc>
 <lb n="2v.b.7"/>
@@ -8529,7 +8534,12 @@ priis</w>
 	<pc ana="space"> </pc>
 <w ana="homonyma"><hi rend="dropcap">o</hi>monima</w>
 	<pc ana="space"> </pc>
-<pc ana=",">¦</pc>
+<w ana="est">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
 <w ana="quasi">quasi</w>
 	<pc ana="space"> </pc>
 <w ana="uninomia">unino
@@ -9514,9 +9524,242 @@ quod</w>
 	<pc ana="space"> </pc>
 <pc ana=",">·</pc>
 	<pc ana="space"> </pc>
-
-
-
+<w ana="neque">ne
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="ex">ex</w>
+<w ana="illo">illo</w>
+	<pc ana="space"> </pc>
+<w ana="nome">nome</w>
+	<pc ana="space"> </pc>
+<w ana="accepit">accepit</w>
+	<pc ana="space"> </pc>
+<pc ana=",">·</pc>
+	<pc ana="space"> </pc>
+<w ana="sicut">sicut</w>
+	<pc ana="space"> </pc>
+<w ana="supra">supra</w>
+	<pc ana="space"> </pc>
+<w ana="dicta">dicta</w>
+	<pc ana="space"> </pc>
+<lb n="3r.a.2"/>
+<w ana="ut">ut</w>
+<w ana="dexter">dexter</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="sinister">sinister</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="dies">dies</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="nox">nox</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="non">non</w>
+<w ana="enim">en
+	<choice>
+		<abbr type="superscription">i<am>2</am></abbr>
+		<expan>im</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="dies">dies</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="nocte">nocte</w>
+	<pc ana="space"> </pc>
+<w ana="dicta">dicta</w>
+<w ana="est">est</w>
+	<pc ana="space"> </pc>
+<pc ana=",">·</pc>
+	<pc ana="space"> </pc>
+<w ana="neque">neque</w>
+	<pc ana="space"> </pc>
+<lb n="3r.a.3"/>
+<w ana="nox">nox</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="die">die</w>
+	<pc ana="space"> </pc>
+<pc ana=",">,</pc>
+	<pc ana="space"> </pc>
+<w ana="sicut">sicut</w>
+<w ana="dominus">
+	<choice>
+		<abbr type="superscription">dns<am>¯</am></abbr>
+		<expan>dominus</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="dictus">dictus</w>
+	<pc ana="space"> </pc>
+<w ana="est">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
+<w ana="quia">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+a</w>
+<w ana="habet">habet</w>
+	<pc ana="space"> </pc>
+<w ana="seruum">seru
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="seruus">seruus</w>
+	<pc ana="space"> </pc>
+<w ana="quia">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+a</w>
+	<pc ana="space"> </pc>
+<w ana="habet">habet</w>
+	<pc ana="space"> </pc>
+<lb n="3r.a.4"/>
+<w ana="dominum">
+	<choice>
+		<abbr type="superscription">dnm<am>¯</am></abbr>
+		<expan>dominum</expan>
+	</choice>
+</w>
+<pc ana=",">,</pc>
+	<pc ana="space"> </pc>
+<w ana="neque">ne
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+<w ana="dicendo">dicendo</w>
+	<pc ana="space"> </pc>
+<w ana="dies">dies</w>
+	<pc ana="space"> </pc>
+<w ana="potest">potest</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="nox">nox</w>
+	<pc ana="space"> </pc>
+<w ana="intellegi">intellegi</w>
+	<pc ana="space"> </pc>
+<w ana="quamquam">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+	qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="non">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="dicatur">dicatur</w>
+<pc ana=",">·</pc>
+<lb n="3r.a.5"/>
+<w ana="sicut">sicut</w>
+	<pc ana="space"> </pc>
+<w ana="dicendo">dicendo</w>
+	<pc ana="space"> </pc>
+<w ana="dominus">
+	<choice>
+		<abbr type="superscription">dns<am>¯</am></abbr>
+		<expan>dominus</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="potest">potest</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="seruus">seruus</w>
+	<pc ana="space"> </pc>
+<w ana="intellegi">intellegi</w>
+	<pc ana="space"> </pc>
+<w ana="quamuis">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+uis</w>
+	<pc ana="space"> </pc>
+<w ana="non">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="nominetur">nominetur</w>
+	<pc ana="space"> </pc>
+<pc ana=",">·</pc>
+<lb n="3r.a.6"/>
+<w ana="si">si</w>
+<w ana="enim">en
+	<choice>
+		<abbr type="superscription">i<am>2</am></abbr>
+		<expan>im</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="dexter">dexter</w>
+	<pc ana="space"> </pc>
+<w ana="interimit">interimit</w>
+	<pc ana="space"> </pc>
+<pc ana=",">·</pc>
+<w ana="potest">potest</w>
+	<pc ana="space"> </pc>
+<w ana="sinister">sinister</w>
+	<pc ana="space"> </pc>
+<w ana="qui">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="eius">eius</w>
+	<pc ana="space"> </pc>
+uedetur
+,c,¯,con,trarius
+<w ana="permanere">per
+<lb n="3r.a.7"/>
+manere</w>
+<pc ana=",">·</pc>
+	<pc ana="space"> </pc>
 
 
 
