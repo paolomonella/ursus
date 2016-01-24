@@ -22,7 +22,6 @@
     <revisionDesc>
       <change type="agenda">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words:
 </change>
-      <change type="agenda">Ho tolto gli attributi al padre TEI per far runzionare l'XSLT				</change>
       <change type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype data.enumerated. Questo significa che dovrei limitare formalmente i possibili valori con un elemento  valList?</change>
 	<change type="agenda">Nella documentazione in [sgn4] metti parole vuote con 0 o no?	</change>
       <change type="agenda">Si potrebbero trascrivere anche le glossae a margine					</change>
