@@ -9753,8 +9753,15 @@ uis</w>
 	<pc ana="space"> </pc>
 <w ana="eius">eius</w>
 	<pc ana="space"> </pc>
-uedetur
-,c,¯,con,trarius
+<w ana="uidetur">uidetur</w>
+	<pc ana="space"> </pc>
+<w ana="contrarius">
+	<choice>
+		<abbr type="superscription">c<am>¯</am></abbr>
+		<expan>con</expan>
+	</choice>
+trarius</w>
+	<pc ana="space"> </pc>
 <w ana="permanere">per
 <lb n="3r.a.7"/>
 manere</w>
