@@ -302,13 +302,28 @@ The three possible values are:
 
 These are mostly meant to prevent the lemmatizer from trying to parse this type of words.
 
+### @type="foreign"
+
+If the word is Greek, I am encoding it as follows:
+
+        <w ana="ὄνομα" type="foreign" xml:lang="grc">onoma</w>
+
+Note that in two cases only, a Greek word is marked with `@type="alphabemes"` because it does not constitute a real word in Greek (but a word constituent in an etymological discussion):
+
+        <w ana="νομα" type="alphabemes" xml:lang="grc">noma</w>
+
+and
+
+        <w ana="ο" type="alphabemes" xml:lang="grc">o</w>
+
+
 ### @type="nonsense"
 
 If I cannot understand what world is meant by a very unclear sequence of graphemes, I a using two markup strategies:
 
 1. If the word is completely unclear or unreadable and I don't want to transcribe any of its graphemes, I'm using
 
-    gap reason="illegible" quantity="1" unit="words"/>
+    `<gap reason="illegible" quantity="1" unit="words"/>`
 
 2. Starting from folio 2 recto, column b, line 8, if I cannot provide a value for the @ana attribute (since I don't recognize any dictionary word) but still want to transcribe at least some of its graphemes, I'm using @type="nonsense". In the following example, I quite distinctly recognize a sequence of four graphemes('p', 'u', 'p', 'u'), that could or could not be followed by two more graphemes:
 
@@ -359,7 +374,7 @@ Where value(s) in the @cRef attribute are URNs (Universal Resouce Name) based on
 
 The dash between "2.53.8" and "2.53.12", as for the CTS/CITE architecture, means that the URN refers to a whole passage, from line 8 to line 12.
 
-Elements #4 and #5 of all URNs used in this edition derive from [list #2](https://docs.google.com/spreadsheets/d/1RHN6KBulDGbpKATLU6PtwU4o5xVsaBB6xbQRtKjMyWE/edit?usp=sharing>) in the section "Lists of URNs" below.
+Elements #4 and #5 of all URNs used in this edition derive from [list #2](https://docs.google.com/spreadsheets/d/1RHN6KBulDGbpKATLU6PtwU4o5xVsaBB6xbQRtKjMyWE/edit?usp=sharing) in the section "Lists of URNs" below.
 
 The content of Elements #6, #7 and #8 of all URNs have been decided by me, although I am in contact with the Perseus and Leipzig Philology projects to discuss what the best internal identifiers for portions of text in these authors might be.
 
@@ -370,10 +385,24 @@ If more source passages are to be referenced for the same Ursus passage, they ar
 [sgn: check if this is OK based on the Guidelines recommendations for the values of the @cRef and @ref-like attributes]
     
 
-## URN short explanation
+## Lists of URNs
+
+1. Thomas shared
+<https://docs.google.com/spreadsheets/d/1VPdW_upQtP9voPq-fZW_McfyPTfR5Lr-jFGmSubffLA/edit?usp=sharing>
+This spreadsheet only includes Latin authors. My understanding is that it is a working list of the Leipzig project.
+2. Alison shared
+<https://docs.google.com/spreadsheets/d/1RHN6KBulDGbpKATLU6PtwU4o5xVsaBB6xbQRtKjMyWE/edit?usp=sharing>
+that includes Latin, Greek, inscriptions etc. and is the working list of the Perseus Project.
+3. Most (but not all) the entries of list #2 have entered the Perseus Catalog in
+<http://catalog.perseus.org/catalog/urn:cite:perseus:author.1179>
+
+
+## My URN short explanation
 
 - Priscian Institutio
 	- urn:cts:latinLit:stoa0234a.stoa001
+- Priscian De figuris numerorum
+	- urn:cts:latinLit:stoa0234a.stoa003
 - Donatus (Ars Minor, pp. 367-392)
 	- urn:cts:latinLit:stoa0110.stoa001
 	- (Other minor works by Donatus, from "De barbarismo" on, i.e. from page 393,
@@ -386,11 +415,15 @@ If more source passages are to be referenced for the same Ursus passage, they ar
 	- urn:cts:latinLit:stoa0233c.stoa001
 
 
-## URNs long explanation
+## My URNs long explanation
 
 ### Priscian from Caesarea, "Institutio de arte grammatica"
 - List #1 and catalog #3 have the author, but not the work.
 - List #2 has author and work. URN: stoa0234a.stoa001
+
+### Priscian from Caesarea, "De figuris numerorum"
+- List #1 and catalog #3 have the author, but not the work.
+- List #2 has author and work. URN: stoa0234a.stoa003
 
 ### Pompeius, 5th/6th cent., "Commentum Artis Donati"
 - List #1 and catalog #3 do not have the author.
@@ -416,17 +449,6 @@ If more source passages are to be referenced for the same Ursus passage, they ar
 	- Aelius Donatus, "De Solecismo". URN: stoa0110.stoa007 (pp. 393-394)
 	- Aelius Donatus, "De Tropis". URN: stoa0110.stoa008 (pp. 399-402)
 
-
-## Lists of URNs
-
-1. Thomas shared
-<https://docs.google.com/spreadsheets/d/1VPdW_upQtP9voPq-fZW_McfyPTfR5Lr-jFGmSubffLA/edit?usp=sharing>
-This spreadsheet only includes Latin authors. My understanding is that it is a working list of the Leipzig project.
-2. Alison shared
-<https://docs.google.com/spreadsheets/d/1RHN6KBulDGbpKATLU6PtwU4o5xVsaBB6xbQRtKjMyWE/edit?usp=sharing>
-that includes Latin, Greek, inscriptions etc. and is the working list of the Perseus Project.
-3. Most (but not all) the entries of list #2 have entered the Perseus Catalog in
-<http://catalog.perseus.org/catalog/urn:cite:perseus:author.1179>
 
 
 
