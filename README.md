@@ -4,22 +4,23 @@ Digital scholarly edition of the IX century Latin grammatical works found in man
 
 Full documentation in `documentation.md`.
 
-## Key files for the edition
+## Source files
 
-* `casanatensis.xml`: the source XML/TEI transcription of the manuscript
-* `GToS.csv`: the table of signs of the graphematic layer of the edition (a very important part of this edition)
-* `AToS.csv`: the table of signs of the alphabetic layer of the edition
+* `AToS.csv`: the table of signs of the Alphabetic Layer of the edition
+* `GToS.csv`: the table of signs of the Graphematic Layer of the edition (a key part of this edition)
+* `casanatensis.xml`: the source XML/TEI transcription of the manuscript (the heart of this edition)
 
-## Visualization of the edition
+## Visualization
 
-* `jsparser.js`: the JavaScript code that transforms the XML/TEI transcription (casanatensis.xml) and turns it into a DOM visible on a browser
-* `transcription.html`: the HMTL file in which, thanks to jsparser.js, the user can read the edition
-* `stylesheet.css`: the CSS stylesheet for transcription.html
-* `sheet.xsl`: a first experiment in creating a XSLT file to visualize the XML/TEI source (casanatensis.xml). I then abandoned XSLT and used JavaScript instead (see jsparser.js)
+* `jsparser.js`: the JavaScript to visualize `casanatensis.xml` in a browser
+* `sheet.xsl`: a first experiment in creating a XSLT file to visualize `casanatensis.xml` in a browser. I then abandoned XSLT and used JavaScript instead (see `jsparser.js`)
+* `stylesheet.css`: the CSS stylesheet for `transcription.html`
+* `transcription.html`: the HMTL file in which, thanks to `jsparser.js`, the user can read the edition
 
 ## Other
 
-* `documentation.md`: The full documentation on this edition
 * `glyph_images`: this folder includes jpeg images of the glyphs found in the manuscript
 * `lemma`: this folder includes my experiments with lemmatization/POS (part of speech) tagging
-* `paoloMarkDown.py`: some Python code facilitating my work of keying the XML/TEI transcription of the manuscript
+* `minidomToolBox`: this folder includes the script that I'm using to traverse the DOM of `casanatensis.xml`
+* `documentation.md`: The full documentation on this edition
+* `paoloMarkDown.py`: a Python script facilitating my work of keying in `casanatensis.xml`
