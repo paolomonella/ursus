@@ -273,13 +273,17 @@ At this layer, the constituting items of the text are 'words'. In the present ed
 
 3. A standardized contemporary spelling of the inflected form, represented by a sequence of Unicode characters (this part is needed to identify univocally cases such as the genitive plural of Latin deus, -i (god), that can be either deum or deorum).
 
-[*Note*: the tagset of the Index Thomisticus parameter file that I am currently using with TreeTagger yields some information on the "Formal-Variation", such as "I variation of wordform", "II variation of wordform" etc., and on the "Graphical-Variation", such as "Baseform", "Graphical variations of 1" etc.  I think that this is meant to account for the difference between the two forms of genitive plural of 'deus, -i', i.e. 'deum' or 'deorum'. In this case, #3 above would not be necessary]
+[Note: the tagset of the Index Thomisticus parameter file that I am currently using with TreeTagger yields some information on the "Formal-Variation", such as "I variation of wordform", "II variation of wordform" etc., and on the "Graphical-Variation", such as "Baseform", "Graphical variations of 1" etc.  I think that this is meant to account for the difference between the two forms of genitive plural of 'deus, -i', i.e. 'deum' or 'deorum'. In this case, #3 above would no longer be necessary]
 
 ## Ideally:
 
-Instead of writing the LL transcription on a separate file, mapped to the GL transcription file by means of more complex TEI linking strategies, in this edition the sequence of 'words' is represented by a sequence of `<w>` elements with @key attributes with 3 values each (one for the 3 parts listed above). The actual implementation of this feature is still to be assessed, as it depends on the the implementation of the Perseus and Alpheios in the edition. The following example is just meant to give an idea of what it should look like in the file:
+Instead of writing the LL transcription on a separate file, mapped to the GL transcription file by means of more complex TEI linking strategies, in this edition the sequence of 'words' at the LL is represented by a sequence of `<w>` elements typically having 3 values (one for the 3 parts listed above). The actual implementation of this feature is still under development. The following example is just meant to give an idea of what it should look like in the file:
 
-    <w ana="A-S---FB-" lemma="compono" n="composita">composita</w>
+    <w ana="2-LM41A2---" lemma="compono" n="composita">composita</w>
+
+or, if I decide to substitute the components of the tagset string (2-LM41A2---) with its plain English correspondents:
+
+    <w ana="Participial, III conjug, Pass/Dep Participle, Perfect, Positive, Singular Nominative, Feminine" lemma="compono" n="composita">composita</w>
 
 - @lemma: #1 above
 - @ana: #2 above
