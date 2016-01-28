@@ -11894,7 +11894,363 @@ ta</w>
 		<expan>qui</expan>
 	</choice>
 nquies<note type="script">The 'n' is written above the line.</note></w>
+<pc ana=",">·</pc>
+<w ana="sexies">sexies</w>
+<pc ana=",">·</pc>
+<w ana="septies">septies</w>
+<pc ana=",">·</pc>
+<w ana="octies">octies</w>
+<pc ana=",">·</pc>
+<w ana="nouies">nouies</w>
+<pc ana=",">·</pc>
+<w ana="decies">decies</w>
+<pc ana=",">·</pc>
+<w ana="undecies">unde
+<lb n="3v.a.24"/>
+cies</w>
+<w ana="duodecies">duodecies</w>
+<pc ana=",">·</pc>
+<w ana="terdecies">terdecies</w>
+<pc ana=",">·</pc>
+<w ana="quater">quater</w>
 	<pc ana="space"> </pc>
+<w ana="decies">decies</w>
+<pc ana=",">·</pc>
+<w ana="quinquies">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+nquies</w>
+	<pc ana="space"> </pc>
+<w ana="decies">decies</w>
+<pc ana=",">·</pc>
+<w ana="sexies">sexies</w>
+	<pc ana="space"> </pc>
+<lb n="3v.a.25"/>
+<w ana="decies">decies</w>
+<pc ana=",">·</pc>
+<w ana="septies">septies</w>
+	<pc ana="space"> </pc>
+<w ana="decies">decies</w>
+<pc ana=",">·</pc>
+<w ana="octies">octies</w>
+	<pc ana="space"> </pc>
+<w ana="decies">decies</w>
+<pc ana=",">·</pc>
+<w ana="nouies">nouies</w>
+	<pc ana="space"> </pc>
+<w ana="decies">decies</w>
+<pc ana=",">·</pc>
+	<pc ana="space"> </pc>
+<w ana="uicies">uicies</w>
+<pc ana=",">·</pc>
+<w ana="tricies">tricies</w>
+<pc ana=",">·</pc>
+<lb n="3v.a.26"/>
+<w ana="quadragies">quadragies</w>
+<pc ana=",">·</pc>
+<w ana="quinquagies">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+nquagies</w>
+<pc ana=",">·</pc>
+<w ana="sexagies">sexagies</w>
+<pc ana=",">·</pc>
+<w ana="septuagies">septuagies</w>
+<pc ana=",">·</pc>
+<w ana="octogies">octogies</w>
+<pc ana=",">·</pc>
+<w ana="nonagies">nonagi
+<lb n="3v.a.27"/>
+es</w>
+<pc ana=",">·</pc>
+<w ana="centies">centies</w>
+<pc ana=",">·</pc>
+<w ana="ducenties">ducenties</w>
+<pc ana=",">·</pc>
+<w ana="trecenties">trecenties</w>
+<pc ana=",">·</pc>
+<w ana="quadringenties">quadringenties</w>
+<pc ana=",">·</pc>
+<w ana="quingenties">quingenties</w>
+<pc ana=",">·</pc>
+<w ana="sexcenties">sexcen
+<lb n="3v.a.28"/>
+ties<note type="script">The 'n' is written above the line</note></w>
+<w ana="septingenties">septingenties</w>
+<pc ana=",">·</pc>
+<w ana="octingenties">octingenties</w>
+<pc ana=",">·</pc>
+<w ana="noningenties">noningenties</w>
+<pc ana="0">·</pc>
+<w ana="et">et</w>
+<w ana="nongenties">nongenties</w>
+<pc ana=",">·</pc>
+<w ana="milies">mi
+<lb n="3v.a.29"/>
+lies</w>
+<pc ana=".">·</pc>
+	<pc ana="space"> </pc>
+<w ana="inueniuntur">inueniuntur
+</w>
+	<pc ana="space"> </pc>
+<w ana="infinitis"><hi rend="larger">i</hi>nfinitis</w>
+	<pc ana="space"> </pc>
+<note type="content">The source of this passage, Priscian 'De figuris numerorum' (Keil 3.415.24-26), after 'milies', has: 'Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...'. Probably the scribe initially skipped the sentence 'Infinitis... multotiens' (line 24 in Keil) and started copying from the sentence 'Inueniuntur et aliae deriuationes' (line 26 in Keil), so he wrote 'inueniuntur' (which originally had the initial 'i' written with a larger size). Then, he decided not to skip the sentence 'Infinitis tamen numerorum...' and copied it after 'inueniuntur', but he forgot to erase 'inueniuntur', which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial 'i' of 'inueniuntur', overwrote it in rasura with a smaller size, and also overwrote the initial 'i' of 'infinitis' with a larger font. As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase 'inueniuntur' is probably that it could seem to belong to the previous sentence, which I don't believe. In an interpretive edition, the word 'inueniuntur' shoud therefore be omitted.</note>
+<w ana="tamen">tamen</w>
+	<pc ana="space"> </pc>
+<w ana="numerorum">numeror
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="aduerbiis">aduerbiis</w>
+	<pc ana="space"> </pc>
+<w ana="etiam">eti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<lb n="3v.a.30"/>
+<w ana="n" type="alphabemes">n</w>
+<pc ana="quote">·</pc>
+<w ana="interponitur">interponitur</w>
+<pc ana=",">·</pc>
+<w ana="quotiens">quotiens</w>
+<pc ana=",">·</pc>
+<w ana="totiens">totiens</w>
+	<pc ana="space"> </pc>
+<w ana="similiter">similiter</w>
+	<pc ana="space"> </pc>
+<w ana="multotiens">multotiens</w>
+<pc ana=".">·</pc>
+<w ana="inueniuntur"><hi rend="larger">i</hi>nue
+<lb n="3v.a.31"/>
+niuntur</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="aliae">aliæ</w>
+	<pc ana="space"> </pc>
+<w ana="deriuationes">deriuationes</w>
+	<pc ana="space"> </pc>
+<w ana="uel">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="compositiones">compositiones</w>
+	<pc ana="space"> </pc>
+<w ana="multae">multæ</w>
+	<pc ana="space"> </pc>
+<w ana="a">a</w>
+<w ana="nominibus">nomini
+<lb n="3v.a.32"/>
+bus</w>
+<pc ana="0">·</pc>
+<w ana="numerorum">numeror
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana=",">·</pc>
+<w ana="ut">ut</w>
+<w ana="unicus">unicus</w>
+<pc ana=",">·</pc>
+<w ana="ullus">ullus</w>
+<pc ana=",">·</pc>
+<w ana="unitas">unitas</w>
+<pc ana=",">·</pc>
+<w ana="unio">unio</w>
+<pc ana=",">·</pc>
+<w ana="uniuersus">uniuersus</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="uno">un
+<lb n="3v.a.33"/>
+o</w>
+	<pc ana="space"> </pc>
+<w ana="uerbum">uerb
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana=",">·</pc>
+<w ana="unas">unas</w>
+<pc ana=",">·</pc>
+<w ana="unat">unat</w>
+<pc ana=",">·</pc>
+<w ana="ternitas">ternitas</w>
+	<pc ana="space"> </pc>
+<w ana="uel">uel</w>
+<w ana="trinitas">trinitas</w>
+<pc ana=",">·</pc>
+<w ana="septimana">septimania<note type="script">The handwriting is not clear, but after the 'n' there seem to be more than just an 'a'.</note></w>
+<pc ana=",">·</pc>
+<w ana="senio">senio</w>
+<pc ana=".">|</pc>
+<lb n="3v.a.34"/>
+<w ana="Persius">
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+sius</w>
+<pc ana="quote">·</pc>
+<w ana="iure">iure</w>
+	<pc ana="space"> </pc>
+<w ana="etenim">eten
+	<choice>
+		<abbr type="superscription">i<am>2</am></abbr>
+		<expan>im</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="id">id</w>
+<w ana="summum">s
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+	m
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="quid">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+d</w>
+<w ana="dexter">dexter</w>
+	<pc ana="space"> </pc>
+<w ana="senio">senio</w>
+	<pc ana="space"> </pc>
+<w ana="ferret">ferret</w>
+<note type="source">The quote 'iure... ferret' corresponds to Persius, Saturae, 3.48 (urn:cts:latinLit:phi0969:phi001:3.48).</note>
+<pc ana=".">·</pc>
+<w ana="milia">milia</w>
+<pc ana=",">·</pc>
+<w ana="semiquinarius">semi
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+	na
+<lb n="3v.a.35"/>
+rius</w>
+<w ana="et">et</w>
+<w ana="semiseptenarius">semiseptinarius</w>
+<pc ana=",">·</pc>
+<w ana="nundinum">nundin
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="nundinae">nundinæ</w>
+<pc ana=",">·</pc>
+<w ana="trinum">trin
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana="0">·</pc>
+<w ana="nundinum">nundi
+<lb n="3v.a.36"/>
+	n
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="sciendum">sciend
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="quod">
+	<choice>
+		<abbr type="superscription">qd<am>¯</am></abbr>
+		<expan>quod</expan>
+	</choice>
+</w>
+<w ana="poetae">poetæ</w>
+	<pc ana="space"> </pc>
+<w ana="saepe">sepe<note type="script">In this case the diphthong 'ae' seems to be written with grapheme 'e', not 'æ'.</note></w>
+	<pc ana="space"> </pc>
+<w ana="deriuatiuis">deriuatiuis</w>
+	<pc ana="space"> </pc>
+<w ana="utuntur">utuntur</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="primitiuis">primitiuis</w>
+<pc ana=",">·</pc>
+<lb n="3v.a.37"/>
+<w ana="uel">uel</w>
+<w ana="contra">contra</w>
+<pc ana=",">·</pc>
+<w ana="uel">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="aliis">aliis</w>
+	<pc ana="space"> </pc>
+<w ana="speciebus">specie
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="aliis">aliis</w>
+<pc ana=",">·</pc>
+<w ana="ut">ut</w>
+<w ana="Uergilius">ui
+	<choice>
+		<abbr type="superscription">rgi<am>¯</am></abbr>
+		<expan>rgilius</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+metti brano persio
+vd. se c'è un ref dentro un ref
+
+
 </ref><!-- The source continues until 3v s.fin. -->
 </ab>
 
