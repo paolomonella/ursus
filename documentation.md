@@ -295,7 +295,7 @@ or, if I decide to substitute the components of the tagset string (2-LM41A2---) 
 I'm still working on the implementation of the 3-values system by using a lemmatizer/POS tagger such as [TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/). For now, I'm just using the "standardized contemporary spelling" part, listed above under point 3, as follows:
     <w ana="constructae">cons<g ref="st"/>ructe</w>
 
-[sgn: Check out what is the standard attributed used by computational linguists for <w> in lemmatizations. Is it @ana or anything else? I'm using @ana for now]
+
 
 ## Elements that also belong to the LL:
 
