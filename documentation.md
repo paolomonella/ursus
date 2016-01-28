@@ -35,13 +35,7 @@ Case 2 applies to those paragraphematic signs that do not have an alphabetic mea
 Graphic Layer (gL)
 ==================
 
-The following markup refers to the graphic system of the manuscript, however it is systematically included in the transcription:
-
-1. `<p>`
-	- Note: I'm actually not using this element at this point.
-	- If I will, this will be problematic: does it belong to the graphic or to the graphematic layer?
-
-The following additional markup refers to graphic signs and features of the graphic system of the manuscript that do not have graphemic value, such as [capolettere]. They are programmatically set outside of the scope of this edition, but may occasionally be included.
+The following additional markup refers to graphic signs and features of the graphic system of the manuscript that do not have graphemic value, such as dropcaps. Though they are programmatically set outside of the scope of this edition, they have temporarily been included.
 
 2. `<hi>`
 	- `<hi rend="dropcap">I</hi>lle`
@@ -50,20 +44,37 @@ The following additional markup refers to graphic signs and features of the grap
 		- The first letter is larger than the others, but not drawn as a dropcap
 
 
-## Capital letters
+## Larger letters and dropcaps
 
 After full stops letters are often written larger, and sometimes with a different shape. For example, in 1r line 4 ('Minime'), after the full stop the 'm' is written with a capital glyph (different from the Beneventan minuscule 'm'). However, in 1r line 5 ('differt'), the 'd' after another full stop is written with its regular Beneventan minuscule glyph, just larger.
 
-For the time being, I am encoding them with `<hi>`. Another option could be to add a set of 'capital' graphemes in addition to the 'minuscule' ones. I'll do so if I'll see that the convention of using different glyphs after the full stops is consistent and therefore systematic, and generates minimal pairs of words.
+For the time being, I am encoding them with `<hi>`. Another option could be to add a set of 'capital' graphemes in addition to the 'minuscule' ones. 
 
 
 
 Graphemic Layer (GL)
 ====================
 
-Each individual Unicode character included in the `<text>` element, that is everything in `<text>` that is not a tag, represents a grapheme, i.e. a glyph that has graphemic value as described above. It therefore refers to an element of the graphemic system of the manuscript. It must be understood as a pointer referring to the grapheme identified by the same Unicode character in column "Graphemes" of the "Graphemic Table of Signs" (GToS). No Unicode character is allowed within the `<text>` element of the file of the Graphemic Later transcription (tags excluded) if it does noet occur in column "Graphemes" of the GToS. Specific software acts as a "lint" to verify that this requirement is respected. This assures that every Unicode character in the graphemic transcription points to a grapheme that has a full description in the GToS. In the code
-`<text><body><ab>Ave</ab></body></text>`
-the "lint" software will verify that there is a line of the GToS with value "A" in column "Graphemes", then that there is a line with value "v" in that column etc. If it is not the case, it will warn the encoder.
+All textual content of the `<text>` (i.e. everything Unicode character descendant of `<text>` that is not markup), represents a grapheme, i.e. a glyph that has graphemic value as described above -- except for the textual content of those elements that are said to include alphabemes (not graphemes) in the "Alphabetic Layer (AL)" section of this documentation, such as `<expan>`.
+
+All other textual content therefore refers to the graphemic system of the manuscript. Every Unicode character of this kind must be understood as a pointer referring to the grapheme identified by the same Unicode character in column "Graphemes" of the "Graphemic Table of Signs" (GToS).
+
+No Unicode character is allowed within the `<text>` element of the file of the Graphemic Later transcription
+if it does noet occur in column "Graphemes" of the GToS --
+with the exception of markup and of the textual content of elements including alphabemes, such as `<expan>`, and markup.
+
+Specific software functions as a "lint" to verify that this requirement is met. This assures that every Unicode character in the graphemic transcription points to a grapheme that has a full description in the GToS. In the code
+
+    <w ana="ordinem">ordin
+        <choice>
+                <abbr type="superscription">e<am>2</am></abbr>
+                <expan>em</expan>
+        </choice>
+    </w>
+
+the "lint" software verifies that there is a line in the GToS with value "o" in column "Graphemes", then that there is a line with value "r" in that column etc. (for the whole sequence 'o', 'r', d', 'i', 'n', 'e', '2'). If it is not the case, it will warn the encoder.
+
+The two Unicode characters 'e' and 'm' (the textual content of element `<expan>`), instead, should not be checked to match characters in column "Graphemes" of the GToS, but characters in column "Alphabemes" of the AToS (the "Alphabetic Table of Signs").
 
 Note. The following hypothesis has not been applied so far
 > In addition to the individual Unicode characters described in point 1 above, also `<g>` elements represent graphemes. Their @ref attribute also refers to the corresponding string (mostly, but not necessarily consitituted by one Unicode character) in column "Graphemes" of the GToS. To comply with the TEI standard schema, their @ref formally points to the @id of a `<char>` element in the `<charDecl>` section of the TEI header. Like in case 1 above, specific software verifies that all values of these @ref attributes correspond to a string in colume "Graphemes" of the GToS. In the example
@@ -71,17 +82,17 @@ Note. The following hypothesis has not been applied so far
 the "lint" software will also verify that there is a line of the GToS with value "um" in column "Graphemes". If it is not the case, it will warn the encoder.
 [Ipotesi: si potrebbe abolire il caso 2 se si usano un sacco di caratteri Unicode, però `<g>` è utile quando il valore alfabetico di un grafema (abbreviazione) non è standard]
 
-Note that some graphemes in the GToS do not have an alphabetic meaning: these are the "paragraphematic" signs, such as punctuation.
+Note that some graphemes in the GToS do not have an alphabetic meaning: these are "paragraphematic" signs, such as punctuation.
 
 ## Other elements belonging to the graphemic layer
 
-In addition to cases 1 and 2 above, the following also belong to the graphemic layer:
+In addition, the following also belongs to the graphemic layer:
 
 1.  '_' Unicode character, representing the space between words
-	- Note: at this point, I'm not using it but a simple Unicode space ' ' tagged as
+	- Note: at this point, I'm not using '_' but a simple Unicode space ' ' tagged as
 		`<pc ana="space"> </pc>`
 	- Note: this is problematic. Does it belong to the graphic or to the graphemic layer?
-		It's probably a paragraphematic sign, just like punctuation
+		- It's probably a paragraphematic sign, just like punctuation
 
 [TBA]
 
@@ -90,7 +101,7 @@ In addition to cases 1 and 2 above, the following also belong to the graphemic l
 Abbreviations
 =============
 
-In this edition, the TEI `<abbr>`, `<am>` and `<expan>` elements are used with a specific meaning. In the following code:
+In this edition, the TEI `<abbr>`, `<am>` and `<expan>` elements are used with a semantics still compatible with that declared in the TEI P5 Guidelines, but more specific. In the following code:
 
     <w ana="quantum">quant
         <choice>
@@ -99,7 +110,7 @@ In this edition, the TEI `<abbr>`, `<am>` and `<expan>` elements are used with a
         </choice>
     </w>
 
-1. the content of `<abbr>` belongs to the GL;
+1. the content of `<abbr>` belongs to the GL (including the content of its child `<am>`);
 2. the content of `<expan>` belongs to the LL;
 3. any other content of `<w>` that is not included in `<choice>` belongs, as usual, to the GL.
 
@@ -114,7 +125,7 @@ Likewise, the following code:
             </choice>
     </w>
 
-means that the ¯ grapheme (a superscript line, like a macron) is written above three graphemes, namely 'q', 'u' and 'm', and that the alphabetic meaning of the abbreviation is constituted by the alphabemes 'q', 'u', 'o', 'n', 'i', 'a', 'm'
+means that the ¯ grapheme (a superscript line, like a macron) is written above three graphemes, namely 'q', 'n' and 'm', and that the alphabetic meaning of the abbreviation is constituted by the alphabemes 'q', 'u', 'o', 'n', 'i', 'a', 'm'
 
 The following code:
 
@@ -127,9 +138,7 @@ The following code:
 
 means that the grapheme '2' is written only over the grapheme '2' in the middle of the word, and that the alphabetic meaning of the abbreviation is constituted by the alphabemes 'c', 'e', 'r'.
 
-This encoding convention that complies with the TEI-all DTD, but is fairly specific to this project and its methodological principle of formally distinguishing the GL, the AL and the LL. So another encoding example on this will be useful:
-
-The following code:
+In the following code:
 
     <w ana="spiritum">
     	<choice>
@@ -138,9 +147,9 @@ The following code:
     	</choice>
     m</w>
 
-where that the grapheme ¯ is written over the graphemes 'sr' at the beginning of the wor (not over the final grapheme 'm'), and alphabetic meaning of the abbreviation is considered to be the alphabemes 's', 'p', 'i', 'r', 'i', 't', 'u'. As to the final grapheme 'm', it is not considered part of the abbreviation, so its alphabetical meaning is its standard one, that is the alphabeme 'm'.
+the grapheme ¯ is written over the graphemes 'sr' at the beginning of the word (not over the final grapheme 'm'), and the alphabemes 's', 'p', 'i', 'r', 'i', 't', 'u' are the alphabetic meaning of the whole abbreviation. As to the final grapheme 'm', it is not considered part of the abbreviation, so its alphabetical meaning is its standard one, i.e. the alphabeme 'm' (as encoded in the GToS).
 
-Abbreviation marks are not always written above another grapheme. The grapheme that I'm encoding with the Unicode character ';', for example, is written on the right, after the final grapheme of a word (mostly 'q;' for 'que' and 'b;' for 'bus'):
+Abbreviation marks are not always written *above* other graphemes. The grapheme that I'm encoding with the Unicode character ';', for example, is written on the right, after the final grapheme of a word (mostly 'q;' for 'que' and 'b;' for 'bus'):
 
     <w ana="duabus">dua
         <choice>
@@ -149,11 +158,13 @@ Abbreviation marks are not always written above another grapheme. The grapheme t
         </choice>
     </w>
 
+Again, this encoding convention complies with the TEI-all DTD and the TEI P5 Guidelines, but is fairly specific to this project and derives from the methodological principle of formally distinguishing the GL, the AL and the LL.
+
 This encoding convention is useful because:
 
 1. abbreviation marks (like macrons) are often written not only over the last grapheme, but over the whole word or over specific graphemes in the middle of the word. With this encoding convention, it is possible to mark exactly over which graphems the abbreviation mark expands (a similar convention, with @type="underscription", could be use to mark other grapheme/abbreviation mark graphic combinations);
 
-2. some abbreviations marks do not have a fixed alphabetic value. For example, in the Benevental script a macron (spanning over one or more graphemes) may have a specific alphabetic expansion (e.g. ḡ is usually 'gen') or mark a generic abbreviation (ā for 'aut', a macron over p for 'prae', a macron over the three graphemes 'mia' for 'misericordia', etc.). This encoding convention allows us to provide the software with information on both layers (graphemic and alphabetic) in these cases.
+2. some abbreviations marks do not have a fixed alphabetic value. For example, in the Beneventan script a macron (spanning over one or more graphemes) may have a specific alphabetic expansion (e.g. ḡ is usually 'gen') or mark a generic abbreviation (ā for 'aut', a macron over p for 'prae', a macron over the three graphemes 'mia' for 'misericordia', etc.). For example, a macron spanning over graphemes 'oms' may mean 'omnis' (as in folio 3r, column a, line 36) or 'omnes' (as in folio 3r, column b, line 6 and in line 10 of the same column). This encoding convention allows us to provide the software with information on both layers (graphemic and alphabetic) in these cases.
 
 Summarizing:
 
@@ -169,8 +180,8 @@ Summarizing:
 			more than one alphabetical letter: in this case 'abbr' has no 'am' child.
 
 2. `<am>`
-	- Its content also belongs to the GL (as it is a child of 'abbr'). It includes the
-		grapheme that has the function of abbreviation mark. Note that the alphabetic
+	- Its content also belongs to the GL. It includes a
+		grapheme with the function of abbreviation mark. Note that the alphabetic
 		meaning of the abbreviation is not assigned either to the content of
 		`<am>`, or to the other graphemes included in 
 		`<abbr>`, but to the whole content of `<abbr>`.
@@ -214,18 +225,18 @@ In the writing system of the manuscript, many graphemes have a standard alphabet
 
 ## Case 2: the AL cannot be computed from the GL transcription
 
-Some graphemes do not have an alphabetic value at all. This is marked in the GToS because the corresponding cell in the "Alphabemes" is blank.
+Some graphemes do not have an alphabetic value at all. This is encoded in the GToS because the corresponding cell in the "Alphabemes" is blank.
 
 Other graphemes, however, do not have a _standard_ alphabetic value in the GToS, although they do mean one or more alphabemes. For example:
 
-- _Abbreviation marks_. Some of them (such as the macron) don't 
+- _Abbreviation marks_. Some of them (such as the macron) do not have
 	have a standard alphabetic value, but they mean the omission of one ore more
-	different alphabemes. E.g., a macron over a final 
+	alphabemes. E.g., a macron over a final 
 	letter in the Beneventan script may mark a general abbreviation:
 	dic¯ = dicit (alphabemes 'i' and 't' are omitted here),
-	while c¯ (c with macron above) normally 'means' 'cen' or 'con'
+	while c¯ (c with macron above) normally means 'cen' or 'con'
 	(alphabemes 'e' and 'n' or alphabemes 'o' and 'n' are omitted)
-- _Brevigraphs_. Some might not always mean the same alphabetic sequence
+- _Brevigraphs_. Some might not always mean the same alphabetic sequence (TBA)
 
 In this case, i.e. when the philologist/encoder thinks that the computer can/should not generate the alphabetic value of a grapheme from the grapheme/alphabeme mapping in the GToS, the alphabetic value is provided explicitly in the encoding.
 
@@ -245,10 +256,9 @@ The very distinction of an Alphabetic Layer (AL) of the digital edition from the
 
 ## XML/TEI encoding strategy for the AL
 
-In my previous <a href="http://www1.unipa.it/paolo.monella/lincei/edition.html">Vespa Project</a>, I had used an extremely granular encoding strategy (at the grapheme level, by means of `<g>` elements each with an @xml:id) to explicitly encode the alphabetic meaning of every grapheme.
+In my previous <a href="http://www1.unipa.it/paolo.monella/lincei/edition.html">Vespa Project</a>, I had used an extremely granular encoding strategy (at the grapheme level, by means of `<g>` elements each with an `@xml:id`) to explicitly encode the alphabetic meaning of every grapheme.
 
-On the other side, in the overwhelming majority of cases, 'case 1' applies, therefore from a practical viewpoint
-the encoding strategy of my Vespa Project seems excessive and unnecessary. For the same reason, also personalizing the XML/TEI to introduce tags to explicitly distinguish the two levels (a strategy similar to that applied by the <a href="http://menota.org/tekstarkiv.xml">Menota Archive</a> for other purposes) seems unnecessary: software can compute and output a complete transcription at the AL based on the mechanism described in 'case 1' and the markup described in 'case 2' above.
+However, in the overwhelming majority of cases, 'case 1' applies, therefore from a practical viewpoint the encoding strategy of my Vespa Project seems excessive and unnecessary. For the same reason, also personalizing the XML/TEI to introduce tags to explicitly distinguish the two levels (a strategy similar to that applied by the <a href="http://menota.org/tekstarkiv.xml">Menota Archive</a> for other purposes) seems unnecessary: software can compute and output a complete transcription at the Alphabetic Layer based on the mechanism described in 'case 1' (i.e. by using the XML/TEI transcription and the GToS file) and based on the markup described in 'case 2' above.
 
 
 
@@ -262,6 +272,8 @@ At this layer, the constituting items of the text are 'words'. In the present ed
 2. Its morphological cathegories according to the [Alpheios] morphological parser (case, number, gender, tense, diatesis etc.);
 
 3. A standardized contemporary spelling of the inflected form, represented by a sequence of Unicode characters (this part is needed to identify univocally cases such as the genitive plural of Latin deus, -i (god), that can be either deum or deorum).
+
+[*Note*: the tagset of the Index Thomisticus parameter file that I am currently using with TreeTagger yields some information on the "Formal-Variation", such as "I variation of wordform", "II variation of wordform" etc., and on the "Graphical-Variation", such as "Baseform", "Graphical variations of 1" etc.  I think that this is meant to account for the difference between the two forms of genitive plural of 'deus, -i', i.e. 'deum' or 'deorum'. In this case, #3 above would not be necessary]
 
 ## Ideally:
 
