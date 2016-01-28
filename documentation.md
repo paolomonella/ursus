@@ -269,7 +269,7 @@ At this layer, the constituting items of the text are 'words'. In the present ed
 
 1. The lemma, identified by a reference to a standard dictionary;
 
-2. Its morphological cathegories according to the [Alpheios] morphological parser (case, number, gender, tense, diatesis etc.);
+2. Its morphological tagging (POS tagging) according to a lemmatizer/POS tagger such as [TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/): case, number, gender, tense, diatesis etc.;
 
 3. A standardized contemporary spelling of the inflected form, represented by a sequence of Unicode characters (this part is needed to identify univocally cases such as the genitive plural of Latin deus, -i (god), that can be either deum or deorum).
 
