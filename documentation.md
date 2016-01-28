@@ -276,7 +276,7 @@ Instead of writing the LL transcription on a separate file, mapped to the GL tra
 
 
 ## Tentatively:
-I'm still working on the implementation of the 3-values system. For now, I'm just using the "standardized contemporary spelling" part, listed above under point 3, as follows:
+I'm still working on the implementation of the 3-values system by using a lemmatizer/POS tagger such as [TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/). For now, I'm just using the "standardized contemporary spelling" part, listed above under point 3, as follows:
     <w ana="constructae">cons<g ref="st"/>ructe</w>
 
 [sgn: Check out what is the standard attributed used by computational linguists for <w> in lemmatizations. Is it @ana or anything else? I'm using @ana for now]
@@ -292,29 +292,17 @@ I'm still working on the implementation of the 3-values system. For now, I'm jus
 3. `<ref>`
 	- It links to the source of a portion of text by means of a @cRef (canonical reference) attribute, whose value is a URN as for the CTS/CITE architecture (see <https://cite-architecture.github.io/>)
 
-## Groups of graphemes that do not constitute a regular word (values of @type with `<w>`)
+## `<w>` elements for which the lemmatizer/POS tagger will need help (values of @type with `<w>`)
 
-The three possible values are:
+The possible values marking such cases are:
 
 - @type="nonsense"
 - @type="alphabemes"
 - @type="ancientAbbreviation"
+- @type="foreign"
+- @type="numeral"
 
 These are mostly meant to prevent the lemmatizer from trying to parse this type of words.
-
-### @type="foreign"
-
-If the word is Greek, I am encoding it as follows:
-
-        <w ana="ὄνομα" type="foreign" xml:lang="grc">onoma</w>
-
-Note that in two cases only, a Greek word is marked with `@type="alphabemes"` because it does not constitute a real word in Greek (but a word constituent in an etymological discussion):
-
-        <w ana="νομα" type="alphabemes" xml:lang="grc">noma</w>
-
-and
-
-        <w ana="ο" type="alphabemes" xml:lang="grc">o</w>
 
 
 ### @type="nonsense"
@@ -351,6 +339,31 @@ If a sequence of graphemes constituting a 'graphical word' is an ancient Roman a
     <w ana="Gn" type="ancientAbbreviation">gn</w>
 
 Please note that I'm distinguishing this case from the abbreviations of the medieval writing system, that I'm encoding with the `<choice>`, `<abbr>`, `<expan>` and `<am>` elements.
+
+### @type="foreign"
+
+If the word is Greek, I am encoding it as follows:
+
+        <w ana="ὄνομα" type="foreign" xml:lang="grc">onoma</w>
+
+Note that in two cases only, a Greek word is marked with `@type="alphabemes"` because it does not constitute a real word in Greek (but a word constituent in an etymological discussion):
+
+        <w ana="νομα" type="alphabemes" xml:lang="grc">noma</w>
+
+and
+
+        <w ana="ο" type="alphabemes" xml:lang="grc">o</w>
+
+
+### @type="numeral"
+
+Example:
+
+        <w ana="x" type="numeral">x</w>
+
+With my first experiments with [TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/), for this word I'm getting `@lemma="num.~rom."`
+
+
 
 Linking the text with its sources with the CTS/CITE architecture
 ================================================================
@@ -397,7 +410,9 @@ that includes Latin, Greek, inscriptions etc. and is the working list of the Per
 <http://catalog.perseus.org/catalog/urn:cite:perseus:author.1179>
 
 
-## My URN short explanation
+## My URNs short explanation
+
+### Grammarians: main sources of Ursus
 
 - Priscian Institutio
 	- urn:cts:latinLit:stoa0234a.stoa001
@@ -413,6 +428,16 @@ that includes Latin, Greek, inscriptions etc. and is the working list of the Per
 	- urn:cts:latinLit:stoa0258a.stoa001
 - Pompeius Inst
 	- urn:cts:latinLit:stoa0233c.stoa001
+	
+### Classical sources of citations in those grammarians, in order of appearance in the manuscript
+
+- Persius, Saturae
+    - urn:cts:latinLit:phi0969.phi001
+- Verg. Aen.
+    - urn:cts:latinLit:phi0690.phi003
+- Lucanus, Pharsalia
+    - urn:cts:latinLit:phi0917.phi001
+
 
 
 ## My URNs long explanation

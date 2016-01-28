@@ -12247,8 +12247,69 @@ rius</w>
 	</choice>
 </w>
 	<pc ana="space"> </pc>
-metti brano persio
-vd. se c'è un ref dentro un ref
+<w ana="in">in</w>
+<w ana="x" type="numeral">x</w>
+	<pc ana="space"> </pc>
+<w ana="tot">tot</w>
+	<pc ana="space"> </pc>
+<w ana="lecti">lecti</w>
+	<pc ana="space"> </pc>
+<w ana="proceres">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+	ce
+<lb n="3v.a.38"/>
+res</w>
+	<pc ana="space"> </pc>
+<w ana="bis">bis</w>
+<w ana="denis">denis</w>
+	<pc ana="space"> </pc>
+<w ana="nauibus">naui
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="ibant">ibant</w>
+<note type="source">Verg. Aen. 10.213 (urn:cts:latinLit:phi0690.phi003:10.213).</note>
+<pc ana=",">·</pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="bis">bis</w>
+<w ana="decem">decem</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="Lucanus">lucanus</w>
+	<pc ana="space"> </pc>
+<w ana="septeno">septeno</w>
+	<pc ana="space"> </pc>
+
+<cb n="3v.b"/>
+
+<lb n="3v.b.1"/>
+
+<w ana="gurgite">gurgite</w>
+<w ana="Nilus">nilus</w>
+<note type="source">Keil, volume 3, page 416, in the apparatus criticus writes 'Lucan. Pharsal. VIII 444'. However, the edition of A. E. Housman, 1927 has the following text for Lucanus, Bellum ciuile 8.444-447: Syrtibus hinc Libycis tuta est Aegyptos, at inde / gurgite septeno rapidus mare summouet amnis. / terra suis contenta bonis, non indiga mercis / aut Iouis: in solo tanta est fiducia Nilo (urn:cts:latinLit:phi0917.phi001:8.444-8.447). </note>
+<pc ana=",">·</pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="septenario">septenario</w>
+<pc ana=",">·</pc>
+
+
+
 
 
 </ref><!-- The source continues until 3v s.fin. -->
