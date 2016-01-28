@@ -437,6 +437,8 @@ that includes Latin, Greek, inscriptions etc. and is the working list of the Per
     - urn:cts:latinLit:phi0690.phi003
 - Lucanus, Pharsalia
     - urn:cts:latinLit:phi0917.phi001
+- Claudius Caesar Germanicus, Fragmenta Aratea
+    - urn:cts:latinLit:phi0881.phi002
 
 
 

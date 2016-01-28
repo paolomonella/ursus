@@ -12240,10 +12240,10 @@ rius</w>
 <w ana="aliis">aliis</w>
 <pc ana=",">·</pc>
 <w ana="ut">ut</w>
-<w ana="Uergilius">ui
+<w ana="Uergilius">uir
 	<choice>
-		<abbr type="superscription">rgi<am>¯</am></abbr>
-		<expan>rgilius</expan>
+		<abbr type="superscription">gi<am>¯</am></abbr>
+		<expan>gilius</expan>
 	</choice>
 </w>
 	<pc ana="space"> </pc>
@@ -12306,13 +12306,853 @@ res</w>
 	</choice>
 </w>
 <w ana="septenario">septenario</w>
+<pc ana=".">·</pc>
+<w ana="sunt"><hi rend="larger">s</hi>unt</w>
+	<pc ana="space"> </pc>
+<w ana="praeterea">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+terea</w>
+	<pc ana="space"> </pc>
+<w ana="simplum">simpl
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="duplum">dupl
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
 <pc ana=",">·</pc>
+<w ana="quadruplum">quadru
+<lb n="3v.b.2"/>
+	pl
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana=",">·</pc>
+<w ana="triplum">tripl
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=",">·</pc>
+<w ana="quae">quæ</w>
+	<pc ana="space"> </pc>
+<w ana="proprie">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+prie</w>
+	<pc ana="space"> </pc>
+<w ana="ad">ad</w>
+	<pc ana="space"> </pc>
+<w ana="numerum">numer
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="dicuntur">dicuntur</w>
+<pc ana=".">·</pc>
+<w ana="simplex">sim
+<lb n="3v.b.3"/>
+plex</w>
+<pc ana=",">·</pc>
+<w ana="duplex">duplex</w>
+	<pc ana="space"> </pc>
+<pc ana=",">·</pc>
+<w ana="triplex">triplex</w>
+	<pc ana="space"> </pc>
+<pc ana="0">·</pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=",">|</pc>
+<w ana="que">que<note type="script">In this case the diphthong 'ae' seems to be written with grapheme 'e', not 'æ'.</note></w>
+	<pc ana="space"> </pc>
+<w ana="ad">ad</w>
+	<pc ana="space"> </pc>
+<w ana="omnem">omnem</w>
+	<pc ana="space"> </pc>
+<w ana="rem">rem</w>
+	<pc ana="space"> </pc>
+<w ana="dicuntur">dicuntur</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<lb n="3v.b.4"/>
+<w ana="uerba">uerba</w>
+	<pc ana="space"> </pc>
+<w ana="ex">ex</w>
+<w ana="his">his</w>
+	<pc ana="space"> </pc>
+<w ana="duplico">duplico</w>
+	<pc ana="space"> </pc>
+<w ana="duplicas">duplicas</w>
+<pc ana=",">·</pc>
+<w ana="triplico">triplico</w>
+	<pc ana="space"> </pc>
+<w ana="triplicas">triplicas</w>
+<pc ana=",">·</pc>
+<w ana="multiplico">multiplico</w>
+	<pc ana="space"> </pc>
+<lb n="3v.b.5"/>
+<w ana="multiplicas">multiplicas</w>
+<pc ana=",">·</pc>
+<w ana="multiplex">multiplex</w>
+<pc ana=",">·</pc>
+<w ana="dupondius">dupundius</w>
+	<pc ana="space"> </pc>
+<w ana="tripondius">tripundius</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=".">|</pc>
+<lb n="3v.b.6"/>
+
+<w ana="illud"><hi rend="larger">i</hi>llud</w>
+	<pc ana="space"> </pc>
+<w ana="quoque">quo
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="sciendum">sciend
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="quod">quod</w>
+	<pc ana="space"> </pc>
+<w ana="undeuiginti">undeuiginti<note type="script">The original hand (in brown ink) must have written something wrong. A second hand (in black ink) corrected to unum (written as 'unu' with a '2-like' abbreviation mark over the final 'u', plus one or two illegible signs. The source (Priscian Keil 3.416.6) has 'undeuiginti'.</note></w>
+	<pc ana="space"> </pc>
+<w ana="dicimus">dicimus</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="decem">dec
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="nouem">nouem</w>
+<pc ana=",">·</pc>
+<lb n="3v.b.7"/>
+<w ana="id">id</w>
+<w ana="est">est</w>
+	<pc ana="space"> </pc>
+<w ana="unde">unde</w>
+	<pc ana="space"> </pc>
+<w ana="unum">un
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="deest">deest</w>
+	<pc ana="space"> </pc>
+<add place="above">
+<w ana="de">de</w>
+</add>
+<w ana="uiginti">uiginti</w>
+<pc ana=",">·</pc>
+<w ana="uel">
+	<choice>
+		<abbr type="brevigraph">ul</abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="unde">unde</w>
+	<pc ana="space"> </pc>
+<w ana="uiginti">uiginti</w>
+<pc ana=",">·</pc>
+<w ana="post">post</w>
+<w ana="quem">quem</w>
+	<pc ana="space"> </pc>
+<w ana="uiginti">uigin
+<lb n="3v.b.8"/>
+ti</w>
+	<pc ana="space"> </pc>
+<w ana="numerus">numerus</w>
+<w ana="est">est</w>
+<pc ana=",">·</pc>
+	<pc ana="space"> </pc>
+<w ana="quod">quod</w>
+	<pc ana="space"> </pc>
+<w ana="est">est</w>
+	<pc ana="space"> </pc>
+<w ana="nouem">nou
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="decem">decem</w>
+	<pc ana="space"> </pc>
+<w ana="numerus">numerus</w>
+<pc ana=",">·</pc>
+<w ana="post">post</w>
+	<pc ana="space"> </pc>
+<w ana="unum">un
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="enim">enim</w>
+	<pc ana="space"> </pc>
+<lb n="3v.b.9"/>
+<w ana="sequitur">se
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+tur</w>
+	<pc ana="space"> </pc>
+<w ana="uiginti">uiginti</w>
+	<pc ana="space"> </pc>
+<w ana="numerus">numerus</w>
+<pc ana=".">·</pc>
+<w ana="horatius"><hi rend="larger">h</hi>oratius</w>
+	<pc ana="space"> </pc>
+<w ana="in">in</w>
+<pc ana="0">·</pc>
+<w ana="ii" type="numeral">ii</w>
+<pc ana="0">·</pc>
+<w ana="sermonum">sermon
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana=",">·</pc>
+<w ana="unde">unde</w>
+	<pc ana="space"> </pc>
+<w ana="octoginta">octo
+<lb n="3v.b.10"/>
+ginta</w>
+<pc ana="0">·</pc>
+<w ana="annos">annos</w>
+	<pc ana="space"> </pc>
+<w ana="natus">natus</w>
+<pc ana=",">·</pc>
+<w ana="cui">cui</w>
+	<pc ana="space"> </pc>
+<w ana="stragula">stragula</w>
+	<pc ana="space"> </pc>
+<w ana="uestis">uestis</w>
+<note type="source">Hor. Sermones 2.3.117-118 (urn:cts:latinLit:phi0893.phi004:2.3.117-2.3.118)</note>
+<pc ana=",">·</pc>
+<w ana="undeoctoginta">undeoctoginta</w>
+	<pc ana="space"> </pc>
+<w ana="dixit">di
+<lb n="3v.b.11"/>
+xit</w>
+<pc ana=",">·</pc>
+<w ana="id">id</w>
+<w ana="est">est</w>
+	<pc ana="space"> </pc>
+<w ana="lxxuiiii" type="numeral">lxxuiiii<note type="script">The glyph for the 'five' sign here is pointy like modern 'v', not rounded like that normally used for 'u' in the manuscript.</note></w>
+<pc ana="0">·</pc>
+<w ana="annos">annos</w>
+	<pc ana="space"> </pc>
+<w ana="habet">habet</w>
+	<pc ana="space"> </pc>
+<w ana="aetati">ætati</w>
+<pc ana=",">·</pc>
+<w ana="hoc">hoc</w>
+<w ana="est">est</w>
+	<pc ana="space"> </pc>
+<w ana="octoginta">octoginta</w>
+<pc ana="0">·</pc>
+<lb n="3v.b.12"/>
+<w ana="unde">unde</w>
+	<pc ana="space"> </pc>
+<w ana="unum">un
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana=".">ł</pc>
+<w ana="etiam">eti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="duodeuiginti">duo
+	<pc ana="space"> </pc>
+deuiginti</w>
+	<pc ana="space"> </pc>
+<w ana="dicunt">dicunt</w>
+	<pc ana="space"> </pc>
+<w ana="decem">dec
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="octo">octo</w>
+	<pc ana="space"> </pc>
+<w ana="quod">quod</w>
+	<pc ana="space"> </pc>
+<w ana="attici">attici</w>
+	<pc ana="space"> </pc>
+<lb n="3v.b.13"/>
+<w ana="δυοῖν" type="foreign" xml:lang="grc">dyoin</w>
+<pc ana="0">·</pc>
+<w ana="δεόντων" type="foreign" xml:lang="grc">deonton</w>
+	<pc ana="space"> </pc>
+<w ana="dicunt">dicunt</w>
+<pc ana=".">·</pc>
+<w ana="idem"><hi rend="larger">i</hi>dem</w>
+	<pc ana="space"> </pc>
+<w ana="inuenitur">inuenitur<note type="script">Over the second 'i' there is a ^ sign, whose meaning I don't understand.</note></w>
+	<pc ana="space"> </pc>
+<w ana="in">in</w>
+<w ana="ceteris">ceteris</w>
+	<pc ana="space"> </pc>
+<w ana="ordinalibus">ordinalibus</w>
+	<pc ana="space"> </pc>
+<lb n="3v.b.14"/>
+<w ana="numeris">numeris</w>
+<pc ana=",">·</pc>
+<w ana="id">id</w>
+<w ana="est">est</w>
+	<pc ana="space"> </pc>
+<w ana="triginta">triginta</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="quadraginta">quadraginta</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="reliquis">reli
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+s</w>
+<pc ana=",">·</pc>
+<w ana="duodetriginta">duo
+	<pc ana="space"> </pc>
+detriginta</w>
+<lb n="3v.b.15"/>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="uiginti">uiginti</w>
+	<pc ana="space"> </pc>
+<w ana="octo">octo</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+	<pc ana="space"> </pc>
+	<pc ana="."/>
+<w ana="uniformis"><hi rend="larger">u</hi>niformis<note type="script">The larger font was added to the initial 'u' by a second hand.</note></w>
+<pc ana=",">·</pc>
+<w ana="biformis">biformis</w>
+<pc ana=",">·</pc>
+<w ana="triformis">triformis</w>
+<pc ana="0">·</pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=".">·</pc>
+<lb n="3v.b.16"/>
+<w ana="duo">duo</w>
+	<pc ana="space"> </pc>
+<w ana="asses">asses</w>
+<pc ana="0">·</pc>
+<w ana="dussis">dussis</w>
+<pc ana=",">·</pc>
+<w ana="dupondius">dupundius</w>
+<pc ana=",">·</pc>
+<w ana="tressis">tressis</w>
+<pc ana=",">·</pc>
+<w ana="quadrassis">quadrassis</w>
+<pc ana=",">·</pc>
+<w ana="decussis">decussis</w>
+<pc ana=",">·</pc>
+<w ana="uicessis">uices
+<lb n="3v.b.17"/>
+sis</w>
+	<pc ana="space"> </pc>
+<pc ana=",">·</pc>
+<w ana="tricessis">tricessis</w>
+<pc ana=",">·</pc>
+<w ana="quadragessis">quadragessis<note type="script">The 's' after the 'e' was added above the line.</note></w>
+<pc ana=",">·</pc>
+<w ana="quinquagessis">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+nquagessis</w>
+<pc ana=",">·</pc>
+<w ana="sexagessis">sexagessis</w>
+<w ana="septuagessis">septuagessis</w>
+<pc ana=",">·</pc>
+<lb n="3v.b.18"/>
+<w ana="octagessis">octagessis</w>
+<pc ana=",">·</pc>
+<w ana="nonagessis">nonagessis</w>
+<pc ana=",">·</pc>
+<w ana="centussis">centussis</w>
+<pc ana=".">·</pc>
+<w ana="post"><hi rend="larger">p</hi>ost</w>
+	<pc ana="space"> </pc>
+<w ana="quem">quæm<note type="script">The scribe mistakenly wrote 'quæm' with the 'æ' grapheme.</note></w>
+	<pc ana="space"> </pc>
+<w ana="numerum">numer
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="teste">teste</w>
+	<pc ana="space"> </pc>
+<w ana="Uarrone">bar
+<lb n="3v.b.19"/>
+rone<note type="script">A common confusion between 'u' and 'b' due to the contemporary pronunciation.</note></w>
+	<pc ana="space"> </pc>
+<w ana="non">non</w>
+	<pc ana="space"> </pc>
+<w ana="componuntur">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+ponuntur</w>
+	<pc ana="space"> </pc>
+<w ana="cum">c
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="asse">asse</w>
+	<pc ana="space"> </pc>
+<w ana="numeri">numeri</w>
+<pc ana=".">·</pc>
+<w ana="deunx">deunx</w>
+<pc ana=",">·</pc>
+<w ana="dextans">dextans</w>
+<pc ana=",">·</pc>
+<w ana="dodrans">do
+<lb n="3v.b.20"/>
+drans</w>
+<pc ana=",">·</pc>
+<w ana="bessis">bessis</w>
+<pc ana=",">·</pc>
+<w ana="septunx">septunx</w>
+<pc ana=",">·</pc>
+<w ana="quincunx">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+ncunx</w>
+<pc ana=",">·</pc>
+<w ana="triens">triens</w>
+<pc ana=",">·</pc>
+<w ana="quadrans">quadrans</w>
+<pc ana=",">·</pc>
+<w ana="sextans">sextans</w>
+<pc ana=",">·</pc>
+<w ana="sexcunx">sex
+<lb n="3v.b.21"/>
+cunx</w>
+<pc ana=",">·</pc>
+<w ana="sextula">sextula</w>
+<pc ana=",">·</pc>
+<w ana="libra">libra</w>
+<pc ana=",">·</pc>
+<w ana="bilibris">bilibris</w>
+<pc ana=",">·</pc>
+<w ana="trilibris">trilibris</w>
+<pc ana=",">·</pc>
+<w ana="quadrilibris">quadrilibris</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=".">·</pc>
+<lb n="3v.b.22"/>
+<w ana="anniculus"><hi rend="larger">a</hi>nniculus</w>
+<pc ana=",">·</pc>
+<w ana="uel">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<w ana="annuus">annys</w>
+<pc ana=",">·</pc>
+<w ana="biennis">biennis</w>
+<pc ana=",">·</pc>
+<w ana="triennis">triennis</w>
+<pc ana=",">·</pc>
+<w ana="quadriennis">quadriennis</w>
+<pc ana=",">·</pc>
+<w ana="quinquennis">quinquen
+<lb n="3v.b.23"/>
+nis</w>
+<pc ana="0">·</pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=",">·</pc>
+<w ana="bimus">bimus</w>
+<pc ana=",">·</pc>
+<w ana="trimus">trimus</w>
+<pc ana=",">·</pc>
+<w ana="quadrimus">quadrimus</w>
+<pc ana="0">·</pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=".">·</pc>
+<w ana="biduum">biduum</w>
+<lb n="3v.b.24"/>
+<w ana="triduum">triduum</w>
+	<pc ana="space"> </pc>
+<w ana="quadriduum">quadridu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=".">·</pc>
+<w ana="binoctium">binoctium</w>
+	<pc ana="space"> </pc>
+<w ana="trinoctium">trinoctium</w>
+	<pc ana="space"> </pc>
+<w ana="quadrinoctium">quadri
+<lb n="3v.b.25"/>
+	nocti
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=",">·</pc>
+<w ana="bifariam">bifari
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="trifariam">trifari
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="quadrifariam">quadrifari
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=".">·</pc>
+<lb n="3v.b.26"/>
+<w ana="bipatens">bipatens</w>
+	<pc ana="space"> </pc>
+<w ana="tripatens">tripatens</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=".">·</pc>
+<w ana="bilinguis">bilinguis</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=".">·</pc>
+<w ana="biuium">biui
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="triuium">triui
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<lb n="3v.b.27"/>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana="."/>
+<w ana="bifidus">bifidus</w>
+	<pc ana="space"> </pc>
+<w ana="trifidus">trifidus</w>
+	<pc ana="space"> </pc>
+<w ana="quadrifidus">quadrifidus</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana="."/>
+<w ana="bisulcus">bisulcus</w>
+	<pc ana="space"> </pc>
+<w ana="trisulcus">trisul
+<lb n="3v.b.28"/>
+cus</w>
+<pc ana=".">·</pc>
+<w ana="geminus"><hi rend="larger">g</hi>eminus</w>
+<pc ana=",">·</pc>
+<w ana="tergeminus">tergeminus</w>
+<pc ana=",">·</pc>
+<w ana="centumgeminus">cent
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+geminus</w>
+<pc ana=".">·</pc>
+<w ana="unimanus">unimanus</w>
+	<pc ana="space"> </pc>
+<w ana="centimanus">centi
+<lb n="3v.b.29"/>
+manus</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="similia">sim
+	<choice>
+		<abbr type="superscription">il<am>¯</am></abbr>
+		<expan>ilia</expan>
+	</choice>
+</w>
+<pc ana=".">|</pc>
+<w ana="duumuir">duum
+	<pc ana="space"> </pc>
+uir</w>
+<pc ana=",">·</pc>
+<w ana="triumuir">trium
+	<pc ana="space"> </pc>
+uir</w>
+<pc ana=",">·</pc>
+<w ana="quinqueuir">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+	n
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+	<pc ana="space"> </pc>
+uir</w>
+<pc ana=",">·</pc>
+<w ana="septemuir">septem
+	<pc ana="space"> </pc>
+uir</w>
+<pc ana=",">·</pc>
+<lb n="3v.b.30"/>
+<w ana="decemuir">decem
+	<pc ana="space"> </pc>
+uir</w>
+<pc ana=",">·</pc>
+<w ana="centumuir">cent
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+	<pc ana="space"> </pc>
+uir</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="similia">sim
+	<choice>
+		<abbr type="superscription">il<am>¯</am></abbr>
+		<expan>ilia</expan>
+	</choice>
+</w>
+<pc ana=",">·</pc>
+<w ana="bigae">bigæ</w>
+<pc ana=",">·</pc>
+<w ana="trigae">trigæ</w>
+<pc ana=",">·</pc>
+<w ana="quadrigae">quadrigæ</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=",">·</pc>
+<lb n="3v.b.31"/>
+<w ana="biiugus">biiugus</w>
+<pc ana=",">·</pc>
+<w ana="unde">unde</w>
+	<pc ana="space"> </pc>
+<w ana="Uergilius">uir
+	<choice>
+		<abbr type="superscription">gi<am>¯</am></abbr>
+		<expan>gilius</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="in">in</w>
+	<pc ana="space"> </pc>
+<w ana="u" type="numeral">u<note type="script">As above, the glyph for the numeral 'five' is pointy like modern 'v', not rounded.</note></w>
+<pc ana=",">·</pc>
+<w ana="biiugo">biiugo</w>
+	<pc ana="space"> </pc>
+<w ana="certamine">certamine</w>
+	<pc ana="space"> </pc>
+<w ana="campum">c
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+pum</w>
+	<pc ana="space"> </pc>
+<w ana="corripuere">corripue
+<lb n="3v.b.32"/>
+re</w>
+<note type="source">Verg. Aen. 5.144-145 (urn:cts:latinLit:phi0690.phi003:5.144-5.145).</note>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="bigati">bigati</w>
+	<pc ana="space"> </pc>
+<w ana="nummi">nummi</w>
+<pc ana=",">·</pc>
+<w ana="triiugus">triiugus</w>
+	<pc ana="space"> </pc>
+<w ana="quadriiugus">quadri
+	<pc ana="space"> </pc>
+iugus</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="similia">sim
+	<choice>
+		<abbr type="superscription">il<am>¯</am></abbr>
+		<expan>ilia</expan>
+	</choice>
+</w>
+<pc ana=".">·</pc>
+	<pc ana="space"> </pc>
+<w ana="triangulum"><hi rend="larger">t</hi>riangul
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<lb n="3v.b.33"/>
+<w ana="Caesar">cesar<note type="script">In this case the diphthong 'ae' seems to be written with grapheme 'e', not 'æ'.</note></w>
+	<pc ana="space"> </pc>
+<w ana="in">in</w>
+<w ana="Arato">arato</w>
+<pc ana=",">·</pc>
+<w ana="cur">cur</w>
+	<pc ana="space"> </pc>
+<w ana="diuite">diuite</w>
+	<pc ana="space"> </pc>
+<w ana="lingua">lingua</w>
+	<pc ana="space"> </pc>
+<w ana="Graecia">grecia<note type="script">In this case the diphthong 'ae' seems to be written with grapheme 'e', not 'æ'.</note></w>
+	<pc ana="space"> </pc>
+<w ana="precurram">precurr
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+<note type="script">In this case the diphthong 'ae' seems to be written with grapheme 'e', not 'æ'.</note></w>
+	<pc ana="space"> </pc>
+<w ana="potiusque">potius
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+<lb n="3v.b.34"/>
+<w ana="triangula">triangula</w>
+	<pc ana="space"> </pc>
+<w ana="dicam">dic
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<note type="source">The passage is not found elsewhere. In fact, it is published as a fragment from the indirect tradition: Claudius Caesar Germanicus, Fragmenta Aratea (The Aratus ascribed to Germanicus Caesar, ed. D. B. Gain, 1976), fragment 6 (urn:cts:latinLit:phi0881.phi002:6.1-6.2)</note>
+<pc ana=".">·</pc>
+<w ana="quadriangulum">quadriangul
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="quinquangulum">quinquangul
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="sexangulum">sexangu
+<lb n="3v.b.35"/>
+lum</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="similia">similia</w>
+<pc ana=".">ł</pc>
+<note type="script">The rest of the page is left blank (for three lines and a half).</note>
+</ref>
 
 
 
 
 
-</ref><!-- The source continues until 3v s.fin. -->
+
+
+
 </ab>
 
 </body>
