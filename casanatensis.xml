@@ -482,9 +482,7 @@ natiuo</w>
 <w ana="porcorum">porcorum</w>
 	<pc ana="0">·</pc>
 	<pc ana="space"> </pc>
-<w ana="paenultima">penultima
-<note type="script">In this case the diphthong 'ae' seems to be written with grapheme 'e', not 'æ', however the writing is too little legible to ascertain this.</note>
-</w>
+<w ana="penultima">penultima</w>
 	<pc ana="quote">·</pc>
 <w ana="a" type="alphabemes">a</w>
 	<pc ana="quote">·</pc>
@@ -5535,7 +5533,7 @@ pria</w>
 		<expan>em</expan>
 	</choice>
 et</w>
-<w ana="poetam">pet
+<w ana="poetam">poet
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
@@ -5631,7 +5629,7 @@ sonis</w>
 	<pc ana=",">·</pc>
 	<pc ana="space"> </pc>
 <w ana="ut">ut</w>
-<w ana="poeta">peta</w>
+<w ana="poeta">poeta</w>
 	<pc ana="space"> </pc>
 <w ana="pro">
 	<choice>
@@ -13665,7 +13663,7 @@ um</w>
 	<pc ana="space"> </pc>
 <w ana="maxime">maxime</w>
 	<pc ana="space"> </pc>
-<w ana="poetarum">petar
+<w ana="poetarum">poetar
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
@@ -14405,7 +14403,7 @@ thontides</w>
 <note type="script">The 'h' is written above.</note>
 </w>
 	<pc ana="space"> </pc>
-<w ana="poetica">petica</w>
+<w ana="poetica">poetica</w>
 	<pc ana="space"> </pc>
 <w ana="dixerunt">dixerunt</w>
 	<pc ana="space"> </pc>
@@ -14733,7 +14731,7 @@ a</w>
 	</choice>
 </w>
 <lb n="4r.b.28"/>
-<w ana="poetae">petæ</w>
+<w ana="poetae">poetæ</w>
 	<pc ana="space"> </pc>
 <w ana="utuntur">utuntur</w>
 <pc ana=".">|</pc>
@@ -14837,7 +14835,7 @@ a</w>
 <w ana="penultima">penultima</w>
 <lb n="4r.b.32"/>
 <w ana="breuis">breuis</w>
-<note type="source">The source (Priscian, Ars grammatica, Keil 2.65.18-2.65-18.20) has: 'Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος' desinat, genetiuus uero in 'ου' diphthongum, a penultima breuis ante 'des' inuenitur in patronymico'.</note>
+<note type="source">The source (Priscian, Ars grammatica, Keil 2.65.18-2.65-18.20) has: 'Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος' desinat, genetiuus uero in 'ου' diphthongum, a paenultima breuis ante 'des' inuenitur in patronymico'.</note>
 <pc ana=",">·</pc>
 <w ana="ut">ut</w>
 <w ana="Pelias">pelias</w>
@@ -14896,7 +14894,7 @@ tra</w>
 <w ana="ante">ante</w>
 <w ana="des" type="alphabemes">des</w>
 <pc ana=".">·</pc>
-<w ana="poetica">petica</w>
+<w ana="poetica">poetica</w>
 <pc ana="0">·</pc>
 <w ana="auctoritate">auctoritate</w>
 <pc ana="0">.</pc>
@@ -15042,7 +15040,306 @@ uertit</w>
 
 <lb n="4v.a.1"/>
 
-<!-- ricomincia da 'Apud Graecos/grecos'... La fonte qui è K 2.66.9 -->
+<w ana="Anchisades">anchisades</w>
+	<pc ana="space"> </pc>
+<w ana="uel">uel</w>
+	<pc ana="space"> </pc>
+<w ana="Anchisides">anchisides</w>
+	<pc ana="space"> </pc>
+<w ana="sed">sed</w>
+<w ana="contra">contra</w>
+	<pc ana="space"> </pc>
+<w ana="regulam">regul
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Anchisiades">anchisiades</w>
+<lb n="4v.a.2"/>
+<w ana="facit">facit</w>
+	<pc ana="space"> </pc>
+<w ana="quasi">quasi</w>
+	<pc ana="space"> </pc>
+<w ana="ab">ab</w>
+<w ana="Anchisios">anchisios</w>
+	<pc ana="space"> </pc>
+<w ana="nominatiuo">nominatiuo</w>
+<pc ana=".">·</pc>
+<w ana="ea"><hi rend="larger">e</hi>a</w>
+	<pc ana="space"> </pc>
+<w ana="quoque">quo
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="patronymica">patronymi
+<lb n="4v.a.3"/>
+ca</w>
+	<pc ana="space"> </pc>
+<w ana="quae">quæ</w>
+	<pc ana="space"> </pc>
+<w ana="ueniunt">ueniunt</w>
+	<pc ana="space"> </pc>
+<w ana="a">a</w>
+<w ana="Graecis">grecis</w>
+<pc ana=",">·</pc>
+<w ana="quorum">quor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="genetiuus">genitiuus</w>
+<pc ana="quote">·</pc>
+<w ana="os" type="alphabemes">os</w>
+<pc ana="quote">·</pc>
+<w ana="uel">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<pc ana="quote">·</pc>
+<w ana="oys" type="alphabemes">oys</w>
+	<pc ana="space"> </pc>
+<w ana="diphthongo">dyphthongo</w>
+<lb n="4v.a.4"/>
+<w ana="terminatur">terminatur</w>
+<pc ana=",">·</pc>
+<w ana="debent">debent</w>
+	<pc ana="space"> </pc>
+<w ana="habere">habere</w>
+<pc ana="quote">·</pc>
+<w ana="i" type="alphabemes">i</w>
+<pc ana="quote">·</pc>
+<w ana="ante">ante</w>
+<pc ana="quote">·</pc>
+<w ana="des" type="alphabemes">des</w>
+<pc ana="quote">·</pc>
+<w ana="ut">ut</w>
+<w ana="Priamos">priamos
+<note type="script">There is an acute accent sign over the 'i', marking the quantity of the vowel. I'm not recording such signs because they do not have graphemic value, i.e. they do not create 'minimal pairs' of words.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Priamouys">priamouys</w>
+<pc ana=",">·</pc>
+<lb n="4v.a.5"/>
+<w ana="Priamides">priamides</w>
+<pc ana=",">·</pc>
+<w ana="Nestor">nestor</w>
+<pc ana=",">·</pc>
+<w ana="Nestoros">nestoros</w>
+<pc ana=",">·</pc>
+<w ana="Nestorides">nestorides</w>
+<pc ana=",">·</pc>
+<w ana="Peleis">peleis
+<note type="script">There is an acute accent mark over the 'i'.</note>
+</w>
+<pc ana=",">·</pc>
+<w ana="Peleos">peleos<note type="script">There is an acute accent mark over the second 'e'.</note></w>
+<pc ana=",">·</pc>
+<w ana="Peleides">peleides<note type="script">There is an acute accent mark over the second 'e'.</note></w>
+<pc ana=".">·</pc>
+<lb n="4v.a.6"/>
+<w ana="illi">illi</w>
+<w ana="per">per</w>
+<w ana="synairesin">synheresin</w>
+<pc ana="quote">·</pc>
+<w ana="e" type="alphabemes">e</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<pc ana="quote">·</pc>
+<w ana="i" type="alphabemes">i</w>
+<pc ana="quote">·</pc>
+<w ana="proferunt">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+ferunt</w>
+	<pc ana="space"> </pc>
+<w ana="hanc">hanc</w>
+	<pc ana="space"> </pc>
+<w ana="penultimam">penultim
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<pc ana=".">·</pc>
+<w ana="in">in</w>
+	<pc ana="space"> </pc>
+<w ana="ei" type="alphabemes">ei</w>
+<w ana="diphthongum">dyphthon
+<lb n="4v.a.7"/>
+gum</w>
+<pc ana=",">·</pc>
+<w ana="nos">nos</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="ea">ea</w>
+<pc ana="quote">·</pc>
+<w ana="i" type="alphabemes">i</w>
+<pc ana="quote">·</pc>
+<w ana="longum">long
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="ponimus">ponimus</w>
+<pc ana=",">·</pc>
+<w ana="ut">ut</w>
+<w ana="Pelides">pelides<note type="script">There is an acute accent mark over the 'i'.</note></w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="Peleides">peleides<note type="script">There is an acute accent mark over the second 'e'.</note></w>
+<pc ana=".">ï</pc>
+<w ana="in">in</w>
+<w ana="his">his</w>
+	<pc ana="space"> </pc>
+<w ana="patronimicis">p
+<lb n="4v.a.8"/>
+tronimicis</w>
+	<pc ana="space"> </pc>
+<w ana="poetae">poetæ</w>
+	<pc ana="space"> </pc>
+<w ana="non">non</w>
+<w ana="ratione">ratione</w>
+	<pc ana="space"> </pc>
+<w ana="sed">sed</w>
+	<pc ana="space"> </pc>
+<w ana="auctoritate">auctoritate</w>
+	<pc ana="space"> </pc>
+<w ana="addiderunt">addiderunt</w>
+<pc ana="0">·</pc>
+<lb n="4v.a.9"/>
+<w ana="quasdam">quasdam</w>
+	<pc ana="space"> </pc>
+<w ana="litteras">litteras</w>
+	<pc ana="space"> </pc>
+<w ana="et">et</w>
+<w ana="abstulerunt">abstulerunt</w>
+<pc ana=".">|</pc>
+<w ana="addiderunt"><hi rend="larger">a</hi>ddiderunt</w>
+	<pc ana="space"> </pc>
+<w ana="ut">ut</w>
+<w ana="Peliades">peliades</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<lb n="4v.a.10"/>
+<w ana="Pelides">pelides</w>
+<pc ana=",">·</pc>
+<w ana="Calchodontiades">calchodontiades</w>
+<pc ana="0">·</pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="Calchodontides">calchodontides</w>
+	<pc ana="space"> </pc>
+<w ana="Athlantiades">athlantiades</w>
+<pc ana="0">·</pc>
+<lb n="4v.a.11"/>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Athlantides">athlantides</w>
+<pc ana="0">·</pc>
+<w ana="abstulerunt"><hi rend="larger">a</hi>bstulerunt</w>
+	<pc ana="space"> </pc>
+<w ana="ut">ut</w>
+<w ana="Deucalides">deucalides</w>
+<pc ana="0">·</pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="Deucalionides">deucalionides</w>
+<w ana="Scipiades">sci
+<lb n="4v.a.12"/>
+piades</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="Scipionides">scipionides</w>
+	<pc ana="space"> </pc>
+<w ana="Aenides">ænides<note type="script">There is a ^ mark over the 'n'.</note></w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="Aeneades">æneades</w>
+<pc ana="0">|</pc>
+<w ana="excipiuntur"><hi rend="larger">e</hi>xcipiuntur</w>
+	<pc ana="space"> </pc>
+<w ana="haec">hæc</w>
+	<pc ana="space"> </pc>
+<w ana="quae">quæ</w>
+	<pc ana="space"> </pc>
+<w ana="contra">c
+	<choice>
+		<abbr type="superscription">o<am>¯</am></abbr>
+		<expan>on</expan>
+	</choice>
+<lb n="4v.a.13"/>
+tra</w>
+	<pc ana="space"> </pc>
+<w ana="regulam">regul
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="producunt">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+ducunt</w>
+	<pc ana="space"> </pc>
+<w ana="penultimas">penultimas</w>
+	<pc ana="space"> </pc>
+
+<!-- ricomincia da rigo 13. La fonte è K 2.67.9 -->
 
 </ref><!-- Morelli writes that the source continues until 7r.a.22 -->
 </ab>
