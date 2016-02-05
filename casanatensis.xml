@@ -12285,7 +12285,7 @@ res</w>
 
 <w ana="gurgite">gurgite</w>
 <w ana="Nilus">nilus</w>
-<note type="source">Keil, volume 3, page 416, in the apparatus criticus writes 'Lucan. Pharsal. VIII 444'. However, the edition of A. E. Housman, 1927 has the following text for Lucanus, Bellum ciuile 8.444-447: Syrtibus hinc Libycis tuta est Aegyptos, at inde / gurgite septeno rapidus mare summouet amnis. / terra suis contenta bonis, non indiga mercis / aut Iouis: in solo tanta est fiducia Nilo (urn:cts:latinLit:phi0917.phi001:8.444-8.447). </note>
+<note type="source">Keil, volume 3, page 416, in the apparatus criticus writes 'Lucan. Pharsal. VIII 444'. The edition of A. E. Housman, 1927 has the following text for Lucanus, Bellum ciuile 8.444-447: Syrtibus hinc Libycis tuta est Aegyptos, at inde / gurgite septeno rapidus mare summouet amnis. / terra suis contenta bonis, non indiga mercis / aut Iouis: in solo tanta est fiducia Nilo (urn:cts:latinLit:phi0917.phi001:8.444-8.447). </note>
 <pc ana=",">·</pc>
 <w ana="pro">
 	<choice>
@@ -13356,7 +13356,7 @@ lum</w>
 <note type="script">The rest of line 8 and all lines until 14 are left blank here.</note>
 </ref>
 
-<ref type="source" cRef="urn:cts:latinLit:stoa0234a.stoa001:2.62.5-2.94.9">
+<ref type="source" cRef="urn:cts:latinLit:stoa0234a.stoa001:2.62.5-2.68.13">
 <lb n="4r.a.14"/>
 <w ana="absoluta"><hi rend="dropcap">a</hi>bsoluta</w>
 	<pc ana="space"> </pc>
@@ -14835,7 +14835,7 @@ a</w>
 <w ana="penultima">penultima</w>
 <lb n="4r.b.32"/>
 <w ana="breuis">breuis</w>
-<note type="source">The source (Priscian, Ars grammatica, Keil 2.65.18-2.65-18.20) has: 'Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος' desinat, genetiuus uero in 'ου' diphthongum, a paenultima breuis ante 'des' inuenitur in patronymico'.</note>
+<note type="source">The source (Priscian, Ars grammatica, Keil 2.65.18-2.65.20) has: 'Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος' desinat, genetiuus uero in 'ου' diphthongum, a paenultima breuis ante 'des' inuenitur in patronymico', but different branches of the textual tradition of Priscian have different Greek letters. Codex R ('cod. bibl. imp. Paris. 7496'), first and second hand: 'in as (with ac written above the word) uel in es (with EC written above the word) uel os (with IOC written above the word)'. Codex B ('cod. bibl. publ. Bambergensis'): 'ac uel HC uel IOC'. Codex b (same codex, second hand): 'in ac uel ī HC uel ī IOC'. Codex D ('cod. bibl. publ. Bernensis, olim Bongarsianus'): 'in as uel in es uel in ios'. Codex G ('cod. bibl. conventus Sangallensis'), first and second hand: 'in as (with 'uel es' written above the line) uel ios'. Codex K ('cod. bibl. Caroliruhensis 223'): 'in ac uel IOC uel HC'. Codex H ('cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii'): 'ac uel HC uel IOC'. Codex L ('cod. bibl. publ. Lugd. Bat. olim Gruterianus'): 'in as uel in os'. The reading 'os' appears only in codex R, but the error of the scribe of this manuscript might have arisen independently.</note>
 <pc ana=",">·</pc>
 <w ana="ut">ut</w>
 <w ana="Pelias">pelias</w>
@@ -15338,11 +15338,512 @@ ducunt</w>
 	<pc ana="space"> </pc>
 <w ana="penultimas">penultimas</w>
 	<pc ana="space"> </pc>
+<w ana="uocales">uocales</w>
+<pc ana=",">·</pc>
+<unclear reason="script" cert="medium">
+<w ana="ideo">id
+	<choice>
+		<abbr type="superscription">o<am>¯</am></abbr>
+		<expan>eo</expan>
+	</choice>
+<note type="script">I'm not sure of the meaning of the final macron abbreviation mark.</note>
+</w>
+</unclear>
+	<pc ana="space"> </pc>
+<w ana="quia">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+a</w>
+	<pc ana="space"> </pc>
+<w ana="apud">apud</w>
+	<pc ana="space"> </pc>
+<w ana="Graecos">grecos</w>
+<pc ana="0">·</pc>
+<lb n="4v.a.14"/>
+<w ana="habent">habent</w>
+	<pc ana="space"> </pc>
+<w ana="contra">contra</w>
+	<pc ana="space"> </pc>
+<w ana="regulam">regul
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="penultimam">penultim
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="diphthongum">dyphthong
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="qua">qua</w>
+<w ana="nos">nos</w>
+<pc ana="0">·</pc>
+<lb n="4v.a.15"/>
+<w ana="aut">aut</w>
+<pc ana="quote">·</pc>
+<w ana="i" type="alphabemes">i</w>
+<pc ana="quote">·</pc>
+<w ana="aut">aut</w>
+<w ana="aliam">aliam</w>
+	<pc ana="space"> </pc>
+<w ana="uocalem">uocalem</w>
+	<pc ana="space"> </pc>
+<w ana="longam">long
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="ponimus">ponimus</w>
+	<pc ana="space"> </pc>
+<w ana="ut">ut</w>
+<w ana="Oelides">oelides
+<note type="script">There is a macron sign over the 'i' to mark its long quantity. I'm not marking it because it has no graphematic value.</note>
+<note type="source">Keil chooses the reading 'Aeclides' (Priscian, Institutiones K 2.67.9, the direct source of this passage), but in the apparatus criticus he mentions the reading 'Oelides', very common in Priscian's textual tradition. This is the apparatus note for K 2.67.0: 'Aeclides] ex aeolides corr. in litura B f. recte: patron. sc. ab Aeclo, Eretriae conditore, quamvis exemplum desidero; aeolides D Hrabanus p. 33 oelides RHGLK'.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Demades">dema
+<lb n="4v.a.16"/>
+<note type="script">There is a macron sign over the 'a' to mark its long quantity.</note>
+des</w>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="Demeades">demeades</w>
+	<pc ana="space"> </pc>
+<w ana="Codrides">codrides
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Lycoorgides">lyco
+	<pc ana="space"> </pc>
+	orgides
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Lagides">lagides
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Euerides">euerides
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Lycomedides">lico
+	<pc ana="space"> </pc>
+	medi
+<lb n="4v.a.17"/>
+	des
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+<pc ana=".">·</pc>
+<w ana="feminina"><hi rend="larger">f</hi>eminina</w>
+	<pc ana="space"> </pc>
+<w ana="patronymica">patronymica</w>
+	<pc ana="space"> </pc>
+<w ana="aut">aut</w>
+<w ana="in">in</w>
+<pc ana="quote">·</pc>
+<w ana="is" type="alphabemes">is</w>
+<pc ana="quote">·</pc>
+<w ana="exeunt">exeunt</w>
+	<pc ana="space"> </pc>
+<w ana="aut">aut</w>
+	<pc ana="space"> </pc>
+<w ana="in">in</w>
+<pc ana="quote">·</pc>
+<w ana="as" type="alphabemes">as</w>
+<pc ana="quote">·</pc>
+<w ana="aut">aut</w>
+<lb n="4v.a.18"/>
+<w ana="in">in</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="ne" type="alphabemes">ne
+<note type="script">The 'n' was written above the line</note>
+</w>
+<pc ana="quote">·</pc>
+<w ana="productam">product
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<pc ana=".">·</pc>
+<w ana="fiunt"><hi rend="larger">f</hi>iunt</w>
+<w ana="in">in</w>
+<w ana="is" type="alphabemes">is</w>
+<w ana="uel">uel</w>
+	<pc ana="space"> </pc>
+<w ana="as" type="alphabemes">as</w>
+	<pc ana="space"> </pc>
+<w ana="a">a</w>
+<w ana="masculinis">masculinis</w>
+	<pc ana="space"> </pc>
+<w ana="subtracta">subtrac
+<lb n="4v.a.19"/>
+ta</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="de">de</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="ut">ut</w>
+<w ana="Priamides">priamides</w>
+	<pc ana="space"> </pc>
+<w ana="Priamis">priamis</w>
+	<pc ana="space"> </pc>
+<pc ana=",">·</pc>
+<w ana="Peliades">peliades</w>
+	<pc ana="space"> </pc>
+<w ana="Pelias">pelias</w>
+	<pc ana="space"> </pc>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="secundum">secund
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="analogiam">analogi
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+<note type="script">The grapheme 'a' and the abbreviation mark over it were written above the line.</note>
+</w>
+<lb n="4v.a.20"/>
+<w ana="Aeneades">æneades</w>
+<pc ana=".">·</pc>
+<w ana="feminino">feminino</w>
+	<pc ana="space"> </pc>
+<w ana="Aeneas">æneas</w>
+	<pc ana="space"> </pc>
+<w ana="facere">facere</w>
+	<pc ana="space"> </pc>
+<w ana="debuerat">debuerat</w>
+	<pc ana="space"> </pc>
+<w ana="sed">sed</w>
+<w ana="auctoritate">auctoritate</w>
+	<pc ana="space"> </pc>
+<w ana="dicitur">dici
+<lb n="4v.a.21"/>
+tur</w>
+	<pc ana="space"> </pc>
+<w ana="Aeneis">æneis</w>
+	<pc ana="space"> </pc>
+<w ana="feminino">f
+	<choice>
+		<abbr type="superscription">em<am>¯</am></abbr>
+		<expan>eminino</expan>
+	</choice>
+</w>
+<pc ana=".">·</pc>
+<w ana="notandum"><hi rend="larger">n</hi>otand
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="quod">quod</w>
+<w ana="si">si</w>
+	<pc ana="space"> </pc>
+<w ana="masculina">
+	<choice>
+		<abbr type="superscription">mas<am>¯</am></abbr>
+		<expan>masculina</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="patronymica">patronymica</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="i" type="alphabemes">i</w>
+<pc ana="quote">·</pc>
+<w ana="longum">longum</w>
+<lb n="4v.a.22"/>
+<w ana="habuerint">habuerint</w>
+	<pc ana="space"> </pc>
+<w ana="ante">ante</w>
+<w ana="des" type="alphabemes">des</w>
+<w ana="per">
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+</w>
+<w ana="synairesin">synheresin</w>
+<pc ana=",">·</pc>
+<w ana="apud">apud</w>
+<w ana="nos">nos</w>
+	<pc ana="space"> </pc>
+<w ana="faciunt">faciunt</w>
+	<pc ana="space"> </pc>
+<w ana="feminina">feminina</w>
+<pc ana=",">·</pc>
+<w ana="in">in</w>
+<w ana="eis" type="alphabemes">eis</w>
+<lb n="4v.a.23"/>
+<w ana="diuisas">diuisas</w>
+<pc ana=",">·</pc>
+<w ana="ut">ut</w>
+<w ana="Pelides">pelides
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w ana="Peleides">peleides</w>
+	<pc ana="space"> </pc>
+<w ana="Peleis">peleis</w>
+<pc ana=",">·</pc>
+<w ana="Aenides">ænides
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="pro">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<note type="script">There is a 'x'-shaped cross over the abbreviated word 'pro', in the same brown ink as the rest of the text.</note>
+<w ana="Aeneides">æneides
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Aeneis">æneis</w>
+<pc ana=".">·</pc>
+<w ana="in">in</w>
+<w ana="ne" type="alphabemes">ne</w>
+<lb n="4v.a.24"/>
+<w ana="desinentia">desinentia</w>
+	<pc ana="space"> </pc>
+<w ana="patronymica">patronimica</w>
+	<pc ana="space"> </pc>
+<w ana="quae">quæ</w>
+	<pc ana="space"> </pc>
+<w ana="sunt">sunt</w>
+	<pc ana="space"> </pc>
+<w ana="Iadis">iadis</w>
+	<pc ana="space"> </pc>
+<w ana="linguae">linguæ</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="i" type="alphabemes">i</w>
+<pc ana="quote">·</pc>
+<w ana="productum">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+	duct
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="habent">ha
+<lb n="4v.a.25"/>
+bent</w>
+	<pc ana="space"> </pc>
+<w ana="penultimo">penultimo</w>
+<pc ana="0">·</pc>
+<w ana="loco">loco</w>
+<pc ana=",">·</pc>
+<w ana="si">si</w>
+<w ana="eorum">eorum</w>
+	<pc ana="space"> </pc>
+<w ana="principalia">principalia</w>
+	<pc ana="space"> </pc>
+<w ana="non">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="habuerint">habuerint</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<w ana="i" type="alphabemes">i</w>
+<pc ana="quote">·</pc>
+<w ana="ut">ut</w>
+<w ana="Adrestos">adres
+<lb n="4v.a.26"/>
+tos</w>
+	<pc ana="space"> </pc>
+<w ana="Adrestine">adrestine
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="Nereus">nereus</w>
+	<pc ana="space"> </pc>
+<w ana="Nerine">nerine
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+<pc ana=",">·</pc>
+<w ana="et">et</w>
+<w ana="si">si</w>
+	<pc ana="space"> </pc>
+<w ana="eorum">eor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="principalia">principalia</w>
+	<pc ana="space"> </pc>
+<w ana="habuerint">habuerint</w>
+	<pc ana="space"> </pc>
+<pc ana="quote">·</pc>
+<lb n="4v.a.27"/>
+<w ana="i" type="alphabemes">i</w>
+<pc ana="quote">·</pc>
+<w ana="habent">habent</w>
+<pc ana="0">·</pc>
+<w ana="haec">hæc</w>
+<pc ana="quote">·</pc>
+<w ana="o" type="alphabemes">o</w>
+<pc ana="quote">·</pc>
+<w ana="productum">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+	duct
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc ana="0">·</pc>
+<w ana="ante">ante</w>
+<pc ana="quote">·</pc>
+<w ana="ne" type="alphabemes">ne</w>
+<pc ana="quote">·</pc>
+<w ana="ut">ut</w>
+<w ana="Acrisios">acrisios</w>
+	<pc ana="space"> </pc>
+<w ana="Acrisione">acrisione</w>
+<pc ana=",">·</pc>
+<w ana="ex"><hi rend="larger">e</hi>x</w>
+<w ana="quo">quo</w>
+<lb n="4v.a.28"/>
+<w ana="possessiuo">possessiuo</w>
+	<pc ana="space"> </pc>
+<w ana="Acrisioneis">acrisioneis</w>
+	<pc ana="space"> </pc>
+<w ana="colonis">colonis</w>
+	<pc ana="space"> </pc>
+<note type="source">The source (Priscian, Institutiones K 2.68.10) has the whole verse 'Acrisioneis Danae fundasse colonis' (Verg. Aen. 7.410.</note>
+<w ana="ab">ab</w>
+<w ana="Acrisionea">acrisionea
+<note type="source">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading 'ab Acrisione', but in the apparatus criticus he mentions the reading 'acrisionea' from codices H ('cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii'), and r ('cod. bibl. imp. Paris. 7496', second hand).</note>
+</w>
+	<pc ana="space"> </pc>
+<w ana="id">id</w>
+<w ana="est">est</w>
+	<pc ana="space"> </pc>
+<w ana="Danaa">danaa
+<note type="source">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading 'Danae', but in the apparatus criticus he mentions the reading 'danaa' from codices R ('cod. bibl. imp. Paris. 7496') and K ('cod. bibl. Caroliruhensis 223'), while codices D ('cod. bibl. publ. Bernensis, olim Bongarsianus') and H ('cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii') have a similar reading.</note>
+</w>
+<pc ana=".">|</pc>
+<lb n="4v.a.29"/>
+<w ana="inueniuntur">inueniuntur</w>
+	<pc ana="space"> </pc>
+<w ana="etiam">eti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc ana="space"> </pc>
+<w ana="multa">multa</w>
+	<pc ana="space"> </pc>
+<w ana="eiusdem">eiusdem</w>
+	<pc ana="space"> </pc>
+<w ana="formae">formæ</w>
+	<pc ana="space"> </pc>
+<w ana="gentilia">gentilia</w>
+	<pc ana="space"> </pc>
+<w ana="ut">ut</w>
+<w ana="Haemonis">æmonis</w>
+<lb n="4v.a.30"/>
+<w ana="Thessalis">thessalis</w>
+	<pc ana="space"> </pc>
+<w ana="Colchis">colchis</w>
+	<pc ana="space"> </pc>
+<w ana="Argolis">argolis</w>
+	<pc ana="space"> </pc>
+<w ana="Cyclas">cyclas</w>
+<pc ana=",">·</pc>
+<w ana="Ias">ias</w>
+<pc ana=",">·</pc>
+<w ana="Troias">troias
+<note type="source">Keil (Priscian, Institutiones K 2.68.13, the direct source of this passage) chooses the reading 'Troas', but in the apparatus criticus he mentions the reading 'troias' from codices D ('cod. bibl. publ. Bernensis, olim Bongarsianus'), H ('cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii') and K ('cod. bibl. Caroliruhensis 223').</note>
+</w>
+<pc ana=".">·</pc>
+<w ana="alia"><hi rend="larger">a</hi>lia</w>
+	<pc ana="space"> </pc>
+<w ana="propria">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+pria</w>
+<pc ana=",">·</pc>
+ut0
+<w ana="Bacchis">ba
+<lb n="4v.a.30"/>
+chis</w>
+	<pc ana="space"> </pc>
+<w ana="Doris">doris</w>
+	<pc ana="space"> </pc>
+<w ana="Pythias">pythias</w>0
+<pc ana=".">|</pc>
+<note type="content">The rest of the line is left blank. In this space, a second hand has written in black ink a note that should read: 'De possessiuis nominibus' (with abbreviations for 'de', 'mini' and 'bus').</note>
+</ref>
+</ab>
+
+<ab xml:id="ab018" n="De possessiuis">
+<ref type="source" cRef="urn:cts:latinLit:stoa0234a.stoa001:2.68.14-2.94.9">
+</ref><!-- Morelli writes that the source continues until 7r.a.22 -->
+</ab>
 
 <!-- ricomincia da rigo 13. La fonte è K 2.67.9 -->
 
-</ref><!-- Morelli writes that the source continues until 7r.a.22 -->
-</ab>
 </body>
 </text>
 </TEI>
