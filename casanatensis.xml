@@ -20,7 +20,7 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
-      <change type="agenda">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words:
+      <change type="agenda">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words
 </change>
       <change type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype data.enumerated. Questo significa che dovrei limitare formalmente i possibili valori con un elemento  valList?</change>
 	<change type="agenda">Nella documentazione in [sgn4] metti parole vuote con 0 o no?	</change>
@@ -46,7 +46,7 @@
 <cb n="1r.a"/>
 
 <lb n="1r.a.1"/>
-<note type="script">This title (marked as 'head') is in uncial. Another GToS for the uncial script would be necessary.</note>
+<note type="script"><span>Ciao</span>This title (marked as 'head') is in uncial. Another GToS for the uncial script would be necessary.</note>
 <w ana="adbreuiatio">adbreuiatio</w>
 	<pc ana="space"> </pc>
 <w ana="artis">artis</w>
