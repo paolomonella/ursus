@@ -430,7 +430,7 @@ function computeWordLikeElements(refElement) {
 					pbCbN = '0' + pbCbN
 				}
 				// Create link to image file
-				var imgURL = 'MS1086_img/C_' + pbCbN + '_numbers.JPG';
+				var imgURL = 'manuscript_images/C_' + pbCbN + '.JPG';
 				var divPbCbA = document.createElement('a');
 				divPbCbA.setAttribute('href', imgURL);
 				var divPbCbAText = document.createTextNode(pbCbTextString);
