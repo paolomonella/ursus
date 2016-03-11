@@ -15,7 +15,7 @@ Full documentation in `documentation.md`.
 * `jsparser.js`: the JavaScript to visualize `casanatensis.xml` in a browser
 * `sheet.xsl`: a first experiment in creating a XSLT file to visualize `casanatensis.xml` in a browser. I then abandoned XSLT and used JavaScript instead (see `jsparser.js`)
 * `stylesheet.css`: the CSS stylesheet for `transcription.html`
-* `transcription.html`: the HMTL file in which, thanks to `jsparser.js`, the user can read the edition. To view this file (and therefore the edition) in your browser, and not just its source code, go to http://www.unipa.it/paolo.monella/ursus/transcription.html
+* `transcription.html`: the HMTL file in which, thanks to `jsparser.js`, the user can read the edition. To view this file (and therefore the edition) in your browser, and not just its source code, go to http://www.unipa.it/paolo.monella/ursus/transcription.html 
 
 
 ## Other
