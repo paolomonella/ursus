@@ -126,6 +126,10 @@ div.pb, div.cb {
 	color: grey;
 }
 
+div.pb a {
+	color: white;
+}
+
 span.lb {
 	color: grey;
 	font-size:xx-small; vertical-align:bottom;

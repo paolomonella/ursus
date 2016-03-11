@@ -423,15 +423,33 @@ function computeWordLikeElements(refElement) {
 			pbCbN = e.attributes.getNamedItem('n').nodeValue;
 			if (e.tagName == 'pb') {
 				var pbCbTextString = '[Start of folio '+pbCbN+']';
+				var divPbCb  = classyElem('div', e.tagName, '');
+				// Check if the folio number has one digit only
+				var patt = /^\d\D/g;	// 2 digit chars followed by a non-digit char. E.g.: '12r'
+				if (patt.test(pbCbN)) {		// Like '2r'
+					pbCbN = '0' + pbCbN
+				}
+				// Create link to image file
+				var imgURL = 'MS1086_img/C_' + pbCbN + '_numbers.JPG';
+				var divPbCbA = document.createElement('a');
+				divPbCbA.setAttribute('href', imgURL);
+				var divPbCbAText = document.createTextNode(pbCbTextString);
+				divPbCbA.appendChild(divPbCbAText);
+				divPbCb.appendChild(divPbCbA);
+				document.getElementById('MSText').appendChild(divPbCb);
 			}
 			else if (e.tagName == 'cb') {
 				var pbCbTextString = '[Start of column ' + pbCbN.split('.')[1];
 				pbCbTextString += ' of folio ' + pbCbN.split('.')[0] + ']';
+				document.getElementById('MSText').appendChild(
+						classyElem('div', e.tagName, pbCbTextString)
+						);
 			}
-			//alert(pbCbN);
+			/* Old code: §
 			document.getElementById('MSText').appendChild(
 					classyElem('div', e.tagName, pbCbTextString)
 					);
+			*/
 		}
 
 		else if (e.tagName == 'pc' && e.attributes.getNamedItem('ana').nodeValue == 'space') {
