@@ -1,5 +1,5 @@
 Top-level hierarchy of `<text>` in the  XML/TEI file
-==================================================
+====================================================
 
 1. `<text>` has only one child
     - `<body>`, and no other child elements
@@ -346,13 +346,17 @@ In the following example, I think I recognize a sequence of graphemes, but they 
 
 If a sequence of graphemes constituting a 'graphical word' simple means a sequence of alphabemes (alphabetic letters), I'm using @type="alphabemes". For example, in folio 2r, column a, line 14, the sequence of letters 'ν', 'ο', 'μ', 'α' is said to be the archaic form of the Greek word ὄνομα ():
 
-    <w ana="νομα" type="alphabemes">
+        <w ana="νομα" type="alphabemes">
+    
+If the alphabemes are in ancient Greek, the encoding is
+
+        <w ana="α" type="alphabemes" xml:lang="grc">a</w>
 
 ### @type="ancientAbbreviation"
 
 If a sequence of graphemes constituting a 'graphical word' is an ancient Roman abbreviation, I'm using @type="ancientAbbreviation", as in the two-letter abbreviation 'gn' for Latin praenomen Gnaeus (folio 2r, column b, line 15):
 
-    <w ana="Gn" type="ancientAbbreviation">gn</w>
+        <w ana="Gn" type="ancientAbbreviation">gn</w>
 
 Please note that I'm distinguishing this case from the abbreviations of the medieval writing system, that I'm encoding with the `<choice>`, `<abbr>`, `<expan>` and `<am>` elements.
 
@@ -362,13 +366,7 @@ If the word is Greek, I am encoding it as follows:
 
         <w ana="ὄνομα" type="foreign" xml:lang="grc">onoma</w>
 
-Note that in two cases only, a Greek word is marked with `@type="alphabemes"` because it does not constitute a real word in Greek (but a word constituent in an etymological discussion):
-
-        <w ana="νομα" type="alphabemes" xml:lang="grc">noma</w>
-
-and
-
-        <w ana="ο" type="alphabemes" xml:lang="grc">o</w>
+So, the attribute `@xml:lang="grc"` may be associated with `@type="foreign"` if it is a complete word in Greek or with `@type="alphabemes"` if it is not.
 
 
 ### @type="numeral"
