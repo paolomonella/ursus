@@ -18,6 +18,7 @@ import shutil
 import zipfile
 import os
 import re
+import xml.etree.ElementTree as ET
 
 
 ###################
@@ -59,7 +60,7 @@ etPatt  =   ".*>" # Lines that [e]nd   with a [t]ag
 #utPatt  =   ".*>_" # Lines that [e]nd   with a [t]ag and a final underscore (old version: no longer in use)
 wPatt   =   "\w.*" # Regular word (no abbreviations)
 sewPatt  =   "\s+\w*\s+" # It starts and ends with whitespace, and has chars in between
-swPatt  =   "\s+\w*"    # The line starts with whitespace, then has characters §
+swPatt  =   "\s+\w*"    # The line starts with whitespace, then has characters
 ewPatt  =   "\w*\s+"    # The line   ends with whitespace, and has chars before
 
 # Different spellings between medieval and contemporary Latin
@@ -127,7 +128,7 @@ with open(inFP) as inFH:
             abAlph2 = dAbM.group(8)
             abPost = dAbM.group(9)
             #abWordLL = abPre+abAlph1+abMiddle+abAlph2+abPost # (L)inguistic (L)ayer, old version
-            abWordLL = (abPre+abAlph1+abMiddle+abAlph2+abPost).replace('æ', 'ae') # (L)inguistic (L)ayer §
+            abWordLL = (abPre+abAlph1+abMiddle+abAlph2+abPost).replace('æ', 'ae') # (L)inguistic (L)ayer
             nL='<w ana="'+abWordLL+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
             nL=nL+'\t\t<abbr type="'+abType1+'">'+reSpell(abBase1, sd)+abAmTag1+'</abbr>\n'
             nL=nL+'\t\t<expan>'+reSpell(abAlph1, sd)+'</expan>\n\t</choice>\n\t'+reSpell(abMiddle, sd)+'\n\t<choice>\n'
@@ -178,7 +179,7 @@ with open(inFP) as inFH:
             wM = re.match(wPatt, line)
             wWordGL = wWordLL = wM.group(0)  # (L)inguistic (L)ayer vs. (G)raphematic (L)ayer
             wWordGL = reSpell(wWordGL, sd)   # contemporary romae → medieval rome (et sim.)
-            wWordLL = wWordLL.replace('æ', 'ae') # medieval romæ → contemporary rome §
+            wWordLL = wWordLL.replace('æ', 'ae') # medieval romæ → contemporary rome
             nL='<w ana="'+wWordLL+'">'+wWordGL+'</w>'+wSpace
             print(nL, file=outFH)
         else:                           # Doesn't fit any regex
@@ -216,6 +217,34 @@ outputListAsTable('Lines not substituted because they start and end with whitesp
 outputListAsTable('Lines not substituted because they start with whitespace:', startWList)
 outputListAsTable('Lines not substituted because they end with whitespace:', endWList)
 outputListAsTable('Lines not substituted because they do not fit any regex:', nofitList)
+
+
+#################
+# Insert xml:id #
+#################
+
+# The namespace §
+n = '{http://www.tei-c.org/ns/1.0}'
+ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
+
+# Parse the tree
+tree = ET.parse(inFP)
+
+# Il codice seguente non funziona § perché non funziona la riga 
+#          >>>> if word.get('xml:id'): <<<< (in pratica non trova mai l'xml:id anche se c'è)
+# (e poi sembra avere vari problemi, anche se gli do un valore iniziale per idcount). Forse il namespace xml:
+# fa interferenza.
+#for word in tree.findall('.//' + n + 'w'):
+#    if word.get('xml:id'):
+#        idcount = word.get('xml:id')
+#        print('La parola ' + word.text + ' ha l\'xml:id ' + idcount)
+#    else:
+#        print('La parola ' + word.text + ' non ha xml:id ')
+#        idcount = idcount + 3
+#        word.set('xml:id', 'w' + str(idcount))
+
+# Quando risolvo il problema, devo de-commentare la riga seguente:
+#tree.write(outFP, encoding="UTF-8", method="xml")
 
 
 ############################
