@@ -24,6 +24,7 @@
       <change type="agenda">Cose da fare alla fine dell'intera trascrizione:						</change>
       <change type="agenda">	vd. se ci sono 'v', o 'ae', o grafemi non dichiarati in GToS, in grafematica		</change>
       <change type="agenda">	vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre il signif. che suggerisco nella GToS</change>
+      <change type="agenda">	check for duplicate and unordered word xml:ids, (find "_duplicate" and "_unordered")</change>
     <change type="agenda">Ricordarsi periodicamente di togliere gli spazi seguiti da 'lb'. In VIM l'andata a capo è \n</change>
     <change type="agenda">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein', e anche 'plion' seguito da 'pleion' sono da discutere in una complicata discussione critico-testuale, anche in considerazione dei testimoni del testo di Prisciano (vd. app. crit. di Keil K.2.71.11). Tra l'altro, dovrei riportare il testo dei testimoni del testo di Prisciano nella nota contenutistica a quel punto.</change>
 </revisionDesc>
