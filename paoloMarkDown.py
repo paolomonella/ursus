@@ -36,8 +36,8 @@ inBaseFN='casanatensis.xml'    # input base file name
 inFP    = c+inBaseFN    # input file path (folder + base file name)
 
 # Output 
-outBaseFN   = 'temp_'+inBaseFN   # output base file name
-outFP       = c+'temp_'+inBaseFN  # output file name path (folder + base file name)
+outBaseFN   = 'temp_'+inBaseFN   # Output Base File name
+outFP       = c+'temp_'+inBaseFN  # (temporary) Output Filename Path (folder + base file name).
 
 # Archive
 t       = '/home/ilbuonme/voluminosi/ursus/old_versions_of_xml_source_file/' # directory where old versions are archived
@@ -93,7 +93,11 @@ with open(inFP) as inFH:
         # Perform changes
         #if re.match(stPatt, line) or re.match(etPatt, line) or re.match(utPatt, line): # Old version
         if re.match(stPatt, line) or re.match(etPatt, line): # Starts or ends with XML tags
-            nL = line[:-1]
+            if (line[-1]) != '>':   # This if/else is necessary b/c otherwise it will crop the final '>' in the last 
+                                    # line, that normally is </TEI>
+                nL = line[:-1]
+            else:
+                nL = line
             print(nL, file=outFH)
         elif re.match(dAbPatt, line): # Double abbreviations
             line = line.replace('v', 'u')   # This substitution must be applied to all layers (GL, AL, LL)
@@ -223,29 +227,47 @@ outputListAsTable('Lines not substituted because they do not fit any regex:', no
 # Insert xml:id #
 #################
 
-# The namespace §
-n = '{http://www.tei-c.org/ns/1.0}'
+# The namespaces
+n    = '{http://www.tei-c.org/ns/1.0}'              # for XML/TEI
+nx   = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
 ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
 
-# Parse the tree
-tree = ET.parse(inFP)
+# Parse the tree §
+tree = ET.parse(outFP)  # It works on the temp output file and adds it xml:ids
 
-# Il codice seguente non funziona § perché non funziona la riga 
-#          >>>> if word.get('xml:id'): <<<< (in pratica non trova mai l'xml:id anche se c'è)
-# (e poi sembra avere vari problemi, anche se gli do un valore iniziale per idcount). Forse il namespace xml:
-# fa interferenza.
-#for word in tree.findall('.//' + n + 'w'):
-#    if word.get('xml:id'):
-#        idcount = word.get('xml:id')
-#        print('La parola ' + word.text + ' ha l\'xml:id ' + idcount)
-#    else:
-#        print('La parola ' + word.text + ' non ha xml:id ')
-#        idcount = idcount + 3
-#        word.set('xml:id', 'w' + str(idcount))
+# The following code block makes a list of existing IDs so it checks that new IDs do not
+# already exist in the file (to avoid duplicate IDs)
+existing_w_ids = []
+for word in tree.findall('.//' + n + 'w'):
+    if word.get(nx + 'id'):
+        existing_w_ids.append(word.get(nx + 'id'))
+
+# The following variables will be useful later to check that there are no unordered IDs
+last_existing_id = existing_w_ids[-1]
+reached_last_id  = False
+
+# If a word has no xml:id, set one
+for word in tree.findall('.//' + n + 'w'):
+    if word.get(nx + 'id'):
+        idstring = word.get(nx + 'id')
+        idcount  = int(idstring[1:])
+        if idstring == last_existing_id:
+            reached_last_id = True
+    else:
+        idcount  = idcount + 3
+        idstring = 'w' + str(idcount)
+        if idstring in existing_w_ids:  # If it's a duplicate ID, warn me and let me manage it
+            idstring = idstring + '_duplicate'
+            print('WARNING: DUPLICATE ID "' + idstring + '"')
+        if not reached_last_id and idcount > int(last_existing_id[1:]):
+            idstring = idstring + '_unordered'
+            print('WARNING: UNORDERED ID "' + idstring + '"')
+        print('Added xml:id ' + idstring + ' to word ' + word.get('ana') + '\n')
+        word.set(nx + 'id', idstring)
+        existing_w_ids.append(idstring)
 
 # Quando risolvo il problema, devo de-commentare la riga seguente:
-#tree.write(outFP, encoding="UTF-8", method="xml")
-
+tree.write(outFP, encoding="UTF-8", method="xml")
 
 ############################
 # Zip and archive old file #
