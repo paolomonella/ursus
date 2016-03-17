@@ -250,12 +250,12 @@ def print_tagging_output_to_terminal(my_tags):
 # § quando ho provato a decommentare questo, mi ha iniziato a dare un KeyError:
 #   KeyError: u'S'
 # Vd. come debuggarlo (quella chiave non c'è nel dizionario, veramente?)
-print_tagging_output_to_terminal(tags)
+#print_tagging_output_to_terminal(tags)
 
 
 #################
 # PRINT TO FILE #
 #################
 
-tree.write('/home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/lemmatized_casanatensis.xml', encoding="UTF-8", method="xml")
+tree.write('/home/ilbuonme/ursus/lemmatized_casanatensis.xml', encoding="UTF-8", method="xml")
 #tree.write('/home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/lemmatized_casanatensis2.xml', encoding="UTF-8", method="xml")
