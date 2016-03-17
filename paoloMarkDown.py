@@ -8,7 +8,7 @@
 # Warning: when writing in 'paolomarkdown', note that every string at the beginning
 # of the line that does not start with '<' or end with '>'
 # will be substituted by this script with
-# <w ana="string">string</w>
+# <w n="string">string</w>
 # So, if this is not intended, every alphanumerical string that must not be substituted
 # should start with whitespace, such as tab or space(s)
 
@@ -80,14 +80,14 @@ with open(inFP) as inFH:
         # Clear variables
         nL = ''     # Clear the nL (newLine) variable
         #wSpace= '_' # Old version
-        wSpace= '\n\t<pc ana="space"> </pc>' # Reset the wSpace variable; maybe this was not necessary
+        wSpace= '\n\t<pc n="space"> </pc>' # Reset the wSpace variable; maybe this was not necessary
 
         # Check if word has a space after it in the MSS
         if line[-2:-1] == "0":   # Words that don't have a space after them
             wSpace = ''
             line = line[:-2]  # Remove the final '0'
         else:
-            wSpace= '\n\t<pc ana="space"> </pc>'  # Words that have a space
+            wSpace= '\n\t<pc n="space"> </pc>'  # Words that have a space
             #wSpace = '_'    # Old version
 
         # Perform changes
@@ -133,7 +133,7 @@ with open(inFP) as inFH:
             abPost = dAbM.group(9)
             #abWordLL = abPre+abAlph1+abMiddle+abAlph2+abPost # (L)inguistic (L)ayer, old version
             abWordLL = (abPre+abAlph1+abMiddle+abAlph2+abPost).replace('æ', 'ae') # (L)inguistic (L)ayer
-            nL='<w ana="'+abWordLL+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
+            nL='<w n="'+abWordLL+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
             nL=nL+'\t\t<abbr type="'+abType1+'">'+reSpell(abBase1, sd)+abAmTag1+'</abbr>\n'
             nL=nL+'\t\t<expan>'+reSpell(abAlph1, sd)+'</expan>\n\t</choice>\n\t'+reSpell(abMiddle, sd)+'\n\t<choice>\n'
             nL=nL+'\t\t<abbr type="'+abType2+'">'+reSpell(abBase2, sd)+abAmTag2+'</abbr>\n'
@@ -156,9 +156,9 @@ with open(inFP) as inFH:
                 abAmTag = '<am>'+abAm+'</am>'
             abAlph = abM.group(4)
             abPost = abM.group(5)
-            #nL='<w ana="'+abPre+abAlph+abPost+'">'+reSpell(abPre, sd)+'\n\t<choice>\n' old version
+            #nL='<w n="'+abPre+abAlph+abPost+'">'+reSpell(abPre, sd)+'\n\t<choice>\n' old version
             abWordLL = abPre+abAlph+abPost # abbreviated word at Linguistic Layer
-            nL='<w ana="'+abWordLL.replace('æ', 'ae')+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
+            nL='<w n="'+abWordLL.replace('æ', 'ae')+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
             nL=nL+'\t\t<abbr type="'+abType+'">'+reSpell(abBase, sd)+abAmTag+'</abbr>\n'
             nL=nL+'\t\t<expan>'+reSpell(abAlph, sd)+'</expan>\n\t</choice>\n'+reSpell(abPost, sd)+'</w>'+wSpace
             print(nL, file=outFH)
@@ -184,7 +184,7 @@ with open(inFP) as inFH:
             wWordGL = wWordLL = wM.group(0)  # (L)inguistic (L)ayer vs. (G)raphematic (L)ayer
             wWordGL = reSpell(wWordGL, sd)   # contemporary romae → medieval rome (et sim.)
             wWordLL = wWordLL.replace('æ', 'ae') # medieval romæ → contemporary rome
-            nL='<w ana="'+wWordLL+'">'+wWordGL+'</w>'+wSpace
+            nL='<w n="'+wWordLL+'">'+wWordGL+'</w>'+wSpace
             print(nL, file=outFH)
         else:                           # Doesn't fit any regex
             nL = line[:-1]
@@ -262,7 +262,7 @@ for word in tree.findall('.//' + n + 'w'):
         if not reached_last_id and idcount > int(last_existing_id[1:]):
             idstring = idstring + '_unordered'
             print('WARNING: UNORDERED ID "' + idstring + '"')
-        print('Added xml:id ' + idstring + ' to word ' + word.get('ana') + '\n')
+        print('Added xml:id ' + idstring + ' to word ' + word.get('n') + '\n')
         word.set(nx + 'id', idstring)
         existing_w_ids.append(idstring)
 

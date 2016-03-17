@@ -452,8 +452,8 @@ function computeWordLikeElements(refElement) {
 			*/
 		}
 
-		else if (e.tagName == 'pc' && e.attributes.getNamedItem('ana').nodeValue == 'space') {
-			// <pc ana="space"> (spaces) outside of <w>
+		else if (e.tagName == 'pc' && e.attributes.getNamedItem('n').nodeValue == 'space') {
+			// <pc n="space"> (spaces) outside of <w>
 			// Graphical spaces occurring outside a <w> element
 			var myCells = makeTable(document.getElementById('MSText'), 'spaceTable');
 			myCells[0].appendChild(classySpanWithLayers(space, 'space')[0]);
@@ -461,11 +461,11 @@ function computeWordLikeElements(refElement) {
 			myCells[2].appendChild(classySpanWithLayers(space, 'space')[2]);
 		}
 
-		else if (e.tagName == 'pc' && e.attributes.getNamedItem('ana').nodeValue != 'space') {
+		else if (e.tagName == 'pc' && e.attributes.getNamedItem('n').nodeValue != 'space') {
 			// <pc> including punctuation
 			
 			// Corresponding modern punctuation (for the LL)
-			var modernPunctString = e.attributes.getNamedItem('ana').nodeValue;
+			var modernPunctString = e.attributes.getNamedItem('n').nodeValue;
 			modernPunctString = modernPunctString.replace('quote', '"').replace('question', '?');
 			modernPunctString = modernPunctString.replace('0', '');
 
@@ -517,7 +517,7 @@ function computeWordLikeElements(refElement) {
 					unclearSpan.appendChild(wordify(e.childNodes[zy]));
 				}
 				if (e.childNodes[zy].tagName=='pc' &&
-						e.childNodes[zy].attributes.getNamedItem('ana')
+						e.childNodes[zy].attributes.getNamedItem('n')
 						.nodeValue=='space') {
 					// Graphical space occurring inside a XML/TEI <unclear> element
 					// In this case, the <table class="spaceTable"> will be appended
@@ -594,7 +594,7 @@ function wordify(word) {
 	}
 
 	// Extract the LL
-	var LLText = document.createTextNode(word.attributes.getNamedItem('ana').nodeValue);
+	var LLText = document.createTextNode(word.attributes.getNamedItem('n').nodeValue);
 	var LLSpan = document.createElement('span');    // Create a <span> node. The hierarchy in the DOM
 		// will be: <table class="wordTable"><tr><td class="LLCell"><span class="LL word">
 	LLSpan.setAttribute('class', 'LL word');        // Set attribute class
@@ -653,8 +653,8 @@ function wordify(word) {
 			cells[2].appendChild(classyElem('span', 'lb lbWithinWord', lbTextString));
 		}
 	
-		else if (n.tagName == 'pc' && n.attributes.getNamedItem('ana').nodeValue == 'space') {
-			// <pc ana="space"> (spaces) within <w>
+		else if (n.tagName == 'pc' && n.attributes.getNamedItem('n').nodeValue == 'space') {
+			// <pc n="space"> (spaces) within <w>
 			// 	Yes, sometimes there is a (graphical) space within a (linguistic) word.
 			// 	This means that the scribe considers it to be two words, while contemporary
 			// 	conventions consider it one word. Example:
