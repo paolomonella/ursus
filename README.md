@@ -9,7 +9,7 @@ Full documentation in `documentation.md`.
 * `AToS.csv`: the table of signs of the Alphabetic Layer of the edition
 * `GToS.csv`: the table of signs of the Graphematic Layer of the edition (a key part of this edition)
 * `casanatensis.xml`: the source XML/TEI transcription of the manuscript (the heart of this edition)
-* `lemmatized_casanatensis.xml`: in this version of `casanatensis.xml`, each `<w>` (word) element has a `@lemma` and an `@ana` element to identify it as, for example, the genitive singular of lemma _homo, -inis_ (this is a temporary file as of March 2016: when I'll review the result of the automatic lemmatization, this will become the only version)
+* `lemmatized_casanatensis.xml`: in this version of `casanatensis.xml`, each `<w>` (word) element has a `@lemma` and an `@ana` element to identify it as, for example, the genitive singular of lemma _homo, -inis_ (this is a temporary file as of March 20, 2016: when I'll review the result of the automatic lemmatization, this will become the only version)
 
 ## Visualization
 
