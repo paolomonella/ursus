@@ -68,9 +68,10 @@ for i in range(len(tags)):
             e = e + 1
             #pass
 
-print(str(c) + ' words not parsed b/c they already were')
-print(str(d) + ' words parsed')
-print(str(e) + ' words unparsable')
+print('\nLemmatization/PoS tagging result:')
+print('\t - ' + str(c) + ' words not parsed b/c they had been previously parsed')
+print('\t - ' + str(d) + ' words parsed')
+print('\t - ' + str(e) + ' words unparsable')
 
 
 ###############################
@@ -78,7 +79,7 @@ print(str(e) + ' words unparsable')
 ###############################
 
 # This 'explanation' of the PoS tags is based on
-#/home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
+# /home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
 
 tagsetlist = [
         #1 Flexional-Type
@@ -204,6 +205,7 @@ tagsetlist = [
             'X' : 'Author mistake, or bad reading?',
             '-' : 'None',
             },
+        #11 Graphical-Variation
         {
             '1' : 'Baseform',
             '2' : 'Graphical variation A',
