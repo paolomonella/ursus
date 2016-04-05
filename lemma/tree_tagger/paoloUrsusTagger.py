@@ -59,7 +59,7 @@ for i in range(len(tags)):
         if ursus_words[i].get('type') not in non_parsable_word_types:
             #ursus_words[i].set('n',     ursus_words[i].get('n'))
             if tags[i].split('\t')[0] != ursus_words[i].get('n').lower():
-                print('WARNING: check modern spelling (@n) of the word with xml:id ' + ursus_words[i].get(nx + 'id'))
+                print('\nWARNING: check modern spelling (@n) of the word with xml:id ' + ursus_words[i].get(nx + 'id'))
             ursus_words[i].set('ana',   tags[i].split('\t')[1])
             ursus_words[i].set('lemma', tags[i].split('\t')[2])
             d = d + 1

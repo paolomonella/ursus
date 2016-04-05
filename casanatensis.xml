@@ -17628,7 +17628,7 @@ mæ</w>
 	<pc n="space"> </pc>
 <w n="Eolici" xml:id="w16245">eolici</w>
 	<pc n="space"> </pc>
-<w n="Αργεῖος" xml:id="w16248">argeios</w>
+<w n="Αργεῖος" type="foreign" xml:id="w16248" xml:lang="grc">argeios</w>
 	<pc n="space"> </pc>
 <w n="Argiuus" xml:id="w16251">argiuus</w>
 <pc n=".">·</pc>
