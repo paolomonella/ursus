@@ -17471,7 +17471,7 @@ bus</w>
 <lb n="5r.a.16" />
 <w n="corripitur" xml:id="w16080">corripitur</w>
 <pc n="|">·</pc>
-<w n="lyrcius" xml:id="w16083">lyrcius
+<w n="Lyrcius" xml:id="w16083">lyrcius
 <note type="script">A macron over the 'i' marks its long quantity.</note>
 </w>
 	<pc n="space"> </pc>
@@ -17490,7 +17490,7 @@ bus</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w n="lyrceus" xml:id="w16095">lyrceus
+<w n="Lyrceus" xml:id="w16095">lyrceus
 <note type="script">A macron over the 'e' marks its long quantity.</note>
 </w>
 	<pc n="space"> </pc>
