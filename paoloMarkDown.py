@@ -36,8 +36,8 @@ inBaseFN='casanatensis.xml'    # input base file name
 inFP    = c+inBaseFN    # input file path (folder + base file name)
 
 # Output 
-outBaseFN   = 'temp_'+inBaseFN   # Output Base File name
-outFP       = c+'temp_'+inBaseFN  # (temporary) Output Filename Path (folder + base file name).
+outBaseFN   = 'temp_'+inBaseFN      # Output Base File name
+outFP       = c+outBaseFN           # (temporary) Output Filename Path (folder + base file name).
 
 # Archive
 t       = '/home/ilbuonme/voluminosi/ursus/old_versions_of_xml_source_file/' # directory where old versions are archived
@@ -258,11 +258,11 @@ for word in tree.findall('.//' + n + 'w'):
         idstring = 'w' + str(idcount)
         if idstring in existing_w_ids:  # If it's a duplicate ID, warn me and let me manage it
             idstring = idstring + '_duplicate'
-            print('WARNING: DUPLICATE ID "' + idstring + '"')
+            print('\nWARNING: DUPLICATE ID "' + idstring + '"')
         if not reached_last_id and idcount > int(last_existing_id[1:]):
             idstring = idstring + '_unordered'
-            print('WARNING: UNORDERED ID "' + idstring + '"')
-        print('Added xml:id ' + idstring + ' to word ' + word.get('n') + '\n')
+            print('\nWARNING: UNORDERED ID "' + idstring + '"')
+        print(idstring + '_' + word.get('n'), end=' ')
         word.set(nx + 'id', idstring)
         existing_w_ids.append(idstring)
 
