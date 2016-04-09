@@ -1,6 +1,6 @@
 # ursus
 
-Digital scholarly edition of the IX century Latin grammatical works found in manuscript Casanatensis 1086 and mostly written by Ursus from Benevento.
+An experimental digital scholarly edition of the _De nominibus_, a IX century Latin grammatical work by Ursus Beneventanus, found in manuscript Casanatensis 1086.
 
 Full documentation in `documentation.md`.
 
