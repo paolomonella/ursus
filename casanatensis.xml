@@ -17638,7 +17638,166 @@ mæ</w>
 <w n="et" xml:id="w16257">et</w>
 <w n="Argeus" xml:id="w16260">argeus</w>
 <pc n=".">·</pc>
-<!-- K.2.74.5-->
+<w n="in" xml:id="w16263"><hi rend="larger">i</hi>n</w>
+<w n="Latinis" xml:id="w16266">latinis</w>
+	<pc n="space"> </pc>
+<w n="etiam" xml:id="w16269">eti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w16272">i</w>
+<pc n="quote">·</pc>
+<w n="longum" xml:id="w16275">long
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="penultimum" xml:id="w16278">penultim
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w16281">est</w>
+<pc n="0">·</pc>
+<w n="ante" xml:id="w16284">ante</w>
+	<pc n="space"> </pc>
+<lb n="5r.a.23" />
+<w n="u" type="alphabemes" xml:id="w16287">u</w>
+<pc n="quote">·</pc>
+<w n="loco" xml:id="w16290">loco</w>
+	<pc n="space"> </pc>
+<w n="consonantis" xml:id="w16293">consonantis</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w16296">ut</w>
+<w n="nominatiuus" xml:id="w16299">nominatiuus</w>
+	<pc n="space"> </pc>
+<w n="genetiuus" xml:id="w16302">genitiuus</w>
+	<pc n="space"> </pc>
+<w n="optatiuus" xml:id="w16305">optatiuus</w>
+<note type="script">There is a macron over the last 'i' in 'nominatiuus', in 'genitiuus' and in 'optatiuus' to mark its long quantity.</note>
+<lb n="5r.a.24" />
+<w n="et" xml:id="w16308">et</w>
+<w n="cetera" xml:id="w16311">cetera</w>
+	<pc n="space"> </pc>
+<w n="quorum" xml:id="w16314">quor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="alia" xml:id="w16317">alia</w>
+	<pc n="space"> </pc>
+<w n="a" xml:id="w16320">a</w>
+<w n="nominibus" xml:id="w16323">nominibus</w>
+	<pc n="space"> </pc>
+<w n="alia" xml:id="w16326">alia</w>
+	<pc n="space"> </pc>
+<w n="a" xml:id="w16329">a</w>
+<w n="uerbis" xml:id="w16332">uerbis</w>
+	<pc n="space"> </pc>
+<w n="deriuantur" xml:id="w16335">deriuantur</w>
+<pc n=".">|</pc>
+<lb n="5r.a.25" />
+<w n="etiam" xml:id="w16338"><hi rend="larger">e</hi>ti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w16341">et</w>
+<w n="in" xml:id="w16344">in</w>
+<w n="uerbis" xml:id="w16347">uerbis</w>
+	<pc n="space"> </pc>
+<w n="praeteriti" xml:id="w16350">preteriti</w>
+	<pc n="space"> </pc>
+<w n="perfecti" xml:id="w16353">
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+fecti</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w16356">et</w>
+<w n="plusquamperfecti" xml:id="w16359">plus
+	<pc n="space"> </pc>
+	qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+	<pc n="space"> </pc>
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+fecti</w>
+	<pc n="space"> </pc>
+<w n="temporis" xml:id="w16362">temporis</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w16365">i</w>
+<pc n="quote">·</pc>
+<lb n="5r.a.26" />
+<w n="siue" xml:id="w16368">siue</w>
+	<pc n="space"> </pc>
+<w n="penultimum" xml:id="w16371">penultim
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="seu" xml:id="w16374">seu</w>
+<w n="ante" xml:id="w16377">ante</w>
+	<pc n="space"> </pc>
+<w n="penultimum" xml:id="w16380">penultim
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<note type="script">There seems to be a sign between 'penultimum' and 'sit', marking a graphical insertion, but I don't understand its meaning.</note>
+<pc n="space"> </pc>
+<w n="sit" xml:id="w16383">sit</w>
+<w n="corripitur" xml:id="w16386">corripitur</w>
+	<pc n="space"> </pc>
+<w n="si" xml:id="w16389">si</w>
+<w n="non" xml:id="w16392">non</w>
+<unclear cert="low" reason="faded">
+<w n="tum" xml:id="w16395">t
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+</unclear>
+<lb n="5r.a.27" />
+<w n="secutum" xml:id="w16398">secut
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="fuerit" xml:id="w16401">fuerit</w>
+	<pc n="space"> </pc>
+<w n="u" type="alphabemes" xml:id="w16404">u</w>
+<pc n="quote">·</pc>
+<w n="loco" xml:id="w16407">loco</w>
+	<pc n="space"> </pc>
+<w n="consonantis" xml:id="w16410">consonantis</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w16413">ut</w>
+<!-- MS 5v rigo 27 a metà rigo;
+     fonte K 2.74.13 -->
 
 </ref>
 </ab>
