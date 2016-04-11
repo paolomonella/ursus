@@ -17466,7 +17466,7 @@ bus</w>
 <w n="primitiuus" xml:id="w16074">primitiuus</w>
 <pc n="0">·</pc>
 <w n="Chius" xml:id="w16077">chius
-<note type="script">This word has a u-like sign over the 'i' to mark its short quantity.</note>
+<note type="script">This word has a 'u'-shaped sign over the 'i' to mark its short quantity.</note>
 </w>
 <lb n="5r.a.16" />
 <w n="corripitur" xml:id="w16080">corripitur</w>
@@ -17601,7 +17601,7 @@ tur</w>
 	<pc n="space"> </pc>
 <w n="ei" type="alphabemes" xml:id="w16215">ei</w>
 	<pc n="space"> </pc>
-<w n="dyphthongus" xml:id="w16218">dyphthongus</w>
+<w n="diphthongus" xml:id="w16218">dyphthongus</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w16221">in</w>
 <pc n="quote">·</pc>
@@ -17796,8 +17796,255 @@ fecti</w>
 <w n="consonantis" xml:id="w16410">consonantis</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w16413">ut</w>
-<!-- MS 5v rigo 27 a metà rigo;
-     fonte K 2.74.13 -->
+<w n="audii" xml:id="w16416">audii
+<note type="script">This word has a 'u'-shaped sign over the first 'i' to mark its short quantity.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="audiisti" xml:id="w16419">audi
+	<pc n="space"> </pc>
+	isti
+<note type="script">There is a 'u'-shaped sign over the first 'i' to mark its short quantity.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="audieram" xml:id="w16422">audi
+<lb n="5r.a.28" />
+	er
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+<note type="script">There is a 'u'-shaped sign over the 'i' to mark its short quantity.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="audieras" xml:id="w16425">audieras
+<note type="script">There is a 'u'-shaped sign over the 'i' to mark its short quantity.</note>
+</w>
+<pc n=".">.</pc>
+<w n="sequente" xml:id="w16428"><hi rend="larger">s</hi>equente</w>
+	<pc n="space"> </pc>
+<w n="uero" xml:id="w16431">uero</w>
+<pc n="quote">·</pc>
+<w n="u" type="alphabemes" xml:id="w16434">u</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="loco" xml:id="w16437">loco</w>
+	<pc n="space"> </pc>
+<w n="consonantis" xml:id="w16440">consonantis</w>
+	<pc n="space"> </pc>
+<w n="ubique" xml:id="w16443">ubi
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="producitur" xml:id="w16446">pro
+<lb n="5r.a.29" />
+ducitur</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w16449">i</w>
+<pc n="quote">·</pc>
+<w n="ut" xml:id="w16452">ut</w>
+<w n="audiui" xml:id="w16455">audiui
+<note type="script">There is a macron sign over the first 'i' to mark its long quantity.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w16458">et</w>
+<w n="reliqua" xml:id="w16461">reliqua</w>
+<pc n=".">·</pc>
+<w n="solet" xml:id="w16464"><hi rend="larger">s</hi>olet</w>
+	<pc n="space"> </pc>
+<w n="conuerti" xml:id="w16467">conuerti</w>
+<pc n="quote">·</pc>
+<w n="ει" type="alphabemes" xml:id="w16470">ei
+<note type="source">The source (Priscian Ars Grammatica K.2.74.17) has 'ai' here, which would be more consistent with the following example of Greek Ἀχαιός. Keil's apparatus says that 'ai' is the reading of r, d and h, while 'ae' is the reading of R, D and H (see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum), which means that in all those three manuscripts a second hand has corrected 'ae' to 'ai'.</note>
+</w>
+<w n="diphthongus" xml:id="w16473">dyphthon
+<lb n="5r.a.30" />
+gus</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w16476">in</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w16479">i</w>
+<pc n="quote">·</pc>
+<w n="longum" xml:id="w16482">long
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="interpositum" xml:id="w16485">interposit
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+<note type="content">This is certainly a scribe error for 'interposito'. Compare the source Priscian Ars Grammatica K.2.74.18: 'interposita similiter u pro consonante'. As the 'u' in the manuscript has been added at a later time above the line, the original text was 'in i longum interpositum', where 'interpositum' modified 'i'. The correction restored the missing 'u' but forgot to change 'interpositum' to 'interposito' to make 'u interposito' an absolute ablative.</note>
+</w>
+<add place="above">
+<pc n="quote">·</pc>
+<w n="u" type="alphabemes" xml:id="w16488">u</w>
+<pc n="quote">·</pc>
+</add>
+<w n="pro" xml:id="w16491">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="consonante" xml:id="w16494">consonante</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w16497">ut</w>
+<w n="Achiuus" xml:id="w16500">achiuus</w>
+	<pc n="space"> </pc>
+<w n="pro" xml:id="w16503">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="Ἀχαιός" type="foreign" xml:id="w16506" xml:lang="grc">achae
+<lb n="5r.a.31" />
+os</w>
+<pc n=",">·</pc>
+<w n="cui" xml:id="w16509">cui
+<note type="content">Probably a scribal error for 'cum', which is the reading in the source (Priscian Ars Grammatica K.2.74.18).</note>
+</w>
+	<pc n="space"> </pc>
+<w n="contra" xml:id="w16512">contra</w>
+	<pc n="space"> </pc>
+<w n="Dori" xml:id="w16515">dori</w>
+<pc n="quote">·</pc>
+<w n="ει" type="alphabemes" xml:id="w16518" xml:lang="grc">ei</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="in" xml:id="w16521">in</w>
+	<pc n="space"> </pc>
+<w n="αι" type="alphabemes" xml:id="w16524" xml:lang="grc">ae
+<note type="content">The manuscript has the Latin diphthong 'ae'. Among the manuscripts of Priscianus, according to Keil's apparatus, H and g (which is the second hand of G) have the Latin diphthong 'ae', while h (the second hand of H) has corrected it to the Greek diphthong 'ai'.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="diphthongum" xml:id="w16527">dyphthong
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="uertunt" xml:id="w16530">uertunt</w>
+<pc n=",">·</pc>
+<w n="ut" xml:id="w16533">ut</w>
+<w n="αἴ" type="foreign" xml:id="w16536" xml:lang="grc">ai</w>§
+<lb n="5r.a.32" />
+<w n="κέ" type="foreign" xml:id="w16539" xml:lang="grc">ke</w>
+	<pc n="space"> </pc>
+<w n="pro" xml:id="w16542">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="εἴ" type="foreign" xml:id="w16545" xml:lang="grc">ei</w>
+<w n="κέ" type="foreign" xml:id="w16548" xml:lang="grc">ke</w>
+	<pc n="space"> </pc>
+<w n="αἴθε" type="foreign" xml:id="w16551" xml:lang="grc">aithe</w>
+	<pc n="space"> </pc>
+<w n="pro" xml:id="w16554">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="εἴθε" type="foreign" xml:id="w16557" xml:lang="grc">eithe</w>
+<pc n=".">.</pc>
+<w n="in" xml:id="w16560"><hi rend="larger">i</hi>n</w>
+	<pc n="space"> </pc>
+<w n="Latino" xml:id="w16563">latino</w>
+	<pc n="space"> </pc>
+<w n="sermone" xml:id="w16566">sermone</w>
+	<pc n="space"> </pc>
+<w n="non" xml:id="w16569">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="solum" xml:id="w16572">sol
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="his" xml:id="w16575">his</w>
+<lb n="5r.a.33" />
+<w n="sed" xml:id="w16578">sed</w>
+	<pc n="space"> </pc>
+<w n="etiam" xml:id="w16581">eti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="propriis" xml:id="w16584">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+priis</w>
+	<pc n="space"> </pc>
+<w n="quibusdam" xml:id="w16587">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+	busd
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="Latinorum" xml:id="w16590">latinor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="utimur" xml:id="w16593">utimur</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w16596">in</w>
+	<pc n="space"> </pc>
+<w n="us" type="alphabemes" xml:id="w16599">us</w>
+<pc n="quote">·</pc>
+<w n="uel" xml:id="w16602">uel</w>
+	<pc n="space"> </pc>
+<w n="a" type="alphabemes" xml:id="w16605">a</w>
+<pc n="quote">·</pc>
+<w n="uel" xml:id="w16608">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<lb n="5r.a.34" />
+<w type="alphabemes" n="um">um</w>
+<pc n="quote">·</pc>
+pur,a,2,am,
+antecedente
+<pc n="quote">·</pc>
+<w type="alphabemes" n="ri">ri</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+ut0
+<w n="Catilinarius">catilinarius</w>
+	<pc n="space"> </pc>
+<!-- MS 5r rigo 34. Fonte: K.74.rigo 23/24 -->
+
+
+
 
 </ref>
 </ab>
