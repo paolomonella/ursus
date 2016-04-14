@@ -18840,8 +18840,7 @@ poribus</w>
 	<pc n="space"> </pc>
 <w n="antesignanus" xml:id="w17436">ante
 <lb n="5r.b.25" />
-<w n="signanus" xml:id="w17439">signanus</w>
-	<pc n="space"> </pc>
+	signanus
 <note type="script">There is a macron sign over the second 'a' to mark its long quantity.</note>
 </w>
 <pc n=".">·</pc>
@@ -18883,8 +18882,7 @@ poribus</w>
 	<pc n="space"> </pc>
 <w n="constat" xml:id="w17496">con
 <lb n="5r.b.27" />
-<w n="stat" xml:id="w17499">stat</w>
-	<pc n="space"> </pc>
+	stat
 <note type="content">Scribal error: 'constat' for 'constant' (with subject 'alia', neuterplural).</note>
 </w>
 	<pc n="space"> </pc>
@@ -19121,21 +19119,32 @@ dictæ</w>
 <w n="nomina" xml:id="w17784">nomina</w>
 <lb n="5r.b.37" />
 <w n="quae" xml:id="w17787">quæ</w>
-plurali
-desinunt
-in0
-<w type="alphabemes" n="ae">e</w>
+<w n="plurali" xml:id="w17790">plurali</w>
+	<pc n="space"> </pc>
+<w n="desinunt" xml:id="w17793">desinunt</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w17796">in</w>
+<w n="ae" type="alphabemes" xml:id="w17799">e</w>
 <pc n="quote">·</pc>
-dyphthong,u,2,um,
-uel
-in
-<w type="alphabemes" n="a">a</w>
+<w n="dyphthongum" xml:id="w17802">dyphthong
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w17805">uel</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w17808">in</w>
+	<pc n="space"> </pc>
+<w n="a" type="alphabemes" xml:id="w17811">a</w>
 <pc n="quote">·</pc>
-similiter
+<w n="similiter" xml:id="w17814">similiter</w>
+	<pc n="space"> </pc>
 <lb n="5r.b.38" />
-deriuatiua0
+<w n="deriuatiua" xml:id="w17817">deriuatiua</w>
 <pc n=",">·</pc>
-This line only has one word, at the right end.
+<note type="script">This line only has one word, at the right end.</note>
 
 <pb n="5v" />
 
@@ -19143,8 +19152,7 @@ This line only has one word, at the right end.
 
 <lb n="5v.a.1" />
 
-<!-- ricomincia con inizio folio 5v, però controlla se 'deriuatiua' è ripetuto in quel folio, e che significato ha il punto al mezzo cui ho dato temporaneamente @n=",".
-     Fonte: circa rigo K.2.77.17 -->
+
 
 </ref>
 </ab>
