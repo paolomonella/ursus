@@ -19738,19 +19738,111 @@ nata</w>
 <w n="ut" xml:id="w18462">ut</w>
 <w n="auster" xml:id="w18465">auster</w>
 	<pc n="space"> </pc>
-<w n="austrinus">austrinus
-<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+<w n="austrinus" xml:id="w18468">austrinus
 </w>
 	<pc n="space"> </pc>
-<!-- rigo 23 del MS
-     fonte p. 79 rigo 3-4 -->
-
-
-
-
-
-
-
+<w n="adulter" xml:id="w18471">adulter</w>
+	<pc n="space"> </pc>
+<w n="adulterinus" xml:id="w18474">adul
+<lb n="5v.a.24" />
+<w n="terinus" xml:id="w18477">terinus</w>
+	<pc n="space"> </pc>
+</w>
+<pc n=",">·</pc>
+<w n="mancus" xml:id="w18480">mancus</w>
+	<pc n="space"> </pc>
+<w n="mancinus" xml:id="w18483">mancinus</w>
+<pc n=",">·</pc>
+<w n="Regi,u,2,um," xml:id="w18486">regi,u,2,um,</w>
+	<pc n="space"> </pc>
+<w n="Reginus" xml:id="w18489">reginus</w>
+<note type="script">There is a macron sign over the last 'i' in 'austrinus', 'adulterinus', 'mancinus', 'reginus' to mark its long quantity.</note>
+<pc n=",">·</pc>
+<w n="carus" xml:id="w18492">carus</w>
+	<pc n="space"> </pc>
+<w n="carinus" xml:id="w18495">carinus</w>
+<pc n=".">·</pc>
+<note type="source">The example 'carus carinus' is not in the source (Priscianus Ars Grammatica, K.2.79.7.</note>
+<w n="excipiuntur" xml:id="w18498">ex
+<lb n="5v.a.25" />
+cipiuntur</w>
+	<pc n="space"> </pc>
+<w n="ab" xml:id="w18501">ab</w>
+<w n="humo" xml:id="w18504">humo</w>
+	<pc n="space"> </pc>
+<w n="humanus" xml:id="w18507">humanus</w>
+<pc n=",">·</pc>
+<w n="a" xml:id="w18510">a</w>
+<w n="mundo" xml:id="w18513">mundo</w>
+	<pc n="space"> </pc>
+<w n="mundanus" xml:id="w18516">mundanus</w>
+<pc n=",">·</pc>
+<w n="et" xml:id="w18519">et</w>
+<unclear cert="high" reason="script">
+<w n="ea" xml:id="w18522">ea</w>
+</unclear>
+<unclear cert="high" reason="script">
+<w n="quae" xml:id="w18525">
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+</unclear>
+<note type="script">I'm not sure whether I found this abbreviation of 'ea quae' before.</note>
+<lb n="5v.a.26" />
+<w n="ut" xml:id="w18528">ut</w>
+<w n="praedictum" xml:id="w18531">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+	dict
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w18534">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
+<w n="in" xml:id="w18537">in</w>
+<w n="cus" type="alphabemes" xml:id="w18540">cus</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w18543">et</w>
+<w n="culus" type="alphabemes" xml:id="w18546">culus</w>
+<w n="desinunt" xml:id="w18549">desinunt</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w18552">et</w>
+<w n="ultra" xml:id="w18555">ultra</w>
+	<pc n="space"> </pc>
+<w n="duas" xml:id="w18558">duas</w>
+	<pc n="space"> </pc>
+<w n="syllabas" xml:id="w18561">syllabas</w>
+	<pc n="space"> </pc>
+<w n="habent" xml:id="w18564">ha
+<lb n="5v.a.27" />
+bent</w>
+<pc n=".">·</pc>
+<w n="nam" xml:id="w18567"><hi rend="larger">n</hi>
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<w n="quia" xml:id="w18570">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+a</w>
+	<pc n="space"> </pc>
+<!-- MS rigo 27 inizio
+     fonte p. 79 rigo 10 -->
 </ref>
 </ab>
 </body>
