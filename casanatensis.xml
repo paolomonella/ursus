@@ -19745,9 +19745,8 @@ nata</w>
 	<pc n="space"> </pc>
 <w n="adulterinus" xml:id="w18474">adul
 <lb n="5v.a.24" />
-<w n="terinus" xml:id="w18477">terinus</w>
+terinus</w>
 	<pc n="space"> </pc>
-</w>
 <pc n=",">·</pc>
 <w n="mancus" xml:id="w18480">mancus</w>
 	<pc n="space"> </pc>
@@ -19841,8 +19840,82 @@ bent</w>
 	</choice>
 a</w>
 	<pc n="space"> </pc>
-<!-- MS rigo 27 inizio
-     fonte p. 79 rigo 10 -->
+<w n="a" xml:id="w18573">a</w>
+<w n="Taurominio" xml:id="w18576">taurominio</w>
+	<pc n="space"> </pc>
+<w n="Taurominitanus" xml:id="w18579">taurominitanus</w>
+	<pc n="space"> </pc>
+<w n="dicitur" xml:id="w18582">di
+	<choice>
+		<abbr type="superscription">ctr<am>¯</am></abbr>
+		<expan>citur</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="Graecos" xml:id="w18585">grecos</w>
+<lb n="5v.a.28" />
+<w n="sequuntur" xml:id="w18588">sequuntur</w>
+<pc n=".">·</pc>
+<w n="qui" xml:id="w18591">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+</w>
+<w n="tauromenites" xml:id="w18594">tauromenites</w>
+	<pc n="space"> </pc>
+<w n="dicunt" xml:id="w18597">dicunt</w>
+<pc n=".">·</pc>
+<w n="gentilia" xml:id="w18600"><hi rend="larger">g</hi>entilia</w>
+	<pc n="space"> </pc>
+<w n="apud" xml:id="w18603">apud</w>
+	<pc n="space"> </pc>
+<w n="graecos" xml:id="w18606">grecos</w>
+<lb n="5v.a.29" />
+<w n="in" xml:id="w18609">in</w>
+<w n="της" type="alphabemes" xml:id="w18612" xml:lang="grc">tes</w>
+<w n="desinentia" xml:id="w18615">desinentia</w>
+	<pc n="space"> </pc>
+<w n="mutata" xml:id="w18618">mutata</w>
+	<pc n="space"> </pc>
+<w n="ης" type="alphabemes" xml:id="w18621" xml:lang="grc">es</w>
+<pc n="quote">·</pc>
+<w n="in" xml:id="w18624">in</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="a" type="alphabemes" xml:id="w18627">a</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w18630">et</w>
+	<pc n="space"> </pc>
+<w n="accepta" xml:id="w18633">accepta</w>
+	<pc n="space"> </pc>
+<w n="nus" type="alphabemes" xml:id="w18636">nus</w>
+<w n="faciunt" xml:id="w18639">faciunt</w>
+	<pc n="space"> </pc>
+<w n="deriuatiua" xml:id="w18642">de
+<lb n="5v.a.30" />
+riuatiua</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w18645">ut</w>
+<w n="μητροπολὶτης" type="foreign" xml:id="w18648" xml:lang="grc">metropolites</w>
+	<pc n="space"> </pc>
+<w n="metropolitanus" xml:id="w18651">metropolitanus</w>
+	<pc n="space"> </pc>
+<pc n="0">:
+</pc>
+<add place="above">
+<pc n="0">:</pc>
+<w n="Νεαπολίτες" type="foreign" xml:id="w18654" xml:lang="grc">neapolites</w>
+<pc n="quote">·</pc>
+</add>
+<note type="script">The ':' punctuation sign is used inline to mark the point in which the added word should be inserted in the text, and repeated in the interlinear space just before the added word.</note>
+<w n="Neapolitanus" xml:id="w18657">neapolita
+<lb n="5v.a.31" />
+nus</w>
+<pc n=".">·</pc>
+
+
+
 </ref>
 </ab>
 </body>
