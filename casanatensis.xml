@@ -17051,12 +17051,12 @@ tinentia</w>
 	<pc n="space"> </pc>
 <w n="habent" xml:id="w15660">habent</w>
 	<pc n="space"> </pc>
-<w n="penultimam0" xml:id="w15663">penultim
+<w n="penultimam" xml:id="w15663">penultim
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
-0</w>
+</w>
 <pc n="quote">·</pc>
 <w n="ae" type="alphabemes" xml:id="w15666">ae</w>
 <pc n="quote">·</pc>
@@ -19629,7 +19629,7 @@ lucanus</w>
 <note type="tech">This word is a very interesting use case for the encoding of abbreviations. The macron that crosses the long ascending trait of the 'd' might well be interpreted as being not only over the 'd', but also over the first grapheme. The latter, however, already is an abbreviation, since it is a 'ŋ' brevigraph normally meaning 'prae' ('pre' with monophthongation). So the first grapheme would be involved in two different abbreviations: it is a brevigraph per se, but it is also part of the abbreviation involving the whole word (marked by the macron above it). However, in my JavaScript code handling the XML/TEI code, I did not think of handling a case in which an 'abbr' element is child of another 'abbr' element. Also, the macron is mostly over the 'd', so I am encoding this as though the macron was over the 'd' only.</note>
 </w>
 	<pc n="space"> </pc>
-<w n="habent0" xml:id="w18327">habent0</w>
+<w n="habent" xml:id="w18327">habent</w>
 <pc n="0">·</pc>
 <w n="ante" xml:id="w18330">an
 <lb n="5v.a.19" />
@@ -19913,8 +19913,216 @@ riuatiua</w>
 <lb n="5v.a.31" />
 nus</w>
 <pc n=".">·</pc>
-
-
+<w n="i" type="alphabemes" xml:id="w18660"><hi rend="larger">i</hi></w>
+<pc n="quote">·</pc>
+<w n="habent" xml:id="w18663">h
+	<choice>
+		<abbr type="superscription">ab<am>¯</am></abbr>
+		<expan>abent</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ante" xml:id="w18666">ante</w>
+<pc n="quote">·</pc>
+<w n="nus" type="alphabemes" xml:id="w18669">nus</w>
+<pc n="quote">·</pc>
+<w n="omnia" xml:id="w18672">omnia</w>
+	<pc n="space"> </pc>
+<w n="quae" xml:id="w18675">quæ</w>
+	<pc n="space"> </pc>
+<w n="a" xml:id="w18678">a</w>
+<w n="nominibus" xml:id="w18681">nomini
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="mutorum" xml:id="w18684">mutor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="animalium" xml:id="w18687">ani
+<lb n="5v.a.32" />
+	mali
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="cuiuscumque" xml:id="w18690">cuiusc
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="declinationis" xml:id="w18693">declinationis</w>
+	<pc n="space"> </pc>
+<w n="derivantur" xml:id="w18696">deribantur
+<note type="script">Scribal error ('b' for 'u') due to the contemporary pronuntiation.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="quamuis" xml:id="w18699">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+uis</w>
+	<pc n="space"> </pc>
+<w n="alia" xml:id="w18702">alia</w>
+<lb n="5v.a.33" />
+<w n="ex" xml:id="w18705">ex</w>
+<w n="eis" xml:id="w18708">eis</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w18711">in</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="a" type="alphabemes" xml:id="w18714">a</w>
+<pc n="quote">·</pc>
+<w n="desinant" xml:id="w18717">desinant</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w18720">ut</w>
+<w n="aper" xml:id="w18723">a
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="aprinus" xml:id="w18726">aprinus
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+<pc n=",">·</pc>
+<w n="ceruus" xml:id="w18729">cerbus</w>
+	<pc n="space"> </pc>
+<w n="ceruinus" xml:id="w18732">cerbinus</w>
+	<pc n="space"> </pc>
+<note type="script">Both in 'ceruus' and in 'ceruinus' there is a scribal error ('b' for 'u') due to the contemporary pronuntiation.</note>
+<pc n=",">·</pc>
+<w n="canis" xml:id="w18735">ca
+<lb n="5v.a.34" />
+nis</w>
+	<pc n="space"> </pc>
+<w n="caninus" xml:id="w18738">caninus</w>
+<pc n=",">·</pc>
+<w n="formica" xml:id="w18741">formica</w>
+	<pc n="space"> </pc>
+<w n="formicinus" xml:id="w18744">formicinus</w>
+<pc n=",">·</pc>
+<w n="ouis" xml:id="w18747">ouis</w>
+	<pc n="space"> </pc>
+<w n="ouinus" xml:id="w18750">ouinus</w>
+<pc n=",">·</pc>
+<w n="sus" xml:id="w18753">sues
+<note type="content">Based on the context of the other examples, this word should be the nominative singular of 'sus, suis'. However, the manuscript clearly has 'sues'. Rather than considering this a nominative plural (which would be in contrast with the other examples), I tend to consider this a scribal error for 'sus' or for the alternative rare form of nominative singular 'suis' (Prud. adv. Symm. 2, 813).</note>
+</w>
+	<pc n="space"> </pc>
+<w n="suinus" xml:id="w18756">suinus</w>
+<pc n=".">·</pc>
+<lb n="5v.a.35" />
+<w n="nam" xml:id="w18759"><hi rend="larger">n</hi>
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<w n="ouilla" xml:id="w18762">ouilla</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w18765">et</w>
+<w n="suilla" xml:id="w18768">suilla</w>
+	<pc n="space"> </pc>
+<w n="diminutiua" xml:id="w18771">diminutiua</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w18774">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+<pc n=".">·</pc>
+<w n="in" xml:id="w18777"><hi rend="larger">i</hi>n</w>
+<w n="nus" type="alphabemes" xml:id="w18780">nus</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w18783">et</w>
+<w n="na" type="alphabemes" xml:id="w18786">na</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w18789">et</w>
+<w n="num" xml:id="w18792">n
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n="quote">·</pc>
+<w n="desinentia" xml:id="w18795">desi
+<lb n="5v.a.36" />
+nentia</w>
+	<pc n="space"> </pc>
+<w n="si" xml:id="w18798">si</w>
+<w n="faciunt" xml:id="w18801">faciunt</w>
+	<pc n="space"> </pc>
+<w n="diminutiua" xml:id="w18804">diminutiua</w>
+	<pc n="space"> </pc>
+<w n="abiecta" xml:id="w18807">abiecta</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="n" type="alphabemes" xml:id="w18810">n</w>
+<pc n="quote">·</pc>
+<w n="assumunt" xml:id="w18813">assumunt</w>
+	<pc n="space"> </pc>
+<w n="duas" xml:id="w18816">duas</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<lb n="5v.a.37" />
+<w n="l" type="alphabemes" xml:id="w18819">l</w>
+<pc n="quote">·</pc>
+<w n="ut" xml:id="w18822">ut</w>
+<w n="unus" xml:id="w18825">unus</w>
+	<pc n="space"> </pc>
+<w n="ullus" xml:id="w18828">ullus</w>
+<pc n=",">·</pc>
+<w n="una" xml:id="w18831">una</w>
+	<pc n="space"> </pc>
+<w n="ulla" xml:id="w18834">ulla</w>
+<pc n=",">·</pc>
+<w n="unum" xml:id="w18837">un
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ullam" xml:id="w18840">ull
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<pc n=",">|</pc>
+<w n="bonus" xml:id="w18843">bonus</w>
+	<pc n="space"> </pc>
+<w n="bellus" xml:id="w18846">bellus</w>
+<pc n=".">|</pc>
+<w n="inueniuntur" xml:id="w18849"><hi rend="larger">i</hi>nue
+<lb n="5v.a.38" />
+niuntur</w>
+<pc n="0">·</pc>
+<w n="deriuatiua" xml:id="w18852">deriuatiua</w>
+<pc n="0">·</pc>
+<w n="in" xml:id="w18855">in</w>
+<w n="tinus" type="alphabemes" xml:id="w18858">tinus</w>
+	<pc n="space"> </pc>
+<w n="penultima" xml:id="w18861">penultima</w>
+	<pc n="space"> </pc>
 
 </ref>
 </ab>
