@@ -38,7 +38,7 @@
 <head n="Title of the work" xml:id="ab001">
 <ref cRef="unknown" type="source">
 
-<pb n="1r" />
+<pb n="1r" facs="manuscript_images/C_01r.JPG"/>
 
 <cb n="1r.a" />
 
@@ -2263,7 +2263,7 @@ tes</w>
 <w n="ponunt" xml:id="w1650">ponunt</w>
 </unclear>
 
-<pb n="1v" />
+<pb n="1v" facs="manuscript_images/C_01v.JPG"/>
 
 <cb n="1v.a" />
 
@@ -4645,7 +4645,7 @@ prie</w>
 <w n="custodia" xml:id="w3675">custodia</w>
 	<pc n="space"> </pc>
 
-<pb n="2r" />
+<pb n="2r" facs="manuscript_images/C_02r.JPG"/>
 
 <cb n="2r.a" />
 
@@ -7106,7 +7106,7 @@ cus</w>
 <w n="Donatus" xml:id="w5748">donatus</w>
 	<pc n="space"> </pc>
 
-<pb n="2v" />
+<pb n="2v" facs="manuscript_images/C_02v.JPG"/>
 
 <cb n="2v.a" />
 
@@ -9295,7 +9295,7 @@ quod</w>
 	<pc n="space"> </pc>
 
 
-<pb n="3r" />
+<pb n="3r" facs="manuscript_images/C_03r.JPG"/>
 
 <cb n="3r.a" />
 
@@ -11450,7 +11450,7 @@ ngeni</w>
 	<pc n="space"> </pc>
 <w n="secundae" xml:id="w9972">secundæ</w>
 
-<pb n="3v" />
+<pb n="3v" facs="manuscript_images/C_03v.JPG"/>
 
 <cb n="3v.a" />
 
@@ -13127,7 +13127,7 @@ lum</w>
 
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.62.4-2.62.4" type="source">
 
-<pb n="4r" />
+<pb n="4r" facs="manuscript_images/C_04r.JPG"/>
 
 <cb n="4r.a" />
 
@@ -15029,7 +15029,7 @@ uertit</w>
 	<pc n="space"> </pc>
 <w n="facere" xml:id="w13563">facere</w>
 
-<pb n="4v" />
+<pb n="4v" facs="manuscript_images/C_04v.JPG"/>
 
 <cb n="4v.a" />
 
@@ -17002,7 +17002,7 @@ tinentia</w>
 </w>
 <pc n=",">·</pc>
 
-<pb n="5r" />
+<pb n="5r" facs="manuscript_images/C_05r.JPG"/>
 
 <cb n="5r.a" />
 
@@ -19147,7 +19147,7 @@ dictæ</w>
 <pc n=",">·</pc>
 <note type="script">This line only has one word, at the right end.</note>
 
-<pb n="5v" />
+<pb n="5v" facs="manuscript_images/C_05v.JPG"/>
 
 <cb n="5v.a" />
 
