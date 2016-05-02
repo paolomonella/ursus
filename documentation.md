@@ -1,5 +1,5 @@
 Top-level hierarchy of `<text>` in the  XML/TEI file
-==================================================
+====================================================
 
 1. `<text>` has only one child
     - `<body>`, and no other child elements
@@ -346,13 +346,17 @@ In the following example, I think I recognize a sequence of graphemes, but they 
 
 If a sequence of graphemes constituting a 'graphical word' simple means a sequence of alphabemes (alphabetic letters), I'm using @type="alphabemes". For example, in folio 2r, column a, line 14, the sequence of letters 'ν', 'ο', 'μ', 'α' is said to be the archaic form of the Greek word ὄνομα ():
 
-    <w ana="νομα" type="alphabemes">
+        <w ana="νομα" type="alphabemes">
+    
+If the alphabemes are in ancient Greek, the encoding is
+
+        <w ana="α" type="alphabemes" xml:lang="grc">a</w>
 
 ### @type="ancientAbbreviation"
 
 If a sequence of graphemes constituting a 'graphical word' is an ancient Roman abbreviation, I'm using @type="ancientAbbreviation", as in the two-letter abbreviation 'gn' for Latin praenomen Gnaeus (folio 2r, column b, line 15):
 
-    <w ana="Gn" type="ancientAbbreviation">gn</w>
+        <w ana="Gn" type="ancientAbbreviation">gn</w>
 
 Please note that I'm distinguishing this case from the abbreviations of the medieval writing system, that I'm encoding with the `<choice>`, `<abbr>`, `<expan>` and `<am>` elements.
 
@@ -362,13 +366,7 @@ If the word is Greek, I am encoding it as follows:
 
         <w ana="ὄνομα" type="foreign" xml:lang="grc">onoma</w>
 
-Note that in two cases only, a Greek word is marked with `@type="alphabemes"` because it does not constitute a real word in Greek (but a word constituent in an etymological discussion):
-
-        <w ana="νομα" type="alphabemes" xml:lang="grc">noma</w>
-
-and
-
-        <w ana="ο" type="alphabemes" xml:lang="grc">o</w>
+So, the attribute `@xml:lang="grc"` may be associated with `@type="foreign"` if it is a complete word in Greek or with `@type="alphabemes"` if it is not.
 
 
 ### @type="numeral"
@@ -651,7 +649,7 @@ The 'ancient punctuation' found in the manuscript is part of the Graphemic Layer
 	We would probably use quotes in a contemporary edition.
 - In this code, the '·' belongs to the GL and the 
 	string 'quote' (the value of the @ana attribute)
-refers to the LL. I'm using a string ('quote')
+	refers to the LL. I'm using a string ('quote')
 	because I cannot use the " quote sign as value of an 
 	attribute in XML.
 
@@ -666,7 +664,7 @@ where the value of the @ana attribute (belonging to the LL) records the contempo
 
 This is a full example of markup of a word simply followed by a space (no ancient punctuation) in the manuscript, but after which we would insert a comma in a contemporary 'readable' edition:
 
-    <w ana="orationis">oraŧonis</w><pc ana=","></pc>
+    <w ana="orationis">orationis</w><pc ana=","></pc>
 
 Note that in the code above the contemporary comma is placed before the underscore (meaning a space in the manuscript), but this is completely arbitrary and is just meant to simplify the further processing of the source file.
 
@@ -675,22 +673,17 @@ Note that in the code above the contemporary comma is placed before the undersco
 
 `<pc ana=","></pc>`
 
-- Contemporary comma
+- Contemporary comma (short pause or syntactic distinction)
 
 
 `<pc ana=".">.</pc>`
 
-- Contemporary full stop
-
-
-`<pc ana="0">·</pc>`
-
-- In a contemporary edition, we would include no punctuation sign here
+- Contemporary full stop (long/strong pause or syntactic distinction)
 
 
 `<pc ana="quote">·</pc>`
 
-- Contemporary quotes
+- This marks the case in which a middle dot is used (before, after or before and after the word) by the scribe to mark that a word is quoted. This is often used for individual alphabetical letters ('alphabemes') or morphemes.
 
 
 `<pc ana="question">~</pc>`
@@ -698,12 +691,17 @@ Note that in the code above the contemporary comma is placed before the undersco
 - Contemporary question mark
 
 
+`<pc ana="0">·</pc>`
+
+- In a contemporary edition, we would include no punctuation sign here. If the punctuation sign has a specific meaning not falling in the cases listed here, a `<note>` element is added next to the `<pc>` element to explain the specific value
+
+
 Note that the ancient sign that I'm encoding as "," often has the value of a contemporary full stop. Generally, there is no easily predictable correspondance between the medieval punctuation and the contemporary one.
 
 
 ## Allographs and graphemes for punctuation
 
-### Low lot
+### Low dot
 The punctuation sign that I am encoding with Unicode "." seems to have two allographs:
 
 1. simple, just a dot (see fullstop.png)
