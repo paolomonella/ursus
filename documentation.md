@@ -190,9 +190,9 @@ Summarizing:
 	- Its content belongs to the LL.
 
 
-## A problematic abbreviation for 'quod'
+## Abbreviations that might have different encodings
 
-In 1r, column 2, line 6 (and probably also in lines 2[?]), there is a peculiar abbreviation for 'quod': a 'q' is followed by a 'd' whose ascending trait is crossed by a horizontal stroke. This could be interpreted and encoded in two ways:
+In 1r, column 2, line 6 and elsewhere, there is a peculiar abbreviation for 'quod': a 'q' is followed by a 'd' whose ascending trait is crossed by a horizontal stroke. This could be interpreted and encoded in two ways:
 
 (a) the 'd with horizontal stroke' is a peculiar grapheme (that might be encoded with Unicode 'ð'), so the code would be:
 
@@ -214,6 +214,7 @@ In 1r, column 2, line 6 (and probably also in lines 2[?]), there is a peculiar a
 
 Both interpretations would make sense, and in fact the problem itself is merely 'digital', i.e. arises from the desire of identifying discrete objects within the continuum of handwriting. I am accepting interpretation (b) in this edition.
 
+The same issue arises for abbreviations such as 'uel', abbreviated as 'ul' with a horizontal stroke crossing the ascending trait of grapheme 'l', 'habet' or 'habent' abbreviated as 'hab' with a horizontal stroke crossing the ascending trait of 'b' and others. In these cases, how many graphemes are actually covered (i.e. marked) by the horizontal stroke, that might be interpreted as a macron? For example, in the case of 'ul', one could say that only the 'l', or that both 'ul, are covered/marked by the macron, as the latter often spans over a part of the 'u'. In fact, this is a conventional choice.
 
 
 Alphabetic layer (AL)
@@ -242,23 +243,22 @@ In this case, i.e. when the philologist/encoder thinks that the computer can/sho
 
 This is mostly the case whith abbreviations (base grapheme plus abbreviation mark, or brevigraph), so the explicit encoding of the AL here is done by means of `<choice>`, `<abbr>` and `<expan>`), as explained above in the _Abbreviations_ section.
 
-<!--
-In these cases, to explicitly provide the alphabetic value of that grapheme, the @ana attribute [sgn] within a <g> tag provides the specific sequence of alphabemes corresponding to that grapheme:
 
-`<g ana="#c #uv #m">¢</g>`
-
-This means that in this instance the grapheme whose id is "¢" in column "Graphemes" of the GToS corresponds to a sequence of three alphabemes, whose IDs in column "Alphabemes" of the AToS are "c", "uv" and "m".
--->
 
 ## Is the explicit encoding of an Alphabetic Layer really necessary?
 
 The very distinction of an Alphabetic Layer (AL) of the digital edition from the Graphematic Layer (GL) is based on the assumption that 'case 2' exists, i.e. that the alphabetic value of a grapheme is not always computable based on the implied rules of the manuscript writing system.
 
+An example might be the abbreviation constituted by the graphemes 'hab' with a horizontal stroke crossing the ascending trait of 'b' (which may be considered a macron spanning over 'a' and 'b'). This combination of graphemes may have the alpbabetic meaning 'habet' (e.g. in folio 5v, column b, line 21) or 'habent' (e.g. in folio 5v, column a, line 31).
+
+Another example: the abbreviation constituted by graphemes 'cor' with a macron over 'o' and 'r' has the alphabetic meaning 'correptum' (e.g. in folio 5v, column b, line 21) or the alphabetic meaning of 'correpta' (e.g. in folio 5r, column a, verse 20). In the latter case, in fact, the interpretation could be both 'correpta' or 'correptum' (as the name of alphabetic letters is sometimes feminine, sometimes neuter in the text), but the expression "ponunt 'e' correptam ante 'us'" occurring right before in the same sentence makes me decide for 'correpta' in this case. Anyways, I think it is clear thatthe specific alphabetic meaning of that abbreviation is not unambiguously determined by the sequence of graphemes at the GL.
+
+
 ## XML/TEI encoding strategy for the AL
 
 In my previous <a href="http://www1.unipa.it/paolo.monella/lincei/edition.html">Vespa Project</a>, I had used an extremely granular encoding strategy (at the grapheme level, by means of `<g>` elements each with an `@xml:id`) to explicitly encode the alphabetic meaning of every grapheme.
 
-However, in the overwhelming majority of cases, 'case 1' applies, therefore from a practical viewpoint the encoding strategy of my Vespa Project seems excessive and unnecessary. For the same reason, also personalizing the XML/TEI to introduce tags to explicitly distinguish the two levels (a strategy similar to that applied by the <a href="http://menota.org/tekstarkiv.xml">Menota Archive</a> for other purposes) seems unnecessary: software can compute and output a complete transcription at the Alphabetic Layer based on the mechanism described in 'case 1' (i.e. by using the XML/TEI transcription and the GToS file) and based on the markup described in 'case 2' above.
+However, in the overwhelming majority of cases, 'case 1' applies, therefore from a practical viewpoint the encoding strategy of my Vespa Project seems excessive and unnecessary. For the same reason, also personalizing the XML/TEI to introduce tags to explicitly distinguish the two levels (a strategy similar to that applied by the <a href="http://m enota.org/tekstarkiv.xml">Menota Archive</a> for other purposes) seems unnecessary: software can compute and output a complete transcription at the Alphabetic Layer based on the mechanism described in 'case 1' (i.e. by using the XML/TEI transcription and the GToS file) and based on the markup described in 'case 2' above.
 
 
 
