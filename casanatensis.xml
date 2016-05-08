@@ -20859,10 +20859,8 @@ rinus</w>
 <pc n=".">·</pc>
 <w n="Anagnia" xml:id="w19578">anagnia</w>
 	<pc n="space"> </pc>
+<note type="tech" xml:id="brevigraph-switch-1">Up to this point of the transcription, for brevigraphs I used the convention of always encoding them with the elements <tag>choice</tag>, <tag>abbr</tag> and <tag>expan</tag>. From this point on, I will use a different, though equivalent, encoding convention for brevigraph: 1) when their aphabetical meaning will be the standard one encoded in the Graphematic Table of signs (i.e. in column 'Alphabemes' of file GToS.csv), I will just encode them as text content within the <tag>w</tag> element, as in the following 'quia'.</note>
 <w n="quia" xml:id="w19581">¢a</w>
-	<pc n="space"> </pc>
-
-
 
 
 

@@ -98,8 +98,15 @@ In addition, the following also belongs to the graphemic layer:
 
 
 
+
+
+
+
 Abbreviations
 =============
+
+
+## Abbreviations involving abbreviation marks `<am>`
 
 In this edition, the TEI `<abbr>`, `<am>` and `<expan>` elements are used with a semantics still compatible with that declared in the TEI P5 Guidelines, but more specific. In the following code:
 
@@ -114,7 +121,7 @@ In this edition, the TEI `<abbr>`, `<am>` and `<expan>` elements are used with a
 2. the content of `<expan>` belongs to the LL;
 3. any other content of `<w>` that is not included in `<choice>` belongs, as usual, to the GL.
 
-The value "superscription" for attribute @type of `<abbr>` is suggested in the TEI Guidelines, but in the present edition it has a more specialized meaning. It means that the content of `<am>` (which is always a child of `<abbr>` in the present edition) is a grapheme that is written over all the graphemes included in `<abbr>` but not included in `<am>`. In the previous example, the grapheme ` (looking like a modern accent) is written over the grapheme 'u'. This code also means that the alphabetic meaning of the abbreviation is constituted by the alphabemes 'u', 'm'.
+The value "superscription" for attribute @type of `<abbr>` is suggested in the TEI Guidelines, but in the present edition it has a more specialized meaning. It means that the content of `<am>` (which is always a child of `<abbr>` in the present edition) is a grapheme that is written over all the graphemes included in `<abbr>` but not included in `<am>`. In the previous example, the grapheme ¯ (a macron) is written over the grapheme 'u'. This code also means that the alphabetic meaning of the abbreviation is constituted by the alphabemes 'u', 'm'.
 
 Likewise, the following code:
 
@@ -164,7 +171,9 @@ This encoding convention is useful because:
 
 1. abbreviation marks (like macrons) are often written not only over the last grapheme, but over the whole word or over specific graphemes in the middle of the word. With this encoding convention, it is possible to mark exactly over which graphems the abbreviation mark expands (a similar convention, with @type="underscription", could be use to mark other grapheme/abbreviation mark graphic combinations);
 
-2. some abbreviations marks do not have a fixed alphabetic value. For example, in the Beneventan script a macron (spanning over one or more graphemes) may have a specific alphabetic expansion (e.g. ḡ is usually 'gen') or mark a generic abbreviation (ā for 'aut', a macron over p for 'prae', a macron over the three graphemes 'mia' for 'misericordia', etc.). For example, a macron spanning over graphemes 'oms' may mean 'omnis' (as in folio 3r, column a, line 36) or 'omnes' (as in folio 3r, column b, line 6 and in line 10 of the same column). This encoding convention allows us to provide the software with information on both layers (graphemic and alphabetic) in these cases.
+2. some graphemes, such as the abbreviation marks, do not have a fixed alphabetic value. Thus the alphabetic value of a combination of graphemes constituting an abbreviation is not always computable based on the implied rules of the manuscript writing system. See section _Is the explicit encoding of an Alphabetic Layer really necessary?_ for a more detailed discussion on this and some examples.
+
+
 
 Summarizing:
 
@@ -217,6 +226,11 @@ Both interpretations would make sense, and in fact the problem itself is merely 
 The same issue arises for abbreviations such as 'uel', abbreviated as 'ul' with a horizontal stroke crossing the ascending trait of grapheme 'l', 'habet' or 'habent' abbreviated as 'hab' with a horizontal stroke crossing the ascending trait of 'b' and others. In these cases, how many graphemes are actually covered (i.e. marked) by the horizontal stroke, that might be interpreted as a macron? For example, in the case of 'ul', one could say that only the 'l', or that both 'ul, are covered/marked by the macron, as the latter often spans over a part of the 'u'. In fact, this is a conventional choice.
 
 
+
+
+
+
+
 Alphabetic layer (AL)
 =====================
  
@@ -241,24 +255,32 @@ Other graphemes, however, do not have a _standard_ alphabetic value in the GToS,
 
 In this case, i.e. when the philologist/encoder thinks that the computer can/should not generate the alphabetic value of a grapheme from the grapheme/alphabeme mapping in the GToS, the alphabetic value is provided explicitly in the encoding.
 
-This is mostly the case whith abbreviations (base grapheme plus abbreviation mark, or brevigraph), so the explicit encoding of the AL here is done by means of `<choice>`, `<abbr>` and `<expan>`), as explained above in the _Abbreviations_ section.
+This is mostly the case whith abbreviations (base grapheme plus an abbreviation mark such as a macron), so the explicit encoding of the AL here is done by means of `<choice>`, `<abbr>` and `<expan>`), as explained above in the _Abbreviations_ section.
 
 
 
 ## Is the explicit encoding of an Alphabetic Layer really necessary?
 
-The very distinction of an Alphabetic Layer (AL) of the digital edition from the Graphematic Layer (GL) is based on the assumption that 'case 2' exists, i.e. that the alphabetic value of a grapheme is not always computable based on the implied rules of the manuscript writing system.
+The very distinction of an Alphabetic Layer (AL) of the digital edition from the Graphematic Layer (GL) is based on the assumption that 'case 2' exists, i.e. that the alphabetic value of a grapheme is not always computable based on the implied rules of the manuscript writing system. These are some examples taken from the manuscript:
 
-An example might be the abbreviation constituted by the graphemes 'hab' with a horizontal stroke crossing the ascending trait of 'b' (which may be considered a macron spanning over 'a' and 'b'). This combination of graphemes may have the alpbabetic meaning 'habet' (e.g. in folio 5v, column b, line 21) or 'habent' (e.g. in folio 5v, column a, line 31).
 
-Another example: the abbreviation constituted by graphemes 'cor' with a macron over 'o' and 'r' has the alphabetic meaning 'correptum' (e.g. in folio 5v, column b, line 21) or the alphabetic meaning of 'correpta' (e.g. in folio 5r, column a, verse 20). In the latter case, in fact, the interpretation could be both 'correpta' or 'correptum' (as the name of alphabetic letters is sometimes feminine, sometimes neuter in the text), but the expression "ponunt 'e' correptam ante 'us'" occurring right before in the same sentence makes me decide for 'correpta' in this case. Anyways, I think it is clear thatthe specific alphabetic meaning of that abbreviation is not unambiguously determined by the sequence of graphemes at the GL.
+- The same abbreviation (graphemes 'oms' with a macron spanning over them) occurs twice in folio 3r, column a: in line 10 it has the alphabetic meaning of 'omnes', while in line 36 it has the alphabetic meaning of 'omnis'. It is therefore necessary to use the encoding convention explained in section _Abbreviations_ (use of tags `<choice>`, `<abbr>`, `<expan>` and `<am>`) to explicitly encode both the Graphemic Layer (GL) and the Alphabetic Layer (AL), thus providing the software with information on both layers.
 
+- The abbreviation constituted by the graphemes 'hab' with a horizontal stroke crossing the ascending trait of 'b' (which may be considered a macron spanning over 'a' and 'b') may have the alpbabetic meaning 'habet' (e.g. in folio 5v, column b, line 21) or 'habent' (e.g. in folio 5v, column a, line 31).
+
+- The abbreviation constituted by graphemes 'cor' with a macron over 'o' and 'r' has the alphabetic meaning 'correptum' (e.g. in folio 5v, column b, line 21) or the alphabetic meaning of 'correpta' (e.g. in folio 5r, column a, verse 20). In the latter case, in fact, the interpretation could be both 'correpta' or 'correptum' (as the name of alphabetic letters is sometimes feminine, sometimes neuter in the text), but the expression "ponunt 'e' correptam ante 'us'" occurring right before in the same sentence makes me decide for 'correpta' in this case. Anyways, I think it is clear that the specific alphabetic meaning of that abbreviation is not unambiguously determined by the sequence of graphemes at the GL.
+
+§§§
 
 ## XML/TEI encoding strategy for the AL
 
 In my previous <a href="http://www1.unipa.it/paolo.monella/lincei/edition.html">Vespa Project</a>, I had used an extremely granular encoding strategy (at the grapheme level, by means of `<g>` elements each with an `@xml:id`) to explicitly encode the alphabetic meaning of every grapheme.
 
 However, in the overwhelming majority of cases, 'case 1' applies, therefore from a practical viewpoint the encoding strategy of my Vespa Project seems excessive and unnecessary. For the same reason, also personalizing the XML/TEI to introduce tags to explicitly distinguish the two levels (a strategy similar to that applied by the <a href="http://m enota.org/tekstarkiv.xml">Menota Archive</a> for other purposes) seems unnecessary: software can compute and output a complete transcription at the Alphabetic Layer based on the mechanism described in 'case 1' (i.e. by using the XML/TEI transcription and the GToS file) and based on the markup described in 'case 2' above.
+
+
+
+
 
 
 
@@ -376,6 +398,10 @@ Example:
         <w ana="x" type="numeral">x</w>
 
 With my first experiments with [TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/), for this word I'm getting `@lemma="num.~rom."`
+
+
+
+
 
 
 
@@ -523,8 +549,9 @@ The following encoding convention, though simpler, is not a viable option becaus
 
     <ab xml:id="ab001" cRef="urn:cts:latinLit:phi0914.phi0011.perseus-lat1:4.2"> 
 
-CTS/CITE references
-===================
+
+
+## CTS/CITE references
 
 The CTS/CITE Architecture will be used to link sections of the manuscript to their ancient sources. These are some references.
 
@@ -547,6 +574,11 @@ The CTS/CITE Architecture will be used to link sections of the manuscript to the
 - @cRef
 <http://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-att.cReferencing.html>
 (only allowed in `<gloss>`, `<ptr>`, `<ref>`, `<term>` (strangely, not in `<link>`!)
+
+
+
+
+
 
 
 Markup not referring to a specific layer
@@ -607,15 +639,20 @@ Markup not referring to a specific layer
 	- It mostly includes notes on unclear passages. It has a @type attribute that can have the following values: "script" (notes on palaeographical aspects or on illegible or hardly readable passages); "source" (on the text sources), "content" (on the text content); "tech" (on technological issues of this digital edition).
 
 
-Contemporary punctuation
-========================
+
+
+
+
+
+Punctuation
+===========
 
 If we created a modern 'readable' edition of the text, we would
 
-1. ignore, accept or change the value of the manuscript puctuation marks and
-2. add contemporary punctuation not present in the manuscript.
+1. ignore, accept or change the value of the manuscript puctuation marks (or 'ancient punctuation') and
+2. add 'contemporary punctuation' not present in the manuscript.
 
-The 'ancient punctuation' found in the manuscript is part of the Graphemic Layer (GL), while the 'contemporary punctuation' could be (tentatively) considered as part of the Linguistic Layer (LL).
+The 'ancient punctuation' found in the manuscript is part of the Graphemic Layer (GL), while the 'contemporary punctuation' could be (tentatively) considered as part of the Alphabetic Layer (AL) and of the Linguistic Layer (LL).
 
 
 ## Case 1: manuscript punctuation (GL)
@@ -721,6 +758,10 @@ It is often hard to distinguish between the middle dot (encoded here with Unicod
 
 
 
+
+
+
+
 Ligatures
 =========
 
@@ -744,8 +785,12 @@ For a list of the ligatures that I encode as in case 1 and those that I encode a
 
 
 
-Graphemes or not?
-=================
+
+
+
+
+Grapheme or not?
+================
 
 The glyphs that do not carry 'graphemic value' (as defined above) are not included in our transcription. This section discusses some encoding choices in this respect.
 
@@ -813,6 +858,10 @@ As stated in the 'Ligatures' section of this documentation, this choice is merel
 
 
 
+
+
+
+
 Layer differentiation: encoding strategies
 ==========================================
 
@@ -834,6 +883,11 @@ the Unicode characters 'con' and 'ructe' are assigned to the graphemic layer (as
 To encode this differentiation explicitly (which would be ideal), one attribute such as @layer should be appended to all elements. However, there is no single attribute with this meaning in the TEI P5, so a schema customization would be required to introduce a @layer attribute. For the time being, however, this is not necessary because this documentation specifies what specific markup refers to a specific layer. For example, the `<hi>` element refers to the graphic layer, while the @ana attribute in the `<w>` element refers to the linguistic layer.
 
 
+
+
+
+
+
 Boundaries between words
 ========================
 
@@ -853,6 +907,11 @@ Note that the 'contemporary word boundaries' and the 'manuscript word boundaries
 marks that the manuscript has 'idest' (with no space in between), while a contemporary edition would write 'id est'.
 
 A 'diplomatic edition' output (representing the graphemic layer) therefore should show 'idest', while a 'readable edition' output (representing the linguistic layer) should show 'id est'.
+
+
+
+
+
 
 
 Line breaks
