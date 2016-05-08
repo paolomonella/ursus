@@ -57,7 +57,7 @@ Graphemic Layer (GL)
 
 All textual content of the `<text>` (i.e. everything Unicode character descendant of `<text>` that is not markup), represents a grapheme, i.e. a glyph that has graphemic value as described above -- except for the textual content of those elements that are said to include alphabemes (not graphemes) in the "Alphabetic Layer (AL)" section of this documentation, such as `<expan>`.
 
-All other textual content therefore refers to the graphemic system of the manuscript. Every Unicode character of this kind must be understood as a pointer referring to the grapheme identified by the same Unicode character in column "Graphemes" of the "Graphemic Table of Signs" (GToS).
+All other textual content therefore refers to the graphemic system of the manuscript. Every Unicode character of this kind must be understood as a pointer referring to the grapheme identified by the same Unicode character in column "Graphemes" of the "Graphemic Table of Signs" (file GToS.csv).
 
 No Unicode character is allowed within the `<text>` element of the file of the Graphemic Later transcription
 if it does noet occur in column "Graphemes" of the GToS --
@@ -174,7 +174,6 @@ This encoding convention is useful because:
 2. some graphemes, such as the abbreviation marks, do not have a fixed alphabetic value. Thus the alphabetic value of a combination of graphemes constituting an abbreviation is not always computable based on the implied rules of the manuscript writing system. See section _Is the explicit encoding of an Alphabetic Layer really necessary?_ for a more detailed discussion on this and some examples.
 
 
-
 Summarizing:
 
 1. `<abbr>` 
@@ -197,6 +196,34 @@ Summarizing:
 
 3. `<expan>`
 	- Its content belongs to the LL.
+
+
+## Brevigraphs and logographs
+
+Brevigraphs are defined here as individual graphemes meaning more than one alphabemes, such as the one encoded here at the GL as '¢' (a 'q' glyph with a horizontal trait crossing its descending trait). In the the "Graphemic Table of Signs" (file GToS.csv) such graphemes have 'Brevigraph' in column 'Type'.
+
+Logographs are defined as individual graphemes meaning a whole word, and therefore a sequence of alphabemes. For example, grapheme '÷' for 'est', but only when it means the third person singular of present indicative of verb 'to be'.
+
+Until the point of the transcription file (`casanatensis.csv`) marked with `xml:id="brevigraph-switch-1"`, brevigraphs and logogoraphs had always proved to have each a fixed alphabetic meaning.
+
+Up to that point of the transcription file, for brevigraphs such as 'þ'/'per', 'ŋ'/'pro', '¢'/'qui' and for logographs such as '÷'/'est' (verb 'to be') I had used the convention of always encoding them with the elements `<choice>`, `<abbr>` and `<expan>`, as in:
+
+        <w n="quia" xml:id="w19080">
+                <choice>
+                        <abbr type="brevigraph">¢</abbr>
+                        <expan>qui</expan>
+                </choice>
+        a</w>
+
+From that point on, I started using a different, though equivalent, encoding convention:
+
+1. when the aphabetical meaning of the brevigraph or logograph is the standard one encoded in the Graphematic Table of Signs (i.e. in column 'Alphabemes' of file `GToS.csv`), I encode them as text content within the `<w>` element, just like the other graphemes with a standard alphabetic value), as in:
+
+         <w n="quia" xml:id="w19581">¢a</w>
+
+2. only when their alphabetic meaning is different from the standard one, I encode them with the elements <tag>choice</tag>, <tag>abbr</tag> and <tag>expan</tag>.
+
+In fact, the two encoding conventions are equivalent as to the information that they convey, because in the case of the code in method 1 above, the software will deal with grapheme '¢' exactly as it does with grapheme 'a': it will look up the alphabetic meaning of each grapheme in column 'Alphabemes' of file `GToS.csv` and produce an alphabetic sequence 'qui' for grapheme '¢' (as 'qui' is the standard alphabetic meaning of grapheme '¢' in `GToS.csv`) and the alphabetic sequence 'a' for grapheme 'a' (for it is the alphabetic meaning of that grapheme).
 
 
 ## Abbreviations that might have different encodings

@@ -20859,9 +20859,9 @@ rinus</w>
 <pc n=".">·</pc>
 <w n="Anagnia" xml:id="w19578">anagnia</w>
 	<pc n="space"> </pc>
-<note type="tech" xml:id="brevigraph-switch-1">Up to this point of the transcription, for brevigraphs I used the convention of always encoding them with the elements <tag>choice</tag>, <tag>abbr</tag> and <tag>expan</tag>. From this point on, I will use a different, though equivalent, encoding convention for brevigraph: 1) when their aphabetical meaning will be the standard one encoded in the Graphematic Table of signs (i.e. in column 'Alphabemes' of file GToS.csv), I will just encode them as text content within the <tag>w</tag> element, as in the following 'quia'.</note>
-<w n="quia" xml:id="w19581">¢a</w>
 
+<note type="tech" xml:id="brevigraph-switch-1">Up to this point of the transcription, for brevigraphs such as 'þ'/'per', 'ŋ'/'pro', '¢'/'qui' and for logographs such as '÷'/'est' (verb 'to be') I used the convention of always encoding them with the elements <tag>choice</tag>, <tag>abbr</tag> and <tag>expan</tag>. From this point on, I will use a different, though equivalent, encoding convention for brevigraph: 1) when their aphabetical meaning will be the standard one encoded in the Graphematic Table of Signs (i.e. in column 'Alphabemes' of file GToS.csv), I will just encode them as text content within the <tag>w</tag> element, just like the other graphemes with a standard alphabetic value, as in the following 'quia'; 2) only when their alphabetic meaning is different from the standard one, I will encode them with the elements <tag>choice</tag>, <tag>abbr</tag> and <tag>expan</tag>. In fact, the two encoding conventions are equivalent as to the information that they convey, because in the case of the code in method 1 above, the software will deal with grapheme '¢' exactly as it does with grapheme 'a': it will look up the alphabetic meaning of each grapheme in column 'Alphabemes' of file GToS.csv and produce an alphabetic sequence 'qui' for grapheme '¢' (as 'qui' is the standard alphabetic meaning of grapheme '¢' in GToS.csv) and the alphabetic sequence 'a' for grapheme 'a' (for it is the alphabetic meaning of that grapheme).</note>
+<w n="quia" xml:id="w19581">¢a</w>
 
 
 </ref>
