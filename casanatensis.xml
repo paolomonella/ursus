@@ -21086,12 +21086,158 @@ nus</w>
 </w>
 <w n="censorianus" xml:id="w19764">censorianus</w>
 <pc n=".">ł</pc>
-<w n="quamuis" xml:id="w19767">qu
+<w n="quamuis" xml:id="w19767"><hi rend="larger">q</hi>u
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
 uis</w>
+<w n="diuersas" xml:id="w19770">di
+<lb n="5v.b.33" />
+uersas</w>
+	<pc n="space"> </pc>
+<w n="significationes" xml:id="w19773">significationes</w>
+	<pc n="space"> </pc>
+<w n="habeant" xml:id="w19776">habeant</w>
+	<pc n="space"> </pc>
+<w n="nomina" xml:id="w19779">nomina</w>
+	<pc n="space"> </pc>
+<w n="supradictae" xml:id="w19782">supradictæ</w>
+	<pc n="space"> </pc>
+<w n="formae" xml:id="w19785">for
+<lb n="5v.b.34" />
+mæ</w>
+	<pc n="space"> </pc>
+<w n="tamen" xml:id="w19788">tamen</w>
+	<pc n="space"> </pc>
+<w n="quia" xml:id="w19791">¢a</w>
+	<pc n="space"> </pc>
+<w n="maxima" xml:id="w19794">maxima</w>
+	<pc n="space"> </pc>
+<w n="eorum" xml:id="w19797">eor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="pars" xml:id="w19800">pars</w>
+	<pc n="space"> </pc>
+<w n="possessiorum" xml:id="w19803">possessior
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="demonstrationem" xml:id="w19806">demons
+<lb n="5v.b.35" />
+	tration
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="habet" xml:id="w19809">h
+	<choice>
+		<abbr type="superscription">ab<am>¯</am></abbr>
+		<expan>abet</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="apud" xml:id="w19812">apud</w>
+	<pc n="space"> </pc>
+<w n="Latinos" xml:id="w19815">latinos</w>
+	<pc n="space"> </pc>
+<pc n=",">·</pc>
+<w n="ideo" xml:id="w19818">ideo</w>
+	<pc n="space"> </pc>
+<w n="haec" xml:id="w19821">hæc</w>
+	<pc n="space"> </pc>
+<w n="posuimus" xml:id="w19824">posuimus</w>
+	<pc n="space"> </pc>
+<w n="inter" xml:id="w19827">inter</w>
+	<pc n="space"> </pc>
+<w n="species" xml:id="w19830">spe
+<lb n="5v.b.36" />
+cies</w>
+	<pc n="space"> </pc>
+<w n="possessiuorum" xml:id="w19833">possessiuorum</w>
+<pc n=".">|</pc>
+<w n="sciendum" xml:id="w19836"><hi rend="larger">s</hi>ciend
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="quod" xml:id="w19839">quod</w>
+<w n="deriuatiuorum" xml:id="w19842">deriuatiuor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="in" xml:id="w19845">in</w>
+<pc n="quote">·</pc>
+<w n="is" type="alphabemes" xml:id="w19848">is</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w19851">et</w>
+	<pc n="space"> </pc>
+<w n="er" type="alphabemes" xml:id="w19854">er</w>
+<pc n="quote">·</pc>
+<lb n="5v.b.37" />
+<w n="terminantium" xml:id="w19857">terminanti
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n="0">·</pc>
+<w n="multa" xml:id="w19860">multa</w>
+	<pc n="space"> </pc>
+<w n="inueniuntur" xml:id="w19863">inueniuntur</w>
+<pc n="0">·</pc>
+<w n="apud" xml:id="w19866">apud</w>
+<w n="nos" xml:id="w19869">nos</w>
+	<pc n="space"> </pc>
+<w n="possessiuae" xml:id="w19872">possessiuæ</w>
+	<pc n="space"> </pc>
+<w n="significationis" xml:id="w19875">sig
+<lb n="5v.b.38" />
+nificationis</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w19878">ut</w>
+<w n="ciuilis" xml:id="w19881">ciuilis</w>
+	<pc n="space"> </pc>
+<w n="hostilis" xml:id="w19884">hostilis</w>
+<pc n=",">·</pc>
+<w n="equester" xml:id="w19887">equester</w>
+<pc n=",">·</pc>
+<w n="pedester" xml:id="w19890">pedester</w>
+	<pc n="space"> </pc>
+<w n="quae" xml:id="w19893">quæ</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w19896">et</w>
+	<pc n="space"> </pc>
+<w n="uariae" xml:id="w19899">uariæ</w>
+<lb n="5v.b.39" />
+<w n="formae" xml:id="w19902">formæ</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w19905">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w19908">et</w>
+<w n="uariae" xml:id="w19911">uariæ</w>
+	<pc n="space"> </pc>
+<w n="significationis" xml:id="w19914">significationis</w>
+<pc n=".">|</pc>
 
 </ref>
 </ab>
