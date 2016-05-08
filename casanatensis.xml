@@ -20862,7 +20862,236 @@ rinus</w>
 
 <note type="tech" xml:id="brevigraph-switch-1">Up to this point of the transcription, for brevigraphs such as 'þ'/'per', 'ŋ'/'pro', '¢'/'qui' and for logographs such as '÷'/'est' (verb 'to be') I used the convention of always encoding them with the elements <tag>choice</tag>, <tag>abbr</tag> and <tag>expan</tag>. From this point on, I will use a different, though equivalent, encoding convention for brevigraph: 1) when their aphabetical meaning will be the standard one encoded in the Graphematic Table of Signs (i.e. in column 'Alphabemes' of file GToS.csv), I will just encode them as text content within the <tag>w</tag> element, just like the other graphemes with a standard alphabetic value, as in the following 'quia'; 2) only when their alphabetic meaning is different from the standard one, I will encode them with the elements <tag>choice</tag>, <tag>abbr</tag> and <tag>expan</tag>. In fact, the two encoding conventions are equivalent as to the information that they convey, because in the case of the code in method 1 above, the software will deal with grapheme '¢' exactly as it does with grapheme 'a': it will look up the alphabetic meaning of each grapheme in column 'Alphabemes' of file GToS.csv and produce an alphabetic sequence 'qui' for grapheme '¢' (as 'qui' is the standard alphabetic meaning of grapheme '¢' in GToS.csv) and the alphabetic sequence 'a' for grapheme 'a' (for it is the alphabetic meaning of that grapheme).</note>
 <w n="quia" xml:id="w19581">¢a</w>
-
+<pc n="quote">·</pc>
+<w n="g" type="alphabemes" xml:id="w19584">g</w>
+<pc n="quote">·</pc>
+<w n="ante" xml:id="w19587">ante</w>
+<pc n="quote">·</pc>
+<w n="n" type="alphabemes" xml:id="w19590">n</w>
+<pc n="quote">·</pc>
+<w n="habet" xml:id="w19593">h
+	<choice>
+		<abbr type="superscription">ab<am>¯</am></abbr>
+		<expan>abet</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<unclear cert="low" reason="faded">
+<w n="Anagnianus" xml:id="w19596">anagnia
+<gap quantity="2" reason="illegible" unit="chars" />
+	s
+<note type="content">The source has 'Anagninus', but the last legible grapheme is almost certainly an 'a', so the original reading of the manuscript must have been different. The pergamene surface is damaged in this point.</note>
+	<pc n="space"> </pc>
+</w>
+</unclear>
+	<pc n="space"> </pc>
+<w n="facit" xml:id="w19599">facit</w>
+<pc n=".">·</pc>
+<w n="ab" xml:id="w19602">ab</w>
+<w n="urbium" xml:id="w19605">ur
+<lb n="5v.b.26" />
+	bi
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="nominibus" xml:id="w19608">nomini
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="deriuata" xml:id="w19611">deriuata</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w19614">in</w>
+<w n="tes" type="alphabemes" xml:id="w19617">tes</w>
+<w n="desinentia" xml:id="w19620">desinentia</w>
+	<pc n="space"> </pc>
+<w n="apud" xml:id="w19623">apud</w>
+	<pc n="space"> </pc>
+<w n="Graecos" xml:id="w19626">grecos</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w19629">ut</w>
+<w n="praedictum" xml:id="w19632">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+	dict
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<lb n="5v.b.27" />
+<w n="est" xml:id="w19635">est</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w19638">in</w>
+<w n="tanus" type="alphabemes" xml:id="w19641">tanus</w>
+<w n="efferuntur" xml:id="w19644">efferuntur</w>
+	<pc n="space"> </pc>
+<w n="plerumque" xml:id="w19647">pler
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w19650">ut</w>
+<w n="Νεαπολίτης" type="foreign" xml:id="w19653" xml:lang="grc">neapolites
+<note type="script">There is a macron sign over the 'i' to mark its long quantity.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="Neapolitanus" xml:id="w19656">neapolita
+<lb n="5v.b.28" />
+	nus
+<note type="script">There is a macron sign over the second 'a' to mark its long quantity.</note>
+</w>
+<pc n=".">|</pc>
+<w n="gnus" type="alphabemes" xml:id="w19659"><hi rend="larger">g</hi>nus</w>
+<pc n="quote">·</pc>
+<w n="gna" type="alphabemes" xml:id="w19662">gna</w>
+<pc n="quote">·</pc>
+<w n="gnum" type="alphabemes" xml:id="w19665">gnum</w>
+<pc n="quote">·</pc>
+<w n="terminantia" xml:id="w19668">terminantia</w>
+	<pc n="space"> </pc>
+<w n="longam" xml:id="w19671">long
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="habent" xml:id="w19674">h
+	<choice>
+		<abbr type="superscription">ab<am>¯</am></abbr>
+		<expan>abent</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="penultimam" xml:id="w19677">penulti
+<lb n="5v.b.29" />
+	m
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w19680">ut</w>
+<w n="regnum" xml:id="w19683">regn
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+<note type="script">There is a macron sign over the 'e' to mark its long quantity.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="Pelignus" xml:id="w19686">pelignus</w>
+	<pc n="space"> </pc>
+<w n="priuignus" xml:id="w19689">priuignus</w>
+<pc n=".">·</pc>
+<w n="inueniuntur" xml:id="w19692"><hi rend="larger">i</hi>nueniuntur</w>
+<pc n=",">·</pc>
+<w n="uel" xml:id="w19695">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="auctoritate" xml:id="w19698">auctori
+<lb n="5v.b.30" />
+tate</w>
+	<pc n="space"> </pc>
+<w n="ueterum" xml:id="w19701">ueter
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w19704">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="euphoniae" xml:id="w19707">euphoniæ</w>
+<pc n=",">·</pc>
+<w n="quaedam" xml:id="w19710">quæd
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="non" xml:id="w19713">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="seruantia" xml:id="w19716">seruantia</w>
+	<pc n="space"> </pc>
+<w n="supradictas" xml:id="w19719">supradictas</w>
+	<pc n="space"> </pc>
+<w n="regulas" xml:id="w19722">re
+<lb n="5v.b.31" />
+gulas</w>
+	<pc n="space"> </pc>
+<w n="maxime" xml:id="w19725">maxime</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w19728">in</w>
+<w n="propriis" xml:id="w19731">ŋpriis</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w19734">ut</w>
+<w n="Ligus" xml:id="w19737">ligus</w>
+	<pc n="space"> </pc>
+<w n="Liguris" xml:id="w19740">liguris</w>
+	<pc n="space"> </pc>
+<w n="Ligurinus" xml:id="w19743">ligurinus</w>
+	<pc n="space"> </pc>
+<pc n=",">·</pc>
+<w n="non" xml:id="w19746">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="Ligurianus" xml:id="w19749">liguria
+<lb n="5v.b.32" />
+nus</w>
+<pc n=",">·</pc>
+<w n="censor" xml:id="w19752">censor</w>
+	<pc n="space"> </pc>
+<w n="censoris" xml:id="w19755">censoris</w>
+	<pc n="space"> </pc>
+<w n="censorinus" xml:id="w19758">censorinus</w>
+<pc n=",">·</pc>
+<w n="non" xml:id="w19761">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="censorianus" xml:id="w19764">censorianus</w>
+<pc n=".">ł</pc>
+<w n="quamuis" xml:id="w19767">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+uis</w>
 
 </ref>
 </ab>

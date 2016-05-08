@@ -132,7 +132,11 @@ with open(inFP) as inFH:
             abAlph2 = dAbM.group(8)
             abPost = dAbM.group(9)
             #abWordLL = abPre+abAlph1+abMiddle+abAlph2+abPost # (L)inguistic (L)ayer, old version
-            abWordLL = (abPre+abAlph1+abMiddle+abAlph2+abPost).replace('æ', 'ae') # (L)inguistic (L)ayer
+            #abWordLL = (abPre+abAlph1+abMiddle+abAlph2+abPost).replace('æ', 'ae') # (L)inguistic (L)ayer, old version
+            abWordLL = abPre+abAlph1+abMiddle+abAlph2+abPost # (L)inguistic (L)ayer
+            abWordLL = abWordLL.replace('æ', 'ae')          # E caudatum (medieval romæ → contemporary rome)
+            abWordLL = abWordLL.replace('þ', 'per').replace('ŋ', 'pro').replace('¢', 'qui') # Brevigraphs
+            abWordLL = abWordLL.replace('÷', 'est')         # Logographs
             nL='<w n="'+abWordLL+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
             nL=nL+'\t\t<abbr type="'+abType1+'">'+reSpell(abBase1, sd)+abAmTag1+'</abbr>\n'
             nL=nL+'\t\t<expan>'+reSpell(abAlph1, sd)+'</expan>\n\t</choice>\n\t'+reSpell(abMiddle, sd)+'\n\t<choice>\n'
@@ -158,7 +162,10 @@ with open(inFP) as inFH:
             abPost = abM.group(5)
             #nL='<w n="'+abPre+abAlph+abPost+'">'+reSpell(abPre, sd)+'\n\t<choice>\n' old version
             abWordLL = abPre+abAlph+abPost # abbreviated word at Linguistic Layer
-            nL='<w n="'+abWordLL.replace('æ', 'ae')+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
+            abWordLL = abWordLL.replace('æ', 'ae')          # E caudatum (medieval romæ → contemporary rome)
+            abWordLL = abWordLL.replace('þ', 'per').replace('ŋ', 'pro').replace('¢', 'qui') # Brevigraphs
+            abWordLL = abWordLL.replace('÷', 'est')         # Logographs
+            nL='<w n="'+abWordLL+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
             nL=nL+'\t\t<abbr type="'+abType+'">'+reSpell(abBase, sd)+abAmTag+'</abbr>\n'
             nL=nL+'\t\t<expan>'+reSpell(abAlph, sd)+'</expan>\n\t</choice>\n'+reSpell(abPost, sd)+'</w>'+wSpace
             print(nL, file=outFH)
@@ -183,7 +190,9 @@ with open(inFP) as inFH:
             wM = re.match(wPatt, line)
             wWordGL = wWordLL = wM.group(0)  # (L)inguistic (L)ayer vs. (G)raphematic (L)ayer
             wWordGL = reSpell(wWordGL, sd)   # contemporary romae → medieval rome (et sim.)
-            wWordLL = wWordLL.replace('æ', 'ae') # medieval romæ → contemporary rome
+            wWordLL = wWordLL.replace('æ', 'ae') # E caudatum (medieval romæ → contemporary rome)
+            wWordLL = wWordLL.replace('þ', 'per').replace('ŋ', 'pro').replace('¢', 'qui') # Brevigraphs
+            wWordLL = wWordLL.replace('÷', 'est')         # Logographs
             nL='<w n="'+wWordLL+'">'+wWordGL+'</w>'+wSpace
             print(nL, file=outFH)
         else:                           # Doesn't fit any regex
@@ -232,7 +241,7 @@ n    = '{http://www.tei-c.org/ns/1.0}'              # for XML/TEI
 nx   = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
 ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
 
-# Parse the tree §
+# Parse the tree
 tree = ET.parse(outFP)  # It works on the temp output file and adds it xml:ids
 
 # The following code block makes a list of existing IDs so it checks that new IDs do not
