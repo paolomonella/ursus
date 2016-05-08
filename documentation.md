@@ -221,7 +221,7 @@ From that point on, I started using a different, though equivalent, encoding con
 
          <w n="quia" xml:id="w19581">¢a</w>
 
-2. only when their alphabetic meaning is different from the standard one, I encode them with the elements <tag>choice</tag>, <tag>abbr</tag> and <tag>expan</tag>.
+2. only when their alphabetic meaning is different from the standard one, I encode them with the elements `<choice>`, `<abbr>` and `<expan>`.
 
 In fact, the two encoding conventions are equivalent as to the information that they convey, because in the case of the code in method 1 above, the software will deal with grapheme '¢' exactly as it does with grapheme 'a': it will look up the alphabetic meaning of each grapheme in column 'Alphabemes' of file `GToS.csv` and produce an alphabetic sequence 'qui' for grapheme '¢' (as 'qui' is the standard alphabetic meaning of grapheme '¢' in `GToS.csv`) and the alphabetic sequence 'a' for grapheme 'a' (for it is the alphabetic meaning of that grapheme).
 
