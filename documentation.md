@@ -637,9 +637,9 @@ Markup not referring to a specific layer
 		- @quantity
     			 - Possible values: an integer
 		- @unit
-    			- Possible values:
-    				- "words"
-    				- "chars" (the latter value is recommended by TEI P5; see
+			- Possible values:
+				- "words"
+				- "chars" (the latter value is recommended by TEI P5; see
         				<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.dimensions.html>)
 
 2. `<gap>`
@@ -648,15 +648,15 @@ Markup not referring to a specific layer
 		<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHDA>
 	- Attributes used for `<gap>` in this edition:
 		- @reason
-	    		- Possible values:
-	    			- "illegible" (this can be due to faded ink, to handwriting complicated to understand or to a combination of the two),
-	    			- "hole" (a hole in the parchment)
+			- Possible values:
+				- "illegible" (this can be due to faded ink, to handwriting complicated to understand or to a combination of the two),
+				- "hole" (a hole in the parchment)
 		- @quantity
     			- Possible values: an integer
 		- @unit
-    			- Possible values:
-    				- "words"
-    				- "chars" (the latter value is recommended by TEI P5; see
+			- Possible values:
+				- "words"
+				- "chars" (the latter value is recommended by TEI P5; see
         				<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.dimensions.html>)
 
 3. `<damage>`
