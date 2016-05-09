@@ -661,14 +661,23 @@ Markup not referring to a specific layer
 	- Mostly used to mark faded ink, with @agent="faded".
 
 4. `<add>`
-	- Case 1:  `<unclear>` and `<add>` can be children of 'choice'
-		if a scribe re-wrote an illegible word or with an interlinear addition.
-	- Case 2: the code <add place="above">...</add> is put at the point
+	- the code <add place="above">...</add> is put at the point
 		of the text where the interlinear addition starts (i.e.: in the XML
-		code, it comes below the text above which it appears in the manuscript).
+		code, it comes right before the text above which it appears in the manuscript).
+    - it can be either
+        - parent of one or more `<w>` elements (in most cases), if one ore more full words were added above the line
+        - or parent of `<unclear>`, which in its turn is parent of `<w>`, if one ore more unclear full words were added above the line
+        - or child of `<w>` and parent of plain text (in few cases), if individual graphemes (not full words) were added above the line.
+            In these cases, an attribute @type="graphemes" is added, as in
+
+            <w n="quadragessis" xml:id="w11310">quadrage<add place="above" type="graphemes">s</add>sis</w>
 
 5. `<note>`
-	- It mostly includes notes on unclear passages. It has a @type attribute that can have the following values: "script" (notes on palaeographical aspects or on illegible or hardly readable passages); "source" (on the text sources), "content" (on the text content); "tech" (on technological issues of this digital edition).
+	- It has a @type attribute that can have the following values:
+	    - "script" (notes on palaeographical aspects or on illegible or hardly readable passages);
+	    - "source" (on the text sources),
+	    - "content" (on the text content);
+	    - "tech" (on technological issues of this digital edition).
 
 
 
