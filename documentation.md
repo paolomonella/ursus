@@ -629,36 +629,38 @@ Markup not referring to a specific layer
 			- "The cert attribute on the `<unclear>` element may be used to 
 				indicate the level of editorial confidence in the reading contained within it."
     				(TEI P5 Guidelines, 11.3.3.1 Damage, Illegibility, and Supplied Texts
-    				<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHDA)>.
+    				<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHDA>).
     				Possible values are those of the TEI P5 "data.certainty"
 				datatype, that is: "high" | "medium" | "low" | "unknown".
-    				For example, "low" means that I am little sure 
+    			For example, "low" means that I am little sure 
 				that my tentative transcription is correct.
 		- @quantity
     			 - Possible values: an integer
 		- @unit
-    			- Possible values: "words" or "chars" (the 
-				latter value is recommended by TEI P5; see
-				<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.dimensions.html)>
+    			- Possible values:
+    			    - "words"
+    			    - "chars" (the latter value is recommended by TEI P5; see
+        				<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.dimensions.html>)
 
 2. `<gap>`
 	- See TEI P5 Guidelines, 11.3.3.1 
 		Damage, Illegibility, and Supplied Texts
 		<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHDA>
-	- Attributes used for `<unclear>` in this edition:
+	- Attributes used for `<gap>` in this edition:
 		- @reason
-	    		- Possible values: "illegible" (this can be due 
-				to faded ink, to handwriting complicated to understand or to
-				a combination of the two), "hole" (a hole in the parchment)
+	    		- Possible values:
+	    		    - "illegible" (this can be due to faded ink, to handwriting complicated to understand or to a combination of the two),
+	    		    - "hole" (a hole in the parchment)
 		- @quantity
     			- Possible values: an integer
 		- @unit
-    			- Possible values: "words" or "chars" (
-				the latter value is recommended by TEI P5; see
-				<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.dimensions.html>)
+    			- Possible values:
+    			    - "words"
+    			    - "chars" (the latter value is recommended by TEI P5; see
+        				<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.dimensions.html>)
 
 3. `<damage>`
-	- Mostly used to mark faded ink, with @agent="faded".
+	- Mostly used to mark faded ink, with `@agent="faded"`.
 
 4. `<add>`
 	- the code `<add place="above">...</add>` is put at the point
