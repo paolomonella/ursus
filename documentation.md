@@ -651,6 +651,7 @@ Markup not referring to a specific layer
 			- Possible values:
 				- "illegible" (this can be due to faded ink, to handwriting complicated to understand or to a combination of the two),
 				- "hole" (a hole in the parchment)
+				- "cancelled" (if the scribe erased the text)
 		- @quantity
     			- Possible values: an integer
 		- @unit
@@ -666,14 +667,18 @@ Markup not referring to a specific layer
 	- the code `<add place="above">...</add>` is put at the point
 		of the text where the interlinear addition starts (i.e.: in the XML
 		code, it comes right before the text above which it appears in the manuscript).
-    - it can be either
-        - parent of one or more `<w>` elements (in most cases), if one ore more full words were added above the line
-        - or parent of `<unclear>`, which in its turn is parent of `<w>`, if one ore more unclear full words were added above the line
+	- it can be either
+        - parent of one or more `<w>` and/or `<pc>`elements (in most cases), if one ore more full words were added above the line
+        - or parent of `<unclear>`, which in its turn is parent of `<w>` or `<pc>`, if one ore more unclear full words were added above the line
         - or child of `<w>` and parent of plain text (in few cases), if individual graphemes (not full words) were added above the line.
             In these cases, an attribute `@type="graphemes"` is added, as in
 
             `<w n="quadragessis" xml:id="w11310">quadrage<add place="above" type="graphemes">s</add>sis</w>`
 
+	- possible values of attribute `@place` are:
+		- "above" for interlinear additions (above the line)
+		- "footnote" for an addition at the bottom of the column, connected with the text with a metamark
+		
 5. `<note>`
 	- It has a @type attribute that can have the following values:
 	    - "script" (notes on palaeographical aspects or on illegible or hardly readable passages);
