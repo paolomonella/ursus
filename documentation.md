@@ -668,9 +668,9 @@ Markup not referring to a specific layer
         - parent of one or more `<w>` elements (in most cases), if one ore more full words were added above the line
         - or parent of `<unclear>`, which in its turn is parent of `<w>`, if one ore more unclear full words were added above the line
         - or child of `<w>` and parent of plain text (in few cases), if individual graphemes (not full words) were added above the line.
-            In these cases, an attribute @type="graphemes" is added, as in
+            In these cases, an attribute `@type="graphemes"` is added, as in
 
-            <w n="quadragessis" xml:id="w11310">quadrage<add place="above" type="graphemes">s</add>sis</w>
+            `<w n="quadragessis" xml:id="w11310">quadrage<add place="above" type="graphemes">s</add>sis</w>`
 
 5. `<note>`
 	- It has a @type attribute that can have the following values:
