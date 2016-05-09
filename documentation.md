@@ -106,7 +106,7 @@ Abbreviations
 =============
 
 
-## Abbreviations involving abbreviation marks `<am>`
+## GL and AL in abbreviations involving an abbreviation mark
 
 In this edition, the TEI `<abbr>`, `<am>` and `<expan>` elements are used with a semantics still compatible with that declared in the TEI P5 Guidelines, but more specific. In the following code:
 
@@ -165,7 +165,41 @@ Abbreviation marks are not always written *above* other graphemes. The grapheme 
         </choice>
     </w>
 
-Again, this encoding convention complies with the TEI-all DTD and the TEI P5 Guidelines, but is fairly specific to this project and derives from the methodological principle of formally distinguishing the GL, the AL and the LL.
+
+## GL and AL in brevigraphs and logographs
+    
+Brevigraphs and logographs do not have abbreviation marks (such as the macron). 
+
+Brevigraphs are defined here as individual graphemes meaning more than one alphabemes, such as the one encoded here at the GL as '¢' (a 'q' glyph with a horizontal trait crossing its descending trait). In the the "Graphemic Table of Signs" (file GToS.csv) such graphemes have 'Brevigraph' in column 'Type'.
+
+Logographs are defined as individual graphemes meaning a whole word, and therefore a sequence of alphabemes. For example, grapheme '÷' for 'est', but only when it means the third person singular of present indicative of verb 'to be'.
+
+In the code:
+
+    <w n="quia" xml:id="w19080">
+            <choice>
+                    <abbr type="brevigraph">¢</abbr>
+                    <expan>qui</expan>
+            </choice>
+    a</w>
+
+'¢' represents the grapheme for the brevigraph grapheme whose alphabetical meaning is the sequence of alphabemes 'qui'. The element `<am>` (abbreviation mark) is not necessary here.
+
+The following example has a logograph: the grapheme '÷' means a whole word, that is third person singular of present indicative of verb 'to be'. Its alphabetical meaning is therefore 'est', but only when these alphabemes, in their turn, mean that word:
+
+    <w n="est" xml:id="w6270">
+            <choice>
+                    <abbr type="brevigraph">÷</abbr>
+                    <expan>est</expan>
+            </choice>
+    </w>
+
+Up to folio 5 verso, column b, brevigraphs and logogoraphs had always proved to have each a fixed alphabetic meaning. For them, therefore, the `<expan>` element is not needed to provide the alphabemes meant by the brevigraph/logograph (which could be computed based on the content of column 'Alphabemes' in the "Graphemic Table of Signs", i.e. file GToS.csv). For these graphemes, the whole `<choice>` / `<abbr>` / `<expan>` structure is merely needed to align the sequence of graphemes with the sequence of alphabemes, i.e. to explicitly encode what alphabemes are meant by the brevigraph/logograph. In the example above, grapheme '÷' is aligned with / means the three alphabemes 'est'.
+
+Again, the encoding convention for abbreviations in this edition complies with the TEI-all DTD and the TEI P5 Guidelines, but is fairly specific to this project and derives from the methodological principle of formally distinguishing the GL, the AL and the LL.
+
+
+## Rationale of this encoding of abbreviations
 
 This encoding convention is useful because:
 
@@ -174,7 +208,7 @@ This encoding convention is useful because:
 2. some graphemes, such as the abbreviation marks, do not have a fixed alphabetic value. Thus the alphabetic value of a combination of graphemes constituting an abbreviation is not always computable based on the implied rules of the manuscript writing system. See section _Is the explicit encoding of an Alphabetic Layer really necessary?_ for a more detailed discussion on this and some examples.
 
 
-Summarizing:
+## Summary of the distinction of GL and LL in the encoding of abbreviations
 
 1. `<abbr>` 
 	- Its content belongs to the GL.
@@ -198,35 +232,7 @@ Summarizing:
 	- Its content belongs to the LL.
 
 
-## Brevigraphs and logographs
-
-Brevigraphs are defined here as individual graphemes meaning more than one alphabemes, such as the one encoded here at the GL as '¢' (a 'q' glyph with a horizontal trait crossing its descending trait). In the the "Graphemic Table of Signs" (file GToS.csv) such graphemes have 'Brevigraph' in column 'Type'.
-
-Logographs are defined as individual graphemes meaning a whole word, and therefore a sequence of alphabemes. For example, grapheme '÷' for 'est', but only when it means the third person singular of present indicative of verb 'to be'.
-
-Until the point of the transcription file (`casanatensis.csv`) marked with `xml:id="brevigraph-switch-1"`, brevigraphs and logogoraphs had always proved to have each a fixed alphabetic meaning.
-
-Up to that point of the transcription file, for brevigraphs such as 'þ'/'per', 'ŋ'/'pro', '¢'/'qui' and for logographs such as '÷'/'est' (verb 'to be') I had used the convention of always encoding them with the elements `<choice>`, `<abbr>` and `<expan>`, as in:
-
-        <w n="quia" xml:id="w19080">
-                <choice>
-                        <abbr type="brevigraph">¢</abbr>
-                        <expan>qui</expan>
-                </choice>
-        a</w>
-
-From that point on, I started using a different, though equivalent, encoding convention:
-
-1. when the aphabetical meaning of the brevigraph or logograph is the standard one encoded in the Graphematic Table of Signs (i.e. in column 'Alphabemes' of file `GToS.csv`), I encode them as text content within the `<w>` element, just like the other graphemes with a standard alphabetic value), as in:
-
-         <w n="quia" xml:id="w19581">¢a</w>
-
-2. only when their alphabetic meaning is different from the standard one, I encode them with the elements `<choice>`, `<abbr>` and `<expan>`.
-
-In fact, the two encoding conventions are equivalent as to the information that they convey, because in the case of the code in method 1 above, the software will deal with grapheme '¢' exactly as it does with grapheme 'a': it will look up the alphabetic meaning of each grapheme in column 'Alphabemes' of file `GToS.csv` and produce an alphabetic sequence 'qui' for grapheme '¢' (as 'qui' is the standard alphabetic meaning of grapheme '¢' in `GToS.csv`) and the alphabetic sequence 'a' for grapheme 'a' (for it is the alphabetic meaning of that grapheme).
-
-
-## Abbreviations that might have different encodings
+## Abbreviations that might have alternative encodings
 
 In 1r, column 2, line 6 and elsewhere, there is a peculiar abbreviation for 'quod': a 'q' is followed by a 'd' whose ascending trait is crossed by a horizontal stroke. This could be interpreted and encoded in two ways:
 
@@ -297,7 +303,6 @@ The very distinction of an Alphabetic Layer (AL) of the digital edition from the
 
 - The abbreviation constituted by graphemes 'cor' with a macron over 'o' and 'r' has the alphabetic meaning 'correptum' (e.g. in folio 5v, column b, line 21) or the alphabetic meaning of 'correpta' (e.g. in folio 5r, column a, verse 20). In the latter case, in fact, the interpretation could be both 'correpta' or 'correptum' (as the name of alphabetic letters is sometimes feminine, sometimes neuter in the text), but the expression "ponunt 'e' correptam ante 'us'" occurring right before in the same sentence makes me decide for 'correpta' in this case. Anyways, I think it is clear that the specific alphabetic meaning of that abbreviation is not unambiguously determined by the sequence of graphemes at the GL.
 
-§§§
 
 ## XML/TEI encoding strategy for the AL
 

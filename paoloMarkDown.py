@@ -58,8 +58,8 @@ dAbPatt  =   "(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*)" # Double abbreviatio
 stPatt  =   "<.*" # Lines that [s]tart with a [t]ag
 etPatt  =   ".*>" # Lines that [e]nd   with a [t]ag
 #utPatt  =   ".*>_" # Lines that [e]nd   with a [t]ag and a final underscore (old version: no longer in use)
-#wPatt   =   "\w.*" # Regular word (no abbreviations) -- old version
-wPatt   =   "[\wþŋ¢÷].*" # Regular word (no abbreviations), possibly starting with non-ASCII brevigraph/logograph
+#wPatt   =   "[\wþŋ¢÷].*" # Regular word (no abbreviations), possibly starting with non-ASCII brevigraph/logograph
+wPatt   =   "\w.*" # Regular word (no abbreviations)
 sewPatt  =   "\s+\w*\s+" # It starts and ends with whitespace, and has chars in between
 swPatt  =   "\s+\w*"    # The line starts with whitespace, then has characters
 ewPatt  =   "\w*\s+"    # The line   ends with whitespace, and has chars before
@@ -136,8 +136,8 @@ with open(inFP) as inFH:
             #abWordLL = (abPre+abAlph1+abMiddle+abAlph2+abPost).replace('æ', 'ae') # (L)inguistic (L)ayer, old version
             abWordLL = abPre+abAlph1+abMiddle+abAlph2+abPost # (L)inguistic (L)ayer
             abWordLL = abWordLL.replace('æ', 'ae')          # E caudatum (medieval romæ → contemporary rome)
-            abWordLL = abWordLL.replace('þ', 'per').replace('ŋ', 'pro').replace('¢', 'qui') # Brevigraphs
-            abWordLL = abWordLL.replace('÷', 'est')         # Logographs
+            #abWordLL = abWordLL.replace('þ', 'per').replace('ŋ', 'pro').replace('¢', 'qui') # Brevigraphs
+            #abWordLL = abWordLL.replace('÷', 'est')         # Logographs
             nL='<w n="'+abWordLL+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
             nL=nL+'\t\t<abbr type="'+abType1+'">'+reSpell(abBase1, sd)+abAmTag1+'</abbr>\n'
             nL=nL+'\t\t<expan>'+reSpell(abAlph1, sd)+'</expan>\n\t</choice>\n\t'+reSpell(abMiddle, sd)+'\n\t<choice>\n'
@@ -164,8 +164,8 @@ with open(inFP) as inFH:
             #nL='<w n="'+abPre+abAlph+abPost+'">'+reSpell(abPre, sd)+'\n\t<choice>\n' old version
             abWordLL = abPre+abAlph+abPost # abbreviated word at Linguistic Layer
             abWordLL = abWordLL.replace('æ', 'ae')          # E caudatum (medieval romæ → contemporary rome)
-            abWordLL = abWordLL.replace('þ', 'per').replace('ŋ', 'pro').replace('¢', 'qui') # Brevigraphs
-            abWordLL = abWordLL.replace('÷', 'est')         # Logographs
+            #abWordLL = abWordLL.replace('þ', 'per').replace('ŋ', 'pro').replace('¢', 'qui') # Brevigraphs
+            #abWordLL = abWordLL.replace('÷', 'est')         # Logographs
             nL='<w n="'+abWordLL+'">'+reSpell(abPre, sd)+'\n\t<choice>\n'
             nL=nL+'\t\t<abbr type="'+abType+'">'+reSpell(abBase, sd)+abAmTag+'</abbr>\n'
             nL=nL+'\t\t<expan>'+reSpell(abAlph, sd)+'</expan>\n\t</choice>\n'+reSpell(abPost, sd)+'</w>'+wSpace
@@ -192,8 +192,8 @@ with open(inFP) as inFH:
             wWordGL = wWordLL = wM.group(0)  # (L)inguistic (L)ayer vs. (G)raphematic (L)ayer
             wWordGL = reSpell(wWordGL, sd)   # contemporary romae → medieval rome (et sim.)
             wWordLL = wWordLL.replace('æ', 'ae') # E caudatum (medieval romæ → contemporary rome)
-            wWordLL = wWordLL.replace('þ', 'per').replace('ŋ', 'pro').replace('¢', 'qui') # Brevigraphs
-            wWordLL = wWordLL.replace('÷', 'est')         # Logographs
+            #wWordLL = wWordLL.replace('þ', 'per').replace('ŋ', 'pro').replace('¢', 'qui') # Brevigraphs
+            #wWordLL = wWordLL.replace('÷', 'est')         # Logographs
             nL='<w n="'+wWordLL+'">'+wWordGL+'</w>'+wSpace
             print(nL, file=outFH)
         else:                           # Doesn't fit any regex
