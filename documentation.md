@@ -661,7 +661,7 @@ Markup not referring to a specific layer
 	- Mostly used to mark faded ink, with @agent="faded".
 
 4. `<add>`
-	- the code <add place="above">...</add> is put at the point
+	- the code `<add place="above">...</add>` is put at the point
 		of the text where the interlinear addition starts (i.e.: in the XML
 		code, it comes right before the text above which it appears in the manuscript).
     - it can be either
