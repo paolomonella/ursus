@@ -102,6 +102,7 @@ with open(inFP) as inFH:
             print(nL, file=outFH)
         elif re.match(dAbPatt, line): # Double abbreviations
             line = line.replace('v', 'u')   # This substitution must be applied to all layers (GL, AL, LL)
+            line = line.replace('-', '¯')   # This allows me to insert ,st,-,sunt, (easier) instead of ,st,¯,sunt,
             #print('trovato doppio in:\t'+line)
             dAbM = re.match(dAbPatt, line)
             print(dAbM.group(4))
@@ -146,6 +147,7 @@ with open(inFP) as inFH:
             print(nL, file=outFH)
         elif re.match(abPatt, line): # Single abbreviations
             line = line.replace('v', 'u')   # This substitution must be applied to all layers (GL, AL, LL)
+            line = line.replace('-', '¯')   # This allows me to insert ,st,-,sunt, (easier) instead of ,st,¯,sunt,
             abM = re.match(abPatt, line)
             abPre = abM.group(1)
             abBase = abM.group(2)
