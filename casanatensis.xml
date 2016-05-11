@@ -22119,7 +22119,7 @@ sonas</w>
 <pc n=".">ł</pc>
 </ref>
 
-<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.83.17-2.84.??" type="source">
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.83.17-2.85.15" type="source">
 <w n="illae" xml:id="w20691"><hi rend="larger">i</hi>llæ</w>
 <lb n="6r.a.27" />
 <w n="uero" xml:id="w20694">uero</w>
@@ -22509,14 +22509,3530 @@ paratio</w>
 <w n="et" xml:id="w21051">et</w>
 <w n="nigrior" xml:id="w21054">nigrior</w>
 <pc n=".">|</pc>
+<w n="possunt" xml:id="w21057">pos
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="haec" xml:id="w21060">hæc</w>
+	<pc n="space"> </pc>
+<w n="quae" xml:id="w21063">quæ</w>
+	<pc n="space"> </pc>
+<w n="plenae" xml:id="w21066">plene</w>
+	<pc n="space"> </pc>
+<w n="significationis" xml:id="w21069">significationis</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w21072">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w21075">et</w>
+<w n="substantiam" xml:id="w21078">sub
+<lb n="6r.b.2" />
+	stanti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="demonstrant" xml:id="w21081">demonstrant</w>
+<pc n="0">·</pc>
+<w n="intellegi" xml:id="w21084">intellegi</w>
+	<pc n="space"> </pc>
+<w n="sine" xml:id="w21087">sine</w>
+	<pc n="space"> </pc>
+<w n="adiectiuis" xml:id="w21090">adiectiuis</w>
+<pc n=".">|</pc>
+<w n="adiectiua" xml:id="w21093">adiectiua</w>
+	<pc n="space"> </pc>
+<w n="sine" xml:id="w21096">si
+<lb n="6r.b.3" />
+ne</w>
+	<pc n="space"> </pc>
+<w n="his" xml:id="w21099">his</w>
+	<pc n="space"> </pc>
+<w n="intellegi" xml:id="w21102">intellegi</w>
+	<pc n="space"> </pc>
+<w n="non" xml:id="w21105">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="possunt" xml:id="w21108">pos
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<pc n=".">|</pc>
+<w n="idcirco" xml:id="w21111"><hi rend="larger">i</hi>dcirco</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w21114">et</w>
+<w n="adiectiua" xml:id="w21117">adiectiua</w>
+	<pc n="space"> </pc>
+<w n="dicta" xml:id="w21120">dicta</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w21123">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="quod" xml:id="w21126">quod</w>
+	<pc n="space"> </pc>
+<w n="adiciuntur" xml:id="w21129">adi
+<lb n="6r.b.4" />
+ciuntur</w>
+	<pc n="space"> </pc>
+<w n="illis" xml:id="w21132">illis</w>
+	<pc n="space"> </pc>
+<w n="nominibus" xml:id="w21135">nomini
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="quae" xml:id="w21138">quæ</w>
+	<pc n="space"> </pc>
+<w n="demonstrant" xml:id="w21141">demonstrant</w>
+	<pc n="space"> </pc>
+<w n="substantiam" xml:id="w21144">substanti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="quamuis" xml:id="w21147">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+	<pc n="space"> </pc>
+uis</w>
+<lb n="6r.b.5" />
+<w n="antiqui" xml:id="w21150">anti
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+</w>
+<w n="usi" xml:id="w21153">usi</w>
+<w n="sunt" xml:id="w21156">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="comparatiuis" xml:id="w21159">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuis</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w21162">in</w>
+<w n="quibusdam" xml:id="w21165">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+	busd
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="gentilibus" xml:id="w21168">gentili
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w21171">ut</w>
+<w n="Punus" xml:id="w21174">punus</w>
+	<pc n="space"> </pc>
+<w n="Punior" xml:id="w21177">punior</w>
+	<pc n="space"> </pc>
+<pc n=",">.</pc>
+<note type="script">After the full stop there is a strange 'i'-shaped sign, that I think is a simple scribal error.</note>
+<w n="et" xml:id="w21180">et</w>
+<lb n="6r.b.6" />
+<w n="in" xml:id="w21183">in</w>
+<w n="pronominibus" xml:id="w21186">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+	nomini
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="usi" xml:id="w21189">usi</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w21192">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="superlatiuo" xml:id="w21195">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+latiuo</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w21198">ut</w>
+<w n="ipsissimus" xml:id="w21201">ipsissimus</w>
+<pc n=".">|</pc>
+<w n="fiunt" xml:id="w21204"><hi rend="larger">f</hi>iunt</w>
+	<pc n="space"> </pc>
+<w n="igitur" xml:id="w21207">igitur</w>
+	<pc n="space"> </pc>
+<w n="comparatiua" xml:id="w21210">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	pa
+<lb n="6r.b.7" />
+ratiua</w>
+	<pc n="space"> </pc>
+<w n="a" xml:id="w21213">a</w>
+<w n="nominibus" xml:id="w21216">nomini
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w21219">ut</w>
+<w n="clarus" xml:id="w21222">clarus</w>
+	<pc n="space"> </pc>
+<w n="clarior" xml:id="w21225">clarior</w>
+<pc n=",">ł</pc>
+<w n="a" xml:id="w21228">a</w>
+<w n="uerbis" xml:id="w21231">uerbis</w>
+	<pc n="space"> </pc>
+<w n="detero" xml:id="w21234">detero</w>
+	<pc n="space"> </pc>
+<w n="deteris" xml:id="w21237">deteris</w>
+	<pc n="space"> </pc>
+<w n="deterior" xml:id="w21240">de
+<lb n="6r.b.8" />
+terior</w>
+<pc n=",">ł</pc>
+<w n="potior" xml:id="w21243">potior</w>
+	<pc n="space"> </pc>
+<w n="potiris" xml:id="w21246">potiris</w>
+<pc n=",">|</pc>
+<w n="hic" xml:id="w21249">hic</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w21252">et</w>
+	<pc n="space"> </pc>
+<w n="haec" xml:id="w21255">hæc</w>
+	<pc n="space"> </pc>
+<w n="potior" xml:id="w21258">potior</w>
+	<pc n="space"> </pc>
+<w n="potioris" xml:id="w21261">potioris</w>
+<pc n=".">|</pc>
+<w n="potest" xml:id="w21264">potest</w>
+	<pc n="space"> </pc>
+<w n="hoc" xml:id="w21267">hoc</w>
+<w n="etiam" xml:id="w21270">etiam</w>
+<lb n="6r.b.9" />
+<w n="a" xml:id="w21273">a</w>
+<w n="nomine" xml:id="w21276">nomine</w>
+	<pc n="space"> </pc>
+<w n="potis" xml:id="w21279">potis</w>
+	<pc n="space"> </pc>
+<w n="accipere" xml:id="w21282">accipere</w>
+<pc n=",">·</pc>
+<w n="quamuis" xml:id="w21285">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+	<pc n="space"> </pc>
+uis</w>
+	<pc n="space"> </pc>
+<w n="alterius" xml:id="w21288">alterius</w>
+	<pc n="space"> </pc>
+<w n="significationis" xml:id="w21291">significationis</w>
+	<pc n="space"> </pc>
+<w n="sit" xml:id="w21294">sit</w>
+<pc n=".">|</pc>
+<lb n="6r.b.10" />
+<w n="ab" xml:id="w21297"><hi rend="larger">a</hi>b</w>
+<w n="aduerbiis" xml:id="w21300">aduerbiis</w>
+<pc n="0">·</pc>
+<w n="siue" xml:id="w21303">siue</w>
+	<pc n="space"> </pc>
+<w n="praepositionibus" xml:id="w21306">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+	positioni
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="extra" xml:id="w21309">extra</w>
+	<pc n="space"> </pc>
+<w n="exterior" xml:id="w21312">exterior</w>
+<pc n=",">|</pc>
+<w n="et" xml:id="w21315">et</w>
+<w n="a" xml:id="w21318">a</w>
+<w n="localibus" xml:id="w21321">localibus</w>
+	<pc n="space"> </pc>
+<w n="aduerbiis" xml:id="w21324">aduer
+<lb n="6r.b.11" />
+biis</w>
+	<pc n="space"> </pc>
+<w n="siue" xml:id="w21327">siue</w>
+<w n="praepositionibus" xml:id="w21330">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+	positioni
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="comparatiua" xml:id="w21333">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiua</w>
+	<pc n="space"> </pc>
+<w n="nascuntur" xml:id="w21336">nascuntur</w>
+<pc n=",">·</pc>
+<w n="ut" xml:id="w21339">ut</w>
+<w n="citra" xml:id="w21342">citra</w>
+	<pc n="space"> </pc>
+<w n="citerior" xml:id="w21345">citerior</w>
+<pc n=".">|</pc>
+<lb n="6r.b.12" />
+<w n="antiqui" xml:id="w21348">anti
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="citer" xml:id="w21351">citer</w>
+	<pc n="space"> </pc>
+<w n="citimus" xml:id="w21354">citimus</w>
+	<pc n="space"> </pc>
+<w n="dicebant" xml:id="w21357">dicebant</w>
+<pc n=",">|</pc>
+<w n="penitus" xml:id="w21360">penitus</w>
+	<pc n="space"> </pc>
+<w n="penitior" xml:id="w21363">penitior</w>
+<pc n=",">·</pc>
+<w n="unde" xml:id="w21366">unde</w>
+	<pc n="space"> </pc>
+<w n="Apuleius" xml:id="w21369">apuleius</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w21372">in</w>
+<lb n="6r.b.13" />
+<w n="penitiorem" xml:id="w21375">penitior
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="partem" xml:id="w21378">part
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="domus" xml:id="w21381">domus</w>
+	<pc n="space"> </pc>
+<w n="dixit" xml:id="w21384">dixit</w>
+<pc n=".">|</pc>
+</ref>
+</ab>
 
+<ab n="De gradibus comparationis" xml:id="ab020">
+<ref cRef="unknown" type="source">
 
+<w n="comparationis" xml:id="w21387"><hi rend="larger">c</hi>omparationis</w>
+	<pc n="space"> </pc>
+<w n="gradus" xml:id="w21390">gradus</w>
+	<pc n="space"> </pc>
+<w n="tres" xml:id="w21393">tres</w>
+<pc n="," />
+<w n="positiuus" xml:id="w21396">po
+<lb n="6r.b.14" />
+sitiuus</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w21399">ut</w>
+<w n="doctus" xml:id="w21402">doctus</w>
+<pc n=",">|</pc>
+<w n="comparatiuus" xml:id="w21405">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuus</w>
+<pc n="0">·</pc>
+<w n="ut" xml:id="w21408">ut</w>
+<w n="doctior" xml:id="w21411">doctior</w>
+<pc n=",">·</pc>
+<w n="superlatiuus" xml:id="w21414">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+latiuus</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w21417">ut</w>
+<w n="doctissimus" xml:id="w21420">doctis
+<lb n="6r.b.15" />
+simus</w>
+<pc n=".">ł</pc>
+<w n="positiuus" xml:id="w21423"><hi rend="larger">p</hi>ositiuus</w>
+	<pc n="space"> </pc>
+<w n="dicitur" xml:id="w21426">di
+	<choice>
+		<abbr type="superscription">ctr<am>¯</am></abbr>
+		<expan>citur</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="quia" xml:id="w21429">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+a</w>
+	<pc n="space"> </pc>
+<w n="primus" xml:id="w21432">primus</w>
+	<pc n="space"> </pc>
+<w n="ponitur" xml:id="w21435">ponitur</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w21438">in</w>
+<w n="gradu" xml:id="w21441">gradu</w>
+	<pc n="space"> </pc>
+<w n="comparationis" xml:id="w21444">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paratio
+<lb n="6r.b.16" />
+nis</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w21447">ut</w>
+<w n="doctus" xml:id="w21450">doctus</w>
+<pc n=".">ł</pc>
+<w n="comparatio" xml:id="w21453">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratio</w>
+	<pc n="space"> </pc>
+<w n="assimilatio" xml:id="w21456">adsimilatio</w>
+	<pc n="space"> </pc>
+<w n="dicitur" xml:id="w21459">di
+	<choice>
+		<abbr type="superscription">cr<am>¯</am></abbr>
+		<expan>citur</expan>
+	</choice>
+</w>
+<pc n=".">|</pc>
+<w n="comparatiuus" xml:id="w21462">comparatiuus</w>
+	<pc n="space"> </pc>
+<w n="dicitur" xml:id="w21465">di
+	<choice>
+		<abbr type="superscription">cr<am>¯</am></abbr>
+		<expan>citur</expan>
+	</choice>
+</w>
+<lb n="6r.b.17" />
+<w n="quia" xml:id="w21468">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+a</w>
+	<pc n="space"> </pc>
+<w n="assimilatus" xml:id="w21471">adsimilatus</w>
+	<pc n="space"> </pc>
+<w n="positiuo" xml:id="w21474">positiuo</w>
+	<pc n="space"> </pc>
+<w n="praefertur" xml:id="w21477">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+fertur</w>
+	<pc n="space"> </pc>
+<w n="illi" xml:id="w21480">illi</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w21483">ut</w>
+	<pc n="space"> </pc>
+<w n="doctior" xml:id="w21486">doctior</w>
+<pc n=",">·</pc>
+<w n="id" xml:id="w21489">id</w>
+<w n="est" xml:id="w21492">est</w>
+	<pc n="space"> </pc>
+<w n="plus" xml:id="w21495">plus</w>
+	<pc n="space"> </pc>
+<w n="scit" xml:id="w21498">scit</w>
+<lb n="6r.b.18" />
+<w n="quam" xml:id="w21501">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="doctus" xml:id="w21504">doctus</w>
+<pc n=".">|</pc>
+<w n="superlatiuus" xml:id="w21507"><hi rend="larger">s</hi>u
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+latiuus</w>
+	<pc n="space"> </pc>
+<w n="dicitur" xml:id="w21510">di
+	<choice>
+		<abbr type="superscription">cr<am>¯</am></abbr>
+		<expan>citur</expan>
+	</choice>
+</w>
+<pc n="0">·</pc>
+<w n="eo" xml:id="w21513">eo</w>
+<w n="quod" xml:id="w21516">q
+	<choice>
+		<abbr type="superscription">d<am>¯</am></abbr>
+		<expan>uod</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="super" xml:id="w21519">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="excellet" xml:id="w21522">excellet</w>
+	<pc n="space"> </pc>
+<w n="positiuo" xml:id="w21525">positiuo</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w21528">et</w>
+<w n="comparatiuo" xml:id="w21531">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+<lb n="6r.b.19" />
+paratiuo</w>
+<pc n=".">:</pc>
+<w n="plus" xml:id="w21534">plus</w>
+	<pc n="space"> </pc>
+<w n="enim" xml:id="w21537">en
+	<choice>
+		<abbr type="superscription">i<am>2</am></abbr>
+		<expan>im</expan>
+	</choice>
+</w>
+<w n="scit" xml:id="w21540">scit</w>
+	<pc n="space"> </pc>
+<w n="quam" xml:id="w21543">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<w n="doctus" xml:id="w21546">doctus</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w21549">et</w>
+<w n="doctior" xml:id="w21552">doctior</w>
+<w n="comparatiuus" xml:id="w21555"><hi rend="larger">c</hi>
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuus</w>
+<lb n="6r.b.20" />
+<w n="et" xml:id="w21558">et</w>
+<w n="suo" xml:id="w21561">suo</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w21564">et</w>
+	<pc n="space"> </pc>
+<w n="alieno" xml:id="w21567">alieno</w>
+	<pc n="space"> </pc>
+<w n="generi" xml:id="w21570">generi</w>
+	<pc n="space"> </pc>
+<w n="comparatur" xml:id="w21573">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratur</w>
+<pc n=",">·</pc>
+<w n="et" xml:id="w21576">et</w>
+<w n="iungitur" xml:id="w21579">iungitur</w>
+	<pc n="space"> </pc>
+<w n="ablatiuo" xml:id="w21582">ablatiuo</w>
+	<pc n="space"> </pc>
+<w n="sine" xml:id="w21585">sine</w>
+	<pc n="space"> </pc>
+<w n="praepositione" xml:id="w21588">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+	po
+<lb n="6r.b.21" />
+sitione</w>
+<pc n=",">·</pc>
+<w n="et" xml:id="w21591">et</w>
+<w n="singulari" xml:id="w21594">singulari</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w21597">et</w>
+<w n="plurali" xml:id="w21600">plurali</w>
+<pc n=".">|</pc>
+<w n="idem" xml:id="w21603"><hi rend="larger">i</hi>d
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ablatiuus" xml:id="w21606">ablatiuus</w>
+	<pc n="space"> </pc>
+<w n="ostendit" xml:id="w21609">ostendit</w>
+	<pc n="space"> </pc>
+<w n="positiuum" xml:id="w21612">positiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<lb n="6r.b.22" />
+<w n="cui" xml:id="w21615">cui</w>
+	<pc n="space"> </pc>
+<w n="praecellendo" xml:id="w21618">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+cellendo</w>
+	<pc n="space"> </pc>
+<w n="assimilatur" xml:id="w21621">adsimilatur</w>
+	<pc n="space"> </pc>
+<w n="comparatiuus" xml:id="w21624">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuus</w>
+<pc n=".">·</pc>
+<w n="si" xml:id="w21627"><hi rend="larger">s</hi>i</w>
+<w n="uero" xml:id="w21630">uero</w>
+	<pc n="space"> </pc>
+<w n="una" xml:id="w21633">una</w>
+	<pc n="space"> </pc>
+<w n="persona" xml:id="w21636">
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+sona</w>
+<lb n="6r.b.23" />
+<w n="uel" xml:id="w21639">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="res" xml:id="w21642">res</w>
+	<pc n="space"> </pc>
+<w n="posita" xml:id="w21645">posita</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w21648">est</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w21651">in</w>
+<w n="positiuo" xml:id="w21654">positiuo</w>
+	<pc n="space"> </pc>
+<w n="gradu" xml:id="w21657">gradu</w>
+<pc n=",">·</pc>
+<w n="comparatiuo" xml:id="w21660">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuo</w>
+	<pc n="space"> </pc>
+<w n="iungitur" xml:id="w21663">iungitur</w>
+	<pc n="space"> </pc>
+<w n="ablatiuus" xml:id="w21666">abla
+<lb n="6r.b.24" />
+tiuus</w>
+	<pc n="space"> </pc>
+<w n="singularis" xml:id="w21669">singularis</w>
+<pc n=".">·</pc>
+<w n="hoc" xml:id="w21672">hoc</w>
+	<pc n="space"> </pc>
+<w n="modo" xml:id="w21675">modo</w>
+	<pc n="space"> </pc>
+<w n="Diomedes" xml:id="w21678">diomedes</w>
+	<pc n="space"> </pc>
+<w n="fortis" xml:id="w21681">fortis</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w21684">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="sed" xml:id="w21687">sed</w>
+	<pc n="space"> </pc>
+<w n="Hector" xml:id="w21690"><hi rend="larger">h</hi>æctor
+<note type="script">Scribal error: 'Haector' for 'Hector'.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="fortior" xml:id="w21693">for
+<lb n="6r.b.25" />
+tior</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w21696">est</w>
+	<pc n="space"> </pc>
+<w n="Diomede" xml:id="w21699">diomede</w>
+<pc n=".">.</pc>
+<w n="si" xml:id="w21702"><hi rend="larger">s</hi>i</w>
+<w n="autem" xml:id="w21705">
+	<choice>
+		<abbr type="superscription">au<am>¯</am></abbr>
+		<expan>autem</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="plures" xml:id="w21708">plures</w>
+	<pc n="space"> </pc>
+<w n="personae" xml:id="w21711">
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+sonæ</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w21714">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<w n="res" xml:id="w21717">res</w>
+	<pc n="space"> </pc>
+<w n="ponantur" xml:id="w21720">ponantur</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w21723">in</w>
+<w n="positiuo" xml:id="w21726">posi
+<lb n="6r.b.26" />
+tiuo</w>
+	<pc n="space"> </pc>
+<w n="gradu" xml:id="w21729">gradu</w>
+<pc n=",">·</pc>
+<w n="comparatiuo" xml:id="w21732">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuo</w>
+	<pc n="space"> </pc>
+<w n="iungitur" xml:id="w21735">iungitur</w>
+	<pc n="space"> </pc>
+<w n="ablatiuus" xml:id="w21738">ablatiuus</w>
+	<pc n="space"> </pc>
+<w n="pluralis" xml:id="w21741">pluralis</w>
+<pc n=",">·</pc>
+<w n="hoc" xml:id="w21744">hoc</w>
+<w n="modo" xml:id="w21747">mo
+<lb n="6r.b.27" />
+do</w>
+<pc n=",">·</pc>
+<w n="Troiani" xml:id="w21750">troiani</w>
+	<pc n="space"> </pc>
+<w n="fortes" xml:id="w21753">fortes</w>
+<w n="sunt" xml:id="w21756">sunt</w>
+<pc n=",">·</pc>
+<w n="sed" xml:id="w21759">sed</w>
+	<pc n="space"> </pc>
+<w n="Hector" xml:id="w21762">hector</w>
+	<pc n="space"> </pc>
+<w n="fortior" xml:id="w21765">fortior</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w21768">est</w>
+	<pc n="space"> </pc>
+<w n="Troianis" xml:id="w21771">troianis</w>
+<pc n=".">|</pc>
+<w n="alii" xml:id="w21774"><hi rend="larger">a</hi>lii</w>
+<w n="doctores" xml:id="w21777">doc
+<lb n="6r.b.28" />
+tores</w>
+	<pc n="space"> </pc>
+<w n="asserunt" xml:id="w21780">asserunt</w>
+	<pc n="space"> </pc>
+<w n="tunc" xml:id="w21783">tunc</w>
+	<pc n="space"> </pc>
+<w n="iungi" xml:id="w21786">iungi</w>
+	<pc n="space"> </pc>
+<w n="debere" xml:id="w21789">debere</w>
+	<pc n="space"> </pc>
+<w n="comparatiuus" xml:id="w21792">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuus</w>
+	<pc n="space"> </pc>
+<w n="ablatiuo" xml:id="w21795">
+	<choice>
+		<abbr type="superscription">abl<am>¯</am></abbr>
+		<expan>ablatiuo</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="singulari" xml:id="w21798">singulari</w>
+	<pc n="space"> </pc>
+<pc n=",">.</pc>
+<w n="cum" xml:id="w21801">c
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<lb n="6r.b.29" />
+<w n="alieno" xml:id="w21804">alieno</w>
+	<pc n="space"> </pc>
+<w n="generi" xml:id="w21807">generi</w>
+	<pc n="space"> </pc>
+<w n="comparatur" xml:id="w21810">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratur</w>
+<pc n=",">·</pc>
+<w n="ut" xml:id="w21813">ut</w>
+<w n="Hector" xml:id="w21816"><hi rend="larger">h</hi>æctor
+<note type="script">Scribal error: 'Haector' for 'Hector'.</note>
+</w>
+<w n="fortior" xml:id="w21819">fortior</w>
+	<pc n="space"> </pc>
+<w n="Diomede" xml:id="w21822">diomede</w>
+<pc n=".">ł</pc>
+<w n="Hector" xml:id="w21825"><hi rend="larger">h</hi>ector</w>
+<lb n="6r.b.30" />
+<w n="namque" xml:id="w21828">n
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="fuit" xml:id="w21831">fuit</w>
+	<pc n="space"> </pc>
+<w n="Troianus" xml:id="w21834">troianus</w>
+<pc n=",">·</pc>
+<w n="et" xml:id="w21837">et</w>
+<w n="Diomedes" xml:id="w21840">diomedes</w>
+	<pc n="space"> </pc>
+<w n="ex" xml:id="w21843">ex</w>
+<w n="alia" xml:id="w21846">alia</w>
+	<pc n="space"> </pc>
+<w n="gente" xml:id="w21849">gente</w>
+<pc n=".">|</pc>
+<w n="et" xml:id="w21852"><hi rend="larger">e</hi>t</w>
+<w n="tunc" xml:id="w21855">tunc</w>
+	<pc n="space"> </pc>
+<w n="ablatiuo" xml:id="w21858">
+	<choice>
+		<abbr type="superscription">abl<am>¯</am></abbr>
+		<expan>ablatiuo</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="plurali" xml:id="w21861">plu
+<lb n="6r.b.31" />
+rali</w>
+	<pc n="space"> </pc>
+<w n="cum" xml:id="w21864">c
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="suo" xml:id="w21867">suo</w>
+	<pc n="space"> </pc>
+<w n="generi" xml:id="w21870">generi</w>
+	<pc n="space"> </pc>
+<w n="comparatur" xml:id="w21873">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratur</w>
+<pc n=",">·</pc>
+<w n="ut" xml:id="w21876">ut</w>
+<w n="Hector" xml:id="w21879">hector</w>
+	<pc n="space"> </pc>
+<w n="audacior" xml:id="w21882">audicior
+<note type="script">Scribal error: 'audicior' for 'audacior'.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="Troianis" xml:id="w21885">troianis
+<note type="script">The first hand, writing in brown ink, wrote 'Troianus'. The second hand, writing in blank ink, correted it to 'Troianis', by overwriting the penultimate grapheme 'i' over the previous 'u'.</note>
+</w>
+<pc n=".">·</pc>
+</ref>
 
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.85.17-2.86.5" type="source">
+<lb n="6r.b.32" />
+<w n="Graeci" xml:id="w21888">greci</w>
+	<pc n="space"> </pc>
+<w n="asserunt" xml:id="w21891">asserunt</w>
+	<pc n="space"> </pc>
+<w n="non" xml:id="w21894">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="ratione" xml:id="w21897">ratione</w>
+	<pc n="space"> </pc>
+<w n="qualibet" xml:id="w21900">qualibet</w>
+<pc n=",">·</pc>
+<w n="sed" xml:id="w21903">sed</w>
+	<pc n="space"> </pc>
+<w n="honoris" xml:id="w21906">honoris</w>
+	<pc n="space"> </pc>
+<w n="causa" xml:id="w21909">causa</w>
+	<pc n="space"> </pc>
+<w n="suae" xml:id="w21912">suæ</w>
+<w n="gentis" xml:id="w21915">gen
+<lb n="6r.b.33" />
+tis</w>
+	<pc n="space"> </pc>
+<w n="non" xml:id="w21918">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="posse" xml:id="w21921">posse</w>
+	<pc n="space"> </pc>
+<w n="fieri" xml:id="w21924">fieri</w>
+	<pc n="space"> </pc>
+<w n="comparatio" xml:id="w21927">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratio</w>
+	<pc n="space"> </pc>
+<w n="ad" xml:id="w21930">ad</w>
+<w n="plures" xml:id="w21933">plures</w>
+	<pc n="space"> </pc>
+<w n="sui" xml:id="w21936">sui</w>
+<w n="generis" xml:id="w21939">generis</w>
+<pc n=".">|</pc>
+<note type="script">Many of the punctuation signs in this page have been added by the second hand of the manuscript, writing in blank ink. I am not formally encoding those hand shifts in punctuation.</note>
+<w n="alii" xml:id="w21942"><hi rend="larger">a</hi>lii</w>
+	<pc n="space"> </pc>
+<w n="dicunt" xml:id="w21945">dicunt</w>
+	<pc n="space"> </pc>
+<w n="ideo" xml:id="w21948">ideo</w>
+<lb n="6r.b.34" />
+<w n="non" xml:id="w21951">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="posse" xml:id="w21954">posse</w>
+	<pc n="space"> </pc>
+<w n="fieri" xml:id="w21957">fieri</w>
+	<pc n="space"> </pc>
+<w n="comparatio" xml:id="w21960">comparatio</w>
+	<pc n="space"> </pc>
+<w n="ad" xml:id="w21963">ad</w>
+<w n="plures" xml:id="w21966">plures</w>
+	<pc n="space"> </pc>
+<w n="sui" xml:id="w21969">sui</w>
+<w n="generis" xml:id="w21972">generis</w>
+<pc n=",">·</pc>
+<w n="quod" xml:id="w21975">quod</w>
+<w n="cum" xml:id="w21978">c
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ad" xml:id="w21981">ad</w>
+<w n="plures" xml:id="w21984">plures</w>
+<lb n="6r.b.35" />
+<w n="fiat" xml:id="w21987">fiat</w>
+	<pc n="space"> </pc>
+<w n="comparatio" xml:id="w21990">comparatio</w>
+<pc n=",">·</pc>
+<w n="superlatiuo" xml:id="w21993">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+latiuo</w>
+	<pc n="space"> </pc>
+<w n="potest" xml:id="w21996">potest</w>
+	<pc n="space"> </pc>
+<w n="uti" xml:id="w21999">uti</w>
+<pc n=",">·</pc>
+<w n="ut" xml:id="w22002">ut</w>
+<w n="fortissimus" xml:id="w22005">fortissimus</w>
+	<pc n="space"> </pc>
+<w n="graiorum" xml:id="w22008">gra
+<lb n="6r.b.36" />
+	ior
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="Achilles" xml:id="w22011">achilles</w>
+<pc n=".">|</pc>
+<w n="superlatiuus" xml:id="w22014">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+latiuus</w>
+	<pc n="space"> </pc>
+<w n="significat" xml:id="w22017">significat</w>
+	<pc n="space"> </pc>
+<w n="multum" xml:id="w22020">mult
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="excellere" xml:id="w22023">excellere</w>
+<lb n="6r.b.37" />
+<w n="alios" xml:id="w22026">alios</w>
+<pc n=",">·</pc>
+<w n="comparatiuus" xml:id="w22029"><hi rend="larger">c</hi>
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuus</w>
+	<pc n="space"> </pc>
+<w n="etiam" xml:id="w22032">eti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="paruum" xml:id="w22035">paru
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="unde" xml:id="w22038">unde</w>
+	<pc n="space"> </pc>
+<w n="apud" xml:id="w22041">apud</w>
+	<pc n="space"> </pc>
+<w n="nos" xml:id="w22044">nos</w>
+	<pc n="space"> </pc>
+<w n="iure" xml:id="w22047">iure</w>
+	<pc n="space"> </pc>
+<w n="accipit" xml:id="w22050">acci
+<lb n="6r.b.38" />
+pit</w>
+	<pc n="space"> </pc>
+<w n="deminutionem" xml:id="w22053">deminution
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="ut" xml:id="w22056">ut</w>
+	<pc n="space"> </pc>
+<w n="magnus" xml:id="w22059">magnus</w>
+<pc n=",">·</pc>
+<w n="maior" xml:id="w22062">maior</w>
+<pc n=",">·</pc>
+<w n="maiusculus" xml:id="w22065">maiusculus</w>
+<pc n="," />
+<w n="paruus" xml:id="w22068">par
+<lb n="6r.b.39" />
+uus</w>
+	<pc n="space"> </pc>
+<w n="minor" xml:id="w22071">minor</w>
+	<pc n="space"> </pc>
+<w n="minusculus" xml:id="w22074">minusculus</w>
+<pc n=",">·</pc>
+<w n="id" xml:id="w22077">id</w>
+<w n="est" xml:id="w22080">est</w>
+	<pc n="space"> </pc>
+<w n="paruo" xml:id="w22083">paruo</w>
+	<pc n="space"> </pc>
+<w n="minor" xml:id="w22086">minor</w>
+<pc n=".">|</pc>
+<w n="similiter" xml:id="w22089">similiter</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w22092">et</w>
+<lb n="6r.b.40" />
+<w n="tardiusculus" xml:id="w22095">tardiusculus</w>
+<pc n=".">|</pc>
+</ref>
 
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.85.16-2.85.17" type="source">
 
+<pb facs="manuscript_images/C_006v.JPG" n="6v" />
+
+<cb n="6v.a" />
+
+<lb n="6v.a.1" />
+<w n="dicunt" xml:id="w22098"><hi rend="larger">d</hi>icunt</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w22101">ut</w>
+<w n="comparatiuus" xml:id="w22104">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuus</w>
+	<pc n="space"> </pc>
+<w n="gradus" xml:id="w22107">gradus</w>
+<pc n="0">·</pc>
+<w n="ad" xml:id="w22110">ad</w>
+	<pc n="space"> </pc>
+<w n="tres" xml:id="w22113">tres</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w22116">et</w>
+<w n="quattuor" xml:id="w22119">quattuor</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w22122">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<w n="plures" xml:id="w22125">plures</w>
+<lb n="6v.a.2" />
+<w n="iungatur" xml:id="w22128">iungatur</w>
+<pc n=",">·</pc>
+<w n="non" xml:id="w22131">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="tamen" xml:id="w22134">tamen</w>
+	<pc n="space"> </pc>
+<w n="ad" xml:id="w22137">ad</w>
+<w n="totum" xml:id="w22140">tot
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="genus" xml:id="w22143">genus</w>
+<pc n=".">ł</pc>
+<w n="sed" xml:id="w22146">sed</w>
+<w n="contra" xml:id="w22149">contra</w>
+	<pc n="space"> </pc>
+<w n="haec" xml:id="w22152">hæc</w>
+	<pc n="space"> </pc>
+<w n="Priscianus" xml:id="w22155">priscianus</w>
+	<pc n="space"> </pc>
+<w n="ait" xml:id="w22158">ait</w>
+<pc n=",">ł</pc>
+<note type="content">This punctuation mark seems to be used here to introduce a verbatim quotation from Priscian: an unusual usage of the mark and an unusual use of the source. The specific passage cited here is Priscian Ars grammatica, K.2.85.16, a sentence which had not been used yet.</note>
+<lb n="6v.a.3" />
+<w n="fit" xml:id="w22161">fit</w>
+	<pc n="space"> </pc>
+<w n="autem" xml:id="w22164">
+	<choice>
+		<abbr type="superscription">au<am>¯</am></abbr>
+		<expan>autem</expan>
+	</choice>
+</w>
+<w n="comparatio" xml:id="w22167">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratio</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w22170">uel</w>
+	<pc n="space"> </pc>
+<w n="ad" xml:id="w22173">ad</w>
+	<pc n="space"> </pc>
+<w n="unum" xml:id="w22176">un
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w22179">uel</w>
+	<pc n="space"> </pc>
+<w n="ad" xml:id="w22182">ad</w>
+	<pc n="space"> </pc>
+<w n="plures" xml:id="w22185">plures</w>
+	<pc n="space"> </pc>
+<w n="tam" xml:id="w22188">t
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="sui" xml:id="w22191">sui</w>
+	<pc n="space"> </pc>
+<w n="generis" xml:id="w22194">generis</w>
+	<pc n="space"> </pc>
+<w n="quam" xml:id="w22197">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<lb n="6v.a.4" />
+<w n="alieni" xml:id="w22200">alieni</w>
+<pc n=".">|</pc>
+</ref>
+
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.86.14-2.87.16" type="source">
+<w n="nomina" xml:id="w22203"><hi rend="larger">n</hi>omina</w>
+	<pc n="space"> </pc>
+<w n="quae" xml:id="w22206">quæ</w>
+	<pc n="space"> </pc>
+<w n="comparationem" xml:id="w22209">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paration
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="recipiunt" xml:id="w22212">recipiunt</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w22215">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="secundae" xml:id="w22218">secundæ</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w22221">uel</w>
+<w n="tertiaea" xml:id="w22224">tertiæa</w>
+	<pc n="space"> </pc>
+<lb n="6v.a.5" />
+<w n="declinationis" xml:id="w22227">declinationis</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w22230">sunt</w>
+<pc n=".">·</pc>
+<w n="secundae" xml:id="w22233">secundæ</w>
+	<pc n="space"> </pc>
+<w n="declinationis" xml:id="w22236">declinationis</w>
+<pc n="0">·</pc>
+<w n="uel" xml:id="w22239">uel</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w22242">in</w>
+	<pc n="space"> </pc>
+<w n="er" type="alphabemes" xml:id="w22245">er</w>
+<w n="desinunt" xml:id="w22248">desinunt</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w22251">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w22254">in</w>
+<lb n="6v.a.6" />
+<w n="us" type="alphabemes" xml:id="w22257">us</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w22260">et</w>
+	<pc n="space"> </pc>
+<w n="mobilia" xml:id="w22263">mouilia
+<note type="script">Scribal error: 'mouilia' for 'mobilia', due to contemporary pronunciation.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w22266">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="facientia" xml:id="w22269">facientia</w>
+	<pc n="space"> </pc>
+<w n="femininum" xml:id="w22272">feminin
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w22275">in</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="a" type="alphabemes" xml:id="w22278">a</w>
+<pc n=",">·</pc>
+<w n="neutrum" xml:id="w22281">
+	<choice>
+		<abbr type="superscription">neu<am>¯</am></abbr>
+		<expan>neutrum</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w22284">in</w>
+<w n="um" type="alphabemes" xml:id="w22287">um</w>
+<pc n=".">·</pc>
+<w n="ex" xml:id="w22290">ex</w>
+<w n="genetiuo" xml:id="w22293">genitiuo</w>
+	<pc n="space"> </pc>
+<w n="eorum" xml:id="w22296">eo
+<lb n="6v.a.7" />
+	r
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="fiunt" xml:id="w22299">fiunt</w>
+	<pc n="space"> </pc>
+<w n="comparatiua" xml:id="w22302">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiua</w>
+	<pc n="space"> </pc>
+<w n="correpta" xml:id="w22305">
+	<choice>
+		<abbr type="superscription">cor<am>¯</am></abbr>
+		<expan>correpta</expan>
+	</choice>
+</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w22308">i</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w22311">et</w>
+<w n="assumpta" xml:id="w22314">ads
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+pta</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="or" type="alphabemes" xml:id="w22317">or</w>
+<pc n="quote">·</pc>
+<w n="ut" xml:id="w22320">ut</w>
+<w n="niger" xml:id="w22323">niger</w>
+	<pc n="space"> </pc>
+<w n="nigri" xml:id="w22326">nigri</w>
+	<pc n="space"> </pc>
+<w n="nigrior" xml:id="w22329">nigri
+<lb n="6v.a.8" />
+	or
+<note type="script">There is a 'u'-shaped sign over the second 'i' to mark its short quantity.</note>
+</w>
+<pc n=",">·</pc>
+<w n="clarus" xml:id="w22332">clarus</w>
+	<pc n="space"> </pc>
+<w n="clari" xml:id="w22335">clari</w>
+	<pc n="space"> </pc>
+<w n="clarior" xml:id="w22338">clarior
+<note type="script">There is a 'u'-shaped sign over the 'i' to mark its short quantity.</note>
+</w>
+<pc n=".">·</pc>
+<w n="sinisterior" xml:id="w22341">sinisterior
+<note type="script">There is a 'u'-shaped sign over the last 'i' to mark its short quantity.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="quasi" xml:id="w22344">quasi</w>
+	<pc n="space"> </pc>
+<w n="a" xml:id="w22347">a</w>
+<w n="genetiuo" xml:id="w22350">genitiuo</w>
+	<pc n="space"> </pc>
+<w n="sinisteri" xml:id="w22353">sinisteri</w>
+	<pc n="space"> </pc>
+<w n="uidetur" xml:id="w22356">ui
+<lb n="6v.a.9" />
+detur</w>
+	<pc n="space"> </pc>
+<w n="esse" xml:id="w22359">
+	<choice>
+		<abbr type="superscription">ee<am>¯</am></abbr>
+		<expan>esse</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="sed" xml:id="w22362">sed</w>
+<w n="in" xml:id="w22365">in</w>
+<w n="usu" xml:id="w22368">usu</w>
+	<pc n="space"> </pc>
+<w n="sinistri" xml:id="w22371">sinistri</w>
+<w n="est" xml:id="w22374">est</w>
+<pc n=".">ł</pc>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w22377">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="accidentia" xml:id="w22380">accidentia</w>
+	<pc n="space"> </pc>
+<w n="substantiae" xml:id="w22383">substantiæ</w>
+	<pc n="space"> </pc>
+<w n="quae" xml:id="w22386">quæ</w>
+	<pc n="space"> </pc>
+<w n="adiectiua" xml:id="w22389">ad
+<lb n="6v.a.10" />
+iectiua</w>
+	<pc n="space"> </pc>
+<w n="dicuntur" xml:id="w22392">dicuntur</w>
+<note type="source">Keil (Priscian Ars grammatica, K.2.86.21) has 'Inueniuntur quaedam, quae quamuis sint accidentia [id est adiectiua] et eorum significatio exigat'. He expunges the sentence 'id est adiectiua', probably as an interpolated glossa, but the sentence was in the text that Ursus read, so that he included it in his own text.</note>
+<pc n=",">·</pc>
+<w n="quorum" xml:id="w22395">quor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="quorum" xml:id="w22398">quor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="significatio" xml:id="w22401">significatio</w>
+	<pc n="space"> </pc>
+<w n="exigit" xml:id="w22404">exigit</w>
+	<pc n="space"> </pc>
+<w n="recipere" xml:id="w22407">recipere</w>
+	<pc n="space"> </pc>
+<w n="comparatiuum" xml:id="w22410">comparati
+<lb n="6v.a.11" />
+	u
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="gradum0" xml:id="w22413">grad
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+0</w>
+<pc n=".">·</pc>
+<w n="tamen" xml:id="w22416"><hi rend="larger">t</hi>amen</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w22419">in</w>
+<w n="usu" xml:id="w22422">usu</w>
+<w n="non" xml:id="w22425">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="est" xml:id="w22428">est</w>
+	<pc n="space"> </pc>
+<w n="illum" xml:id="w22431">ill
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="recipere" xml:id="w22434">recipere</w>
+<pc n=".">·</pc>
+<w n="in" xml:id="w22437"><hi rend="larger">i</hi>n</w>
+<w n="his" xml:id="w22440">his</w>
+	<pc n="space"> </pc>
+<w n="plerumque" xml:id="w22443">pler
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="fit" xml:id="w22446">fit</w>
+<w n="quae" xml:id="w22449">quæ</w>
+<lb n="6v.a.12" />
+<w n="uocales" xml:id="w22452">uocales</w>
+	<pc n="space"> </pc>
+<w n="habent" xml:id="w22455">habent</w>
+	<pc n="space"> </pc>
+<w n="ante" xml:id="w22458">ante</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="us" type="alphabemes" xml:id="w22461">us</w>
+<pc n="quote">·</pc>
+<w n="utrius" xml:id="w22464">utrius</w>
+	<pc n="space"> </pc>
+<w n="arduus" xml:id="w22467">arduus</w>
+	<pc n="space"> </pc>
+<w n="strenuus" xml:id="w22470">strenuus</w>
+<pc n=",">:</pc>
+<w n="quamuis" xml:id="w22473">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+uis</w>
+	<pc n="space"> </pc>
+<w n="Plautus" xml:id="w22476">pla
+<lb n="6v.a.13" />
+utus</w>
+	<pc n="space"> </pc>
+<w n="strenuior" xml:id="w22479">strenuior</w>
+	<pc n="space"> </pc>
+<w n="dixisset" xml:id="w22482">dixisset</w>
+<pc n=".">·</pc>
+<w n="oportet" xml:id="w22485"><hi rend="larger">o</hi>portet</w>
+<w n="comparatiuus" xml:id="w22488">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuus</w>
+	<pc n="space"> </pc>
+<w n="uincere" xml:id="w22491">uincere</w>
+	<pc n="space"> </pc>
+<w n="una" xml:id="w22494">una</w>
+<lb n="6v.a.14" />
+<w n="syllaba" xml:id="w22497">syllaba</w>
+	<pc n="space"> </pc>
+<w n="genitiuum" xml:id="w22500">genitiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="primitiui" xml:id="w22503">primitiui</w>
+	<pc n="space"> </pc>
+<w n="sui" xml:id="w22506">sui</w>
+<pc n=",">·</pc>
+<w n="ut" xml:id="w22509">ut</w>
+<w n="doctus" xml:id="w22512">doctus</w>
+	<pc n="space"> </pc>
+<w n="docti" xml:id="w22515">docti</w>
+	<pc n="space"> </pc>
+<w n="doctior" xml:id="w22518">doctior</w>
+<pc n=".">·</pc>
+<w n="ex" xml:id="w22521"><hi rend="larger">e</hi>x</w>
+<w n="his" xml:id="w22524">his</w>
+<lb n="6v.a.15" />
+<w n="uero" xml:id="w22527">uero</w>
+	<pc n="space"> </pc>
+<w n="quae" xml:id="w22530">quæ</w>
+	<pc n="space"> </pc>
+<w n="habent" xml:id="w22533">habent</w>
+	<pc n="space"> </pc>
+<w n="uocales" xml:id="w22536">uocales</w>
+	<pc n="space"> </pc>
+<w n="ante" xml:id="w22539">ante</w>
+<pc n="quote">·</pc>
+<w n="us" type="alphabemes" xml:id="w22542">us</w>
+<pc n="quote">·</pc>
+<w n="si" xml:id="w22545">si</w>
+	<pc n="space"> </pc>
+<w n="comparatiuum" xml:id="w22548">comparatiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="quilibet" xml:id="w22551">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+libet</w>
+	<pc n="space"> </pc>
+<w n="facere" xml:id="w22554">fa
+<lb n="6v.a.16" />
+cere</w>
+	<pc n="space"> </pc>
+<w n="uoluerit" xml:id="w22557">uoluerit</w>
+	<pc n="space"> </pc>
+<w n="uenit" xml:id="w22560">uenit</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w22563">i</w>
+<pc n="quote">·</pc>
+<w n="inter" xml:id="w22566">inter</w>
+<w n="duas" xml:id="w22569">duas</w>
+	<pc n="space"> </pc>
+<w n="uocales" xml:id="w22572">uocales</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w22575">ut</w>
+<w n="arduus" xml:id="w22578">arduus</w>
+	<pc n="space"> </pc>
+<w n="ardui" xml:id="w22581">ardui</w>
+<lb n="6v.a.17" />
+<w n="arduior" xml:id="w22584">arduior</w>
+<pc n=".">ł</pc>
+<w n="si" xml:id="w22587">si</w>
+<w n="eadem" xml:id="w22590">ead
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w22593">i</w>
+<pc n="quote">·</pc>
+<w n="secundum" xml:id="w22596">secund
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="latinorum" xml:id="w22599">latinor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="consuetudinem" xml:id="w22602">consuetudin
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="inter" xml:id="w22605">inter</w>
+<lb n="6v.a.18" />
+<w n="duas" xml:id="w22608">duas</w>
+	<pc n="space"> </pc>
+<w n="uocales" xml:id="w22611">uocales</w>
+	<pc n="space"> </pc>
+<w n="seruantes" xml:id="w22614">seruantes</w>
+	<pc n="space"> </pc>
+<w n="uim" xml:id="w22617">uim</w>
+	<pc n="space"> </pc>
+<w n="suam" xml:id="w22620">su
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="fuerit" xml:id="w22623">fuerit</w>
+	<pc n="space"> </pc>
+<w n="posita" xml:id="w22626">posita</w>
+	<pc n="space"> </pc>
+<w n="loco" xml:id="w22629">loco</w>
+	<pc n="space"> </pc>
+<w n="consonantis" xml:id="w22632">conso
+<lb n="6v.a.19" />
+nantis</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w22635">ut</w>
+<w n="arduior" xml:id="w22638">arduior</w>
+<pc n=",">·</pc>
+<w n="non" xml:id="w22641">non</w>
+<w n="uincit" xml:id="w22644">uincit</w>
+	<pc n="space"> </pc>
+<w n="genetiuo" xml:id="w22647">genitiuo
+<note type="script">Over the final 'o' there is a sign looking like two acute accents, one above the other. It elsewhere seems to represent a metamark pointing to a footnote. In fact, a glossa in black ink must have been written at the bottom of the column, but it is now illegible.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="primitiui" xml:id="w22650">primitiui</w>
+	<pc n="space"> </pc>
+<w n="una" xml:id="w22653">una</w>
+<lb n="6v.a.20" />
+<w n="syllaba" xml:id="w22656">syllaba</w>
+<pc n=".">ł</pc>
+<w n="et" xml:id="w22659">et</w>
+<w n="si" xml:id="w22662">si</w>
+<w n="tres" xml:id="w22665">tres</w>
+	<pc n="space"> </pc>
+<w n="uocales" xml:id="w22668">uocales</w>
+<pc n="0">·</pc>
+<w n="tribus" xml:id="w22671">tri
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+<w n="in" xml:id="w22674">in</w>
+<w n="syllabis" xml:id="w22677">syllabis</w>
+	<pc n="space"> </pc>
+<w n="continue" xml:id="w22680">continue</w>
+	<pc n="space"> </pc>
+<w n="ponantur" xml:id="w22683">ponan
+<lb n="6v.a.21" />
+tur</w>
+<pc n=",">·</pc>
+<w n="nulla" xml:id="w22686">nulla</w>
+	<pc n="space"> </pc>
+<w n="interposita" xml:id="w22689">interposita</w>
+	<pc n="space"> </pc>
+<w n="consonante" xml:id="w22692">consonante</w>
+	<pc n="space"> </pc>
+<w n="fit" xml:id="w22695">fit</w>
+	<pc n="space"> </pc>
+<w n="hiatus" xml:id="w22698">hiatus</w>
+	<pc n="space"> </pc>
+<w n="intolerabilis" xml:id="w22701">intolerabilis</w>
+<pc n=",">|</pc>
+<lb n="6v.a.22" />
+<w n="ut" xml:id="w22704">ut</w>
+<w n="arduior" xml:id="w22707">arduior
+<note type="script">Two dots are put between 'u' and 'i'. One middle dot is put inline between 'i' and 'o', to mark the hiati.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="piior" xml:id="w22710">piior
+<note type="script">A middle dot is put between the two 'i's and between the second 'i' and the 'o', to mark the hiati.</note>
+</w>
+<pc n=".">ł</pc>
+<w n="ideo" xml:id="w22713">ideo</w>
+<w n="non" xml:id="w22716">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="recipiunt" xml:id="w22719">recipiunt</w>
+	<pc n="space"> </pc>
+<w n="comparatiuum" xml:id="w22722">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paratiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<w n="gradum" xml:id="w22725">grad
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="sed" xml:id="w22728">sed</w>
+<lb n="6v.a.23" />
+<w n="iuncto" xml:id="w22731">iuncto</w>
+	<pc n="space"> </pc>
+<w n="magis" xml:id="w22734">magis</w>
+	<pc n="space"> </pc>
+<w n="aduerbio" xml:id="w22737">aduerbio</w>
+	<pc n="space"> </pc>
+<w n="positiuo" xml:id="w22740">positiuo</w>
+	<pc n="space"> </pc>
+<w n="gradui" xml:id="w22743">gradui</w>
+<pc n=",">·</pc>
+<w n="et" xml:id="w22746">et</w>
+<w n="efficitur" xml:id="w22749">efficitur</w>
+	<pc n="space"> </pc>
+<w n="sensus" xml:id="w22752">sensus</w>
+	<pc n="space"> </pc>
+<w n="comparatiui" xml:id="w22755">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+<lb n="6v.a.24" />
+paratiui</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w22758">ut</w>
+<w n="iste" xml:id="w22761">iste</w>
+	<pc n="space"> </pc>
+<w n="pius" xml:id="w22764">pius</w>
+<pc n="0">·</pc>
+<w n="uel" xml:id="w22767">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="arduus" xml:id="w22770">arduus</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w22773">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="et" xml:id="w22776">et</w>
+<w n="iste" xml:id="w22779">iste</w>
+<w n="magis" xml:id="w22782">magis</w>
+	<pc n="space"> </pc>
+<w n="pius" xml:id="w22785">pius</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w22788">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="arduus" xml:id="w22791">ardu
+<lb n="6v.a.25" />
+us</w>
+<pc n=".">|</pc>
+<w n="ideo" xml:id="w22794"><hi rend="larger">i</hi>deo
+</w>
+<w n="dictum" xml:id="w22797">dict
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w22800">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
+<w n="superius" xml:id="w22803">superius</w>
+<pc n="0">·</pc>
+<w n="de" xml:id="w22806">de</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w22809">i</w>
+<pc n="quote">·</pc>
+<w n="ut" xml:id="w22812">ut</w>
+<w n="posita" xml:id="w22815">posita</w>
+	<pc n="space"> </pc>
+<w n="inter" xml:id="w22818">inter</w>
+<w n="duas" xml:id="w22821">duas</w>
+	<pc n="space"> </pc>
+<w n="uocales" xml:id="w22824">uocales</w>
+	<pc n="space"> </pc>
+<w n="seruantes" xml:id="w22827">ser
+<lb n="6v.a.26" />
+uantes</w>
+<pc n="0">·</pc>
+<w n="uim" xml:id="w22830">uim</w>
+	<pc n="space"> </pc>
+<w n="suam" xml:id="w22833">su
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<pc n="0">·</pc>
+<w n="pro" xml:id="w22836">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="consonante" xml:id="w22839">consonante</w>
+	<pc n="space"> </pc>
+<w n="accipiatur" xml:id="w22842">accipiatur</w>
+<pc n=",">·</pc>
+<w n="quoniam" xml:id="w22845">
+	<choice>
+		<abbr type="superscription">qm<am>¯</am></abbr>
+		<expan>quoniam</expan>
+	</choice>
+</w>
+<w n="cum" xml:id="w22848">c
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<w n="sederit" xml:id="w22851">sederit
+<note type="tech" xml:id="add-graph-5">The final 't' is written above the line by a later hand with a faded ink; wrap an 'add' element around this 'u' with @place="above" and @type="graphemes" after editing the JavaScript code to cope with an 'add' inside a 'w'.</note>
+</w>
+<pc n="quote">·</pc>
+<w n="u" type="alphabemes" xml:id="w22854">u</w>
+<pc n="quote">·</pc>
+<w n="post" xml:id="w22857">po
+<lb n="6v.a.27" />
+st</w>
+<w n="que" type="alphabemes" xml:id="w22860">que
+<note type="content">Based on the following examples, it should be 'q' rather than 'que'.</note>
+</w>
+<pc n="quote">·</pc>
+<w n="uel" xml:id="w22863">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="g" type="alphabemes" xml:id="w22866">g</w>
+<note type="source">The source is Priscian's Ars grammatica K.2.87.8. In Keil's edition it is: "hoc autem [ideo] dixi, quod u post q uel [post] g posita". Keil expunges 'ideo' because codex P (Cod. bibl. imp. Paris. 7530) doesn't have it, but Ursus read a text including 'ideo'. He also expunges 'post', though he does not report of any code omitting the word in the apparatus. Ursus does not include 'post' in his text, so he possibly read a text without that word. However, in the latter case the inference is less strong, since 'post' is a waker word than 'ideo'.</note>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w22869">et</w>
+<w n="post" xml:id="w22872">post</w>
+<pc n="quote">·</pc>
+<w n="u" type="alphabemes" xml:id="w22875">u</w>
+<pc n="quote">·</pc>
+<w n="sederit" xml:id="w22878">sederit</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w22881">i</w>
+<pc n="quote">·</pc>
+<w n="sequente" xml:id="w22884">sequente</w>
+	<pc n="space"> </pc>
+<w n="eam" xml:id="w22887">e
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="alia" xml:id="w22890">alia</w>
+	<pc n="space"> </pc>
+<w n="uocali" xml:id="w22893">uocali</w>
+<pc n=",">·</pc>
+<w n="ut" xml:id="w22896">ut</w>
+<lb n="6v.a.28" />
+<w n="nequior" xml:id="w22899">nequior</w>
+<pc n=",">·</pc>
+<w n="pinguior" xml:id="w22902">pinguior</w>
+	<pc n="space"> </pc>
+<w n="non" xml:id="w22905">non</w>
+<w n="potest" xml:id="w22908">potest</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w22911">i</w>
+<pc n="quote">·</pc>
+<w n="loco" xml:id="w22914">loco</w>
+	<pc n="space"> </pc>
+<w n="consonantis" xml:id="w22917">consonantis</w>
+	<pc n="space"> </pc>
+<w n="accipi" xml:id="w22920">accipi</w>
+<pc n=",">·</pc>
+<w n="quia" xml:id="w22923">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+a</w>
+<w n="perdit" xml:id="w22926">
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+<lb n="6v.a.29" />
+dit</w>
+	<pc n="space"> </pc>
+<pc n="quote">·</pc>
+<w n="u" type="alphabemes" xml:id="w22929">u</w>
+<pc n="quote">·</pc>
+<w n="uim" xml:id="w22932">uim</w>
+<w n="suam" xml:id="w22935">su
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<pc n=".">ł</pc>
+<w n="inueniuntur" xml:id="w22938"><hi rend="larger">i</hi>nueniun
+	<choice>
+		<abbr type="superscription">t<am>2</am></abbr>
+		<expan>tur</expan>
+	</choice>
+</w>
+<w n="uetustissimi" xml:id="w22941">uetustissimi</w>
+	<pc n="space"> </pc>
+<w n="sine" xml:id="w22944">sine</w>
+	<pc n="space"> </pc>
+<w n="supradicta" xml:id="w22947">supradicta</w>
+	<pc n="space"> </pc>
+<w n="obseruantia" xml:id="w22950">ob
+<lb n="6v.a.30" />
+seruantia</w>
+	<pc n="space"> </pc>
+<w n="fecisse" xml:id="w22953">fecisse</w>
+	<pc n="space"> </pc>
+<w n="comparatiuum" xml:id="w22956">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paratiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+	<pc n="space"> </pc>
+<w n="arduior" xml:id="w22959">arduior
+<note type="script">A middle dot is put between 'u' and 'i', and another between 'i' and 'o', to mark the hiati.</note>
+</w>
+<pc n=",">·</pc>
+<w n="strenuior" xml:id="w22962">strenuior</w>
+<pc n=".">|</pc>
 </ref>
 
 
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.88.15-2.88.??" type="source">
+<w n="sunt" xml:id="w22965"><hi rend="larger">s</hi>unt</w>
+<w n="nomina" xml:id="w22968">no
+<lb n="6v.a.31" />
+mina</w>
+	<pc n="space"> </pc>
+<w n="terminata" xml:id="w22971">terminata</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w22974">in</w>
+<pc n="quote">·</pc>
+<w n="us" type="alphabemes" xml:id="w22977">us</w>
+<pc n="quote">·</pc>
+<w n="quae" xml:id="w22980">quæ</w>
+<w n="inaequalia" xml:id="w22983">inequalia</w>
+	<pc n="space"> </pc>
+<w n="dicuntur" xml:id="w22986">dicuntur</w>
+<pc n=",">·</pc>
+<w n="quorum" xml:id="w22989">quor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="comparatiua" xml:id="w22992">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+<lb n="6v.a.32" />
+paratiua</w>
+	<pc n="space"> </pc>
+<w n="quaedam" xml:id="w22995">quæd
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="habent" xml:id="w22998">habent</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w23001">i</w>
+<pc n="quote">·</pc>
+<w n="breuem" xml:id="w23004">breu
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+<pc n="0">·</pc>
+<w n="ante" xml:id="w23007">ante</w>
+<pc n="quote">·</pc>
+<w n="or" type="alphabemes" xml:id="w23010">or</w>
+<pc n="quote">·</pc>
+<w n="ut" xml:id="w23013">ut</w>
+<w n="bonus" xml:id="w23016">bonus</w>
+	<pc n="space"> </pc>
+<w n="melior" xml:id="w23019">meli
+<lb n="6v.a.33" />
+or</w>
+<pc n=",">·</pc>
+<w n="iuuenis" xml:id="w23022">iuuenis</w>
+	<pc n="space"> </pc>
+<w n="iunior" xml:id="w23025">iunior</w>
+	<pc n="space"> </pc>
+<w n="pro" xml:id="w23028">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="iuuenior" type="nonsense" xml:id="w23031">iuuenior
+<note type="tech">I could also use the value 'alphabemes' for attribute @type of this 'w' element.</note>
+</w>
+<pc n=",">·</pc>
+<w n="quaedam" xml:id="w23034">quæd
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w23037">i</w>
+<pc n="quote">·</pc>
+<w n="loco" xml:id="w23040">loco</w>
+	<pc n="space"> </pc>
+<w n="consonantis" xml:id="w23043">consonantis</w>
+<pc n=",">·</pc>
+<lb n="6v.a.34" />
+<w n="ut" xml:id="w23046">ut</w>
+<w n="malus" xml:id="w23049">malus</w>
+	<pc n="space"> </pc>
+<w n="peior" xml:id="w23052">peior</w>
+<pc n=",">·</pc>
+<w n="quaedam" xml:id="w23055">quæd
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="alia" xml:id="w23058">alia</w>
+	<pc n="space"> </pc>
+<w n="consonante" xml:id="w23061">consonante</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w23064">ut</w>
+<w n="paruus" xml:id="w23067">paruus</w>
+	<pc n="space"> </pc>
+<w n="minor" xml:id="w23070">minor</w>
+<pc n=".">·</pc>
+<lb n="6v.a.35" />
+<w n="multus" xml:id="w23073"><hi rend="larger">m</hi>ultus</w>
+	<pc n="space"> </pc>
+<w n="positiuum" xml:id="w23076">positiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="cuius" xml:id="w23079">cuius</w>
+<pc n="0">·</pc>
+<w n="comparatiuum" xml:id="w23082">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paratiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="plus" xml:id="w23085">plus</w>
+<pc n=",">·</pc>
+<w n="in" xml:id="w23088">in</w>
+<w n="singulari" xml:id="w23091">singulari</w>
+	<pc n="space"> </pc>
+<w n="neutrum" xml:id="w23094">neutr
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<lb n="6v.a.36" />
+<w n="tantum" xml:id="w23097">tant
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="nam" xml:id="w23100">n
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w23103">in</w>
+<w n="plurali" xml:id="w23106">plurali</w>
+	<pc n="space"> </pc>
+<w n="commune" xml:id="w23109">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+mune</w>
+	<pc n="space"> </pc>
+<w n="hi" xml:id="w23112">hi</w>
+<pc n="0">·</pc>
+<w n="et" xml:id="w23115">et</w>
+<w n="hae" xml:id="w23118">hæ</w>
+<pc n="0">·</pc>
+<w n="plures" xml:id="w23121">plures</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23124">et</w>
+	<pc n="space"> </pc>
+<w n="haec" xml:id="w23127">hæc</w>
+<w n="plura" xml:id="w23130">plura</w>
+<pc n=".">·</pc>
+<lb n="6v.a.37" />
+<w n="antiqui" xml:id="w23133">antiqui</w>
+	<pc n="space"> </pc>
+<w n="etiam" xml:id="w23136">eti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="pluria" xml:id="w23139">pluria</w>
+	<pc n="space"> </pc>
+<w n="dixerunt" xml:id="w23142">dixerunt</w>
+<pc n=".">·</pc>
+<w n="superlatiuus" xml:id="w23145"><hi rend="larger">s</hi>u
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+latiuus</w>
+	<pc n="space"> </pc>
+<w n="horum" xml:id="w23148">hor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="plurimus" xml:id="w23151">pluri
+	<choice>
+		<abbr type="superscription">ms<am>¯</am></abbr>
+		<expan>mus</expan>
+	</choice>
+</w>
+<lb n="6v.a.38" />
+<w n="plurima" xml:id="w23154">plurima</w>
+	<pc n="space"> </pc>
+<w n="plurimum" xml:id="w23157">plurim
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n=".">|</pc>
+<w n="nomina" xml:id="w23160"><hi rend="larger">n</hi>omina</w>
+	<pc n="space"> </pc>
+<w n="tertiae" xml:id="w23163">tertiæ</w>
+	<pc n="space"> </pc>
+<w n="declinationis" xml:id="w23166">declinationis</w>
+	<pc n="space"> </pc>
+<w n="communia" xml:id="w23169">comunia</w>
+<lb n="6v.a.39" />
+<w n="is" type="alphabemes" xml:id="w23172">is</w>
+<w n="desinentia" xml:id="w23175">desinentia</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23178">et</w>
+<w n="facientia" xml:id="w23181">facientia</w>
+	<pc n="space"> </pc>
+<w n="neutra" xml:id="w23184">neutra</w>
+<pc n="0">·</pc>
+<w n="in" xml:id="w23187">in</w>
+<pc n="quote">·</pc>
+<w n="e" type="alphabemes" xml:id="w23190">e</w>
+<pc n="quote">·</pc>
+<w n="ut" xml:id="w23193">ut</w>
+<w n="hic" xml:id="w23196">hic</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23199">et</w>
+<w n="haec" xml:id="w23202">hæc</w>
+	<pc n="space"> </pc>
+<w n="fortis" xml:id="w23205">fortis</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23208">et</w>
+<w n="hoc" xml:id="w23211">hoc</w>
+<lb n="6v.a.40" />
+<w n="forte" xml:id="w23214">forte</w>
+
+<cb n="6v.b" />
+
+<lb n="6v.b.1" />
+<w n="uel" xml:id="w23217">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<w n="in" xml:id="w23220">in</w>
+<pc n="quote">·</pc>
+<w n="er" type="alphabemes" xml:id="w23223">er</w>
+<pc n="quote">·</pc>
+<w n="masculina" xml:id="w23226">masculina</w>
+	<pc n="space"> </pc>
+<w n="facientia" xml:id="w23229">facientia</w>
+<pc n=",">·</pc>
+<w n="feminina" xml:id="w23232">feminina</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w23235">in</w>
+	<pc n="space"> </pc>
+<w n="is" type="alphabemes" xml:id="w23238">is</w>
+<w n="neutra" xml:id="w23241">neutra</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w23244">in</w>
+<pc n="quote">·</pc>
+<w n="e" type="alphabemes" xml:id="w23247">e</w>
+<pc n="quote">·</pc>
+<w n="ut" xml:id="w23250">ut</w>
+	<pc n="space"> </pc>
+<w n="hic" xml:id="w23253">hic</w>
+<lb n="6v.b.2" />
+<w n="acer" xml:id="w23256">acer</w>
+<pc n=",">·</pc>
+<w n="haec" xml:id="w23259">hæc</w>
+	<pc n="space"> </pc>
+<w n="acris" xml:id="w23262">acris</w>
+<pc n=",">·</pc>
+<w n="hoc" xml:id="w23265">hoc</w>
+<w n="acre" xml:id="w23268">acre</w>
+<pc n=",">·</pc>
+<w n="uel" xml:id="w23271">uel</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w23274">in</w>
+<pc n="quote">·</pc>
+<w n="er" type="alphabemes" xml:id="w23277">er</w>
+<pc n="quote">·</pc>
+<w n="ns" type="alphabemes" xml:id="w23280">ns</w>
+<pc n="quote">·</pc>
+<w n="ens" type="alphabemes" xml:id="w23283">ens</w>
+<pc n="quote">·</pc>
+<w n="x" type="alphabemes" xml:id="w23286">x</w>
+<gap quantity="2" reason="cancelled" unit="chars" />
+<w n="communia" xml:id="w23289">communia</w>
+	<pc n="space"> </pc>
+<w n="trium" xml:id="w23292">tri
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<lb n="6v.b.3" />
+<w n="generum" xml:id="w23295">gener
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w23298">ut</w>
+<w n="hic" xml:id="w23301">hic</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23304">et</w>
+<w n="haec" xml:id="w23307">hæc</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23310">et</w>
+<w n="hoc" xml:id="w23313">hoc</w>
+	<pc n="space"> </pc>
+<w n="pauper" xml:id="w23316">pauper</w>
+<pc n=",">·</pc>
+<w n="hic" xml:id="w23319">hic</w>
+<w n="et" xml:id="w23322">et</w>
+<w n="haec" xml:id="w23325">hæc</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23328">et</w>
+<w n="hoc" xml:id="w23331">hoc</w>
+	<pc n="space"> </pc>
+<w n="locuples" xml:id="w23334">locuples</w>
+<pc n=",">·</pc>
+<w n="hic" xml:id="w23337">hic</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23340">et</w>
+<lb n="6v.b.4" />
+<w n="haec" xml:id="w23343">hæc</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23346">et</w>
+<w n="hoc" xml:id="w23349">hoc</w>
+	<pc n="space"> </pc>
+<w n="sapiens" xml:id="w23352">sapiens</w>
+<pc n=",">·</pc>
+<w n="hic" xml:id="w23355">hic</w>
+<w n="et" xml:id="w23358">et</w>
+<w n="haec" xml:id="w23361">hæc</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23364">et</w>
+<w n="hoc" xml:id="w23367">hoc</w>
+	<pc n="space"> </pc>
+<w n="iners" xml:id="w23370">iners</w>
+<pc n=",">·</pc>
+<w n="hic" xml:id="w23373">hic</w>
+<w n="et" xml:id="w23376">et</w>
+<w n="haec" xml:id="w23379">hæc</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23382">et</w>
+<w n="hoc" xml:id="w23385">hoc</w>
+	<pc n="space"> </pc>
+<w n="audax" xml:id="w23388">audax</w>
+<pc n=",">·</pc>
+<lb n="6v.b.5" />
+<w n="ccorrepta" xml:id="w23391">c
+	<choice>
+		<abbr type="superscription">or<am>¯</am></abbr>
+		<expan>correpta</expan>
+	</choice>
+</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w23394">i</w>
+<pc n="quote">·</pc>
+<w n="datiui" xml:id="w23397">datiui</w>
+<pc n="0">·</pc>
+<w n="et" xml:id="w23400">et</w>
+<w n="assumpta" xml:id="w23403">adsumpta
+<note type="script">The grapheme 's' is oddly superimposed over the grapheme 'd'.</note>
+</w>
+<pc n="quote">·</pc>
+<w n="or" type="alphabemes" xml:id="w23406">or</w>
+<pc n="quote">·</pc>
+<w n="faciunt" xml:id="w23409">faciunt</w>
+	<pc n="space"> </pc>
+<w n="comparatiuum" xml:id="w23412">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paratiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w23415">ut</w>
+<w n="forti" xml:id="w23418">forti</w>
+	<pc n="space"> </pc>
+<w n="hic" xml:id="w23421">hic</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23424">et</w>
+<lb n="6v.b.6" />
+<w n="haec" xml:id="w23427">hæc</w>
+	<pc n="space"> </pc>
+<w n="fortior" xml:id="w23430">fortior</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23433">et</w>
+<w n="hoc" xml:id="w23436">hoc</w>
+	<pc n="space"> </pc>
+<w n="fortius" xml:id="w23439">fortius</w>
+<pc n=".">·</pc>
+<w n="similiter" xml:id="w23442">similiter</w>
+	<pc n="space"> </pc>
+<w n="acri" xml:id="w23445">acri</w>
+	<pc n="space"> </pc>
+<w n="acrior" xml:id="w23448">acrior</w>
+	<pc n="space"> </pc>
+<w n="acrius" xml:id="w23451">acrius</w>
+<pc n=",">·</pc>
+<w n="pauperi" xml:id="w23454">pauperi</w>
+<lb n="6v.b.7" />
+<w n="pauperior" xml:id="w23457">pauperior</w>
+	<pc n="space"> </pc>
+<w n="pauperius" xml:id="w23460">pauperius</w>
+<pc n=",">·</pc>
+<w n="locupleti" xml:id="w23463">locupleti</w>
+	<pc n="space"> </pc>
+<w n="locupletior" xml:id="w23466">locupletior</w>
+	<pc n="space"> </pc>
+<w n="locupletius" xml:id="w23469">locupletius</w>
+<pc n=",">·</pc>
+<w n="sapienti" xml:id="w23472">sapi
+<lb n="6v.b.8" />
+enti</w>
+	<pc n="space"> </pc>
+<w n="sapientior" xml:id="w23475">sapientior</w>
+	<pc n="space"> </pc>
+<w n="sapientius" xml:id="w23478">sapientius</w>
+<pc n=",">·</pc>
+<w n="inerti" xml:id="w23481">inerti</w>
+	<pc n="space"> </pc>
+<w n="inertior" xml:id="w23484">inertior</w>
+	<pc n="space"> </pc>
+<w n="inertius" xml:id="w23487">inertius</w>
+<pc n=",">·</pc>
+<w n="audaci" xml:id="w23490">audaci</w>
+	<pc n="space"> </pc>
+<w n="audacior" xml:id="w23493">auda
+<lb n="6v.b.9" />
+cior</w>
+	<pc n="space"> </pc>
+<w n="audacius" xml:id="w23496">audacius</w>
+<note type="script">There is a 'u'-shaped sign over the 'i' (part of the final morpheme '-ius') of 'fortior', 'fortius', 'acrior', 'acrius', 'pauperior', 'pauperius' (not on 'locupletior' and 'locupletius'), 'sapientior', 'sapientius', 'inertior', 'inertius', 'audacior', 'audacius' to mark its short quantity.</note>
+<pc n=".">|</pc>
+<w n="omnia" xml:id="w23499"><hi rend="larger">o</hi>
+	<choice>
+		<abbr type="superscription">ma<am>¯</am></abbr>
+		<expan>mnia</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="comparatiua" xml:id="w23502">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiua</w>
+	<pc n="space"> </pc>
+<w n="communis" xml:id="w23505">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+munis</w>
+<w n="generis" xml:id="w23508">generis</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w23511">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="semper" xml:id="w23514">s
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="terminantia" xml:id="w23517">ter
+<lb n="6v.b.10" />
+minantia</w>
+	<pc n="space"> </pc>
+<w n="masculino" xml:id="w23520">masculino</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23523">et</w>
+<w n="feminino" xml:id="w23526">feminino</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w23529">in</w>
+	<pc n="space"> </pc>
+<w n="or" type="alphabemes" xml:id="w23532">or</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w23535">et</w>
+<w n="neutro" xml:id="w23538">neutro</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w23541">in</w>
+<w n="us" type="alphabemes" xml:id="w23544">us</w>
+<pc n="quote">·</pc>
+<w n="excepto" xml:id="w23547">excepto</w>
+<lb n="6v.b.11" />
+<w n="uno" xml:id="w23550">uno</w>
+	<pc n="space"> </pc>
+<w n="senex" xml:id="w23553">senex</w>
+<pc n=",">·</pc>
+<w n="quod" xml:id="w23556">quod</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w23559">est</w>
+	<pc n="space"> </pc>
+<w n="unius" xml:id="w23562">unius</w>
+	<pc n="space"> </pc>
+<w n="generis" xml:id="w23565">generis</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23568">et</w>
+<w n="fixum" xml:id="w23571">fix
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="genus" xml:id="w23574">genus</w>
+<w n="est" xml:id="w23577">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="quod" xml:id="w23580">quod</w>
+<w n="uetustissimi" xml:id="w23583">uetustissi
+<lb n="6v.b.12" />
+mi</w>
+	<pc n="space"> </pc>
+<w n="etiam" xml:id="w23586">eti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="commune" xml:id="w23589">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+mune</w>
+	<pc n="space"> </pc>
+<w n="proferebant" xml:id="w23592">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+ferebant</w>
+<pc n=".">·</pc>
+<w n="facit" xml:id="w23595">facit</w>
+<w n="comparatiuum" xml:id="w23598">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paratiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="masculinum" xml:id="w23601">masculin
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<w n="tantum" xml:id="w23604">t
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>an</expan>
+	</choice>
+<lb n="6v.b.13" />
+	t
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="hic" xml:id="w23607">hic</w>
+	<pc n="space"> </pc>
+<w n="senior" xml:id="w23610">senior</w>
+<pc n=",">·</pc>
+<w n="feminino" xml:id="w23613">feminino</w>
+<pc n="0">·</pc>
+<w n="anus" xml:id="w23616">anus</w>
+<pc n=",">·</pc>
+<w n="neutro" xml:id="w23619">neutro</w>
+	<pc n="space"> </pc>
+<w n="senius" xml:id="w23622">senius</w>
+<note type="script">The rest of the line is left blank.</note>
+<pc n=".">·</pc>
+<lb n="6v.b.14" />
+<w n="nequam" xml:id="w23625"><hi rend="larger">n</hi>equ
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="indeclinauile" xml:id="w23628">indeclinauile
+<note type="script">Scribal error: 'indeclinauile' for 'indeclinabile', due to contemporary pronunciation.</note>
+</w>
+	<pc n="space"> </pc>
+<w n="trium" xml:id="w23631">tri
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="generum" xml:id="w23634">gener
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="facit" xml:id="w23637">facit</w>
+	<pc n="space"> </pc>
+<w n="comparatiuum" xml:id="w23640">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paratiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="nequior" xml:id="w23643">ne
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+or</w>
+<lb n="6v.b.15" />
+<w n="et" xml:id="w23646">et</w>
+<w n="superlatiuum" xml:id="w23649">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+	latiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="nequissimus" xml:id="w23652">nequissimus</w>
+<pc n=".">|</pc>
+<w n="ab" xml:id="w23655">ab</w>
+<w n="aduerbiis" xml:id="w23658">aduerbiis</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w23661">in</w>
+<w n="ra" type="alphabemes" xml:id="w23664">ra</w>
+<w n="desinentibus" xml:id="w23667">desinenti
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="fiunt" xml:id="w23670">fiunt</w>
+<lb n="6v.b.16" />
+<w n="comparatiua" xml:id="w23673">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiua</w>
+	<pc n="space"> </pc>
+<w n="mutantia" xml:id="w23676">mutantia</w>
+<pc n="quote">·</pc>
+<w n="ra" type="alphabemes" xml:id="w23679">ra</w>
+<w n="in" xml:id="w23682">in</w>
+<pc n="quote">·</pc>
+<w n="er" type="alphabemes" xml:id="w23685">er</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w23688">et</w>
+<w n="adsumentia" xml:id="w23691">adsumentia</w>
+<pc n="quote">·</pc>
+<w n="ior" type="alphabemes" xml:id="w23694">ior</w>
+<pc n="quote">·</pc>
+<w n="ut" xml:id="w23697">ut</w>
+	<pc n="space"> </pc>
+<w n="extra" xml:id="w23700">extra</w>
+<lb n="6v.b.17" />
+<w n="exterior" xml:id="w23703">exterior</w>
+<pc n=",">·</pc>
+<w n="intra" xml:id="w23706">intra</w>
+	<pc n="space"> </pc>
+<w n="interior" xml:id="w23709">interior</w>
+<pc n=",">·</pc>
+<w n="ultra" xml:id="w23712">ultra</w>
+	<pc n="space"> </pc>
+<w n="ulterior" xml:id="w23715">ulterior</w>
+<pc n=",">·</pc>
+<w n="citra" xml:id="w23718">citra</w>
+	<pc n="space"> </pc>
+<w n="citerior" xml:id="w23721">citerior</w>
+<pc n=",">·</pc>
+<w n="infra" xml:id="w23724">infra</w>
+	<pc n="space"> </pc>
+<w n="inferior" xml:id="w23727">inferi
+<lb n="6v.b.18" />
+or</w>
+<pc n=",">·</pc>
+<w n="supra" xml:id="w23730">supra</w>
+	<pc n="space"> </pc>
+<w n="superior" xml:id="w23733">superior</w>
+<pc n=".">·</pc>
+<w n="similiter" xml:id="w23736">similiter</w>
+	<pc n="space"> </pc>
+<w n="post" xml:id="w23739">post</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23742">et</w>
+<w n="ante" xml:id="w23745">ante</w>
+	<pc n="space"> </pc>
+<w n="posterior" xml:id="w23748">posterior</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23751">et</w>
+<w n="anterior" xml:id="w23754">anterior</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23757">et</w>
+<lb n="6v.b.19" />
+<w n="prope" xml:id="w23760">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+pe</w>
+	<pc n="space"> </pc>
+<w n="proprior" xml:id="w23763">proprior</w>
+<pc n=",">·</pc>
+<w n="et0" xml:id="w23766">et0</w>
+<w n="detero" xml:id="w23769">detero</w>
+	<pc n="space"> </pc>
+<w n="deterior" xml:id="w23772">deterior</w>
+<pc n=".">·</pc>
+<w n="a" xml:id="w23775">a</w>
+<w n="saepe" xml:id="w23778">sæpe</w>
+<w n="non" xml:id="w23781">non</w>
+	<pc n="space"> </pc>
+<w n="comparatiuum" xml:id="w23784">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paratiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="sed" xml:id="w23787">sed</w>
+<w n="superlatiuum" xml:id="w23790">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+	lati
+<lb n="6v.b.20" />
+	u
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="sepissime" xml:id="w23793">sepissime</w>
+<pc n=".">|</pc>
+<w n="prior" xml:id="w23796"><hi rend="larger">p</hi>rior</w>
+<pc n="0">·</pc>
+<w n="et" xml:id="w23799">et</w>
+<w n="primus" xml:id="w23802">primus</w>
+	<pc n="space"> </pc>
+<pc n=",">·</pc>
+<w n="cum" xml:id="w23805">c
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ordinis" xml:id="w23808">ordinis</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w23811">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="differentiam" xml:id="w23814">differenti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="numeri" xml:id="w23817">nume
+<lb n="6v.b.21" />
+ri</w>
+<w n="ostendunt" xml:id="w23820">ostendunt</w>
+<pc n=",">·</pc>
+<w n="sicut" xml:id="w23823">sicut</w>
+	<pc n="space"> </pc>
+<w n="alter" xml:id="w23826">alter</w>
+	<pc n="space"> </pc>
+<w n="de" xml:id="w23829">de</w>
+<w n="duobus" xml:id="w23832">duo
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23835">et</w>
+<w n="alius" xml:id="w23838">alius</w>
+	<pc n="space"> </pc>
+<w n="de" xml:id="w23841">de</w>
+<w n="multis" xml:id="w23844">multis</w>
+<pc n=",">·</pc>
+<w n="sic" xml:id="w23847">sic</w>
+	<pc n="space"> </pc>
+<w n="prior" xml:id="w23850">prior</w>
+	<pc n="space"> </pc>
+<w n="de" xml:id="w23853">de</w>
+<lb n="6v.b.22" />
+<w n="duobus" xml:id="w23856">duo
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23859">et</w>
+<w n="primus" xml:id="w23862">primus</w>
+	<pc n="space"> </pc>
+<w n="de" xml:id="w23865">de</w>
+<w n="multis" xml:id="w23868">multis</w>
+<pc n=".">|</pc>
+<w n="inuenitur" xml:id="w23871">inuenitur</w>
+	<pc n="space"> </pc>
+<w n="prior" xml:id="w23874">prior</w>
+	<pc n="space"> </pc>
+<w n="pro" xml:id="w23877">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="melior" xml:id="w23880">melior</w>
+<pc n=",">·</pc>
+<w n="et" xml:id="w23883">et</w>
+<w n="tunc" xml:id="w23886">tunc</w>
+	<pc n="space"> </pc>
+<w n="habent" xml:id="w23889">habe
+<lb n="6v.b.23" />
+nt</w>
+	<pc n="space"> </pc>
+<w n="uim" xml:id="w23892">uim</w>
+	<pc n="space"> </pc>
+<w n="comparatiui" xml:id="w23895">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiui</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23898">et</w>
+<w n="primus" xml:id="w23901">primus</w>
+	<pc n="space"> </pc>
+<w n="pro" xml:id="w23904">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="optimus" xml:id="w23907">opti
+	<choice>
+		<abbr type="superscription">m<am>¯</am></abbr>
+		<expan>mu</expan>
+	</choice>
+s</w>
+<pc n=",">·</pc>
+<w n="et" xml:id="w23910">et</w>
+<w n="tunc" xml:id="w23913">tunc</w>
+	<pc n="space"> </pc>
+<w n="habent" xml:id="w23916">h
+	<choice>
+		<abbr type="superscription">ab<am>¯</am></abbr>
+		<expan>abent</expan>
+	</choice>
+</w>
+<w n="uim" xml:id="w23919">uim</w>
+<w n="superlatiui" xml:id="w23922">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+	lati
+<lb n="6v.b.24" />
+ui</w>
+<pc n=".">·</pc>
+	<pc n="space"> </pc>
+<w n="quidam" xml:id="w23925"><hi rend="larger">q</hi>uid
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="affirmant" xml:id="w23928">adfirmant</w>
+	<pc n="space"> </pc>
+<w n="quod" xml:id="w23931">quod</w>
+	<pc n="space"> </pc>
+<w n="prior" xml:id="w23934">prior</w>
+	<pc n="space"> </pc>
+<w n="semper" xml:id="w23937">sem
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="sit" xml:id="w23940">sit</w>
+	<pc n="space"> </pc>
+<w n="comparatiuum" xml:id="w23943">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	paratiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="quia" xml:id="w23946">
+	<choice>
+		<abbr type="brevigraph">¢</abbr>
+		<expan>qui</expan>
+	</choice>
+a</w>
+	<pc n="space"> </pc>
+<w n="iungitur" xml:id="w23949">iungi
+<lb n="6v.b.25" />
+tur</w>
+	<pc n="space"> </pc>
+<w n="ablatiuo" xml:id="w23952">ablatiuo</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23955">et</w>
+<w n="suo" xml:id="w23958">suo</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w23961">et</w>
+<w n="alieno" xml:id="w23964">alieno</w>
+	<pc n="space"> </pc>
+<w n="generi" xml:id="w23967">generi</w>
+	<pc n="space"> </pc>
+<w n="comparatur" xml:id="w23970">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratur</w>
+<pc n=",">·</pc>
+<w n="quamuis" xml:id="w23973">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+uis</w>
+	<pc n="space"> </pc>
+<w n="numerum" xml:id="w23976">numer
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="significet" xml:id="w23979">sig
+<lb n="6v.b.26" />
+nificet</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w23982">ut</w>
+<w n="prior" xml:id="w23985">prior</w>
+	<pc n="space"> </pc>
+<w n="Turnus" xml:id="w23988">turnus</w>
+<pc n="0">·</pc>
+<w n="quam" xml:id="w23991">qu
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="Aeneas" xml:id="w23994">æneas</w>
+	<pc n="space"> </pc>
+<w n="mouit" xml:id="w23997">mouit</w>
+	<pc n="space"> </pc>
+<w n="bellum" xml:id="w24000">bell
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<pc n=".">ł</pc>
+<w n="et" xml:id="w24003"><hi rend="larger">e</hi>t</w>
+	<pc n="space"> </pc>
+<w n="primus" xml:id="w24006">primus</w>
+	<pc n="space"> </pc>
+<w n="superlatiuus" xml:id="w24009">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+	lati
+<lb n="6v.b.27" />
+uus</w>
+<pc n=",">·</pc>
+<w n="eo" xml:id="w24012">eo</w>
+<w n="quod" xml:id="w24015">quod</w>
+	<pc n="space"> </pc>
+<w n="iungitur" xml:id="w24018">iungitur</w>
+	<pc n="space"> </pc>
+<w n="genitiuo" xml:id="w24021">genitiuo</w>
+	<pc n="space"> </pc>
+<w n="plurali" xml:id="w24024">plurali</w>
+<pc n=",">ł</pc>
+<w n="et" xml:id="w24027">et</w>
+<w n="sicut" xml:id="w24030">sicut</w>
+	<pc n="space"> </pc>
+<w n="omnes" xml:id="w24033">omnes</w>
+	<pc n="space"> </pc>
+<w n="superlatiui" xml:id="w24036">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+latiui</w>
+<pc n="0">·</pc>
+<lb n="6v.b.28" />
+<w n="ad" xml:id="w24039">ad</w>
+<w n="multos" xml:id="w24042">multos</w>
+	<pc n="space"> </pc>
+<w n="sui" xml:id="w24045">sui</w>
+	<pc n="space"> </pc>
+<w n="generis" xml:id="w24048">generis</w>
+	<pc n="space"> </pc>
+<w n="comparatur" xml:id="w24051">comparatur</w>
+<pc n=",">·</pc>
+<w n="ut" xml:id="w24054">ut</w>
+<w n="primus" xml:id="w24057">primus</w>
+	<pc n="space"> </pc>
+<w n="se" xml:id="w24060">se</w>
+<w n="Danaum" xml:id="w24063">dana
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="magna" xml:id="w24066">magna</w>
+<lb n="6v.b.29" />
+<w n="comitante" xml:id="w24069">comitante</w>
+	<pc n="space"> </pc>
+<w n="caterua" xml:id="w24072">caterua</w>
+<pc n=",">·</pc>
+<w n="Androgeus" xml:id="w24075">androgeus</w>
+	<pc n="space"> </pc>
+<w n="offert" xml:id="w24078">offert</w>
+	<pc n="space"> </pc>
+<w n="nobis" xml:id="w24081">n
+	<choice>
+		<abbr type="superscription">ob<am>¯</am></abbr>
+		<expan>obis</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="et" xml:id="w24084">et</w>
+<w n="quod" xml:id="w24087">quod</w>
+	<pc n="space"> </pc>
+<w n="prior" xml:id="w24090">prior</w>
+	<pc n="space"> </pc>
+<w n="communis" xml:id="w24093">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+munis</w>
+<lb n="6v.b.30" />
+<w n="generis" xml:id="w24096">generis</w>
+	<pc n="space"> </pc>
+<w n="est" xml:id="w24099">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="faciens" xml:id="w24102">faciens</w>
+	<pc n="space"> </pc>
+<w n="neutrum" xml:id="w24105">
+	<choice>
+		<abbr type="superscription">neu<am>¯</am></abbr>
+		<expan>neutrum</expan>
+	</choice>
+</w>
+<pc n="0">·</pc>
+<w n="in" xml:id="w24108">in</w>
+<pc n="quote">·</pc>
+<w n="us" type="alphabemes" xml:id="w24111">us</w>
+<pc n="quote">·</pc>
+<w n="quod" xml:id="w24114">quod</w>
+	<pc n="space"> </pc>
+<w n="non" xml:id="w24117">
+	<choice>
+		<abbr type="superscription">n<am>¯</am></abbr>
+		<expan>non</expan>
+	</choice>
+</w>
+<w n="fit" xml:id="w24120">fit</w>
+<pc n="0">·</pc>
+<w n="nisi" xml:id="w24123">nisi</w>
+<w n="in" xml:id="w24126">in</w>
+<w n="comparatiuis" xml:id="w24129">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuis</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w24132">et</w>
+<w n="uideatur" xml:id="w24135">uideatur</w>
+<lb n="6v.b.31" />
+<w n="a" xml:id="w24138">a</w>
+<w n="pridem" xml:id="w24141">prid
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="fieri" xml:id="w24144">fieri</w>
+	<pc n="space"> </pc>
+<w n="correpta" xml:id="w24147">
+	<choice>
+		<abbr type="superscription">cor<am>¯</am></abbr>
+		<expan>correpta</expan>
+	</choice>
+</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w24150">i</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w24153">et</w>
+<w n="abiecta" xml:id="w24156">abiecta</w>
+<w n="dem" type="alphabemes" xml:id="w24159">dem</w>
+<pc n="quote">·</pc>
+<w n="addita" xml:id="w24162">addita</w>
+<pc n="quote">·</pc>
+<w n="or" type="alphabemes" xml:id="w24165">or</w>
+<pc n=".">·</pc>
+<w n="in" xml:id="w24168">in</w>
+<w n="nullo" xml:id="w24171">nullo</w>
+	<pc n="space"> </pc>
+<w n="enim" xml:id="w24174">en
+	<choice>
+		<abbr type="superscription">i<am>2</am></abbr>
+		<expan>im</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="comparatituo" xml:id="w24177">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	para
+<lb n="6v.b.32" />
+tiuo</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w24180">i</w>
+<pc n="quote">·</pc>
+<w n="productum" xml:id="w24183">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+	duct
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="habet" xml:id="w24186">h
+	<choice>
+		<abbr type="superscription">ab<am>¯</am></abbr>
+		<expan>abet</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ante" xml:id="w24189">ante</w>
+<pc n="quote">·</pc>
+<w n="or" type="alphabemes" xml:id="w24192">or</w>
+<note type="content">The sentence does not have a subject. The final 'o' of 'comparatiuo' is a correction written over the original final 'u' with a '2' abbreviation mark above (for 'comparatiuum'. So the first hand meant 'in nullo (scil. uerbo) comparatiuum (subject) i productum habet ante or'. The source (Priscian Ars grammatica K.2.91.16) has: "quia in nulla comparatiuo i ante 'or' produci potest".</note>
+<pc n=".">|</pc>
+<w n="in" xml:id="w24195"><hi rend="larger">i</hi>n</w>
+<w n="superlatiuo" xml:id="w24198">su
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+latiuo</w>
+	<pc n="space"> </pc>
+<w n="seruauit" xml:id="w24201">seruauit</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w24204">i</w>
+<pc n="quote">·</pc>
+<w n="productum" xml:id="w24207">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+	duct
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<lb n="6v.b.33" />
+<w n="primus" xml:id="w24210">primus</w>
+<pc n=",">|</pc>
+<w n="ex" xml:id="w24213">ex</w>
+<w n="quo" xml:id="w24216">quo</w>
+	<pc n="space"> </pc>
+<w n="aduerbium" xml:id="w24219">aduerbi
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="primo" xml:id="w24222">primo</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w24225">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<w n="prime" xml:id="w24228">prime</w>
+	<pc n="space"> </pc>
+<w n="unde" xml:id="w24231">unde</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w24234">et</w>
+	<pc n="space"> </pc>
+<w n="adprime" xml:id="w24237">adprime</w>
+	<pc n="space"> </pc>
+<w n="compositum" xml:id="w24240">com
+<lb n="6v.b.34" />
+	posit
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="uenit" xml:id="w24243">uenit</w>
+<pc n=".">ł</pc>
+<w n="magnificentior" xml:id="w24246"><hi rend="larger">m</hi>agnificentior</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w24249">et</w>
+<w n="magnificentissimus" xml:id="w24252">magnificentissimus</w>
+<pc n=",">·</pc>
+<w n="munificentior" xml:id="w24255">mu
+<lb n="6v.b.35" />
+nificentior</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w24258">et</w>
+<w n="munificentissimus" xml:id="w24261">munificentissimus</w>
+	<pc n="space"> </pc>
+<w n="secundum" xml:id="w24264">secund
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="analogiam" xml:id="w24267">analogi
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="a" xml:id="w24270">a</w>
+<w n="magnificens" xml:id="w24273">mag
+<lb n="6v.b.36" />
+nificens</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w24276">et</w>
+<w n="munificens" xml:id="w24279">munificens</w>
+	<pc n="space"> </pc>
+<w n="uidentur" xml:id="w24282">uidentur</w>
+	<pc n="space"> </pc>
+<w n="deriuari" xml:id="w24285">deriuari</w>
+	<pc n="space"> </pc>
+<w n="quod" xml:id="w24288">
+	<choice>
+		<abbr type="superscription">qd<am>¯</am></abbr>
+		<expan>quod</expan>
+	</choice>
+</w>
+<w n="in" xml:id="w24291">in</w>
+<w n="usu" xml:id="w24294">usu</w>
+	<pc n="space"> </pc>
+<w n="non" xml:id="w24297">non</w>
+<w n="sunt" xml:id="w24300">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+<pc n=",">·</pc>
+<w n="sed" xml:id="w24303">sed</w>
+<lb n="6v.b.37" />
+<w n="tantum" xml:id="w24306">tant
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="magnficus" xml:id="w24309">magnficus</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w24312">et</w>
+<w n="munificus" xml:id="w24315">munificus</w>
+<pc n=".">ł</pc>
+<w n="cum" xml:id="w24318">c
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+<w n="comparatiua" xml:id="w24321">comparatiua</w>
+	<pc n="space"> </pc>
+<w n="proprie" xml:id="w24324">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+prie</w>
+<lb n="6v.b.38" />
+<w n="ad" xml:id="w24327">ad</w>
+<w n="positiuum" xml:id="w24330">positiu
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="gradum" xml:id="w24333">grad
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="fieri" xml:id="w24336">fieri</w>
+	<pc n="space"> </pc>
+<w n="soleat" xml:id="w24339">soleat</w>
+<pc n=",">·</pc>
+<w n="inuenitur" xml:id="w24342">inuenitur</w>
+	<pc n="space"> </pc>
+<w n="comparatiuus" xml:id="w24345">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+paratiuus</w>
+	<pc n="space"> </pc>
+<w n="pro" xml:id="w24348">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="positiuo" xml:id="w24351">posi
+<lb n="6v.b.39" />
+tiuo</w>
+	<pc n="space"> </pc>
+<w n="tantum" xml:id="w24354">tant
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="positus" xml:id="w24357">positus</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w24360">ut</w>
+<w n="comites" xml:id="w24363">comites</w>
+	<pc n="space"> </pc>
+<w n="senioris" xml:id="w24366">senioris</w>
+	<pc n="space"> </pc>
+<add place="above">
+<unclear cert="medium" reason="faded">
+<w n="Acestae" xml:id="w24369">aceste</w>
+</unclear>
+<note type="script">This word is written above the line in what seems to be a slightly different script, so probably by a different hand. It is hardly readable, but the source (Priscian Ars grammatica K.2.92.8) has 'comites senioris Acestae' (a quote from Verg. Aen. 5.301): the second hand decided to complete the Vergilian quote as he found it in Priscian.</note>
+</add>
+<w n="pro" xml:id="w24372">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+</w>
+<w n="senis" xml:id="w24375">senis</w>
+<pc n=".">ł</pc>
+<w n="est" xml:id="w24378"><hi rend="larger">e</hi>st</w>
+<w n="quando" xml:id="w24381">quando</w>
+
+<pb facs="manuscript_images/C_007r.JPG" n="7r" />
+
+<cb n="7r.a" />
+
+<lb n="7r.a.1" />
+
+
+
+
+
+<note>fonte K.2.90.16. MS rigo 20 foglio 06v.
+Continuare con 'cum ordinis sunt differentia...'</note>
+
+</ref>
 </ab>
 
 <note type="source">Morelli, 1911, 292 (final lines) writes that the source here (and until folio 7r, column a) is Priscian until 2.94.9 (i.e. urn:cts:latinLit:stoa0234a.stoa001:x.x.x-2.94.9)</note>
