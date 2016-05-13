@@ -677,6 +677,7 @@ Markup not referring to a specific layer
 
 	- possible values of attribute `@place` are:
 		- "above" for interlinear additions (above the line)
+		- "below" for intelinear additions (below the line)
 		- "footnote" for an addition at the bottom of the column, connected with the text with a metamark
 		
 5. `<note>`
