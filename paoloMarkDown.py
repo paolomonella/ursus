@@ -274,7 +274,7 @@ for word in tree.findall('.//' + n + 'w'):
         if not reached_last_id and idcount > int(last_existing_id[1:]):
             idstring = idstring + '_unordered'
             print('\nWARNING: UNORDERED ID "' + idstring + '"')
-        print(idstring + '_' + word.get('n'), end=' ')
+        #print(idstring + '_' + word.get('n'), end=' ')
         word.set(nx + 'id', idstring)
         existing_w_ids.append(idstring)
 
