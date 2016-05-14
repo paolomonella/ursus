@@ -30032,12 +30032,138 @@ tis</w>
 </w>
 	<pc n="space"> </pc>
 <w n="adulationis" xml:id="w27948">adulationis</w>
+<pc n=",">·</pc>
+<lb n="7v.b.20" />
+<w n="maxime" xml:id="w27951">maxime</w>
 	<pc n="space"> </pc>
+<w n="puerorum" xml:id="w27954">pueror
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w27957">ut</w>
+<w n="Antoniaster" xml:id="w27960">antoniaster</w>
+	<pc n="space"> </pc>
+<w n="patriciolus" xml:id="w27963">patriciolus</w>
+	<pc n="space"> </pc>
+<w n="Sergiolus" xml:id="w27966">sergiolus</w>
+<pc n=".">·</pc>
+<lb n="7v.b.21" />
+<w n="pleraque" xml:id="w27969">plera
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="diminutiua" xml:id="w27972">diminutiua</w>
+	<pc n="space"> </pc>
+<w n="ab" xml:id="w27975">ab</w>
+<w n="appellatiuis" xml:id="w27978">appellatiuis</w>
+	<pc n="space"> </pc>
+<w n="deriuantur" xml:id="w27981">deriuantur</w>
+	<pc n="space"> </pc>
+<w n="pauca" xml:id="w27984">pauca</w>
+	<pc n="space"> </pc>
+<w n="a" xml:id="w27987">a</w>
+<w n="propriis" xml:id="w27990">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+	pri
+<lb n="7v.b.22" />
+is</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w27993">et</w>
+<w n="plerumque" xml:id="w27996">pler
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="seruant" xml:id="w27999">seruant</w>
+	<pc n="space"> </pc>
+<w n="primitiuorum" xml:id="w28002">primitiuor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="genera" xml:id="w28005">genera</w>
+<pc n=".">·</pc>
+<w n="saepe" xml:id="w28008"><hi rend="larger">s</hi>æpe</w>
+	<pc n="space"> </pc>
+<w n="diminutiuorum" xml:id="w28011">diminutiuorum</w>
+<lb n="7v.b.23" />
+<w n="diminutiua" xml:id="w28014">diminutiua</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w28017">in</w>
+<w n="diuersas" xml:id="w28020">diuersas</w>
+	<pc n="space"> </pc>
+<w n="desinunt" xml:id="w28023">desinunt</w>
+	<pc n="space"> </pc>
+<w n="formas" xml:id="w28026">formas</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w28029">ut</w>
+<w n="homo" xml:id="w28032">homo</w>
+	<pc n="space"> </pc>
+<w n="homuncio" xml:id="w28035">homuncio</w>
+<lb n="7v.b.24" />
+<w n="homunculus" xml:id="w28038">homunculus</w>
+<pc n=",">·</pc>
+<w n="homullus" xml:id="w28041">homullus</w>
+<pc n=",">·</pc>
+<w n="homullulus" xml:id="w28044">homullulus</w>
+<pc n=".">·</pc>
+<w n="masculini"><hi rend="larger">m</hi>asculini</w>
+generis
+formæ0
+<lb n="7v.b.25" />
+diminutiuor,u,2,um,
+,st,-,sunt,0
+<pc n="0">·</pc>
+hæc0
+<pc n="quote">·</pc>
+<w type="alphabemes" n="culus">culus</w>
+<pc n="quote">·</pc>
+<w type="alphabemes" n="ulus">ulus</w>
+<pc n="quote">·</pc>
+<w type="alphabemes" n="olus">olus</w>
+<pc n="quote">·</pc>
+<w type="alphabemes" n="ellus">ellus</w>
+<pc n="quote">·</pc>
+<w type="alphabemes" n="xillus">xillus</w>
+<pc n="quote">·</pc>
+<w type="alphabemes" n="illus">illus</w>
+<pc n="quote">·</pc>
+<w type="alphabemes" n="ullus">ullus</w>
+<pc n="quote">·</pc>
+<w type="alphabemes" n="cio">cio</w>
+<lb n="7v.b.26" />
+<w type="alphabemes" n="aster">aster</w>
+<pc n="quote">·</pc>
+<w type="alphabemes" n="leus">leus</w>
+<pc n="quote">·</pc>
+<w type="alphabemes" n="tulus">tulus</w>
+<pc n="quote">·</pc>
+ut0
+<w n="ignuculus">ignuculus
+<note type="script">Scribal error: 'ignuculus' for 'igniculus', which is the reading in the source Priscian, Ars grammatica K.2.102.6.</note>
+</w>
+<pc n=",">·</pc>
 
-<note>Ricomincia da fonte K.2.101.21 e MS 7v.b.19 /// Morelli 1911, 293 (initial lines) says that 7r.b.14 - 8v.a.19 = Prisc. K.2.94.15 - Prisc. K.2.115.15</note>
+<note>Ricomincia da fonte K.2.102.7 e MS 7v.b.27   /// Morelli 1911, 293 (initial lines) says that 7r.b.14 - 8v.a.19 = Prisc. K.2.94.15 - Prisc. K.2.115.15</note>
 </ref>
 </ab>
-
 
 </body>
 </text>
