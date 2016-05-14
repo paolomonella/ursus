@@ -211,26 +211,13 @@ inFH.close()
 def outputListAsTable(disclaimer, listName):
     if len(listName) > 0:
         print(disclaimer)
-        count = 0
         for x in listName:
-            if count < 3:
-                myEnd = '\t\t\t'
-            else:
-                myEnd = '\n'
-                count = 0
-            print('«'+x+'»', end=myEnd)
-            count = count + 1
-        print()
-
-
-#print(startWList)
-#print(endWList)
-#print(startEndWList)
-#print(nofitList)
+            print('\t«'+x+'»')
+        print() # This just inserts a blank line
 
 # Output the lines that have not been substituted
-outputListAsTable('Lines not substituted because they start and end with whitespace:', startEndWList)
 outputListAsTable('Lines not substituted because they start with whitespace:', startWList)
+outputListAsTable('Lines not substituted because they start and end with whitespace:', startEndWList)
 outputListAsTable('Lines not substituted because they end with whitespace:', endWList)
 outputListAsTable('Lines not substituted because they do not fit any regex:', nofitList)
 
