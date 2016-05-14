@@ -217,10 +217,12 @@ def outputListAsTable(disclaimer, listName):
 
 # Output the lines that have not been substituted
 outputListAsTable('Lines not substituted because they start with whitespace:', startWList)
-outputListAsTable('Lines not substituted because they start and end with whitespace:', startEndWList)
-outputListAsTable('Lines not substituted because they end with whitespace:', endWList)
-outputListAsTable('Lines not substituted because they do not fit any regex:', nofitList)
+outputListAsTable('ಠ_ಠ Lines not substituted because they start and end with whitespace:', startEndWList)
+outputListAsTable('ಠ_ಠ Lines not substituted because they end with whitespace:', endWList)
+outputListAsTable('ಠ_ಠ Lines not substituted because they do not fit any regex:', nofitList)
 
+if len(startEndWList) == 0 and len(endWList) == 0 and len(nofitList) == 0:
+    print('  ͡° ͜ʖ ͡°  No parsing errors')
 
 #################
 # Insert xml:id #
