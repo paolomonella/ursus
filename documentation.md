@@ -468,7 +468,13 @@ If more source passages are to be referenced for the same Ursus passage, they ar
     <ref type="source" cRef="urn:cts:latinLit:stoa0234a.stoa001:2.57.12-2.57.17 urn:cts:latinLit:stoa0110.stoa001:4.373.8-4.373.10">
 
 [sgn: check if this is OK based on the Guidelines recommendations for the values of the @cRef and @ref-like attributes]
-    
+
+In addition to this, milestones such as
+
+    <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.103" type="source" subtype="page"/>
+
+are used, though not systematically, when the text of the manuscript follows the same source for a long passage. In these cases, this code might be useful to those trying to track down the specific source of a sentence in more detail. I started using `<milestone>` elements with this function from folio 7v, column b, line 34 on. These URNs end with the number of page of Keil's edition. In the example above, the milestone marks the point in which the manuscript's text corresponds to the source Priscian, Ars grammatica (`latinLit:stoa0234a.stoa001`), volume 2, first line of page 103 of Keil's reference edition.
+
 
 ## Lists of URNs
 
