@@ -328,7 +328,7 @@ The very distinction of an Alphabetic Layer (AL) of the digital edition from the
 - The abbreviation constituted by graphemes 'cor' with a macron over 'o' and 'r' has the alphabetic meaning 'correptum' (e.g. in folio 5v, column b, line 21) or the alphabetic meaning of 'correpta' (e.g. in folio 5r, column a, verse 20). In the latter case, in fact, the interpretation could be both 'correpta' or 'correptum' (as the name of alphabetic letters is sometimes feminine, sometimes neuter in the text), but the expression "ponunt 'e' correptam ante 'us'" occurring right before in the same sentence makes me decide for 'correpta' in this case. Anyways, I think it is clear that the specific alphabetic meaning of that abbreviation is not unambiguously determined by the sequence of graphemes at the GL.
 
 
-## XML/TEI encoding strategy for the AL
+## Possible encoding strategies for the AL
 
 In my previous <a href="http://www1.unipa.it/paolo.monella/lincei/edition.html">Vespa Project</a>, I had used an extremely granular encoding strategy (at the grapheme level, by means of `<g>` elements each with an `@xml:id`) to explicitly encode the alphabetic meaning of every grapheme.
 
