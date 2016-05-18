@@ -161,6 +161,10 @@ span.GL.brevigraph {
 	color: green;
 }
 
+span.GL.omission {
+	color: pink;
+}
+
 span.AL.abbrExpansion {
 	text-decoration: underline;
 }

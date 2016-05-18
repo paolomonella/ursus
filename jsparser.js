@@ -76,6 +76,8 @@
 // 	(child of <td class="GLCell")
 // <span class="GL am brevigraph">: it marks the abbreviation mark in an abbreviation of type "brevigraph".
 // 	(child of <td class="GLCell")
+// <span class="GL am omission">: it marks the abbreviation mark in an abbreviation of type "omission".
+// 	(child of <td class="GLCell")
 // <span class="AL abbrExpansion">: it marks a group of alphabemes (alphabetic letters) that are
 // 	abbreviated in the manuscript (so they don't have a one-to-one alphabeme/grapheme correspondence).
 // 	(child of <td class="ALCell")
@@ -717,7 +719,8 @@ function wordify(word) {
 					var GLAbbrMarkSpan = document.createElement('span');
 					// The values of @class for the Abbr. Mark <span> in HTML
 					// are "GL am" and the value of @type in XML/TEI,
-					// so "GL am superscription", "GL am after" or "GL am brevigraph"
+					// so "GL am superscription", "GL am after", "GL am brevigraph"
+					// or "GL am omission"
 					GLAbbrMarkSpan.setAttribute('class', 'GL am '+
 							abbr.attributes.getNamedItem('type').nodeValue);
 					// Append GL abbreviation mark to the span (if any)
@@ -728,8 +731,9 @@ function wordify(word) {
 			// Append GL span for base grapheme(s)
 			cells[2].appendChild(GLBaseGraphemesSpan);      
 			// Append GL span for abbreviation mark, if the abbreviation type is not 'brevigraph'
-			//   (brevigraphs have no abbreviation mark)
-			if (abbr.attributes.getNamedItem('type').nodeValue != 'brevigraph') {
+			// or 'omission' (brevigraphs and omission-only abbreviations have no abbreviation mark)
+			abbrType = abbr.attributes.getNamedItem('type').nodeValue;
+			if (abbrType != 'brevigraph' && abbrType != 'omission') {
 				cells[2].appendChild(GLAbbrMarkSpan);      
 			}
 
