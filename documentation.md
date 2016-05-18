@@ -167,7 +167,7 @@ Abbreviation marks are not always written *above* other graphemes. The grapheme 
 
 ## GL and AL in abbreviations involving an omission of graphemes without an abbreviation mark
 
-In at least one case (word "correptum", word id w32448, in folio 8v, column b, line 33) the abbreviation has no abbreviation mark, but only consists in the omission of some graphemes. In this case the encoding is:
+In at least one case (word "correptum", with `xml:id` w32448, in folio 8v, column b, line 33) the abbreviation has no abbreviation mark, but only consists in the omission of some graphemes. In this case the encoding is:
 
     <w n="correptum" xml:id="w32448">
             <choice>
@@ -175,6 +175,7 @@ In at least one case (word "correptum", word id w32448, in folio 8v, column b, l
                     <expan>correptum</expan>
             </choice>
     </w>
+    
 
 ## GL and AL in brevigraphs and logographs
     
@@ -204,10 +205,15 @@ The following example has a logograph: the grapheme '÷' means a whole word, tha
             </choice>
     </w>
 
+I am currently making no distinction between brevigraphs and logographs in the encoding: both are encoded with `<abbr type="brevigraph">`. Up to folio 8v, the only logograph found is that encoded with the Unicode character '÷'.
+
+Note that this type of abbreviation (`<abbr type="brevigraph">`) is different than that marked as `<abbr type="omission">` because+
+- in the 'brevigraph'-type a special, individual grapheme, is involved (e.g. that encoded here as '÷', or the 'p' or 'q' with a horizontal trait crossing the descending line),
+- while in the 'omission'-type a sequence of (more than one) 'regular' alphabetic graphemes (i.e. graphemes having a one-to-one standard correspondence with an alphabeme) are used (e.g. in the word 'correptum', encoded with `xml:id` w32448, written with the three 'regular' graphemes 'cor' with no abbreviation sign).
+
 Up to folio 5 verso, column b, brevigraphs and logogoraphs had always proved to have each a fixed alphabetic meaning. For them, therefore, the `<expan>` element is not needed to provide the alphabemes meant by the brevigraph/logograph (which could be computed based on the content of column 'Alphabemes' in the "Graphemic Table of Signs", i.e. file GToS.csv). For these graphemes, the whole `<choice>` / `<abbr>` / `<expan>` structure is merely needed to align the sequence of graphemes with the sequence of alphabemes, i.e. to explicitly encode what alphabemes are meant by the brevigraph/logograph. In the example above, grapheme '÷' is aligned with / means the three alphabemes 'est'.
 
 Again, the encoding convention for abbreviations in this edition complies with the TEI-all DTD and the TEI P5 Guidelines, but is fairly specific to this project and derives from the methodological principle of formally distinguishing the GL, the AL and the LL.
-
 
 ## Rationale of this encoding of abbreviations
 
