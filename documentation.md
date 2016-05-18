@@ -106,7 +106,7 @@ Abbreviations
 =============
 
 
-## GL and AL in abbreviations involving an abbreviation mark
+## Type "superscription"
 
 In this edition, the TEI `<abbr>`, `<am>` and `<expan>` elements are used with a semantics still compatible with that declared in the TEI P5 Guidelines, but more specific. In the following code:
 
@@ -156,6 +156,8 @@ In the following code:
 
 the grapheme ¯ is written over the graphemes 'sr' at the beginning of the word (not over the final grapheme 'm'), and the alphabemes 's', 'p', 'i', 'r', 'i', 't', 'u' are the alphabetic meaning of the whole abbreviation. As to the final grapheme 'm', it is not considered part of the abbreviation, so its alphabetical meaning is its standard one, i.e. the alphabeme 'm' (as encoded in the GToS).
 
+## Type "after"
+
 Abbreviation marks are not always written *above* other graphemes. The grapheme that I'm encoding with the Unicode character ';', for example, is written on the right, after the final grapheme of a word (mostly 'q;' for 'que' and 'b;' for 'bus'):
 
     <w ana="duabus">dua
@@ -165,7 +167,7 @@ Abbreviation marks are not always written *above* other graphemes. The grapheme 
         </choice>
     </w>
 
-## GL and AL in abbreviations involving an omission of graphemes without an abbreviation mark
+## Type "omission"
 
 In at least one case (word "correptum", with `xml:id` w32448, in folio 8v, column b, line 33) the abbreviation has no abbreviation mark, but only consists in the omission of some graphemes. In this case the encoding is:
 
@@ -177,7 +179,7 @@ In at least one case (word "correptum", with `xml:id` w32448, in folio 8v, colum
     </w>
     
 
-## GL and AL in brevigraphs and logographs
+## Type "brevigraph" (brevigraphs and logographs)
     
 Brevigraphs and logographs do not have abbreviation marks (such as the macron). 
 
