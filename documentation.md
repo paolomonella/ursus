@@ -165,6 +165,16 @@ Abbreviation marks are not always written *above* other graphemes. The grapheme 
         </choice>
     </w>
 
+## GL and AL in abbreviations involving an omission of graphemes without an abbreviation mark
+
+In at least one case (word "correptum", word id w32448, in folio 8v, column b, line 33) the abbreviation has no abbreviation mark, but only consists in the omission of some graphemes. In this case the encoding is:
+
+    <w n="correptum" xml:id="w32448">
+            <choice>
+                    <abbr type="omission">cor</abbr>
+                    <expan>correptum</expan>
+            </choice>
+    </w>
 
 ## GL and AL in brevigraphs and logographs
     
@@ -207,6 +217,12 @@ This encoding convention is useful because:
 
 2. some graphemes, such as the abbreviation marks, do not have a fixed alphabetic value. Thus the alphabetic value of a combination of graphemes constituting an abbreviation is not always computable based on the implied rules of the manuscript writing system. See section _Is the explicit encoding of an Alphabetic Layer really necessary?_ for a more detailed discussion on this and some examples.
 
+## Summary of values of @type in `<abbr>`
+
+- superscription
+- after
+- omission
+- brevigraph
 
 ## Summary of the distinction of GL and LL in the encoding of abbreviations
 
