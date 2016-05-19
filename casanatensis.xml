@@ -17129,7 +17129,7 @@ mo</w>
 </w>
 <pc n="ł">·</pc>
 <w n="oe" type="alphabemes" xml:id="w15741"><hi rend="larger">o</hi>e
-<note type="script">The glyph for 'o' has a dot in the middle.</note>
+<note type="script">The glyph for 'o' has a dot in the middle of the circle.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="diphthongo" xml:id="w15744">dyphthongo</w>
@@ -17883,7 +17883,7 @@ gus</w>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note type="content">This is certainly a scribe error for 'interposito'. Compare the source Priscian Ars Grammatica K.2.74.18: 'interposita similiter u pro consonante'. As in the manuscript the word 'u' between 'interpositum' and 'pro' has been added at a later time above the line, the original text was 'in i longum interpositum pro consonante', where 'interpositum' modified 'i'. The correction restored the missing 'u' (thus creating a nonsensical text 'in i longum interpositum u pro consonante'), but forgot to change 'interpositum' to 'interposito' to make 'interposito u' an absolute ablative.</note>
+<note type="content">This is certainly a scribe error for 'interposito'. Compare the source Priscian Ars Grammatica K.2.74.18: 'interposita similiter u pro consonante'. As in the manuscript the word 'u' between 'interpositum' and 'pro' has been added at a later time above the line, the original text was 'in i longum interpositum pro consonante', where 'interpositum' modified 'i'. The correction restored the missing 'u' (thus creating a nonsensical text 'in i longum interpositum u pro consonante'), but forgot to change 'interpositum' to 'interposito' to make 'interposito u' an ablative absolute.</note>
 </w>
 <add place="above">
 <pc n="quote">·</pc>
@@ -19204,11 +19204,10 @@ signanus</w>
 	<pc n="space"> </pc>
 <w n="uel" xml:id="w17874">uel</w>
 <lb n="5v.a.3" />
-<w n="i" type="alphabemes" xml:id="w17877">i</w>
-<pc n="quote">·</pc>
-<w n="e" type="alphabemes" xml:id="w17880">e</w>
-<pc n="quote">·</pc>
+<w n="ie" type="alphabemes" xml:id="w17877">i·e
 <note type="content">Though the manuscript has a middle dot between 'i' and 'e', the whole morpheme 'ie' is meant.</note>
+</w>
+<pc n="quote">·</pc>
 <w n="terminata" xml:id="w17883">terminata</w>
 	<pc n="space"> </pc>
 <w n="aduerbia" xml:id="w17886">aduerbia</w>
@@ -19714,11 +19713,10 @@ nata</w>
 	</choice>
 </w>
 <pc n="quote">·</pc>
-<w n="i" type="alphabemes" xml:id="w18432">i</w>
-<pc n="quote">·</pc>
-<w n="um" type="alphabemes" xml:id="w18435">um</w>
-<pc n="quote">·</pc>
+<w n="ium" type="alphabemes" xml:id="w18432">i·um
 <note type="content">Though there is a middle dot between 'i' and 'um', the morpheme that the author meant was 'ium' as a whole (compare the source, Priscian Ars grammatica, K.2.79.2: 'et in ium propria').</note>
+</w>
+<pc n="quote">·</pc>
 <w n="deriuata" xml:id="w18438">deriuata</w>
 	<pc n="space"> </pc>
 <w n="ab" xml:id="w18441">ab</w>
@@ -19904,8 +19902,7 @@ riuatiua</w>
 	<pc n="space"> </pc>
 <w n="metropolitanus" xml:id="w18651">metropolitanus</w>
 	<pc n="space"> </pc>
-<pc n="0">:
-</pc>
+<pc n="0">:</pc>
 <add place="above">
 <pc n="0">:</pc>
 <w n="Νεαπολίτες" type="foreign" xml:id="w18654" xml:lang="grc">neapolites</w>
@@ -20390,10 +20387,9 @@ nentia</w>
 <w n="in" xml:id="w19113">in</w>
 	<pc n="space"> </pc>
 <pc n="quote">·</pc>
-<w n="i" type="alphabemes" xml:id="w19116">i</w>
-<pc n="quote">·</pc>
-<w n="us" type="alphabemes" xml:id="w19119">us</w>
+<w n="ius" type="alphabemes" xml:id="w19116">i·us
 <note type="content">Though there is a middle dot between 'i' and 'us', the morpheme that the author meant was 'ius' as a whole (compare the source, Priscian Ars grammatica, K.2.80.19: "sin autem in 'er' desinentia tertiae sint declinationis uel in 'ius' facientia genetiuum").</note>
+</w>
 	<pc n="space"> </pc>
 <w n="facientia" xml:id="w19122">facientia</w>
 	<pc n="space"> </pc>
@@ -20663,11 +20659,10 @@ nificationes</w>
 <lb n="5v.b.20" />
 <w n="in" xml:id="w19419"><hi rend="larger">i</hi>n</w>
 <pc n="quote">·</pc>
-<w n="i" type="alphabemes" xml:id="w19422">i</w>
-<pc n="quote">·</pc>
-<w n="a" type="alphabemes" xml:id="w19425">a</w>
-<pc n="quote">·</pc>
+<w n="ia" type="alphabemes" xml:id="w19422">i·a
 <note type="content">Though there is a middle dot between 'i' and 'a', the morpheme that the author meant was 'ia' as a whole (compare the source, Priscian Ars grammatica, K.2.81.15: "in 'ia' desinentia n antecedente", and compare the following examples).</note>
+</w>
+<pc n="quote">·</pc>
 <w n="desinentia" xml:id="w19428">desinentia</w>
 <pc n="0">·</pc>
 <w n="antecedente" xml:id="w19431">ante
@@ -20780,11 +20775,10 @@ cedente</w>
 <w n="ante" xml:id="w19512">ante</w>
 	<pc n="space"> </pc>
 <pc n="quote">·</pc>
-<w n="i" type="alphabemes" xml:id="w19515">i</w>
-<pc n="quote">·</pc>
-<w n="a" type="alphabemes" xml:id="w19518">a</w>
-<pc n="quote">·</pc>
+<w n="ia" type="alphabemes" xml:id="w19515">i·a
 <note type="content">Though there is a middle dot between 'i' and 'a', the morpheme that the author meant was 'ia' as a whole.</note>
+</w>
+<pc n="quote">·</pc>
 <w n="non" xml:id="w19521">
 	<choice>
 		<abbr type="superscription">n<am>¯</am></abbr>
@@ -24266,12 +24260,12 @@ tur</w>
 <pc n=",">|</pc>
 <lb n="6v.a.22" />
 <w n="ut" xml:id="w22704">ut</w>
-<w n="arduior" xml:id="w22707">arduior
-<note type="script">Two dots are put between 'u' and 'i'. One middle dot is put inline between 'i' and 'o', to mark the hiati.</note>
+<w n="arduior" xml:id="w22707">ardu:i·or
+<note type="script">The colon-like punctuation mark and the middle dot are used within the word to mark the hiati.</note>
 </w>
 	<pc n="space"> </pc>
-<w n="piior" xml:id="w22710">piior
-<note type="script">A middle dot is put between the two 'i's and between the second 'i' and the 'o', to mark the hiati.</note>
+<w n="piior" xml:id="w22710">pi·i·or
+<note type="script">Middle dots are used within the word to mark the hiati.</note>
 </w>
 <pc n=".">ł</pc>
 <w n="ideo" xml:id="w22713">ideo</w>
@@ -24547,8 +24541,8 @@ seruantia</w>
 </w>
 	<pc n="space"> </pc>
 	<pc n="space"> </pc>
-<w n="arduior" xml:id="w22959">arduior
-<note type="script">A middle dot is put between 'u' and 'i', and another between 'i' and 'o', to mark the hiati.</note>
+<w n="arduior" xml:id="w22959">ardu·i·or
+<note type="script">The middle dots within the graphical word are used to mark the hiati.</note>
 </w>
 <pc n=",">·</pc>
 <w n="strenuior" xml:id="w22962">strenuior</w>
@@ -31079,8 +31073,8 @@ sistit</w>
 <w n="ut" xml:id="w28908">ut</w>
 <w n="labat" xml:id="w28911">labat</w>
 <lb n="8r.a.18" />
-<w n="ariete" xml:id="w28914">ariete
-<note type="script">Middle dots are used within this word to mark the metric scansion: 'ar·ie·te'.</note>
+<w n="ariete" xml:id="w28914">ar·ie·te
+<note type="script">Middle dots are used within this word to mark the metric scansion.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="crebro" xml:id="w28917">crebro</w>
@@ -34862,10 +34856,10 @@ mina</w>
 	</choice>
 </w>
 <pc n="0">·</pc>
-<w n="repto" xml:id="w32556">
+<w n="correpto" xml:id="w32556">
 	<choice>
 		<abbr type="superscription">cor<am>¯</am></abbr>
-		<expan>repto</expan>
+		<expan>correpto</expan>
 	</choice>
 </w>
 <pc n="quote">·</pc>
@@ -35567,7 +35561,444 @@ munia</w>
 	<pc n="space"> </pc>
 <w n="io" type="alphabemes" xml:id="w33282">i·o</w>
 	<pc n="space"> </pc>
-<note>Ricomincia da:  cerca a ritroso le altre parole (tipo ariete) che avevano middle dots in mezzo alla parola, e codificale come questo 'io' // e poi: K.2.121.20 // MS 9r.a.26, con le ultime due parole del rigo, "aut in".</note>
+<w n="aut" xml:id="w33285">aut</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w33288">in</w>
+<lb n="9r.a.27" />
+<w n="go" type="alphabemes" xml:id="w33291">go</w>
+	<pc n="space"> </pc>
+<w n="aut" xml:id="w33294">aut</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w33297">in</w>
+<w n="do" type="alphabemes" xml:id="w33300">do</w>
+<pc n=",">:</pc>
+<w n="et" xml:id="w33303"><hi rend="larger">e</hi>t</w>
+<w n="paene" xml:id="w33306">pene</w>
+	<pc n="space"> </pc>
+<w n="omnia" xml:id="w33309">omnia</w>
+	<pc n="space"> </pc>
+<w n="rerum" xml:id="w33312">rer
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="incorporalium" xml:id="w33315">incorporali
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w33318">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
+	</choice>
+</w>
+<w n="in" xml:id="w33321">in</w>
+<pc n="quote">·</pc>
+<w n="io" type="alphabemes" xml:id="w33324">i·o
+<note type="content">Though there is a middle dot between the two graphemes, the scribe meant them to represent one morpheme.</note>
+</w>
+<pc n="quote">·</pc>
+<add place="above">
+<w n="et" xml:id="w33327">et</w>
+</add>
+<w n="plerumque" xml:id="w33330">pler
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+	<choice>
+		<abbr type="after">q<am>;</am></abbr>
+		<expan>que</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="fiunt" xml:id="w33333">fi
+<lb n="9r.a.28" />
+unt</w>
+	<pc n="space"> </pc>
+<w n="a" xml:id="w33336">a</w>
+<w n="participiis" xml:id="w33339">participiis</w>
+	<pc n="space"> </pc>
+<w n="praeteriti" xml:id="w33342">preteriti</w>
+<pc n=",">·</pc>
+<w n="quorum" xml:id="w33345">quor
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="genetiuo" xml:id="w33348">genitiuo</w>
+	<pc n="space"> </pc>
+<w n="assumpta" xml:id="w33351">ass
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+pta</w>
+<pc n="quote">·</pc>
+<w n="o" type="alphabemes" xml:id="w33354">o</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w33357">et</w>
+<w n="correpta" xml:id="w33360">c
+	<choice>
+		<abbr type="superscription">or<am>¯</am></abbr>
+		<expan>orrepta</expan>
+	</choice>
+</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w33363">i</w>
+<pc n="quote">·</pc>
+<lb n="9r.a.29" />
+<unclear cert="high" reason="script">
+<w n="fiunt" xml:id="w33366">fiunt</w>
+</unclear>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w33369">ut</w>
+	<pc n="space"> </pc>
+<w n="oratus" xml:id="w33372">oratus</w>
+	<pc n="space"> </pc>
+<w n="orati" xml:id="w33375">orati</w>
+	<pc n="space"> </pc>
+<w n="oratio" xml:id="w33378">oratio</w>
+<pc n=",">·</pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.122.2" type="source" unit="Keil" />
+<w n="lectus" xml:id="w33381">lectus</w>
+	<pc n="space"> </pc>
+<w n="lecti" xml:id="w33384">lecti</w>
+	<pc n="space"> </pc>
+<w n="lectio" xml:id="w33387">lectio</w>
+<pc n=",">·</pc>
+<w n="internectus" xml:id="w33390">internectus</w>
+<lb n="9r.a.30" />
+<w n="internecti" xml:id="w33393">internecti</w>
+	<pc n="space"> </pc>
+<w n="internecio" xml:id="w33396">internecio</w>
+<pc n=",">·</pc>
+<w n="euphoniae" xml:id="w33399">euphoniæ</w>
+	<pc n="space"> </pc>
+<w n="causa" xml:id="w33402">causa</w>
+	<pc n="space"> </pc>
+<w n="abiecta" xml:id="w33405">abiecta</w>
+<pc n="quote">·</pc>
+<w n="t" type="alphabemes" xml:id="w33408">t</w>
+<pc n=".">·</pc>
+<w n="in" xml:id="w33411"><hi rend="larger">i</hi>n</w>
+<w n="go" type="alphabemes" xml:id="w33414">go</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w33417">et</w>
+<w n="primitiua" xml:id="w33420">pri
+<lb n="9r.a.31" />
+mitiua</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w33423">et</w>
+<w n="deriuatiua" xml:id="w33426">deriuatiua</w>
+	<pc n="space"> </pc>
+<w n="producunt" xml:id="w33429">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+	d
+	<choice>
+		<abbr type="superscription">uc<am>¯</am></abbr>
+		<expan>ucunt</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="paenultimam" xml:id="w33432">penultim
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="natura" xml:id="w33435">natura</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w33438">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<w n="positione" xml:id="w33441">positione</w>
+<lb n="9r.a.32" />
+<w n="ut" xml:id="w33444">ut</w>
+<w n="uirago" xml:id="w33447">uir
+	<pc n="space"> </pc>
+	ago
+</w>
+<pc n=",">·</pc>
+<w n="compago" xml:id="w33450">c
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+pago</w>
+<note type="script">There is a macron sign over the 'a' in 'uirāgo' and 'compāgo' to mark its long quantity.</note>
+<pc n=".">·</pc>
+<w n="excipitur" xml:id="w33453"><hi rend="larger">e</hi>xcipitur</w>
+	<pc n="space"> </pc>
+<w n="unum" xml:id="w33456">un
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="masculinum" xml:id="w33459">masculin
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="disyllabum" xml:id="w33462">disyllab
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="ligo" xml:id="w33465">ligo</w>
+<pc n=",">·</pc>
+<lb n="9r.a.33" />
+<w n="paenultimum" xml:id="w33468">penultim
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="correptum" xml:id="w33471">
+	<choice>
+		<abbr type="omission">cor</abbr>
+		<expan>correptum</expan>
+	</choice>
+</w>
+<note type="content">I consider this a scribal error, as I would rather have an ablative absolute here: "paenultimo correpto".</note>
+<pc n=".">·</pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.122.10" type="source" unit="Keil" />
+<w n="in" xml:id="w33474"><hi rend="larger">i</hi>n</w>
+<w n="do" type="alphabemes" xml:id="w33477">do</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w33480">et</w>
+<w n="a" xml:id="w33483">a</w>
+<w n="nominibus" xml:id="w33486">nomini
+	<choice>
+		<abbr type="after">b<am>;</am></abbr>
+		<expan>bus</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w33489">et</w>
+<w n="a" xml:id="w33492">a</w>
+<w n="uerbis" xml:id="w33495">uerbis</w>
+	<pc n="space"> </pc>
+<w n="et" xml:id="w33498">et</w>
+<w n="a" xml:id="w33501">a</w>
+<w n="participiis" xml:id="w33504">participiis</w>
+<lb n="9r.a.34" />
+<w n="ueniunt" xml:id="w33507">ueniunt</w>
+<pc n="0">·</pc>
+<w n="et" xml:id="w33510">et</w>
+<w n="uel" xml:id="w33513">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<pc n="quote">·</pc>
+<w n="e" type="alphabemes" xml:id="w33516">e</w>
+<pc n="quote">·</pc>
+<w n="uel" xml:id="w33519">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+<pc n="quote">·</pc>
+<w n="i" type="alphabemes" xml:id="w33522">i</w>
+<pc n="quote">·</pc>
+<w n="longum" xml:id="w33525">long
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="habet" xml:id="w33528">habet</w>
+	<pc n="space"> </pc>
+<w n="uel" xml:id="w33531">
+	<choice>
+		<abbr type="superscription">ul<am>¯</am></abbr>
+		<expan>uel</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="tu" type="alphabemes" xml:id="w33534">tu</w>
+<pc n="quote">·</pc>
+<w n="ante" xml:id="w33537">ante</w>
+<pc n="quote">·</pc>
+<w n="do" type="alphabemes" xml:id="w33540">do</w>
+<pc n="quote">·</pc>
+<w n="ut" xml:id="w33543">ut</w>
+<w n="acris" xml:id="w33546">acris</w>
+	<pc n="space"> </pc>
+<w n="acredo" xml:id="w33549">acre
+<lb n="9r.a.35" />
+do</w>
+<pc n=",">·</pc>
+<w n="libet" xml:id="w33552">libet</w>
+	<pc n="space"> </pc>
+<w n="libido" xml:id="w33555">libido</w>
+<pc n=",">·</pc>
+<w n="formido" xml:id="w33558">formido
+<note type="script">There is a macron sign over the 'i' ("formīdo") to mark its long quantity.</note>
+</w>
+<w n="formidinis" xml:id="w33561">formidinis</w>
+<pc n=",">·</pc>
+<w n="forti" xml:id="w33564">forti</w>
+	<pc n="space"> </pc>
+<w n="fortitudo" xml:id="w33567">fortitudo</w>
+	<pc n="space"> </pc>
+<w n="formidas" xml:id="w33570">formidas</w>
+	<pc n="space"> </pc>
+<pc n="0">:</pc>
+<note type="script">This ':' grapheme has the function of a metamark inline, marking the point of the text in which the interlinear addition should be inserted.</note>
+<add type="above">
+<pc n="0">ł</pc>
+<note type="script">This 'ł' (semicolon-like) grapheme is in interlinear position, with the function of a metamkark marking the beginning of the added text.</note>
+<w n="formido" xml:id="w33573">formido</w>
+	<pc n="space"> </pc>
+</add>
+<w n="ex" xml:id="w33576"><hi rend="larger">e</hi>x</w>
+	<pc n="space"> </pc>
+<w n="his" xml:id="w33579">his</w>
+	<pc n="space"> </pc>
+<w n="habentia" xml:id="w33582">habentia</w>
+<pc n="quote">·</pc>
+<w n="e" type="alphabemes" xml:id="w33585">e</w>
+<pc n="quote">·</pc>
+<w n="productum" xml:id="w33588">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+	<choice>
+		<abbr type="superscription">duc<am>¯</am></abbr>
+		<expan>ductum</expan>
+	</choice>
+</w>
+<lb n="9r.a.36" />
+<w n="ante" xml:id="w33591">ante</w>
+	<pc n="space"> </pc>
+	<pc n="space"> </pc>
+<w n="do" type="alphabemes" xml:id="w33594">do</w>
+	<pc n="space"> </pc>
+<w n="si" xml:id="w33597">si</w>
+<w n="deriuantur" xml:id="w33600">deriuantur</w>
+	<pc n="space"> </pc>
+<w n="a" xml:id="w33603">a</w>
+<w n="nominibus" xml:id="w33606">nominibus</w>
+	<pc n="space"> </pc>
+<w n="conuertunt" xml:id="w33609">conuertunt</w>
+	<pc n="space"> </pc>
+<w n="extremam" xml:id="w33612">extrem
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+<lb n="9r.a.37" />
+<w n="syllabam" xml:id="w33615">s
+	<choice>
+		<abbr type="superscription">yll<am>¯</am></abbr>
+		<expan>yllabam</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="in" xml:id="w33618">in</w>
+	<pc n="space"> </pc>
+<w n="e" type="alphabemes" xml:id="w33621">e</w>
+<pc n="quote">·</pc>
+<w n="et" xml:id="w33624">et</w>
+<w n="addita" xml:id="w33627">addita</w>
+<pc n="quote">·</pc>
+<w n="to" type="alphabemes" xml:id="w33630">to</w>
+<pc n="quote">·</pc>
+<w n="fiunt" xml:id="w33633">fiunt</w>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.122.12" type="source" unit="Keil" />
+<w n="ut" xml:id="w33636">ut</w>
+<w n="dulcis" xml:id="w33639">dulcis</w>
+	<pc n="space"> </pc>
+<w n="dulcedo" xml:id="w33642">dulcedo</w>
+<pc n=".">·</pc>
+<note type="script">The rest of line 37 is left blank. Probably, however, the line from "fiunt ut dulces dulcedo" to the end had a different text written in it, but the text was erased and the current text was overwritten, leaving the rest of the line blank. Also at the beginning of line 38 there are traces of a possibly erased text of the length of about 5 graphemes. The source, Priscian, Ars grammatica K.2.122.16-21, has: "et sciendum, quod e productam ante 'do', si a nominibus deriuantur, extremae syllabae terminationes in e conuertunt et accipiunt 'do', ut 'dulcis dulcēdo', 'acris acredo', sin a uerbis, secundarum terminationes personarum in e productam similiter uertunt et accepta 'do' faciunt dupra dictae formae deriuatiuum, ut 'intercapio intercapis intercapēdo'".</note>
+<lb n="9r.a.38" />
+<gap quantity="5" reason="illegible" unit="chars" />
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.122.18" type="source" unit="Keil" />
+<unclear cert="medium" reason="faded">
+<w n="si" xml:id="w33645">si</w>
+</unclear>
+<unclear cert="medium" reason="faded">
+<w n="a" xml:id="w33648">a</w>
+</unclear>
+<unclear cert="high" reason="faded">
+<w n="uerbis" xml:id="w33651">uerbis</w>
+</unclear>
+	<pc n="space"> </pc>
+<w n="conuertunt" xml:id="w33654">conuertunt</w>
+<pc n="0">·</pc>
+<w n="extremam" xml:id="w33657">extrem
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="syllabam" xml:id="w33660">s
+	<choice>
+		<abbr type="superscription">yll<am>¯</am></abbr>
+		<expan>yllabam</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
+<w n="secundae" xml:id="w33663">secundæ</w>
+	<pc n="space"> </pc>
+<w n="personae" xml:id="w33666">
+	<choice>
+		<abbr type="brevigraph">þ</abbr>
+		<expan>per</expan>
+	</choice>
+sonæ</w>
+<pc n=",">·</pc>
+
+<cb n="9r.b" />
+
+<lb n="9r.b.1" />
+<w n="addita" xml:id="w33669">addita</w>
+	<pc n="space"> </pc>
+<w n="do" type="alphabemes" xml:id="w33672">do</w>
+	<pc n="space"> </pc>
+<w n="fiunt" xml:id="w33675">fiunt</w>
+	<pc n="space"> </pc>
+<w n="ut" xml:id="w33678">ut</w>
+<w n="intercapio" xml:id="w33681">intercapio</w>
+	<pc n="space"> </pc>
+<w n="intercapis" xml:id="w33684">intercapis</w>
+	<pc n="space"> </pc>
+<w n="intercapedo" xml:id="w33687">intercapedo
+<note type="script">There is a macron sign over the second 'e' ("intercapēdo") to mark its long quantity.</note>
+</w>
+	<pc n="space"> </pc>
+<note>Probabilmente continua a epitomare K.2.122.18-19, quando dice 'secundarum terminationes personarum in e productam similiter uertunt et accepta 'do' faciunt...'</note>
+<note>Source K.2.122.forse 18-19 // MS 9r.b.1 fine rigo (ultima parola del rigo, forse una 'e').</note>
 </ref>
 </ab>
 

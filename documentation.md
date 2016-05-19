@@ -169,7 +169,7 @@ Abbreviation marks are not always written *above* other graphemes. The grapheme 
 
 ## Type "omission"
 
-In at least one case (word "correptum", with `xml:id` w32448, in folio 8v, column b, line 33) the abbreviation has no abbreviation mark, but only consists in the omission of some graphemes. In this case the encoding is:
+In very few cases (the first of which being word "correptum", with `xml:id` w32448, in folio 8v, column b, line 33), the abbreviation has no abbreviation mark, but only consists in the omission of some graphemes. In this case the encoding is:
 
     <w n="correptum" xml:id="w32448">
             <choice>
@@ -694,9 +694,12 @@ Markup not referring to a specific layer
 	- Mostly used to mark faded ink, with `@agent="faded"`.
 
 4. `<add>`
-	- the code `<add place="above">...</add>` is put at the point
-		of the text where the interlinear addition starts (i.e.: in the XML
-		code, it comes right before the text above which it appears in the manuscript).
+	- the code `<add place="above">...</add>` is put
+		- either at the point
+			of the text where the interlinear addition starts (i.e.: in the XML
+			code, it comes right before the text above which it appears in the manuscript)
+		- or at the point of the text in which a metamark glyph in the manuscript line points to the interlinear addition
+			(e.g. in folio 9r, column a, line 35)
 	- it can be either
         - parent of one or more `<w>` and/or `<pc>`elements (in most cases), if one ore more full words were added above the line
         - or parent of `<unclear>`, which in its turn is parent of `<w>` or `<pc>`, if one ore more unclear full words were added above the line
