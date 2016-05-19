@@ -715,10 +715,15 @@ Markup not referring to a specific layer
 		
 5. `<note>`
 	- It has a @type attribute that can have the following values:
-	    - "script" (notes on palaeographical aspects or on illegible or hardly readable passages);
-	    - "source" (on the text sources),
-	    - "content" (on the text content);
-	    - "tech" (on technological issues of this digital edition).
+		- "tech" (on technological issues of this digital edition).
+		- "script" (notes on palaeographical aspects or on illegible or hardly readable passages);
+		- "graphic" (a more specific type than "script", used to informally add information about
+			elements belonging not to the graphematic, but to the graphic layer, which is
+			not systematically included in this edition; e.g.: a macron over a grapheme marking
+			its long quantity),
+		- "source" (on the text sources),
+		- "content" (on the text content);
+		- "emendation" (a note proposing an emendation of the text clearly readable in the manuscript);
 
 
 
