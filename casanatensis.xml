@@ -36,6 +36,7 @@
     <change type="agenda">Fix the JS cross-browser compatibility issues.</change>
     <change type="agenda">I might turn the informal quotations (such as K.2.110.22-25) in the 'note' element into formal URNs.</change>
     <change type="agenda">Specifica i type di 'note' con i due nuovi tipi 'emendation' e 'graphic'. Ricomincia dalla parola w28905 andando a ritroso.</change>
+    <change type="agenda">Per le attuali 'note' @type="emendation", usa 'corr' (oppure 'supplied') con solo il livello linguistico ('w' vuoto con attributi), secondo quanto dice file:///usr/share/doc/tei-p5-doc/en/html/ref-add.html nel paragrafetto 'Note'. Potrei usare la coppia sic/corr come in http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COEDCOR per gli errori evidenti. In http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCC si parla di emendazioni più congetturali, e c'è un paragrafo interessante (find 'In addition, the conscientious encoder will provide documentation explaining the circumstances') in cui dice che potrei inserire in un elemento <tag>correction</tag> dentro la <tag>encodingDesc</tag> dettagli sui valori dell'elemento @type di <tag>corr</tag>.</change>
 </revisionDesc>
   </teiHeader>
 
@@ -38347,8 +38348,7 @@ nutiua</w>
 <w n="as" type="alphabemes" xml:id="w36000">as</w>
 <w n="fiunt" xml:id="w36003">fi
 <lb n="9v.b.5" />
-<w n="unt" xml:id="w36006">unt</w>
-	<pc n="space"> </pc>
+	unt
 <note type="script">The graphemes 'fi' are not perfectly readable in the digital reproduction of the manuscript.</note>
 </w>
 	<pc n="space"> </pc>
@@ -38549,7 +38549,6 @@ tionis</w>
 <pc n="quote">·</pc>
 <w n="er" type="alphabemes" xml:id="w36204">er</w>
 <pc n="quote">·</pc>
-
 
 <note>Source K.2.128.13, quindi probabilmente ricomincia da 12 // MS 9v.b.11 (ricomincia con 'haec non datiuo sed nominatiuo...")</note>
 <note>Specifica i type di 'note' con i due nuovi tipi 'emendation' e 'graphic'. Ricomincia dalla parola w28905 andando a ritroso.</note>
