@@ -652,9 +652,11 @@ Markup not referring to a specific layer
 	- In this edition, `<unclear>` always has one child only, and that child can be <w> or <pc>.
 	- Attributes used for element `<unclear>` in this edition:
 		- @reason
-    			- Possible values: "faded" (faded ink), "
-				stain" (of ink or another material), "script" 
-				(I find the script hard to understand in this point)
+    			- Possible values:
+    				- "faded" (faded ink),
+    				- "stain" (ink or another material),
+    				- "script" (I find the script hard to understand in this point)
+    				- "cropped" (the digital reproduction of the manuscript page cropped out this portion of the manuscript)
 		- @cert
 			- "The cert attribute on the `<unclear>` element may be used to 
 				indicate the level of editorial confidence in the reading contained within it."
