@@ -730,8 +730,8 @@ siua</w>
 <unclear cert="medium" reason="script">
 <w n="lege" xml:id="w552">lege<note type="script">It seems that something similar to 'ut lege' was written in the same line, then was erased and a new 'ut lege' was written in its place. Also, there is a faded sign over the initial 'u'. This sign looks like a French circumflex accent and already occurred earlier in the same line (above the previous 'ut').</note>
 </w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <pc n="quote">·</pc>
 	<pc n="space"> </pc>
 <w n="responsiua" xml:id="w555">responsiua</w>
@@ -35882,7 +35882,7 @@ do</w>
 	<pc n="space"> </pc>
 <pc n="0">:</pc>
 <note type="script">This ':' grapheme has the function of a metamark inline, marking the point of the text in which the interlinear addition should be inserted.</note>
-<add type="above">
+<add place="above">
 <pc n="0">ł</pc>
 <note type="script">This 'ł' (semicolon-like) grapheme is in interlinear position, with the function of a metamkark marking the beginning of the added text.</note>
 <w n="formido" xml:id="w33573">formido</w>
