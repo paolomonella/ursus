@@ -186,3 +186,7 @@ span.unclear.certmedium td.GLCell {
 span.unclear.certlow td.GLCell {
 	background-color: #909090;
 }
+
+span.add.placeabove td.GLCell {
+	background-color: red;
+}
