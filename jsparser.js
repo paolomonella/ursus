@@ -292,7 +292,7 @@ function toggle_visibility(id) {
 }
 
 function classyElem(elementName, classForElement, textToWrap) {
-	// This wraps some text in an element a specific HTML @class attribute
+	// This wraps some text in an element with a specific HTML @class attribute
 	// and returns one value, being a HTML element.
 	// For example, if elementName='span' and classForElement='lb', it returns:
 	// 	<span class="lb">textToWrap</span>
@@ -461,39 +461,9 @@ function computeWordLikeElements(refElement) {
 			}
 		}
 
-		else if (e.tagName == 'pc' && e.attributes.getNamedItem('n').nodeValue == 'space') {
-			// <pc n="space"> (spaces) outside of <w>
-			// Graphical spaces occurring outside a <w> element
-			var myCells = makeTable(document.getElementById('MSText'), 'spaceTable');
-			myCells[0].appendChild(classySpanWithLayers(space, 'space')[0]);
-			myCells[1].appendChild(classySpanWithLayers(space, 'space')[1]);
-			myCells[2].appendChild(classySpanWithLayers(space, 'space')[2]);
-		}
-
-		else if (e.tagName == 'pc' && e.attributes.getNamedItem('n').nodeValue != 'space') {
-			// <pc> including punctuation
-			
-			// Corresponding modern punctuation (for the LL)
-			var modernPunctString = e.attributes.getNamedItem('n').nodeValue;
-			modernPunctString = modernPunctString.replace('quote', '"').replace('question', '?');
-			modernPunctString = modernPunctString.replace('0', '');
-
-			// Manuscript punctuation (for AL and GL)
-			if (e.childNodes[0]) {
-				var GLPunctString = graph(e.childNodes[0].nodeValue);
-				var GLPunctClass = 'punct';
-			}
-			// If <pc> is a void element (i.e. there is no punctuation in the manuscript here:
-			else {
-				var GLPunctString = space;
-				var GLPunctClass = 'space';
-			}
-
-			// Append to table cells
-			var myCells = makeTable(document.getElementById('MSText'), 'punctTable');
-			myCells[0].appendChild(classySpanWithLayers(modernPunctString, 'punct')[0]);
-			myCells[1].appendChild(classySpanWithLayers(GLPunctString, GLPunctClass)[1]);
-			myCells[2].appendChild(classySpanWithLayers(GLPunctString, GLPunctClass)[2]);
+		else if (e.tagName == 'pc') {
+			// <pc n="space"> (spaces) or punctuation signs outside of <w>
+			punctify(e)
 		}
 
 		else if (e.tagName == 'gap') {
@@ -505,40 +475,45 @@ function computeWordLikeElements(refElement) {
 			myCells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
 
 		}
-		
-		else if (e.tagName == 'unclear') {
-			// <unclear> outside of <w>
-			// <unclear> always has one child only, and that child can be <w> or <pc>
-			unclearSpan = document.createElement('span');		// Create the <span> element
 
-			// If XML/TEI has <unclear cert="medium">, the HTML DOM will have
-			// <span class="unclear certmedium">
-			var cert = e.attributes.getNamedItem('cert').nodeValue;
-			unclearSpan.setAttribute('class', 'unclear cert'+cert);	// Set attribute
+		else if (e.tagName == 'unclear' || e.tagName == 'add') {
+			// <add> or  <unclear> outside of <w>
+			// <add> and <unclear> can have the following children: <w> or <pc>
+			auSpan = document.createElement('span');		// Create the <span> element
 
-			for (var zy = 0; zy < e.childNodes.length; zy++) {
+			// If XML/TEI has <add place="above">, the HTML DOM will have
+			// <span class="add placeabove">.
+			if (e.tagName == 'add') {
+				var auClass = 'add place'+e.attributes.getNamedItem('place').nodeValue;
+				// The resulting content of auSpan will be "placeabove"
+				// If XML/TEI has <add place="above">, the HTML DOM will have
+				// <span class="add placeabove">
+			}
+			if (e.tagName == 'unclear') {
+				var auClass = 'unclear cert'+e.attributes.getNamedItem('cert').nodeValue;
+				// The resulting content of auSpan will be "certlow", "certmedium" or "certhigh"
+				// If XML/TEI has <unclear cert="medium">, the HTML DOM will have
+				// <span class="unclear certmedium">
+			}
+			auSpan.setAttribute('class', auClass);	// Set attribute
+
+			for (var zy = 0; zy < e.childNodes.length; zy++) { // If <add> or <unclear> include <w>
 				if (e.childNodes[zy].tagName == 'w') {
-					// e is <unclear>
-					// e.childNodes[zy]) is the <w> child of <unclear>
+					// e is <add> or <unclear>
+					// e.childNodes[zy]) is a <w> child of <add> or <unclear>
 					// The next line transforms the XML/TEI <w> into
 					// an HTML <table> and appends the table
-					// to the <span class="unclear> HTML element.
-					unclearSpan.appendChild(wordify(e.childNodes[zy]));
+					// to the <span class="add> or <span class="add> HTML element.
+					auSpan.appendChild(wordify(e.childNodes[zy]));
 				}
-				if (e.childNodes[zy].tagName=='pc' &&
-						e.childNodes[zy].attributes.getNamedItem('n')
-						.nodeValue=='space') {
-					// Graphical space occurring inside a XML/TEI <unclear> element
-					// In this case, the <table class="spaceTable"> will be appended
-					// to unclearSpan, that is <span class="unclear">:
-					var myCells = makeTable(unclearSpan, 'spaceTable');
-					myCells[0].appendChild(classySpanWithLayers(space, 'space')[0]);
-					myCells[1].appendChild(classySpanWithLayers(space, 'space')[1]);
-					myCells[2].appendChild(classySpanWithLayers(space, 'space')[2]);
+
+				if (e.childNodes[zy].tagName=='pc') { // If <add> or <unclear> include <w>
+					punctify(e.childNodes[zy])
 				}
-			document.getElementById('MSText').appendChild(unclearSpan);
+
+			document.getElementById('MSText').appendChild(auSpan);
 			}
-		} // End of 'unclear'
+		} // End of 'add'/'unclear'
 
 		else if (e.tagName == 'note') {
 			// <note> outside of <w>
@@ -585,7 +560,7 @@ function computeWordLikeElements(refElement) {
 }	// End of function iterateOverRefs
 
 function wordify(word) {
-	// This function iterates all words in the xml file. It takes a <w> HTML element as parameter
+	// This function takes a <w> HTML element as parameter
 	// and returns an HTML <table> element including three <tr>, each including one <td>. Each <td>
 	// refers to one layer (LL, AL and GL) and includes one ore more <span> elements
 		
@@ -614,7 +589,6 @@ function wordify(word) {
 	for (var x = 0; x < word.childNodes.length; x++) {
 		var n = word.childNodes[x];
 
-		//if (n.tagName == 'hi' && n.attributes.getNamedItem('rend').nodeValue == 'larger') {
 		if (n.tagName == 'hi' && (
 					n.attributes.getNamedItem('rend').nodeValue == 'larger' ||
 					n.attributes.getNamedItem('rend').nodeValue == 'dropcap'
@@ -667,8 +641,8 @@ function wordify(word) {
 			// 	Yes, sometimes there is a (graphical) space within a (linguistic) word.
 			// 	This means that the scribe considers it to be two words, while contemporary
 			// 	conventions consider it one word. Example:
-			// 	Contemporary convention: unicuique
-			// 	Scribe's     convention: uni cuique
+			// 	  Contemporary convention: unicuique
+			// 	  Scribe's     convention: uni cuique
 			cells[1].appendChild(classySpanWithLayers(space, 'space')[1]); // Put it in the AL cell
 			cells[2].appendChild(classySpanWithLayers(space, 'space')[2]); // Put it in the GL cell
 		}
@@ -758,6 +732,62 @@ function wordify(word) {
 }	// End of function 'wordify'
 
 
+function punctify(pchar) {
+	// This function takes a <pc> HTML element as parameter	
+	// and returns an HTML <table> element including three <tr>, each including one <td>. Each <td>
+	// refers to one layer (LL, AL and GL) and includes one ore more <span> elements
+	
+	// Append pc table
+	var table = document.createElement('table');                 // Create a word <table> node
+	table.setAttribute('class', 'wordTable');				// Set attribute class="word"
+	// Append 3 rows with 1 cell each, indexed as 0, 1 and 2
+	cellClasses = ['LLCell', 'ALCell', 'GLCell'];
+	rows  = [];
+	cells = [];
+	for (var y = 0; y < 3 ; y++) {	// Create 3 rows: 0=LL; 1=AL; 2=GL
+		rows[y] = table.insertRow(y);
+		cells[y] = rows[y].insertCell(0);
+		cells[y].setAttribute('class', cellClasses[y]);		// Set attribute class (LL, AL or GL)
+	}
+		
+	if (pchar.attributes.getNamedItem('n').nodeValue == 'space') {
+		//alert(pchar.attributes.getNamedItem('n').nodeValue);
+		// <pc n="space"> (spaces) outside of <w> 
+		// Graphical spaces occurring outside a <w> element
+		var myCells = makeTable(document.getElementById('MSText'), 'spaceTable');
+		cells[0].appendChild(classySpanWithLayers(space, 'space')[0]);
+		cells[1].appendChild(classySpanWithLayers(space, 'space')[1]);
+		cells[2].appendChild(classySpanWithLayers(space, 'space')[2]);
+	}
+
+	else if (pchar.attributes.getNamedItem('n').nodeValue != 'space') {
+		// <pc> with punctuation inside
+	
+		// Corresponding modern punctuation (for the LL)
+		var modernPunctString = pchar.attributes.getNamedItem('n').nodeValue;
+		modernPunctString = modernPunctString.replace('quote', '"').replace('question', '?');
+		modernPunctString = modernPunctString.replace('0', '');
+
+		// Manuscript punctuation (for AL and GL)
+		if (pchar.childNodes[0]) {
+			var GLPunctString = graph(pchar.childNodes[0].nodeValue);
+			var GLPunctClass = 'punct';
+		}
+		// If <pc> is a void element (i.e. there is no punctuation in the manuscript here:
+		else {
+			var GLPunctString = space;
+			var GLPunctClass = 'space';
+		}
+
+		// Append to table cells
+		var myCells = makeTable(document.getElementById('MSText'), 'punctTable');
+		cells[0].appendChild(classySpanWithLayers(modernPunctString, 'punct')[0]);
+		cells[1].appendChild(classySpanWithLayers(GLPunctString, GLPunctClass)[1]);
+		cells[2].appendChild(classySpanWithLayers(GLPunctString, GLPunctClass)[2]);
+	}
+
+	return table;
+}
 
 
 
