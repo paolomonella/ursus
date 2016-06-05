@@ -149,8 +149,11 @@ span.GL.base.superscription {
 }
 
 span.GL.am.superscription {
-	font-size:xx-small; vertical-align:top;
 	color: red;
+	font-size:xx-small; vertical-align:top;
+	/* The next two lines are for cross-browser compatibility */
+	vertical-align: super;
+	font-size: .75em;
 }
 
 span.GL.after {
@@ -175,6 +178,10 @@ span.AL.notAbbreviated {
 span.GL.notAbbreviated {
 }
 
+span.head td.GLCell {
+	background-color: green;
+}
+
 span.unclear.certhigh td.GLCell {
 	background-color: #E0E0E0;
 }
@@ -187,6 +194,25 @@ span.unclear.certlow td.GLCell {
 	background-color: #909090;
 }
 
-span.add.placeabove td.GLCell {
-	background-color: red;
+span.add.wholeword.placeabove td.GLCell {
+	/* This applies to original <add place="above"> being _parent_ of <w>, at the GL */
+	font-style: italic;
+	font-size:xx-small; vertical-align:top;
+	/* The next two lines are for cross-browser compatibility */
+	vertical-align: super;
+	font-size: .75em;
+}
+
+td.GLCell span.add.wordpart.placeabove {
+	/* This applies to original <add place="above"> within <w> */
+	font-style: italic;
+	font-size:xx-small; vertical-align:top;
+	/* The next two lines are for cross-browser compatibility */
+	vertical-align: super;
+	font-size: .75em;
+}
+
+td.ALCell span.add.wordpart.placeabove {
+	/* This applies to original <add place="above"> within <w> */
+	color: orange;
 }

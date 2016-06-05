@@ -144,12 +144,19 @@
 //
 // G) List: HTML Elements including words
 //
-// <span class="unclear certlow"> normally includes one <table class="wordTable"> table
-// 	or one such table plus one <table class="spaceTable" and marks that
-// 	the word is unclear in the manuscript. @class="certlow" means that the certainty of
-// 	my reading of the word is low.
-// <span class="unclear certmedium">: same as above, but the certainty is medium.
-// <span class="unclear certhigh">:   same as above, but the certainty is high.
+// <span class="unclear wholeword certlow"> normally includes one <table class="wordTable">
+// 	or one such table plus one <table class="spaceTable" (but it could include more than one)
+// 	and marks that the word is unclear in the manuscript. @class="certlow" means that the
+// 	certainty of my reading of the word is low.
+// <span class="unclear wholeword certmedium">: same as above, but the certainty is medium.
+// <span class="unclear wholeword certhigh">:   same as above, but the certainty is high.
+// <span class="add wholeword placeabove">: includes one or more of the following tables:
+// 	<table class="wordTable">, 
+// 	<table class="punctTable">, 
+//	<table class="spaceTable">,
+// 	and marks that those words, spaces and punctuation signs have been added above the line in the manuscript.
+// <span class="add withinword placeabove">: includes characters (part of a word) that have been added
+// 	above the line in the manuscript.
 // <div class="source start containerDiv"> or
 // <div class="source end containerDiv">
 // 	mark the div that includes the "show/hide source note" link and the content of the source note
@@ -476,24 +483,35 @@ function computeWordLikeElements(refElement) {
 
 		}
 
-		else if (e.tagName == 'unclear' || e.tagName == 'add') {
-			// <add> or  <unclear> outside of <w>
-			// <add> and <unclear> can have the following children: <w> or <pc>
-			auSpan = document.createElement('span');		// Create the <span> element
+		else if (e.tagName == 'head' || e.tagName == 'add' || e.tagName == 'unclear') {
+			// All elements that can be parents of <w> or <pc> elements:
+			// <head>, <add> or <unclear> 
+			auSpan = document.createElement('span');	// Create the <span> element (that will be
+									// parent of one or more <table>s.
+									// A <span> should not be parent of <table>,
+									// but I have no choice. If I chose <div>, it would
+									// not appear inline with the other portions of text
+									// in the browser.
 
 			// If XML/TEI has <add place="above">, the HTML DOM will have
-			// <span class="add placeabove">.
+			// <span class="add wholeword placeabove">.
+			if (e.tagName == 'head') {
+				var auClass = 'head';
+				// The resulting content of auSpan will be "placeabove"
+				// If XML/TEI has <add place="above">, the HTML DOM will have
+				// <span class="add placeabove">
+			}
 			if (e.tagName == 'add') {
-				var auClass = 'add place'+e.attributes.getNamedItem('place').nodeValue;
+				var auClass = 'add wholeword place'+e.attributes.getNamedItem('place').nodeValue;
 				// The resulting content of auSpan will be "placeabove"
 				// If XML/TEI has <add place="above">, the HTML DOM will have
 				// <span class="add placeabove">
 			}
 			if (e.tagName == 'unclear') {
-				var auClass = 'unclear cert'+e.attributes.getNamedItem('cert').nodeValue;
+				var auClass = 'unclear wholeword cert'+e.attributes.getNamedItem('cert').nodeValue;
 				// The resulting content of auSpan will be "certlow", "certmedium" or "certhigh"
 				// If XML/TEI has <unclear cert="medium">, the HTML DOM will have
-				// <span class="unclear certmedium">
+				// <span class="unclear wholeword certmedium">
 			}
 			auSpan.setAttribute('class', auClass);	// Set attribute
 
@@ -503,7 +521,7 @@ function computeWordLikeElements(refElement) {
 					// e.childNodes[zy]) is a <w> child of <add> or <unclear>
 					// The next line transforms the XML/TEI <w> into
 					// an HTML <table> and appends the table
-					// to the <span class="add> or <span class="add> HTML element.
+					// to the <span class="add"> or <span class="unclear"> HTML element.
 					auSpan.appendChild(wordify(e.childNodes[zy]));
 				}
 
@@ -612,10 +630,45 @@ function wordify(word) {
 
 		else if (n.tagName == 'gap') {
 			// <gap> within <w>
-			// GL
 			var gapTextString = '[…]';
 			cells[1].appendChild(classySpanWithLayers(gapTextString, 'gap')[1]); //In the AL cell
 			cells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
+		}
+
+		//else if (n.tagName == 'add') {
+		else if (n.tagName == 'unclear' || n.tagName == 'add') {
+			// <add> or <unclear> within <w>
+			auSpanAL = document.createElement('span');		// Create the <span> element
+			auSpanGL = document.createElement('span');		// Create the <span> element
+
+			// If XML/TEI has <add place="above">, the HTML DOM will have
+			// <span class="add placeabove">.
+			if (n.tagName == 'add') {
+				var auClass = 'add wordpart place'+n.attributes.getNamedItem('place').nodeValue;
+				// The resulting content of auSpan will be "placeabove"
+				// If XML/TEI has <add place="above">, the HTML DOM will have
+				// <span class="add wordpart placeabove">
+			}
+			if (n.tagName == 'unclear') {
+				var auClass = 'unclear wordpart cert'+n.attributes.getNamedItem('cert').nodeValue;
+				// The resulting content of auSpan will be "certlow", "certmedium" or "certhigh"
+				// If XML/TEI has <unclear cert="medium">, the HTML DOM will have
+				// <span class="unclear wordpart certmedium">
+			}
+
+			auSpanAL.setAttribute('class', 'AL '+auClass);	// Set attribute
+			auSpanGL.setAttribute('class', 'GL '+auClass);	// Set attribute
+
+			var auTextAL = document.createTextNode(n.textContent); // Text node
+			var auTextGL = document.createTextNode(n.textContent); // Text node
+
+			auSpanAL.appendChild(auTextAL);
+			auSpanGL.appendChild(auTextGL);
+
+			cells[1].appendChild(auSpanAL); //In the AL cell	§
+			cells[2].appendChild(auSpanGL); //In the GL cell	§
+			//cells[1].appendChild(classySpanWithLayers(gapTextString, 'gap')[1]); //In the AL cell
+			//cells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
 		}
 
 		else if (n.tagName == 'note') {
@@ -646,6 +699,7 @@ function wordify(word) {
 			cells[1].appendChild(classySpanWithLayers(space, 'space')[1]); // Put it in the AL cell
 			cells[2].appendChild(classySpanWithLayers(space, 'space')[2]); // Put it in the GL cell
 		}
+
 		else if (n.tagName == 'choice') {	
 			// Abbreviations
 			var abbr = n.getElementsByTagName('abbr')[0];
