@@ -182,7 +182,10 @@
 // 	3) for the text belonging to the GL, refer to the list above.
 
 
-// GENERAL VARIABLES
+/*##############################
+# GENERAL VARIABLES
+##############################*/
+
 // I'm using an underscore as value for a space until I'll find a way to effectively insert a &nbsp; through JS
 var space = '_';
 var noteLikeCounter = 0;
@@ -203,7 +206,186 @@ var URNArray = [
 	['stoa0258a.stoa001:', 'Sergius, "Explanationem in Artem Donati", '],
 ];
 
+/*##############################
+# TAGSET INTERPRETATION TABLE #
+##############################*/
+
+// This 'explanation' of the PoS tags is based on
+// /home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
+
+var tagsetlist = [
+			[
+				//'1 Flexional-Type',
+				'Flexional-Type',
+				[
+					[ ['1'], ['Nominal'] ],
+					[ ['2'], ['Participial'] ],
+					[ ['3'], ['Verbal'] ],
+					[ ['4'], ['Invariable'] ],
+					[ ['5'], ['Pseudo-lemma'] ]
+				]
+			],
+			[
+				//'2 Nominals-Degree',
+				'Nominals-Degree',
+        			[
+					[ ['1'], ['Positive'] ],
+					[ ['2'], ['Comparative'] ],
+					[ ['3'], ['Superlative'] ],
+					[ ['4'], ['Not stable composition'] ],
+					[ ['-'], ['None'] ]
+				]
+			],
+        		[
+				//'3 Flexional-Category',
+				'Flexional-Category',
+				[
+					[ ['A'], ['I decl'] ],
+					[ ['B'], ['II decl'] ],
+					[ ['C'], ['III decl'] ],
+					[ ['D'], ['IV decl'] ],
+					[ ['E'], ['V decl'] ],
+					[ ['F'], ['Regularly irregular decl'] ],
+					[ ['G'], ['Uninflected nominal'] ],
+					[ ['J'], ['I conjug'] ],
+					[ ['K'], ['II conjug'] ],
+					[ ['L'], ['III conjug'] ],
+					[ ['M'], ['IV conjug'] ],
+					[ ['N'], ['Regularly irregular conjug'] ],
+					[ ['O'], ['Invariable'] ],
+					[ ['S'], ['Prepositional (always or not) particle'] ],
+					[ ['-'], ['None'] ]
+				]
+            		],
+        		[
+				//'4 Mood',
+				'Mood',
+				[
+					[ ['A'], ['Active indicative'] ],
+					[ ['J'], ['Pass/Dep indicative'] ],
+					[ ['B'], ['Active subjunctive'] ],
+					[ ['K'], ['Pass/Dep subjunctive'] ],
+					[ ['C'], ['Active imperative'] ],
+					[ ['L'], ['Pass/Dep imperative'] ],
+					[ ['D'], ['Active participle'] ],
+					[ ['M'], ['Pass/Dep Participle'] ],
+					[ ['E'], ['Active gerund'] ],
+					[ ['N'], ['Passive Gerund'] ],
+					[ ['O'], ['Pass/Dep gerundive'] ],
+					[ ['G'], ['Active supine'] ],
+					[ ['P'], ['Pass/Dep supine'] ],
+					[ ['H'], ['Active infinitive'] ],
+					[ ['Q'], ['Pass/Dep infinitive'] ],
+					[ ['-'], ['None'] ]
+				]
+            		],
+        		[
+				//'5 Tense',
+				'Tense',
+				[
+					[ ['1'], ['Present'] ],
+					[ ['2'], ['Imperfect'] ],
+					[ ['3'], ['Future'] ],
+					[ ['4'], ['Perfect'] ],
+					[ ['5'], ['Plusperfect'] ],
+					[ ['6'], ['Future perfect'] ],
+					[ ['-'], ['None'] ]
+				]
+			],
+			[
+				//'6 Participials-Degree',
+				'Participials-Degree',
+				[
+					[ ['1'], ['Positive'] ],
+					[ ['2'], ['Comparative'] ],
+					[ ['3'], ['Superlative'] ],
+					[ ['-'], ['None'] ]
+				]
+			],
+			[
+				//'7 Case/Number',
+				'Case/Number',
+				[
+					[ ['A'], ['Singular Nominative'] ],
+					[ ['J'], ['Plural Nominative'] ],
+					[ ['B'], ['Singular Genitive'] ],
+					[ ['K'], ['Plural Genitive'] ],
+					[ ['C'], ['Singular Dative'] ],
+					[ ['L'], ['Plural Dative'] ],
+					[ ['D'], ['Singular Accusative'] ],
+					[ ['M'], ['Plural Accusative'] ],
+					[ ['E'], ['Singular Vocative'] ],
+					[ ['N'], ['Plural Vocative'] ],
+					[ ['F'], ['Singular Ablative'] ],
+					[ ['O'], ['Plural Ablative'] ],
+					[ ['G'], ['Adverbial'] ],
+					[ ['H'], ['Casus "plurimus"'] ],
+					[ ['-'], ['None'] ]
+				]
+            		],
+			[
+				//'8 Gender/Number/Person',
+				'Gender/Number/Person',
+				[
+					[ ['1'], ['Masculine'] ],
+					[ ['2'], ['Feminine'] ],
+					[ ['3'], ['Neuter'] ],
+					[ ['4'], ['I singular'] ],
+					[ ['5'], ['II singular'] ],
+					[ ['6'], ['III singular'] ],
+					[ ['7'], ['I plural'] ],
+					[ ['8'], ['II plural'] ],
+					[ ['9'], ['III plural'] ],
+					[ ['-'], ['None'] ]
+				]
+			],
+			[
+				//'9 Composition',
+				'Composition',
+				[
+					[ ['A'], ['Enclytic -ce'] ],
+					[ ['C'], ['Enclytic -cum'] ],
+					[ ['M'], ['Enclytic -met'] ],
+					[ ['N'], ['Enclytic -ne'] ],
+					[ ['Q'], ['Enclytic -que'] ],
+					[ ['T'], ['Enclytic -tenus'] ],
+					[ ['V'], ['Enclytic -ve'] ],
+					[ ['H'], ['Ending homographic with enclytic'] ],
+					[ ['Z'], ['Composed with other form'] ],
+					[ ['W'], ['As lemma'] ],
+					[ ['-'], ['None'] ]
+            			]
+			],
+			[
+				//'10 Formal-Variation',
+				'Formal-Variation',
+				[
+					[ ['A'], ['I variation of wordform'] ],
+					[ ['B'], ['II variation of wordform'] ],
+					[ ['C'], ['III variation of wordform'] ],
+					[ ['X'], ['Author mistake, or bad reading?'] ],
+					[ ['-'], ['None'] ]
+				]
+			],
+			[
+				//'11 Graphical-Variation',
+				'Graphical-Variation',
+				[
+					[ ['1'], ['Baseform'] ],
+					[ ['2'], ['Graphical variation A'] ],
+					[ ['3'], ['Graphical variation B'] ],
+					[ ['4'], ['Graphical variation C'] ],
+					[ ['5'], ['Graphical variation D'] ],
+					[ ['6'], ['Graphical variation E'] ],
+					[ ['-'], ['None'] ]
+				]
+            		]
+        ];
+
+
+/*##############################
 // MY OWN FUNCTIONS
+##############################*/
 
 
 function translateAnaString(inputAnaString) {
@@ -484,24 +666,11 @@ function computeWordLikeElements(refElement) {
 
 		}
 
-		else if (e.tagName == 'head' || e.tagName == 'add' || e.tagName == 'unclear') {
-			// All elements that can be parents of <w> or <pc> elements:
-			// <head>, <add> or <unclear> 
-			auSpan = document.createElement('span');	// Create the <span> element (that will be
-									// parent of one or more <table>s.
-									// A <span> should not be parent of <table>,
-									// but I have no choice. If I chose <div>, it would
-									// not appear inline with the other portions of text
-									// in the browser.
-
+		else if (e.tagName == 'add' || e.tagName == 'unclear') {
+			// All elements that can be parents of <w> or <pc> elements (i.e. <add> or <unclear>)
+			
 			// If XML/TEI has <add place="above">, the HTML DOM will have
 			// <span class="add wholeword placeabove">.
-			if (e.tagName == 'head') {
-				var auClass = 'head';
-				// The resulting content of auSpan will be "placeabove"
-				// If XML/TEI has <add place="above">, the HTML DOM will have
-				// <span class="add placeabove">
-			}
 			if (e.tagName == 'add') {
 				var auClass = 'add wholeword place'+e.attributes.getNamedItem('place').nodeValue;
 				// The resulting content of auSpan will be "placeabove"
@@ -514,24 +683,32 @@ function computeWordLikeElements(refElement) {
 				// If XML/TEI has <unclear cert="medium">, the HTML DOM will have
 				// <span class="unclear wholeword certmedium">
 			}
-			auSpan.setAttribute('class', auClass);	// Set attribute
 
 			for (var zy = 0; zy < e.childNodes.length; zy++) { // If <add> or <unclear> include <w>
 				if (e.childNodes[zy].tagName == 'w') {
 					// e is <add> or <unclear>
 					// e.childNodes[zy]) is a <w> child of <add> or <unclear>
-					// The next line transforms the XML/TEI <w> into
+					// The next lines transform the XML/TEI <w> into
 					// an HTML <table> and appends the table
 					// to the <span class="add"> or <span class="unclear"> HTML element.
+					auSpan = document.createElement('span'); //Create the <span> element that
+						//will be parent of a <table>. A <span> should not be parent of
+						// <table> in HTML, but I have no choice. If I chose <div>, it
+						// would not appear inline with the other portions of text in the browser.
+					auSpan.setAttribute('class', auClass);
 					auSpan.appendChild(wordify(e.childNodes[zy]));
+					document.getElementById('MSText').appendChild(auSpan);
+					//alert('"'+e.childNodes[zy].textContent+'"')
 				}
 
 				if (e.childNodes[zy].tagName=='pc') { // If <add> or <unclear> include <pc>
+					auSpan = document.createElement('span');
+					auSpan.setAttribute('class', auClass);
 					auSpan.appendChild(punctify(e.childNodes[zy]));
-					//punctify(e.childNodes[zy])
+					document.getElementById('MSText').appendChild(auSpan);
 				}
 
-			document.getElementById('MSText').appendChild(auSpan);
+			//document.getElementById('MSText').appendChild(auSpan);
 			}
 		} // End of 'add'/'unclear'
 
@@ -668,8 +845,6 @@ function wordify(word) {
 
 			cells[1].appendChild(auSpanAL); //In the AL cell
 			cells[2].appendChild(auSpanGL); //In the GL cell
-			//cells[1].appendChild(classySpanWithLayers(gapTextString, 'gap')[1]); //In the AL cell
-			//cells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
 		}
 
 		else if (n.tagName == 'note') {
@@ -806,7 +981,6 @@ function punctify(pchar) {
 	}
 		
 	if (pchar.attributes.getNamedItem('n').nodeValue == 'space') {
-		//alert(pchar.attributes.getNamedItem('n').nodeValue);
 		// <pc n="space"> (spaces) outside of <w> 
 		// Graphical spaces occurring outside a <w> element
 		var myCells = makeTable(document.getElementById('MSText'), 'spaceTable');
@@ -847,13 +1021,40 @@ function punctify(pchar) {
 
 
 
+function tagsetify(myAna, myLemma, myN) {
+	var expandedAna = '';
+	for (var i = 0; i < tagsetlist.length; i++) {
+		tagCode  = myAna[i];	// The code actually present in the @ana value. E.g.: in @ana="11B---F3--1" it might be "B"
+		category = tagsetlist[i][0] // E.g.: "11 Graphical-Variation"
+		for (var k = 0; k < tagsetlist[i][1].length; k++) {
+			if ( tagsetlist[i][1][k][0] == tagCode) {
+				if ( tagsetlist[i][1][k][0] != "-") {
+					expandedAna += tagsetlist[i][1][k][1] + ", "
+				}
+			}
+		}
+	}
+	alert('"' + myN + '": ' + '[' + myLemma + '] ' + expandedAna);
 
+}
+
+// <w ana="12C---O3---" lemma="doctoribus" n="doctoribus" xml:id="w18">doctoribus</w>
+tagsetify('12C---O3---', 'doctoribus', 'doctoribus');
+// <w ana="2-LM41A2---" lemma="compono" n="composita" xml:id="w27">composita</w>
+tagsetify("2-LM41A2---", "compono", "composita");
+
+
+
+
+/*############################
 // FUNCTIONS PARSING XML
+############################*/
 
 var xmlDoc;
 function loadxml() {
   xmlDoc = document.implementation.createDocument('','',null);
   xmlDoc.load('casanatensis.xml');
+  //xmlDoc.load('lemmatized_casanatensis.xml');
   xmlDoc.onload = readXML;
 }
 
@@ -869,17 +1070,18 @@ function readXML() {
 
 	// Manage the (one) initial <head> in the file
 	var MSHead = xmlDoc.getElementsByTagName('head')[0];
-	var headSpan = document.createElement('span');
-	headSpan.setAttribute('class', 'head');
 	for (var zy = 0; zy < MSHead.childNodes.length; zy++) { // If <head> includes <w>
 		if (MSHead.childNodes[zy].tagName == 'w') {
+			var headSpan = document.createElement('span');
+			headSpan.setAttribute('class', 'head');
 			headSpan.appendChild(wordify(MSHead.childNodes[zy]));
-			alert(MSHead.childNodes[zy].tagname)
+			document.getElementById('MSText').appendChild(headSpan);
+			//alert('"'+MSHead.childNodes[zy].textContent+'"')
 		}
-
 		if (MSHead.childNodes[zy].tagName=='pc') { // If <head> includes <pc>
-			headSpan.appendChild(punctify(MSHead.childNodes[zy]));
-			alert(MSHead.childNodes[zy].tagname)
+			//headSpan.appendChild(punctify(MSHead.childNodes[zy]));
+			document.getElementById('MSText').appendChild(punctify(MSHead.childNodes[zy]));
+			//alert('"'+MSHead.childNodes[zy].textContent+'"')
 		}
 	}
 	document.getElementById('MSText').appendChild(headSpan);
@@ -905,150 +1107,3 @@ function readXML() {
 	
 }	// End of function readXML()
 
-
-
-/*##############################
-# TAGSET INTERPRETATION TABLE #
-#############################*/
-
-// This 'explanation' of the PoS tags is based on
-// /home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
-
-var tagsetlist = [
-        //1 Flexional-Type
-        [
-            [ ['1'], ['Nominal'] ],
-            [ ['2'], ['Participial'] ],
-            [ ['3'], ['Verbal'] ],
-            [ ['4'], ['Invariable'] ],
-            [ ['5'], ['Pseudo-lemma'] ]
-            ],
-        //2 Nominals-Degree
-        [
-            [ ['1'], ['Positive'] ],
-            [ ['2'], ['Comparative'] ],
-            [ ['3'], ['Superlative'] ],
-            [ ['4'], ['Not stable composition'] ],
-            [ ['-'], ['None'] ]
-            ],
-        //3 Flexional-Category
-        [
-            [ ['A'], ['I decl'] ],
-            [ ['B'], ['II decl'] ],
-            [ ['C'], ['III decl'] ],
-            [ ['D'], ['IV decl'] ],
-            [ ['E'], ['V decl'] ],
-            [ ['F'], ['Regularly irregular decl'] ],
-            [ ['G'], ['Uninflected nominal'] ],
-            [ ['J'], ['I conjug'] ],
-            [ ['K'], ['II conjug'] ],
-            [ ['L'], ['III conjug'] ],
-            [ ['M'], ['IV conjug'] ],
-            [ ['N'], ['Regularly irregular conjug'] ],
-            [ ['O'], ['Invariable'] ],
-            [ ['S'], ['Prepositional (always or not) particle'] ],
-            [ ['-'], ['None'] ]
-            ],
-        //4 Mood
-        [
-            [ ['A'], ['Active indicative'] ],
-            [ ['J'], ['Pass/Dep indicative'] ],
-            [ ['B'], ['Active subjunctive'] ],
-            [ ['K'], ['Pass/Dep subjunctive'] ],
-            [ ['C'], ['Active imperative'] ],
-            [ ['L'], ['Pass/Dep imperative'] ],
-            [ ['D'], ['Active participle'] ],
-            [ ['M'], ['Pass/Dep Participle'] ],
-            [ ['E'], ['Active gerund'] ],
-            [ ['N'], ['Passive Gerund'] ],
-            [ ['O'], ['Pass/Dep gerundive'] ],
-            [ ['G'], ['Active supine'] ],
-            [ ['P'], ['Pass/Dep supine'] ],
-            [ ['H'], ['Active infinitive'] ],
-            [ ['Q'], ['Pass/Dep infinitive'] ],
-            [ ['-'], ['None'] ]
-            ],
-        //5 Tense
-        [
-            [ ['1'], ['Present'] ],
-            [ ['2'], ['Imperfect'] ],
-            [ ['3'], ['Future'] ],
-            [ ['4'], ['Perfect'] ],
-            [ ['5'], ['Plusperfect'] ],
-            [ ['6'], ['Future perfect'] ],
-            [ ['-'], ['None'] ]
-            ],
-        //6 Participials-Degree
-        [
-            [ ['1'], ['Positive'] ],
-            [ ['2'], ['Comparative'] ],
-            [ ['3'], ['Superlative'] ],
-            [ ['-'], ['None'] ]
-            ],
-        //7 Case/Number
-        [
-            [ ['A'], ['Singular Nominative'] ],
-            [ ['J'], ['Plural Nominative'] ],
-            [ ['B'], ['Singular Genitive'] ],
-            [ ['K'], ['Plural Genitive'] ],
-            [ ['C'], ['Singular Dative'] ],
-            [ ['L'], ['Plural Dative'] ],
-            [ ['D'], ['Singular Accusative'] ],
-            [ ['M'], ['Plural Accusative'] ],
-            [ ['E'], ['Singular Vocative'] ],
-            [ ['N'], ['Plural Vocative'] ],
-            [ ['F'], ['Singular Ablative'] ],
-            [ ['O'], ['Plural Ablative'] ],
-            [ ['G'], ['Adverbial'] ],
-            [ ['H'], ['Casus "plurimus"'] ],
-            [ ['-'], ['None'] ]
-            ],
-        //8 Gender/Number/Person
-        [
-            [ ['1'], ['Masculine'] ],
-            [ ['2'], ['Feminine'] ],
-            [ ['3'], ['Neuter'] ],
-            [ ['4'], ['I singular'] ],
-            [ ['5'], ['II singular'] ],
-            [ ['6'], ['III singular'] ],
-            [ ['7'], ['I plural'] ],
-            [ ['8'], ['II plural'] ],
-            [ ['9'], ['III plural'] ],
-            [ ['-'], ['None'] ]
-            ],
-        //9 Composition
-        [
-            [ ['A'], ['Enclytic -ce'] ],
-            [ ['C'], ['Enclytic -cum'] ],
-            [ ['M'], ['Enclytic -met'] ],
-            [ ['N'], ['Enclytic -ne'] ],
-            [ ['Q'], ['Enclytic -que'] ],
-            [ ['T'], ['Enclytic -tenus'] ],
-            [ ['V'], ['Enclytic -ve'] ],
-            [ ['H'], ['Ending homographic with enclytic'] ],
-            [ ['Z'], ['Composed with other form'] ],
-            [ ['W'], ['As lemma'] ],
-            [ ['-'], ['None'] ]
-            ],
-        //10 Formal-Variation
-        [
-            [ ['A'], ['I variation of wordform'] ],
-            [ ['B'], ['II variation of wordform'] ],
-            [ ['C'], ['III variation of wordform'] ],
-            [ ['X'], ['Author mistake, or bad reading?'] ],
-            [ ['-'], ['None'] ]
-            ],
-	//11 Graphical-Variation
-        [
-            [ ['1'], ['Baseform'] ],
-            [ ['2'], ['Graphical variation A'] ],
-            [ ['3'], ['Graphical variation B'] ],
-            [ ['4'], ['Graphical variation C'] ],
-            [ ['5'], ['Graphical variation D'] ],
-            [ ['6'], ['Graphical variation E'] ],
-            [ ['-'], ['None'] ]
-            ]
-        ]
-for (var i = 0; i < tagsetlist.length; i++) {
-	//alert tagsetlist(i); //§
-}
