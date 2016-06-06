@@ -19,7 +19,7 @@
 <change type="agenda">Nella documentazione in [sgn4] metti parole vuote con 0 o no?</change>
 <change type="agenda">I might transcribe also marginal glossae in black ink</change>
 <change type="agenda">È rispettata o no la regola sulle due forme di 'ti': una con legatura per IPA /tsj/?</change>
-<change type="agenda">Find sources for ab006 based on the comments on Donatus (find ab006 and 'note' there)</change>
+<change type="agenda">Find sources for ab06 based on the comments on Donatus (find ab06 and 'note' there)</change>
 <change type="agenda">Togli la punteggiatura 'solo contemporanea' (senza corrispondenza nel MS)?</change>
 <change type="agenda">Periodicamente: vd. se ci sono 'v', o 'ae', o grafemi non dichiarati in GToS, in grafematica</change>
 <change type="agenda">Periodicamente: vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre il signif. che suggerisco nella GToS</change>
@@ -44,16 +44,14 @@
 <text>
 <body>
 
-<ab n="Title of the work" xml:id="ab001">
-<!--ref cRef="unknown" type="source"-->
+<head n="Title of the work" xml:id="ab01">
 
 <pb facs="manuscript_images/C_01r.JPG" n="1r" />
 
 <cb n="1r.a" />
 
 <lb n="1r.a.1" />
-<head>
-<note type="script">This title (marked as 'head') is in uncial. Another GToS for the uncial script would be necessary.</note>
+<note type="script">This title (marked as 'head') is in uncial. Another GToS for the uncial script might be necessary.</note>
 <w n="adbreuiatio" xml:id="w3">adbreuiatio</w>
 	<pc n="space"> </pc>
 <w n="artis" xml:id="w6">artis</w>
@@ -75,12 +73,10 @@
 <w n="composita" xml:id="w27">composita</w>
 	<pc n="space"> </pc>
 </head>
-<!--/ref-->
-</ab>
 
 
 
-<ab n="De dictione: definition of dictio" xml:id="ab002">
+<ab n="De dictione: definition of dictio" xml:id="ab02">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.53.8-2.53.12" type="source">
 <lb n="1r.a.3" />
 <w n="dictio" xml:id="w30"><hi rend="dropcap">d</hi>ictio</w>
@@ -168,7 +164,7 @@ tinet</w>
 </ab>
 
 
-<ab n="De dictione: definition of syllaba" xml:id="ab003">
+<ab n="De dictione: definition of syllaba" xml:id="ab03">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.53.13-2.53.26" type="source">
 <w n="differt" xml:id="w99">differt</w>
 <lb n="1r.a.6" />
@@ -571,7 +567,7 @@ gi</w>
 </ref>
 </ab>
 
-<ab n="De oratione: definition of oratio" xml:id="ab004">
+<ab n="De oratione: definition of oratio" xml:id="ab04">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.53.27-2.54.4" type="source">
 <w n="examussim" xml:id="w447">examuss
 	<choice>
@@ -796,7 +792,7 @@ d</w>
 </ab>
 
 
-<ab n="De oratione: definition of ars" xml:id="ab005">
+<ab n="De oratione: definition of ars" xml:id="ab05">
 <ref cRef="unknown" type="source">
 <w n="ars" xml:id="w585"><hi rend="larger">a</hi>rs</w>
 <lb n="1r.a.24" />
@@ -1050,9 +1046,9 @@ prius</w>
 </ab>
 
 
-<ab n="De oratione: introduction to the parts of speech" xml:id="ab006">
+<ab n="De oratione: introduction to the parts of speech" xml:id="ab06">
 <ref cRef="unknown" type="source">
-<note type="source">For section ab0006 Morelli 1910, 291 mentions the following sources: "Donato K. IV. 372 25 sgg. e commentatori di Donato; Prisc. 54 segg." Donatus and Priscianus are imitated quite loosely in this section. I should inquire better about the commentaries on Donatus though. More specific imitations on Priscianus included in this section are referenced directly. Possible comments on Donatus might include: (A) Seruius, K.4.405-K.4.448. For example K.5.81-K.5.312 and in particular on the parts of speech K.5.134 ff." For section ab0006 Morelli 1910, 291 mentions the following sources: "Donato K. IV. 372 25 sgg. e commentatori di Donato; Prisc. 54 segg." Donatus and Priscianus are imitated quite loosely in this section. I should inquire better about the commentaries on Donatus though. More specific imitations on Priscianus included in this section are referenced directly. Possible comments on Donatus might include: (A) Seruius, K.4.405-K.4.448. For example see K.4.428.8 ff. for the parts of speech and lines 11-13 in particular (on page 428 a new author starts: Seruius/Sergius); (B) Pompeius K.5.81-K.5.312 and in particular on the parts of speech K.5.134 ff.</note>
+<note type="source">For section ab06 Morelli 1910, 291 mentions the following sources: "Donato K. IV. 372 25 sgg. e commentatori di Donato; Prisc. 54 segg." Donatus and Priscianus are imitated quite loosely in this section. I should inquire better about the commentaries on Donatus though. More specific imitations on Priscianus included in this section are referenced directly. Possible comments on Donatus might include: (A) Seruius, K.4.405-K.4.448. For example K.5.81-K.5.312 and in particular on the parts of speech K.5.134 ff." For section ab06 Morelli 1910, 291 mentions the following sources: "Donato K. IV. 372 25 sgg. e commentatori di Donato; Prisc. 54 segg." Donatus and Priscianus are imitated quite loosely in this section. I should inquire better about the commentaries on Donatus though. More specific imitations on Priscianus included in this section are referenced directly. Possible comments on Donatus might include: (A) Seruius, K.4.405-K.4.448. For example see K.4.428.8 ff. for the parts of speech and lines 11-13 in particular (on page 428 a new author starts: Seruius/Sergius); (B) Pompeius K.5.81-K.5.312 and in particular on the parts of speech K.5.134 ff.</note>
 <w n="partes" xml:id="w747"><hi rend="larger">p</hi>artes</w>
 	<pc n="space"> </pc>
 <w n="orationis" xml:id="w750">orationis</w>
@@ -2438,7 +2434,7 @@ tesis</w>
 </ref>
 </ab>
 
-<ab n="De oratione: the parts of speech" xml:id="ab007">
+<ab n="De oratione: the parts of speech" xml:id="ab07">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.55.4-2.56.27" type="source">
 <w n="non" xml:id="w1773"><hi rend="larger">n</hi>on</w>
 	<pc n="space"> </pc>
@@ -3618,7 +3614,7 @@ ponitur</w>
 </ref>
 </ab>
 
-<ab n="De nomine: why the noun is the first part of speech" xml:id="ab008">
+<ab n="De nomine: why the noun is the first part of speech" xml:id="ab08">
 <ref cRef="unknown" type="source">
 <note type="source">This section probably does not have a specific source.</note>
 <w n="ideo" xml:id="w2709"><hi rend="larger">i</hi>deo</w>
@@ -3780,7 +3776,7 @@ genia</w>
 </ref>
 </ab>
 
-<ab n="De nomine: definition of the noun" xml:id="ab009">
+<ab n="De nomine: definition of the noun" xml:id="ab09">
 <ref cRef="unknown" type="source">
 <note type="source">This section probably does not have a direct source.</note>
 
@@ -4313,7 +4309,7 @@ tione</w>
 </ref>
 </ab>
 
-<ab n="De nomine: types of nouns" xml:id="ab010">
+<ab n="De nomine: types of nouns" xml:id="ab10">
 <ref cRef="urn:cts:latinLit:stoa0233c.stoa001:5.137.24-5.137.29" type="source">
 <w n="dicendo" xml:id="w3309"><hi rend="larger">d</hi>icendo</w>
 	<pc n="space"> </pc>
@@ -4763,7 +4759,7 @@ d</w>
 </ref>
 </ab>
 
-<ab n="De nomine: abbreviations for Latin praenomina" xml:id="ab011">
+<ab n="De nomine: abbreviations for Latin praenomina" xml:id="ab11">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.57.3-2.57.3" type="source">
 <w n="nomen" xml:id="w3789"><hi rend="larger">n</hi>omen</w>
 	<pc n="space"> </pc>
@@ -4977,7 +4973,7 @@ legitur</w>
 </ref>
 </ab>
 
-<ab n="De nomine: another definition and etymology of noun" xml:id="ab012">
+<ab n="De nomine: another definition and etymology of noun" xml:id="ab12">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.56.29-2.57.3" type="source">
 <w n="nomen" xml:id="w3990"><hi rend="larger">n</hi>omen</w>
 	<pc n="space"> </pc>
@@ -5084,7 +5080,7 @@ priam</w>
 </ref>
 </ab>
 
-<ab n="De nomine: accidentia nominis" xml:id="ab013">
+<ab n="De nomine: accidentia nominis" xml:id="ab13">
 <ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.373.4-4.373.4" type="source">
 <w n="secundum" xml:id="w4077"><hi rend="larger">s</hi>ecund
 	<choice>
@@ -5320,7 +5316,7 @@ bus</w>
 </ab>
 
 
-<ab n="De nomine: propria nomina" xml:id="ab014">
+<ab n="De nomine: propria nomina" xml:id="ab14">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.58.25-2.59.8" type="source">
 <lb n="2r.a.22" />
 <w n="propria" xml:id="w4257">propria</w>
@@ -5872,7 +5868,7 @@ a</w>
 </ref>
 </ab>
 
-<ab n="De nomine: people names" xml:id="ab015">
+<ab n="De nomine: people names" xml:id="ab15">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.57.12-2.58.13 urn:cts:latinLit:stoa0110.stoa001:4.373.8-4.373.10" type="source">
 
 <cb n="2r.b" />
@@ -7713,7 +7709,7 @@ men</w>
 </ref>
 </ab>
 
-<ab n="De nomine: definition of appellatiua nomina" xml:id="ab016">
+<ab n="De nomine: definition of appellatiua nomina" xml:id="ab16">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.58.14-2.58.24" type="source">
 <w n="appellatiua" xml:id="w6297"><hi rend="dropcap">a</hi>ppellatiua</w>
 	<pc n="space"> </pc>
@@ -7998,7 +7994,7 @@ munia</w>
 </ref>
 </ab>
 
-<ab n="De nomine: types of appellatiua nomina" xml:id="ab017">
+<ab n="De nomine: types of appellatiua nomina" xml:id="ab17">
 
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.59.9-2.61.28" type="source">
 <lb n="2v.a.30" />
@@ -15840,7 +15836,7 @@ chis</w>
 </ref>
 </ab>
 
-<ab n="De nomine: possessiua" xml:id="ab018">
+<ab n="De nomine: possessiua" xml:id="ab18">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.68.14-2.82.20" type="source">
 
 <lb n="4v.a.32" />
@@ -21257,7 +21253,7 @@ nificationis</w>
 </ref>
 </ab>
 
-<ab n="De nomine: comparatiua" xml:id="ab019">
+<ab n="De nomine: comparatiua" xml:id="ab19">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.83.2-2.83.3" type="source">
 
 <pb facs="manuscript_images/C_06r.JPG" n="6r" />
@@ -22876,7 +22872,7 @@ paratiua</w>
 </ref>
 </ab>
 
-<ab n="De nomine: gradus comparationis" xml:id="ab020">
+<ab n="De nomine: gradus comparationis" xml:id="ab20">
 <ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.374.15-4.374.16" type="source">
 <w n="comparationis" xml:id="w21387"><hi rend="larger">c</hi>omparationis</w>
 	<pc n="space"> </pc>
@@ -27584,7 +27580,7 @@ paratiua</w>
 </ref>
 </ab>
 
-<ab n="De nomine: superlatiua" xml:id="ab021">
+<ab n="De nomine: superlatiua" xml:id="ab21">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.94.15-2.98.9" type="source">
 	<pc n="space"> </pc>
 <w n="superlatiuus" xml:id="w25791"><hi rend="dropcap">s</hi>u
@@ -29496,7 +29492,7 @@ latiuus</w>
 </ref>
 </ab>
 
-<ab n="De nomine: diminutiua" xml:id="ab022">
+<ab n="De nomine: diminutiua" xml:id="ab22">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.101.3-2.115.15" type="source">
 <lb n="7v.b.4" />
 <w n="diminutiua" xml:id="w27501"><hi rend="dropcap">d</hi>iminutiua</w>
@@ -33549,7 +33545,7 @@ a</w>
 </ref>
 </ab>
 
-<ab n="De nomine: deriuatiua" xml:id="ab023">
+<ab n="De nomine: deriuatiua" xml:id="ab23">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.117.1-2.117.6" type="source">
 <lb n="8v.a.26" />
 <w n="denominatiua" xml:id="w31266"><hi rend="larger">d</hi>enominatiua</w>
@@ -44273,7 +44269,7 @@ pore</w>
 </ref>
 </ab>
 
-<ab n="De nomine: other types of appellatiua nomina" xml:id="ab024">
+<ab n="De nomine: other types of appellatiua nomina" xml:id="ab24">
 <ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.373.17-urn:cts:latinLit:stoa0110.stoa001:4.373.21" type="source">
 <lb n="11r.a.9" />
 <w n="est" xml:id="w41763"><hi rend="dropcap">e</hi>st</w>

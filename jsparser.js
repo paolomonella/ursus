@@ -526,8 +526,9 @@ function computeWordLikeElements(refElement) {
 					auSpan.appendChild(wordify(e.childNodes[zy]));
 				}
 
-				if (e.childNodes[zy].tagName=='pc') { // If <add> or <unclear> include <w>
-					punctify(e.childNodes[zy])
+				if (e.childNodes[zy].tagName=='pc') { // If <add> or <unclear> include <pc>
+					auSpan.appendChild(punctify(e.childNodes[zy]));
+					//punctify(e.childNodes[zy])
 				}
 
 			document.getElementById('MSText').appendChild(auSpan);
@@ -665,8 +666,8 @@ function wordify(word) {
 			auSpanAL.appendChild(auTextAL);
 			auSpanGL.appendChild(auTextGL);
 
-			cells[1].appendChild(auSpanAL); //In the AL cell	§
-			cells[2].appendChild(auSpanGL); //In the GL cell	§
+			cells[1].appendChild(auSpanAL); //In the AL cell
+			cells[2].appendChild(auSpanGL); //In the GL cell
 			//cells[1].appendChild(classySpanWithLayers(gapTextString, 'gap')[1]); //In the AL cell
 			//cells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
 		}
@@ -866,6 +867,24 @@ function readXML() {
 		};
 	}
 
+	// Manage the (one) initial <head> in the file
+	var MSHead = xmlDoc.getElementsByTagName('head')[0];
+	var headSpan = document.createElement('span');
+	headSpan.setAttribute('class', 'head');
+	for (var zy = 0; zy < MSHead.childNodes.length; zy++) { // If <head> includes <w>
+		if (MSHead.childNodes[zy].tagName == 'w') {
+			headSpan.appendChild(wordify(MSHead.childNodes[zy]));
+			alert(MSHead.childNodes[zy].tagname)
+		}
+
+		if (MSHead.childNodes[zy].tagName=='pc') { // If <head> includes <pc>
+			headSpan.appendChild(punctify(MSHead.childNodes[zy]));
+			alert(MSHead.childNodes[zy].tagname)
+		}
+	}
+	document.getElementById('MSText').appendChild(headSpan);
+			
+
 	// For each <ab>
 	var abList = xmlDoc.getElementsByTagName('ab');
 	for (var ac = 0; ac < abList.length; ac++) {
@@ -878,11 +897,11 @@ function readXML() {
 			//abChildren[acc] is a <ref> element that will be passed as argument to
 			// the function 'computeWordLikeElements'.
 			if (abChildren[acc].tagName == 'ref') {		
-				// All <ab>'s children should be <ref>, but I'm checking anyway
+				// All <ab>'s children except for the first <head> should be <ref>, but I'm checking anyway
 				computeWordLikeElements(abChildren[acc]);
 			}
-		}
-	}	// End of 'for each <ab>'
+		} // End of 'for each child of <ab>
+	} // End of 'for each <ab>'
 	
 }	// End of function readXML()
 

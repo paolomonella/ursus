@@ -4,15 +4,15 @@ Top-level hierarchy of `<text>` in the  XML/TEI file
 1. `<text>` has only one child
     - `<body>`, and no other child elements
 2. `<body>` has a number of
-    - `<head>` or
+    - `<head>` (one only, at the beginning) or
     - `<ab>` children.
-3. `<head>` or `<ab>`
-    - Each `<head>` or `<ab>` has an @xml:id and a @n, e.g.: `<ab xml:id="ab002" n="De dictione: definition of dictio">`
-    - Each `<head>` or `<ab>` has one or more `<ref>` children, and no other child elements.
+3. `<head>` has
+	- there is only one `<head>`, at the beginning of the text, including 'word-level' children (see below)
+4. Each `<ab>`
+	- has one or more  `<ref>` children, and no other child elements
 4. `<ref>`
-    - Some `<ref>`s have a CRS/URN in @cRef, e.g. `<ref type="source" cRef="urn:cts:latinLit:stoa0234a.stoa001:2.53.8-2.53.12">`
-    - Other `<ref>`s have @cRef="unknown":  `<ref type="source" cRef="unknown">`
-
+	- Each `<ref>` includes a number of 'word-level' children, i.e. `<w>`, `<pc>`, `<lb>`, `<cb>` and `<pb>`
+	    - It may also include 'above-the-word-level' children such as `<add>` or `<unclear>`, which, in their turn, include 'word-level' children
 
 Graphemic Value
 ===============
@@ -54,6 +54,8 @@ For the time being, I am encoding them with `<hi>`. Another option could be to a
 
 Graphemic Layer (GL)
 ====================
+
+[The content of this section needs revision]
 
 All textual content of the `<text>` (i.e. everything Unicode character descendant of `<text>` that is not markup), represents a grapheme, i.e. a glyph that has graphemic value as described above -- except for the textual content of those elements that are said to include alphabemes (not graphemes) in the "Alphabetic Layer (AL)" section of this documentation, such as `<expan>`.
 
@@ -378,13 +380,19 @@ I'm still working on the implementation of the 3-values system by using a lemmat
 ## Elements that also belong to the LL:
 
 1. `<ab>`
-	- The use of `<ab>` is still tentative. For the time being, there is no `<div>` in the document, while the `<ab>` elements mark parts of the text that have the same topic and normally refer back to the same ancient source(s) (Priscian and others). Each `<ab>` has an @xml:id.
+	- The use of `<ab>` is still tentative. For the time being, there is no `<div>` in the document, while the `<ab>` elements
+	    mark parts of the text that have the same topic and normally refer back to the same ancient source(s) (Priscian and others).
+	    Each `<ab>` has an @xml:id.
+	- Each `<ab>` has an `@xml:id` and a `@n`. E.g.: `<ab xml:id="ab02" n="De dictione: definition of dictio">`
+		- the `@n` includes a modern title for the section, that I decided
+		- the division of the text in `<ab`> elements is arbitrary: I created it based on the content, though there are sometimes graphical
+			distinctions in the manuscript
 
-2. `<gap>`
-	- See above for its us with illegible words. This element belongs to all three levels (GL, AL and LL).
+2. `<ref>`
+	- It links to the source of a portion of text by means of a @cRef (canonical reference) attribute, whose value is a URN as for the CTS/CITE architecture (see <https://cite-architecture.github.io/>): see section _Linking the text with its sources with the CTS/CITE architecture_ below
+	- Some `<ref>`s have a CRS/URN in @cRef, e.g. `<ref type="source" cRef="urn:cts:latinLit:stoa0234a.stoa001:2.53.8-2.53.12">`
+	- Other `<ref>`s have @cRef="unknown":  `<ref type="source" cRef="unknown">`
 
-3. `<ref>`
-	- It links to the source of a portion of text by means of a @cRef (canonical reference) attribute, whose value is a URN as for the CTS/CITE architecture (see <https://cite-architecture.github.io/>)
 
 ## `<w>` elements for which the lemmatizer/POS tagger will need help (values of @type with `<w>`)
 
