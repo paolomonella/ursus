@@ -156,7 +156,8 @@
 //	<table class="spaceTable">,
 // 	and marks that those words, spaces and punctuation signs have been added above the line in the manuscript.
 // <span class="add withinword placeabove">: includes characters (part of a word) that have been added
-// 	above the line in the manuscript.
+// 	above the line in the manuscript (so this should not belong in letter G of this list).
+// <span class="head">: head of the work.
 // <div class="source start containerDiv"> or
 // <div class="source end containerDiv">
 // 	mark the div that includes the "show/hide source note" link and the content of the source note
@@ -635,7 +636,6 @@ function wordify(word) {
 			cells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
 		}
 
-		//else if (n.tagName == 'add') {
 		else if (n.tagName == 'unclear' || n.tagName == 'add') {
 			// <add> or <unclear> within <w>
 			auSpanAL = document.createElement('span');		// Create the <span> element
@@ -700,7 +700,7 @@ function wordify(word) {
 			cells[2].appendChild(classySpanWithLayers(space, 'space')[2]); // Put it in the GL cell
 		}
 
-		else if (n.tagName == 'choice') {	
+		else if (n.tagName == 'choice') {
 			// Abbreviations
 			var abbr = n.getElementsByTagName('abbr')[0];
 
@@ -1030,4 +1030,6 @@ var tagsetlist = [
             [ ['-'], ['None'] ]
             ]
         ]
-
+for (var i = 0; i < tagsetlist.length; i++) {
+	//alert tagsetlist(i); //§
+}

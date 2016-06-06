@@ -85,9 +85,10 @@ span.GL.dropcap {
 	text-transform: uppercase;
 }
 
-span.GL.larger { 
+span.GL.larger, span.head td.GLCell{ 
 	/*font-weight: bold;*/
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 1.2em;
 	/*font-size: 1em;*/
 }
 
@@ -176,10 +177,6 @@ span.AL.notAbbreviated {
 }
 
 span.GL.notAbbreviated {
-}
-
-span.head td.GLCell {
-	background-color: green;
 }
 
 span.unclear.certhigh td.GLCell {

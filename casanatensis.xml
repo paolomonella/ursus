@@ -45,7 +45,7 @@
 <body>
 
 <ab n="Title of the work" xml:id="ab001">
-<ref cRef="unknown" type="source">
+<!--ref cRef="unknown" type="source"-->
 
 <pb facs="manuscript_images/C_01r.JPG" n="1r" />
 
@@ -75,7 +75,7 @@
 <w n="composita" xml:id="w27">composita</w>
 	<pc n="space"> </pc>
 </head>
-</ref>
+<!--/ref-->
 </ab>
 
 
