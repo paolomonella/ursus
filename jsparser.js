@@ -1,4 +1,6 @@
-// HTML CLASSES
+/*###########################
+#      HTML CLASSES         #
+###########################*/
 //
 // In the HTML DOM returned by this script, each text portion is assigned to one
 // of the three layers, i.e.
@@ -183,13 +185,19 @@
 
 
 /*##############################
-# GENERAL VARIABLES
+#     GENERAL VARIABLES        #
 ##############################*/
 
 // I'm using an underscore as value for a space until I'll find a way to effectively insert a &nbsp; through JS
 var space = '_';
 var noteLikeCounter = 0;
 var gtos = importTableOfSigns('GToS.csv');
+
+
+/*#############################
+#   URN INTERPRETATION TABLE  #
+##############################*/
+
 var URNArray = [
 	['-', ' - '],
 	['urn:cts:latinLit:', ''],
@@ -384,7 +392,7 @@ var tagsetlist = [
 
 
 /*##############################
-// MY OWN FUNCTIONS
+#         MY FUNCTIONS         #
 ##############################*/
 
 
@@ -774,13 +782,28 @@ function wordify(word) {
 		cells[y].setAttribute('class', cellClasses[y]);		// Set attribute class (LL, AL or GL)
 	}
 
-	// Extract the LL
+	// Extract the LL: old version (visualizing the modern spelling)
 	var LLText = document.createTextNode(word.attributes.getNamedItem('n').nodeValue);
 	var LLSpan = document.createElement('span');    // Create a <span> node. The hierarchy in the DOM
 		// will be: <table class="wordTable"><tr><td class="LLCell"><span class="LL word">
-	LLSpan.setAttribute('class', 'LL word');        // Set attribute class
+	LLSpan.setAttribute('class', 'LL word spelling');        // Set attribute class
 	LLSpan.appendChild(LLText);             	// Append the text inside the LL span
 	cells[0].appendChild(LLSpan);                   // Append the span inside the <td class="LLCell">
+
+	/*
+	// Extract the LL: new version (visualizing 1. modern spelling; 2. lemma; 3. morphological analysis)
+	//var LLText = document.createTextNode(word.attributes.getNamedItem('n').nodeValue); // old
+	var LLtagsetAna = word.attributes.getNamedItem('ana').nodeValue;
+	var LLexpandedAna = tagsetify(LLtagsetAna);
+	var LLlemma = word.attributes.getNamedItem('lemma').nodeValue;
+	var LLform = word.attributes.getNamedItem('n').nodeValue;
+	var LLText = document.createTextNode('"'+LLform+'": ['+LLlemma+'] '+LLexpandedAna);
+	var LLSpan = document.createElement('span');    // Create a <span> node. The hierarchy in the DOM
+		// will be: <table class="wordTable"><tr><td class="LLCell"><span class="LL word">
+	LLSpan.setAttribute('class', 'LL word triform');        // Set attribute class
+	LLSpan.appendChild(LLText);             	// Append the text inside the LL span
+	cells[0].appendChild(LLSpan);                   // Append the span inside the <td class="LLCell">
+	*/
 
 	//Iterate all children of <w>
 	for (var x = 0; x < word.childNodes.length; x++) {
@@ -1014,47 +1037,38 @@ function punctify(pchar) {
 		cells[1].appendChild(classySpanWithLayers(GLPunctString, GLPunctClass)[1]);
 		cells[2].appendChild(classySpanWithLayers(GLPunctString, GLPunctClass)[2]);
 	}
-
 	return table;
 }
 
 
-
-
-function tagsetify(myAna, myLemma, myN) {
+function tagsetify(tagsetAna) {
 	var expandedAna = '';
 	for (var i = 0; i < tagsetlist.length; i++) {
-		tagCode  = myAna[i];	// The code actually present in the @ana value. E.g.: in @ana="11B---F3--1" it might be "B"
+		tagCode  = tagsetAna[i];	// Each character in the @ana value. E.g.: in "11B---F3--1" it may be "B"
 		category = tagsetlist[i][0] // E.g.: "11 Graphical-Variation"
 		for (var k = 0; k < tagsetlist[i][1].length; k++) {
-			if ( tagsetlist[i][1][k][0] == tagCode) {
-				if ( tagsetlist[i][1][k][0] != "-") {
-					expandedAna += tagsetlist[i][1][k][1] + ", "
-				}
+			if ( tagsetlist[i][1][k][0] == tagCode && tagsetlist[i][1][k][0] != "-" ) {
+				expandedAna += tagsetlist[i][1][k][1] + ", ";
 			}
 		}
 	}
-	alert('"' + myN + '": ' + '[' + myLemma + '] ' + expandedAna);
-
+	//alert('"' + myN + '": ' + '[' + myLemma + '] ' + expandedAna);
+	return expandedAna;
 }
 
-// <w ana="12C---O3---" lemma="doctoribus" n="doctoribus" xml:id="w18">doctoribus</w>
-tagsetify('12C---O3---', 'doctoribus', 'doctoribus');
-// <w ana="2-LM41A2---" lemma="compono" n="composita" xml:id="w27">composita</w>
-tagsetify("2-LM41A2---", "compono", "composita");
 
 
 
 
 /*############################
-// FUNCTIONS PARSING XML
+#    FUNCTION PARSING XML    #
 ############################*/
 
 var xmlDoc;
 function loadxml() {
   xmlDoc = document.implementation.createDocument('','',null);
-  xmlDoc.load('casanatensis.xml');
-  //xmlDoc.load('lemmatized_casanatensis.xml');
+  //xmlDoc.load('casanatensis.xml');
+  xmlDoc.load('lemmatized_casanatensis.xml');
   xmlDoc.onload = readXML;
 }
 
