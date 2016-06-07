@@ -162,7 +162,7 @@
 // 	and marks that those words, spaces and punctuation signs have been added above the line in the manuscript.
 // <span class="add withinword placeabove">: includes characters (part of a word) that have been added
 // 	above the line in the manuscript (so this should not belong in letter G of this list).
-// <span class="head">: head of the work.
+// <span class="head">: head of the work (no longer in use)
 // <div class="source start containerDiv"> or
 // <div class="source end containerDiv">
 // 	mark the div that includes the "show/hide source note" link and the content of the source note
@@ -1139,9 +1139,11 @@ function readXML() {
 		};
 	}
 
+	/* // Old code
 	// Manage the (one) initial <head> in the file
 	var MSHead = xmlDoc.getElementsByTagName('head')[0];
 	for (var zy = 0; zy < MSHead.childNodes.length; zy++) { // If <head> includes <w>
+		//§§
 		if (MSHead.childNodes[zy].tagName == 'w') {
 			var headSpan = document.createElement('span');
 			headSpan.setAttribute('class', 'head');
@@ -1156,6 +1158,7 @@ function readXML() {
 		}
 	}
 	document.getElementById('MSText').appendChild(headSpan);
+	*/
 			
 
 	// For each <ab>

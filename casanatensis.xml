@@ -44,14 +44,16 @@
 <text>
 <body>
 
-<head n="Title of the work" xml:id="ab01">
+<!--head n="Title of the work" xml:id="ab01"-->
+<ab type="title" n="Title of the work" xml:id="ab01">
+<ref cRef="unkown" type="source">
 
 <pb facs="manuscript_images/C_01r.JPG" n="1r" />
 
 <cb n="1r.a" />
 
 <lb n="1r.a.1" />
-<note type="script">This title (marked as 'head') is in uncial. Another GToS for the uncial script might be necessary.</note>
+<note type="script">This title (marked as 'head') is in uncial. Another GToS for the uncial script might be necessary. The uncial glyphs are also used in the body of the text, to mark larger initials in new sections of the text.</note>
 <w n="adbreuiatio" xml:id="w3">adbreuiatio</w>
 	<pc n="space"> </pc>
 <w n="artis" xml:id="w6">artis</w>
@@ -72,7 +74,9 @@
 	<pc n="space"> </pc>
 <w n="composita" xml:id="w27">composita</w>
 	<pc n="space"> </pc>
-</head>
+<!--/head-->
+</ref>
+</ab>
 
 
 
@@ -110,7 +114,7 @@
 <w n="id" xml:id="w54">id</w>
 <w n="est" xml:id="w57">est</w>
 	<pc n="space"> </pc>
-<w n="compositae" xml:id="w60">compositæ</w>
+<w n="compositae" xml:id="w60">composite</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w63">in</w>
 <w n="ordinem" xml:id="w66">ordin
@@ -141,7 +145,6 @@
 tinet</w>
 	<pc n="space"> </pc>
 <w n="ad" xml:id="w84">ad</w>
-	<pc n="space"> </pc>
 <w n="sensum" xml:id="w87">sens
 	<choice>
 		<abbr type="superscription">u<am>8</am></abbr>
@@ -212,6 +215,7 @@ tinet</w>
 <w n="est" xml:id="w144">est</w>
 	<pc n="space"> </pc>
 <w n="intellegendo" xml:id="w147">intellegendo</w>
+<pc n=","/>
 <w n="dicta" xml:id="w150">dicta</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w153">est</w>
@@ -243,10 +247,8 @@ d</w>
 	<pc n="space"> </pc>
 	<pc n=".">.</pc>
 <w n="syllaba" xml:id="w171">syllaba</w>
-<unclear cert="low" reason="faded">
-<w n="utro" xml:id="w174">utro</w>
+<w n="uero" xml:id="w174">uero</w>
 	<pc n="space"> </pc>
-</unclear>
 <w n="numquam" xml:id="w177">n
 	<choice>
 		<abbr type="superscription">u<am>8</am></abbr>
