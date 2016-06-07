@@ -206,7 +206,7 @@ tinet</w>
 	<pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w n="dicendo" xml:id="w138">dicendo</w>
-	<pc n=".">.</pc>
+	<pc n=",">.</pc>
 <w n="hoc" xml:id="w141">hoc</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w144">est</w>
@@ -215,7 +215,6 @@ tinet</w>
 <w n="dicta" xml:id="w150">dicta</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w153">est</w>
-	<pc n="space"> </pc>
 	<pc n=".">.</pc>
 	<pc n="space"> </pc>
 <w n="per" xml:id="w156">
@@ -276,7 +275,6 @@ d</w>
 		<expan>qui</expan>
 	</choice>
 d</w>
-	<pc n="space"> </pc>
 	<pc n=".">|</pc>
 	<pc n="space"> </pc>
 <w n="monosyllabae" xml:id="w192"><hi rend="larger">m</hi>ono

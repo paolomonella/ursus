@@ -204,9 +204,8 @@ tinet</w>
 <lb n="1r.a.7" />
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w135">a</w>
 	<pc n="0">·</pc>
-	<pc n="space"> </pc>
 <w ana="2-NE-1F----" lemma="dico" n="dicendo" xml:id="w138">dicendo</w>
-	<pc n=".">.</pc>
+	<pc n=",">.</pc>
 <w ana="11F---A3---" lemma="hic" n="hoc" xml:id="w141">hoc</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w144">est</w>
@@ -215,7 +214,6 @@ tinet</w>
 <w ana="2-NM41A2---" lemma="dico" n="dicta" xml:id="w150">dicta</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w153">est</w>
-	<pc n="space"> </pc>
 	<pc n=".">.</pc>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="per" n="per" xml:id="w156">
@@ -276,7 +274,6 @@ d</w>
 		<expan>qui</expan>
 	</choice>
 d</w>
-	<pc n="space"> </pc>
 	<pc n=".">|</pc>
 	<pc n="space"> </pc>
 <w ana="11A---A2---" lemma="monosyllabae" n="monosyllabae" xml:id="w192"><hi rend="larger">m</hi>ono

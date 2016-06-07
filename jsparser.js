@@ -36,6 +36,9 @@
 //		<tr>
 //			<td class="LLCell">
 //				<span class="LL word">
+// <span class="LL word triform"> is the same, but is used if I choose the visualization of the LL
+// 	in the form
+// 	"artis": [ars] Nominal, Positive, III decl, Singular Genitive, Feminine,
 // <span class="AL larger">: it marks a word initial letter that,
 // 	on the GL, is written with a larger grapheme (not quite a dropcap).
 // 	It is always a child of <td class="ALCell">
@@ -416,7 +419,8 @@ function importTableOfSigns(csvFile) {
 	// 		(as of 06.01.2015, I'm not using element 2)
 	var xmlhttp;
 	xmlhttp=new XMLHttpRequest();
-	xmlhttp.open('GET', csvFile, false);
+	//xmlhttp.open('GET', csvFile, false);
+	xmlhttp.open('GET', csvFile, true);
 	xmlhttp.send();
 	var ToSLines = xmlhttp.responseText.split('\n');
 	var ToS   	= [];
@@ -464,7 +468,7 @@ function alph(myString) {
 	return myString;
 }
 
-function URNToCitation (URNToParse) {
+function URNToCitation(URNToParse) {
 	for (var iurn = 0; iurn < URNArray.length; iurn++) {
 		URNToParse = URNToParse.replace(URNArray[iurn][0], URNArray[iurn][1]);
 	}
@@ -501,7 +505,7 @@ function classyElem(elementName, classForElement, textToWrap) {
 	return outputElement;
 }
 
-function classySpanWithLayers(textToWrap, classForSpan) {
+function classySpanWithLayers(textToWrap, classForSpan) { //
 	// This wraps some text in a span with a specific HTML @class attribute
 	// and returns an array with three values, being HTMl elements <span>.
 	// For example, if classForSpan='hi':
@@ -782,28 +786,61 @@ function wordify(word) {
 		cells[y].setAttribute('class', cellClasses[y]);		// Set attribute class (LL, AL or GL)
 	}
 
+	/*
 	// Extract the LL: old version (visualizing the modern spelling)
-	var LLText = document.createTextNode(word.attributes.getNamedItem('n').nodeValue);
+	var LLString = word.attributes.getNamedItem('n').nodeValue;
+	var LLText = document.createTextNode(LLString);
 	var LLSpan = document.createElement('span');    // Create a <span> node. The hierarchy in the DOM
 		// will be: <table class="wordTable"><tr><td class="LLCell"><span class="LL word">
 	LLSpan.setAttribute('class', 'LL word spelling');        // Set attribute class
 	LLSpan.appendChild(LLText);             	// Append the text inside the LL span
 	cells[0].appendChild(LLSpan);                   // Append the span inside the <td class="LLCell">
+	*/
 
 	/*
-	// Extract the LL: new version (visualizing 1. modern spelling; 2. lemma; 3. morphological analysis)
-	//var LLText = document.createTextNode(word.attributes.getNamedItem('n').nodeValue); // old
+	// Extract the LL: new version (visualizing 1. modern spelling; 2. lemma; 3. morphological analysis),
+	// 	but not taking into account type="nonsense" or type="alphabemes"
+	var LLform = word.attributes.getNamedItem('n').nodeValue;
 	var LLtagsetAna = word.attributes.getNamedItem('ana').nodeValue;
 	var LLexpandedAna = tagsetify(LLtagsetAna);
 	var LLlemma = word.attributes.getNamedItem('lemma').nodeValue;
-	var LLform = word.attributes.getNamedItem('n').nodeValue;
-	var LLText = document.createTextNode('"'+LLform+'": ['+LLlemma+'] '+LLexpandedAna);
+	var LLString = '"'+LLform+'": ['+LLlemma+'] '+LLexpandedAna;
+	var LLText = document.createTextNode(LLString);
 	var LLSpan = document.createElement('span');    // Create a <span> node. The hierarchy in the DOM
 		// will be: <table class="wordTable"><tr><td class="LLCell"><span class="LL word">
 	LLSpan.setAttribute('class', 'LL word triform');        // Set attribute class
 	LLSpan.appendChild(LLText);             	// Append the text inside the LL span
 	cells[0].appendChild(LLSpan);                   // Append the span inside the <td class="LLCell">
 	*/
+
+	// Extract the LL: new version (visualizing 1. modern spelling; 2. lemma; 3. morphological analysis)
+	var LLform = word.attributes.getNamedItem('n').nodeValue;
+	if ( word.hasAttribute('type') ) {
+		// If word type is "nonsense", "alphabemes" or "foreign",
+		// so the word most probably was not lemmatized and <w> doesn't have @ana or @lemma
+		//var LLString = '"' + LLform '"';
+		var LLString = '"' + LLform + '" (word type: ' + word.attributes.getNamedItem('type').nodeValue + ')';
+		//var LLString = 'strange word type';
+	}
+	else { 
+		var LLtagsetAna = word.attributes.getNamedItem('ana').nodeValue;
+		var LLexpandedAna = tagsetify(LLtagsetAna);
+		var LLlemma = word.attributes.getNamedItem('lemma').nodeValue;
+		var LLString = '"'+LLform+'": ['+LLlemma+'] '+LLexpandedAna;
+	}
+	/*
+	if ( word.attributes.getNamedItem('type').nodeValue == 'alphabemes'
+			|| word.attributes.getNamedItem('type').nodeValue == 'nonsense'
+			|| word.attributes.getNamedItem('type').nodeValue == 'foreign') {
+		var LLString = '(Word type: ' + word.attributes.getNamedItem('type').nodeValue + ') "' + LLform+'"';
+	}
+	*/
+	var LLText = document.createTextNode(LLString);
+	var LLSpan = document.createElement('span');    // Create a <span> node. The hierarchy in the DOM
+		// will be: <table class="wordTable"><tr><td class="LLCell"><span class="LL word">
+	LLSpan.setAttribute('class', 'LL word triform');        // Set attribute class
+	LLSpan.appendChild(LLText);             	// Append the text inside the LL span
+	cells[0].appendChild(LLSpan);                   // Append the span inside the <td class="LLCell">
 
 	//Iterate all children of <w>
 	for (var x = 0; x < word.childNodes.length; x++) {
@@ -821,7 +858,8 @@ function wordify(word) {
 			// AL of larger (span).
 				// The result will be <span class="AL larger"
 				//                or  <span class="AL dropcap":
-			cells[1].appendChild(classySpanWithLayers(alph(hiText), hiRendAttrValue)[1]); 
+			cells[1].appendChild(classySpanWithLayers(alph(hiText), hiRendAttrValue)[1]);
+			cells[1].setAttribute('title', LLString); // The 'title' will make lemma/morph/spelling appear on hover
 			// GL of larger grapheme (span).
 				// The result will be <span class="GL larger"
 				//                or  <span class="GL dropcap":
@@ -860,6 +898,7 @@ function wordify(word) {
 			auSpanAL.setAttribute('class', 'AL '+auClass);	// Set attribute
 			auSpanGL.setAttribute('class', 'GL '+auClass);	// Set attribute
 
+
 			var auTextAL = document.createTextNode(n.textContent); // Text node
 			var auTextGL = document.createTextNode(n.textContent); // Text node
 
@@ -867,6 +906,7 @@ function wordify(word) {
 			auSpanGL.appendChild(auTextGL);
 
 			cells[1].appendChild(auSpanAL); //In the AL cell
+			cells[1].setAttribute('title', LLString);	// The 'title' will make lemma/morph/spelling appear on hover
 			cells[2].appendChild(auSpanGL); //In the GL cell
 		}
 
@@ -967,7 +1007,9 @@ function wordify(word) {
 			// Extract the AL of abbreviations
 			var ALTextString = n.getElementsByTagName('expan')[0].childNodes[0].nodeValue.trim();
 			ALTextString = alph(ALTextString);
-			cells[1].appendChild(classySpanWithLayers(ALTextString, 'abbrExpansion')[1]);
+			ALTextSpan = classySpanWithLayers(ALTextString, 'abbrExpansion')[1];
+			cells[1].appendChild(ALTextSpan);
+                        cells[1].setAttribute('title', LLString); // The 'title' will make lemma/morph/spelling appear on hover
 		}	// End of 'choice', i.e. of the processing of abbreviations
 
 		else if (n.tagName != 'choice') {
@@ -976,6 +1018,7 @@ function wordify(word) {
 			var ALTextString = n.nodeValue.trim();
 			ALTextString = alph(ALTextString); //Compute the AL based on the graphemes and the GToS
 			cells[1].appendChild(classySpanWithLayers(ALTextString, 'notAbbreviated')[1]);
+			cells[1].setAttribute('title', LLString); // The 'title' will make lemma/morph/spelling appear on hover
 			// GL
 			var GLTextString = n.nodeValue.trim();
 			cells[2].appendChild(classySpanWithLayers(GLTextString, 'notAbbreviated')[2]);
@@ -1013,28 +1056,42 @@ function punctify(pchar) {
 	}
 
 	else if (pchar.attributes.getNamedItem('n').nodeValue != 'space') {
-		// <pc> with punctuation inside
+		// <pc> for punctuation
 	
 		// Corresponding modern punctuation (for the LL)
 		var modernPunctString = pchar.attributes.getNamedItem('n').nodeValue;
-		modernPunctString = modernPunctString.replace('quote', '"').replace('question', '?');
-		modernPunctString = modernPunctString.replace('0', '');
+		//modernPunctString = modernPunctString.replace('quote', space).replace('question', '?');
+		modernPunctString = modernPunctString.replace('question', '?');
 
 		// Manuscript punctuation (for AL and GL)
 		if (pchar.childNodes[0]) {
+			// If <pc> has text content (i.e. there is punctuation in the manuscript here)
 			var GLPunctString = graph(pchar.childNodes[0].nodeValue);
 			var GLPunctClass = 'punct';
 		}
-		// If <pc> is a void element (i.e. there is no punctuation in the manuscript here:
 		else {
+			// If <pc> is a void element (i.e. there is no punctuation in the manuscript here)
 			var GLPunctString = space;
 			var GLPunctClass = 'space';
+		}
+
+		if (pchar.attributes.getNamedItem('n').nodeValue=='0' || pchar.attributes.getNamedItem('n').nodeValue=='quote') {
+			// If <pc> is has textual content (i.e. there is punctuation in the manuscript here),
+			// but no punctuation should be visualized at the LL or AL. E.g.: <pc n="0">·</pc>
+			var ALPunctString = space;
+			var ALPunctClass = 'space';
+		}
+		else {
+			// if @n is not "0", i.e. if some punctuation should be visualized at the LL or AL.
+			// E.g.: <pc n=",">·</pc>
+			var ALPunctClass = 'punct';
 		}
 
 		// Append to table cells
 		var myCells = makeTable(document.getElementById('MSText'), 'punctTable');
 		cells[0].appendChild(classySpanWithLayers(modernPunctString, 'punct')[0]);
-		cells[1].appendChild(classySpanWithLayers(GLPunctString, GLPunctClass)[1]);
+		cells[1].appendChild(classySpanWithLayers(modernPunctString, ALPunctClass)[1]);
+		//cells[1].appendChild(classySpanWithLayers(GLPunctString, GLPunctClass)[1]); // old
 		cells[2].appendChild(classySpanWithLayers(GLPunctString, GLPunctClass)[2]);
 	}
 	return table;

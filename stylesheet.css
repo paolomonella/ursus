@@ -47,16 +47,26 @@ div.source.end {
 	/* background-color: #CCFF66; */
 }
 
+
+/* This was needed when the LL row was diplayed. It applied to the
+ * visualization including only the modern spelling (e.g.: artis)
 .LL {
 	color: blue;
 }
+*/
 
+/* This was needed when the LL row was diplayed. It applied to this visualization:
+ * "artis": [ars] Nominal, Positive, III decl, Singular Genitive, Feminine,
 .LL.triform {
 	font-size: 0.5em;
 }
+*/
 
 .AL {
-	color: orange;
+	/*It was
+	 * color: orange;
+	 * before I decided not to display a separate row for the LL*/
+	color: blue;
 }
 
 .GL {
@@ -64,6 +74,16 @@ div.source.end {
 
 td.LLCell {
 	padding-top: 3em;
+	display: none;
+	/* I added the following line when I decided that the LL should only
+	 * appear on hover, not in a table row. */
+}
+
+td.ALCell {
+	/* I added the following line when I decided that the LL should only
+	 * appear on hover, not in a table row. This means that the ALCell is
+	 * now the uppermost row in the cell*/
+	padding-top: 1.5em;
 }
 
 table {
