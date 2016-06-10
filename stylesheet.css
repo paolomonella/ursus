@@ -86,6 +86,25 @@ td.ALCell {
 	padding-top: 1.5em;
 }
 
+td.ALCell.alphabemes:before, td.ALCell.alphabemes:after {
+	/* XML: <w type="alphabemes">
+	 * HTML DOM: <td class="ALCell alphabemes"> */
+	content: "\"";
+	color: blue;
+}
+
+td.ALCell.nonsense {
+	/* XML: <w type="nonsense">
+	 * HTML DOM: <td class="ALCell nonsense"> */
+	font-style: italic;
+}
+
+td.ALCell.foreign {
+	/* XML: <w type="foreign">
+	 * HTML DOM: <td class="ALCell foreign"> */
+	/* I'm putting nothing here so far */
+}
+
 table {
 	display: inline;
 }

@@ -25,6 +25,11 @@
 // <td class="ALCell"> is the 2nd row (index=1), for the AL (Alphabetic Layer);
 // <td class="GLCell"> is the 3rd row (index=2), for the GL (Graphemic Layer).
 //
+// Variants of <td class="ALCell">:
+// 	<td class="ALCell alphabemes"> (when in the XML we have <w type="alphabemes">
+// 	<td class="ALCell nonsense"> (when in the XML we have <w type="nonsense">
+// 	<td class="ALCell foreign"> (when in the XML we have <w type="foreign">
+//
 //
 // C) List: Div/Span elements children of <w> in the XML/TEI source file including medieval text
 //
@@ -797,30 +802,18 @@ function wordify(word) {
 	cells[0].appendChild(LLSpan);                   // Append the span inside the <td class="LLCell">
 	*/
 
-	/*
-	// Extract the LL: new version (visualizing 1. modern spelling; 2. lemma; 3. morphological analysis),
-	// 	but not taking into account type="nonsense" or type="alphabemes"
-	var LLform = word.attributes.getNamedItem('n').nodeValue;
-	var LLtagsetAna = word.attributes.getNamedItem('ana').nodeValue;
-	var LLexpandedAna = tagsetify(LLtagsetAna);
-	var LLlemma = word.attributes.getNamedItem('lemma').nodeValue;
-	var LLString = '"'+LLform+'": ['+LLlemma+'] '+LLexpandedAna;
-	var LLText = document.createTextNode(LLString);
-	var LLSpan = document.createElement('span');    // Create a <span> node. The hierarchy in the DOM
-		// will be: <table class="wordTable"><tr><td class="LLCell"><span class="LL word">
-	LLSpan.setAttribute('class', 'LL word triform');        // Set attribute class
-	LLSpan.appendChild(LLText);             	// Append the text inside the LL span
-	cells[0].appendChild(LLSpan);                   // Append the span inside the <td class="LLCell">
-	*/
-
 	// Extract the LL: new version (visualizing 1. modern spelling; 2. lemma; 3. morphological analysis)
 	var LLform = word.attributes.getNamedItem('n').nodeValue;
 	if ( word.hasAttribute('type') ) {
 		// If word type is "nonsense", "alphabemes" or "foreign",
 		// so the word most probably was not lemmatized and <w> doesn't have @ana or @lemma
-		//var LLString = '"' + LLform '"';
 		var LLString = '"' + LLform + '" (word type: ' + word.attributes.getNamedItem('type').nodeValue + ')';
-		//var LLString = 'strange word type';
+		// The following lines visualize words with type "nonsense", "alphabemes" or "foreign" differently
+		// at the AL
+		var wordType = word.attributes.getNamedItem('type').nodeValue; // Value of 'type' in the XML
+		oldCells1Attr = cells[1].attributes.getNamedItem('class').value; // Old value of 'class' in the DOM
+		newCells1Attr = oldCells1Attr + ' ' + wordType;
+		cells[1].setAttribute('class', newCells1Attr); // cells[1]: AL. The result will be like: class="ALCell foreign"
 	}
 	else { 
 		var LLtagsetAna = word.attributes.getNamedItem('ana').nodeValue;
@@ -828,13 +821,6 @@ function wordify(word) {
 		var LLlemma = word.attributes.getNamedItem('lemma').nodeValue;
 		var LLString = '"'+LLform+'": ['+LLlemma+'] '+LLexpandedAna;
 	}
-	/*
-	if ( word.attributes.getNamedItem('type').nodeValue == 'alphabemes'
-			|| word.attributes.getNamedItem('type').nodeValue == 'nonsense'
-			|| word.attributes.getNamedItem('type').nodeValue == 'foreign') {
-		var LLString = '(Word type: ' + word.attributes.getNamedItem('type').nodeValue + ') "' + LLform+'"';
-	}
-	*/
 	var LLText = document.createTextNode(LLString);
 	var LLSpan = document.createElement('span');    // Create a <span> node. The hierarchy in the DOM
 		// will be: <table class="wordTable"><tr><td class="LLCell"><span class="LL word">

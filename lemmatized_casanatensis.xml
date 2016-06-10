@@ -18,7 +18,6 @@
 <change type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype data.enumerated. Questo significa che dovrei limitare formalmente i possibili valori con un elemento  valList?</change>
 <change type="agenda">Nella documentazione in [sgn4] metti parole vuote con 0 o no?</change>
 <change type="agenda">I might transcribe also marginal glossae in black ink</change>
-<change type="agenda">È rispettata o no la regola sulle due forme di 'ti': una con legatura per IPA /tsj/?</change>
 <change type="agenda">Find sources for ab06 based on the comments on Donatus (find ab06 and 'note' there)</change>
 <change type="agenda">Togli la punteggiatura 'solo contemporanea' (senza corrispondenza nel MS)?</change>
 <change type="agenda">Periodicamente: vd. se ci sono 'v', o 'ae', o grafemi non dichiarati in GToS, in grafematica</change>
@@ -357,7 +356,7 @@ aba</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--4---" lemma="dico" n="dico" xml:id="w258">dico</w>
 <lb n="1r.a.11" />
-<w n="α" type="alphabemes" xml:id="w261" xml:lang="grc">a</w>
+<w n="a" type="alphabemes" xml:id="w261">a</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="nec" n="nec" xml:id="w264">nec</w>
 	<pc n="space"> </pc>
