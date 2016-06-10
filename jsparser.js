@@ -671,15 +671,11 @@ function computeWordLikeElements(refElement) {
 		else if (e.tagName == 'gap') {
 			// <gap> outside of <w>
 			var myCells = makeTable(document.getElementById('MSText'), 'gapTable');
-			var gapTextString = '[…]';
-			myCells[0].appendChild(classySpanWithLayers(gapTextString, 'gap')[1]); //In the AL cell
-			myCells[1].appendChild(classySpanWithLayers(gapTextString, 'gap')[1]); //In the AL cell
-			myCells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
-
+			gapify();
 		}
 
 		else if (e.tagName == 'add' || e.tagName == 'unclear') {
-			// All elements that can be parents of <w> or <pc> elements (i.e. <add> or <unclear>)
+			// All elements that can be parents of <w>, <pc> or <gap> elements (i.e. <add> or <unclear>)
 			
 			// If XML/TEI has <add place="above">, the HTML DOM will have
 			// <span class="add wholeword placeabove">.
@@ -696,7 +692,8 @@ function computeWordLikeElements(refElement) {
 				// <span class="unclear wholeword certmedium">
 			}
 
-			for (var zy = 0; zy < e.childNodes.length; zy++) { // If <add> or <unclear> include <w>
+			for (var zy = 0; zy < e.childNodes.length; zy++) {
+				// If <add> or <unclear> include <w>
 				if (e.childNodes[zy].tagName == 'w') {
 					// e is <add> or <unclear>
 					// e.childNodes[zy]) is a <w> child of <add> or <unclear>
@@ -712,14 +709,17 @@ function computeWordLikeElements(refElement) {
 					document.getElementById('MSText').appendChild(auSpan);
 					//alert('"'+e.childNodes[zy].textContent+'"')
 				}
-
-				if (e.childNodes[zy].tagName=='pc') { // If <add> or <unclear> include <pc>
+				else if (e.childNodes[zy].tagName=='pc') { // If <add> or <unclear> include <pc>
 					auSpan = document.createElement('span');
 					auSpan.setAttribute('class', auClass);
 					auSpan.appendChild(punctify(e.childNodes[zy]));
 					document.getElementById('MSText').appendChild(auSpan);
 				}
-
+				else if (e.childNodes[zy].tagName == 'gap') {
+					// <gap> within <add> or <unclear>
+					gapify();
+				}
+				//§§§
 			//document.getElementById('MSText').appendChild(auSpan);
 			}
 		} // End of 'add'/'unclear'
@@ -870,9 +870,7 @@ function wordify(word) {
 
 		else if (n.tagName == 'gap') {
 			// <gap> within <w>
-			var gapTextString = '[…]';
-			cells[1].appendChild(classySpanWithLayers(gapTextString, 'gap')[1]); //In the AL cell
-			cells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
+			gapify();
 		}
 
 		else if (n.tagName == 'unclear' || n.tagName == 'add') {
@@ -1097,6 +1095,12 @@ function punctify(pchar) {
 	return table;
 }
 
+
+function gapify() {
+	var gapTextString = '[…]';
+	cells[1].appendChild(classySpanWithLayers(gapTextString, 'gap')[1]); //In the AL cell
+	cells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
+}
 
 function tagsetify(tagsetAna) {
 	var expandedAna = '';

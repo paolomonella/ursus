@@ -34,7 +34,7 @@ _		 	Space	Space to separate words (sgn - TBA: I'm currently not using this)		1
 ï	 	,̈	Punctuation	It looks like the sign encoded as “|”, but in addition it has two dots (like a diaeresis) above	commadiaeresis.png	1	2r.a.5
 ¦		;̇	Punctuation	This punctuation sign is composed by a comma with two dots above it, in a vertical row. It is used starting from folio 2v, column a, line 35 and seems to be due to the second hand, that writes in black ink.	vertical.png	1	2v.a.35
 8		8	Abbreviation mark	Written over another grapheme, mostly for a missing 'm'	8.png	1	1r.a.18
-2		⸊	Abbreviation mark	Written over another grapheme, mostly for a missing 's' or 'm'. In 1r its shape resambles a '2' (see 2a.png), then, starting from 1v, it takes a less curved allograph (2b.png)	2a.png 2b.png	1	1r.a.7
+2		⸊	Abbreviation mark	Written over another grapheme, mostly for a missing 's' or 'm'. In 1r its shape resambles a '2' (see 2a.png), then, starting from 1v, it takes a less curved allograph (2b.png). Another option for visualization could be ≀	2a.png 2b.png	1	1r.a.7
 7		7	Abbreviation mark	Written over another grapheme, mostly for a missing m'	7.png	1	1r.a.18
 ¯		¯	Abbreviation mark	Macron/tilde over one or more graphemes (over one 'n' means 'non')	macron.png	1	1r.a.10
 ;		;	Abbreviation mark	It looks like a modern semicolon (;), written on the right of a final letter (mostly 'q;' for 'que' and 'b;' for 'bus'). It has a smaller vertical size, and a completely different meaning, than the semicolon-like punctuation mark encoded here with ł	abbr_semicolon.png	1	1r.a.10

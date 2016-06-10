@@ -297,6 +297,7 @@ syllabæ</w>
 	<pc n="space"> </pc>
 <w n="dictio" xml:id="w210">dictio</w>
 	<pc n="space"> </pc>
+<pc n=","></pc>
 <w n="potest" xml:id="w213">potest</w>
 	<pc n="space"> </pc>
 <w n="dici" xml:id="w216">dici</w>
@@ -318,6 +319,8 @@ aba</w>
 	<pc n="space"> </pc>
 <w n="eo" xml:id="w231">eo</w>
 	<pc n="space"> </pc>
+<w n="quod" xml:id="w243">quod</w>
+	<pc n="space"> </pc>
 
 <add place="above">
 <w n="quod" xml:id="w234">quod</w>
@@ -334,8 +337,6 @@ aba</w>
 <gap quantity="1" reason="illegible" unit="words" />
 </add>
 
-<w n="quod" xml:id="w243">quod</w>
-	<pc n="space"> </pc>
 <w n="significat" xml:id="w246">significat</w>
 	<pc n="space"> </pc>
 <w n="aliquid" xml:id="w249">aliquid</w>
@@ -356,7 +357,7 @@ aba</w>
 	<pc n="space"> </pc>
 <w n="dico" xml:id="w258">dico</w>
 <lb n="1r.a.11" />
-<w n="α" type="alphabemes" xml:id="w261" xml:lang="grc">a</w>
+<w n="a" type="alphabemes" xml:id="w261">a</w>
 	<pc n="space"> </pc>
 <w n="nec" xml:id="w264">nec</w>
 	<pc n="space"> </pc>

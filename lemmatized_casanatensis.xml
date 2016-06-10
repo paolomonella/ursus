@@ -297,6 +297,7 @@ syllabæ</w>
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="dictio" n="dictio" xml:id="w210">dictio</w>
 	<pc n="space"> </pc>
+<pc n="," />
 <w ana="3-NA1--6---" lemma="possum" n="potest" xml:id="w213">potest</w>
 	<pc n="space"> </pc>
 <w ana="3-NQ1------" lemma="dico" n="dici" xml:id="w216">dici</w>
@@ -318,11 +319,13 @@ aba</w>
 	<pc n="space"> </pc>
 <w ana="11F---F3---" lemma="is" n="eo" xml:id="w231">eo</w>
 	<pc n="space"> </pc>
+<w ana="11F---A3---" lemma="qui" n="quod" xml:id="w243">quod</w>
+	<pc n="space"> </pc>
 
 <add place="above">
-<w ana="11F---A3---" lemma="qui" n="quod" xml:id="w234">quod</w>
+<w ana="4-O--------" lemma="quod" n="quod" xml:id="w234">quod</w>
 	<pc n="space"> </pc>
-<w ana="3-JH1------" lemma="syllaba" n="syllaba" xml:id="w237">syllaba</w>
+<w ana="2-JE-1B---1" lemma="syllaba" n="syllaba" xml:id="w237">syllaba</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="non" n="non" xml:id="w240">
 	<choice>
@@ -334,8 +337,6 @@ aba</w>
 <gap quantity="1" reason="illegible" unit="words" />
 </add>
 
-<w ana="11F---A3---" lemma="qui" n="quod" xml:id="w243">quod</w>
-	<pc n="space"> </pc>
 <w ana="3-JA1--6---" lemma="significo" n="significat" xml:id="w246">significat</w>
 	<pc n="space"> </pc>
 <w ana="11F---D3---" lemma="aliquis" n="aliquid" xml:id="w249">aliquid</w>
