@@ -26,8 +26,7 @@ z	z	z	Alphabetic			1	3r.b.26
 _		 	Space	Space to separate words (sgn - TBA: I'm currently not using this)		1	
 .		.	Punctuation	Full stop, written on the base line		1	
 ·		·	Punctuation	Middle dot, written at middle heigth		1	1r.a.7
-|		⸴ 	Punctuation	It looks like a comma, written from the middle to the base line	comma.png	1	1r.a.8
-ˬ		ˬ	Punctuation	Punctuation sign: a triangle pointing downwards	triangle.png	1	1r.a.18
+|		⸴ 	Punctuation	It looks like a comma, written from the middle to the base line. I think that the glyph in image 'triangle.png' (found in 1r.a.18) is an allograph.	comma.png triangle.png	1	1r.a.8
 ⸟		⸟	Punctuation	Punctuation sign for interrogative sentences. The ink is faded, but it seems to look like a tilde with one dot below only (not with two dots, as it normally is in the Beneventan script).	question.png	1	1r.a.23
 :		:	Punctuation	Punctuation sign looking like a modern colon (:)	colon.png	1	1r.b.16
 ł		;	Punctuation	Punctuation sign looking like a modern semicolon (;). It might be just an allograph for the grapheme I'm encoding with ¦ or for the one I'm encoding with ï. It has a bigger vertical size, and a completely different meaning, than the semicolon-like abbreviation mark encoded here with ;	punct_semicolon.png	1	3r.a.16

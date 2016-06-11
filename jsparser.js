@@ -897,7 +897,8 @@ function wordify(word) {
 		else if (n.tagName == 'note') {
 			// <note> inside <w>
 			expandableDiv(
-					cells[0],
+					// cells[0], // Old version, with which I appended notes-to-word to the LL cell row
+					cells[1], // Now notes to word are appended to the AL cell row
 					'note withinword',
 					'note noteToggleLink',
 					'Note to word',
