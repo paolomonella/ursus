@@ -103,6 +103,7 @@ td.ALCell.foreign {
 	/* XML: <w type="foreign">
 	 * HTML DOM: <td class="ALCell foreign"> */
 	/* I'm putting nothing here so far */
+	font-variant: small-caps;
 }
 
 table {
@@ -152,6 +153,30 @@ div.note {
 	margin: 0.5em 0.5em 0em 0.5em;
 	background-color: #F2F5A9;
 }
+
+div.note.tech {
+	background-color: #A9F5E1;
+}
+
+div.note.script {
+	background-color: #F2F5A9;
+}
+div.note.graphic {
+	background-color: #F2F5A9;
+}
+
+div.note.source {
+	background-color: #F5D0A9;
+}
+
+div.note.content {
+	background-color: #F5D0A9;
+}
+
+div.note.emendation {
+	background-color: #F5D0A9;
+}
+
 
 div.note.contentDiv, div.source.contentDiv {
 	width: 15em;

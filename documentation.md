@@ -700,30 +700,25 @@ Markup not referring to a specific layer
 				- "chars" (the latter value is recommended by TEI P5; see
         				<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.dimensions.html>)
 
-3. `<damage>`
-	- Mostly used to mark faded ink, with `@agent="faded"`.
-
-4. `<add>`
+3. `<add>`
 	- the code `<add place="above">...</add>` is put
 		- either at the point
 			of the text where the interlinear addition starts (i.e.: in the XML
 			code, it comes right before the text above which it appears in the manuscript)
 		- or at the point of the text in which a metamark glyph in the manuscript line points to the interlinear addition
 			(e.g. in folio 9r, column a, line 35)
+		- or, if the addition is meant to supply one or more missing word, in the point of the text where the supplied words logically belong.
+
 	- it can be either
         - parent of one or more `<w>` and/or `<pc>`elements (in most cases), if one ore more full words were added above the line
-        - or parent of `<unclear>`, which in its turn is parent of `<w>` or `<pc>`, if one ore more unclear full words were added above the line
         - or child of `<w>` and parent of plain text (in few cases), if individual graphemes (not full words) were added above the line.
-            In these cases, an attribute `@type="graphemes"` is added, as in
-
-            `<w n="quadragessis" xml:id="w11310">quadrage<add place="above" type="graphemes">s</add>sis</w>`
 
 	- possible values of attribute `@place` are:
 		- "above" for interlinear additions (above the line)
 		- "below" for intelinear additions (below the line)
 		- "footnote" for an addition at the bottom of the column, connected with the text with a metamark
 		
-5. `<note>`
+4. `<note>`
 	- It has a @type attribute that can have the following values:
 		- "tech" (on technological issues of this digital edition).
 		- "script" (notes on palaeographical aspects or on illegible or hardly readable passages);

@@ -129,10 +129,14 @@
 //
 // <div class="note withinWord"> shows a note by the editor. It occurs inside a XML/TEI <w> element
 // 	and refers to that word.
-// 	It is a child of <td class="LLCell"> because it is displayed
-// 	in the LL row/cell but does not have class="LL", since it does not belong to the medieval text.
+// 	It is a child of <td class="ALCell"> because it is displayed
+// 	in the AL row/cell but does not have class="AL", since it does not belong to the medieval text.
+// 	The type of the note (value of @type of XML element <note>) is also displayed in the HTML @class:
+//	<div class="note withinWord tech">. Substitutes for "tech" may be: "script", "graphic", "source",
+//	"content", "emendation".
 // <div class="note outsideWord">: same as above, but the note occurs outside of a <w> element.
-// 	It is not a child of <td class="LLCell">, but of the  HTML <div id="MSText">
+// 	Like "note withinWord", this is also not a child of <td class="ALCell">, but of the  HTML <div id="MSText">.
+// 	Specific values for @class include <div class="note outsideWord tech"> (or "script", "graphic", etc.).
 // <div class="note withinWord containerDiv"> or
 // <div class="note outsideWord containerDiv">
 // 	mark the div that includes the "show/hide note" link and the content of the note
@@ -734,9 +738,9 @@ function computeWordLikeElements(refElement) {
 			// <note> outside of <w>
 			expandableDiv(
 					document.getElementById('MSText'),
-					'note outsideWord',
+					'note outsideWord '+e.attributes.getNamedItem('type').nodeValue,
 					'note noteToggleLink',
-					'Note to section',
+					'Note to section (' + e.attributes.getNamedItem('type').nodeValue + ')',
 					e.childNodes[0].nodeValue.trim()
 					);
 		}
@@ -900,9 +904,9 @@ function wordify(word) {
 			expandableDiv(
 					// cells[0], // Old version, with which I appended notes-to-word to the LL cell row
 					cells[1], // Now notes to word are appended to the AL cell row
-					'note withinword',
+					'note withinword '+n.attributes.getNamedItem('type').nodeValue,
 					'note noteToggleLink',
-					'Note to word',
+					'Note to word (' + n.attributes.getNamedItem('type').nodeValue + ')',
 					n.childNodes[0].nodeValue.trim()
 					);
 		}
