@@ -424,8 +424,8 @@ function importTableOfSigns(csvFile) {
 	// 		(as of 06.01.2015, I'm not using element 2)
 	var xmlhttp;
 	xmlhttp=new XMLHttpRequest();
-	//xmlhttp.open('GET', csvFile, false);
-	xmlhttp.open('GET', csvFile, true);
+	xmlhttp.open('GET', csvFile, false);
+	//xmlhttp.open('GET', csvFile, true); // With 'true' I don't get Firefox's warning, but the CSV file is not parsed
 	xmlhttp.send();
 	var ToSLines = xmlhttp.responseText.split('\n');
 	var ToS   	= [];
@@ -466,7 +466,9 @@ function alph(myString) {
 		// 	character representing the grapheme in the XML/TEI file
 		// gtos[ialph][1] (value of second column of GToS.csv):
 		// 	character representing the alphabeme
-		if (gtos[ialph][0] != '' && gtos[ialph][1] != '') {
+		//if (gtos[ialph][0] != '' && gtos[ialph][1] != '') { // The next line should be more efficient
+		if ( gtos[ialph][0] != '' && gtos[ialph][1] != '' && gtos[ialph][0] != gtos[ialph][1] ) {
+			//alert(gtos[ialph][0] + "→" + gtos[ialph][1]);
 			myString = myString.replace(gtos[ialph][0], gtos[ialph][1]);
 		}
 	}
@@ -724,7 +726,6 @@ function computeWordLikeElements(refElement) {
 					// <gap> within <add> or <unclear>
 					gapify();
 				}
-				//§§§
 			//document.getElementById('MSText').appendChild(auSpan);
 			}
 		} // End of 'add'/'unclear'
@@ -941,6 +942,7 @@ function wordify(word) {
 					// Sometimes <abbr> includes a <hi>
 					if (abbr.childNodes[z].tagName == 'hi') {
 						var hiText = abbr.childNodes[z].childNodes[0].nodeValue.trim();
+						var hiText = graph(hiText); // This will make '¢' show as ̲q etc.
 						// The content of CLBaseGraphemesContent is a
 						// <span class="GL larger"> element
 						var GLBaseGraphemesContent =
@@ -949,6 +951,7 @@ function wordify(word) {
 					else {
 						GLBaseGraphemes = ''
 						GLBaseGraphemes = abbr.childNodes[z].nodeValue.trim();	
+						GLBaseGraphemes = graph(GLBaseGraphemes); // This will make '¢' show as ̲q etc.
 
 						// The content of the 'base graphemes' is a text node.
 						// Create text node
@@ -965,13 +968,17 @@ function wordify(word) {
 				
 				// GL: The abbreviation mark
 				else {
+					// The textual content of <span class="GL am">:
 					var GLAbbrMark = abbr.childNodes[z].childNodes[0].nodeValue.trim();
+					// I'm using function graph() to show the content of column
+					// "Grapheme visualization" of the GToS:
+					var GLAbbrMark = graph(GLAbbrMark);
 					//Create text node
  					var GLAbbrMarkText  = document.createTextNode(GLAbbrMark); 
 					var GLAbbrMarkSpan = document.createElement('span');
-					// The values of @class for the Abbr. Mark <span> in HTML
-					// are "GL am" and the value of @type in XML/TEI,
-					// so "GL am superscription", "GL am after", "GL am brevigraph"
+					// The values of @class for the Abbreviation Mark <span> in HTML
+					// are "GL am" plus the value of @type in XML/TEI, i.e.:
+					// "GL am superscription", "GL am after", "GL am brevigraph"
 					// or "GL am omission"
 					GLAbbrMarkSpan.setAttribute('class', 'GL am '+
 							abbr.attributes.getNamedItem('type').nodeValue);
@@ -1006,6 +1013,7 @@ function wordify(word) {
 			cells[1].setAttribute('title', LLString); // The 'title' will make lemma/morph/spelling appear on hover
 			// GL
 			var GLTextString = n.nodeValue.trim();
+			var GLTextString = graph(GLTextString); // This will make 'æ' show as ̹e etc.
 			cells[2].appendChild(classySpanWithLayers(GLTextString, 'notAbbreviated')[2]);
 		}
 	} 	// End of inner 'for' (<w>'s children)
@@ -1052,6 +1060,7 @@ function punctify(pchar) {
 		if (pchar.childNodes[0]) {
 			// If <pc> has text content (i.e. there is punctuation in the manuscript here)
 			var GLPunctString = graph(pchar.childNodes[0].nodeValue);
+			//alert(graph(pchar.childNodes[0].nodeValue));
 			var GLPunctClass = 'punct';
 		}
 		else {
@@ -1134,7 +1143,6 @@ function readXML() {
 	// Manage the (one) initial <head> in the file
 	var MSHead = xmlDoc.getElementsByTagName('head')[0];
 	for (var zy = 0; zy < MSHead.childNodes.length; zy++) { // If <head> includes <w>
-		//§§
 		if (MSHead.childNodes[zy].tagName == 'w') {
 			var headSpan = document.createElement('span');
 			headSpan.setAttribute('class', 'head');

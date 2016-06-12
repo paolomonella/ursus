@@ -194,10 +194,14 @@ span.GL.base.superscription {
 
 span.GL.am.superscription {
 	color: red;
+	/*
 	font-size:xx-small; vertical-align:top;
+	*/
 	/* The next two lines are for cross-browser compatibility */
+	/*
 	vertical-align: super;
 	font-size: .75em;
+	*/
 }
 
 span.GL.after {

@@ -4,7 +4,7 @@ b	b	b	Alphabetic			1
 c	c	c	Alphabetic			1	
 d	d	d	Alphabetic			1	
 e	e	e	Alphabetic			1	
-æ	ae	æ	Alphabetic	An 'e' grapheme with a tail on the bottom left or left side. It is often (but not always) used to represent an alphabeme 'e' in lieu of which in classical and modern Latin orthography we would have the diphthong 'ae'. When it is not represented by the 'æ' grapheme, it is represeented by a simple 'e' grapheme.			
+æ	ae	e̹	Alphabetic	An 'e' grapheme with a tail on the bottom left or left side. It is often (but not always) used to represent an alphabeme 'e' in lieu of which in classical and modern Latin orthography we would have the diphthong 'ae'. When it is not represented by the 'æ' grapheme, it is represeented by a simple 'e' grapheme.			
 f	f	f	Alphabetic			1	
 g	g	g	Alphabetic			1	1r.a.7
 h	h	h	Alphabetic			1	
@@ -32,13 +32,13 @@ _		 	Space	Space to separate words (sgn - TBA: I'm currently not using this)		1
 ł		;	Punctuation	Punctuation sign looking like a modern semicolon (;). It might be just an allograph for the grapheme I'm encoding with ¦ or for the one I'm encoding with ï. It has a bigger vertical size, and a completely different meaning, than the semicolon-like abbreviation mark encoded here with ;	punct_semicolon.png	1	3r.a.16
 ï	 	,̈	Punctuation	It looks like the sign encoded as “|”, but in addition it has two dots (like a diaeresis) above	commadiaeresis.png	1	2r.a.5
 ¦		;̇	Punctuation	This punctuation sign is composed by a comma with two dots above it, in a vertical row. It is used starting from folio 2v, column a, line 35 and seems to be due to the second hand, that writes in black ink.	vertical.png	1	2v.a.35
-8		8	Abbreviation mark	Written over another grapheme, mostly for a missing 'm'	8.png	1	1r.a.18
-2		⸊	Abbreviation mark	Written over another grapheme, mostly for a missing 's' or 'm'. In 1r its shape resambles a '2' (see 2a.png), then, starting from 1v, it takes a less curved allograph (2b.png). Another option for visualization could be ≀	2a.png 2b.png	1	1r.a.7
-7		7	Abbreviation mark	Written over another grapheme, mostly for a missing m'	7.png	1	1r.a.18
-¯		¯	Abbreviation mark	Macron/tilde over one or more graphemes (over one 'n' means 'non')	macron.png	1	1r.a.10
+8		̑	Abbreviation mark	Written over another grapheme, mostly for a missing 'm'. Another option for visualization could be 🎗	8.png	1	1r.a.18
+2		̾	Abbreviation mark	Written over another grapheme, mostly for a missing 's' or 'm'. In 1r its shape resambles a '2' (see 2a.png), then, starting from 1v, it takes a less curved allograph (2b.png). Other options for visualization could be ≀ or ⸊	2a.png 2b.png	1	1r.a.7
+7		̚	Abbreviation mark	Written over another grapheme, mostly for a missing m'	7.png	1	1r.a.18
+¯		̄	Abbreviation mark	Macron/tilde over one or more graphemes (over one 'n' means 'non')	macron.png	1	1r.a.10
 ;		;	Abbreviation mark	It looks like a modern semicolon (;), written on the right of a final letter (mostly 'q;' for 'que' and 'b;' for 'bus'). It has a smaller vertical size, and a completely different meaning, than the semicolon-like punctuation mark encoded here with ł	abbr_semicolon.png	1	1r.a.10
-ų	u	˘	Abbreviation mark	A small 'u' written over a 'q'. The 'q-with-ų-above' abbreviation means 'qu' (I might just use the regular 'u': TBA)	usuperscript.png	1	1v.a.2
-þ	per	þ	Brevigraph	'p' with a horizontal stroke crossing the descending trait	per.png	1	2r.b.8
-ŋ	pro	ŋ	Brevigraph	'p' mostly written with a tail continuing from the round trait of the 'p' on the bottom left side (but also with a separate asterisk or another mark on the same side)	pro1.png pro2.png pro3.png	1	1r.a.13
-¢	qui	¢	Brevigraph	'q' with a horizontal stroke crossing the descending trait	qui.png	1	1r.a.16
+ų	u	̆	Abbreviation mark	A small 'u' written over a 'q'. The 'q-with-ų-above' abbreviation means 'qu' (I might just use the regular 'u': TBA)	usuperscript.png	1	1v.a.2
+þ	per	p̠	Brevigraph	'p' with a horizontal stroke crossing the descending trait	per.png	1	2r.b.8
+ŋ	pro	p̧	Brevigraph	'p' mostly written with a tail continuing from the round trait of the 'p' on the bottom left side (but also with a separate asterisk or another mark on the same side)	pro1.png pro2.png pro3.png	1	1r.a.13
+¢	qui	q̠	Brevigraph	'q' with a horizontal stroke crossing the descending trait	qui.png	1	1r.a.16
 ÷	est	÷	Logograph	A dash or tilde with one dot above and a comma below, meaning 'est'.	est.png	1	2v.a.18
