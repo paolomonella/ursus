@@ -925,7 +925,7 @@ function wordify(word) {
 			// 	conventions consider it one word. Example:
 			// 	  Contemporary convention: unicuique
 			// 	  Scribe's     convention: uni cuique
-			cells[1].appendChild(classySpanWithLayers(space, 'space')[1]); // Put it in the AL cell
+			//cells[1].appendChild(classySpanWithLayers(space, 'space')[1]); // Put it in the AL cell
 			cells[2].appendChild(classySpanWithLayers(space, 'space')[2]); // Put it in the GL cell
 		}
 
