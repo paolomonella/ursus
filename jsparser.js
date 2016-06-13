@@ -682,7 +682,7 @@ function computeWordLikeElements(refElement) {
 		else if (e.tagName == 'gap') {
 			// <gap> outside of <w>
 			var myCells = makeTable(document.getElementById('MSText'), 'gapTable');
-			gapify();
+			gapify(e);
 		}
 
 		else if (e.tagName == 'add' || e.tagName == 'unclear') {
@@ -728,7 +728,7 @@ function computeWordLikeElements(refElement) {
 				}
 				else if (e.childNodes[zy].tagName == 'gap') {
 					// <gap> within <add> or <unclear>
-					gapify();
+					gapify(e.childNodes[zy]);
 				}
 			//document.getElementById('MSText').appendChild(auSpan);
 			}
@@ -861,7 +861,7 @@ function wordify(word) {
 
 		else if (n.tagName == 'gap') {
 			// <gap> within <w>
-			gapify();
+			gapify(n);
 		}
 
 		else if (n.tagName == 'unclear' || n.tagName == 'add') {
@@ -1096,10 +1096,16 @@ function punctify(pchar) {
 }
 
 
-function gapify() {
+function gapify(gapElement) {
 	var gapTextString = '[…]';
+	var gapQuantity = gapElement.attributes.getNamedItem('quantity').nodeValue;
+	var gapReason = gapElement.attributes.getNamedItem('reason').nodeValue;
+	var gapUnit = gapElement.attributes.getNamedItem('unit').nodeValue;
+	var gapExplanationString = gapQuantity + ' ' + gapUnit + ' missing (reason: ' + gapReason + ')';
 	cells[1].appendChild(classySpanWithLayers(gapTextString, 'gap')[1]); //In the AL cell
+	cells[1].setAttribute('title', gapExplanationString); // The 'title' will appear on hover
 	cells[2].appendChild(classySpanWithLayers(gapTextString, 'gap')[2]); //In the GL cell
+	cells[2].setAttribute('title', gapExplanationString); // The 'title' will appear on hover
 }
 
 function tagsetify(tagsetAna) {
