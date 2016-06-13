@@ -99,10 +99,9 @@ td.ALCell.nonsense {
 	font-style: italic;
 }
 
-td.ALCell.foreign {
+td.ALCell.foreign, td.ALCell.ancientAbbreviation, td.ALCell.numeral {
 	/* XML: <w type="foreign">
 	 * HTML DOM: <td class="ALCell foreign"> */
-	/* I'm putting nothing here so far */
 	font-variant: small-caps;
 }
 
