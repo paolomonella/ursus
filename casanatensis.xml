@@ -2057,7 +2057,6 @@ tur</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<note type="tech">From this point on, I started reviewing my own transcription starting from the transcription, checking the manuscript images only when something in my transcription looks suspicious.</note>
 	<pc n="space"> </pc>
 <w n="stoicos" xml:id="w1287">stoicos</w>
 <lb n="1r.b.22" />
@@ -4869,9 +4868,13 @@ d</w>
 	<pc n="space"> </pc>
 <w n="efficit" xml:id="w3825">efficit</w>
 	<pc n=".">|</pc>
-<w n="nomen" xml:id="w3828"><hi rend="larger">n</hi>omen</w>
+<unclear cert="low" reason="faded">
+<w n="nota" xml:id="w3828"><hi rend="larger">n</hi>ota</w>
+</unclear>
 	<pc n="space"> </pc>
+<unclear cert="medium" reason="faded">
 <w n="una" xml:id="w3831">una</w>
+</unclear>
 <lb n="2r.a.7" />
 <w n="littera" xml:id="w3834">littera</w>
 	<pc n="space"> </pc>
@@ -4879,7 +4882,7 @@ d</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w3840">ut</w>
 <w n="L" type="ancientAbbreviation" xml:id="w3843">l</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="per" xml:id="w3846">
 	<choice>
@@ -5195,6 +5198,7 @@ priam</w>
 		<expan>que</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="species" xml:id="w4134">species</w>
 	<pc n=",">·</pc>
