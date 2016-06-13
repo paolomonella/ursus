@@ -39,6 +39,7 @@
 <change type="agenda">Potrei codificare le correzioni/riscritture dello stesso scriba.</change>
 <change type="agenda">Problema di visualizzazione: quando inserisco un segno di punteggiatura a livello AL/LL non corrispondente ad alcun segno sul manoscritto, nel browser comunque spunta nella riga GL uno spazio. Potrei usare [pc n="."] [/pc] (cioè uno spazio al GL che 'significa' un punto al LL).</change>
 <change type="agenda">Vd. se c'è veramente differenza tra punto al mezzo e punto in basso o se sono allografi. E vd. se ci sono allografi anche tra gli altri segni di punteggiatura.</change>
+<change type="agenda">Adopt prefixDef: vd. the discussion in the TEI-L with subject "cRef usage".</change>
     </revisionDesc>
   </teiHeader>
 
@@ -4644,8 +4645,8 @@ priæ</w>
 <w n="est" xml:id="w3558">est</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w3561">et</w>
-<w n="appellatiuae" xml:id="w3564">appellatiue</w>0
-<pc n="."></pc>
+<w n="appellatiuae" xml:id="w3564">appellatiue</w>
+<pc n="." />
 	<pc n="space"> </pc>
 <w n="propriae" xml:id="w3567">
 	<choice>
@@ -4667,8 +4668,8 @@ prie</w>
 	<pc n="space"> </pc>
 <w n="flumen" xml:id="w3588">flumen</w>
 	<pc n="space"> </pc>
-<w n="mons" xml:id="w3591">mons</w>0
-<pc n="."></pc>
+<w n="mons" xml:id="w3591">mons</w>
+<pc n="." />
 <lb n="1v.b.36" />
 <w n="corpus" xml:id="w3594"><hi rend="larger">c</hi>orpus</w>
 	<pc n="space"> </pc>
@@ -4831,7 +4832,6 @@ d</w>
 
 <ab n="Abbreviations for Latin praenomina" xml:id="ab10">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.57.3-2.57.3" type="source">
-<note type="tech">Reviewed until here</note>
 <w n="nomen" xml:id="w3789"><hi rend="larger">n</hi>omen</w>
 	<pc n="space"> </pc>
 <w n="dictum" xml:id="w3792">dict
@@ -5198,7 +5198,7 @@ priam</w>
 		<expan>que</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="species" xml:id="w4134">species</w>
 	<pc n=",">·</pc>
@@ -5362,18 +5362,28 @@ bus</w>
 <w n="et" xml:id="w4275">et</w>
 <w n="unius" xml:id="w4278">unius</w>
 	<pc n="space"> </pc>
+<unclear cert="high" reason="faded">
 <w n="tantum" xml:id="w4281">tant
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
 </w>
+</unclear>
 <lb n="2r.a.23" />
-<gap quantity="2" reason="illegible" unit="words" />
-<w n="tantum" xml:id="w4284">tant
+<unclear cert="low" reason="faded">
+<w n="priuatam" xml:id="w4283">priuat
 	<choice>
-		<abbr type="superscription">u<am>2</am></abbr>
-		<expan>um</expan>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+</unclear>
+	<pc n="space"> </pc>
+<w n="substantiam" xml:id="w4284">substanti
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
 	</choice>
 </w>
 	<pc n="space"> </pc>
@@ -5386,7 +5396,7 @@ bus</w>
 <w n="in" xml:id="w4299">in</w>
 <w n="rebus" xml:id="w4302">rebus</w>
 <lb n="2r.a.24" />
-<unclear cert="medium" reason="faded">
+<unclear cert="low" reason="faded">
 <w n="et" xml:id="w4305">et</w>
 </unclear>
 <w n="indiuiduis" xml:id="w4308">indiuiduis</w>
@@ -5397,8 +5407,8 @@ bus</w>
 	<pc n="space"> </pc>
 <w n="philosophi" xml:id="w4317">philosophi</w>
 	<pc n="space"> </pc>
-<w n="atomas" xml:id="w4320">athomas
-<note type="tech">I am not sure whether the lemmatizer will be able to parse this word.</note>
+<w n="ἄτομας" xml:id="w4320">athomas
+<note type="emendation">In his edition of Priscian, Ars grammatica K.2.58.26, the source of this passage, Keil corrects the reading "atoma" of all manuscripts to "atomos", which does agree with the previous "quas" because Latin substantive "atomus (or atomos), - i" (like Greek "ἡ ἄτομος") is feminine. Keil's apparatus says that Priscian's manuscripts BGKL have "quae... atoma" (neuter). For the other manuscripts with "atoma", i.e. for P and H, Keil's apparatus does not mention any variant to "quas", so I am assuming that P and H have "quas... atoma". As far as Ursus is concerned, however, he often uses Greek words (in Latin transliteration) for grammatical concepts. Compare Morelli 1911, 290 on this: "Ursus aggiunge anche, dicemmo, qualcosa di suo: che non è però molto notevole. Una certa conoscenza della lingua greca, diffusa nella regione cassinese e beneventana specialmente per merito di Paolo Diacono, non gli doveva mancare; egli ne fa simpatica ostentazione, non mancando mai di aggiungere alle denominazioni grammaticali latine le corrispondenti denominazioni greche, e diffondendosi a parlare delle relazioni fra declinazione latina e declinazione greca". So I believe that the scribe here means to write the Greek version of the word (though, as usual, in Latin transliteration), and therefore he uses the Greek "-ας" ending. I encoded the word as such at the Linguistic Layer. If this is the case, the only scribal error is in the spelling ("th" for "t": a very easily explainable error).</note>
 </w>
 	<pc n="space"> </pc>
 <w n="uocant" xml:id="w4323">uocant</w>
@@ -5447,7 +5457,7 @@ prio</w>
 	<pc n="space"> </pc>
 <w n="nomine" xml:id="w4371">nomine</w>
 	<pc n="space"> </pc>
-<w n="nuncupentur" xml:id="w4374">nuncupentur</w>
+<w n="nuncupentur" xml:id="w4374">nuncupe<add place="above">n</add>tur</w>
 	<pc n=",">.</pc>
 <w n="sola" xml:id="w4377">sola</w>
 <lb n="2r.a.27" />
@@ -5600,7 +5610,7 @@ priæ</w>
 <w n="accipiatur" xml:id="w4497">accipiatur</w>
 	<pc n="space"> </pc>
 <w n="appellatiua" xml:id="w4500">appellatiua</w>
-	<pc n=".">.</pc>
+	<pc n="0">.</pc>
 <w n="in" xml:id="w4503">in</w>
 <w n="quibusdam" xml:id="w4506">
 	<choice>
@@ -5686,7 +5696,7 @@ pria</w>
 <ref cRef="urn:cts:latinLit:stoa0259.stoa001:4.407.1-4.407.6 urn:cts:latinLit:stoa0258a.stoa001:4.490.15-4.490.19" type="source">
 <w n="propria" xml:id="w4575">
 	<choice>
-		<abbr type="brevigraph">ŋ</abbr>
+		<abbr type="brevigraph"><hi rend="larger">ŋ</hi></abbr>
 		<expan>pro</expan>
 	</choice>
 pria</w>
@@ -5849,13 +5859,24 @@ a</w>
 </ab>
 
 <ab n="People names" xml:id="ab14">
-<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.57.12-2.58.13 urn:cts:latinLit:stoa0110.stoa001:4.373.8-4.373.10" type="source">
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.57.12-2.58.13 urn:cts:latinLit:stoa0110.stoa001:4.373.8-4.373.11" type="source">
 
 <cb n="2r.b" />
 
 <lb n="2r.b.1" />
-<gap quantity="3" reason="illegible" unit="words" />
-<w n="secundum" xml:id="w4698">secund
+<unclear cert="medium" reason="faded">
+<w n="propria" xml:id="w4696"><hi rend="larger">p</hi>ropria</w>
+</unclear>
+	<pc n="space"> </pc>
+<unclear cert="medium" reason="faded">
+<w n="qualitas" xml:id="w4697">qualitas</w>
+</unclear>
+	<pc n="space"> </pc>
+<unclear cert="medium" reason="faded">
+<w n="separatim" xml:id="w4698">separatim</w>
+</unclear>
+	<pc n="space"> </pc>
+<w n="secundum" xml:id="w4699">secund
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
@@ -5868,7 +5889,11 @@ a</w>
 <w n="duas" xml:id="w4704">duas</w>
 	<pc n="space"> </pc>
 </unclear>
+<unclear cert="low" reason="faded">
+<w n="species" xml:id="w4705">species</w>
+</unclear>
 <gap quantity="1" reason="illegible" unit="words" />
+<pc n="," />
 <lb n="2r.b.2" />
 <w n="cognomen" xml:id="w4707">cognomen</w>
 	<pc n="space"> </pc>
@@ -5884,7 +5909,7 @@ a</w>
 <w n="Latinos" xml:id="w4719">latinos</w>
 	<pc n="space"> </pc>
 <w n="quattuor" xml:id="w4722">quattuor</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
 <w n="praenomen" xml:id="w4725">
@@ -5893,14 +5918,15 @@ a</w>
 		<expan>pre</expan>
 	</choice>
 nomen</w>
+<pc n="," />
 	<pc n="space"> </pc>
 </unclear>
 <lb n="2r.b.3" />
 <w n="nomen" xml:id="w4728">nomen</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="cognomen" xml:id="w4731">cognomen</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="agnomen" xml:id="w4734">agnomen</w>
 	<pc n=".">ï</pc>
@@ -5964,7 +5990,7 @@ s</w>
 	</choice>
 nominatio</w>
 	<pc n="space"> </pc>
-<w n="et" xml:id="w4779">et</w>
+<w n="ei" xml:id="w4779">ei</w>
 <w n="datur" xml:id="w4782">datur</w>
 	<pc n=",">·</pc>
 <w n="sed" xml:id="w4785">sed</w>
@@ -5979,8 +6005,8 @@ quam</w>
 <w n="seruo" xml:id="w4791">seruo</w>
 	<pc n="space"> </pc>
 <w n="aut" xml:id="w4794">aut</w>
-<w n="ignobili" xml:id="w4797">ignouili<note type="content">This might be an error of the scribe for 'ignobili'.</note></w>
-	<pc n="space"> </pc>
+<w n="ignobili" xml:id="w4797">ignouili
+<note type="emendation">Scribal error: "ignouili" for "ignobili".</note></w>
 	<pc n=",">·</pc>
 <lb n="2r.b.6" />
 <w n="quia" xml:id="w4800">quia</w>
@@ -6032,7 +6058,9 @@ quam</w>
 	<pc n=",">·</pc>
 <w n="Publius" xml:id="w4860">pu
 <lb n="2r.b.8" />
-	plius</w>
+	plius
+<note type="emendation">The classical spelling of this name is "Publius", and Keil publishes it as such, though he mentions in his apparatus note to Priscianus, Ars grammatica K.2.57.19 that Priscian's manuscripts GLK have "puplius" too. So I am unsure whether I should really emend the "Puplius" spelling to classical "Publius" (as I am doing in the encoding of the Linguistic Layer) or not, here and elsewhere in the manuscript text.</note>
+</w>
 	<pc n="space"> </pc>
 <w n="eo" xml:id="w4863">eo</w>
 	<pc n="space"> </pc>
@@ -6049,7 +6077,7 @@ quam</w>
 <w n="dignus" xml:id="w4872">dignus</w>
 	<pc n="space"> </pc>
 </unclear>
-<w n="fit" xml:id="w4875">fit</w>
+<w n="sit" xml:id="w4875">sit</w>
 	<pc n=".">ï</pc>
 <w n="per" xml:id="w4878">
 	<choice>
@@ -6096,7 +6124,7 @@ a</w>
 <w n="ternis" xml:id="w4908">ternis</w>
 	<pc n="space"> </pc>
 <w n="multo" xml:id="w4911">multo</w>
-<gap quantity="1" reason="illegible" unit="words" />
+<gap quantity="4" reason="illegible" unit="chars" />
 <w n="et" xml:id="w4914">et</w>
 <w n="quaternis" xml:id="w4917">qua
 <lb n="2r.b.10" />
@@ -6213,7 +6241,8 @@ nomen</w>
 <w n="consonante" xml:id="w5025">consonante</w>
 <lb n="2r.b.14" />
 <w n="ut" xml:id="w5028">ut</w>
-<w n="Publius" xml:id="w5031">puplius</w>
+<w n="Publius" xml:id="w5031">puplius
+</w>
 	<pc n=".">ï</pc>
 <w n="tum" xml:id="w5034"><hi rend="larger">t</hi>um</w>
 	<pc n="space"> </pc>
@@ -6369,7 +6398,7 @@ tibus</w>
 </w>
 <pc n="quote">·</pc>
 	<pc n="space"> </pc>
-<w n="m" type="alphabemes" xml:id="w5166">m</w>
+<w n="m" type="ancientAbbreviation" xml:id="w5166">m</w>
 <pc n="quote">·</pc>
 	<pc n="space"> </pc>
 <w n="scribitur" xml:id="w5169">scribitur</w>
@@ -6394,21 +6423,34 @@ pter</w>
 		<expan>am</expan>
 	</choice>
 </w>
-
 <lb n="2r.b.19" />
+<unclear cert="high	" reason="faded">
+<w n="nullus" xml:id="w5179">nullus</w>
+</unclear>
 	<pc n="space"> </pc>
-<gap quantity="3" reason="illegible" unit="words" />
+<unclear cert="high" reason="faded">
+<w n="in" xml:id="w5180">in</w>
+</unclear>
+<unclear cert="high" reason="faded">
+<w n="eo" xml:id="w5181">eo</w>
+</unclear>
+	<pc n="space"> </pc>
+<unclear cert="low" reason="faded">
+<w n="error" xml:id="w5182">error</w>
+</unclear>
+	<pc n="space"> </pc>
+<w n="fit" xml:id="w5183">fit</w>
 <pc n=".">ï</pc>
+<w n="praenomina" xml:id="w5184"><hi rend="larger">p</hi>rænomina</w>
 	<pc n="space"> </pc>
-<w n="praenomina" xml:id="w5181"><hi rend="larger">p</hi>rænomina</w>
-	<pc n="space"> </pc>
-<w n="ab" xml:id="w5184">ab</w>
+<w n="ab" xml:id="w5185">ab</w>
 <w n="eodem" xml:id="w5187">eodem</w>
 	<pc n="space"> </pc>
 <w n="tempore" xml:id="w5190">tempore</w>
 	<pc n="space"> </pc>
 <w n="sumpserunt" xml:id="w5193">sumpserunt</w>
 <lb n="2r.b.20" />
+<note type="tech">Reviewed until here</note>
 <w n="initium" xml:id="w5196">initi
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -7367,7 +7409,7 @@ cies</w>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w6039">ut</w>
-<w n="Puplius" xml:id="w6042">pu
+<w n="Publius" xml:id="w6042">pu
 <lb n="2v.a.11" />
 plius</w>
 <pc n="quote">·</pc>
