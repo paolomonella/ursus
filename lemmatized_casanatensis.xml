@@ -55,7 +55,6 @@
 <cb n="1r.a" />
 
 <lb n="1r.a.1" />
-<note type="script">This title (marked as 'head') is in uncial. Another GToS for the uncial script might be necessary. The uncial glyphs are also used in the body of the text, to mark larger initials in new sections of the text.</note>
 <w ana="11C---A2---" lemma="adbreuiatio" n="adbreuiatio" xml:id="w3">adbreuiatio</w>
 	<pc n="space"> </pc>
 <w ana="11C---B2---" lemma="ars" n="artis" xml:id="w6">artis</w>
@@ -77,6 +76,7 @@
 <w ana="2-LM41A2---" lemma="compono" n="composita" xml:id="w27">composita</w>
 	<pc n="space"> </pc>
 
+<note type="script">This title (marked as 'head') is in uncial. Another GToS for the uncial script might be necessary. The uncial glyphs are also used in the body of the text, to mark larger initials in new sections of the text.</note>
 </ref>
 </ab>
 
@@ -6605,19 +6605,29 @@ nomine</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w5307">et</w>
-<w ana="11B---M1---" lemma="plurimos" n="plurimos" xml:id="w5310">plu
+<w ana="11B---M1---" lemma="plurimos" n="plurimos" xml:id="w5309">plu
 <lb n="2r.b.24" />
 rimos</w>
 	<pc n="space"> </pc>
-<gap quantity="1" reason="illegible" unit="words" />
+
+<unclear cert="low" reason="faded">
+<w n="os" type="nonsense" xml:id="w5310">os</w>
+</unclear>
+<gap quantity="5" reason="illegible" unit="chars" />
+<unclear cert="low" reason="faded">
+<w n="nu" type="nonsense" xml:id="w5312">nu</w>
+</unclear>
+	<pc n="space"> </pc>
 <w ana="11C---B2---" lemma="familiae" n="familiae" xml:id="w5313">familiæ</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quod" n="quod" xml:id="w5316">quod</w>
 	<pc n="space"> </pc>
 <w ana="3-JA1--6--1" lemma="indicat" n="indicat" xml:id="w5319">indicat</w>
 	<pc n="space"> </pc>
+<w ana="11C---D3---" lemma="genus" n="genus" xml:id="w5320">genus</w>
+	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w5322">ut</w>
-<w ana="12C---G----" lemma="cornelius" n="Cornelius" xml:id="w5325">cornelius</w>
+<w ana="11F---B1---" lemma="cornelius" n="Cornelius" xml:id="w5325">cornelius</w>
 <pc n=",">.</pc>
 	<pc n="space"> </pc>
 <w ana="2-LD11A1---" lemma="ostendo" n="ostendens" xml:id="w5328">osten
@@ -6626,7 +6636,9 @@ dens</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="primus" n="primus" xml:id="w5331">primus</w>
 	<pc n="space"> </pc>
-<w ana="3-NB5--6---" lemma="sum" n="fuisset" xml:id="w5334">fuisset<note type="script">One ore more words of this sentence are illegible, so the specific syntax of the sentence is unclear. However, I would have expected 'fuisse' here, while I think that a 't' is clearly readable at the end of the word.</note></w>
+<w ana="3-NB5--6---" lemma="sum" n="fuisset" xml:id="w5334">fuisset
+<note type="emendation">One ore more words of this sentence are illegible, so the specific syntax of the sentence is unclear. However, I would have expected 'fuisse' here, while I think that a 't' is clearly readable at the end of the word.</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="11F---A1---" lemma="qui" n="qui" xml:id="w5337">
 	<choice>
@@ -6638,6 +6650,7 @@ dens</w>
 	<pc n="space"> </pc>
 <w ana="3-JK1--6---" lemma="uocaretur" n="uocaretur" xml:id="w5343">uocaretur</w>
 <pc n=",">·</pc>
+<w ana="4-O--------" lemma="ac" n="ac" xml:id="w5344">ac</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="postea" n="postea" xml:id="w5346">postea</w>
 	<pc n="space"> </pc>
@@ -6806,11 +6819,11 @@ priæ</w>
 s</w>
 <lb n="2r.b.30" />
 <w ana="3-LJ1--6---" lemma="cognosco" n="cognoscitur" xml:id="w5466">cognoscitur</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w5469">et</w>
 <w ana="3-JJ1--6---" lemma="appellatur" n="appellatur" xml:id="w5472">appellatur</w>
-<pc n="0">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w5475">ut</w>
 <w ana="11B---A1---" lemma="paulus" n="Paulus" xml:id="w5478">paulus</w>
@@ -6891,7 +6904,8 @@ mune</w>
 <w ana="11B---A1---" lemma="magnanimus" n="magnanimus" xml:id="w5553">magnanimus</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="anchisades" n="Anchisades" xml:id="w5556">anchisades</w>
-<pc n="0">·</pc>
+<note type="source">Verg. Aen. 5.407 has "magnanimusque Anchisiades". Note the different spelling: Vergil has "Anchisiades", Ursus "Anchisades". Both spellings occur in the manuscript: "Anchisiades" is found twice, in 4r.b.20 (folio 4r, column b, line 20) and in 4v.a.2. "Anchisades" is found here and in 4v.a.1, so I woul not emend this reading in "Anchisiades".</note>
+<pc n=".">·</pc>
 	<pc n="space"> </pc>
 <w ana="2-NM41A1---" lemma="dictus" n="dictus" xml:id="w5559">dictus</w>
 	<pc n="space"> </pc>
@@ -6923,7 +6937,7 @@ a</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-KA4--6---" lemma="habeo" n="habuit" xml:id="w5589">habuit</w>
-<pc n=".">ï</pc>
+<pc n=",">ï</pc>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="aut" n="aut" xml:id="w5592"><hi rend="larger">a</hi>ut</w>
 	<pc n="space"> </pc>
@@ -6940,7 +6954,7 @@ a</w>
 <pc n="quote">·</pc>
 	<pc n="space"> </pc>
 <w ana="11B---F1---" lemma="nasus" n="Naso" xml:id="w5613">naso</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w ana="11F---F1---" lemma="is" n="eo" xml:id="w5616">eo</w>
 <w ana="4-O--------" lemma="quod" n="quod" xml:id="w5619">quod</w>
 	<pc n="space"> </pc>
@@ -7012,7 +7026,7 @@ sone</w>
 	</choice>
 </w>
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w5685">sunt</w>
-<w ana="1-G----3--1" lemma="quattruor" n="quattruor" xml:id="w5688">quattruor</w>
+<w ana="1-G----3--1" lemma="quattuor" n="quattuor" xml:id="w5688">quattuor</w>
 <pc n=".">·</pc>
 	<pc n="space"> </pc>
 <w ana="11F---J2---" lemma="iste" n="istae" xml:id="w5691">istæ</w>
@@ -7022,11 +7036,14 @@ sone</w>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
-	prior
+	prio
+	<add place="above">
+	r
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
+	</add>
 </w>
 	<pc n="space"> </pc>
 <w ana="11E---J2---" lemma="species" n="species" xml:id="w5697">species</w>
