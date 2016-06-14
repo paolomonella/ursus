@@ -7027,7 +7027,7 @@ sone</w>
 </w>
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w5685">sunt</w>
 <w ana="1-G----3--1" lemma="quattuor" n="quattuor" xml:id="w5688">quattuor</w>
-<pc n=".">·</pc>
+<pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w ana="11F---J2---" lemma="iste" n="istae" xml:id="w5691">istæ</w>
 	<pc n="space"> </pc>
@@ -7047,6 +7047,7 @@ sone</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="11E---J2---" lemma="species" n="species" xml:id="w5697">species</w>
+<pc n="," />
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w5700">sunt</w>
 <lb n="2r.b.38" />
 <w ana="4-S--------" lemma="in" n="in" xml:id="w5703">in</w>
@@ -7067,46 +7068,47 @@ sone</w>
 <pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="aut" n="aut" xml:id="w5724">aut</w>
-<w ana="11F---A3---" lemma="unus" n="unum" xml:id="w5727">un
-	<choice>
-		<abbr type="superscription">u<am>2</am></abbr>
-		<expan>um</expan>
-	</choice>
-</w>
+<w ana="11F---A2---" lemma="unus" n="una" xml:id="w5727">una</w>
 <pc n=".">ï</pc>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="sine" n="sine" xml:id="w5730">sine</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
-<w ana="11C---F1---" lemma="finis" n="fine" xml:id="w5733">fine</w>
+<w ana="4-S--------" lemma="sine" n="sine" xml:id="w5733">sine</w>
 	<pc n="space"> </pc>
 </unclear>
 <w ana="11F---F2---" lemma="unus" n="una" xml:id="w5736">una</w>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
-<w ana="11F---D1---" lemma="is" n="eum" xml:id="w5739">e
+<w ana="11F---D2--1" lemma="idem" n="eandem" xml:id="w5739">e
 	<choice>
-		<abbr type="superscription">u<am>2</am></abbr>
-		<expan>um</expan>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>an</expan>
 	</choice>
-</w>
-</unclear>
-<unclear cert="low" reason="faded">
-<w ana="11F---A1--1" lemma="idem" n="idem" xml:id="w5742">i
 	<choice>
 		<abbr type="after">d<am>;</am></abbr>
 		<expan>dem</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
 </unclear>
-<pc n=".">·</pc>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
-<w ana="11D---A1---" lemma="eat" n="eat" xml:id="w5745">eat</w>
+<w ana="11F---M3---" lemma="is" n="ea" xml:id="w5745">ea</w>
 </unclear>
-<gap quantity="2" reason="illegible" unit="chars" />
-<w ana="2-JM41A1---" lemma="donatus" n="Donatus" xml:id="w5748">donatus</w>
+<unclear cert="low" reason="faded">
+<w ana="4-O--------" lemma="quam" n="quam" xml:id="w5746">
+	<choice>
+		<abbr type="superscription">q<am>ų</am></abbr>
+		<expan>qu</expan>
+	</choice>
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
+</w>
+</unclear>
+	<pc n="space"> </pc>
+<w ana="11B---A1---" lemma="donatus" n="Donatus" xml:id="w5748">donatus</w>
 	<pc n="space"> </pc>
 
 <pb facs="manuscript_images/C_02v.JPG" n="2v" />
