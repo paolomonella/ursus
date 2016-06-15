@@ -6424,7 +6424,7 @@ pter</w>
 	</choice>
 </w>
 <lb n="2r.b.19" />
-<unclear cert="high " reason="faded">
+<unclear cert="high" reason="faded">
 <w n="nullus" xml:id="w5179">nullus</w>
 </unclear>
 	<pc n="space"> </pc>
@@ -6450,7 +6450,6 @@ pter</w>
 	<pc n="space"> </pc>
 <w n="sumpserunt" xml:id="w5193">sumpserunt</w>
 <lb n="2r.b.20" />
-<note type="tech">Reviewed until here</note>
 <w n="initium" xml:id="w5196">initi
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -7071,13 +7070,13 @@ sone</w>
 <w n="una" xml:id="w5727">una</w>
 <pc n=".">ï</pc>
 	<pc n="space"> </pc>
+<unclear cert="medium" reason="faded">
 <w n="sine" xml:id="w5730">sine</w>
 	<pc n="space"> </pc>
-<unclear cert="medium" reason="faded">
-<w n="sine" xml:id="w5733">sine</w>
-	<pc n="space"> </pc>
 </unclear>
-<w n="una" xml:id="w5736">una</w>
+<unclear cert="medium" reason="faded">
+<w n="una" xml:id="w5733">una</w>
+</unclear>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="eandem" xml:id="w5739">e
@@ -7344,7 +7343,7 @@ men</w>
 <w n="aut" xml:id="w5946">aut</w>
 <w n="a" xml:id="w5949">a</w>
 <w n="uitio" xml:id="w5952">bitio
-<note type="script">The scribe made a u/b spelling mistake here.</note>
+<note type="emendation">Scribal error: "bitio" for "uitio".</note>
 </w>
 	<pc n="space"> </pc>
 <w n="aut" xml:id="w5955">aut</w>
@@ -7396,8 +7395,8 @@ sona</w>
 <w n="accidentiis" xml:id="w5997">accidentiis</w>
 	<pc n="space"> </pc>
 <w n="numerantur" xml:id="w6000">numerantur</w>
-<note type="script">After 'numerantur', there is a light 'c-like' sign that I am interpreting as an allograph of the middle dot grapheme.</note>
-<pc n=".">·</pc>
+<note type="script">After 'numerantur', there is a light 'c-like' glyph that I am interpreting as an allograph of the middle dot grapheme.</note>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="non" xml:id="w6003">non</w>
 <w n="putentur" xml:id="w6006">putentur</w>
@@ -7484,7 +7483,6 @@ a</w>
 	<pc n="space"> </pc>
 </ref>
 <ref cRef="unknown" type="source">
-<note type="source">Morelli 1910, p. 292 writes that the passage connecting the terms for the four types of proper names to future infinitives has no ancient source.</note>
 <w n="haec" xml:id="w6081"><hi rend="larger">h</hi>æc</w>
 <w n="autem" xml:id="w6084">
 	<choice>
@@ -7501,8 +7499,8 @@ a</w>
 <w n="a" xml:id="w6093">a</w>
 <w n="futuris" xml:id="w6096">futuris</w>
 	<pc n="space"> </pc>
-<w n="infiniti" xml:id="w6099">infiniti
-<note type="content">The scribe made a grammar mistake by writing 'infiniti' for 'infinitis'.</note>
+<w n="infinitis" xml:id="w6099">infiniti
+<note type="emendation">Scribal error: 'infiniti' for 'infinitis'.</note>
 </w>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
@@ -7568,6 +7566,7 @@ tum</w>
 <w n="ire" xml:id="w6147">ire</w>
 	<pc n="space"> </pc>
 <w n="agnomen" xml:id="w6150">agnomen</w>
+<note type="source">Morelli 1910, p. 292 writes that this passage has no source: "haec autem nomina ueniunt a futuris infiniti, mutata tum in men, ut prenotum ire prenomen, notum ire nomen, cognitum ire cognomen, agnitum ire agnomen".</note>
 <pc n=".">.</pc>
 	<pc n="space"> </pc>
 </ref>
@@ -7589,7 +7588,7 @@ niuntur</w>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
-<note type="script">This grapheme looks like a 'p' with both a bottom-left tail (which would make it a 'ŋ' sign, abbreviation for 'pro') and a horizontal dash crossing the descending trait (which would make it a 'þ' sign, abbreviation for 'per'). Probably the same hand first wrote the abbreviation for 'per', than changed his mind and added the bottom-left tail that made it an abbreviation for 'pro'.</note>
+<note type="script">This grapheme looks like a 'p' with both a bottom-left tail (which would make it a 'ŋ' grapheme, abbreviation for 'pro') and a horizontal dash crossing the descending trait (which would make it a 'þ' grapheme, abbreviation for 'per'). Probably the same hand first wrote the abbreviation for 'per', than changed his mind and added the bottom-left tail that made it an abbreviation for 'pro'.</note>
 </w>
 <w n="se" xml:id="w6171">se</w>
 <w n="posita" xml:id="w6174">posita</w>
@@ -7674,7 +7673,7 @@ nomina</w>
 <w n="ab" xml:id="w6258">ab</w>
 <lb n="2v.a.18" />
 <w n="habitu" xml:id="w6261">abitu
-<note type="script">Spelling mistake: omission of the initial 'h', unvoiced at the time of the scribe.</note>
+<note type="emendation">Scribal error: omission of the initial 'h', unvoiced at the time of the scribe.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="faciei" xml:id="w6264">faciei</w>
@@ -7687,6 +7686,7 @@ nomina</w>
 		<expan>est</expan>
 	</choice>
 </w>
+<pc n="." />
 	<pc n="space"> </pc>
 <w n="hoc" xml:id="w6273">hoc</w>
 	<pc n="space"> </pc>
@@ -7874,7 +7874,7 @@ tatem</w>
 <w n="uel" xml:id="w6474">uel</w>
 	<pc n="space"> </pc>
 <w n="minui" xml:id="w6477">minui</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w n="sine" xml:id="w6480">sine</w>
 	<pc n="space"> </pc>
@@ -7934,6 +7934,7 @@ munia</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<note type="emendation">There seems to be no agreement between "propriae" and "communia". Possible corrections might be "propriae (scil. qualitates) communes sunt multorum" or "propria (nomina) communia sunt multorum".</note>
 <pc n=".">.</pc>
 	<pc n="space"> </pc>
 <w n="appellatiua" xml:id="w6522"><hi rend="larger">a</hi>ppellatiua</w>
@@ -8008,7 +8009,10 @@ munia</w>
 <w n="species" xml:id="w6570">species</w>
 <w n="sunt" xml:id="w6573">sunt</w>
 	<pc n="space"> </pc>
-<gap quantity="1" reason="illegible" unit="words" />
+<w n="xxxiiii" type="numeral" xml:id="w6574">xxxiiii
+<note type="source">The source, Priscian, Ars grammatica, K.2.59.9, does not mention the number of the species, but simply writes: "Appellatiuorum multae sunt species".</note>
+</w>
+	<pc n="space"> </pc>
 <pc n=",">·</pc>
 <w n="quarum" xml:id="w6576">quar
 	<choice>
@@ -8055,8 +8059,8 @@ priis</w>
 <w n="siue" xml:id="w6603">siue</w>
 	<pc n="space"> </pc>
 <w n="deriuatiuae" xml:id="w6606">deriuatiuæ</w>
+	<pc n="." />
 	<pc n="space"> </pc>
-	<pc n="," />
 <w n="sunt" xml:id="w6609"><hi rend="larger">s</hi>unt
 <note type="script">This piece of the page was either damaged or (more probably) erased, then the word was written by another hand in black ink. Graphemes 'nt' are written above the line.</note>
 </w>
@@ -8072,7 +8076,7 @@ les</w>
 </add>
 <w n="incorporales" xml:id="w6618">incorporales</w>
 	<pc n="space"> </pc>
-<note type="script">The word 'sunt' and the first three graphemes of 'incorporales' ('inc') are written in black ink, possibly over a correction.</note>
+<note type="script">The word "sunt" and the first three graphemes of "incorporales" ("inc") are written in black ink, possibly over a correction. "Sunt" is written above the line.</note>
 <pc n=",">.</pc>
 	<pc n="space"> </pc>
 <w n="homonyma" xml:id="w6621"><hi rend="larger">o</hi>monima</w>
@@ -8099,6 +8103,7 @@ tiua</w>
 d</w>
 	<pc n="space"> </pc>
 <w n="dicta" xml:id="w6645">dicta</w>
+<pc n="," />
 <w n="quasi" xml:id="w6648">quasi</w>
 	<pc n="space"> </pc>
 <w n="ad" xml:id="w6651">ad</w>
@@ -8122,14 +8127,16 @@ d</w>
 	<pc n="space"> </pc>
 <w n="aequaliter" xml:id="w6666">æqualiter</w>
 <lb n="2v.a.34" />
-<unclear cert="low" reason="faded">
-<w n="ce" type="nonsense" xml:id="w6669">ce</w>
+<unclear cert="medium" reason="faded">
+<w n="se" xml:id="w6669">ce</w>
 </unclear>
 <w n="habentia" xml:id="w6672">habentia</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="gentile" xml:id="w6675"><hi rend="larger">g</hi>entile
-<note type="script">The initial 'g' is written in black ink. It is apparent here that the first hand (writing in brown ink) had written this 'g' with its regular shape and size, and the second hand (writing in black ink) derased the original 'g' and wrote it over the rasura with a larger grapheme in capital form. All word initial graphemes in lines 31-35 are in black ink. Some of them are clearly written over a rasura.</note>
+<note type="script">The initial 'g' is written in black ink. It is apparent here that the first hand (writing in brown ink) had written this 'g' with its regular shape and size, and the second hand (writing in black ink) derased the original 'g' and wrote it over the rasura with a larger grapheme in uncial script. All initial graphemes of words denoting a "species" of appellatiuum nomen in lines 31-35 are in black ink. Some of them are clearly written in rasura.</note>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="patrium" xml:id="w6678">patri
 	<choice>
@@ -8140,10 +8147,13 @@ d</w>
 </w>
 <pc n=",">·</pc>
 <w n="interrogatiua" xml:id="w6681"><hi rend="larger">i</hi>nterrogatiua</w>
+<pc n="," />
 <w n="infinita" xml:id="w6684"><hi rend="larger">i</hi>nfinita</w>
+<pc n="," />
 <w n="relatiua" xml:id="w6687"><hi rend="larger">r</hi>elatiua
 <note type="script">The larger initial grapheme is written in black ink over a rasura (same situation as 'gentile' above).</note>
 </w>
+<pc n="," />
 <lb n="2v.a.35" />
 <w n="demonstratiua" xml:id="w6690"><hi rend="larger">d</hi>emonstratiua</w>
 <w n="et" xml:id="w6693">et</w>
@@ -8174,8 +8184,8 @@ neralis</w>
 <lb n="2v.a.37" />
 calis</w>
 <pc n=",">¦</pc>
-<w n="patronomica" type="nonsense" xml:id="w6729">patronomica
-<note type="script">The source Priscianus Keil 2.60.2 has 'patronymicum'.</note>
+<w n="patronymica" xml:id="w6729">patronomica
+<note type="emendation">I'm encoding the classical spelling "patronymica" at the Linguistic Layer. The source Priscianus, Ars grammatica K.2.60.2 has "patronymicum".</note>
 </w>
 <pc n=",">¦</pc>
 <w n="possessiua" xml:id="w6732">possessiua</w>
@@ -8218,7 +8228,7 @@ hensiua</w>
 
 <lb n="2v.b.1" />
 <w n="uerbalis" xml:id="w6762">uerbialis
-<note type="script">Scribe's spelling mistake: 'uerbialis' for 'uerbalis'.</note>
+<note type="content">The direct source, Priscian, Ars grammatica K.2.60.4 has "uerbalia". See my note on the word with id w31371 for a more detailed discussion on this spelling of the adjective.</note>
 </w>
 <pc n=",">¦</pc>
 <w n="participialis" xml:id="w6765">participialis</w>
@@ -8266,10 +8276,10 @@ uersa</w>
 <w n="qualitatis" xml:id="w6807">qualitatis</w>
 <pc n=",">¦</pc>
 <w n="quantitatis" xml:id="w6810">quantitatis</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 
 
-
+<note type="tech">Reviewed until here.</note>
 <w n="est" xml:id="w6813"><hi rend="dropcap">e</hi>st</w>
 <w n="corporalis" xml:id="w6816">corporalis</w>
 	<pc n="space"> </pc>
