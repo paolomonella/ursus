@@ -8279,7 +8279,6 @@ uersa</w>
 <pc n=".">·</pc>
 
 
-<note type="tech">Reviewed until here.</note>
 <w n="est" xml:id="w6813"><hi rend="dropcap">e</hi>st</w>
 <w n="corporalis" xml:id="w6816">corporalis</w>
 	<pc n="space"> </pc>
@@ -8303,7 +8302,7 @@ uersa</w>
 <w n="tangi" xml:id="w6837">tangi</w>
 	<pc n="space"> </pc>
 <w n="potest" xml:id="w6840">potest</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w6843">ut</w>
 <w n="homo" xml:id="w6846">homo</w>
@@ -8331,7 +8330,7 @@ priis</w>
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w6876">quæ</w>
 	<pc n="space"> </pc>
-<w n="coret" xml:id="w6879">coret</w>
+<w n="caret" xml:id="w6879">caret</w>
 	<pc n="space"> </pc>
 <w n="corpore" xml:id="w6882">corpore</w>
 <lb n="2v.b.6" />
@@ -8355,9 +8354,11 @@ priis</w>
 		<abbr type="brevigraph">÷</abbr>
 		<expan>est</expan>
 	</choice>
+<note type="script">This allograph of the "÷" grapheme (logograph for "est") has a comma-like sign below the horizonta line and a regular dot above that line.</note>
 </w>
 <w n="ut" xml:id="w6918">ut</w>
 <lb n="2v.b.7" />
+<note type="tech">Reviewed until here.</note>
 <w n="uirtus" xml:id="w6921">uirtus</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w6924">et</w>
