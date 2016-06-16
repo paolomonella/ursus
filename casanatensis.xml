@@ -8443,9 +8443,8 @@ lius</w>
 <w n="acies" xml:id="w7008">acies</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w7011">et</w>
-<unclear cert="medium" reason="faded">
 <w n="ferri" xml:id="w7014">ferri</w>
-</unclear>
+<note type="content">For "acies ferri", see Plin., Naturalis Historia, 7.64.5: "acies ferri praestringitur" (from the same work, also see 7.63.3: "ea est caro informis, inanima, ferri ictum et aciem respuens"; 13.142.7: "sentire eum se capi durarique cornus modo et hebetare aciem ferri" 19.11.4: "ferri aciem vincunt"; 27.10.5: "quae cotibus in ferri acie deterenda"; 34.144.3: "nucleusque quidam ferri excoquitur in iis ad indurandam aciem"; 34.145.4: "neque alia genera ferri ex mera acie temperantur"; 34.154.1: "squama quoque ferri in usu est ex acie aut mucronibus".</note>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w7017">et</w>
 <w n="oculorum" xml:id="w7020">oculor
@@ -8547,7 +8546,7 @@ pria</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w7131">ut</w>
 <lb n="2v.b.14" />
-<w n="magnus" xml:id="w7134">magnus</w>
+<w n="Magnus" xml:id="w7134">magnus</w>
 	<pc n="space"> </pc>
 <w n="pompeius" xml:id="w7137">pompeius</w>
 	<pc n="space"> </pc>
@@ -8566,7 +8565,9 @@ pria</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w n="polionima" xml:id="w7155">polionima</w>
+<w n="polyonima" xml:id="w7155">polionima
+<note type="emendation">Scribal error: "polionima" for "polyonima".</note>
+</w>
 <lb n="2v.b.15" />
 <w n="species" xml:id="w7158">species</w>
 	<pc n="space"> </pc>
@@ -8725,7 +8726,7 @@ nificans</w>
 <pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w n="laudem" xml:id="w7329">laudem</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w7332">ut</w>
 <w n="iustus" xml:id="w7335">iustus</w>
@@ -8857,8 +8858,8 @@ parantur</w>
 priis</w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w7467">ut</w>
-<w n="Gradiuus" xml:id="w7470">gradidus
-<note type="script">Both 'd's in the manuscript seem to be due to a correction (by overwriting). The second 'd' was originally a 'b': on the one hand, the '-ibus' ending is very common in Latin; on the other hand, 'b' for 'u' was a common spelling error due to the contemprorary pronunciation of Latin. I cannot read what was originally written over the current first 'd'.</note>
+<w n="Gradiuus" xml:id="w7470">gradibus
+<note type="emendation">In the fourth position two graphemes (a "u" and a "d") are overwritten one above the other. In the sixth position, also two graphemes are overwritten (a "b" and a "d"). Obviously a second hand corrected the original graphemes of the first hand in these positions. I think that the source that the author was drawing from had "gradiuus" (the common epithet for Mars), which is the reading that I am restoring at the Linguistic Layer. One hypothesis is that the first hand wrote "grauidus" and the second corrected to "gradibus", which is in its turn a misspelling for "gradiuus" (with the very common scribal error "b for u", due to the scribe's pronunciation of "b"). A second hypothesis is the the first hand wrote "gradibus" and the second hand, not understand that it was a misspelled form of "gradiuus", mistakingly corrected it to the common adjective "grauidus".</note>
 </w>
 <w n="Mars" xml:id="w7473">mars</w>
 <pc n=",">·</pc>
@@ -8946,7 +8947,7 @@ iunctione</w>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note type="script">Strangely enough, 'em' here is abbreviated with 'æ' and the '2' abbreviation sign. Also, while we tend to write 'quemadmodum' as one word, and as such I am encoding it at the Lingustic Layer, the scribe spells it as two words, with a graphical space in between: 'quem' 'admodum'. In consideration of the fact that the scribe often writes 'ad' with no space after it, it might also be that the scribe is writing this expression as three separate words: 'quem', 'ad' and 'modum'.</note>
+<note type="script">Strangely enough, "em" here is abbreviated with "e caudatum" and the "2" abbreviation sign. Also, while we tend to write "quemadmodum" as one word, and as such I am encoding it at the Lingustic Layer, the scribe spells it as two words, with a graphical space in between: "quem" "admodum". In consideration of the fact that the scribe often writes "ad" with no space after it, it might also be that the scribe is writing this expression as three separate words: "quem", "ad" and "modum".</note>
 </w>
 <lb n="2v.b.28" />
 <w n="praedicta" xml:id="w7527">
@@ -9064,7 +9065,7 @@ d</w>
 		<expan>qu</expan>
 	</choice>
 	od
-<note type="script">The source (Priscian, Ars grammatica, 2.60.19) has: 'Ad aliquid dictum est, quod sine intellectu illius, ad quod dictum est, proferri non potest'. Also, in the only previous instance of the 'ų' abbreviation mark (a 'u'-like sign over the 'q'), in 1v.a.3, the word is 'quod'. However, in 1v.a.3 the last two graphemes were clearly 'o' and 'd', while here the sign(s) after the 'q' and 'u'-like abbreviation mark are less clear to me.</note>
+<note type="script">The source (Priscian, Ars grammatica, 2.60.19) has: "Ad aliquid dictum est, quod sine intellectu illius, ad quod dictum est, proferri non potest". Also, in the only previous instance of the "ų" abbreviation mark (a "u"-like sign over the "q"), in 1v.a.3, the word is "quod". However, in 1v.a.3 the last two graphemes were clearly "o" and "d", while here the sign(s) after the "q" and "u"-like abbreviation mark are less clear to me.</note>
 </w>
 <lb n="2v.b.32" />
 <w n="sine" xml:id="w7638">sine</w>
