@@ -11148,7 +11148,9 @@ gentesimus</w>
 <w ana="13B---A1---" lemma="octigesimus" n="octigesimus" xml:id="w9603">octigesimus</w>
 <pc n=",">·</pc>
 <lb n="3r.b.24" />
-<w ana="13B---A1---" lemma="nongentesimus" n="nongentesimus" xml:id="w9606">nongentesi
+<w ana="13B---A1---" lemma="nongentesimus" n="nongentesimus" xml:id="w9606">nonge
+	<add place="above">n</add>
+	tesi
 	<choice>
 		<abbr type="after">m<am>;</am></abbr>
 		<expan>mus</expan>

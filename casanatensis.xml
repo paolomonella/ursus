@@ -25,11 +25,11 @@
 <change type="agenda">Periodicamente: check for duplicate and unordered word IDs</change>
 <change type="agenda">Periodicamente: check for '0' after closing tags (due to @f or @d in .vimrc).</change>
 <change type="agenda">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein', e anche 'plion' seguito da 'pleion' sono da discutere in una complicata discussione critico-testuale, anche in considerazione dei testimoni del testo di Prisciano (vd. app. crit. di Keil K.2.71.11). Tra l'altro, dovrei riportare il testo dei testimoni del testo di Prisciano nella nota contenutistica a quel punto.</change>
-<change type="agenda">I always put a space at the end of the lb, cb, pb elements (XHTML-style). I'm afraid that this is not the TEI-style, and that TEI has no space at the end of such elements: if so, delete it from this file, from vimrc and from the paoloMarkDown.py script.</change>
+<change type="agenda">I always put a space at the end of the lb, cb, pb elements (XHTML-style). I am afraid that this is not the TEI-style, and that TEI has no space at the end of such elements: if so, delete it from this file, from vimrc and from the paoloMarkDown.py script.</change>
 <change type="agenda">Check the space at the end of empty tags before the backslash (pb, cb, lb etc.).</change>
 <change type="agenda">Filologia testuale: 'quoniam' (parola con id w18300) mi pare strano: controllalo. La fonte (Prisc. Ars K.2.78.20) ha 'quia' che introduce un'oggettiva. Ma può 'quoniam' introdurre oggettive? O lo scriba ha frainteso 'quia' pensandolo introduttore di causale? Lo stesso nella parola con id w36645: in questo caso Prisciano K.2.129.22 ha "quod".</change>
 <change type="agenda">I added 'milestone' elements for long sources only for the final part of the transcription. I could add them for the initial part too.</change>
-<change type="agenda">For clear 'scribal error[s]', I sometimes correct in the value of @n, sometimes do not. Also, sometimes I insert a @type="script" note, sometimes a @type="content" note. I normally use 'script' when I correct silently, 'content' when I don't. This only is to check until the first note with type "emendation".</change>
+<change type="agenda">For clear 'scribal error[s]', I sometimes correct in the value of @n, sometimes do not. Also, sometimes I insert a @type="script" note, sometimes a @type="content" note. I normally use 'script' when I correct silently, 'content' when I do not. This only is to check until the first note with type "emendation".</change>
 <change type="agenda">Fix the JS cross-browser compatibility issues.</change>
 <change type="agenda">I might turn the informal quotations (such as K.2.110.22-25) in the 'note' element into formal URNs.</change>
 <change type="agenda">Specifica i type di 'note' con i due nuovi tipi 'emendation' e 'graphic'. Ricomincia dalla parola w28905 andando a ritroso.</change>
@@ -575,7 +575,7 @@ gi</w>
 	</choice>
 </w>
 	<pc n=",">|</pc>
-<note type="script">This glyph looks like a triangle pointing downwards, but I think it is an allograph of the punctuation paragraphematic sign that I'm marking with Unicode character "|".</note>
+<note type="script">This glyph looks like a triangle pointing downwards, but I think it is an allograph of the punctuation paragraphematic sign that I am marking with Unicode character "|".</note>
 <w n="id" xml:id="w450">id</w>
 <w n="est" xml:id="w453">est</w>
 	<pc n="space"> </pc>
@@ -1457,7 +1457,7 @@ ta</w>
 </w>
 </unclear>
 	<pc n=".">.</pc>
-<note type="script">There seems to be a peculiar punctuation sign here, that I am not encoding because I'm not sure about it.</note>
+<note type="script">There seems to be a peculiar punctuation sign here, that I am not encoding because I am not sure about it.</note>
 
 <w n="oratio" xml:id="w909"><hi rend="larger">o</hi>ratio</w>
 	<pc n="space"> </pc>
@@ -3117,7 +3117,7 @@ uis</w>
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w2172">sunt</w>
 	<pc n=".">.</pc>
-<note type="tech">From this point on, I'm marking the text with the help of an external Python script. First, I mark the text by using my own simplified "markdown" conventions, then I run the script that converts that "markdown" to XML/TEI markup.</note>
+<note type="tech">From this point on, I am marking the text with the help of an external Python script. First, I mark the text by using my own simplified "markdown" conventions, then I run the script that converts that "markdown" to XML/TEI markup.</note>
 <w n="etsi" xml:id="w2175">etsi</w>
 	<pc n="space"> </pc>
 <w n="ex" xml:id="w2178">ex</w>
@@ -5104,7 +5104,7 @@ priam</w>
 <w n="Graeco" xml:id="w4044">greco</w>
 <pc n="quote">·</pc>
 	<pc n="space"> </pc>
-<w n="νομα" type="alphabemes" xml:id="w4047" xml:lang="grc">noma<note type="tech">On the linguistic layer (LL), this word won't be able to be processed by a parser, as it does not exist in common dictionaries. Priscianus means this to be a previous (no longer existing) form of the word ὄνομα.</note></w>
+<w n="νομα" type="alphabemes" xml:id="w4047" xml:lang="grc">noma<note type="tech">On the linguistic layer (LL), this word will not be able to be processed by a parser, as it does not exist in common dictionaries. Priscianus means this to be a previous (no longer existing) form of the word ὄνομα.</note></w>
 <lb n="2r.a.15" />
 <w n="et" xml:id="w4050">et</w>
 <w n="adiecta" xml:id="w4053">adiecta</w>
@@ -8185,7 +8185,7 @@ neralis</w>
 calis</w>
 <pc n=",">¦</pc>
 <w n="patronymica" xml:id="w6729">patronomica
-<note type="emendation">I'm encoding the classical spelling "patronymica" at the Linguistic Layer. The source Priscianus, Ars grammatica K.2.60.2 has "patronymicum".</note>
+<note type="emendation">I am encoding the classical spelling "patronymica" at the Linguistic Layer. The source Priscianus, Ars grammatica K.2.60.2 has "patronymicum".</note>
 </w>
 <pc n=",">¦</pc>
 <w n="possessiua" xml:id="w6732">possessiua</w>
@@ -10968,7 +10968,6 @@ nuntientur</w>
 <w n="tertius" xml:id="w9444">tertius</w>
 	<pc n="space"> </pc>
 <w n="decimus" xml:id="w9447">decimus<note type="script">There is a macron over the "c" of "decimus", that might be meant to be over the "e". For its function, see the note on "uicesimus" right before in this very line.</note></w>
-<note type="tech">Until here, I substituted all ' to " in the content of notes.</note>
 <pc n=",">·</pc>
 <w n="quamquam" xml:id="w9450">qu
 	<choice>
@@ -11088,7 +11087,6 @@ dinem</w>
 </w>
 	<pc n="space"> </pc>
 <w n="quadringesimus" xml:id="w9567">quadringesimus</w>
-<note type="tech">Reviewed until here.</note>
 <pc n=",">·</pc>
 <lb n="3r.b.22" />
 <w n="quingentesimus" xml:id="w9570">
@@ -11148,12 +11146,15 @@ gentesimus</w>
 <w n="octigesimus" xml:id="w9603">octigesimus</w>
 <pc n=",">·</pc>
 <lb n="3r.b.24" />
-<w n="nongentesimus" xml:id="w9606">nongentesi
+<note type="tech">Reviewed until here.</note>
+<w n="nongentesimus" xml:id="w9606">nonge
+	<add place="above">n</add>
+	tesi
 	<choice>
 		<abbr type="after">m<am>;</am></abbr>
 		<expan>mus</expan>
 	</choice>
-<note type="script">This is a fairly rare case in which the final ';' abbreviation mark is used to mean a final '-us' morpheme. Also, the last 'n' in 'nongeNtesimus' is written above the line.</note>
+<note type="script">This is a fairly rare case in which the final ";" abbreviation mark is used to mean a final "-us" morpheme.</note>
 </w>
 <pc n="0">·</pc>
 	<pc n="space"> </pc>
@@ -11240,7 +11241,7 @@ tulissent</w>
 <pc n=",">·</pc>
 <w n="quae" xml:id="w9669">quæ</w>
 <w n="Graeci" xml:id="w9672">greci</w>
-<w n="ἐπιμεριζόμενα" type="foreign" xml:id="w9675" xml:lang="grc">epimerizomena<note type="script">The source of this passage is Priscian 'De figuris numerorum' (Keil 3.413.24) and has ἐπιμεριζόμενα. The handwriting in the manuscript is almost completely faded, especially the letters after 'epi-' and before '-omena'. However, based on the number of graphemes that seem to be in this word the scribe probably wrote a shorter word than ἐπιμεριζόμενα, possibly something like 'epirizomena'.</note></w>
+<w n="ἐπιμεριζόμενα" type="foreign" xml:id="w9675" xml:lang="grc">epimerizomena<note type="script">The source of this passage is Priscian "De figuris numerorum" (Keil 3.413.24) and has ἐπιμεριζόμενα. The handwriting in the manuscript is almost completely faded, especially the letters after "epi-" and before "-omena". However, based on the number of graphemes that seem to be in this word the scribe probably wrote a shorter word than ἐπιμεριζόμενα, possibly something like "epirizomena".</note></w>
 <lb n="3r.b.27" />
 <w n="uocant" xml:id="w9678">uocant</w>
 <pc n=".">·</pc>
@@ -11915,7 +11916,8 @@ ta</w>
 		<abbr type="brevigraph">¢</abbr>
 		<expan>qui</expan>
 	</choice>
-nquies<note type="script">The 'n' is written above the line.</note></w>
+	<add place="above">n</add>
+	quies</w>
 <pc n=",">·</pc>
 <w n="sexies" xml:id="w10482">sexies</w>
 <pc n=",">·</pc>
@@ -11998,9 +12000,10 @@ es</w>
 <pc n=",">·</pc>
 <w n="quingenties" xml:id="w10578">quingenties</w>
 <pc n=",">·</pc>
-<w n="sexcenties" xml:id="w10581">sexcen
+<w n="sexcenties" xml:id="w10581">sexce
+	<add place="above">n</add>
 <lb n="3v.a.28" />
-ties<note type="script">The 'n' is written above the line</note></w>
+ties</w>
 <w n="septingenties" xml:id="w10584">septingenties</w>
 <pc n=",">·</pc>
 <w n="octingenties" xml:id="w10587">octingenties</w>
@@ -12020,7 +12023,7 @@ lies</w>
 	<pc n="space"> </pc>
 <w n="infinitis" xml:id="w10605"><hi rend="larger">i</hi>nfinitis</w>
 	<pc n="space"> </pc>
-<note type="content">The source of this passage, Priscian 'De figuris numerorum' (Keil 3.415.24-26), after 'milies', has: 'Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...'. Probably the scribe initially skipped the sentence 'Infinitis... multotiens' (line 24 in Keil) and started copying from the sentence 'Inueniuntur et aliae deriuationes' (line 26 in Keil), so he wrote 'inueniuntur' (which originally had the initial 'i' written with a larger size). Then, he decided not to skip the sentence 'Infinitis tamen numerorum...' and copied it after 'inueniuntur', but he forgot to erase 'inueniuntur', which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial 'i' of 'inueniuntur', overwrote it in rasura with a smaller size, and also overwrote the initial 'i' of 'infinitis' with a larger font. As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase 'inueniuntur' is probably that it could seem to belong to the previous sentence, which I don't believe. In an interpretive edition, the word 'inueniuntur' shoud therefore be omitted.</note>
+<note type="content">The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...". Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size). Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger font. As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" is probably that it could seem to belong to the previous sentence, which I do not believe. In an interpretive edition, the word "inueniuntur" shoud therefore be omitted.</note>
 <w n="tamen" xml:id="w10608">tamen</w>
 	<pc n="space"> </pc>
 <w n="numerorum" xml:id="w10611">numeror
@@ -12115,7 +12118,7 @@ o</w>
 <w n="uel" xml:id="w10704">uel</w>
 <w n="trinitas" xml:id="w10707">trinitas</w>
 <pc n=",">·</pc>
-<w n="septimana" xml:id="w10710">septimania<note type="script">The handwriting is not clear, but after the 'n' there seem to be more than just an 'a'.</note></w>
+<w n="septimana" xml:id="w10710">septimania<note type="script">The handwriting is not clear, but after the "n" there seem to be more than just an "a".</note></w>
 <pc n=",">·</pc>
 <w n="senio" xml:id="w10713">senio</w>
 <pc n=".">|</pc>
@@ -12160,7 +12163,7 @@ d</w>
 <w n="senio" xml:id="w10737">senio</w>
 	<pc n="space"> </pc>
 <w n="ferret" xml:id="w10740">ferret</w>
-<note type="source">The quote 'iure... ferret' corresponds to Persius, Saturae, 3.48 (urn:cts:latinLit:phi0969:phi001:3.48).</note>
+<note type="source">The quote "iure... ferret" corresponds to Persius, Saturae, 3.48 (urn:cts:latinLit:phi0969:phi001:3.48).</note>
 <pc n=".">·</pc>
 <w n="milia" xml:id="w10743">milia</w>
 <pc n=",">·</pc>
@@ -12317,7 +12320,7 @@ res</w>
 
 <w n="gurgite" xml:id="w10869">gurgite</w>
 <w n="Nilus" xml:id="w10872">nilus</w>
-<note type="source">Keil, volume 3, page 416, in the apparatus criticus writes 'Lucan. Pharsal. VIII 444'. The edition of A. E. Housman, 1927 has the following text for Lucanus, Bellum ciuile 8.444-447: Syrtibus hinc Libycis tuta est Aegyptos, at inde / gurgite septeno rapidus mare summouet amnis. / terra suis contenta bonis, non indiga mercis / aut Iouis: in solo tanta est fiducia Nilo (urn:cts:latinLit:phi0917.phi001:8.444-8.447). </note>
+<note type="source">Keil, volume 3, page 416, in the apparatus criticus writes "Lucan. Pharsal. VIII 444". The edition of A. E. Housman, 1927 has the following text for Lucanus, Bellum ciuile 8.444-447: Syrtibus hinc Libycis tuta est Aegyptos, at inde / gurgite septeno rapidus mare summouet amnis. / terra suis contenta bonis, non indiga mercis / aut Iouis: in solo tanta est fiducia Nilo (urn:cts:latinLit:phi0917.phi001:8.444-8.447). </note>
 <pc n=",">·</pc>
 <w n="pro" xml:id="w10875">
 	<choice>
@@ -12459,7 +12462,7 @@ plex</w>
 	<pc n="space"> </pc>
 <w n="quod" xml:id="w11004">quod</w>
 	<pc n="space"> </pc>
-<w n="undeuiginti" xml:id="w11007">undeuiginti<note type="script">The original hand (in brown ink) must have written something wrong. A second hand (in black ink) corrected to unum (written as 'unu' with a '2-like' abbreviation mark over the final 'u', plus one or two illegible signs. The source (Priscian Keil 3.416.6) has 'undeuiginti'.</note></w>
+<w n="undeuiginti" xml:id="w11007">undeuiginti<note type="script">The original hand (in brown ink) must have written something wrong. A second hand (in black ink) corrected to unum (written as "unu" with a "2-like" abbreviation mark over the final "u", plus one or two illegible signs. The source (Priscian Keil 3.416.6) has "undeuiginti".</note></w>
 	<pc n="space"> </pc>
 <w n="dicimus" xml:id="w11010">dicimus</w>
 	<pc n="space"> </pc>
@@ -12598,7 +12601,7 @@ xit</w>
 <w n="id" xml:id="w11145">id</w>
 <w n="est" xml:id="w11148">est</w>
 	<pc n="space"> </pc>
-<w n="lxxuiiii" type="numeral" xml:id="w11151">lxxuiiii<note type="script">The glyph for the 'five' sign here is pointy like modern 'v', not rounded like that normally used for 'u' in the manuscript.</note></w>
+<w n="lxxuiiii" type="numeral" xml:id="w11151">lxxuiiii<note type="script">The glyph for the "five" sign here is pointy like modern "v", not rounded like that normally used for "u" in the manuscript.</note></w>
 <pc n="0">·</pc>
 <w n="annos" xml:id="w11154">annos</w>
 	<pc n="space"> </pc>
@@ -12656,7 +12659,7 @@ deuiginti</w>
 <pc n=".">·</pc>
 <w n="idem" xml:id="w11211"><hi rend="larger">i</hi>dem</w>
 	<pc n="space"> </pc>
-<w n="inuenitur" xml:id="w11214">inuenitur<note type="script">Over the second 'i' there is a ^ sign, whose meaning I don't understand.</note></w>
+<w n="inuenitur" xml:id="w11214">inuenitur<note type="script">Over the second "i" there is a ^ sign, whose meaning I do not understand.</note></w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w11217">in</w>
 <w n="ceteris" xml:id="w11220">ceteris</w>
@@ -12699,7 +12702,7 @@ detriginta</w>
 <w n="similia" xml:id="w11265">similia</w>
 	<pc n="space"> </pc>
 	<pc n="." />
-<w n="uniformis" xml:id="w11268"><hi rend="larger">u</hi>niformis<note type="script">The larger font was added to the initial 'u' by a second hand.</note></w>
+<w n="uniformis" xml:id="w11268"><hi rend="larger">u</hi>niformis<note type="script">The larger font was added to the initial "u" by a second hand.</note></w>
 <pc n=",">·</pc>
 <w n="biformis" xml:id="w11271">biformis</w>
 <pc n=",">·</pc>
@@ -12750,7 +12753,7 @@ nquagessis</w>
 <pc n=".">·</pc>
 <w n="post" xml:id="w11331"><hi rend="larger">p</hi>ost</w>
 	<pc n="space"> </pc>
-<w n="quem" xml:id="w11334">quæm<note type="script">The scribe mistakenly wrote 'quæm' with the 'e caudatum' grapheme.</note></w>
+<w n="quem" xml:id="w11334">quæm<note type="script">The scribe mistakenly wrote "quæm" with the "e caudatum" grapheme.</note></w>
 	<pc n="space"> </pc>
 <w n="numerum" xml:id="w11337">numer
 	<choice>
@@ -12763,7 +12766,7 @@ nquagessis</w>
 	<pc n="space"> </pc>
 <w n="Uarrone" xml:id="w11343">bar
 <lb n="3v.b.19" />
-rone<note type="script">A common confusion between 'u' and 'b' due to the contemporary pronunciation.</note></w>
+rone<note type="script">A common confusion between "u" and "b" due to the contemporary pronunciation.</note></w>
 	<pc n="space"> </pc>
 <w n="non" xml:id="w11346">non</w>
 	<pc n="space"> </pc>
@@ -13053,7 +13056,7 @@ uir</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w11622">in</w>
 	<pc n="space"> </pc>
-<w n="u" type="numeral" xml:id="w11625">u<note type="script">As above, the glyph for the numeral 'five' is pointy like modern 'v', not rounded.</note></w>
+<w n="u" type="numeral" xml:id="w11625">u<note type="script">As above, the glyph for the numeral "five" is pointy like modern "v", not rounded.</note></w>
 <pc n=",">·</pc>
 <w n="biiugo" xml:id="w11628">biiugo</w>
 	<pc n="space"> </pc>
@@ -13289,7 +13292,7 @@ lum</w>
 	<pc n="space"> </pc>
 <w n="hae" xml:id="w11829">hæ</w>
 	<pc n="space"> </pc>
-<note type="script">The word 'haec', written as 'hæc', seems to have been erased here.</note>
+<note type="script">The word "haec", written as "hæc", seems to have been erased here.</note>
 <w n="tres" xml:id="w11832">tres</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w11835">et</w>
@@ -13298,7 +13301,7 @@ lum</w>
 </add>
 <w n="tria" xml:id="w11841">tria</w>
 <lb n="4r.a.5" />
-<w n="mobilia" xml:id="w11844">mouilia<note type="script">Scribe's mistake ('u' for 'b') due to the contemporary pronunciation.</note></w>
+<w n="mobilia" xml:id="w11844">mouilia<note type="script">Scribal error ("u" for "b") due to the contemporary pronunciation.</note></w>
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w11847">
 	<choice>
@@ -13338,7 +13341,7 @@ lum</w>
 <lb n="4r.a.6" />
 <w n="mille" xml:id="w11877">mille</w>
 	<pc n="space"> </pc>
-<w n="indeclinabilia" xml:id="w11880">indeclinauilia<note type="script">Scribe's error ('u' for 'b') due to the contemporary pronunciation.</note></w>
+<w n="indeclinabilia" xml:id="w11880">indeclinauilia<note type="script">Scribe's error ("u" for "b") due to the contemporary pronunciation.</note></w>
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w11883">sunt</w>
 <pc n=".">·</pc>
@@ -13578,7 +13581,7 @@ munes</w>
 	<pc n="space"> </pc>
 <w n="tractabimus" xml:id="w12102">tractabimus</w>
 <pc n=".">·</pc>
-<note type="script">The rest of the line is blank, and is filled with a note from another hand, in a different script and black (not brown) ink. The note reads: 'et patronomicis'.</note>
+<note type="script">The rest of the line is blank, and is filled with a note from another hand, in a different script and black (not brown) ink. The note reads: "et patronomicis".</note>
 <lb n="4r.a.23" />
 <w n="patronymica" xml:id="w12105"><hi rend="dropcap">p</hi>atronymica</w>
 	<pc n="space"> </pc>
@@ -13589,7 +13592,7 @@ munes</w>
 <w n="quae" xml:id="w12114">quæ</w>
 	<pc n="space"> </pc>
 <w n="deriuatur" xml:id="w12117">deribatur
-<note type="script">Scribe's mistake ('b' for 'u') due to the contemporary pronunciation.</note>
+<note type="script">Scribal error ("b" for "u") due to the contemporary pronunciation.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w12120">a</w>
@@ -13816,12 +13819,13 @@ tione</w>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
-	qu
+	q
+	<add place="above">u</add>
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
-<note type="script">The 'u' is written above the line, with the pointy shape of modern 'v'.</note>
+<note type="script">The "u" is written above the line, with the pointy shape of modern "v". It is slightly different from the glyph that I encoded as an abbreviation mark as "ų" elsewhere, since in this word the added sign is not above the "q" but above the line between the "q" and the next "a".</note>
 </w>
 <lb n="4r.a.34" />
 <w n="si" xml:id="w12324">si</w>
@@ -14280,7 +14284,7 @@ pria</w>
 
 
 <w n="atauis" xml:id="w12735">atauis
-<note type="script">There is a macron sign over the initial 'a'. If it were an abbreviation mark for 'an'. This would create a mispelling 'antauis' for 'atauis'.</note>
+<note type="script">There is a macron sign over the initial "a". If it were an abbreviation mark for "an". This would create a mispelling "antauis" for "atauis".</note>
 </w>
 <pc n="0">·</pc>
 <w n="patronymica" xml:id="w12738">patronymi
@@ -14293,7 +14297,7 @@ ca</w>
 <pc n=",">|</pc>
 <w n="ut" xml:id="w12747">ut</w>
 <w n="Letoides" xml:id="w12750">letoides
-<note type="content">The source (Priscian, Institutiones, Keil 2.63.12-2.63-13) has 'Latoides, Λητοῦς, id est Latonae'. Maybe the scribe wrote 'Letoides' (with 'e') instead of 'Latoides' based on the Greek spelling with 'eta'.</note>
+<note type="content">The source (Priscian, Institutiones, Keil 2.63.12-2.63-13) has "Latoides, Λητοῦς, id est Latonae". Maybe the scribe wrote "Letoides" (with "e") instead of "Latoides" based on the Greek spelling with "eta".</note>
 </w>
 
 	<pc n="space"> </pc>
@@ -14323,7 +14327,7 @@ ca</w>
 <w n="ut" xml:id="w12789">ut</w>
 	<pc n="space"> </pc>
 <w n="Meiades" xml:id="w12792">meiades
-<note type="script">The source (Priscian, Institutiones, Keil p. 64 line 3) has 'Maiades'. The manuscript has a macron sign over the first 'e', that I cannot interpret and therefore did not encode.</note>
+<note type="script">The source (Priscian, Institutiones, Keil p. 64 line 3) has "Maiades". The manuscript has a macron sign over the first "e", that I cannot interpret and therefore did not encode.</note>
 </w>
 <w n="Mercurius" xml:id="w12795">mercu
 <lb n="4r.b.13" />
@@ -14386,7 +14390,7 @@ rius</w>
 <w n="in" xml:id="w12873">in</w>
 <pc n="quote">·</pc>
 <w n="i" type="alphabemes" xml:id="w12876">i
-<note type="content">I think that this grapheme here means the letter 'i' as part of the varian form 'Aenidae', rather than as number 'I' as in 'in book I'. The variant form 'Aenidae' is found later in the source: it is not found in Priscian, Institutiones, 2.64.10-2.65.6 but in 2.66.2-2.66.3.</note>
+<note type="content">I think that this grapheme here means the letter "i" as part of the varian form "Aenidae", rather than as number "I" as in "in book I". The variant form "Aenidae" is found later in the source: it is not found in Priscian, Institutiones, 2.64.10-2.65.6 but in 2.66.2-2.66.3.</note>
 </w>
 <pc n="quote">·</pc>
 <w n="dixerunt" xml:id="w12879">dixerunt</w>
@@ -14428,7 +14432,7 @@ thontides</w>
 	</choice>
 </w>
 <w n="Phaethontidas" xml:id="w12915">phethontidas
-<note type="script">The 'h' is written above.</note>
+<note type="script">The "h" is written above.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="poetica" xml:id="w12918">poetica</w>
@@ -14510,13 +14514,13 @@ thontides</w>
 <w n="Anchisiades" xml:id="w12990">anchisiades</w>
 <pc n=",">·</pc>
 <w n="Aeneas" xml:id="w12993">eneas
-<note type="script">There is a macron over 'ea', which I can't interpret.</note>
+<note type="script">There is a macron over "ea", which I cannot interpret.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="filius" xml:id="w12996">filius</w>
 	<pc n="space"> </pc>
 <w n="Anchisae" xml:id="w12999">anchisæ
-<note type="script">There is a macron over 'is', which I can't interpret.</note>
+<note type="script">There is a macron over "is", which I cannot interpret.</note>
 </w>
 <pc n=".">·</pc>
 <w n="si" xml:id="w13002">si</w>
@@ -14538,7 +14542,7 @@ thontides</w>
 </w>
 	<pc n="space"> </pc>
 <w n="atauis" xml:id="w13017">atauis
-<note type="script">There is a macron sign over the initial 'a'. If it were an abbreviation mark for 'an'. This would create a mispelling 'antauis' for 'atauis'.</note>
+<note type="script">There is a macron sign over the initial "a". If it were an abbreviation mark for "an". This would create a mispelling "antauis" for "atauis".</note>
 </w>
 <pc n=",">·</pc>
 <w n="terminantur" xml:id="w13020">terminantur</w>
@@ -14747,7 +14751,7 @@ a</w>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
-<note type="content">Scribe's mistake: 'quam' for 'qua'.</note>
+<note type="content">Scribal error: "quam" for "qua".</note>
 </w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w13233">et</w>
@@ -14848,7 +14852,7 @@ a</w>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note type="script">Scribe's mistake: 'y' for 'i' in the first syllable.</note>
+<note type="script">Scriball error: "y" for "i" in the first syllable.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="debent" xml:id="w13338">debent</w>
@@ -14862,21 +14866,21 @@ a</w>
 <w n="paenultima" xml:id="w13353">penultima</w>
 <lb n="4r.b.32" />
 <w n="breuis" xml:id="w13356">breuis</w>
-<note type="source">The source (Priscian, Ars grammatica, Keil 2.65.18-2.65.20) has: 'Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος' desinat, genetiuus uero in 'ου' diphthongum, a paenultima breuis ante 'des' inuenitur in patronymico', but different branches of the textual tradition of Priscian have different Greek letters. Codex R ('cod. bibl. imp. Paris. 7496'), first and second hand: 'in as (with ac written above the word) uel in es (with EC written above the word) uel os (with IOC written above the word)'. Codex B ('cod. bibl. publ. Bambergensis'): 'ac uel HC uel IOC'. Codex b (same codex, second hand): 'in ac uel ī HC uel ī IOC'. Codex D ('cod. bibl. publ. Bernensis, olim Bongarsianus'): 'in as uel in es uel in ios'. Codex G ('cod. bibl. conventus Sangallensis'), first and second hand: 'in as (with 'uel es' written above the line) uel ios'. Codex K ('cod. bibl. Caroliruhensis 223'): 'in ac uel IOC uel HC'. Codex H ('cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii'): 'ac uel HC uel IOC'. Codex L ('cod. bibl. publ. Lugd. Bat. olim Gruterianus'): 'in as uel in os'. The reading 'os' appears only in codex R, but the error of the scribe of this manuscript might have arisen independently.</note>
+<note type="source">The source (Priscian, Ars grammatica, Keil 2.65.18-2.65.20) has: "Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος' desinat, genetiuus uero in 'ου' diphthongum, a paenultima breuis ante 'des' inuenitur in patronymico", but different branches of the textual tradition of Priscian have different Greek letters. Codex R ("cod. bibl. imp. Paris. 7496"), first and second hand: "in as (with ac written above the word) uel in es (with EC written above the word) uel os (with IOC written above the word)". Codex B ("cod. bibl. publ. Bambergensis"): "ac uel HC uel IOC". Codex b (same codex, second hand): "in ac uel ī HC uel ī IOC". Codex D ("cod. bibl. publ. Bernensis, olim Bongarsianus"): "in as uel in es uel in ios". Codex G ("cod. bibl. conventus Sangallensis"), first and second hand: "in as (with 'uel es' written above the line) uel ios". Codex K ("cod. bibl. Caroliruhensis 223"): "in ac uel IOC uel HC". Codex H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii"): "ac uel HC uel IOC". Codex L ("cod. bibl. publ. Lugd. Bat. olim Gruterianus"): "in as uel in os". The reading "os" appears only in codex R, but the error of the scribe of this manuscript might have arisen independently.</note>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w13359">ut</w>
 <w n="Pelias" xml:id="w13362">pelias</w>
 	<pc n="space"> </pc>
 <w n="Peliades" xml:id="w13365">peliades
-<note type="script">There is a macron over the 'i', probably marking the short quantity of the letter. I am not encoding these quantity marks in the graphematic transcription because they do not have graphematic value, i.e. they do not create "minimal pairs" of words.</note>
+<note type="script">There is a macron over the "i", probably marking the short quantity of the letter. I am not encoding these quantity marks in the graphematic transcription because they do not have graphematic value, i.e. they do not create "minimal pairs" of words.</note>
 </w>
 <pc n=",">·</pc>
 <w n="Aeneas" xml:id="w13368">æneas
-<note type="script">There is a ^ sign over the 'e' (the 'e' between the 'n' and the 'a'), probably marking the long quantity of the letter.</note>
+<note type="script">There is a ^ sign over the "e" (the "e" between the "n" and the "a"), probably marking the long quantity of the letter.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Aeneades" xml:id="w13371">æneades
-<note type="script">There is a ^ sign over the 'e' (the 'e' between the 'n' and the 'a'), probably marking the long quantity of the letter.</note>
+<note type="script">There is a ^ sign over the "e" (the "e" between the "n" and the "a"), probably marking the long quantity of the letter.</note>
 </w>
 <pc n=".">·</pc>
 <w n="nam" xml:id="w13374"><hi rend="larger">n</hi>
@@ -14906,7 +14910,7 @@ tra</w>
 <w n="posuit" xml:id="w13386">posuit</w>
 	<pc n="space"> </pc>
 <w n="Aenides" xml:id="w13389">ænides
-<note type="script">There is a ^ sign over the 'i' (the 'i' between the 'n' and the 'd'), probably marking the long quantity of the letter.</note>
+<note type="script">There is a ^ sign over the "i" (the "i" between the "n" and the "d"), probably marking the long quantity of the letter.</note>
 </w>
 <pc n="quote">·</pc>
 <w n="i" type="alphabemes" xml:id="w13392">i</w>
@@ -14967,7 +14971,7 @@ uertit</w>
 <w n="Aeneus" xml:id="w13446">æneus</w>
 <pc n="quote">·</pc>
 <w n="Aenides" xml:id="w13449">ænides
-<note type="script">There is a ^ sign over the 'i' (the 'i' between the 'n' and the 'd'), probably marking the long quantity of the letter.</note>
+<note type="script">There is a ^ sign over the "i" (the "i" between the "n" and the "d"), probably marking the long quantity of the letter.</note>
 </w>
 <pc n=".">ł</pc>
 <w n="illa" xml:id="w13452">illa</w>
@@ -15011,7 +15015,7 @@ uertit</w>
 <w n="sed" xml:id="w13539">sed</w>
 	<pc n="space"> </pc>
 <w n="rationabilius" xml:id="w13542">rationauilius
-<note type="script">Scribe's mistake: 'u' for 'b'.</note>
+<note type="script">Scribal error: "u" for "b".</note>
 </w>
 <pc n="quote">·</pc>
 <w n="a" type="alphabemes" xml:id="w13545">a</w>
@@ -15116,7 +15120,7 @@ ca</w>
 <pc n="quote">·</pc>
 <w n="ut" xml:id="w13659">ut</w>
 <w n="Priamos" xml:id="w13662">priamos
-<note type="script">There is an acute accent sign over the 'i', marking the quantity of the vowel. I'm not recording such signs because they do not have graphemic value, i.e. they do not create 'minimal pairs' of words.</note>
+<note type="script">There is an acute accent sign over the "i", marking the quantity of the vowel. I am not recording such signs because they do not have graphemic value, i.e. they do not create "minimal pairs" of words.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Priamouys" xml:id="w13665">priamouys</w>
@@ -15131,12 +15135,12 @@ ca</w>
 <w n="Nestorides" xml:id="w13677">nestorides</w>
 <pc n=",">·</pc>
 <w n="Peleis" xml:id="w13680">peleis
-<note type="script">There is an acute accent mark over the 'i'.</note>
+<note type="script">There is an acute accent mark over the "i".</note>
 </w>
 <pc n=",">·</pc>
-<w n="Peleos" xml:id="w13683">peleos<note type="script">There is an acute accent mark over the second 'e'.</note></w>
+<w n="Peleos" xml:id="w13683">peleos<note type="script">There is an acute accent mark over the second "e".</note></w>
 <pc n=",">·</pc>
-<w n="Peleides" xml:id="w13686">peleides<note type="script">There is an acute accent mark over the second 'e'.</note></w>
+<w n="Peleides" xml:id="w13686">peleides<note type="script">There is an acute accent mark over the second "e".</note></w>
 <pc n=".">·</pc>
 <lb n="4v.a.6" />
 <w n="illi" xml:id="w13689">illi</w>
@@ -15195,7 +15199,7 @@ gum</w>
 <w n="ponimus" xml:id="w13740">ponimus</w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w13743">ut</w>
-<w n="Pelides" xml:id="w13746">pelides<note type="script">There is an acute accent mark over the 'i'.</note></w>
+<w n="Pelides" xml:id="w13746">pelides<note type="script">There is an acute accent mark over the "i".</note></w>
 	<pc n="space"> </pc>
 <w n="pro" xml:id="w13749">
 	<choice>
@@ -15203,7 +15207,7 @@ gum</w>
 		<expan>pro</expan>
 	</choice>
 </w>
-<w n="Peleides" xml:id="w13752">peleides<note type="script">There is an acute accent mark over the second 'e'.</note></w>
+<w n="Peleides" xml:id="w13752">peleides<note type="script">There is an acute accent mark over the second "e".</note></w>
 <pc n=".">ï</pc>
 <w n="in" xml:id="w13755">in</w>
 <w n="his" xml:id="w13758">his</w>
@@ -15291,7 +15295,7 @@ piades</w>
 </w>
 <w n="Scipionides" xml:id="w13848">scipionides</w>
 	<pc n="space"> </pc>
-<w n="Aenides" xml:id="w13851">ænides<note type="script">There is a ^ mark over the 'n'.</note></w>
+<w n="Aenides" xml:id="w13851">ænides<note type="script">There is a ^ mark over the "n".</note></w>
 	<pc n="space"> </pc>
 <w n="pro" xml:id="w13854">
 	<choice>
@@ -15339,7 +15343,7 @@ ducunt</w>
 		<abbr type="superscription">o<am>¯</am></abbr>
 		<expan>eo</expan>
 	</choice>
-<note type="script">I'm not sure of the meaning of the final macron abbreviation mark.</note>
+<note type="script">I am not sure of the meaning of the final macron abbreviation mark.</note>
 </w>
 </unclear>
 	<pc n="space"> </pc>
@@ -15410,13 +15414,13 @@ a</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w13941">ut</w>
 <w n="Oelides" xml:id="w13944">oelides
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity. I'm not marking it because it has no graphematic value.</note>
-<note type="source">Keil chooses the reading 'Aeclides' (Priscian, Institutiones K 2.67.9, the direct source of this passage), but in the apparatus criticus he mentions the reading 'Oelides', very common in Priscian's textual tradition. This is the apparatus note for K 2.67.0: 'Aeclides] ex aeolides corr. in litura B f. recte: patron. sc. ab Aeclo, Eretriae conditore, quamvis exemplum desidero; aeolides D Hrabanus p. 33 oelides RHGLK'.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity. I am not marking it because it has no graphematic value.</note>
+<note type="source">Keil chooses the reading "Aeclides" (Priscian, Institutiones K 2.67.9, the direct source of this passage), but in the apparatus criticus he mentions the reading "Oelides", very common in Priscian's textual tradition. This is the apparatus note for K 2.67.0: "Aeclides] ex aeolides corr. in litura B f. recte: patron. sc. ab Aeclo, Eretriae conditore, quamvis exemplum desidero; aeolides D Hrabanus p. 33 oelides RHGLK".</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Demades" xml:id="w13947">dema
 <lb n="4v.a.16" />
-<note type="script">There is a macron sign over the 'a' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "a" to mark the vowel's long quantity.</note>
 des</w>
 <w n="pro" xml:id="w13950">
 	<choice>
@@ -15427,21 +15431,21 @@ des</w>
 <w n="Demeades" xml:id="w13953">demeades</w>
 	<pc n="space"> </pc>
 <w n="Codrides" xml:id="w13956">codrides
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Lycoorgides" xml:id="w13959">lyco
 	<pc n="space"> </pc>
 	orgides
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Lagides" xml:id="w13962">lagides
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Euerides" xml:id="w13965">euerides
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Lycomedides" xml:id="w13968">lico
@@ -15449,7 +15453,7 @@ des</w>
 	medi
 <lb n="4v.a.17" />
 	des
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 <pc n=".">·</pc>
 <w n="feminina" xml:id="w13971"><hi rend="larger">f</hi>eminina</w>
@@ -15474,7 +15478,7 @@ des</w>
 <w n="in" xml:id="w14001">in</w>
 <pc n="quote">·</pc>
 <w n="ne" type="alphabemes" xml:id="w14004">ne
-<note type="script">The 'n' was written above the line</note>
+<note type="script">The "n" was written above the line</note>
 </w>
 <pc n="quote">·</pc>
 <w n="productam" xml:id="w14007">product
@@ -15522,7 +15526,7 @@ ta</w>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
-<note type="script">The grapheme 'a' and the abbreviation mark over it were written above the line.</note>
+<note type="script">The grapheme "a" and the abbreviation mark over it were written above the line.</note>
 </w>
 <lb n="4v.a.20" />
 <w n="Aeneades" xml:id="w14061">æneades</w>
@@ -15600,7 +15604,7 @@ tur</w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w14148">ut</w>
 <w n="Pelides" xml:id="w14151">pelides
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="pro" xml:id="w14154">
@@ -15614,7 +15618,7 @@ tur</w>
 <w n="Peleis" xml:id="w14160">peleis</w>
 <pc n=",">·</pc>
 <w n="Aenides" xml:id="w14163">ænides
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="pro" xml:id="w14166">
@@ -15623,9 +15627,9 @@ tur</w>
 		<expan>pro</expan>
 	</choice>
 </w>
-<note type="script">There is a 'x'-shaped cross over the abbreviated word 'pro', in the same brown ink as the rest of the text.</note>
+<note type="script">There is a "x"-shaped cross over the abbreviated word "pro", in the same brown ink as the rest of the text.</note>
 <w n="Aeneides" xml:id="w14169">æneides
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Aeneis" xml:id="w14172">æneis</w>
@@ -15689,13 +15693,13 @@ bent</w>
 tos</w>
 	<pc n="space"> </pc>
 <w n="Adrestine" xml:id="w14238">adrestine
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Nereus" xml:id="w14241">nereus</w>
 	<pc n="space"> </pc>
 <w n="Nerine" xml:id="w14244">nerine
-<note type="script">There is a macron sign over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 <pc n=",">·</pc>
 <w n="et" xml:id="w14247">et</w>
@@ -15751,17 +15755,17 @@ tos</w>
 	<pc n="space"> </pc>
 <w n="colonis" xml:id="w14304">colonis</w>
 	<pc n="space"> </pc>
-<note type="source">The source (Priscian, Institutiones K 2.68.10) has the whole verse 'Acrisioneis Danae fundasse colonis' (Verg. Aen. 7.410.</note>
+<note type="source">The source (Priscian, Institutiones K 2.68.10) has the whole verse "Acrisioneis Danae fundasse colonis" (Verg. Aen. 7.410.</note>
 <w n="ab" xml:id="w14307">ab</w>
 <w n="Acrisionea" xml:id="w14310">acrisionea
-<note type="source">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading 'ab Acrisione', but in the apparatus criticus he mentions the reading 'acrisionea' from codices H ('cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii'), and r ('cod. bibl. imp. Paris. 7496', second hand).</note>
+<note type="source">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading "ab Acrisione", but in the apparatus criticus he mentions the reading "acrisionea" from codices H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii"), and r ("cod. bibl. imp. Paris. 7496", second hand).</note>
 </w>
 	<pc n="space"> </pc>
 <w n="id" xml:id="w14313">id</w>
 <w n="est" xml:id="w14316">est</w>
 	<pc n="space"> </pc>
 <w n="Danaa" xml:id="w14319">danaa
-<note type="source">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading 'Danae', but in the apparatus criticus he mentions the reading 'danaa' from codices R ('cod. bibl. imp. Paris. 7496') and K ('cod. bibl. Caroliruhensis 223'), while codices D ('cod. bibl. publ. Bernensis, olim Bongarsianus') and H ('cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii') have a similar reading.</note>
+<note type="source">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading "Danae", but in the apparatus criticus he mentions the reading "danaa" from codices R ("cod. bibl. imp. Paris. 7496") and K ("cod. bibl. Caroliruhensis 223"), while codices D ("cod. bibl. publ. Bernensis, olim Bongarsianus") and H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii") have a similar reading.</note>
 </w>
 <pc n=".">|</pc>
 <lb n="4v.a.29" />
@@ -15796,7 +15800,7 @@ tos</w>
 <w n="Ias" xml:id="w14358">ias</w>
 <pc n=",">·</pc>
 <w n="Troias" xml:id="w14361">troias
-<note type="source">Keil (Priscian, Institutiones K 2.68.13, the direct source of this passage) chooses the reading 'Troas', but in the apparatus criticus he mentions the reading 'troias' from codices D ('cod. bibl. publ. Bernensis, olim Bongarsianus'), H ('cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii') and K ('cod. bibl. Caroliruhensis 223').</note>
+<note type="source">Keil (Priscian, Institutiones K 2.68.13, the direct source of this passage) chooses the reading "Troas", but in the apparatus criticus he mentions the reading "troias" from codices D ("cod. bibl. publ. Bernensis, olim Bongarsianus"), H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii") and K ("cod. bibl. Caroliruhensis 223").</note>
 </w>
 <pc n=".">·</pc>
 <w n="alia" xml:id="w14364"><hi rend="larger">a</hi>lia</w>
@@ -15817,7 +15821,7 @@ chis</w>
 	<pc n="space"> </pc>
 <w n="Pythias" xml:id="w14379">pythias</w>
 <pc n=".">|</pc>
-<note type="content">The rest of the line is left blank. In this space, a second hand has written in black ink a note that should read: 'De possessiuis nominibus' (with abbreviations for 'de', 'mini' and 'bus').</note>
+<note type="content">The rest of the line is left blank. In this space, a second hand has written in black ink a note that should read: "De possessiuis nominibus" (with abbreviations for "de", "mini" and "bus").</note>
 </ref>
 </ab>
 
@@ -16090,7 +16094,7 @@ lum</w>
 <w n="uel" xml:id="w14676">uel</w>
 	<pc n="space"> </pc>
 <w n="nepotes" xml:id="w14679">nepotes
-<note type="script">The 's' is written above the line.</note>
+<note type="script">The "s" is written above the line.</note>
 </w>
 <w n="uel" xml:id="w14682">uel</w>
 	<pc n="space"> </pc>
@@ -16252,7 +16256,7 @@ tinet</w>
 <w n="uel" xml:id="w14880">uel</w>
 	<pc n="space"> </pc>
 <w n="mobilia" xml:id="w14883">mouilia
-<note type="script">Scribe's spelling mistake: 'mouilia' for 'mobilia'.</note>
+<note type="script">Scribe's spelling mistake: "mouilia" for "mobilia".</note>
 </w>
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w14886">
@@ -16502,7 +16506,7 @@ maticus</w>
 </w>
 	<pc n="space"> </pc>
 <w n="hae" xml:id="w15147">hae
-<note type="script">In this case the diphthong is spelled with two graphemes 'ae'.</note>
+<note type="script">In this case the diphthong is spelled with two graphemes "ae".</note>
 </w>
 <pc n=".">·</pc>
 <w n="prima" xml:id="w15150"><hi rend="larger">p</hi>rima</w>
@@ -16525,7 +16529,7 @@ maticus</w>
 </w>
 	<pc n="space"> </pc>
 <w n="ι" type="alphabemes" xml:id="w15174" xml:lang="grc">a
-<note type="content">The manuscript has the grapheme 'u' for the alphabeme 'u', which proves to me that the scribe had the Greek letter in mind here, therefore I am encoding it in Greek (not in Latin) at the Linguistic Layer for the three letters mentioned in this sentence (α, ι and υ).</note>
+<note type="content">The manuscript has the grapheme "u" for the alphabeme "u", which proves to me that the scribe had the Greek letter in mind here, therefore I am encoding it in Greek (not in Latin) at the Linguistic Layer for the three letters mentioned in this sentence (α, ι and υ).</note>
 </w>
 <pc n="quote">·</pc>
 <w n="breuis" xml:id="w15177">breuis</w>
@@ -16540,11 +16544,11 @@ maticus</w>
 <lb n="4v.b.22" />
 <w n="ut" xml:id="w15192">ut</w>
 <w n="Cypriacus" xml:id="w15195">cypriacus
-<note type="script">There is a macron sign over the 'i', meaning that the sound is short.</note>
+<note type="script">There is a macron sign over the "i", meaning that the sound is short.</note>
 </w>
 <pc n="quote">·</pc>
 <w n="Italicus" xml:id="w15198">italicus
-<note type="script">There is a macron sign over the 'i', meaning that the sound is short.</note>
+<note type="script">There is a macron sign over the "i", meaning that the sound is short.</note>
 </w>
 <pc n="quote">·</pc>
 <w n="Libycus" xml:id="w15201">libycus</w>
@@ -16564,7 +16568,7 @@ maticus</w>
 		<abbr type="superscription">b<am>¯</am></abbr>
 		<expan>bet</expan>
 	</choice>
-<note type="script">This is the first time that I find this abbreviation. It might also be interpreted as a brevigraph, composed of a 'b' grapheme with a long horizontal trait crossing the vertical line.</note>
+<note type="script">This is the first time that I find this abbreviation. It might also be interpreted as a brevigraph, composed of a "b" grapheme with a long horizontal trait crossing the vertical line.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="ante" xml:id="w15216">ante</w>
@@ -16576,7 +16580,7 @@ maticus</w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w15228">a</w>
 <w n="principali" xml:id="w15231">principali</w>
-<note type="source">Keil in his edition of Priscian, Institutiones K 2.69.23, the direct source of this passage, expunges the sentence 'quod a principali accepit', though it seems to exist in all manuscripts.</note>
+<note type="source">Keil in his edition of Priscian, Institutiones K 2.69.23, the direct source of this passage, expunges the sentence "quod a principali accepit", though it seems to exist in all manuscripts.</note>
 <pc n=".">·</pc>
 <w n="et" xml:id="w15234">et</w>
 	<pc n="space"> </pc>
@@ -16674,7 +16678,7 @@ cunt</w>
 </w>
 	<pc n="space"> </pc>
 <w n="deribantur" xml:id="w15345">deribantur
-<note type="script">Scribe error: 'b' for 'u', due to the pronunciation of the time.</note>
+<note type="script">Scribe error: "b" for "u", due to the pronunciation of the time.</note>
 </w>
 <pc n=",">·</pc>
 <w n="et" xml:id="w15348"><hi rend="larger">e</hi>t</w>
@@ -16696,7 +16700,7 @@ ua</w>
 		<abbr type="superscription">b<am>¯</am></abbr>
 		<expan>bent</expan>
 	</choice>
-<note type="source">The source of this passage (Priscian, Institutiones K 2.69.27, has 'et si promitiua illa habuerint i paenultimam', but I think that the expansion of this abbreviation should simply be 'habent'.</note>
+<note type="source">The source of this passage (Priscian, Institutiones K 2.69.27, has "et si promitiua illa habuerint i paenultimam", but I think that the expansion of this abbreviation should simply be "habent".</note>
 </w>
 <pc n="quote">·</pc>
 <w n="ι" type="alphabemes" xml:id="w15363" xml:lang="grc">i</w>
@@ -16769,7 +16773,7 @@ ua</w>
 ticus</w>
 <pc n=",">·</pc>
 <w n="Italus" xml:id="w15447">italus
-<note type="script">There is a macron over the 't' both in 'Italus' and 'Italicus', but I do not understand their meaning.</note>
+<note type="script">There is a macron over the "t" both in "Italus" and "Italicus", but I do not understand their meaning.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Italicus" xml:id="w15450">italicus</w>
@@ -16793,7 +16797,7 @@ ticus</w>
 <w n="Cyprius" xml:id="w15468">cyprius</w>
 	<pc n="space"> </pc>
 <w n="Cypriacus" xml:id="w15471">cypriacus
-<note type="script">There is a line in the shape of an acute accent over the 'i', that could mean the word stress.</note>
+<note type="script">There is a line in the shape of an acute accent over the "i", that could mean the word stress.</note>
 </w>
 <pc n=",">·</pc>
 <w n="nam" xml:id="w15474">n
@@ -16806,7 +16810,7 @@ ticus</w>
 <w n="Cyprus" xml:id="w15477">cyprus</w>
 	<pc n="space"> </pc>
 <w n="cypricus" xml:id="w15480">cypricus
-<note type="script">There is a line in the shape of an acute accent over the 'y', that could mean the word stress.</note>
+<note type="script">There is a line in the shape of an acute accent over the "y", that could mean the word stress.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="facit" xml:id="w15483">facit</w>
@@ -16818,7 +16822,7 @@ ticus</w>
 nis</w>
 	<pc n="space"> </pc>
 <w n="mulionicus" xml:id="w15492">mulionicus
-<note type="script">An acute accent-shaped sign over the 'o' marks the word stress.</note>
+<note type="script">An acute accent-shaped sign over the "o" marks the word stress.</note>
 </w>
 <pc n=".">·</pc>
 <w n="secunda" xml:id="w15495"><hi rend="larger">s</hi>ecunda</w>
@@ -16926,7 +16930,7 @@ ducta</w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w15582">ut</w>
 <w n="Caesareus" xml:id="w15585">cesareus
-<note type="script">There is a macron over the 'a', marking its long quantity.</note>
+<note type="script">There is a macron over the "a", marking its long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w15588">et</w>
@@ -16967,11 +16971,11 @@ tinentia</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w15612">ut</w>
 <w n="spondeus" xml:id="w15615">spondeus
-<note type="script">A macron over the 'e' marks its long quantity.</note>
+<note type="script">A macron over the "e" marks its long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Phoebeus" xml:id="w15618">phoebeus
-<note type="script">A macron over the 'e' marks its long quantity.</note>
+<note type="script">A macron over the "e" marks its long quantity.</note>
 </w>
 <pc n=".">·</pc>
 <w n="i" type="alphabemes" xml:id="w15621"><hi rend="larger">i</hi></w>
@@ -16992,11 +16996,11 @@ tinentia</w>
 <w n="Martius" xml:id="w15627">martius</w>
 	<pc n="space"> </pc>
 <w n="Ariusius" xml:id="w15630">ariusius
-<note type="script">A macron over the first 'u' marks its long quantity.</note>
+<note type="script">A macron over the first "u" marks its long quantity.</note>
 </w>
 <pc n=".">·</pc>
 <w n="o" type="alphabemes" xml:id="w15633"><hi rend="larger">o</hi>
-<note type="script">The glyph for 'o' has a dot in the middle.</note>
+<note type="script">The glyph for "o" has a dot in the middle.</note>
 </w>
 <w n="productum" xml:id="w15636">
 	<choice>
@@ -17007,24 +17011,24 @@ tinentia</w>
 		<abbr type="superscription">d<am>¯</am></abbr>
 		<expan>ductum</expan>
 	</choice>
-<note type="script">The abbreviation sign crossing the ascending trait of the 'd' looks like a tilde rather than like a macron.</note>
+<note type="script">The abbreviation sign crossing the ascending trait of the "d" looks like a tilde rather than like a macron.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="herous" xml:id="w15639">erous
-<note type="script">A macron over the 'o' marks its long quantity.</note>
+<note type="script">A macron over the "o" marks its long quantity.</note>
 </w>
 <pc n=",">·</pc>
 <w n="Eous" xml:id="w15642">eous
-<note type="script">A macron over the 'o' marks its long quantity.</note>
+<note type="script">A macron over the "o" marks its long quantity.</note>
 </w>
 <pc n=".">·</pc>
 <w n="ae" type="alphabemes" xml:id="w15645"><hi rend="larger">a</hi>e
-<note type="script">The 'a' is not particulalry large, but it is written with the glyph usually used when it is larger then the rest of the text.</note>
+<note type="script">The "a" is not particulalry large, but it is written with the glyph usually used when it is larger then the rest of the text.</note>
 </w>
 <pc n="quote">·</pc>
 <w n="diphthongo" xml:id="w15648">dyphthongo</w>
 <w n="Sabaeus" xml:id="w15651">sabaeus
-<note type="script">In this case the diphthong 'ae' is written with two graphemes 'a' and 'e'.</note>
+<note type="script">In this case the diphthong "ae" is written with two graphemes "a" and "e".</note>
 </w>
 <pc n=".">ï</pc>
 <w n="et" xml:id="w15654">et</w>
@@ -17053,7 +17057,7 @@ tinentia</w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w15675">a</w>
 <w n="feminis" xml:id="w15678">feminis
-<note type="content">The source of this passage (Priscian, Institutiones K 2.70.46, has 'femininis', which is an obvious correction here.</note>
+<note type="content">The source of this passage (Priscian, Institutiones K 2.70.46, has "femininis", which is an obvious correction here.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Graecis" xml:id="w15681">grecis</w>
@@ -17084,19 +17088,19 @@ flexis</w>
 <w n="Κρήτη" type="foreign" xml:id="w15717" xml:lang="grc">crete</w>
 	<pc n="space"> </pc>
 <w n="Cretaeus" xml:id="w15720">cretaeus
-<note type="script">In this case the diphthong 'ae' is written with two graphemes 'a' and 'e'.</note>
+<note type="script">In this case the diphthong "ae" is written with two graphemes "a" and "e".</note>
 </w>
 <pc n=",">·</pc>
 <w n=" Ὕλη" type="foreign" xml:id="w15723" xml:lang="grc">hyle</w>
 	<pc n="space"> </pc>
 <w n="Hylaeus" xml:id="w15726">hylaeus
-<note type="script">In this case the diphthong 'ae' is written with two graphemes 'a' and 'e'.</note>
+<note type="script">In this case the diphthong "ae" is written with two graphemes "a" and "e".</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Διώνη" type="foreign" xml:id="w15729" xml:lang="grc">dione</w>
 	<pc n="space"> </pc>
 <w n="Dionaeus" xml:id="w15732">dionaeus
-<note type="script">In this case the diphthong 'ae' is written with two graphemes 'a' and 'e'.</note>
+<note type="script">In this case the diphthong "ae" is written with two graphemes "a" and "e".</note>
 </w>
 	<pc n="space"> </pc>
 <w n="τιμῶ" type="foreign" xml:id="w15735" xml:lang="grc">ti
@@ -17104,17 +17108,17 @@ flexis</w>
 mo</w>
 	<pc n="space"> </pc>
 <w n="Timaeus" xml:id="w15738">timaeus
-<note type="script">In this case the diphthong 'ae' is written with two graphemes 'a' and 'e'.</note>
+<note type="script">In this case the diphthong "ae" is written with two graphemes "a" and "e".</note>
 </w>
 <pc n="ł">·</pc>
 <w n="oe" type="alphabemes" xml:id="w15741"><hi rend="larger">o</hi>e
-<note type="script">The glyph for 'o' has a dot in the middle of the circle.</note>
+<note type="script">The glyph for "o" has a dot in the middle of the circle.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="diphthongo" xml:id="w15744">dyphthongo</w>
 <w n="ut" xml:id="w15747">ut</w>
 <w n="Euboea" xml:id="w15750">euboea
-<note type="script">In this case the diphthong 'ae' is written with two graphemes 'a' and 'e'.</note>
+<note type="script">In this case the diphthong "ae" is written with two graphemes "a" and "e".</note>
 </w>
 	<pc n="space"> </pc>
 <w n="euroea" xml:id="w15753">euroea</w>
@@ -17156,7 +17160,7 @@ a</w>
 <w n="inueniri" xml:id="w15792">inueniri</w>
 <pc n=",">·</pc>
 <w n="quam" xml:id="w15795">quæm
-<note type="emendation">The manuscript seems to have a 'e caudatum' grapheme. This is probably a scribal error for 'quam' (referred to the feminine diphthongus mentioned before, in line 6.</note>
+<note type="emendation">The manuscript seems to have a "e caudatum" grapheme. This is probably a scribal error for "quam" (referred to the feminine diphthongus mentioned before, in line 6.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Latini" xml:id="w15798">latini</w>
@@ -17218,7 +17222,7 @@ pea</w>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note type="emendation">Scribal error: initial 'c' for 'g'.</note>
+<note type="emendation">Scribal error: initial "c" for "g".</note>
 </w>
 <pc n=".">·</pc>
 <w n="hoc" xml:id="w15858"><hi rend="larger">h</hi>oc</w>
@@ -17273,7 +17277,7 @@ a</w>
 </w>
 	<pc n="space"> </pc>
 <w n="πλεῖον" type="foreign" xml:id="w15903" xml:lang="grc">pleion</w>
-<note type="content">The Greek words I encoded at the Linguistic Layer (πλῆον and πλεῖον) are Keil's corrections. The original text of the Casanatensis is that encoded at the Graphematic Layer. The manuscripts of Priscianus (the source here is Priscianus K.2.71.11), as reported in Keil's apparatus criticus, never have 'plion', but do have 'pleion'. This is another fairly serious textual critical problem. This is Keil's apparatus note for πλῆον: "ΠΑΗΩΝ Rr ΠΑΗΟΝ D ΠΕΛΗΟΝ d ΠΗΛΗΩΝ GL ΠΛΗΟΝ H ΠΛΕΟΝ K". This is his note for πλεῖον: "ΠΛΕΙΟΝ ex ΠΛΕΙΙΟΝ corr. in lit. r peλeion ex ΠΕΑΑΕΙΟΝ ni f. corr. d ΠΗΛΕΙΩΝ L peleion K peion H".</note>
+<note type="content">The Greek words I encoded at the Linguistic Layer (πλῆον and πλεῖον) are Keil's corrections. The original text of the Casanatensis is that encoded at the Graphematic Layer. The manuscripts of Priscianus (the source here is Priscianus K.2.71.11), as reported in Keil's apparatus criticus, never have "plion", but do have "pleion". This is another fairly serious textual critical problem. This is Keil's apparatus note for πλῆον: "ΠΑΗΩΝ Rr ΠΑΗΟΝ D ΠΕΛΗΟΝ d ΠΗΛΗΩΝ GL ΠΛΗΟΝ H ΠΛΕΟΝ K". This is his note for πλεῖον: "ΠΛΕΙΟΝ ex ΠΛΕΙΙΟΝ corr. in lit. r peλeion ex ΠΕΑΑΕΙΟΝ ni f. corr. d ΠΗΛΕΙΩΝ L peleion K peion H".</note>
 <pc n=".">·</pc>
 <note type="script">The last part of the line is blank (for the space of about a word).</note>
 <lb n="5r.a.11" />
@@ -17336,7 +17340,7 @@ ducunt</w>
 <w n="genetiuis" xml:id="w15960">genitiuis</w>
 <pc n="quote">·</pc>
 <w n="ius" type="alphabemes" xml:id="w15963">i·us
-<note type="content">Though the manuscript has a punctuation sign between 'i' and 'us', the morpheme meant is 'ius' as a whole. The source (Priscianus, Ars grammatica K.2.71.13) also has "ius".</note>
+<note type="content">Though the manuscript has a punctuation sign between "i" and "us", the morpheme meant is "ius" as a whole. The source (Priscianus, Ars grammatica K.2.71.13) also has "ius".</note>
 </w>
 <pc n="quote">·</pc>
 <w n="desinentibus" xml:id="w15969">desinenti
@@ -17377,7 +17381,7 @@ ducunt</w>
 		<abbr type="superscription">b<am>¯</am></abbr>
 		<expan>bent</expan>
 	</choice>
-<note type="script">The macron is a horizontal trait crossing the ascending trait of the 'b' grapheme.</note>
+<note type="script">The macron is a horizontal trait crossing the ascending trait of the "b" grapheme.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w16002">et</w>
@@ -17441,19 +17445,19 @@ bus</w>
 <w n="Arius" xml:id="w16065">arius</w>
 	<pc n="space"> </pc>
 <w n="Lycius" xml:id="w16068">lycius</w>
-<note type="script">The words 'dius', 'dia', 'Chius', 'Chia', 'Langia', 'Arius', 'Lycius' have a macron over the 'i' to mark the vowel's long quantity.</note>
+<note type="script">The words "dius", "dia", "Chius", "Chia", "Langia", "Arius", "Lycius" have a macron over the "i" to mark the vowel's long quantity.</note>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w16071">et</w>
 <w n="primitiuus" xml:id="w16074">primitiuus</w>
 <pc n="0">·</pc>
 <w n="Chius" xml:id="w16077">chius
-<note type="script">This word has a 'u'-shaped sign over the 'i' to mark its short quantity.</note>
+<note type="script">This word has a "u"-shaped sign over the "i" to mark its short quantity.</note>
 </w>
 <lb n="5r.a.16" />
 <w n="corripitur" xml:id="w16080">corripitur</w>
 <pc n=".">|</pc>
 <w n="Lyrcius" xml:id="w16083">lyrcius
-<note type="script">A macron over the 'i' marks its long quantity.</note>
+<note type="script">A macron over the "i" marks its long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="quod" xml:id="w16086">quod</w>
@@ -17472,13 +17476,13 @@ bus</w>
 </w>
 	<pc n="space"> </pc>
 <w n="Lyrceus" xml:id="w16095">lyrceus
-<note type="script">A macron over the 'e' marks its long quantity.</note>
+<note type="script">A macron over the "e" marks its long quantity.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Argia" xml:id="w16098">argia</w>
 	<pc n="space"> </pc>
 <w n="Argian" xml:id="w16101">argian</w>
-<note type="script">A macron over the 'i' in 'Argia' and 'Argia' marks its long quantity.</note>
+<note type="script">A macron over the "i" in "Argia" and "Argia" marks its long quantity.</note>
 <pc n=".">|</pc>
 <lb n="5r.a.17" />
 <w n="et" xml:id="w16104"><hi rend="larger">e</hi>t</w>
@@ -17509,7 +17513,7 @@ bus</w>
 <w n="Hectoreus" xml:id="w16134">hectore
 <lb n="5r.a.18" />
 	us
-<note type="script">There is a macron over the 'o' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron over the "o" to mark the vowel's long quantity.</note>
 </w>
 <w n="more" xml:id="w16137">more</w>
 	<pc n="space"> </pc>
@@ -17660,7 +17664,7 @@ mæ</w>
 <w n="genetiuus" xml:id="w16302">genitiuus</w>
 	<pc n="space"> </pc>
 <w n="optatiuus" xml:id="w16305">optatiuus</w>
-<note type="script">There is a macron over the last 'i' in 'nominatiuus', in 'genitiuus' and in 'optatiuus' to mark the vowel's long quantity.</note>
+<note type="script">There is a macron over the last "i" in "nominatiuus", in "genitiuus" and in "optatiuus" to mark the vowel's long quantity.</note>
 <lb n="5r.a.24" />
 <w n="et" xml:id="w16308">et</w>
 <w n="cetera" xml:id="w16311">cetera</w>
@@ -17693,6 +17697,7 @@ mæ</w>
 </w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w16341">et</w>
+<note type="tech">Until here, I substituted all ' to " in the content of notes.</note>
 <w n="in" xml:id="w16344">in</w>
 <w n="uerbis" xml:id="w16347">uerbis</w>
 	<pc n="space"> </pc>
@@ -17743,7 +17748,7 @@ fecti</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<note type="script">There seems to be a sign between 'penultimum' and 'sit', marking a graphical insertion, but I don't understand its meaning.</note>
+<note type="script">There seems to be a sign between 'penultimum' and 'sit', marking a graphical insertion, but I do not understand its meaning.</note>
 	<pc n="space"> </pc>
 <w n="sit" xml:id="w16383">sit</w>
 <w n="corripitur" xml:id="w16386">corripitur</w>
@@ -19743,7 +19748,7 @@ cipiuntur</w>
 	</choice>
 </w>
 </unclear>
-<note type="script">I'm not sure whether I found this abbreviation of 'ea quae' before.</note>
+<note type="script">I am not sure whether I found this abbreviation of 'ea quae' before.</note>
 <lb n="5v.a.26" />
 <w n="ut" xml:id="w18528">ut</w>
 <w n="praedictum" xml:id="w18531">
@@ -24369,7 +24374,7 @@ st</w>
 </w>
 	<pc n="space"> </pc>
 <w n="g" type="alphabemes" xml:id="w22866">g</w>
-<note type="source">The source is Priscian's Ars grammatica K.2.87.8. In Keil's edition it is: "hoc autem [ideo] dixi, quod u post q uel [post] g posita". Keil expunges 'ideo' because codex P (Cod. bibl. imp. Paris. 7530) doesn't have it, but Ursus read a text including 'ideo'. He also expunges 'post', though he does not report of any code omitting the word in the apparatus. Ursus does not include 'post' in his text, so he possibly read a text without that word. However, in the latter case the inference is less strong, since 'post' is a waker word than 'ideo'.</note>
+<note type="source">The source is Priscian's Ars grammatica K.2.87.8. In Keil's edition it is: "hoc autem [ideo] dixi, quod u post q uel [post] g posita". Keil expunges 'ideo' because codex P (Cod. bibl. imp. Paris. 7530) does not have it, but Ursus read a text including 'ideo'. He also expunges 'post', though he does not report of any code omitting the word in the apparatus. Ursus does not include 'post' in his text, so he possibly read a text without that word. However, in the latter case the inference is less strong, since 'post' is a waker word than 'ideo'.</note>
 <pc n="quote">·</pc>
 <w n="et" xml:id="w22869">et</w>
 <w n="post" xml:id="w22872">post</w>
@@ -32447,7 +32452,7 @@ syllabis</w>
 <w n="assumunt" xml:id="w30333">assumunt</w>
 	<pc n="space"> </pc>
 <w n="una" xml:id="w30336">una
-<note type="emendation">Scribal error: "una" for "unam". I can't see any "2" abbreviation mark over the "a", though the mark might have been there and might now be completely faded out.</note>
+<note type="emendation">Scribal error: "una" for "unam". I cannot see any "2" abbreviation mark over the "a", though the mark might have been there and might now be completely faded out.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="syllabam" xml:id="w30339">s
@@ -39049,7 +39054,7 @@ ferri</w>
 <w n="optimatis" xml:id="w36744">optimatis</w>
 	<pc n="space"> </pc>
 <w n="optimas" xml:id="w36747">optimas</w>
-<note type="tech">Most of these words won't be easily parsed by the PoS tagger, howver I am not marking them up with 'nonsense'.</note>
+<note type="tech">Most of these words will not be easily parsed by the PoS tagger, howver I am not marking them up with 'nonsense'.</note>
 <note type="graphic">There is a circumflex (^) accent over those words: "dûce", "dûc", "audîuit", "audîit", "illîce", "illîc", "istîce", "istîc", "primâtis", "primâs", "optimâtis", "optimâs".</note>
 <pc n=".">·</pc>
 <lb n="9v.b.31" />
