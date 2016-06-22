@@ -11045,7 +11045,7 @@ dinem</w>
 <w n="sexagesimus" xml:id="w9528">sexagesimus</w>
 <pc n=",">·</pc>
 <w n="septuagesimus" xml:id="w9531">septuagesimus</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="3r.b.20" />
 <w n="octuagesimus" xml:id="w9534">octuagesimus</w>
 <pc n=",">·</pc>
@@ -11146,7 +11146,6 @@ gentesimus</w>
 <w n="octigesimus" xml:id="w9603">octigesimus</w>
 <pc n=",">·</pc>
 <lb n="3r.b.24" />
-<note type="tech">Reviewed until here.</note>
 <w n="nongentesimus" xml:id="w9606">nonge
 	<add place="above">n</add>
 	tesi
@@ -11241,7 +11240,7 @@ tulissent</w>
 <pc n=",">·</pc>
 <w n="quae" xml:id="w9669">quæ</w>
 <w n="Graeci" xml:id="w9672">greci</w>
-<w n="ἐπιμεριζόμενα" type="foreign" xml:id="w9675" xml:lang="grc">epimerizomena<note type="script">The source of this passage is Priscian "De figuris numerorum" (Keil 3.413.24) and has ἐπιμεριζόμενα. The handwriting in the manuscript is almost completely faded, especially the letters after "epi-" and before "-omena". However, based on the number of graphemes that seem to be in this word the scribe probably wrote a shorter word than ἐπιμεριζόμενα, possibly something like "epirizomena".</note></w>
+<w n="ἐπιμεριζόμενα" type="foreign" xml:id="w9675" xml:lang="grc">epimerizomena<note type="script">The source of this passage is Priscian "De figuris numerorum" (Keil 3.413.24) and has ἐπιμεριζόμενα. The handwriting in the manuscript is almost completely faded, especially the graphemes between "epi-" and "-omena". However, based on the number of graphemes that seem to be in this word the scribe probably wrote a shorter word than ἐπιμεριζόμενα, possibly something like "epirizomena".</note></w>
 <lb n="3r.b.27" />
 <w n="uocant" xml:id="w9678">uocant</w>
 <pc n=".">·</pc>
@@ -11402,10 +11401,13 @@ geni</w>
 <w n="septuageni" xml:id="w9864">septuageni</w>
 <pc n=",">·</pc>
 <w n="octogeni" xml:id="w9867">octogeni</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="nonageni" xml:id="w9870">nonageni</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="centeni" xml:id="w9873">centeni</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ducenteni" xml:id="w9876">ducenteni</w>
 <lb n="3r.b.35" />
@@ -11467,12 +11469,14 @@ ngeni</w>
 </ref>
 
 <ref cRef="unknown" type="source">
-<unclear cert="medium" reason="faded">
+<unclear cert="high" reason="faded">
 <w n="est" xml:id="w9951"><hi rend="larger">e</hi>st</w>
 </unclear>
-<gap quantity="1" reason="illegible" unit="chars" />
+<unclear cert="low" reason="faded">
+<w n="et" xml:id="w9952">et</w>
+</unclear>
 <lb n="3r.b.38" />
-<unclear cert="medium" reason="faded">
+<unclear cert="high" reason="faded">
 <w n="aliud" xml:id="w9954">aliud</w>
 </unclear>
 	<pc n="space"> </pc>
@@ -11490,6 +11494,7 @@ ngeni</w>
 <w n="secundanus" xml:id="w9969">secundanus</w>
 	<pc n="space"> </pc>
 <w n="secundae" xml:id="w9972">secundæ</w>
+<pc n="."></pc>
 
 <pb facs="manuscript_images/C_03v.JPG" n="3v" />
 
@@ -11750,6 +11755,7 @@ nquagenarius</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w10290">et</w>
 <w n="trecenarius" xml:id="w10293">trecenarius</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quadringentenarius" xml:id="w10296">quadringentenarius</w>
 <pc n="0">·</pc>
@@ -11875,17 +11881,19 @@ us</w>
 <w n="aequaliter" xml:id="w10440">æqua
 <lb n="3v.a.22" />
 liter</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w10443">a</w>
 	<pc n="space"> </pc>
 <w n="tribus" xml:id="w10446">tribus</w>
 	<pc n="space"> </pc>
 <w n="ter" xml:id="w10449">ter</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="similiter" xml:id="w10452">similiter</w>
 	<pc n="space"> </pc>
 <w n="quater" xml:id="w10455">quater</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 	<pc n="space"> </pc>
 <w n="reliqua" xml:id="w10458"><hi rend="larger">r</hi>eliqua</w>
 	<pc n="space"> </pc>
@@ -11932,6 +11940,7 @@ ta</w>
 <w n="undecies" xml:id="w10497">unde
 <lb n="3v.a.24" />
 cies</w>
+<pc n=","></pc>
 <w n="duodecies" xml:id="w10500">duodecies</w>
 <pc n=",">·</pc>
 <w n="terdecies" xml:id="w10503">terdecies</w>
@@ -12004,6 +12013,7 @@ es</w>
 	<add place="above">n</add>
 <lb n="3v.a.28" />
 ties</w>
+<pc n=","></pc>
 <w n="septingenties" xml:id="w10584">septingenties</w>
 <pc n=",">·</pc>
 <w n="octingenties" xml:id="w10587">octingenties</w>
@@ -12118,7 +12128,9 @@ o</w>
 <w n="uel" xml:id="w10704">uel</w>
 <w n="trinitas" xml:id="w10707">trinitas</w>
 <pc n=",">·</pc>
-<w n="septimana" xml:id="w10710">septimania<note type="script">The handwriting is not clear, but after the "n" there seem to be more than just an "a".</note></w>
+<w n="septimana" xml:id="w10710">septimania
+<note type="emendation">The handwriting is not clear, but after the "n" there seem to be more than just an "a". If so, this is probably a scribal error ("septimania" for "septimana").</note>
+</w>
 <pc n=",">·</pc>
 <w n="senio" xml:id="w10713">senio</w>
 <pc n=".">|</pc>
@@ -12184,7 +12196,7 @@ rius</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w n="et" xml:id="w10758">et</w>
 <w n="nundinae" xml:id="w10761">nundinæ</w>
 <pc n=",">·</pc>
@@ -12203,7 +12215,7 @@ rius</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 <w n="et" xml:id="w10770">et</w>
 <w n="sciendum" xml:id="w10773">sciend
 	<choice>
@@ -12330,6 +12342,7 @@ res</w>
 </w>
 <w n="septenario" xml:id="w10878">septenario</w>
 <pc n=".">·</pc>
+<note type="tech">Reviewed until here.</note>
 <w n="sunt" xml:id="w10881"><hi rend="larger">s</hi>unt</w>
 	<pc n="space"> </pc>
 <w n="praeterea" xml:id="w10884">
@@ -12345,6 +12358,7 @@ terea</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="duplum" xml:id="w10890">dupl
 	<choice>
@@ -39053,7 +39067,7 @@ ferri</w>
 <w n="optimatis" xml:id="w36744">optimatis</w>
 	<pc n="space"> </pc>
 <w n="optimas" xml:id="w36747">optimas</w>
-<note type="tech">Most of these words will not be easily parsed by the PoS tagger, howver I am not marking them up with "nonsense".</note>
+<note type="tech">Most of these words will not be easily parsed by the PoS tagger, however I am not marking them up with "nonsense".</note>
 <note type="graphic">There is a circumflex (^) accent over those words: "dûce", "dûc", "audîuit", "audîit", "illîce", "illîc", "istîce", "istîc", "primâtis", "primâs", "optimâtis", "optimâs".</note>
 <pc n=".">·</pc>
 <lb n="9v.b.31" />
