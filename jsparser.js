@@ -214,6 +214,7 @@ var URNArray = [
 	['-', ' - '],
 	['urn:cts:latinLit:', ''],
 	['stoa0234a.stoa001:', 'Priscian from Caesarea, "Institutio de arte grammatica", '],
+	['stoa0234a.stoa003:', 'Priscian from Caesarea, "De figuris numerorum", '],
 	['stoa0110.stoa001:', 'Aelius Donatus, "Ars Minor (De partibus orationis)", '],
 	['stoa0110.stoa003:', 'Aelius Donatus, "De Barbarismo", '],
 	['stoa0110.stoa004:', 'Aelius Donatus, "De ceteriis vitiis", '],
