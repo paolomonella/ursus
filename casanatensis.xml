@@ -11494,7 +11494,7 @@ ngeni</w>
 <w n="secundanus" xml:id="w9969">secundanus</w>
 	<pc n="space"> </pc>
 <w n="secundae" xml:id="w9972">secundæ</w>
-<pc n="."></pc>
+<pc n="." />
 
 <pb facs="manuscript_images/C_03v.JPG" n="3v" />
 
@@ -11755,7 +11755,7 @@ nquagenarius</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w10290">et</w>
 <w n="trecenarius" xml:id="w10293">trecenarius</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quadringentenarius" xml:id="w10296">quadringentenarius</w>
 <pc n="0">·</pc>
@@ -11881,14 +11881,14 @@ us</w>
 <w n="aequaliter" xml:id="w10440">æqua
 <lb n="3v.a.22" />
 liter</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="a" xml:id="w10443">a</w>
 	<pc n="space"> </pc>
 <w n="tribus" xml:id="w10446">tribus</w>
 	<pc n="space"> </pc>
 <w n="ter" xml:id="w10449">ter</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="similiter" xml:id="w10452">similiter</w>
 	<pc n="space"> </pc>
@@ -11940,7 +11940,7 @@ ta</w>
 <w n="undecies" xml:id="w10497">unde
 <lb n="3v.a.24" />
 cies</w>
-<pc n=","></pc>
+<pc n="," />
 <w n="duodecies" xml:id="w10500">duodecies</w>
 <pc n=",">·</pc>
 <w n="terdecies" xml:id="w10503">terdecies</w>
@@ -12013,7 +12013,7 @@ es</w>
 	<add place="above">n</add>
 <lb n="3v.a.28" />
 ties</w>
-<pc n=","></pc>
+<pc n="," />
 <w n="septingenties" xml:id="w10584">septingenties</w>
 <pc n=",">·</pc>
 <w n="octingenties" xml:id="w10587">octingenties</w>
@@ -12342,7 +12342,6 @@ res</w>
 </w>
 <w n="septenario" xml:id="w10878">septenario</w>
 <pc n=".">·</pc>
-<note type="tech">Reviewed until here.</note>
 <w n="sunt" xml:id="w10881"><hi rend="larger">s</hi>unt</w>
 	<pc n="space"> </pc>
 <w n="praeterea" xml:id="w10884">
@@ -12358,8 +12357,7 @@ terea</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<pc n=","></pc>
-	<pc n="space"> </pc>
+<pc n="," />
 <w n="duplum" xml:id="w10890">dupl
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -12450,6 +12448,7 @@ plex</w>
 <w n="multiplex" xml:id="w10980">multiplex</w>
 <pc n=",">·</pc>
 <w n="dupondius" xml:id="w10983">dupundius</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="tripondius" xml:id="w10986">tripundius</w>
 	<pc n="space"> </pc>
@@ -12476,7 +12475,16 @@ plex</w>
 	<pc n="space"> </pc>
 <w n="quod" xml:id="w11004">quod</w>
 	<pc n="space"> </pc>
-<w n="undeuiginti" xml:id="w11007">undeuiginti<note type="script">The original hand (in brown ink) must have written something wrong. A second hand (in black ink) corrected to unum (written as "unu" with a "2-like" abbreviation mark over the final "u", plus one or two illegible signs. The source (Priscian Keil 3.416.6) has "undeuiginti".</note></w>
+
+
+<w n="unumdeuiginti" xml:id="w11007">un
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+deuiginti
+<note type="script">The original hand (in brown ink) had probably written "undeuiginti". A second hand (in black ink) overwrote the first part of the word ("unde-"): the result of the correction is now "unumdeuiginti". The source (Priscian Keil 3.416.6) has "undeuiginti".</note>
+</w>
 	<pc n="space"> </pc>
 <w n="dicimus" xml:id="w11010">dicimus</w>
 	<pc n="space"> </pc>
@@ -12553,7 +12561,7 @@ ti</w>
 <w n="decem" xml:id="w11082">decem</w>
 	<pc n="space"> </pc>
 <w n="numerus" xml:id="w11085">numerus</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 <w n="post" xml:id="w11088">post</w>
 	<pc n="space"> </pc>
 <w n="unum" xml:id="w11091">un
@@ -12576,7 +12584,7 @@ tur</w>
 	<pc n="space"> </pc>
 <w n="numerus" xml:id="w11103">numerus</w>
 <pc n=".">·</pc>
-<w n="horatius" xml:id="w11106"><hi rend="larger">h</hi>oratius</w>
+<w n="Horatius" xml:id="w11106"><hi rend="larger">h</hi>oratius</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w11109">in</w>
 <pc n="0">·</pc>
@@ -12673,7 +12681,9 @@ deuiginti</w>
 <pc n=".">·</pc>
 <w n="idem" xml:id="w11211"><hi rend="larger">i</hi>dem</w>
 	<pc n="space"> </pc>
-<w n="inuenitur" xml:id="w11214">inuenitur<note type="script">Over the second "i" there is a ^ sign, whose meaning I do not understand.</note></w>
+<w n="inuenitur" xml:id="w11214">inuenitur
+<note type="graphic">Over the second "i" there is a ^ sign ("inuenîtur"), whose meaning I do not understand.</note>
+</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w11217">in</w>
 <w n="ceteris" xml:id="w11220">ceteris</w>
@@ -12714,7 +12724,6 @@ detriginta</w>
 <pc n=",">·</pc>
 <w n="et" xml:id="w11262">et</w>
 <w n="similia" xml:id="w11265">similia</w>
-	<pc n="space"> </pc>
 	<pc n="." />
 <w n="uniformis" xml:id="w11268"><hi rend="larger">u</hi>niformis<note type="script">The larger font was added to the initial "u" by a second hand.</note></w>
 <pc n=",">·</pc>
@@ -12756,6 +12765,7 @@ sis</w>
 nquagessis</w>
 <pc n=",">·</pc>
 <w n="sexagessis" xml:id="w11316">sexagessis</w>
+<pc n=","></pc>
 <w n="septuagessis" xml:id="w11319">septuagessis</w>
 <pc n=",">·</pc>
 <lb n="3v.b.18" />
@@ -12767,7 +12777,9 @@ nquagessis</w>
 <pc n=".">·</pc>
 <w n="post" xml:id="w11331"><hi rend="larger">p</hi>ost</w>
 	<pc n="space"> </pc>
-<w n="quem" xml:id="w11334">quæm<note type="script">The scribe mistakenly wrote "quæm" with the "e caudatum" grapheme.</note></w>
+<w n="quem" xml:id="w11334">quæm
+<note type="emendation">The scribe mistakenly wrote "quæm", with the "e caudatum" grapheme, for "quem".</note>
+</w>
 	<pc n="space"> </pc>
 <w n="numerum" xml:id="w11337">numer
 	<choice>
@@ -12780,8 +12792,9 @@ nquagessis</w>
 	<pc n="space"> </pc>
 <w n="Uarrone" xml:id="w11343">bar
 <lb n="3v.b.19" />
-rone<note type="script">A common confusion between "u" and "b" due to the contemporary pronunciation.</note></w>
+rone<note type="emendation">Scribal error: "barrone" for "uarrone". A common confusion between "u" and "b" due to the contemporary pronunciation.</note></w>
 	<pc n="space"> </pc>
+<note type="tech">Reviewed until here.</note>
 <w n="non" xml:id="w11346">non</w>
 	<pc n="space"> </pc>
 <w n="componuntur" xml:id="w11349">c
