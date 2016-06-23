@@ -11146,7 +11146,6 @@ gentesimus</w>
 <w ana="13B---A1---" lemma="octigesimus" n="octigesimus" xml:id="w9603">octigesimus</w>
 <pc n=",">·</pc>
 <lb n="3r.b.24" />
-<note type="tech">Reviewed until here.</note>
 <w ana="13B---A1---" lemma="nongentesimus" n="nongentesimus" xml:id="w9606">nonge
 	<add place="above">n</add>
 	tesi
@@ -12359,7 +12358,6 @@ terea</w>
 	</choice>
 </w>
 <pc n="," />
-	<pc n="space"> </pc>
 <w ana="11B---D3---" lemma="duplum" n="duplum" xml:id="w10890">dupl
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -12450,6 +12448,7 @@ plex</w>
 <w ana="11C---A3---" lemma="multiplex" n="multiplex" xml:id="w10980">multiplex</w>
 <pc n=",">·</pc>
 <w ana="12C---A3---" lemma="dupondius" n="dupondius" xml:id="w10983">dupundius</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="12C---G----" lemma="tripondius" n="tripondius" xml:id="w10986">tripundius</w>
 	<pc n="space"> </pc>
@@ -12474,9 +12473,18 @@ plex</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w ana="4-O--------" lemma="quod" n="quod" xml:id="w11004">quod</w>
+<w ana="11F---D3---" lemma="qui" n="quod" xml:id="w11004">quod</w>
 	<pc n="space"> </pc>
-<w ana="11B---D3--1" lemma="undeuiginti" n="undeuiginti" xml:id="w11007">undeuiginti<note type="script">The original hand (in brown ink) must have written something wrong. A second hand (in black ink) corrected to unum (written as "unu" with a "2-like" abbreviation mark over the final "u", plus one or two illegible signs. The source (Priscian Keil 3.416.6) has "undeuiginti".</note></w>
+
+
+<w ana="11F---D1---" lemma="unumdeuiginti" n="unumdeuiginti" xml:id="w11007">un
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+deuiginti
+<note type="script">The original hand (in brown ink) had probably written "undeuiginti". A second hand (in black ink) overwrote the first part of the word ("unde-"): the result of the correction is now "unumdeuiginti". The source (Priscian Keil 3.416.6) has "undeuiginti".</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--7---" lemma="dico" n="dicimus" xml:id="w11010">dicimus</w>
 	<pc n="space"> </pc>
@@ -12553,7 +12561,7 @@ ti</w>
 <w ana="1-G----3---" lemma="decem" n="decem" xml:id="w11082">decem</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="numerus" n="numerus" xml:id="w11085">numerus</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 <w ana="4-S--------" lemma="post" n="post" xml:id="w11088">post</w>
 	<pc n="space"> </pc>
 <w ana="11F---D3---" lemma="unus" n="unum" xml:id="w11091">un
@@ -12576,7 +12584,7 @@ tur</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="numerus" n="numerus" xml:id="w11103">numerus</w>
 <pc n=".">·</pc>
-<w ana="11C---F1--1" lemma="horatius" n="horatius" xml:id="w11106"><hi rend="larger">h</hi>oratius</w>
+<w ana="11C---F1--1" lemma="horatius" n="Horatius" xml:id="w11106"><hi rend="larger">h</hi>oratius</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w11109">in</w>
 <pc n="0">·</pc>
@@ -12673,7 +12681,9 @@ deuiginti</w>
 <pc n=".">·</pc>
 <w ana="11F---A3--1" lemma="idem" n="idem" xml:id="w11211"><hi rend="larger">i</hi>dem</w>
 	<pc n="space"> </pc>
-<w ana="3-LJ1--6---" lemma="inuenitur" n="inuenitur" xml:id="w11214">inuenitur<note type="script">Over the second "i" there is a ^ sign, whose meaning I do not understand.</note></w>
+<w ana="3-LJ1--6---" lemma="inuenitur" n="inuenitur" xml:id="w11214">inuenitur
+<note type="graphic">Over the second "i" there is a ^ sign ("inuenîtur"), whose meaning I do not understand.</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w11217">in</w>
 <w ana="11B---O3--1" lemma="ceterus" n="ceteris" xml:id="w11220">ceteris</w>
@@ -12714,7 +12724,6 @@ detriginta</w>
 <pc n=",">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w11262">et</w>
 <w ana="11C---J3---" lemma="similis" n="similia" xml:id="w11265">similia</w>
-	<pc n="space"> </pc>
 	<pc n="." />
 <w ana="11C---A2---" lemma="uniformis" n="uniformis" xml:id="w11268"><hi rend="larger">u</hi>niformis<note type="script">The larger font was added to the initial "u" by a second hand.</note></w>
 <pc n=",">·</pc>
@@ -12756,6 +12765,7 @@ sis</w>
 nquagessis</w>
 <pc n=",">·</pc>
 <w ana="11C---B2---" lemma="sexagessis" n="sexagessis" xml:id="w11316">sexagessis</w>
+<pc n="," />
 <w ana="11C---B2---" lemma="septuagessis" n="septuagessis" xml:id="w11319">septuagessis</w>
 <pc n=",">·</pc>
 <lb n="3v.b.18" />
@@ -12767,7 +12777,9 @@ nquagessis</w>
 <pc n=".">·</pc>
 <w ana="4-S--------" lemma="post" n="post" xml:id="w11331"><hi rend="larger">p</hi>ost</w>
 	<pc n="space"> </pc>
-<w ana="11F---D1---" lemma="qui" n="quem" xml:id="w11334">quæm<note type="script">The scribe mistakenly wrote "quæm" with the "e caudatum" grapheme.</note></w>
+<w ana="11F---D1---" lemma="qui" n="quem" xml:id="w11334">quæm
+<note type="emendation">The scribe mistakenly wrote "quæm", with the "e caudatum" grapheme, for "quem".</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="11B---D1---" lemma="numerus" n="numerum" xml:id="w11337">numer
 	<choice>
@@ -12780,7 +12792,7 @@ nquagessis</w>
 	<pc n="space"> </pc>
 <w ana="11C---F3H-1" lemma="uarrone" n="Uarrone" xml:id="w11343">bar
 <lb n="3v.b.19" />
-rone<note type="script">A common confusion between "u" and "b" due to the contemporary pronunciation.</note></w>
+rone<note type="emendation">Scribal error: "barrone" for "uarrone". A common confusion between "u" and "b" due to the contemporary pronunciation.</note></w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="non" n="non" xml:id="w11346">non</w>
 	<pc n="space"> </pc>
@@ -12810,7 +12822,9 @@ ponuntur</w>
 <lb n="3v.b.20" />
 drans</w>
 <pc n=",">·</pc>
-<w ana="11C---B2---" lemma="bessis" n="bessis" xml:id="w11370">bessis</w>
+<w ana="11C---B2---" lemma="bessis" n="bessis" xml:id="w11370">bessis
+<note type="content">Lewis-Short Latin dictionary writes that the most common nominative is "bes", but also nominative "bessis" is attested: "bes, bessis, m. (nom. bessis, Paul. ex Fest. p. 33 Müll.; Prisc. Ponder. p. 1348 P.)". Source: A Latin Dictionary. Founded on Andrews' edition of Freund's Latin dictionary. revised, enlarged, and in great part rewritten by. Charlton T. Lewis, Ph.D. and. Charles Short, LL.D. Oxford. Clarendon Press. 1879, retrieved from http://www.perseus.tufts.edu/hopper/text?doc=bes&amp;fromdoc=Perseus%3Atext%3A1999.04.0059 on June 23, 2016.</note>
+</w>
 <pc n=",">·</pc>
 <w ana="11C---A2---" lemma="septunx" n="septunx" xml:id="w11373">septunx</w>
 <pc n=",">·</pc>
@@ -12853,7 +12867,9 @@ cunx</w>
 		<expan>uel</expan>
 	</choice>
 </w>
-<w ana="3-JA3--4--2" lemma="annuus" n="annuus" xml:id="w11418">annys</w>
+<w ana="3-JA3--4--2" lemma="annuus" n="annuus" xml:id="w11418">annys
+<note type="script">This is the only case in the work in which the grapheme "y" and the alphabeme "y" are meant to encode what we would today represent as a sequence of two "u" alphabemes.</note>
+</w>
 <pc n=",">·</pc>
 <w ana="11A---L2---" lemma="biennis" n="biennis" xml:id="w11421">biennis</w>
 <pc n=",">·</pc>
@@ -12878,8 +12894,10 @@ nis</w>
 <w ana="11C---J3---" lemma="similis" n="similia" xml:id="w11451">similia</w>
 <pc n=".">·</pc>
 <w ana="11B---A3---" lemma="biduum" n="biduum" xml:id="w11454">biduum</w>
+<pc n="," />
 <lb n="3v.b.24" />
 <w ana="11B---A3---" lemma="triduum" n="triduum" xml:id="w11457">triduum</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A3---" lemma="quadriduum" n="quadriduum" xml:id="w11460">quadridu
 	<choice>
@@ -12892,8 +12910,10 @@ nis</w>
 <w ana="11C---J3---" lemma="similis" n="similia" xml:id="w11466">similia</w>
 <pc n=".">·</pc>
 <w ana="11B---D3---" lemma="binoctium" n="binoctium" xml:id="w11469">binoctium</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---F2---" lemma="trinoctium" n="trinoctium" xml:id="w11472">trinoctium</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11A---F2---" lemma="quadrinoctium" n="quadrinoctium" xml:id="w11475">quadri
 <lb n="3v.b.25" />
@@ -12903,7 +12923,7 @@ nis</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w11478">et</w>
 <w ana="11C---J3---" lemma="similis" n="similia" xml:id="w11481">similia</w>
 <pc n=",">·</pc>
@@ -12913,6 +12933,7 @@ nis</w>
 		<expan>am</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11A---D2---" lemma="trifariam" n="trifariam" xml:id="w11487">trifari
 	<choice>
@@ -12920,6 +12941,7 @@ nis</w>
 		<expan>am</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11A---D2---" lemma="quadrifariam" n="quadrifariam" xml:id="w11490">quadrifari
 	<choice>
@@ -12933,6 +12955,7 @@ nis</w>
 <pc n=".">·</pc>
 <lb n="3v.b.26" />
 <w ana="3-LH1------" lemma="bipatens" n="bipatens" xml:id="w11499">bipatens</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---G----" lemma="tripatens" n="tripatens" xml:id="w11502">tripatens</w>
 	<pc n="space"> </pc>
@@ -12950,6 +12973,7 @@ nis</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---D3---" lemma="triuium" n="triuium" xml:id="w11523">triui
 	<choice>
@@ -12962,8 +12986,10 @@ nis</w>
 <w ana="11C---J3---" lemma="similis" n="similia" xml:id="w11529">similia</w>
 <pc n="." />
 <w ana="11B---A1---" lemma="bifidus" n="bifidus" xml:id="w11532">bifidus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="trifidus" n="trifidus" xml:id="w11535">trifidus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="quadrifidus" n="quadrifidus" xml:id="w11538">quadrifidus</w>
 	<pc n="space"> </pc>
@@ -12971,6 +12997,7 @@ nis</w>
 <w ana="11C---J3---" lemma="similis" n="similia" xml:id="w11544">similia</w>
 <pc n="." />
 <w ana="11B---A1---" lemma="bisulcus" n="bisulcus" xml:id="w11547">bisulcus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="trisulcus" n="trisulcus" xml:id="w11550">trisul
 <lb n="3v.b.28" />
@@ -12988,11 +13015,12 @@ cus</w>
 geminus</w>
 <pc n=".">·</pc>
 <w ana="11B---A1---" lemma="unimanus" n="unimanus" xml:id="w11562">unimanus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="centimanus" n="centimanus" xml:id="w11565">centi
 <lb n="3v.b.29" />
 manus</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w11568">et</w>
 <w ana="11C---J3---" lemma="similis" n="similia" xml:id="w11571">sim
 	<choice>
@@ -13046,7 +13074,7 @@ uir</w>
 		<expan>ilia</expan>
 	</choice>
 </w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 <w ana="11A---B2---" lemma="bigae" n="bigae" xml:id="w11598">bigæ</w>
 <pc n=",">·</pc>
 <w ana="11A---B2--1" lemma="trigae" n="trigae" xml:id="w11601">trigæ</w>
@@ -13055,7 +13083,7 @@ uir</w>
 <pc n=",">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w11607">et</w>
 <w ana="11C---J3---" lemma="similis" n="similia" xml:id="w11610">similia</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 <lb n="3v.b.31" />
 <w ana="11B---A3---" lemma="biiugus" n="biiugus" xml:id="w11613">biiugus</w>
 <pc n=",">·</pc>
@@ -13094,6 +13122,7 @@ re</w>
 <w ana="11C---C2---" lemma="nummi" n="nummi" xml:id="w11646">nummi</w>
 <pc n=",">·</pc>
 <w ana="11C---D3---" lemma="triiugus" n="triiugus" xml:id="w11649">triiugus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---D3---" lemma="quadriiugus" n="quadriiugus" xml:id="w11652">quadri
 	<pc n="space"> </pc>
@@ -13150,8 +13179,9 @@ iugus</w>
 		<expan>am</expan>
 	</choice>
 </w>
-<note type="source">The passage is not found elsewhere. In fact, it is published as a fragment from the indirect tradition: Claudius Caesar Germanicus, Fragmenta Aratea (The Aratus ascribed to Germanicus Caesar, ed. D. B. Gain, 1976), fragment 6 (urn:cts:latinLit:phi0881.phi002:6.1-6.2)</note>
+<note type="source">This passage exists only as a fragment from the indirect tradition: Claudius Caesar Germanicus, Fragmenta Aratea (The Aratus ascribed to Germanicus Caesar, ed. D. B. Gain, 1976), fragment 6 (urn:cts:latinLit:phi0881.phi002:6.1-6.2)</note>
 <pc n=".">·</pc>
+<note type="tech">Reviewed until here.</note>
 <w ana="11B---D3---" lemma="quadriangulum" n="quadriangulum" xml:id="w11697">quadriangul
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -39067,7 +39097,7 @@ ferri</w>
 <w ana="13B---C3---" lemma="optimatis" n="optimatis" xml:id="w36744">optimatis</w>
 	<pc n="space"> </pc>
 <w ana="13A---M2---" lemma="optimas" n="optimas" xml:id="w36747">optimas</w>
-<note type="tech">Most of these words will not be easily parsed by the PoS tagger, howver I am not marking them up with "nonsense".</note>
+<note type="tech">Most of these words will not be easily parsed by the PoS tagger, however I am not marking them up with "nonsense".</note>
 <note type="graphic">There is a circumflex (^) accent over those words: "dûce", "dûc", "audîuit", "audîit", "illîce", "illîc", "istîce", "istîc", "primâtis", "primâs", "optimâtis", "optimâs".</note>
 <pc n=".">·</pc>
 <lb n="9v.b.31" />
