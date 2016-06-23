@@ -12792,7 +12792,7 @@ nquagessis</w>
 	<pc n="space"> </pc>
 <w ana="11C---F3H-1" lemma="uarrone" n="Uarrone" xml:id="w11343">bar
 <lb n="3v.b.19" />
-rone<note type="emendation">Scribal error: "barrone" for "uarrone". A common confusion between "u" and "b" due to the contemporary pronunciation.</note></w>
+rone<note type="emendation">Scribal error: "barrone" for "uarrone". A common confusion between "u" and "b" due to the scribe's pronunciation pronunciation.</note></w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="non" n="non" xml:id="w11346">non</w>
 	<pc n="space"> </pc>
@@ -13181,7 +13181,6 @@ iugus</w>
 </w>
 <note type="source">This passage exists only as a fragment from the indirect tradition: Claudius Caesar Germanicus, Fragmenta Aratea (The Aratus ascribed to Germanicus Caesar, ed. D. B. Gain, 1976), fragment 6 (urn:cts:latinLit:phi0881.phi002:6.1-6.2)</note>
 <pc n=".">·</pc>
-<note type="tech">Reviewed until here.</note>
 <w ana="11B---D3---" lemma="quadriangulum" n="quadriangulum" xml:id="w11697">quadriangul
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -13203,7 +13202,7 @@ lum</w>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w11706">et</w>
 <w ana="11C---J3---" lemma="similis" n="similia" xml:id="w11709">similia</w>
 <pc n=".">ł</pc>
-<note type="script">The rest of the page is left blank (for three lines and a half).</note>
+<note type="script">The rest of the page (three and a half lines) is left blank.</note>
 </ref>
 
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.62.4-2.62.4" type="source">
@@ -13310,7 +13309,8 @@ lum</w>
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa003:3.412.22-3.413.20" type="source">
 <w ana="4-S--------" lemma="de" n="de" xml:id="w11799"><hi rend="larger">d</hi>e</w>
 <w ana="11B---O1---" lemma="numerus" n="numeris" xml:id="w11802">numeris</w>
-<pc n="0">·</pc>
+<note type="content">The phrase "de numeris" does not match with the syntax of the rest of the text. It probably is title, as from this point Ursus starts following a new source: Priscian, De figuris numerorum (urn:cts:latinLit:stoa0234a.stoa003).</note>
+<pc n=".">·</pc>
 <lb n="4r.a.4" />
 <w ana="11F---A1---" lemma="unus" n="unus" xml:id="w11805">unus</w>
 	<pc n="space"> </pc>
@@ -13323,11 +13323,11 @@ lum</w>
 	</choice>
 </w>
 <pc n=",">·</pc>
-<w ana="11F---J3---" lemma="duo" n="duo" xml:id="w11814">duo</w>
+<w ana="11F---J1---" lemma="duo" n="duo" xml:id="w11814">duo</w>
 	<pc n="space"> </pc>
-<w ana="11B---G----" lemma="due" n="due" xml:id="w11817">due</w>
+<w ana="11F---J2--1" lemma="duo" n="duae" xml:id="w11817">due</w>
 	<pc n="space"> </pc>
-<w ana="11F---M3---" lemma="duo" n="duo" xml:id="w11820">duo</w>
+<w ana="11F---J3---" lemma="duo" n="duo" xml:id="w11820">duo</w>
 <pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---J1--1" lemma="hic" n="hi" xml:id="w11823">hi</w>
@@ -13336,7 +13336,7 @@ lum</w>
 	<pc n="space"> </pc>
 <w ana="11F---J2--1" lemma="hic" n="hae" xml:id="w11829">hæ</w>
 	<pc n="space"> </pc>
-<note type="script">The word "haec", written as "hæc", seems to have been erased here.</note>
+<note type="script">The first hand had written "hi·et·hæ et hæc tres ettria" ("hi et hae et haec tres et tria"). A secon hand deleted "et hæc" (after "et hae") and added "hæc" between "et" and "tria", thus transforming the text into what it is now: "hi et hæ tres et hæc tria" ("hi et hae tres et haec tria").</note>
 <w ana="11C---J2--1" lemma="tres" n="tres" xml:id="w11832">tres</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w11835">et</w>
@@ -13345,7 +13345,9 @@ lum</w>
 </add>
 <w ana="11C---J3---" lemma="tres" n="tria" xml:id="w11841">tria</w>
 <lb n="4r.a.5" />
-<w ana="11C---J3---" lemma="mobilis" n="mobilia" xml:id="w11844">mouilia<note type="script">Scribal error ("u" for "b") due to the contemporary pronunciation.</note></w>
+<w ana="11C---J3---" lemma="mobilis" n="mobilia" xml:id="w11844">mouilia
+<note type="emendation">Scribal error ("mouilia" for "mobilia") due to the scribe's pronunciation.</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w11847">
 	<choice>
@@ -13385,7 +13387,9 @@ lum</w>
 <lb n="4r.a.6" />
 <w ana="11C---J3--1" lemma="mille" n="mille" xml:id="w11877">mille</w>
 	<pc n="space"> </pc>
-<w ana="11C---J3---" lemma="indeclinabilia" n="indeclinabilia" xml:id="w11880">indeclinauilia<note type="script">Scribe's error ("u" for "b") due to the contemporary pronunciation.</note></w>
+<w ana="11C---J3---" lemma="indeclinabilia" n="indeclinabilia" xml:id="w11880">indeclinauilia
+<note type="emendation">Scribal error: "indeclinauilia" for "indeclinabilia", due to the scribe's pronunciation.</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w11883">sunt</w>
 <pc n=".">·</pc>
@@ -13530,6 +13534,7 @@ ximus</w>
 <w ana="11B---A1---" lemma="longinquus" n="longinquus" xml:id="w12033">longi
 <lb n="4r.a.19" />
 nquus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---G----" lemma="medioximus" n="medioximus" xml:id="w12036">medioximus</w>
 <pc n=".">·</pc>
@@ -13625,7 +13630,7 @@ munes</w>
 	<pc n="space"> </pc>
 <w ana="3-KA3--7--1" lemma="tractabimus" n="tractabimus" xml:id="w12102">tractabimus</w>
 <pc n=".">·</pc>
-<note type="script">The rest of the line is blank, and is filled with a note from another hand, in a different script and black (not brown) ink. The note reads: "et patronomicis".</note>
+<note type="script">The rest of the line is blank, and is filled with a note from another hand, in a different script and black (not brown) ink. The note reads: "de patronomicis".</note>
 <lb n="4r.a.23" />
 <w ana="3-JA5--6--2" lemma="patronymica" n="patronymica" xml:id="w12105"><hi rend="dropcap">p</hi>atronymica</w>
 	<pc n="space"> </pc>
@@ -13636,7 +13641,7 @@ munes</w>
 <w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w12114">quæ</w>
 	<pc n="space"> </pc>
 <w ana="3-JJ1--6---" lemma="deriuatur" n="deriuatur" xml:id="w12117">deribatur
-<note type="script">Scribal error ("b" for "u") due to the contemporary pronunciation.</note>
+<note type="emendation">Scribal error ("deribatur" for "deriuatur") due to the scribe's pronunciation.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w12120">a</w>
@@ -13650,7 +13655,7 @@ priis</w>
 <w ana="11C---O3---" lemma="nomen" n="nominibus" xml:id="w12126">nomi
 <lb n="4r.a.24" />
 nibus</w>
-<note type="script">A fairly large hole spans from line 24 to line 29, covering the left side of the page. The scribe wrote all around the hole, so it existed before the scribe wrote the text on the parchment page.</note>
+<note type="script">A large hole in the parchment spans from line 24 to line 29, covering the left side of the page. The scribe wrote all around the hole, so the page damage existed before the scribe wrote the text on the parchment.</note>
 <w ana="3-JA5--6--2" lemma="patrum" n="patrum" xml:id="w12129">patr
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -13888,6 +13893,7 @@ d</w>
 	<pc n="space"> </pc>
 <w ana="3-LK1--6---" lemma="ostendo" n="ostendatur" xml:id="w12339">ostendatur</w>
 <pc n=".">·</pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.63.1" type="source" unit="Keil" />
 <w ana="4-O--------" lemma="ita" n="ita" xml:id="w12342">ita</w>
 <w ana="4-O--------" lemma="enim" n="enim" xml:id="w12345">en
 	<choice>
@@ -13909,6 +13915,7 @@ d</w>
 lianus</w>
 	<pc n="space"> </pc>
 <w ana="11B---F3---" lemma="scipio" n="Scipio" xml:id="w12354">scipio</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A3---" lemma="is" n="id" xml:id="w12357">id</w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w12360">
@@ -14078,9 +14085,11 @@ a</w>
 <w ana="2-JM41J1---" lemma="nominati" n="nominati" xml:id="w12498">nominati</w>
 <pc n=",">·</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w12501">ut</w>
-<w ana="11A---D2---" lemma="euripedes" n="Euripedes" xml:id="w12504">euri
+<w ana="11A---D2---" lemma="euripides" n="Euripides" xml:id="w12504">euri
 <lb n="4r.b.3" />
-pedes</w>
+	pedes
+<note type="emendation">Scribal error: "euripedes" for "euripides". The source, Priscian, Ars grammatica K.2.63.3 has "Euripides" too.</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="non" n="non" xml:id="w12507">
 	<choice>
@@ -14111,6 +14120,7 @@ pedes</w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w12537">est</w>
 <pc n=".">|</pc>
 <lb n="4r.b.4" />
+<note type="tech">Reviewed until here.</note>
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w12540"><hi rend="larger">s</hi>unt</w>
 	<pc n="space"> </pc>
 <w ana="11C---J3---" lemma="nomen" n="nomina" xml:id="w12543">nomina</w>
@@ -18921,7 +18931,7 @@ poribus</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w17529">ut</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="liuertinus" n="liuertinus" xml:id="w17532">liuertinus
-<note type="emendation">Scribal error due to the contemporary pronunciation: "liuertinus" for "libertinus".</note>
+<note type="emendation">Scribal error due to the scribe's pronunciation pronunciation: "liuertinus" for "libertinus".</note>
 </w>
 <pc n=".">·</pc>
 <w ana="11F---M3---" lemma="alius" n="alia" xml:id="w17535"><hi rend="larger">a</hi>lia</w>
@@ -19125,7 +19135,7 @@ dictæ</w>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w17769">et</w>
 <w ana="4-O--------" lemma="non" n="non" xml:id="w17772">non</w>
 <w ana="3-LB1--9---" lemma="seruant" n="seruant" xml:id="w17775">serbant
-<note type="emendation">Scribal error due to the contemporary pronunciation: "serbant" for "seruant".</note>
+<note type="emendation">Scribal error due to the scribe's pronunciation pronunciation: "serbant" for "seruant".</note>
 </w>
 <pc n="quote">·</pc>
 <w n="a" type="alphabemes" xml:id="w17778">a</w>
@@ -19968,7 +19978,7 @@ nus</w>
 <w ana="11C---B2---" lemma="declinationis" n="declinationis" xml:id="w18693">declinationis</w>
 	<pc n="space"> </pc>
 <w ana="3-JJ1--9---" lemma="derivo" n="derivantur" xml:id="w18696">deribantur
-<note type="emendation">Scribal error ("b" for "u") due to the contemporary pronuntiation.</note>
+<note type="emendation">Scribal error ("b" for "u") due to the scribe's pronunciation pronuntiation.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11F---D2--2" lemma="quamuis" n="quamuis" xml:id="w18699">qu
@@ -20005,7 +20015,7 @@ uis</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="ceruinus" n="ceruinus" xml:id="w18732">cerbinus</w>
 	<pc n="space"> </pc>
-<note type="emendation">Both in "ceruus" and in "ceruinus" there is a scribal error ("b" for "u") due to the contemporary pronuntiation.</note>
+<note type="emendation">Both in "ceruus" and in "ceruinus" there is a scribal error ("b" for "u") due to the scribe's pronunciation pronuntiation.</note>
 <pc n=",">·</pc>
 <w ana="11C---B1---" lemma="canis" n="canis" xml:id="w18735">ca
 <lb n="5v.a.34" />
