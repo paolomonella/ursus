@@ -12794,7 +12794,6 @@ nquagessis</w>
 <lb n="3v.b.19" />
 rone<note type="emendation">Scribal error: "barrone" for "uarrone". A common confusion between "u" and "b" due to the contemporary pronunciation.</note></w>
 	<pc n="space"> </pc>
-<note type="tech">Reviewed until here.</note>
 <w n="non" xml:id="w11346">non</w>
 	<pc n="space"> </pc>
 <w n="componuntur" xml:id="w11349">c
@@ -12823,7 +12822,9 @@ ponuntur</w>
 <lb n="3v.b.20" />
 drans</w>
 <pc n=",">·</pc>
-<w n="bessis" xml:id="w11370">bessis</w>
+<w n="bessis" xml:id="w11370">bessis
+<note type="content">Lewis-Short Latin dictionary writes that the most common nominative is "bes", but also nominative "bessis" is attested: "bes, bessis, m. (nom. bessis, Paul. ex Fest. p. 33 Müll.; Prisc. Ponder. p. 1348 P.)". Source: A Latin Dictionary. Founded on Andrews' edition of Freund's Latin dictionary. revised, enlarged, and in great part rewritten by. Charlton T. Lewis, Ph.D. and. Charles Short, LL.D. Oxford. Clarendon Press. 1879, retrieved from http://www.perseus.tufts.edu/hopper/text?doc=bes&amp;fromdoc=Perseus%3Atext%3A1999.04.0059 on June 23, 2016.</note>
+</w>
 <pc n=",">·</pc>
 <w n="septunx" xml:id="w11373">septunx</w>
 <pc n=",">·</pc>
@@ -12866,7 +12867,9 @@ cunx</w>
 		<expan>uel</expan>
 	</choice>
 </w>
-<w n="annuus" xml:id="w11418">annys</w>
+<w n="annuus" xml:id="w11418">annys
+<note type="script">This is the only case in the work in which the grapheme "y" and the alphabeme "y" are meant to encode what we would today represent as a sequence of two "u" alphabemes.</note>
+</w>
 <pc n=",">·</pc>
 <w n="biennis" xml:id="w11421">biennis</w>
 <pc n=",">·</pc>
@@ -12891,8 +12894,10 @@ nis</w>
 <w n="similia" xml:id="w11451">similia</w>
 <pc n=".">·</pc>
 <w n="biduum" xml:id="w11454">biduum</w>
+<pc n=","></pc>
 <lb n="3v.b.24" />
 <w n="triduum" xml:id="w11457">triduum</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quadriduum" xml:id="w11460">quadridu
 	<choice>
@@ -12905,8 +12910,10 @@ nis</w>
 <w n="similia" xml:id="w11466">similia</w>
 <pc n=".">·</pc>
 <w n="binoctium" xml:id="w11469">binoctium</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="trinoctium" xml:id="w11472">trinoctium</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quadrinoctium" xml:id="w11475">quadri
 <lb n="3v.b.25" />
@@ -12916,7 +12923,7 @@ nis</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w n="et" xml:id="w11478">et</w>
 <w n="similia" xml:id="w11481">similia</w>
 <pc n=",">·</pc>
@@ -12926,6 +12933,7 @@ nis</w>
 		<expan>am</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="trifariam" xml:id="w11487">trifari
 	<choice>
@@ -12933,6 +12941,7 @@ nis</w>
 		<expan>am</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quadrifariam" xml:id="w11490">quadrifari
 	<choice>
@@ -12946,6 +12955,7 @@ nis</w>
 <pc n=".">·</pc>
 <lb n="3v.b.26" />
 <w n="bipatens" xml:id="w11499">bipatens</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="tripatens" xml:id="w11502">tripatens</w>
 	<pc n="space"> </pc>
@@ -12963,6 +12973,7 @@ nis</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="triuium" xml:id="w11523">triui
 	<choice>
@@ -12975,8 +12986,10 @@ nis</w>
 <w n="similia" xml:id="w11529">similia</w>
 <pc n="." />
 <w n="bifidus" xml:id="w11532">bifidus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="trifidus" xml:id="w11535">trifidus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quadrifidus" xml:id="w11538">quadrifidus</w>
 	<pc n="space"> </pc>
@@ -12984,6 +12997,7 @@ nis</w>
 <w n="similia" xml:id="w11544">similia</w>
 <pc n="." />
 <w n="bisulcus" xml:id="w11547">bisulcus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="trisulcus" xml:id="w11550">trisul
 <lb n="3v.b.28" />
@@ -13001,11 +13015,12 @@ cus</w>
 geminus</w>
 <pc n=".">·</pc>
 <w n="unimanus" xml:id="w11562">unimanus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="centimanus" xml:id="w11565">centi
 <lb n="3v.b.29" />
 manus</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w n="et" xml:id="w11568">et</w>
 <w n="similia" xml:id="w11571">sim
 	<choice>
@@ -13059,7 +13074,7 @@ uir</w>
 		<expan>ilia</expan>
 	</choice>
 </w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 <w n="bigae" xml:id="w11598">bigæ</w>
 <pc n=",">·</pc>
 <w n="trigae" xml:id="w11601">trigæ</w>
@@ -13068,7 +13083,7 @@ uir</w>
 <pc n=",">·</pc>
 <w n="et" xml:id="w11607">et</w>
 <w n="similia" xml:id="w11610">similia</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 <lb n="3v.b.31" />
 <w n="biiugus" xml:id="w11613">biiugus</w>
 <pc n=",">·</pc>
@@ -13107,6 +13122,7 @@ re</w>
 <w n="nummi" xml:id="w11646">nummi</w>
 <pc n=",">·</pc>
 <w n="triiugus" xml:id="w11649">triiugus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quadriiugus" xml:id="w11652">quadri
 	<pc n="space"> </pc>
@@ -13163,8 +13179,9 @@ iugus</w>
 		<expan>am</expan>
 	</choice>
 </w>
-<note type="source">The passage is not found elsewhere. In fact, it is published as a fragment from the indirect tradition: Claudius Caesar Germanicus, Fragmenta Aratea (The Aratus ascribed to Germanicus Caesar, ed. D. B. Gain, 1976), fragment 6 (urn:cts:latinLit:phi0881.phi002:6.1-6.2)</note>
+<note type="source">This passage exists only as a fragment from the indirect tradition: Claudius Caesar Germanicus, Fragmenta Aratea (The Aratus ascribed to Germanicus Caesar, ed. D. B. Gain, 1976), fragment 6 (urn:cts:latinLit:phi0881.phi002:6.1-6.2)</note>
 <pc n=".">·</pc>
+<note type="tech">Reviewed until here.</note>
 <w n="quadriangulum" xml:id="w11697">quadriangul
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
