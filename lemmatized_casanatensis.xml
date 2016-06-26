@@ -14233,7 +14233,9 @@ diderint</w>
 <lb n="4r.b.8" />
 <w ana="11B---K1---" lemma="appellatiuorum" n="appellatiuorum" xml:id="w12657">appellatiuorum</w>
 	<pc n="space"> </pc>
-<w ana="3-NJ1--6---" lemma="facio" n="fit" xml:id="w12660">fit</w>
+<w ana="3-NB1--6---" lemma="sum" n="sit" xml:id="w12660">sit
+<note type="emendation">The agreement with "propria [nomina]" requires "sint", not "sit".</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="11A---A2---" lemma="proprius" n="propria" xml:id="w12663">
 	<choice>
@@ -14244,7 +14246,7 @@ pria</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w12666">ut</w>
 	<pc n="space"> </pc>
-<w ana="11B---A1---" lemma="magnus" n="magnus" xml:id="w12669">magnus</w>
+<w ana="11B---A1---" lemma="magnus" n="Magnus" xml:id="w12669">magnus</w>
 	<pc n="space"> </pc>
 <w ana="11B---D3---" lemma="proprius" n="proprium" xml:id="w12672">
 	<choice>
@@ -14338,7 +14340,7 @@ pria</w>
 
 
 <w ana="11F---A1-A-" lemma="atauis" n="atauis" xml:id="w12735">atauis
-<note type="script">There is a macron sign over the initial "a". If it were an abbreviation mark for "an". This would create a mispelling "antauis" for "atauis".</note>
+<note type="graphic">There is a macron sign over the initial "a" (ātauis). If it marked the long quantity of the vowel, it would be inappropriate, as both "a"s in the word are short ("ătăvus").</note>
 </w>
 <pc n="0">·</pc>
 <w ana="3-JA5--6--2" lemma="patronymica" n="patronymica" xml:id="w12738">patronymi
@@ -14349,11 +14351,11 @@ ca</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="inueniuntur" n="inueniuntur" xml:id="w12744">inueniuntur</w>
 <pc n=",">|</pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.63.12" type="source" unit="Keil" />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w12747">ut</w>
 <w ana="11C---A1---" lemma="letoides" n="Letoides" xml:id="w12750">letoides
-<note type="content">The source (Priscian, Institutiones, Keil 2.63.12-2.63-13) has "Latoides, Λητοῦς, id est Latonae". Maybe the scribe wrote "Letoides" (with "e") instead of "Latoides" based on the Greek spelling with "eta".</note>
+<note type="content">The source (Priscian, Institutiones, Keil 2.63.12-2.63-13) has "Latoides, Λητοῦς, id est Latonae". Among the manuscript of Priscian, only B and D have "Latoides" (probably based on the Doric spelling Λᾱτοΐδας), while all the others have "Letoides" (the Aeolian spelling Λητοΐδης). See http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum.</note>
 </w>
-
 	<pc n="space"> </pc>
 <w ana="11B---O1---" lemma="letois" n="Letois" xml:id="w12753">letois</w>
 <pc n=",">·</pc>
@@ -14363,6 +14365,7 @@ ca</w>
 <w ana="11B---C3---" lemma="apollo" n="Apollo" xml:id="w12762">apollo</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="filius" n="filius" xml:id="w12765">filius</w>
+<note type="content">The order "Apollo filius" was also found in the first hand of manuscript K of Priscian. See Keil's apparatus note ad K.2.63.13: "voc. filius post latonides collocatum, deinde vero verborum ordo restitutus in K". See http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum.</note>
 <pc n="0">·</pc>
 <lb n="4r.b.12" />
 <w ana="11A---B2---" lemma="latonae" n="Latonae" xml:id="w12768">latonæ</w>
@@ -14381,7 +14384,8 @@ ca</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w12789">ut</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="meiades" n="Meiades" xml:id="w12792">meiades
-<note type="script">The source (Priscian, Institutiones, Keil p. 64 line 3) has "Maiades". The manuscript has a macron sign over the first "e", that I cannot interpret and therefore did not encode.</note>
+<note type="content">All manuscripts of the source (Priscian, Ars grammatica, K.2.64.3) have "Maiades".</note>
+<note type="graphic">The manuscript has a macron sign over the first "e" ("mēiades").</note>
 </w>
 <w ana="11B---A1--1" lemma="mercurius" n="Mercurius" xml:id="w12795">mercu
 <lb n="4r.b.13" />
@@ -14424,7 +14428,7 @@ rius</w>
 <w ana="11B---A1---" lemma="thesidae" n="Thesidae" xml:id="w12840">thesidæ</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w12843">a</w>
-<w ana="11B---F3---" lemma="thereo" n="Thereo" xml:id="w12846">thereo</w>
+<w ana="11B---F3---" lemma="theseo" n="Theseo" xml:id="w12846">theseo</w>
 	<pc n="space"> </pc>
 <w ana="11C---F1---" lemma="rex" n="rege" xml:id="w12849">rege</w>
 <pc n=",">|</pc>
