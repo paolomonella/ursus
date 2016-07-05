@@ -15246,8 +15246,8 @@ ca</w>
 <lb n="4v.a.6" />
 <w ana="11F---J1---" lemma="ille" n="illi" xml:id="w13689">illi</w>
 <w ana="4-S--------" lemma="per" n="per" xml:id="w13692">per</w>
-<w ana="11B---O2---" lemma="synairesin" n="synairesin" xml:id="w13695">synheresin</w>
-<note type="tech">§ capisci cosa scrivere in @n qui e nell'altro, che ho pure marcato con §</note>
+<w n="συναίρεσιν" type="foreign" xml:id="w13695" xml:lang="grc">synheresin</w>
+<note type="emendation">There should not be an "h" in the Latin transliteration of this Greek word. My emendation would be "syneresin" at the Graphematic and Alphabetic Layers, and "συναίρεσιν" at the Linguistic Layer (as I actually encoded here).</note>
 <pc n="quote">·</pc>
 <w n="e" type="alphabemes" xml:id="w13698">e</w>
 	<pc n="space"> </pc>
@@ -15699,8 +15699,8 @@ tur</w>
 		<expan>per</expan>
 	</choice>
 </w>
-<w ana="11B---O2---" lemma="synairesin" n="synairesin" xml:id="w14124">synheresin</w>
-<note type="tech">§ capisci cosa scrivere in @n qui e nell'altro, che ho pure marcato con §</note>
+<w n="συναίρεσιν" type="foreign" xml:id="w14124" xml:lang="grc">synheresin</w>
+<note type="emendation">There should not be an "h" in the Latin transliteration of this Greek word. My emendation would be "syneresin" at the Graphematic and Alphabetic Layers, and "συναίρεσιν" at the Linguistic Layer (as I actually encoded here).</note>
 <pc n=",">·</pc>
 <w ana="4-S-------1" lemma="apud" n="apud" xml:id="w14127">apud</w>
 <w ana="11F---M1---" lemma="ego" n="nos" xml:id="w14130">nos</w>
@@ -15883,7 +15883,7 @@ tos</w>
 </w>
 <pc n=".">|</pc>
 <lb n="4v.a.29" />
-<w ana="5-G--------" lemma="num.~rom." n="x">§<note type="tech">Reviewed until here. Ma occhio agli altri § che ho lasciato qua e là (ancora da fare).</note></w>
+<w ana="5-G--------" lemma="num.~rom." n="x">§<note type="tech">Reviewed until here.</note></w>
 <w ana="3-LJ1--9---" lemma="inueniuntur" n="inueniuntur" xml:id="w14322">inueniuntur</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="etiam" n="etiam" xml:id="w14325">eti
@@ -15902,20 +15902,26 @@ tos</w>
 <w ana="11C---B2---" lemma="gentilia" n="gentilia" xml:id="w14337">gentilia</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w14340">ut</w>
-<w ana="11C---B2---" lemma="haemonis" n="Haemonis" xml:id="w14343">æmonis</w>
+<w ana="11C---B2---" lemma="haemonis" n="Haemonis" xml:id="w14343">æmonis
+<note type="emendation">Scribal error. The scribe omitted the initial "h" and wrote "æmonis" for "hæmonis".</note>
+</w>
+<pc n="," />
 <lb n="4v.a.30" />
 <w ana="11B---J1---" lemma="thessalis" n="Thessalis" xml:id="w14346">thessalis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---J1--1" lemma="colchis" n="Colchis" xml:id="w14349">colchis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---O1---" lemma="argolis" n="Argolis" xml:id="w14352">argolis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11A---M2---" lemma="cyclas" n="Cyclas" xml:id="w14355">cyclas</w>
 <pc n=",">·</pc>
 <w ana="11C---B1--3" lemma="ias" n="Ias" xml:id="w14358">ias</w>
 <pc n=",">·</pc>
 <w ana="11A---M2---" lemma="troias" n="Troias" xml:id="w14361">troias
-<note type="source">Keil (Priscian, Institutiones K 2.68.13, the direct source of this passage) chooses the reading "Troas", but in the apparatus criticus he mentions the reading "troias" from codices D ("cod. bibl. publ. Bernensis, olim Bongarsianus"), H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii") and K ("cod. bibl. Caroliruhensis 223").</note>
+<note type="content">Keil (Priscian, Institutiones K 2.68.13, the direct source of this passage) chooses the reading "Troas", but in the apparatus criticus he mentions the reading "troias" from Priscian's codices D ("cod. bibl. publ. Bernensis, olim Bongarsianus"), H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii") and K ("cod. bibl. Caroliruhensis 223").</note>
 </w>
 <pc n=".">·</pc>
 <w ana="11F---A2---" lemma="alius" n="alia" xml:id="w14364"><hi rend="larger">a</hi>lia</w>
@@ -15930,18 +15936,20 @@ pria</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w14370">ut</w>
 <w ana="11B---O1---" lemma="bacchis" n="Bacchis" xml:id="w14373">ba
 <lb n="4v.a.31" />
-chis</w>
+	chis
+<note type="emendation">Scribal error: "bachis" for "bacchis".</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="2-MD11L1---" lemma="doris" n="Doris" xml:id="w14376">doris</w>
 	<pc n="space"> </pc>
 <w ana="11A---M2---" lemma="pythias" n="Pythias" xml:id="w14379">pythias</w>
 <pc n=".">|</pc>
-<note type="content">The rest of the line is left blank. In this space, a second hand has written in black ink a note that should read: "De possessiuis nominibus" (with abbreviations for "de", "mini" and "bus").</note>
+<note type="content">The rest of the line is left blank. In this space, a second hand has written in black ink a note that reads "De possessiuis nominibus" (with abbreviations for "de", "mini" and "bus").</note>
 </ref>
 </ab>
 
 <ab n="Possessiua nomina" xml:id="ab17">
-<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.68.14-2.82.20" type="source">
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.68.15-2.68.24" type="source">
 
 <lb n="4v.a.32" />
 <w ana="11F---A2---" lemma="possessiua" n="possessiua" xml:id="w14382"><hi rend="dropcap">p</hi>ossessiua</w>
@@ -16050,12 +16058,14 @@ nificant</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w14496">a</w>
-<w ana="11A---O2---" lemma="propris" n="propris" xml:id="w14499">
+<w ana="11B---O3---" lemma="proprius" n="propriis" xml:id="w14499">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
-pris</w>
+	pris
+<note type="emendation">Scribal error: "propris" for "propriis".</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="11C---O3---" lemma="nomen" n="nominibus" xml:id="w14502">nomini
 	<choice>
@@ -16129,6 +16139,9 @@ tinent</w>
 <w ana="4-S--------" lemma="ad" n="ad" xml:id="w14580">ad</w>
 <w ana="11F---M1---" lemma="deus" n="deos" xml:id="w14583">deos</w>
 	<pc n="space"> </pc>
+</ref>
+
+<ref cRef="unknown" type="source">
 <w ana="11F---F3---" lemma="is" n="eo" xml:id="w14586">eo</w>
 <w ana="4-O--------" lemma="quod" n="quod" xml:id="w14589">quod</w>
 	<pc n="space"> </pc>
@@ -16294,7 +16307,7 @@ priis</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="ad" n="ad" xml:id="w14778">ad</w>
-<w ana="11C---M2--1" lemma="ohmines" n="ohmines" xml:id="w14781">ohmines</w>
+<w ana="11C---M1---" lemma="homo" n="homines" xml:id="w14781">homines</w>
 	<pc n="space"> </pc>
 <w ana="11C---B1---" lemma="uel" n="uel" xml:id="w14784">uel</w>
 	<pc n="space"> </pc>
@@ -16329,7 +16342,9 @@ priis</w>
 	</choice>
 tinet</w>
 <pc n=".">.</pc>
+</ref>
 
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.69.1-2.82.20" type="source">
 <w ana="3-NB2--9---" lemma="possessiua" n="possessiua" xml:id="w14814"><hi rend="larger">p</hi>ossessiua</w>
 	<pc n="space"> </pc>
 <w ana="11E---J2---" lemma="species" n="species" xml:id="w14817">species</w>
