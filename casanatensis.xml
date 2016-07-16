@@ -42,6 +42,7 @@
 <change type="agenda">Adopt prefixDef: vd. the discussion in the TEI-L with subject "cRef usage".</change>
 <change type="agenda">In w14058 I should have an 'add' child of 'abbr', but I do not b/c this is not managed by the JS at this time. Make the JS manage it and encode it (not a big deal, though, as there is a 'note' saying it).</change>
 <change type="agenda">In notes, always write Priscian, Ars grammatica (and not Institutiones et sim.).</change>
+<change type="agenda">Propose an emendation for the note with id note-4.v.b.2</change>
     </revisionDesc>
   </teiHeader>
 
@@ -15215,29 +15216,29 @@ ca</w>
 <pc n="quote">·</pc>
 <w n="ut" xml:id="w13659">ut</w>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.66.39" type="source" unit="Keil" />
-<w n="Πρίαμος" type="foreign" xml:lang="grc" xml:id="w13662">priamos
+<w n="Πρίαμος" type="foreign" xml:id="w13662" xml:lang="grc">priamos
 <note type="script">There is an acute accent sign over the "i", marking the quantity of the vowel, or possibly simply the stress on that syllable. I am not recording such signs because they do not have graphemic value, i.e. they do not create "minimal pairs" of words.</note>
 </w>
 	<pc n="space"> </pc>
-<w n="Πριάμου" type="foreign" xml:lang="grc" xml:id="w13665">priamoys
+<w n="Πριάμου" type="foreign" xml:id="w13665" xml:lang="grc">priamoys
 <note type="emendation">Scribal error: "priamoys" ("Πριάμους") for "priamoy" ("Πριάμου"). Compare the source, Priscian, Ars grammatica K.2.66.39: "Πρίαμος Πριάμου". In line 3 above the scribe wrote only two possible genitive endings for this category of nouns ("ος" and "ους"), while the source (Priscian, Ars grammatica K.2.66.37-38) has three genitive endings: "ου", "ος" and "ους". One line below (here, in line 4) the scribe gave to the genitive of Πρίαμος an erroneous ending Πριάμους (instead of the correct Πριάμους), probably also because the correct ending "ου" was not listed among the possible genitive endings in line 3.</note>
 </w>
 <pc n=",">·</pc>
 <lb n="4v.a.5" />
 <w n="Priamides" xml:id="w13668">priamides</w>
 <pc n=",">·</pc>
-<w n="Νέστωρ" type="foreign" xml:lang="grc" xml:id="w13671">nestor</w>
+<w n="Νέστωρ" type="foreign" xml:id="w13671" xml:lang="grc">nestor</w>
 <pc n=",">·</pc>
-<w n="Νέστορος" type="foreign" xml:lang="grc" xml:id="w13674">nestoros</w>
+<w n="Νέστορος" type="foreign" xml:id="w13674" xml:lang="grc">nestoros</w>
 <pc n=",">·</pc>
 <w n="Nestorides" xml:id="w13677">nestorides</w>
 <pc n=",">·</pc>
-<w n="Πηλεύς" type="foreign" xml:lang="grc" xml:id="w13680">peleis
+<w n="Πηλεύς" type="foreign" xml:id="w13680" xml:lang="grc">peleis
 <note type="script">There is an acute accent mark over the "i".</note>
 <note type="emendation">Scribal error in translitteration: "Peleis" for "Peleys" ("Πηλεύς").</note>
 </w>
 <pc n=",">·</pc>
-<w n="Πηλέως" type="foreign" xml:lang="grc" xml:id="w13683">peleos
+<w n="Πηλέως" type="foreign" xml:id="w13683" xml:lang="grc">peleos
 <note type="script">There is an acute accent mark over the second "e".</note>
 </w>
 <pc n=",">·</pc>
@@ -15246,7 +15247,7 @@ ca</w>
 <lb n="4v.a.6" />
 <w n="illi" xml:id="w13689">illi</w>
 <w n="per" xml:id="w13692">per</w>
-<w n="συναίρεσιν" type="foreign" xml:lang="grc" xml:id="w13695">synheresin</w>
+<w n="συναίρεσιν" type="foreign" xml:id="w13695" xml:lang="grc">synheresin</w>
 <note type="emendation">There should not be an "h" in the Latin transliteration of this Greek word. My emendation would be "syneresin" at the Graphematic and Alphabetic Layers, and "συναίρεσιν" at the Linguistic Layer (as I actually encoded here).</note>
 <pc n="quote">·</pc>
 <w n="e" type="alphabemes" xml:id="w13698">e</w>
@@ -15364,7 +15365,7 @@ tronimicis</w>
 	</choice>
 </w>
 <w n="Calchodontides" xml:id="w13815">calchodontides</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="Athlantiades" xml:id="w13818">athlantiades</w>
 <pc n="0">·</pc>
@@ -15390,7 +15391,7 @@ tronimicis</w>
 	</choice>
 </w>
 <w n="Deucalionides" xml:id="w13839">deucalionides</w>
-<pc n=","></pc>
+<pc n="," />
 <w n="Scipiades" xml:id="w13842">sci
 <lb n="4v.a.12" />
 piades</w>
@@ -15402,7 +15403,7 @@ piades</w>
 	</choice>
 </w>
 <w n="Scipionides" xml:id="w13848">scipionides</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="Aenides" xml:id="w13851">ænides
 <note type="graphic">There is a ^ mark over the "n".</note>
@@ -15699,7 +15700,7 @@ tur</w>
 		<expan>per</expan>
 	</choice>
 </w>
-<w n="συναίρεσιν" type="foreign" xml:lang="grc" xml:id="w14124">synheresin</w>
+<w n="συναίρεσιν" type="foreign" xml:id="w14124" xml:lang="grc">synheresin</w>
 <note type="emendation">There should not be an "h" in the Latin transliteration of this Greek word. My emendation would be "syneresin" at the Graphematic and Alphabetic Layers, and "συναίρεσιν" at the Linguistic Layer (as I actually encoded here).</note>
 <pc n=",">·</pc>
 <w n="apud" xml:id="w14127">apud</w>
@@ -15807,7 +15808,7 @@ tos</w>
 <w n="Adrestine" xml:id="w14238">adrestine
 <note type="graphic">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="Nereus" xml:id="w14241">nereus</w>
 	<pc n="space"> </pc>
@@ -15873,7 +15874,7 @@ tos</w>
 <w n="Acrisionea" xml:id="w14310">acrisionea
 <note type="content">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading "ab Acrisione", but in the apparatus criticus he mentions the reading "acrisionea" from codices H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii"), and r ("cod. bibl. imp. Paris. 7496", second hand).</note>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="id" xml:id="w14313">id</w>
 <w n="est" xml:id="w14316">est</w>
@@ -15904,16 +15905,16 @@ tos</w>
 <w n="Haemonis" xml:id="w14343">æmonis
 <note type="emendation">Scribal error. The scribe omitted the initial "h" and wrote "æmonis" for "hæmonis".</note>
 </w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="4v.a.30" />
 <w n="Thessalis" xml:id="w14346">thessalis</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="Colchis" xml:id="w14349">colchis</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="Argolis" xml:id="w14352">argolis</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="Cyclas" xml:id="w14355">cyclas</w>
 <pc n=",">·</pc>
@@ -15938,8 +15939,10 @@ pria</w>
 	chis
 <note type="emendation">Scribal error: "bachis" for "bacchis".</note>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="Doris" xml:id="w14376">doris</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="Pythias" xml:id="w14379">pythias</w>
 <pc n=".">|</pc>
@@ -16004,6 +16007,7 @@ d</w>
 <w n="hoc" xml:id="w14442">hoc</w>
 	<pc n="space"> </pc>
 <w n="distat" xml:id="w14445">distat</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quod" xml:id="w14448">quod</w>
 	<pc n="space"> </pc>
@@ -16094,7 +16098,7 @@ que</w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w14529">a</w>
 <w n="feminino" xml:id="w14532">feminino</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 <w n="quando" xml:id="w14535">quando</w>
 <lb n="4v.a.38" />
 <w n="a" xml:id="w14538">a</w>
@@ -16197,8 +16201,8 @@ tronymica</w>
 	<pc n="space"> </pc>
 <w n="posse" xml:id="w14649">posse</w>
 <pc n=".">.</pc>
-<w n="x">§<note type="tech">Reviewed until here.</note></w>
-<note type="tech">Dici che la sintassi qui traballa e che non c'è fonte. Potrei proporre un emendamento. §</note>
+<note type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible</note>
+<note type="tech">Reviewed until here. Check if the next sentence ("possessiua quae et thetica dicitur..." has a source.</note>
 <w n="possessiua" xml:id="w14652"><hi rend="larger">p</hi>ossessiua</w>
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w14655">quæ</w>
@@ -16710,7 +16714,7 @@ maticus</w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w15228">a</w>
 <w n="principali" xml:id="w15231">principali</w>
-<note type="source">Keil in his edition of Priscian, Institutiones K 2.69.23, the direct source of this passage, expunges the sentence "quod a principali accepit", though it seems to exist in all manuscripts.</note>
+<note type="source">In his edition of Priscian, Ars grammatica, K 2.69.23, the direct source of this passage, Keil expunges the sentence "quod a principali accepit", though it seems to exist in all manuscripts.</note>
 <pc n=".">·</pc>
 <w n="et" xml:id="w15234">et</w>
 	<pc n="space"> </pc>

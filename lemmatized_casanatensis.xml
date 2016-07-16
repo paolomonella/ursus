@@ -42,6 +42,7 @@
 <change type="agenda">Adopt prefixDef: vd. the discussion in the TEI-L with subject "cRef usage".</change>
 <change type="agenda">In w14058 I should have an 'add' child of 'abbr', but I do not b/c this is not managed by the JS at this time. Make the JS manage it and encode it (not a big deal, though, as there is a 'note' saying it).</change>
 <change type="agenda">In notes, always write Priscian, Ars grammatica (and not Institutiones et sim.).</change>
+<change type="agenda">Propose an emendation for the note with id note-4.v.b.2</change>
     </revisionDesc>
   </teiHeader>
 
@@ -15883,8 +15884,7 @@ tos</w>
 </w>
 <pc n=".">|</pc>
 <lb n="4v.a.29" />
-<w ana="5-G--------" lemma="num.~rom." n="x">§<note type="tech">Reviewed until here.</note></w>
-<w ana="3-LJ1--9---" lemma="inueniuntur" n="inueniuntur" xml:id="w14322">inueniuntur</w>
+<w ana="11C---A2---" lemma="inueniuntur" n="inueniuntur" xml:id="w14322">inueniuntur</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="etiam" n="etiam" xml:id="w14325">eti
 	<choice>
@@ -15939,8 +15939,10 @@ pria</w>
 	chis
 <note type="emendation">Scribal error: "bachis" for "bacchis".</note>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="2-MD11L1---" lemma="doris" n="Doris" xml:id="w14376">doris</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11A---M2---" lemma="pythias" n="Pythias" xml:id="w14379">pythias</w>
 <pc n=".">|</pc>
@@ -16005,6 +16007,7 @@ d</w>
 <w ana="11F---A3---" lemma="hic" n="hoc" xml:id="w14442">hoc</w>
 	<pc n="space"> </pc>
 <w ana="3-JA1--6---" lemma="disto" n="distat" xml:id="w14445">distat</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---D3---" lemma="qui" n="quod" xml:id="w14448">quod</w>
 	<pc n="space"> </pc>
@@ -16095,7 +16098,7 @@ que</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w14529">a</w>
 <w ana="11B---A3--1" lemma="feminino" n="feminino" xml:id="w14532">feminino</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 <w ana="4-O--------" lemma="quando" n="quando" xml:id="w14535">quando</w>
 <lb n="4v.a.38" />
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w14538">a</w>
@@ -16198,6 +16201,8 @@ tronymica</w>
 	<pc n="space"> </pc>
 <w ana="3-NH1------" lemma="possum" n="posse" xml:id="w14649">posse</w>
 <pc n=".">.</pc>
+<note type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible</note>
+<note type="tech">Reviewed until here. Check if the next sentence ("possessiua quae et thetica dicitur..." has a source.</note>
 <w ana="11A---A2---" lemma="possessiua" n="possessiua" xml:id="w14652"><hi rend="larger">p</hi>ossessiua</w>
 	<pc n="space"> </pc>
 <w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w14655">quæ</w>
@@ -16709,7 +16714,7 @@ maticus</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w15228">a</w>
 <w ana="11C---F3---" lemma="principalis" n="principali" xml:id="w15231">principali</w>
-<note type="source">Keil in his edition of Priscian, Institutiones K 2.69.23, the direct source of this passage, expunges the sentence "quod a principali accepit", though it seems to exist in all manuscripts.</note>
+<note type="source">In his edition of Priscian, Ars grammatica, K 2.69.23, the direct source of this passage, Keil expunges the sentence "quod a principali accepit", though it seems to exist in all manuscripts.</note>
 <pc n=".">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w15234">et</w>
 	<pc n="space"> </pc>
