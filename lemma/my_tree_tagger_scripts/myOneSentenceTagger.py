@@ -13,7 +13,7 @@ import pprint
 import treetaggerwrapper
 tagger = treetaggerwrapper.TreeTagger(TAGLANG='la')
 #textToParse = ['x', 'est', 'omnis', 'divisa', 'in', 'partes', 'tres']
-sentence = u'uergilius poeta est'
+sentence = u'Uergilius poeta est'
 textToParse = (sentence).split()
 print(textToParse)
 tags = tagger.tag_text(textToParse, numlines=True, tagonly=True)
