@@ -16202,7 +16202,7 @@ tronymica</w>
 <w ana="3-NH1------" lemma="possum" n="posse" xml:id="w14649">posse</w>
 <pc n=".">.</pc>
 <note type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible</note>
-<note type="tech">Reviewed until here. Check if the next sentence ("possessiua quae et thetica dicitur..." has a source.</note>
+<note type="tech">§ Reviewed until here. Check if the next sentence ("possessiua quae et thetica dicitur..." has a source.</note>
 <w ana="11A---A2---" lemma="possessiua" n="possessiua" xml:id="w14652"><hi rend="larger">p</hi>ossessiua</w>
 	<pc n="space"> </pc>
 <w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w14655">quæ</w>
@@ -19010,7 +19010,7 @@ poribus</w>
 <lb n="5r.b.28" />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w17529">ut</w>
 	<pc n="space"> </pc>
-<w ana="11B---A1---" lemma="liuertinus" n="liuertinus" xml:id="w17532">liuertinus
+<w ana="11B---A1---" lemma="libertinus" n="libertinus" xml:id="w17532">liuertinus
 <note type="emendation">Scribal error due to the scribe's pronunciation pronunciation: "liuertinus" for "libertinus".</note>
 </w>
 <pc n=".">·</pc>
