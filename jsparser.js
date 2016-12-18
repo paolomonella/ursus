@@ -1125,13 +1125,13 @@ function tagsetify(tagsetAna) {
 }
 
 
+/*#######################################
+#    FUNCTION READING EXTERNAL XML FILE #
+#######################################*/
 
+/* VERSION WORKING ONLY IN FIREFOX-WORKING (not working in Chrome) */
 
-
-/*############################
-#    FUNCTION PARSING XML    #
-############################*/
-
+/*
 var xmlDoc;
 function loadxml() {
   xmlDoc = document.implementation.createDocument('','',null);
@@ -1139,6 +1139,73 @@ function loadxml() {
   xmlDoc.load('lemmatized_casanatensis.xml');
   xmlDoc.onload = readXML;
 }
+*/
+
+/* This code detects if the browser is Chrome(-based) */
+
+// Source: http://stackoverflow.com/questions/4565112/javascript-how-to-find-out-if-the-user-browser-is-chrome#13348618
+// Please note, 
+// that IE11 now returns undefined again for window.chrome
+// and new Opera 30 outputs true for window.chrome
+// and new IE Edge outputs to true now for window.chrome
+// and if not iOS Chrome check
+// so use the below updated condition
+var isChromium = window.chrome,
+    winNav = window.navigator,
+    vendorName = winNav.vendor,
+    isOpera = winNav.userAgent.indexOf("OPR") > -1,
+    isIEedge = winNav.userAgent.indexOf("Edge") > -1,
+    isIOSChrome = winNav.userAgent.match("CriOS");
+if(isIOSChrome){
+    // is Google Chrome on IOS
+
+} else if(isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false && isIEedge == false) {
+   var isChrome == true // is Google Chrome
+} else { 
+   // not Google Chrome 
+}
+
+
+
+/* W3C SCHOOLS/A VERSION EDITED BY ME, from http://www.w3schools.com/xml/loadxmldoc.asp --
+	It works in Firefox. It should work in IE too. */
+
+function loadxml() {
+	// code for IE
+	if (window.ActiveXObject)
+		{
+		xmlDoc=new ActiveXObject('Microsoft.XMLDOM');
+		xmlDoc.async=false;
+		xmlDoc.load('lemmatized_casanatensis.xml');
+		}
+	/*
+	else if (isIOSChrome || isChrome) {
+		§ Metti qui il codice da eseguire se è Chrome, prendendolo da 
+		http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only
+		}
+	*/
+	// code for Mozilla, Firefox, Opera, etc.
+	else if (document.implementation.createDocument)
+		{
+		xmlDoc=document.implementation.createDocument('','',null);
+		xmlDoc.load('lemmatized_casanatensis.xml');
+	        xmlDoc.onload = readXML;
+		}
+	else
+		{
+		alert('Your browser cannot handle this script');
+		}
+}
+
+/* W3C SCHOOLS/B VERSION? Code from http://www.w3schools.com/xml/dom_intro.asp failed;
+	try http://www.w3schools.com/xml/xml_http.asp now*/
+
+/* I have tried a Chrome-compatible version of the code to load the external .xml file, taken from http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only -- but it did not work with Chrome (and it did not work with Firefox either). */
+
+
+/*############################
+#    FUNCTION PARSING XML    #
+############################*/
 
 function readXML() {
 
