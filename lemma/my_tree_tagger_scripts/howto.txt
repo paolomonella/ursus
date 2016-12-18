@@ -1,0 +1,8 @@
+Run
+python paoloUrsusTagger.py
+in this folder to run the script that inputs
+casanatensis.xml
+and outputs
+lemmatized_casanatensis.xml
+
+(Note: the script takes some time to do its job).
