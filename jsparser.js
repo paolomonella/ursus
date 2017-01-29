@@ -1158,9 +1158,8 @@ var isChromium = window.chrome,
     isIOSChrome = winNav.userAgent.match("CriOS");
 if(isIOSChrome){
     // is Google Chrome on IOS
-
 } else if(isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false && isIEedge == false) {
-   var isChrome == true // is Google Chrome
+   var isChrome = true // is Google Chrome
 } else { 
    // not Google Chrome 
 }
@@ -1178,12 +1177,21 @@ function loadxml() {
 		xmlDoc.async=false;
 		xmlDoc.load('lemmatized_casanatensis.xml');
 		}
-	/*
 	else if (isIOSChrome || isChrome) {
-		§ Metti qui il codice da eseguire se è Chrome, prendendolo da 
+	/*
+		§ Sto mettendo qui il codice da eseguire se è Chrome, prendendolo da 
 		http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only
-		}
+		Al momento non funziona neanche in Chrome, ma probabilmente è perché prova ad accedere ai file
+		tramite file:/// invece di http://
+		Quindi o installo un server http locale e uso localhost (ma non vorrei farlo), o faccio ssh su
+		unipa e testo la versione online (propendo per la seconda ipotesi).
 	*/
+		var xmlhttp = new XMLHttpRequest();
+	        xmlhttp.open('GET', dname, false);
+	        xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+	        xmlhttp.send('');
+	        xmlDoc = xmlhttp.responseXML;
+		}
 	// code for Mozilla, Firefox, Opera, etc.
 	else if (document.implementation.createDocument)
 		{
