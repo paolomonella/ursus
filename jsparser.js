@@ -1173,17 +1173,6 @@ function loadxml() {
 	        xmlDoc = xmlhttp.responseXML;
 		readXML();
 		}
-	/*
-	else if ( Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0
-			|| (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })
-			(!window['safari'] || safari.pushNotification) )
-		{
-		alert('safari!');
-		xmlDoc=document.implementation.createDocument('','',null);
-		xmlDoc.load('lemmatized_casanatensis.xml');
-	        xmlDoc.onload = readXML;
-		}
-	*/
 	else if (document.implementation.createDocument) // Mozilla, Firefox, Opera, etc.
 		{
 		xmlDoc=document.implementation.createDocument('','',null);
