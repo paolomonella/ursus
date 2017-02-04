@@ -106,7 +106,7 @@ td.ALCell.foreign, td.ALCell.ancientAbbreviation, td.ALCell.numeral {
 }
 
 table {
-	display: inline;
+	display: inline-table;
 }
 
 table.wordTable td {

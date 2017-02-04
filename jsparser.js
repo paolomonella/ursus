@@ -1141,7 +1141,8 @@ var isChromium = window.chrome,
     vendorName = winNav.vendor,
     isOpera = winNav.userAgent.indexOf("OPR") > -1,
     isIEedge = winNav.userAgent.indexOf("Edge") > -1,
-    isIOSChrome = winNav.userAgent.match("CriOS");
+    isIOSChrome = winNav.userAgent.match("CriOS"),
+    isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
 if(isIOSChrome){
     // is Google Chrome on IOS
 } else if(isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false && isIEedge == false) {
@@ -1156,14 +1157,14 @@ if(isIOSChrome){
 	It works in Firefox. It should work in IE too. */
 
 function loadxml() {
-	// code for IE
-	if (window.ActiveXObject)
+	if (window.ActiveXObject)		// Internet Explorer
 		{
 		xmlDoc=new ActiveXObject('Microsoft.XMLDOM');
 		xmlDoc.async=false;
 		xmlDoc.load('lemmatized_casanatensis.xml');
 		}
-	else if (isIOSChrome || isChrome) {
+	else if (isIOSChrome || isChrome || isSafari)	// Chrome or Safari
+		{
 		var xmlhttp = new XMLHttpRequest();
 	        //xmlhttp.open('GET', dname, false);
 	        xmlhttp.open('GET', 'lemmatized_casanatensis.xml', false);
@@ -1172,17 +1173,24 @@ function loadxml() {
 	        xmlDoc = xmlhttp.responseXML;
 		readXML();
 		}
-	// code for Mozilla, Firefox, Opera, etc.
-	else if (document.implementation.createDocument)
+	/*
+	else if ( Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0
+			|| (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })
+			(!window['safari'] || safari.pushNotification) )
+		{
+		alert('safari!');
+		xmlDoc=document.implementation.createDocument('','',null);
+		xmlDoc.load('lemmatized_casanatensis.xml');
+	        xmlDoc.onload = readXML;
+		}
+	*/
+	else if (document.implementation.createDocument) // Mozilla, Firefox, Opera, etc.
 		{
 		xmlDoc=document.implementation.createDocument('','',null);
 		xmlDoc.load('lemmatized_casanatensis.xml');
 	        xmlDoc.onload = readXML;
 		}
-	else if (navigator.userAgent.toLowerCase().indexOf('safari/'))
-		{
-		alert('Safari!');
-		}
+
 	else
 		{
 		alert('Your browser cannot visualize this edition');
