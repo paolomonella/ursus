@@ -1153,8 +1153,8 @@ if(isIOSChrome){
 
 
 
-/* W3C SCHOOLS/A VERSION EDITED BY ME, from http://www.w3schools.com/xml/loadxmldoc.asp --
-	It works in Firefox. It should work in IE too. */
+/* The following code reads the external XML file, depending on the browser.
+ * Source: http://www.w3schools.com/xml/loadxmldoc.asp */
 
 function loadxml() {
 	if (window.ActiveXObject)		// Internet Explorer
@@ -1163,33 +1163,27 @@ function loadxml() {
 		xmlDoc.async=false;
 		xmlDoc.load('lemmatized_casanatensis.xml');
 		}
-	else if (isIOSChrome || isChrome || isSafari)	// Chrome or Safari
+	else if (isIOSChrome || isChrome || isSafari || isIEedge) // Chrome, Safari or Edge
 		{
 		var xmlhttp = new XMLHttpRequest();
-	        //xmlhttp.open('GET', dname, false);
 	        xmlhttp.open('GET', 'lemmatized_casanatensis.xml', false);
 	        xmlhttp.setRequestHeader('Content-Type', 'text/xml');
 	        xmlhttp.send('');
 	        xmlDoc = xmlhttp.responseXML;
 		readXML();
 		}
-	else if (document.implementation.createDocument) // Mozilla, Firefox, Opera, etc.
+	else if (document.implementation.createDocument && !isIEedge) // Mozilla, Firefox, Opera, etc.
 		{
+		alert('Firefox e compagnia');
 		xmlDoc=document.implementation.createDocument('','',null);
 		xmlDoc.load('lemmatized_casanatensis.xml');
 	        xmlDoc.onload = readXML;
 		}
-
 	else
 		{
 		alert('Your browser cannot visualize this edition');
 		}
 }
-
-/* W3C SCHOOLS/B VERSION? Code from http://www.w3schools.com/xml/dom_intro.asp failed;
-	try http://www.w3schools.com/xml/xml_http.asp now*/
-
-/* I have tried a Chrome-compatible version of the code to load the external .xml file, taken from http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only -- but it did not work with Chrome (and it did not work with Firefox either). */
 
 
 /*############################
