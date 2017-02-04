@@ -195,7 +195,6 @@
 // 		<span class="AL space">
 // 	3) for the text belonging to the GL, refer to the list above.
 
-
 /*##############################
 #     GENERAL VARIABLES        #
 ##############################*/
@@ -618,7 +617,7 @@ function computeWordLikeElements(refElement) {
 	for (var j = 0; j < refElement.childNodes.length; j++) {  // 
 		// Iterate all elements children of <ref> (all wordLike elements).
 		// They may be: <w>, <lb>, <pc>, <note> etc.
-		var e = refElement.childNodes[j]; // 'e' includes an alement such as <w>, <lb>, <pc> etc.
+		var e = refElement.childNodes[j]; // 'e' is alement such as <w>, <lb>, <pc> etc.
 		
 		if (e.tagName == 'w') {
 			// Words (<w>)
@@ -1129,19 +1128,7 @@ function tagsetify(tagsetAna) {
 #    FUNCTION READING EXTERNAL XML FILE #
 #######################################*/
 
-/* VERSION WORKING ONLY IN FIREFOX-WORKING (not working in Chrome) */
-
-/*
-var xmlDoc;
-function loadxml() {
-  xmlDoc = document.implementation.createDocument('','',null);
-  //xmlDoc.load('casanatensis.xml');
-  xmlDoc.load('lemmatized_casanatensis.xml');
-  xmlDoc.onload = readXML;
-}
-*/
-
-/* This code detects if the browser is Chrome(-based) */
+/* This code detects the browser:  */
 
 // Source: http://stackoverflow.com/questions/4565112/javascript-how-to-find-out-if-the-user-browser-is-chrome#13348618
 // Please note, 
@@ -1178,19 +1165,13 @@ function loadxml() {
 		xmlDoc.load('lemmatized_casanatensis.xml');
 		}
 	else if (isIOSChrome || isChrome) {
-	/*
-		§ Sto mettendo qui il codice da eseguire se è Chrome, prendendolo da 
-		http://stackoverflow.com/questions/18442167/how-to-read-xml-file-using-javascript-in-chrome-only
-		Al momento non funziona neanche in Chrome, ma probabilmente è perché prova ad accedere ai file
-		tramite file:/// invece di http://
-		Quindi o installo un server http locale e uso localhost (ma non vorrei farlo), o faccio ssh su
-		unipa e testo la versione online (propendo per la seconda ipotesi).
-	*/
 		var xmlhttp = new XMLHttpRequest();
-	        xmlhttp.open('GET', dname, false);
+	        //xmlhttp.open('GET', dname, false);
+	        xmlhttp.open('GET', 'lemmatized_casanatensis.xml', false);
 	        xmlhttp.setRequestHeader('Content-Type', 'text/xml');
 	        xmlhttp.send('');
 	        xmlDoc = xmlhttp.responseXML;
+		readXML();
 		}
 	// code for Mozilla, Firefox, Opera, etc.
 	else if (document.implementation.createDocument)
@@ -1201,7 +1182,7 @@ function loadxml() {
 		}
 	else
 		{
-		alert('Your browser cannot handle this script');
+		alert('Your browser cannot visualize this edition');
 		}
 }
 
@@ -1245,7 +1226,6 @@ function readXML() {
 	document.getElementById('MSText').appendChild(headSpan);
 	*/
 			
-
 	// For each <ab>
 	var abList = xmlDoc.getElementsByTagName('ab');
 	for (var ac = 0; ac < abList.length; ac++) {
