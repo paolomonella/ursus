@@ -204,7 +204,6 @@ var space = '_';
 var noteLikeCounter = 0;
 var gtos = importTableOfSigns('GToS.csv');
 
-
 /*#############################
 #   URN INTERPRETATION TABLE  #
 ##############################*/
@@ -1179,6 +1178,10 @@ function loadxml() {
 		xmlDoc=document.implementation.createDocument('','',null);
 		xmlDoc.load('lemmatized_casanatensis.xml');
 	        xmlDoc.onload = readXML;
+		}
+	else if (navigator.userAgent.toLowerCase().indexOf('safari/'))
+		{
+		alert('Safari!');
 		}
 	else
 		{
