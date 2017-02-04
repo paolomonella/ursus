@@ -1174,7 +1174,6 @@ function loadxml() {
 		}
 	else if (document.implementation.createDocument && !isIEedge) // Mozilla, Firefox, Opera, etc.
 		{
-		alert('Firefox e compagnia');
 		xmlDoc=document.implementation.createDocument('','',null);
 		xmlDoc.load('lemmatized_casanatensis.xml');
 	        xmlDoc.onload = readXML;
