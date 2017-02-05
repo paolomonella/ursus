@@ -200,7 +200,7 @@
 ##############################*/
 
 // I'm using an underscore as value for a space until I'll find a way to effectively insert a &nbsp; through JS
-var space = '_';
+var space = '|';
 var noteLikeCounter = 0;
 var gtos = importTableOfSigns('GToS.csv');
 
@@ -406,6 +406,17 @@ var tagsetlist = [
 #         MY FUNCTIONS         #
 ##############################*/
 
+function showMe (box) {
+	var chboxs = document.getElementsByName("c1");
+	var vis = "none";
+	for(var i=0;i<chboxs.length;i++) { 
+		if(chboxs[i].checked){
+		vis = "block";
+		break;
+		}
+	}
+	document.getElementById(box).style.display = vis;
+}
 
 function translateAnaString(inputAnaString) {
 	var anaList = [];	 // trasforma § write in append (push) to list

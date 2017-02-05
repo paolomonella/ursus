@@ -204,12 +204,15 @@ span.lb {
 }
 
 span.LL.space, span.AL.space, span.GL.space {
-	color: white;
-	background-color: white;
+	color: white; 
+	background-color: white; 
 }
 
 span.GL.space {
-	border: 0.1em solid #CCCCCC;
+	/*border: 0.1em solid #CCCCCC;*/ /*vecchio*/
+	border: none;			/* nuovo */
+	color: #CCCCCC; 		/* nuovo */
+	background-color: #CCCCCC; 	/* nuovo */
 }
 
 span.GL.base.superscription {
