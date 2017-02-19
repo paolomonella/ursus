@@ -74,15 +74,15 @@ div.source.end {
 
 td.LLCell {
 	padding-top: 3em;
-	display: none;
 	/* I added the following line when I decided that the LL should only
 	 * appear on hover, not in a table row. */
+	display: none;
 }
 
 td.ALCell {
 	/* I added the following line when I decided that the LL should only
 	 * appear on hover, not in a table row. This means that the ALCell is
-	 * now the uppermost row in the cell*/
+	 * now the uppermost row in the cell. */
 	padding-top: 1.5em;
 }
 
@@ -145,11 +145,11 @@ span.AL.gap, span.GL.gap {
 
 div.note {
 	display:inline-block;
-	vertical-align: bottom;
+	vertical-align: bottom; /* It was: bottom */
 	/*height: 5em;*/
-	border:2px dotted black;
-	padding:0.2em; 
-	margin: 0.5em 0.5em 0em 0.5em;
+	border:2px dotted black; 
+	padding:0.1em; /* It was: 0.2 */
+	margin: 0em 0.5em 0em 0.5em;
 	background-color: #F2F5A9;
 }
 
