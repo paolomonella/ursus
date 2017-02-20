@@ -644,8 +644,9 @@ function computeWordLikeElements(refElement) {
 			myCells[0].appendChild(classySpanWithLayers(space, 'space')[0]);
 			myCells[1].appendChild(classySpanWithLayers(space, 'space')[1]);
 			// The next table cell (in the bottom row) has a space plus the line number (the space
-			// 	is needed to make the line number appear underneath. Since this space must
-			// 	look invisible (white font color on white background), I'm using 
+			// 	is needed to make the line number appear underneath (i.e. as a 'subscript').
+			// 	Since this space must look invisible (white font color on white
+			// 	background), I'm using 
 			// 	classySpanWithLayers(space, 'space')[1]
 			// 	for it. This function returns: <span class="AL space">_</space>,
 			// 	and the "AL space" class in the CSS file has white font on white background.
@@ -1067,7 +1068,8 @@ function punctify(pchar) {
 	
 		// Corresponding modern punctuation (for the LL)
 		var modernPunctString = pchar.attributes.getNamedItem('n').nodeValue;
-		modernPunctString = modernPunctString.replace('quote', space).replace('question', '?');
+		modernPunctString = modernPunctString.replace('quote', space).replace('question', '?').replace('0', space);
+		//modernPunctString = modernPunctString.replace('quote', space).replace('question', '?');
 		//modernPunctString = modernPunctString.replace('question', '?');
 
 		// Manuscript punctuation (for AL and GL)
