@@ -13,6 +13,7 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+<change type="agenda">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
 <change type="done">Ricordarsi periodicamente di togliere gli spazi (tag 'space')seguiti da 'lb'. In VIM l'andata a capo è \n</change>
 <change type="agenda">Check (and delete) all space 'pc' elements at the end of empty tags before the backslash (pb, cb, lb etc.).</change>
 <change type="skipped">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words (questo potrebbe sostituire il mio w type="alphabemes"?)</change>
