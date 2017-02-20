@@ -1067,8 +1067,8 @@ function punctify(pchar) {
 	
 		// Corresponding modern punctuation (for the LL)
 		var modernPunctString = pchar.attributes.getNamedItem('n').nodeValue;
-		//modernPunctString = modernPunctString.replace('quote', space).replace('question', '?');
-		modernPunctString = modernPunctString.replace('question', '?');
+		modernPunctString = modernPunctString.replace('quote', space).replace('question', '?');
+		//modernPunctString = modernPunctString.replace('question', '?');
 
 		// Manuscript punctuation (for AL and GL)
 		if (pchar.childNodes[0]) {
