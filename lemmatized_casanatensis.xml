@@ -14,7 +14,8 @@
     </fileDesc>
     <revisionDesc>
 <change type="done">Ricordarsi periodicamente di togliere gli spazi (tag 'space')seguiti da 'lb'. In VIM l'andata a capo è \n</change>
-<change type="agenda">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words (questo potrebbe sostituire il mio w type="alphabemes"?)</change>
+<change type="agenda">Check (and delete) all space 'pc' elements at the end of empty tags before the backslash (pb, cb, lb etc.).</change>
+<change type="skipped">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words (questo potrebbe sostituire il mio w type="alphabemes"?)</change>
 <change type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype data.enumerated. Questo significa che dovrei limitare formalmente i possibili valori con un elemento  valList?</change>
 <change type="agenda">Nella documentazione in [sgn4] metti parole vuote con 0 o no?</change>
 <change type="agenda">I might transcribe also marginal glossae in black ink</change>
@@ -24,18 +25,17 @@
 <change type="agenda">Periodicamente: vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre il signif. che suggerisco nella GToS</change>
 <change type="agenda">Periodicamente: check for duplicate and unordered word IDs</change>
 <change type="agenda">Periodicamente: check for '0' after closing tags (due to @f or @d in .vimrc).</change>
-<change type="agenda">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein', e anche 'plion' seguito da 'pleion' sono da discutere in una complicata discussione critico-testuale, anche in considerazione dei testimoni del testo di Prisciano (vd. app. crit. di Keil K.2.71.11). Tra l'altro, dovrei riportare il testo dei testimoni del testo di Prisciano nella nota contenutistica a quel punto.</change>
+<change type="agenda">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein', e anche 'plion' seguito da 'pleion' sono da discutere in una complicata discussione critico-testuale, anche in considerazione dei testimoni del testo di Prisciano (vd. app. crit. di Keil K.2.71.11). Tra l'altro, dovrei riportare il testo dei testimoni del testo di Prisciano nella nota contenutistica a quel punto [P.S.: ma forse l'ho già fatto].</change>
 <change type="agenda">I always put a space at the end of the lb, cb, pb elements (XHTML-style). I am afraid that this is not the TEI-style, and that TEI has no space at the end of such elements: if so, delete it from this file, from vimrc and from the paoloMarkDown.py script.</change>
-<change type="agenda">Check the space at the end of empty tags before the backslash (pb, cb, lb etc.).</change>
-<change type="agenda">Filologia testuale: 'quoniam' (parola con id w18300) mi pare strano: controllalo. La fonte (Prisc. Ars K.2.78.20) ha 'quia' che introduce un'oggettiva. Ma può 'quoniam' introdurre oggettive? O lo scriba ha frainteso 'quia' pensandolo introduttore di causale? Lo stesso nella parola con id w36645: in questo caso Prisciano K.2.129.22 ha "quod".</change>
-<change type="agenda">I added 'milestone' elements for long sources only for the final part of the transcription. I could add them for the initial part too.</change>
+<change type="agenda">Filologia testuale: 'quoniam' (parola con id w18300) mi pare strano (nonostante l'abbreviazione di solito significhi proprio 'quoniam'). La fonte (Prisc. Ars K.2.78.20) ha 'quia' che introduce un'oggettiva. Ma può 'quoniam' introdurre oggettive? O lo scriba ha frainteso 'quia' pensandolo introduttore di causale? Lo stesso nella parola con id w36645: in questo caso Prisciano K.2.129.22 ha "quod".</change>
+<change type="agenda">I added 'milestone' elements for long sources only for the final part of the transcription. I could add them for the initial part too. Also, I'm not rendering those milestones in any way: I could think of a possible rendering.</change>
 <change type="agenda">For clear 'scribal error[s]', I sometimes correct in the value of @n, sometimes do not. Also, sometimes I insert a @type="script" note, sometimes a @type="content" note. I normally use 'script' when I correct silently, 'content' when I do not. This only is to check until the first note with type "emendation".</change>
-<change type="agenda">Fix the JS cross-browser compatibility issues.</change>
+<change type="done" when="2017-02-04">Fix the JS cross-browser compatibility issues.</change>
 <change type="agenda">I might turn the informal quotations (such as K.2.110.22-25) in the 'note' element into formal URNs.</change>
 <change type="agenda">Specifica i type di 'note' con i due nuovi tipi 'emendation' e 'graphic'. Ricomincia dalla parola w28905 andando a ritroso.</change>
 <change type="agenda">Per le attuali 'note' @type="emendation", usa 'corr' (oppure 'supplied') con solo il livello linguistico ('w' vuoto con attributi), secondo quanto dice file:///usr/share/doc/tei-p5-doc/en/html/ref-add.html nel paragrafetto 'Note'. Potrei usare la coppia sic/corr come in http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COEDCOR per gli errori evidenti. In http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCC si parla di emendazioni più congetturali, e c'è un paragrafo interessante (find 'In addition, the conscientious encoder will provide documentation explaining the circumstances') in cui dice che potrei inserire in un elemento <tag>correction</tag> dentro la <tag>encodingDesc</tag> dettagli sui valori dell'elemento @type di <tag>corr</tag>.</change>
 <change type="agenda">Potrei usare 'gap' per unclear @type="cropped", ma probabilmente è meglio di no. Attualmente ho usato 'unclear' e aggiunto un 'note' @type="script".</change>
-<change type="agenda">Gestisci meglio i 'pc' type=quote</change>
+<change date="2016" type="done">Gestisci meglio i 'pc' type=quote</change>
 <change type="agenda">Potrei codificare le correzioni/riscritture dello stesso scriba.</change>
 <change type="agenda">Problema di visualizzazione: quando inserisco un segno di punteggiatura a livello AL/LL non corrispondente ad alcun segno sul manoscritto, nel browser comunque spunta nella riga GL uno spazio. Potrei usare [pc n="."] [/pc] (cioè uno spazio al GL che 'significa' un punto al LL).</change>
 <change type="agenda">Vd. se c'è veramente differenza tra punto al mezzo e punto in basso o se sono allografi. E vd. se ci sono allografi anche tra gli altri segni di punteggiatura.</change>
@@ -79,7 +79,7 @@
 <w ana="2-LM41A2---" lemma="compono" n="composita" xml:id="w27">composita</w>
 	<pc n="space"> </pc>
 
-<note type="script">This title (marked as "head") is in uncial. Another GToS for the uncial script might be necessary. The uncial glyphs are also used in the body of the text, to mark larger initials in new sections of the text.</note>
+<note type="script">This title (marked as "head") is in uncial. The uncial glyphs are also used in the body of the text, to mark larger initials in new sections of the text.</note>
 </ref>
 </ab>
 
@@ -578,7 +578,7 @@ gi</w>
 	</choice>
 </w>
 	<pc n=",">|</pc>
-<note type="script">This glyph looks like a triangle pointing downwards, but I think it is an allograph of the punctuation paragraphematic sign that I am marking with Unicode character "|".</note>
+<note type="graphic">This glyph looks like a triangle pointing downwards, but I think it is an allograph of the punctuation paragraphematic sign that I am marking with Unicode character "|".</note>
 <w ana="11F---A3---" lemma="is" n="id" xml:id="w450">id</w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w453">est</w>
 	<pc n="space"> </pc>
@@ -1559,7 +1559,7 @@ cedit</w>
 	<w ana="3-LJ1--7---" lemma="loquor" n="loquimur" xml:id="w972">loquimur</w>
 </unclear>
 	<pc n=",">|</pc>
-<note type="script">From this column, the handwriting, the script and also the punctuation conventions seem to be slightly different.</note>
+<note type="script">From this column on, the handwriting, the script and also the punctuation conventions seem to be slightly different.</note>
 <w ana="11C---B1---" lemma="uel" n="uel" xml:id="w975">
 	<choice>
 		<abbr type="superscription">ul<am>¯</am></abbr>
@@ -2633,7 +2633,7 @@ tesis</w>
 <w ana="11F---C2---" lemma="ille" n="illi" xml:id="w1743"><hi rend="larger">i</hi>lli</w>
 	<pc n="space"> </pc>
 <w n="ἄρθρον" type="foreign" xml:id="w1746" xml:lang="grc">artho
-<note type="emendation">This is probably a misspelling for Greek ἄρθρον, as I encoded it at the Linguistic Layer.</note>
+<note type="emendation">This is probably a misspelling for Greek ἄρθρον, which is the word that I encoded it at the Linguistic Layer.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---A3---" lemma="articulum" n="articulum" xml:id="w1749">arti
@@ -3101,7 +3101,7 @@ uis</w>
 	<pc n="space"> </pc>
 <w ana="11A---M2---" lemma="infinitus" n="infinitas" xml:id="w2142">infinitas</w>
 	<pc n=",">·</pc>
-	<pc n="space"> </pc><note type="script">This punctuation mark looks like a horizontal dash.</note>
+	<pc n="space"> </pc><note type="graphic">This punctuation mark looks like a horizontal dash.</note>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w2145">et</w>
 <w ana="11C---D2---" lemma="qualitas" n="qualitatem" xml:id="w2148">qualitatem</w>
 	<pc n="space"> </pc>
@@ -4629,7 +4629,6 @@ dem</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="11C---D2---" lemma="qualitas" n="qualitatem" xml:id="w3543">qualita
-<note type="content">In classical Latin, this would have been "propria qualitate" (ablative).</note>
 <lb n="1v.b.34" />
 tem</w>
 	<pc n=".">·</pc>
@@ -4714,6 +4713,7 @@ prie</w>
 <w ana="4-O--------" lemma="alibi" n="alibi" xml:id="w3645">alibi</w>
 <lb n="1v.b.38" />
 <w ana="11A---F2---" lemma="impura" n="impura" xml:id="w3648">inpura</w>
+<note type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments: "Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer: "Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
 	<pc n="space"> </pc>
 <w ana="2-LM41O2---" lemma="pono" n="positis" xml:id="w3651">positis</w>
 	<pc n="space"> </pc>
@@ -4723,7 +4723,6 @@ prie</w>
 	<pc n="space"> </pc>
 <w ana="3-NB1--6---" lemma="euasit" n="euasit" xml:id="w3660">euasit</w>
 	<pc n="space"> </pc>
-<note type="content">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments: "Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer: "Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
 <pc n="quote">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w3663">et</w>
@@ -7398,7 +7397,7 @@ sona</w>
 <w ana="11A---O2---" lemma="accidentiis" n="accidentiis" xml:id="w5997">accidentiis</w>
 	<pc n="space"> </pc>
 <w ana="3-JJ1--9---" lemma="numero" n="numerantur" xml:id="w6000">numerantur</w>
-<note type="script">After "numerantur", there is a light "c-like" glyph that I am interpreting as an allograph of the middle dot grapheme.</note>
+<note type="graphic">After "numerantur", there is a light "c-like" glyph that I am interpreting as an allograph of the middle dot grapheme.</note>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="non" n="non" xml:id="w6003">non</w>
@@ -8231,7 +8230,7 @@ hensiua</w>
 
 <lb n="2v.b.1" />
 <w ana="11C---A2---" lemma="uerbalis" n="uerbalis" xml:id="w6762">uerbialis
-<note type="content">The direct source, Priscian, Ars grammatica K.2.60.4 has "uerbalia". See my note on the word with id w31371 for a more detailed discussion on this spelling of the adjective.</note>
+<note type="content">The direct source, Priscian, Ars grammatica K.2.60.4 has "uerbalia". The form "uerbialia" is in Pompeius, "Commentum Artis Donati", K.5.149.1. Lewis-Short has a lemma "uerbialis, e, adf.", but reports Pompeius as the only example. Based on a search on the PHI 5.3 corpus with Diogenes 3.2.0, the adjective does never occur in classical Latin.</note>
 </w>
 <pc n=",">¦</pc>
 <w ana="11C---A2---" lemma="participialis" n="participialis" xml:id="w6765">participialis</w>
@@ -8357,7 +8356,7 @@ priis</w>
 		<abbr type="brevigraph">÷</abbr>
 		<expan>est</expan>
 	</choice>
-<note type="script">This allograph of the "÷" grapheme (logograph for "est") has a comma-like sign below the horizonta line and a regular dot above that line.</note>
+<note type="graphic">This allograph of the "÷" grapheme (logograph for "est") has a comma-like sign below the horizonta line and a regular dot above that line.</note>
 </w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w6918">ut</w>
 <lb n="2v.b.7" />
@@ -8446,7 +8445,7 @@ lius</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w7011">et</w>
 <w ana="3-NQ1------" lemma="fero" n="ferri" xml:id="w7014">ferri</w>
-<note type="content">For "acies ferri", see Plin., Naturalis Historia, 7.64.5: "acies ferri praestringitur" (from the same work, also see 7.63.3: "ea est caro informis, inanima, ferri ictum et aciem respuens"; 13.142.7: "sentire eum se capi durarique cornus modo et hebetare aciem ferri" 19.11.4: "ferri aciem vincunt"; 27.10.5: "quae cotibus in ferri acie deterenda"; 34.144.3: "nucleusque quidam ferri excoquitur in iis ad indurandam aciem"; 34.145.4: "neque alia genera ferri ex mera acie temperantur"; 34.154.1: "squama quoque ferri in usu est ex acie aut mucronibus".</note>
+<note type="source">For "acies ferri", see Plin., Naturalis Historia, 7.64.5: "acies ferri praestringitur" (from the same work, also see 7.63.3: "ea est caro informis, inanima, ferri ictum et aciem respuens"; 13.142.7: "sentire eum se capi durarique cornus modo et hebetare aciem ferri" 19.11.4: "ferri aciem vincunt"; 27.10.5: "quae cotibus in ferri acie deterenda"; 34.144.3: "nucleusque quidam ferri excoquitur in iis ad indurandam aciem"; 34.145.4: "neque alia genera ferri ex mera acie temperantur"; 34.154.1: "squama quoque ferri in usu est ex acie aut mucronibus".</note>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w7017">et</w>
 <w ana="11B---K1---" lemma="oculus" n="oculorum" xml:id="w7020">oculor
@@ -10964,13 +10963,13 @@ nuntientur</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w9432">ut</w>
 <w ana="11B---A1---" lemma="primus" n="primus" xml:id="w9435">primus</w>
 	<pc n="space"> </pc>
-<w ana="13B---A1---" lemma="uicesimus" n="uicesimus" xml:id="w9438">uicesimus<note type="script">There is a macron over the "e" of "uicesimus". Macrons often mark the long quantity of a vowel, but the sentence before spoke about "accentus", so it might mark the word stress here.</note></w>
+<w ana="13B---A1---" lemma="uicesimus" n="uicesimus" xml:id="w9438">uicesimus<note type="graphic">There is a macron over the "e" of "uicesimus". Macrons often mark the long quantity of a vowel, but the sentence before spoke about "accentus", so it might mark the word stress here.</note></w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="sicut" n="sicut" xml:id="w9441">sicut</w>
 <pc n="0">·</pc>
 <w ana="11B---A1---" lemma="tertius" n="tertius" xml:id="w9444">tertius</w>
 	<pc n="space"> </pc>
-<w ana="11B---D3---" lemma="decimus" n="decimus" xml:id="w9447">decimus<note type="script">There is a macron over the "c" of "decimus", that might be meant to be over the "e". For its function, see the note on "uicesimus" right before in this very line.</note></w>
+<w ana="11B---D3---" lemma="decimus" n="decimus" xml:id="w9447">decimus<note type="graphic">There is a macron over the "c" of "decimus", that might be meant to be over the "e". For its function, see the note on "uicesimus" right before in this very line.</note></w>
 <pc n=",">·</pc>
 <w ana="11F---D2---" lemma="quamquam" n="quamquam" xml:id="w9450">qu
 	<choice>
@@ -11244,7 +11243,7 @@ tulissent</w>
 <w ana="11F---J3--1" lemma="qui" n="quae" xml:id="w9669">quæ</w>
 <w ana="11B---J1--1" lemma="graecus" n="Graeci" xml:id="w9672">greci</w>
 <w n="ἐπιμεριζόμενα" type="foreign" xml:id="w9675" xml:lang="grc">epimerizomena
-<note type="script">The source of this passage is Priscian "De figuris numerorum" (Keil 3.413.24) and has ἐπιμεριζόμενα. The handwriting in the manuscript is almost completely faded, especially the graphemes between "epi-" and "-omena". However, based on the number of graphemes that seem to be in this word the scribe probably wrote a shorter word than ἐπιμεριζόμενα, possibly something like "epirizomena".</note>
+<note type="emendation">The source of this passage is Priscian "De figuris numerorum" (Keil 3.413.24) and has ἐπιμεριζόμενα. The text in this point of the manuscript is almost completely faded, especially the graphemes between "epi-" and "-omena". However, based on the number of graphemes that seem to be in this word the scribe probably wrote a shorter word than ἐπιμεριζόμενα, possibly something like "epirizomena".</note>
 </w>
 <lb n="3r.b.27" />
 <w ana="3-JA1--9---" lemma="uocant" n="uocant" xml:id="w9678">uocant</w>
@@ -12038,7 +12037,7 @@ lies</w>
 	<pc n="space"> </pc>
 <w ana="11B---O1---" lemma="infinitus" n="infinitis" xml:id="w10605"><hi rend="larger">i</hi>nfinitis</w>
 	<pc n="space"> </pc>
-<note type="content">The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger font.  As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" is probably that it could seem to belong to the previous sentence, which I do not believe.  In an interpretive edition, the word "inueniuntur" shoud therefore be omitted.</note>
+<note type="emendation">The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger font.  As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" is probably that it could seem to belong to the previous sentence, which I do not believe.  In an interpretive edition, the word "inueniuntur" shoud therefore be omitted.</note>
 <w ana="4-O--------" lemma="tamen" n="tamen" xml:id="w10608">tamen</w>
 	<pc n="space"> </pc>
 <w ana="11B---K1---" lemma="numerus" n="numerorum" xml:id="w10611">numeror
@@ -12626,7 +12625,7 @@ xit</w>
 <w ana="11F---A3---" lemma="is" n="id" xml:id="w11145">id</w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w11148">est</w>
 	<pc n="space"> </pc>
-<w n="lxxuiiii" type="numeral" xml:id="w11151">lxxuiiii<note type="script">The glyph for the "five" sign here is pointy like modern "v", not rounded like that normally used for "u" in the manuscript.</note></w>
+<w n="lxxuiiii" type="numeral" xml:id="w11151">lxxuiiii<note type="graphic">The glyph for the "five" sign here is pointy like modern "v", not rounded like that normally used for "u" in the manuscript.</note></w>
 <pc n="0">·</pc>
 <w ana="11B---K1---" lemma="annos" n="annos" xml:id="w11154">annos</w>
 	<pc n="space"> </pc>
@@ -13101,7 +13100,7 @@ uir</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w11622">in</w>
 	<pc n="space"> </pc>
-<w n="u" type="numeral" xml:id="w11625">u<note type="script">As above, the glyph for the numeral "five" is pointy like modern "v", not rounded.</note></w>
+<w n="u" type="numeral" xml:id="w11625">u<note type="graphic">As above, the glyph for the numeral "five" is pointy like modern "v", not rounded.</note></w>
 <pc n=",">·</pc>
 <w ana="3-LH1------" lemma="biiugo" n="biiugo" xml:id="w11628">biiugo</w>
 	<pc n="space"> </pc>
@@ -13312,7 +13311,7 @@ lum</w>
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa003:3.412.22-3.413.20" type="source">
 <w ana="4-S--------" lemma="de" n="de" xml:id="w11799"><hi rend="larger">d</hi>e</w>
 <w ana="11B---O1---" lemma="numerus" n="numeris" xml:id="w11802">numeris</w>
-<note type="content">The phrase "de numeris" does not match with the syntax of the rest of the text. It probably is title, as from this point Ursus starts following a new source: Priscian, De figuris numerorum (urn:cts:latinLit:stoa0234a.stoa003).</note>
+<note type="content">The phrase "de numeris" does not match with the syntax of the rest of the text. It probably is a heading, as from this point Ursus starts following a new source: Priscian, De figuris numerorum (urn:cts:latinLit:stoa0234a.stoa003).</note>
 <pc n=".">·</pc>
 <lb n="4r.a.4" />
 <w ana="11F---A1---" lemma="unus" n="unus" xml:id="w11805">unus</w>
@@ -13339,7 +13338,7 @@ lum</w>
 	<pc n="space"> </pc>
 <w ana="11F---J2--1" lemma="hic" n="hae" xml:id="w11829">hæ</w>
 	<pc n="space"> </pc>
-<note type="script">The first hand had written "hi·et·hæ et hæc tres ettria" ("hi et hae et haec tres et tria"). A secon hand deleted "et hæc" (after "et hae") and added "hæc" between "et" and "tria", thus transforming the text into what it is now: "hi et hæ tres et hæc tria" ("hi et hae tres et haec tria").</note>
+<note type="script">The first hand had written "hi·et·hæ et hæc tres ettria" ("hi et hae et haec tres et tria"). A second hand deleted "et hæc" (after "et hae") and added "hæc" between "et" and "tria", thus transforming the text into what it is now: "hi et hæ tres et hæc tria" ("hi et hae tres et haec tria").</note>
 <w ana="11C---J2--1" lemma="tres" n="tres" xml:id="w11832">tres</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w11835">et</w>
@@ -13437,7 +13436,7 @@ lum</w>
 </w>
 <lb n="4r.a.8" />
 <w ana="3-JJ1--6---" lemma="declinantur" n="declinantur" xml:id="w11931">declinantur</w>
-<note type="script">The rest of line 8 and all lines until 14 are left blank here.</note>
+<note type="script">The rest of line 8 and all lines until 14 are left blank.</note>
 </ref>
 
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.62.5-2.68.13" type="source">
@@ -14356,7 +14355,7 @@ ca</w>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.63.12" type="source" unit="Keil" />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w12747">ut</w>
 <w ana="11C---A1---" lemma="letoides" n="Letoides" xml:id="w12750">letoides
-<note type="content">The source (Priscian, Institutiones, Keil 2.63.12-2.63-13) has "Latoides, Λητοῦς, id est Latonae". Among the manuscript of Priscian, only B and D have "Latoides" (probably based on the Doric spelling Λᾱτοΐδας), while all the others have "Letoides" (the Aeolian spelling Λητοΐδης). See http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum.</note>
+<note type="source">The source (Priscian, Institutiones, Keil 2.63.12-2.63-13) has "Latoides, Λητοῦς, id est Latonae". Among the manuscript of Priscian, only B and D have "Latoides" (probably based on the Doric spelling Λᾱτοΐδας), while all the others have "Letoides" (the Aeolian spelling Λητοΐδης). See http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---O1---" lemma="letois" n="Letois" xml:id="w12753">letois</w>
@@ -14367,7 +14366,7 @@ ca</w>
 <w ana="11B---C3---" lemma="apollo" n="Apollo" xml:id="w12762">apollo</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="filius" n="filius" xml:id="w12765">filius</w>
-<note type="content">The order "Apollo filius" was also found in the first hand of manuscript K of Priscian. See Keil's apparatus note ad K.2.63.13: "voc. filius post latonides collocatum, deinde vero verborum ordo restitutus in K". See http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum.</note>
+<note type="source">The word order "Apollo filius" was also found in the first hand of manuscript K of Priscian. See Keil's apparatus note ad K.2.63.13: "voc. filius post latonides collocatum, deinde vero verborum ordo restitutus in K". See http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum.</note>
 <pc n="0">·</pc>
 <lb n="4r.b.12" />
 <w ana="11A---B2---" lemma="latonae" n="Latonae" xml:id="w12768">latonæ</w>
@@ -14386,7 +14385,7 @@ ca</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w12789">ut</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="meiades" n="Meiades" xml:id="w12792">meiades
-<note type="content">All manuscripts of the source (Priscian, Ars grammatica, K.2.64.3) have "Maiades".</note>
+<note type="emendation">All manuscripts of the source (Priscian, Ars grammatica, K.2.64.3) have "Maiades", which might be a good correction here.</note>
 <note type="graphic">The manuscript has a macron sign over the first "e" ("mēiades").</note>
 </w>
 <w ana="11B---A1--1" lemma="mercurius" n="Mercurius" xml:id="w12795">mercu
@@ -14450,7 +14449,7 @@ rius</w>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w12873">in</w>
 <pc n="quote">·</pc>
 <w n="i" type="alphabemes" xml:id="w12876">i
-<note type="content">I think that this grapheme here means the letter "i" as part of the varian form "Aenidae", rather than as number "I" as in "in book I". The variant form "Aenidae" is found later in the source: it is not found in Priscian, Institutiones, 2.64.10-2.65.6 but in 2.66.2-2.66.3.</note>
+<note type="content">I think that this grapheme here means the letter "i" as part of the variant form "Aenidae", rather than as number "I" as in "in book I". The variant form "Aenidae" is found later in the source: it is not found in Priscian, Institutiones, 2.64.10-2.65.6 but in 2.66.2-2.66.3.</note>
 </w>
 <pc n="quote">·</pc>
 <w ana="3-NA4--9---" lemma="dico" n="dixerunt" xml:id="w12879">dixerunt</w>
@@ -15219,7 +15218,7 @@ ca</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w13659">ut</w>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.66.14" type="source" unit="Keil" />
 <w n="Πρίαμος" type="foreign" xml:id="w13662" xml:lang="grc">priamos
-<note type="script">There is an acute accent sign over the "i", marking the quantity of the vowel, or possibly simply the stress on that syllable. I am not recording such signs because they do not have graphemic value, i.e. they do not create "minimal pairs" of words.</note>
+<note type="graphic">There is an acute accent sign over the "i", marking the quantity of the vowel, or possibly simply the stress on that syllable. I am not recording such signs because they do not have graphemic value, i.e. they do not create "minimal pairs" of words.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Πριάμου" type="foreign" xml:id="w13665" xml:lang="grc">priamoys
@@ -15236,15 +15235,15 @@ ca</w>
 <w ana="11C---A1---" lemma="nestorides" n="Nestorides" xml:id="w13677">nestorides</w>
 <pc n=",">·</pc>
 <w n="Πηλεύς" type="foreign" xml:id="w13680" xml:lang="grc">peleis
-<note type="script">There is an acute accent mark over the "i".</note>
+<note type="graphic">There is an acute accent mark over the "i".</note>
 <note type="emendation">Scribal error in translitteration: "Peleis" for "Peleys" ("Πηλεύς").</note>
 </w>
 <pc n=",">·</pc>
 <w n="Πηλέως" type="foreign" xml:id="w13683" xml:lang="grc">peleos
-<note type="script">There is an acute accent mark over the second "e".</note>
+<note type="graphic">There is an acute accent mark over the second "e".</note>
 </w>
 <pc n=",">·</pc>
-<w ana="11C---A1---" lemma="peleides" n="Peleides" xml:id="w13686">peleides<note type="script">There is an acute accent mark over the second "e".</note></w>
+<w ana="11C---A1---" lemma="peleides" n="Peleides" xml:id="w13686">peleides<note type="graphic">There is an acute accent mark over the second "e".</note></w>
 <pc n=".">·</pc>
 <lb n="4v.a.6" />
 <w ana="11F---J1---" lemma="ille" n="illi" xml:id="w13689">illi</w>
@@ -15530,7 +15529,7 @@ a</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w13941">ut</w>
 <w ana="11C---A1---" lemma="oelides" n="Oelides" xml:id="w13944">oelides
 <note type="graphic">There is a macron sign over the "i" to mark the vowel's long quantity. I am not marking it because it has no graphematic value.</note>
-<note type="content">For Priscian, Institutiones K 2.67.9, the direct source of this passage, Keil chooses the reading "Aeclides", but in the apparatus criticus he mentions the reading "Oelides", very common in Priscian's textual tradition. This is Keil's apparatus note for K 2.67.9: "Aeclides] ex aeolides corr. in litura B f. recte: patron. sc. ab Aeclo, Eretriae conditore, quamvis exemplum desidero; aeolides D Hrabanus p. 33 oelides RHGLK".</note>
+<note type="source">For Priscian, Institutiones K 2.67.9, the direct source of this passage, Keil chooses the reading "Aeclides", but in the apparatus criticus he mentions the reading "Oelides", very common in Priscian's textual tradition. This is Keil's apparatus note for K 2.67.9: "Aeclides] ex aeolides corr. in litura B f. recte: patron. sc. ab Aeclo, Eretriae conditore, quamvis exemplum desidero; aeolides D Hrabanus p. 33 oelides RHGLK".</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="demades" n="Demades" xml:id="w13947">dema
@@ -15816,7 +15815,7 @@ tos</w>
 <w ana="11B---A1---" lemma="nereus" n="Nereus" xml:id="w14241">nereus</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="nerine" n="Nerine" xml:id="w14244">nerine
-<note type="script">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
+<note type="graphic">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
 <pc n=",">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w14247">et</w>
@@ -15875,7 +15874,7 @@ tos</w>
 <note type="source">The source (Priscian, Institutiones K 2.68.10) has the whole verse "Acrisioneis Danae fundasse colonis" (Verg. Aen. 7.410).</note>
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w14307">ab</w>
 <w ana="11A---F2---" lemma="acrisionea" n="Acrisionea" xml:id="w14310">acrisionea
-<note type="content">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading "ab Acrisione", but in the apparatus criticus he mentions the reading "acrisionea" from codices H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii"), and r ("cod. bibl. imp. Paris. 7496", second hand).</note>
+<note type="source">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading "ab Acrisione", but in the apparatus criticus he mentions the reading "acrisionea" from codices H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii"), and r ("cod. bibl. imp. Paris. 7496", second hand).</note>
 </w>
 <pc n="," />
 	<pc n="space"> </pc>
@@ -15883,7 +15882,7 @@ tos</w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w14316">est</w>
 	<pc n="space"> </pc>
 <w ana="11B---M3---" lemma="danaa" n="Danaa" xml:id="w14319">danaa
-<note type="content">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading "Danae", but in the apparatus criticus he mentions the reading "danaa" from codices R ("cod. bibl. imp. Paris. 7496") and K ("cod. bibl. Caroliruhensis 223"), while codices D ("cod. bibl. publ. Bernensis, olim Bongarsianus") and H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii") have a similar reading.</note>
+<note type="source">Keil (Priscian, Institutiones K 2.68.11, the direct source of this passage) chooses the reading "Danae", but in the apparatus criticus he mentions the reading "danaa" from codices R ("cod. bibl. imp. Paris. 7496") and K ("cod. bibl. Caroliruhensis 223"), while codices D ("cod. bibl. publ. Bernensis, olim Bongarsianus") and H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii") have a similar reading.</note>
 </w>
 <pc n=".">|</pc>
 <lb n="4v.a.29" />
@@ -15924,7 +15923,7 @@ tos</w>
 <w ana="11C---B1--3" lemma="ias" n="Ias" xml:id="w14358">ias</w>
 <pc n=",">·</pc>
 <w ana="11A---M2---" lemma="troias" n="Troias" xml:id="w14361">troias
-<note type="content">Keil (Priscian, Institutiones K 2.68.13, the direct source of this passage) chooses the reading "Troas", but in the apparatus criticus he mentions the reading "troias" from Priscian's codices D ("cod. bibl. publ. Bernensis, olim Bongarsianus"), H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii") and K ("cod. bibl. Caroliruhensis 223").</note>
+<note type="source">Keil (Priscian, Institutiones K 2.68.13, the direct source of this passage) chooses the reading "Troas", but in the apparatus criticus he mentions the reading "troias" from Priscian's codices D ("cod. bibl. publ. Bernensis, olim Bongarsianus"), H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii") and K ("cod. bibl. Caroliruhensis 223").</note>
 </w>
 <pc n=".">·</pc>
 <w ana="11F---A2---" lemma="alius" n="alia" xml:id="w14364"><hi rend="larger">a</hi>lia</w>
@@ -17204,7 +17203,7 @@ tinentia</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w15675">a</w>
 <w ana="11B---O1---" lemma="feminis" n="feminis" xml:id="w15678">feminis
-<note type="emendation">The source of this passage (Priscian, Institutiones K 2.70.46, has "femininis", which is an obvious correction here.</note>
+<note type="emendation">The source of this passage (Priscian, Institutiones K 2.70.46), has "femininis", which is an obvious correction here.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---O1--1" lemma="graecus" n="Graecis" xml:id="w15681">grecis</w>
@@ -17258,7 +17257,7 @@ mo</w>
 </w>
 <pc n="·">ł</pc>
 <w n="oe" type="alphabemes" xml:id="w15741"><hi rend="larger">o</hi>e
-<note type="script">The glyph for "o" has a dot in the middle of the circle.</note>
+<note type="graphic">The glyph for "o" has a dot in the middle of the circle.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="diphthongo" n="diphthongo" xml:id="w15744">dyphthongo
@@ -17493,7 +17492,7 @@ ducunt</w>
 <w ana="11B---O1--1" lemma="genetiuis" n="genetiuis" xml:id="w15960">genitiuis</w>
 <pc n="quote">·</pc>
 <w n="ius" type="alphabemes" xml:id="w15963">i·us
-<note type="content">Though the manuscript has a punctuation sign between "i" and "us", the morpheme meant is "ius" as a whole. The source (Priscianus, Ars grammatica K.2.71.13) also has "ius".</note>
+<note type="script">Though the manuscript has a punctuation sign between "i" and "us", the morpheme meant is "ius" as a whole. The source (Priscianus, Ars grammatica K.2.71.13) also has "ius".</note>
 </w>
 <pc n="quote">·</pc>
 <w ana="2-LD11A3---" lemma="desinentibus" n="desinentibus" xml:id="w15969">desinenti
@@ -17848,7 +17847,6 @@ mæ</w>
 <w ana="3-JJ1--9---" lemma="deriuantur" n="deriuantur" xml:id="w16335">deriuantur</w>
 <pc n=".">ł</pc>
 <lb n="5r.a.25" />
-<w ana="11B---A3---" lemma="§" n="§">[§ Reviewed until here]</w>
 <w ana="4-O-------1" lemma="etiam" n="etiam" xml:id="w16338"><hi rend="larger">e</hi>ti
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
@@ -17857,6 +17855,7 @@ mæ</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w16341">et</w>
+<note type="content">The phrase "etiam et" sounds like a repetition. The source Priscian Ars Grammatica K.2.74.10-11 has "non solum autem in nominibus Latinis [...] sed etiam in verbis praeteriti perfecti temporis et plusquamperfecti".</note>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w16344">in</w>
 <w ana="11A---D2---" lemma="uerbis" n="uerbis" xml:id="w16347">uerbis</w>
 	<pc n="space"> </pc>
@@ -18019,7 +18018,7 @@ gus<note type="emendation">Scribal error: "y" for "i" in the first syllable.</no
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note type="content">The first version of the text in the manuscript was "solet conuerti ει dyphthongus [sic] in 'i' longum interpositum pro consonante", where "interpositum" was probably meant to modify "i".  A second hand added the word "u"  above the line, thus changing the text into "solet conuerti ει dyphthongus in 'i' longum, interpositum 'u' pro consonante", where "solet conuerti ει dyphthongus in 'i' longum" is the main clause and "interpositum 'u' pro consonante" is an accusative absolute.  The source Priscian Ars Grammatica K.2.74.18 had an ablative absolute "interposita similiter u pro consonante".</note>
+<note type="emendation">The first version of the text in the manuscript was "solet conuerti ει dyphthongus [sic] in 'i' longum interpositum pro consonante", where "interpositum" was probably meant to modify "i".  A second hand added the word "u"  above the line, thus changing the text into "solet conuerti ει dyphthongus in 'i' longum, interpositum 'u' pro consonante", where "solet conuerti ει dyphthongus in 'i' longum" is the main clause and "interpositum 'u' pro consonante" is an accusative absolute. I think that the latter (the text of the second hand) is the best one. The source Priscian Ars Grammatica K.2.74.18 had an ablative absolute "interposita similiter u pro consonante".</note>
 </w>
 <add place="above">
 <pc n="quote">·</pc>
@@ -18090,7 +18089,7 @@ os</w>
 <w n="εἴ" type="foreign" xml:id="w16545" xml:lang="grc">ei</w>
 <w n="κέ" type="foreign" xml:id="w16548" xml:lang="grc">ke</w>
 	<pc n="space"> </pc>
-<w n="αἴθε" type="foreign" xml:id="w16551" xml:lang="grc">aithe</w>
+<w n="αἴθε" type="foreign" xml:id="w16551" xml:lang="grc">aethe</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="pro" n="pro" xml:id="w16554">
 	<choice>
@@ -18219,6 +18218,7 @@ cationis</w>
 <w ana="11F---O3--1" lemma="hic" n="his" xml:id="w16662">his</w>
 	<pc n="space"> </pc>
 <w ana="3-LJ1--9---" lemma="inueniuntur" n="inueniuntur" xml:id="w16665">inueniuntur</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---M3---" lemma="alius" n="alia" xml:id="w16668">alia</w>
 	<pc n="space"> </pc>
@@ -18231,13 +18231,14 @@ cationis</w>
 <w ana="11B---A1---" lemma="tabellarius" n="tabellarius" xml:id="w16680">tabellarius</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="mercennarius" n="mercennarius" xml:id="w16683">mercennarius</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w ana="11F---M3---" lemma="alius" n="alia" xml:id="w16686"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w16689">a</w>
 <w ana="11C---O2---" lemma="dignitas" n="dignitatibus" xml:id="w16692">dignitatibus</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w16695">ut</w>
+<unclear cert="medium" reason="faded">
 <w n="profectorius" type="nonsense" xml:id="w16698">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
@@ -18248,6 +18249,8 @@ cationis</w>
 	torius
 <note type="emendation">The source, Priscian Ars Grammatica K.2.75.5, has "praefectorius". In the manuscript the word starts with a brevigraph that elsewhere always has the alphabetical meaning of "pro", so we can consider this a scribal error ("profectorius" for "praefectorius").</note>
 </w>
+</unclear>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="2-NM41J2---" lemma="praetorius" n="praetorius" xml:id="w16701">prætorius</w>
 	<pc n="space"> </pc>
@@ -18275,6 +18278,7 @@ cationis</w>
 		<expan>em</expan>
 	</choice>
 </w>
+<pc n="," />
 
 <cb n="5r.b" />
 
@@ -18345,13 +18349,14 @@ cationis</w>
 <w ana="11A---F2---" lemma="palma" n="palma" xml:id="w16767">palma</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w16770">est</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A3---" lemma="is" n="id" xml:id="w16773">id</w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w16776">est</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w16779">in</w>
 <w ana="11C---F1---" lemma="laude" n="laude" xml:id="w16782">laude</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w ana="11F---M3---" lemma="alius" n="alia" xml:id="w16785"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="de" n="de" xml:id="w16788">de</w>
@@ -18368,6 +18373,7 @@ bus</w>
 		<expan>sunt</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w16797">ut</w>
 <w ana="11A---A2--1" lemma="frumentaria" n="frumentaria" xml:id="w16800">fru
@@ -18389,7 +18395,7 @@ taria</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="de" n="de" xml:id="w16815">de</w>
 <w ana="11A---O2---" lemma="agris" n="agris" xml:id="w16818">agris</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w ana="11F---M3---" lemma="alius" n="alia" xml:id="w16821"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------2" lemma="e" n="ex" xml:id="w16824">ex</w>
@@ -18401,6 +18407,7 @@ taria</w>
 <w ana="3-KA1--9---" lemma="contineo" n="continent" xml:id="w16833">con
 <lb n="5r.b.4" />
 tinent</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w16836">ut</w>
 <w ana="11A---A2---" lemma="uinaria" n="uinaria" xml:id="w16839">uinaria</w>
@@ -18408,7 +18415,6 @@ tinent</w>
 <w ana="11A---F2---" lemma="cella" n="cella" xml:id="w16842">cella</w>
 	<pc n="space"> </pc>
 <w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w16845">quæ</w>
-	<pc n="space"> </pc>
 <w ana="11B---D1---" lemma="uinum" n="uinum" xml:id="w16848">uin
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -18417,7 +18423,7 @@ tinent</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-KA1--6---" lemma="habeo" n="habet" xml:id="w16851">habet</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w ana="11A---A2---" lemma="armentarium" n="armentarium" xml:id="w16854"><hi rend="larger">a</hi>rmentarium</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w16857">in</w>
@@ -18453,7 +18459,9 @@ sæ</w>
 	<pc n="space"> </pc>
 <w ana="11C---B2---" lemma="terminationis" n="terminationis" xml:id="w16899">terminationis</w>
 <pc n=".">·</pc>
-<w ana="11F---A2--1" lemma="hic" n="haec" xml:id="w16902"><hi rend="larger">h</hi>æc</w>
+<w ana="11F---A2--1" lemma="hic" n="haec" xml:id="w16902"><hi rend="larger">h</hi>æc
+<note type="emendation">According to the classical construction of "utor", this should be ablative "hāc". Though "utor" sometimes takes an adverbial accusative, the latter tends to be singular, not plural. So "hāc" might be an emendation for "haec" here.</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="11B---L1---" lemma="latini" n="Latini" xml:id="w16905">latini</w>
 	<pc n="space"> </pc>
@@ -18467,6 +18475,7 @@ sæ</w>
 tione</w>
 	<pc n="space"> </pc>
 <w ana="3-LJ1--9---" lemma="utor" n="utuntur" xml:id="w16920">utuntur</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w16923">ut</w>
 <w ana="11B---A1---" lemma="pompeianus" n="Pompeianus" xml:id="w16926">pompeianus</w>
@@ -18507,7 +18516,7 @@ tione</w>
 <w ana="11B---A1---" lemma="romanus" n="Romanus" xml:id="w16959">romanus
 <note type="graphic">There is a macron sign over the "a" to mark the vowel's long quantity.</note>
 </w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w16962"><hi rend="larger">i</hi>n</w>
 <w ana="11F---O1---" lemma="quidam" n="quibusdam" xml:id="w16965">
 	<choice>
@@ -18547,7 +18556,7 @@ nus</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="anienus" n="Anienus" xml:id="w16986">anienus</w>
 <note type="graphic">"Terrenus", "egenus", "abienus" and "Anienus" all have a macron sign over the penultimate "e" to mark the vowel's long quantity.</note>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w16989"><hi rend="larger">i</hi>n</w>
 <w ana="11F---O1---" lemma="quidam" n="quibusdam" xml:id="w16992">
 	<choice>
@@ -18578,7 +18587,7 @@ nus</w>
 <w ana="11B---A1---" lemma="uicinus" n="uicinus" xml:id="w17004">uicinus
 <note type="graphic">There is a macron sign over the second "i" to mark the vowel's long quantity.</note>
 </w>
-<pc n=".">.</pc>
+<pc n=",">.</pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w17007"><hi rend="larger">i</hi>n</w>
 <w ana="11F---O1---" lemma="quidam" n="quibusdam" xml:id="w17010">
 	<choice>
@@ -18651,7 +18660,7 @@ busdam</w>
 <w ana="11B---A1---" lemma="diutinus" n="diutinus" xml:id="w17091">diutinus
 <note type="graphic">There is a breve (˘) mark over the "i" to mark its short quantity.</note>
 </w>
-<pc n=".">.</pc>
+<pc n=",">.</pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w17094"><hi rend="larger">i</hi>n</w>
 <w ana="11F---O1---" lemma="quidam" n="quibusdam" xml:id="w17097">
 	<choice>
@@ -18675,7 +18684,7 @@ busdam</w>
 <pc n="quote">·</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w17112">ut</w>
 <w ana="11B---A1---" lemma="tribunus" n="tribunus" xml:id="w17115">tribunus</w>
-<pc n=".">.</pc>
+<pc n=",">.</pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w17118"><hi rend="larger">i</hi>n</w>
 <w ana="11F---O1---" lemma="quidam" n="quibusdam" xml:id="w17121">
 	<choice>
@@ -18876,7 +18885,7 @@ libet</w>
 <lb n="5r.b.20" />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w17298">ut</w>
 <w ana="11B---A1---" lemma="petrus" n="Petrus" xml:id="w17301">petrus</w>
-<note type="source">The phrase "eodem modo ut Petrus" is not in the source (Priscian, Ars grammatica, K.2.76.10).</note>
+<note type="source">The phrase "eodem modo ut Petrus" does not belong to the source (Priscian, Ars grammatica, K.2.76.10).</note>
 <pc n=".">.</pc>
 <w ana="4-S-------2" lemma="e" n="ex" xml:id="w17304"><hi rend="larger">e</hi>x</w>
 	<pc n="space"> </pc>
@@ -18930,7 +18939,7 @@ libet</w>
 <w ana="11B---A1---" lemma="urbanus" n="urbanus" xml:id="w17373">urbanus</w>
 <note type="graphic">In "rusticanus" and "urbanus" there is a macron sign over the "a" to mark the vowel's long quantity.</note>
 <pc n=".">·</pc>
-<w ana="11F---M3---" lemma="alius" n="alia" xml:id="w17376">alia</w>
+<w ana="11F---M3---" lemma="alius" n="alia" xml:id="w17376"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w17379">a</w>
 <w ana="11C---O3---" lemma="tempus" n="temporibus" xml:id="w17382">tem
@@ -18942,6 +18951,7 @@ poribus</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w17391">a</w>
 <w ana="2-LM41A2---" lemma="matuta" n="Matuta" xml:id="w17394">matuta</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A3---" lemma="is" n="id" xml:id="w17397">id</w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w17400">est</w>
@@ -18991,7 +19001,7 @@ poribus</w>
 <w ana="11F---M3---" lemma="alius" n="alia" xml:id="w17457"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w17460">a</w>
-<w ana="11B---O3---" lemma="multus" n="multis" xml:id="w17463">multis</w>
+<w ana="11B---O3---" lemma="mutis" n="mutis" xml:id="w17463">mutis</w>
 <lb n="5r.b.26" />
 <w ana="11C---O3---" lemma="animal" n="animalibus" xml:id="w17466">animali
 	<choice>
@@ -19000,6 +19010,7 @@ poribus</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.79.16" type="source" unit="Keil" />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w17469">ut</w>
 <w ana="11B---A1---" lemma="taurinus" n="taurinus" xml:id="w17472">taurinus</w>
 	<pc n="space"> </pc>
@@ -19068,9 +19079,10 @@ poribus</w>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
+	<pc n="space"> </pc>
 uis</w>
 <lb n="5r.b.29" />
-<w ana="11C---M3---" lemma="poetice" n="poetice" xml:id="w17559">petice</w>
+<w ana="11C---M3---" lemma="poetice" n="poetice" xml:id="w17559">poetice</w>
 	<pc n="space"> </pc>
 <w ana="11C---M3---" lemma="singularis" n="singularia" xml:id="w17562">singularia</w>
 	<pc n="space"> </pc>
@@ -19169,7 +19181,6 @@ ta</w>
 		<expan>pre</expan>
 	</choice>
 dictæ</w>
-	<pc n="space"> </pc>
 <w ana="11A---C2--1" lemma="forma" n="formae" xml:id="w17688">formæ</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w17691">ut</w>
@@ -19193,6 +19204,14 @@ dictæ</w>
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
+	</choice>
+<note type="emendation">As "mutarum" modifies "animalium", it should be emended in "mutorum".</note>
+</w>
+	<pc n="space"> </pc>
+<w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w17713">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
 	</choice>
 </w>
 	<pc n="space"> </pc>
@@ -19258,7 +19277,7 @@ dictæ</w>
 <w ana="3-LA1--9---" lemma="desino" n="desinunt" xml:id="w17793">desinunt</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w17796">in</w>
-<w n="ae" type="alphabemes" xml:id="w17799">e</w>
+<w n="ae" type="alphabemes" xml:id="w17799">ae</w>
 <pc n="quote">·</pc>
 <w ana="11B---D3---" lemma="diphthongum" n="diphthongum" xml:id="w17802">dyphthong
 	<choice>
@@ -19319,6 +19338,7 @@ dictæ</w>
 <w ana="11B---A1---" lemma="antesignanus" n="antesignanus" xml:id="w17856">ante
 <lb n="5v.a.2" />
 signanus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---M3---" lemma="membrana" n="membrana" xml:id="w17859">membrana
 <note type="source">The source Priscian Ars grammatica K.2.77.19 has "membra membrana".</note>
@@ -19334,7 +19354,7 @@ signanus</w>
 <w ana="11C---B1---" lemma="uel" n="uel" xml:id="w17874">uel</w>
 <lb n="5v.a.3" />
 <w n="ie" type="alphabemes" xml:id="w17877">i·e
-<note type="content">Though the manuscript has a middle dot between "i" and "e", the whole morpheme "ie" is meant.</note>
+<note type="script">Though the manuscript has a middle dot between "i" and "e", the whole morpheme "ie" is meant.</note>
 </w>
 <pc n="quote">·</pc>
 <w ana="2-JM41A2---" lemma="termino" n="terminata" xml:id="w17883">terminata</w>
@@ -19361,13 +19381,14 @@ signanus</w>
 peius</w>
 <pc n="0">·</pc>
 <w ana="11B---A1---" lemma="pompeianus" n="Pompeianus" xml:id="w17910">pompeianus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="3-LA4--6---" lemma="cottidie" n="cottidie" xml:id="w17913">cotidie</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="cottidianus" n="cottidianus" xml:id="w17916">cotidianus
 </w>
 	<pc n="space"> </pc>
-<note type="script">In both "cotidie" and "cotidianus", the first hand had a double "t" ("cottidie" and "cottidianus"), but the first "t" was deleted.</note>
+<note type="script">In both "cotidie" and "cotidianus", the first hand had written a double "t" ("cottidie" and "cottidianus"), but the first "t" was then deleted in both words.</note>
 <pc n=".">·</pc>
 <w ana="4-S-------1" lemma="praeter" n="praeter" xml:id="w17919">
 	<choice>
@@ -19458,9 +19479,9 @@ ernus</w>
 <w ana="11B---F1---" lemma="rusticus" n="rusticus" xml:id="w18009">rusticus</w>
 	<pc n="space"> </pc>
 <w ana="11B---F1---" lemma="rusticanus" n="rusticanus" xml:id="w18012">rusticanus</w>
-	<pc n="space"> </pc>
+<pc n=",">·</pc>
 <w ana="11A---K2---" lemma="tusculus" n="Tusculus" xml:id="w18015">tusculus</w>
-	<pc n="space"> </pc>
+<pc n=",">·</pc>
 <w ana="11A---K2---" lemma="tusculanus" n="Tusculanus" xml:id="w18018">tusculanus</w>
 <pc n=",">·</pc>
 <lb n="5v.a.8" />
@@ -19495,7 +19516,7 @@ ernus</w>
 <w ana="11B---A1---" lemma="masculinus" n="masculinus" xml:id="w18042">masculinus
 <note type="graphic">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
-<pc n="quote">·</pc>
+<pc n=".">·</pc>
 <w n="i" type="alphabemes" xml:id="w18045">i</w>
 <pc n="quote">·</pc>
 <w ana="2-NM41A3---" lemma="produco" n="productum" xml:id="w18048">
@@ -19546,7 +19567,7 @@ tia</w>
 <pc n="quote">·</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w18093">ut</w>
 <w ana="11B---A1---" lemma="mancus" n="mancus" xml:id="w18096">mancus</w>
-	<pc n="space"> </pc>
+<pc n="0">·</pc>
 <w ana="11B---A1---" lemma="mancinus" n="mancinus" xml:id="w18099">mancinus</w>
 <pc n=",">·</pc>
 <w ana="11B---A1--1" lemma="porcus" n="porcus" xml:id="w18102">porcus</w>
@@ -19582,7 +19603,7 @@ iuatiua</w>
 <w ana="4-S--------" lemma="ante" n="ante" xml:id="w18144">ante</w>
 <pc n="quote">·</pc>
 <w n="nus" type="alphabemes" xml:id="w18147">nus</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w18150">ut</w>
 <w ana="11B---A3---" lemma="oppidum" n="oppidum" xml:id="w18153">oppid
 	<choice>
@@ -19620,7 +19641,7 @@ iuatiua</w>
 <w ana="4-S-------2" lemma="e" n="ex" xml:id="w18180">ex</w>
 <w ana="11F---F3---" lemma="sui" n="se" xml:id="w18183">se</w>
 <lb n="5v.a.14" />
-<w ana="11A---A2--1" lemma="haentia" n="haentia" xml:id="w18186">hentia</w>
+<w ana="2-KD11J3---" lemma="habeo" n="habentia" xml:id="w18186">habentia</w>
 <pc n="quote">·</pc>
 <w n="a" type="alphabemes" xml:id="w18189">a</w>
 <pc n="quote">·</pc>
@@ -19661,18 +19682,19 @@ solanus</w>
 <w ana="11B---A1---" lemma="milonianus" n="Milonianus" xml:id="w18243">milo
 <lb n="5v.a.16" />
 nianus</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w ana="2-LM41F3--1" lemma="piso" n="Piso" xml:id="w18246">piso</w>
 <pc n="quote">·</pc>
 <w ana="11C---B1---" lemma="pisonis" n="Pisonis" xml:id="w18249">pisonis</w>
 <pc n="quote">·</pc>
 <w ana="11B---A1---" lemma="pisonianus" n="Pisonianus" xml:id="w18252">pisonianus</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w ana="11C---A1---" lemma="quamuis" n="quamuis" xml:id="w18255">qu
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
+	<pc n="space"> </pc>
 uis</w>
 	<pc n="space"> </pc>
 <w ana="11F---J1---" lemma="alius" n="alii" xml:id="w18258">alii</w>
@@ -19697,7 +19719,7 @@ ninus</w>
 	<pc n="space"> </pc>
 lucanus</w>
 <pc n=".">·</pc>
-<w ana="4-O--------" lemma="ideo" n="ideo" xml:id="w18288">ideo</w>
+<w ana="4-O--------" lemma="ideo" n="ideo" xml:id="w18288"><hi rend="larger">i</hi>deo</w>
 	<pc n="space"> </pc>
 <w ana="11F---A2H--" lemma="pleraque" n="pleraque" xml:id="w18291">plera
 	<choice>
@@ -19768,7 +19790,7 @@ te</w>
 <w ana="11B---A1---" lemma="marinus" n="marinus" xml:id="w18342">marinus
 <note type="graphic">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
 </w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w18345"><hi rend="larger">e</hi>t</w>
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w18348">ab</w>
 <w ana="11F---O3--1" lemma="hic" n="his" xml:id="w18351">his</w>
@@ -19787,14 +19809,16 @@ te</w>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w18372">et</w>
 <w ana="11B---F3---" lemma="genetiuo" n="genetiuo" xml:id="w18375">genitiuo</w>
 <pc n=".">·</pc>
-<w ana="11C---G----" lemma="similis" n="similiter" xml:id="w18378">similiter</w>
+<w ana="11C---G----" lemma="similis" n="similiter" xml:id="w18378"><hi rend="larger">s</hi>imiliter</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--9---" lemma="facio" n="faciunt" xml:id="w18381">faciunt</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w18384">ut</w>
 <w ana="11C---A1---" lemma="hercules" n="Hercules" xml:id="w18387">hercules</w>
 <pc n="quote">·</pc>
-<w ana="11C---B1---" lemma="hercules" n="Herculis" xml:id="w18390">herculis</w>
+<w ana="11C---B1---" lemma="hercules" n="Herculis" xml:id="w18390">erculis
+<note type="emendation">Scribal error due to the scribe's pronunciation: the scribe omitted the initial "H" in "Herculis".</note>
+</w>
 <lb n="5v.a.21" />
 <w ana="11C---B1---" lemma="herculinus" n="Herculinus" xml:id="w18393">herculinus
 <note type="graphic">There is a macron sign over the "i" to mark the vowel's long quantity.</note>
@@ -19811,7 +19835,7 @@ te</w>
 <pc n="quote">·</pc>
 <w n="er" type="alphabemes" xml:id="w18411">er</w>
 <pc n="quote">·</pc>
-<w ana="2-JM41A2---" lemma="terminnata" n="terminnata" xml:id="w18414">termin
+<w ana="2-JM41A2---" lemma="termino" n="terminata" xml:id="w18414">termi
 <lb n="5v.a.22" />
 nata</w>
 <pc n="0">·</pc>
@@ -19836,9 +19860,9 @@ nata</w>
 </w>
 <pc n="quote">·</pc>
 <w n="ium" type="alphabemes" xml:id="w18432">i·um
-<note type="content">Though there is a middle dot between "i" and "um", the morpheme that the author meant was "ium" as a whole (compare the source, Priscian Ars grammatica, K.2.79.2: "et in ium propria").</note>
+<note type="script">Though there is a middle dot between "i" and "um", the morpheme that the author meant was "ium" as a whole (compare the source, Priscian Ars grammatica, K.2.79.2: "et in ium propria").</note>
 </w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w ana="2-JM41A2---" lemma="deriuata" n="deriuata" xml:id="w18438">deriuata</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w18441">ab</w>
@@ -19874,9 +19898,14 @@ terinus</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="mancinus" n="mancinus" xml:id="w18483">mancinus</w>
 <pc n=",">·</pc>
-<w ana="11C---D3---" lemma="regi,u,2,um," n="Regi,u,2,um," xml:id="w18486">regi,u,2,um,</w>
+<w ana="11B---D3---" lemma="regium" n="Regium" xml:id="w18486">regi
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
 	<pc n="space"> </pc>
-<w ana="11C---D3---" lemma="reginus" n="Reginus" xml:id="w18489">reginus</w>
+<w ana="11C---B3---" lemma="reginus" n="Reginus" xml:id="w18489">reginus</w>
 <note type="graphic">There is a macron sign over the last "i" in "austrinus", "adulterinus", "mancinus", "reginus" to mark the vowel's long quantity.</note>
 <pc n=",">·</pc>
 <w ana="11B---A1---" lemma="carus" n="carus" xml:id="w18492">carus</w>
@@ -19910,6 +19939,7 @@ cipiuntur</w>
 	</choice>
 </w>
 </unclear>
+<pc n="," />
 <note type="script">I am not sure whether I found this abbreviation of "ea quae" before.</note>
 <lb n="5v.a.26" />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w18528">ut</w>
@@ -19931,6 +19961,7 @@ cipiuntur</w>
 		<expan>est</expan>
 	</choice>
 </w>
+<pc n="," />
 <w ana="4-S--------" lemma="in" n="in" xml:id="w18537">in</w>
 <w n="cus" type="alphabemes" xml:id="w18540">cus</w>
 <pc n="quote">·</pc>
@@ -19977,14 +20008,14 @@ a</w>
 <w ana="11B---M1--1" lemma="graecus" n="Graecos" xml:id="w18585">grecos</w>
 <lb n="5v.a.28" />
 <w ana="3-LJ1--9---" lemma="sequor" n="sequuntur" xml:id="w18588">sequuntur</w>
-<pc n=".">·</pc>
+<pc n="0">·</pc>
 <w ana="11F---J1---" lemma="qui" n="qui" xml:id="w18591">
 	<choice>
 		<abbr type="brevigraph">¢</abbr>
 		<expan>qui</expan>
 	</choice>
 </w>
-<w ana="12C---G----" lemma="tauromenites" n="tauromenites" xml:id="w18594">tauromenites</w>
+<w n="Ταυρομενίτης" type="foreign" xml:id="w18594" xml:lang="grc">tauromenites</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--9---" lemma="dico" n="dicunt" xml:id="w18597">dicunt</w>
 <pc n=".">·</pc>
@@ -19992,7 +20023,7 @@ a</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="apud" n="apud" xml:id="w18603">apud</w>
 	<pc n="space"> </pc>
-<w ana="11B---M1--1" lemma="graecus" n="graecos" xml:id="w18606">grecos</w>
+<w ana="11B---M1--1" lemma="graecus" n="Graecos" xml:id="w18606">grecos</w>
 <lb n="5v.a.29" />
 <w ana="4-S--------" lemma="in" n="in" xml:id="w18609">in</w>
 <w n="της" type="alphabemes" xml:id="w18612" xml:lang="grc">tes</w>
@@ -20087,7 +20118,7 @@ nus</w>
 <w ana="11C---B2---" lemma="declinationis" n="declinationis" xml:id="w18693">declinationis</w>
 	<pc n="space"> </pc>
 <w ana="3-JJ1--9---" lemma="derivo" n="derivantur" xml:id="w18696">deribantur
-<note type="emendation">Scribal error ("b" for "u") due to the scribe's pronunciation pronuntiation.</note>
+<note type="emendation">Scribal error ("b" for "u") due to the scribe's pronunciation.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11F---D2--2" lemma="quamuis" n="quamuis" xml:id="w18699">qu
@@ -20153,12 +20184,12 @@ nis</w>
 		<expan>am</expan>
 	</choice>
 </w>
-<w ana="11A---A2---" lemma="ouilla" n="ouilla" xml:id="w18762">ouilla</w>
+<w ana="11A---F2---" lemma="ouilla" n="ouilla" xml:id="w18762">ouilla</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w18765">et</w>
-<w ana="11A---A2---" lemma="suilla" n="suilla" xml:id="w18768">suilla</w>
+<w ana="11A---F2---" lemma="suilla" n="suilla" xml:id="w18768">suilla</w>
 	<pc n="space"> </pc>
-<w ana="11A---A2---" lemma="diminutiua" n="diminutiua" xml:id="w18771">diminutiua</w>
+<w ana="2-LM41F2---" lemma="diminutiua" n="diminutiua" xml:id="w18771">diminutiua</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w18774">
 	<choice>
@@ -20167,6 +20198,7 @@ nis</w>
 	</choice>
 </w>
 <pc n=".">·</pc>
+<w ana="11B---J1---" lemma="§" n="§">[§ Reviewed until here]</w>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w18777"><hi rend="larger">i</hi>n</w>
 <w n="nus" type="alphabemes" xml:id="w18780">nus</w>
 <pc n="quote">·</pc>
@@ -20502,7 +20534,7 @@ nentia</w>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w19113">in</w>
 <pc n="quote">·</pc>
 <w n="ius" type="alphabemes" xml:id="w19116">i·us
-<note type="content">Though there is a middle dot between "i" and "us", the morpheme that the author meant was "ius" as a whole (compare the source, Priscian Ars grammatica, K.2.80.19: "sin autem in "er" desinentia tertiae sint declinationis uel in "ius" facientia genetiuum").</note>
+<note type="script">Though there is a middle dot between "i" and "us", the morpheme that the author meant was "ius" as a whole (compare the source, Priscian Ars grammatica, K.2.80.19: "sin autem in "er" desinentia tertiae sint declinationis uel in "ius" facientia genetiuum").</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="2-NE-1D----" lemma="facientia" n="facientia" xml:id="w19122">facientia</w>
@@ -20622,7 +20654,7 @@ ter</w>
 <w ana="11F---O3--1" lemma="alius" n="aliis" xml:id="w19251">aliis</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w19254">ab
-<note type="content">This "ab" could be expunged from the text. Compare the source, Priscian Ars grammatica, K.2.81.1: "ab aliis quoque aduerbiis temporalibus inueniuntur quaedam r ante 'nus' habentia".</note>
+<note type="emendation">This "ab" could be expunged from the text. Compare the source, Priscian Ars grammatica, K.2.81.1: "ab aliis quoque aduerbiis temporalibus inueniuntur quaedam r ante 'nus' habentia".</note>
 	<pc n="space"> </pc>
 
 </w>
@@ -20772,7 +20804,7 @@ nificationes</w>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w19419"><hi rend="larger">i</hi>n</w>
 <pc n="quote">·</pc>
 <w n="ia" type="alphabemes" xml:id="w19422">i·a
-<note type="content">Though there is a middle dot between "i" and "a", the morpheme that the author meant was "ia" as a whole (compare the source, Priscian Ars grammatica, K.2.81.15: "in 'ia' desinentia n antecedente", and compare the following examples).</note>
+<note type="script">Though there is a middle dot between "i" and "a", the morpheme that the author meant was "ia" as a whole (compare the source, Priscian Ars grammatica, K.2.81.15: "in 'ia' desinentia n antecedente", and compare the following examples).</note>
 </w>
 <pc n="quote">·</pc>
 <w ana="11A---F2---" lemma="desinentia" n="desinentia" xml:id="w19428">desinentia</w>
@@ -20886,7 +20918,7 @@ cedente</w>
 <w ana="4-S--------" lemma="ante" n="ante" xml:id="w19512">ante</w>
 <pc n="quote">·</pc>
 <w n="ia" type="alphabemes" xml:id="w19515">i·a
-<note type="content">Though there is a middle dot between "i" and "a", the morpheme that the author meant was "ia" as a whole.</note>
+<note type="script">Though there is a middle dot between "i" and "a", the morpheme that the author meant was "ia" as a whole.</note>
 </w>
 <pc n="quote">·</pc>
 <w ana="4-O--------" lemma="non" n="non" xml:id="w19521">
@@ -20914,7 +20946,6 @@ cedente</w>
 		</choice>
 	<pc n="space"> </pc>
 	libet
-<note type="script">"Quam" and "libet" are written with a space in between.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="2-JD11D2---" lemma="consonantem" n="consonantem" xml:id="w19536">consonant
@@ -20993,7 +21024,7 @@ a</w>
 <w ana="11B---A1---" lemma="anagnianus" n="Anagnianus" xml:id="w19596">anagnia
 <gap quantity="2" reason="illegible" unit="chars" />
 	s
-<note type="content">The source has "Anagninus", but the last legible grapheme is almost certainly an "a", so the original reading of the manuscript must have been different. The pergamene surface is damaged in this point.</note>
+<note type="emendation">The source has "Anagninus", but the last legible grapheme is almost certainly an "a", so the original reading of the manuscript must have been different. The pergamene surface is damaged in this point.</note>
 	<pc n="space"> </pc>
 </w>
 </unclear>
@@ -21476,7 +21507,7 @@ ferre</w>
 <w ana="11B---A1---" lemma="doctior" n="doctior" xml:id="w20010">doctior</w>
 <pc n=",">·</pc>
 <w ana="11F---F1---" lemma="iste" n="isto" xml:id="w20013">isto
-<note type="script">The final "e" comes from the deletion of a previous "e".</note>
+<note type="script">The final "o" comes from the deletion of a previous "e".</note>
 	<pc n="space"> </pc>
 </w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w20016">est</w>
@@ -22317,7 +22348,7 @@ tiæ</w>
 <gap quantity="1" reason="illegible" unit="words" />
 <w ana="11C---A2--1" lemma="comparatio" n="comparatio" xml:id="w20784">comparatio</w>
 <note type="script">A metamark shaped as a tilde crossed by a vertical line is added above the line and in the space below the column to connect the addition with the text. Both the metamark and the addition are in blank ink.</note>
-<note type="source">This additions is partly taken from the source, partly original. The source, Priscian Ars grammatica, K.2.83.18, has: "accidentia autem sunt, quae ex qualitate uel quantitate animi uel corporis uel extrinsecus forte euenientium trahuntur".</note>
+<note type="source">This addition is partly taken from the source, partly original. The source, Priscian Ars grammatica, K.2.83.18, has: "accidentia autem sunt, quae ex qualitate uel quantitate animi uel corporis uel extrinsecus forte euenientium trahuntur".</note>
 </add>
 <w ana="4-S-------2" lemma="e" n="ex" xml:id="w20787">ex</w>
 <w ana="11C---F2---" lemma="qualitas" n="qualitate" xml:id="w20790">qualitate</w>
@@ -22765,7 +22796,7 @@ paratiuis</w>
 	<pc n="space"> </pc>
 <w ana="12C---A1---" lemma="punior" n="Punior" xml:id="w21177">punior</w>
 <pc n=",">.</pc>
-<note type="script">After the full stop there is a strange "i"-shaped sign, that I think is a simple scribal error.</note>
+<note type="script">After the full stop there is a strange "i"-shaped sign, which I think is a simple scribal error.</note>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w21180">et</w>
 <lb n="6r.b.6" />
 <w ana="4-S--------" lemma="in" n="in" xml:id="w21183">in</w>
@@ -24263,7 +24294,7 @@ cere</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w ana="11B---K3---" lemma="latinorum" n="latinorum" xml:id="w22599">latinor
+<w ana="11B---K3---" lemma="latinorum" n="Latinorum" xml:id="w22599">latinor
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
@@ -24525,7 +24556,7 @@ uantes</w>
 <lb n="6v.a.27" />
 st</w>
 <w n="que" type="alphabemes" xml:id="w22860">que
-<note type="content">Based on the following examples, it should be "q" rather than "que".</note>
+<note type="emendation">Based on the following examples, it should be "q" rather than "que".</note>
 </w>
 <pc n="quote">·</pc>
 <w ana="11C---A1---" lemma="uel" n="uel" xml:id="w22863">
@@ -25889,7 +25920,7 @@ tiuo</w>
 <w ana="4-S--------" lemma="ante" n="ante" xml:id="w24189">ante</w>
 <pc n="quote">·</pc>
 <w n="or" type="alphabemes" xml:id="w24192">or</w>
-<note type="content">The sentence does not have a subject. The final "o" of "comparatiuo" is a correction written over the original final "u" with a "2" abbreviation mark above (for "comparatiuum". So the first hand meant "in nullo (scil. uerbo) comparatiuum (subject) i productum habet ante or". The source (Priscian Ars grammatica K.2.91.16) has: "quia in nulla comparatiuo i ante "or" produci potest".</note>
+<note type="emendation">The sentence does not have a subject. The final "o" of "comparatiuo" is a correction written over the original final "u" with a "2" abbreviation mark above (for "comparatiuum". So the first hand meant "in nullo (scil. uerbo) comparatiuum (subject) i productum habet ante or". I would correct the sentence by restoring the text of the first hand: "in nullo (scil. uerbo) comparatiuum etc.". The source (Priscian Ars grammatica K.2.91.16) has: "quia in nulla comparatiuo i ante "or" produci potest". </note>
 <pc n=".">|</pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w24195"><hi rend="larger">i</hi>n</w>
 <w ana="11B---F3---" lemma="superlatiuo" n="superlatiuo" xml:id="w24198">su
@@ -26457,7 +26488,7 @@ latiuo</w>
 paratiui</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="aut" n="aut" xml:id="w24696">aut
-<note type="content">"Aut" is not in the source and I would expunge it here, since it does not make sense. The source, Priscian, Ars grammatica K.2.93.16, also mentions the superlative: "cum duo uel plures comparatiui uel superlatiui diuersae significationis positi inter se aequantur uel idem geminantur".</note>
+<note type="emendation">"Aut" is not in the source and I would expunge it here, since it does not make sense. The source, Priscian, Ars grammatica K.2.93.16, also mentions the superlative: "cum duo uel plures comparatiui uel superlatiui diuersae significationis positi inter se aequantur uel idem geminantur".</note>
 </w>
 <w ana="11C---A2---" lemma="diuersae" n="diuersae" xml:id="w24699">diuersæ</w>
 <lb n="7r.a.14" />
@@ -27299,7 +27330,7 @@ bus</w>
 </w>
 	<pc n="space"> </pc>
 <w n="contrue" type="nonsense" xml:id="w25431">contrue
-<note type="content">Possible corrections for this word might be "contrarie" or "contra".</note>
+<note type="emendation">Possible corrections for this word might be "contrarie" or "contra".</note>
 </w>
 <lb n="7r.b.2" />
 <w ana="3-NQ1------" lemma="dico" n="dici" xml:id="w25434">dici</w>
@@ -27687,7 +27718,7 @@ paratiua</w>
 		<expan>per</expan>
 	</choice>
 latiuus</w>
-<note type="script">A second hand wrote in black ink a marginal note with an initial sign looking like a "3" (I do not know how it means) and "superlati..." (I do do not know how to interpret the last grapheme). It might mean "de superlatiuo".</note>
+<note type="script">A second hand wrote in black ink a marginal note with an initial sign looking like a "3" (I do not know its exact meaning) and "superlati..." (I do do not know how to interpret the last grapheme). It might mean "de superlatiuo".</note>
 	<pc n="space"> </pc>
 <w ana="11D---A1---" lemma="gradus" n="gradus" xml:id="w25794">gradus</w>
 	<pc n="space"> </pc>
@@ -28073,7 +28104,7 @@ pta</w>
 <w ana="11B---F3---" lemma="genetiuo" n="genetiuo" xml:id="w26139">genitiuo</w>
 	<pc n="space"> </pc>
 <w n="s" type="alphabemes" xml:id="w26142">es
-<note type="content">The source Priscian, Ars grammatica K.2.95.7 has: "assumunt genetiuo s et "simus" et faciunt superlatiuum". So probably the scribe had the alphabeme "s" in mind. He normally wrote the grapheme "s" in these cases, but this time he wrote the name of the alphabeme as it was pronounced aloud (IPA /es/), instead of the corresponding grapheme. This is why, at the Linguistic Layer, I am simply enconding "s".</note>
+<note type="content">The source Priscian, Ars grammatica K.2.95.7 has: "assumunt genetiuo s et "simus" et faciunt superlatiuum". So probably the scribe had the alphabeme "s" in mind. He normally wrote the grapheme "s" in these cases, but here he wrote the name of the alphabeme as it was pronounced aloud (IPA /es/), instead of the corresponding grapheme. This is why, at the Linguistic Layer, I am simply enconding "s".</note>
 </w>
 <pc n="quote">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w26145">et</w>
@@ -28186,7 +28217,7 @@ uis</w>
 <w ana="4-O--------" lemma="tamen" n="tamen" xml:id="w26253">tamen</w>
 	<pc n="space"> </pc>
 <w ana="11C---B1---" lemma="serbant" n="serbant" xml:id="w26256">serbant
-<note type="emendation">Scribal error for "seruant", due to the scribe's pronunciation. Also, if its subject is "qui", referring in its turn to "maturrimus", this verbal form should be singular ("seruat"), not plural ("seruant").</note>
+<note type="emendation">Scribal error: the scribe wrote "serbant" for "seruant", due to the scribe's pronunciation. Also, if its subject is "qui", referring in its turn to "maturrimus", this verbal form should be singular ("seruat"), not plural ("seruant").</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11A---D2---" lemma="regula" n="regulam" xml:id="w26259">regul
@@ -28487,7 +28518,7 @@ latiua</w>
 <w ana="11C---B2---" lemma="saluberrimus" n="saluberrimus" xml:id="w26538">saluberrimus</w>
 <pc n=",">·</pc>
 <w ana="11A---O2---" lemma="celebris" n="celebris" xml:id="w26541">celebris
-<note type="graphic">There is a macron sign over the second "e" to mark the vowel's long quantity.</note>
+<note type="graphic">There is a macron sign over the second "e" ("celēbris") to mark the vowel's long quantity.</note>
 </w>
 <pc n="quote">·</pc>
 <w ana="3-NB4--7---" lemma="celeberrimus" n="celeberrimus" xml:id="w26544">celeberri
@@ -28590,7 +28621,7 @@ latiua</w>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
-<note type="emendation">Probably a scribal error for "superlatiuum".</note>
+<note type="emendation">Probably a scribal error: "superlatiuam" for "superlatiuum".</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11F---D3---" lemma="unus" n="unum" xml:id="w26619">un
@@ -28717,7 +28748,7 @@ latiua</w>
 <w ana="12C---B3---" lemma="postremus" n="postremus" xml:id="w26715">postre
 <lb n="7v.a.14" />
 	mus
-<note type="graphic">There is a macron sign over the "e" to mark the vowel's long quantity.</note>
+<note type="graphic">There is a macron sign over the "e" ("postrēmus") to mark the vowel's long quantity.</note>
 </w>
 <pc n=",">·</pc>
 <w ana="13B---A1---" lemma="inferus" n="infimus" xml:id="w26718">infimus
@@ -28981,7 +29012,7 @@ latiua</w>
 		<abbr type="superscription">m<am>¯</am></abbr>
 		<expan>men</expan>
 	</choice>
-<note type="content">For the expansion of this unusual abbreviation, see the source Priscian, Ars grammatica K.2.99.22: "sciendum tame, quod etiam nomen inuenitur "hic penitus, huius peniti"".</note>
+<note type="script">For the expansion of this unusual abbreviation, see the source Priscian, Ars grammatica K.2.99.22: "sciendum tame, quod etiam nomen inuenitur "hic penitus, huius peniti"".</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11F---A1---" lemma="hic" n="hic" xml:id="w26964">hic</w>
@@ -29117,7 +29148,7 @@ ua</w>
 <w ana="11F---M2---" lemma="duo" n="duas" xml:id="w27069">duas</w>
 	<pc n="space"> </pc>
 <w ana="3-JH1------" lemma="syllabas" n="syllabas" xml:id="w27072">syllabas</w>
-<note type="content">I would correct this to "uel una uel duabus syllabis". In the manuscript, the last "a" in "syllabas" is faded out. Could this be a sign of an intentional erasion by a scribe? If so, however, one wonders why the same scribe did not correct "duas" to "duabus".</note>
+<note type="emendation">I would correct this to "uel una uel duabus syllabis". In the manuscript, the last "a" in "syllabas" is faded out. Could this be a sign of an intentional erasion by a scribe? If so, however, one wonders why the same scribe did not correct "duas" to "duabus".</note>
 	<pc n="space"> </pc>
 <w ana="3-NA1--9---" lemma="uincunt" n="uincunt" xml:id="w27075">uincunt</w>
 	<pc n="space"> </pc>
@@ -29138,7 +29169,7 @@ latiuus</w>
 		<expan>per</expan>
 	</choice>
 	erat
-<note type="emendation">Scribal error: after the "per" abbreviation, the scribe wrote "er" again, so the result is "su(per)erat".</note>
+<note type="emendation">Scribal error: after the "per" abbreviation, the scribe wrote "er" again, so the result is "su(per)erat", but the sense of the sentence requires "superat" here.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---D3---" lemma="comparatiuum" n="comparatiuum" xml:id="w27096">c
@@ -29167,7 +29198,7 @@ latiuus</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="11A---D2---" lemma="syllabam" n="syllabam" xml:id="w27105">syllabam</w>
-<note type="content">I would correct "unam syllabam" to "una syllaba" (ablative), like in the source Priscian, Ars grammatica K.2.100.25 ("superlatiuus uero comparatiuum est quando superat una syllaba").</note>
+<note type="emendation">I would correct "unam syllabam" to "una syllaba" (ablative), as in the source Priscian, Ars grammatica K.2.100.25 ("superlatiuus uero comparatiuum est quando superat una syllaba").</note>
 <pc n=",">·</pc>
 <lb n="7v.a.29" />
 <w ana="4-O--------" lemma="quando" n="quando" xml:id="w27108">quando</w>
@@ -29327,7 +29358,7 @@ mus</w>
 <w ana="12C---A1---" lemma="exterior" n="exterior" xml:id="w27279">exterior</w>
 	<pc n="space"> </pc>
 <w ana="13B---O3---" lemma="extremus" n="extremus" xml:id="w27282">extremus
-<note type="graphic">There is a macron sign over the second "e" to mark the vowel's long quantity.</note>
+<note type="graphic">There is a macron sign over the second "e" ("extrēmus") to mark the vowel's long quantity.</note>
 </w>
 <pc n="0">·</pc>
 <w ana="11C---D1---" lemma="uel" n="uel" xml:id="w27285">
@@ -29390,9 +29421,9 @@ latiuus</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w27324">ut</w>
 <w ana="3-JB2--7---" lemma="supremus" n="supremus" xml:id="w27327">supremus
-<note type="graphic">There is a macron sign over the "e" to mark the vowel's long quantity.</note>
+<note type="graphic">There is a macron sign over the "e" ("suprēmus") to mark the vowel's long quantity.</note>
 </w>
-<note type="content">The syntax of the sentence is inconsistent: both "in remus desinens superlatiuus" and "sola haec forma" are in nominative.</note>
+<note type="emendation">The syntax of the sentence is inconsistent: both "in remus desinens superlatiuus" and "sola haec forma" are in nominative.</note>
 <pc n=",">·</pc>
 <lb n="7v.a.37" />
 <w ana="4-S-------1" lemma="cum" n="cum" xml:id="w27330">c
@@ -30567,7 +30598,7 @@ mæ</w>
 	<pc n="space"> </pc>
 <w ana="3-KB1--6---" lemma="habeo" n="habeat" xml:id="w28359">habeat</w>
 <pc n="quote">|</pc>
-<note type="script">This is a rare case in which the "|" punctuation sign is used as a quotation mark for alphabemes.</note>
+<note type="script">This is a rare case in which the "|" (comma-like) punctuation sign is used as a quotation mark for alphabemes.</note>
 <w n="c" type="alphabemes" xml:id="w28362">c</w>
 <pc n="quote">·</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w28365">ut</w>
@@ -30585,7 +30616,7 @@ mæ</w>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w28386">in</w>
 <pc n="quote">·</pc>
 <w n="es" type="alphabemes" xml:id="w28389">es
-<note type="content">The source Priscian, Ars grammatica K.2.103.4 has: "monosyllaba in s desinentia". So probably the scribe had the alphabeme "s" in mind. He normally wrote the grapheme "s" in these cases, but this time he wrote the name of the alphabeme as it was pronounced aloud (IPA /es/), instead of the corresponding grapheme. This is why, at the Linguistic Layer, I am simply enconding "s". This is the second such case in the manuscript.</note>
+<note type="content">The source Priscian, Ars grammatica K.2.103.4 has: "monosyllaba in s desinentia". So probably the scribe had the alphabeme "s" in mind. He normally used to write the grapheme "s" in these cases, but here he wrote the name of the alphabeme as it was pronounced aloud (IPA /es/), instead of the corresponding grapheme. This is why, at the Linguistic Layer, I am simply enconding "s". This is the second such case in the manuscript.</note>
 </w>
 <pc n="quote">·</pc>
 <w ana="2-LD11F2---" lemma="antecedente" n="antecedente" xml:id="w28392">antecedente</w>
@@ -31079,7 +31110,7 @@ tor</w>
 <w ana="4-S-------1" lemma="praeter" n="praeter" xml:id="w28857"><hi rend="larger">p</hi>ræter</w>
 <pc n="quote">·</pc>
 <w ana="11A---F2---" lemma="cuticula" n="cuticula" xml:id="w28860">cuticula</w>
-<note type="content">The syntax of the sentence does not work. A relative pronoun would be needed here, like "quod".</note>
+<note type="emendation">The syntax of the sentence does not work. A relative pronoun would be needed here, like "quod".</note>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="produco" n="producit" xml:id="w28863">
 	<choice>
