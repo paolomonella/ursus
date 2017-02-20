@@ -14,7 +14,8 @@
     </fileDesc>
     <revisionDesc>
 <change type="done">Ricordarsi periodicamente di togliere gli spazi (tag 'space')seguiti da 'lb'. In VIM l'andata a capo è \n</change>
-<change type="agenda">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words (questo potrebbe sostituire il mio w type="alphabemes"?)</change>
+<change type="agenda">Check (and delete) all space 'pc' elements at the end of empty tags before the backslash (pb, cb, lb etc.).</change>
+<change type="skipped">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words (questo potrebbe sostituire il mio w type="alphabemes"?)</change>
 <change type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype data.enumerated. Questo significa che dovrei limitare formalmente i possibili valori con un elemento  valList?</change>
 <change type="agenda">Nella documentazione in [sgn4] metti parole vuote con 0 o no?</change>
 <change type="agenda">I might transcribe also marginal glossae in black ink</change>
@@ -24,18 +25,17 @@
 <change type="agenda">Periodicamente: vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre il signif. che suggerisco nella GToS</change>
 <change type="agenda">Periodicamente: check for duplicate and unordered word IDs</change>
 <change type="agenda">Periodicamente: check for '0' after closing tags (due to @f or @d in .vimrc).</change>
-<change type="agenda">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein', e anche 'plion' seguito da 'pleion' sono da discutere in una complicata discussione critico-testuale, anche in considerazione dei testimoni del testo di Prisciano (vd. app. crit. di Keil K.2.71.11). Tra l'altro, dovrei riportare il testo dei testimoni del testo di Prisciano nella nota contenutistica a quel punto.</change>
+<change type="agenda">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein', e anche 'plion' seguito da 'pleion' sono da discutere in una complicata discussione critico-testuale, anche in considerazione dei testimoni del testo di Prisciano (vd. app. crit. di Keil K.2.71.11). Tra l'altro, dovrei riportare il testo dei testimoni del testo di Prisciano nella nota contenutistica a quel punto [P.S.: ma forse l'ho già fatto].</change>
 <change type="agenda">I always put a space at the end of the lb, cb, pb elements (XHTML-style). I am afraid that this is not the TEI-style, and that TEI has no space at the end of such elements: if so, delete it from this file, from vimrc and from the paoloMarkDown.py script.</change>
-<change type="agenda">Check the space at the end of empty tags before the backslash (pb, cb, lb etc.).</change>
 <change type="agenda">Filologia testuale: 'quoniam' (parola con id w18300) mi pare strano: controllalo. La fonte (Prisc. Ars K.2.78.20) ha 'quia' che introduce un'oggettiva. Ma può 'quoniam' introdurre oggettive? O lo scriba ha frainteso 'quia' pensandolo introduttore di causale? Lo stesso nella parola con id w36645: in questo caso Prisciano K.2.129.22 ha "quod".</change>
-<change type="agenda">I added 'milestone' elements for long sources only for the final part of the transcription. I could add them for the initial part too.</change>
+<change type="agenda">I added 'milestone' elements for long sources only for the final part of the transcription. I could add them for the initial part too. Also, I'm not rendering those milestones in any way: I could think of a possible rendering.</change>
 <change type="agenda">For clear 'scribal error[s]', I sometimes correct in the value of @n, sometimes do not. Also, sometimes I insert a @type="script" note, sometimes a @type="content" note. I normally use 'script' when I correct silently, 'content' when I do not. This only is to check until the first note with type "emendation".</change>
-<change type="agenda">Fix the JS cross-browser compatibility issues.</change>
+<change type="done" when="2017-02-04">Fix the JS cross-browser compatibility issues.</change>
 <change type="agenda">I might turn the informal quotations (such as K.2.110.22-25) in the 'note' element into formal URNs.</change>
 <change type="agenda">Specifica i type di 'note' con i due nuovi tipi 'emendation' e 'graphic'. Ricomincia dalla parola w28905 andando a ritroso.</change>
 <change type="agenda">Per le attuali 'note' @type="emendation", usa 'corr' (oppure 'supplied') con solo il livello linguistico ('w' vuoto con attributi), secondo quanto dice file:///usr/share/doc/tei-p5-doc/en/html/ref-add.html nel paragrafetto 'Note'. Potrei usare la coppia sic/corr come in http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COEDCOR per gli errori evidenti. In http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCC si parla di emendazioni più congetturali, e c'è un paragrafo interessante (find 'In addition, the conscientious encoder will provide documentation explaining the circumstances') in cui dice che potrei inserire in un elemento <tag>correction</tag> dentro la <tag>encodingDesc</tag> dettagli sui valori dell'elemento @type di <tag>corr</tag>.</change>
 <change type="agenda">Potrei usare 'gap' per unclear @type="cropped", ma probabilmente è meglio di no. Attualmente ho usato 'unclear' e aggiunto un 'note' @type="script".</change>
-<change type="agenda">Gestisci meglio i 'pc' type=quote</change>
+<change type="done" date="2016">Gestisci meglio i 'pc' type=quote</change>
 <change type="agenda">Potrei codificare le correzioni/riscritture dello stesso scriba.</change>
 <change type="agenda">Problema di visualizzazione: quando inserisco un segno di punteggiatura a livello AL/LL non corrispondente ad alcun segno sul manoscritto, nel browser comunque spunta nella riga GL uno spazio. Potrei usare [pc n="."] [/pc] (cioè uno spazio al GL che 'significa' un punto al LL).</change>
 <change type="agenda">Vd. se c'è veramente differenza tra punto al mezzo e punto in basso o se sono allografi. E vd. se ci sono allografi anche tra gli altri segni di punteggiatura.</change>
@@ -17856,6 +17856,7 @@ mæ</w>
 </w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w16341">et</w>
+<note type="source">The phrase "etiam et" sounds like a repetition. The source Priscian Ars Grammatica K.2.74.10-11 has "non solum autem in nominibus Latinis [...] sed etiam in verbis praeteriti perfecti temporis et plusquamperfecti".</note>
 <w n="in" xml:id="w16344">in</w>
 <w n="uerbis" xml:id="w16347">uerbis</w>
 	<pc n="space"> </pc>
@@ -18219,6 +18220,7 @@ cationis</w>
 <w n="his" xml:id="w16662">his</w>
 	<pc n="space"> </pc>
 <w n="inueniuntur" xml:id="w16665">inueniuntur</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="alia" xml:id="w16668">alia</w>
 	<pc n="space"> </pc>
@@ -18231,13 +18233,14 @@ cationis</w>
 <w n="tabellarius" xml:id="w16680">tabellarius</w>
 	<pc n="space"> </pc>
 <w n="mercennarius" xml:id="w16683">mercennarius</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w n="alia" xml:id="w16686"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w16689">a</w>
 <w n="dignitatibus" xml:id="w16692">dignitatibus</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w16695">ut</w>
+<unclear cert="medium" reason="faded">
 <w n="profectorius" type="nonsense" xml:id="w16698">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
@@ -18248,6 +18251,8 @@ cationis</w>
 	torius
 <note type="emendation">The source, Priscian Ars Grammatica K.2.75.5, has "praefectorius". In the manuscript the word starts with a brevigraph that elsewhere always has the alphabetical meaning of "pro", so we can consider this a scribal error ("profectorius" for "praefectorius").</note>
 </w>
+</unclear>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="praetorius" xml:id="w16701">prætorius</w>
 	<pc n="space"> </pc>
@@ -18275,6 +18280,7 @@ cationis</w>
 		<expan>em</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 
 <cb n="5r.b" />
 
@@ -18345,13 +18351,14 @@ cationis</w>
 <w n="palma" xml:id="w16767">palma</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w16770">est</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="id" xml:id="w16773">id</w>
 <w n="est" xml:id="w16776">est</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w16779">in</w>
 <w n="laude" xml:id="w16782">laude</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w n="alia" xml:id="w16785"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w n="de" xml:id="w16788">de</w>
@@ -18368,6 +18375,7 @@ bus</w>
 		<expan>sunt</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w16797">ut</w>
 <w n="frumentaria" xml:id="w16800">fru
@@ -18389,7 +18397,7 @@ taria</w>
 	<pc n="space"> </pc>
 <w n="de" xml:id="w16815">de</w>
 <w n="agris" xml:id="w16818">agris</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w n="alia" xml:id="w16821"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w n="ex" xml:id="w16824">ex</w>
@@ -18401,6 +18409,7 @@ taria</w>
 <w n="continent" xml:id="w16833">con
 <lb n="5r.b.4" />
 tinent</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w16836">ut</w>
 <w n="uinaria" xml:id="w16839">uinaria</w>
@@ -18408,7 +18417,6 @@ tinent</w>
 <w n="cella" xml:id="w16842">cella</w>
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w16845">quæ</w>
-	<pc n="space"> </pc>
 <w n="uinum" xml:id="w16848">uin
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -18417,7 +18425,7 @@ tinent</w>
 </w>
 	<pc n="space"> </pc>
 <w n="habet" xml:id="w16851">habet</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w n="armentarium" xml:id="w16854"><hi rend="larger">a</hi>rmentarium</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w16857">in</w>
@@ -18453,7 +18461,9 @@ sæ</w>
 	<pc n="space"> </pc>
 <w n="terminationis" xml:id="w16899">terminationis</w>
 <pc n=".">·</pc>
-<w n="haec" xml:id="w16902"><hi rend="larger">h</hi>æc</w>
+<w n="haec" xml:id="w16902"><hi rend="larger">h</hi>æc
+<note type="emendation">According to the classical construction of "utor", this should be ablative "hāc". Though "utor" sometimes takes an adverbial accusative, the latter tends to be singular, not plural. So "hāc" might be an emendation for "haec" here.</note>
+</w>
 	<pc n="space"> </pc>
 <w n="Latini" xml:id="w16905">latini</w>
 	<pc n="space"> </pc>
@@ -18467,6 +18477,7 @@ sæ</w>
 tione</w>
 	<pc n="space"> </pc>
 <w n="utuntur" xml:id="w16920">utuntur</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w16923">ut</w>
 <w n="Pompeianus" xml:id="w16926">pompeianus</w>
@@ -18507,7 +18518,7 @@ tione</w>
 <w n="Romanus" xml:id="w16959">romanus
 <note type="graphic">There is a macron sign over the "a" to mark the vowel's long quantity.</note>
 </w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w n="in" xml:id="w16962"><hi rend="larger">i</hi>n</w>
 <w n="quibusdam" xml:id="w16965">
 	<choice>
@@ -18547,7 +18558,7 @@ nus</w>
 	<pc n="space"> </pc>
 <w n="Anienus" xml:id="w16986">anienus</w>
 <note type="graphic">"Terrenus", "egenus", "abienus" and "Anienus" all have a macron sign over the penultimate "e" to mark the vowel's long quantity.</note>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w n="in" xml:id="w16989"><hi rend="larger">i</hi>n</w>
 <w n="quibusdam" xml:id="w16992">
 	<choice>
@@ -18578,7 +18589,7 @@ nus</w>
 <w n="uicinus" xml:id="w17004">uicinus
 <note type="graphic">There is a macron sign over the second "i" to mark the vowel's long quantity.</note>
 </w>
-<pc n=".">.</pc>
+<pc n=",">.</pc>
 <w n="in" xml:id="w17007"><hi rend="larger">i</hi>n</w>
 <w n="quibusdam" xml:id="w17010">
 	<choice>
@@ -18651,7 +18662,7 @@ busdam</w>
 <w n="diutinus" xml:id="w17091">diutinus
 <note type="graphic">There is a breve (˘) mark over the "i" to mark its short quantity.</note>
 </w>
-<pc n=".">.</pc>
+<pc n=",">.</pc>
 <w n="in" xml:id="w17094"><hi rend="larger">i</hi>n</w>
 <w n="quibusdam" xml:id="w17097">
 	<choice>
@@ -18675,7 +18686,7 @@ busdam</w>
 <pc n="quote">·</pc>
 <w n="ut" xml:id="w17112">ut</w>
 <w n="tribunus" xml:id="w17115">tribunus</w>
-<pc n=".">.</pc>
+<pc n=",">.</pc>
 <w n="in" xml:id="w17118"><hi rend="larger">i</hi>n</w>
 <w n="quibusdam" xml:id="w17121">
 	<choice>
@@ -18876,7 +18887,7 @@ libet</w>
 <lb n="5r.b.20" />
 <w n="ut" xml:id="w17298">ut</w>
 <w n="Petrus" xml:id="w17301">petrus</w>
-<note type="source">The phrase "eodem modo ut Petrus" is not in the source (Priscian, Ars grammatica, K.2.76.10).</note>
+<note type="source">The phrase "eodem modo ut Petrus" does not belong to the source (Priscian, Ars grammatica, K.2.76.10).</note>
 <pc n=".">.</pc>
 <w n="ex" xml:id="w17304"><hi rend="larger">e</hi>x</w>
 	<pc n="space"> </pc>
@@ -18930,7 +18941,7 @@ libet</w>
 <w n="urbanus" xml:id="w17373">urbanus</w>
 <note type="graphic">In "rusticanus" and "urbanus" there is a macron sign over the "a" to mark the vowel's long quantity.</note>
 <pc n=".">·</pc>
-<w n="alia" xml:id="w17376">alia</w>
+<w n="alia" xml:id="w17376"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w17379">a</w>
 <w n="temporibus" xml:id="w17382">tem
@@ -18942,6 +18953,7 @@ poribus</w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w17391">a</w>
 <w n="Matuta" xml:id="w17394">matuta</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="id" xml:id="w17397">id</w>
 <w n="est" xml:id="w17400">est</w>
@@ -18991,7 +19003,7 @@ poribus</w>
 <w n="alia" xml:id="w17457"><hi rend="larger">a</hi>lia</w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w17460">a</w>
-<w n="multis" xml:id="w17463">multis</w>
+<w n="mutis" xml:id="w17463">mutis</w>
 <lb n="5r.b.26" />
 <w n="animalibus" xml:id="w17466">animali
 	<choice>
@@ -19000,6 +19012,7 @@ poribus</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.79.16" type="source" unit="Keil" />
 <w n="ut" xml:id="w17469">ut</w>
 <w n="taurinus" xml:id="w17472">taurinus</w>
 	<pc n="space"> </pc>
@@ -19068,9 +19081,10 @@ poribus</w>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
+	<pc n="space"> </pc>
 uis</w>
 <lb n="5r.b.29" />
-<w n="poetice" xml:id="w17559">petice</w>
+<w n="poetice" xml:id="w17559">poetice</w>
 	<pc n="space"> </pc>
 <w n="singularia" xml:id="w17562">singularia</w>
 	<pc n="space"> </pc>
@@ -19169,7 +19183,6 @@ ta</w>
 		<expan>pre</expan>
 	</choice>
 dictæ</w>
-	<pc n="space"> </pc>
 <w n="formae" xml:id="w17688">formæ</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w17691">ut</w>
@@ -19193,6 +19206,14 @@ dictæ</w>
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
+	</choice>
+<note type="emendation">As "mutarum" modifies "animalium", it should be emended in "mutorum".</note>
+</w>
+	<pc n="space"> </pc>
+<w n="sunt" xml:id="w17713">
+	<choice>
+		<abbr type="superscription">st<am>¯</am></abbr>
+		<expan>sunt</expan>
 	</choice>
 </w>
 	<pc n="space"> </pc>
@@ -19258,7 +19279,7 @@ dictæ</w>
 <w n="desinunt" xml:id="w17793">desinunt</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w17796">in</w>
-<w n="ae" type="alphabemes" xml:id="w17799">e</w>
+<w n="ae" type="alphabemes" xml:id="w17799">ae</w>
 <pc n="quote">·</pc>
 <w n="diphthongum" xml:id="w17802">dyphthong
 	<choice>
