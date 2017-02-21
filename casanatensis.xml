@@ -20250,10 +20250,10 @@ nentia</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w n="ullam" xml:id="w18840">ull
+<w n="ullum" xml:id="w18840">ull
 	<choice>
-		<abbr type="superscription">a<am>2</am></abbr>
-		<expan>am</expan>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
 	</choice>
 </w>
 <pc n=",">|</pc>
@@ -20270,7 +20270,9 @@ niuntur</w>
 <w n="in" xml:id="w18855">in</w>
 <w n="tinus" type="alphabemes" xml:id="w18858">tinus</w>
 	<pc n="space"> </pc>
-<w n="paenultima" xml:id="w18861">penultima</w>
+<w n="paenultima" xml:id="w18861">penultima
+<note type="emendation">As is it the direct object of "corripientia", it could be emended to "paenultimum".</note>
+</w>
 	<pc n="space"> </pc>
 <w n="corripientia" xml:id="w18864">corripientia</w>
 	<pc n="space"> </pc>
@@ -20362,10 +20364,11 @@ a</w>
 <w n="habet" xml:id="w18930">habet</w>
 <pc n="quote">·</pc>
 <w n="t" type="alphabemes" xml:id="w18933">t</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="Constantis" xml:id="w18936">constantis</w>
 	<pc n="space"> </pc>
 <w n="Clementis" xml:id="w18939">clementis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w18942">et</w>
 <w n="mediastinus" xml:id="w18945">me
@@ -20423,7 +20426,7 @@ do</w>
 <w n="corripitur" xml:id="w18990">corripitur</w>
 <pc n="quote">·</pc>
 <w n="i" type="alphabemes" xml:id="w18993">i</w>
-<pc n="0">·</pc>
+<pc n=".">·</pc>
 <w n="piscina" xml:id="w18996"><hi rend="larger">p</hi>iscina
 <note type="graphic">There is a macron sign over the second "i" to mark the vowel's long quantity.</note>
 </w>
@@ -20479,7 +20482,7 @@ ducitur</w>
 </w>
 	<pc n="space"> </pc>
 <w n="ab" xml:id="w19068">ab</w>
-<w n="arimum" xml:id="w19071">arim
+<w n="arimum" type="nonsense" xml:id="w19071">arim
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
@@ -20625,10 +20628,10 @@ ter</w>
 <pc n="quote">·</pc>
 <w n="er" type="alphabemes" xml:id="w19221">er</w>
 <pc n="quote">·</pc>
-<w n="hbent" xml:id="w19224">h
+<w n="habent" xml:id="w19224">h
 	<choice>
 		<abbr type="superscription">ab<am>¯</am></abbr>
-		<expan>bent</expan>
+		<expan>abent</expan>
 	</choice>
 </w>
 	<pc n="space"> </pc>
@@ -20639,6 +20642,7 @@ ter</w>
 <w n="infra" xml:id="w19233">infra</w>
 	<pc n="space"> </pc>
 <w n="infernus" xml:id="w19236">infernus</w>
+<pc n=","></pc>
 <lb n="5v.b.13" />
 <w n="extra" xml:id="w19239">extra</w>
 	<pc n="space"> </pc>
@@ -20766,8 +20770,9 @@ nificationes</w>
 <pc n=".">·</pc>
 <w n="quercus" xml:id="w19380"><hi rend="larger">q</hi>uærcus
 <note type="emendation">Scribal error: "e caudatum" grapheme for "e".</note>
-	<pc n="space"> </pc>
 </w>
+<pc n=","></pc>
+	<pc n="space"> </pc>
 <w n="quernus" xml:id="w19383">quærnus
 <note type="emendation">Same scribal error: "e caudatum" grapheme for "e".</note>
 </w>
@@ -20996,11 +21001,9 @@ tiua</w>
 <lb n="5v.b.25" />
 rinus</w>
 <pc n=".">·</pc>
-<w n="Anagnia" xml:id="w19578">anagnia</w>
+<w n="Anagnia" xml:id="w19578"><hi rend="larger">a</hi>nagnia</w>
 	<pc n="space"> </pc>
-
 <anchor xml:id="brevigraph-switch-1" />
-
 <w n="quia" xml:id="w19581">
 	<choice>
 		<abbr type="brevigraph">¢</abbr>
@@ -21032,7 +21035,7 @@ a</w>
 	<pc n="space"> </pc>
 <w n="facit" xml:id="w19599">facit</w>
 <pc n=".">·</pc>
-<w n="ab" xml:id="w19602">ab</w>
+<w n="ab" xml:id="w19602"><hi rend="larger">a</hi>b</w>
 <w n="urbium" xml:id="w19605">ur
 <lb n="5v.b.26" />
 	bi
@@ -21050,14 +21053,16 @@ a</w>
 </w>
 	<pc n="space"> </pc>
 <w n="deriuata" xml:id="w19611">deriuata</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w19614">in</w>
-<w n="tes" type="alphabemes" xml:id="w19617">tes</w>
+<w n="της" type="alphabemes" xml:id="w19617" xml:lang="grc">tes</w>
 <w n="desinentia" xml:id="w19620">desinentia</w>
 	<pc n="space"> </pc>
 <w n="apud" xml:id="w19623">apud</w>
 	<pc n="space"> </pc>
 <w n="Graecos" xml:id="w19626">grecos</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w19629">ut</w>
 <w n="praedictum" xml:id="w19632">
@@ -21139,8 +21144,10 @@ a</w>
 	</choice>
 <note type="graphic">There is a macron sign over the "e" to mark the vowel's long quantity.</note>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="Pelignus" xml:id="w19686">pelignus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="priuignus" xml:id="w19689">priuignus</w>
 <pc n=".">·</pc>
@@ -21193,6 +21200,7 @@ tate</w>
 <w n="regulas" xml:id="w19722">re
 <lb n="5v.b.31" />
 gulas</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="maxime" xml:id="w19725">maxime</w>
 	<pc n="space"> </pc>
@@ -21203,6 +21211,7 @@ gulas</w>
 		<expan>pro</expan>
 	</choice>
 priis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w19734">ut</w>
 <w n="Ligus" xml:id="w19737">ligus</w>
@@ -21217,7 +21226,7 @@ priis</w>
 		<expan>non</expan>
 	</choice>
 </w>
-<w n="Ligurianus" xml:id="w19749">liguria
+<w n="Ligurianus" type="nonsense" xml:id="w19749">liguria
 <lb n="5v.b.32" />
 nus</w>
 <pc n=",">·</pc>
@@ -21240,6 +21249,7 @@ nus</w>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
+	<pc n="space"> </pc>
 uis</w>
 <w n="diuersas" xml:id="w19770">di
 <lb n="5v.b.33" />
@@ -21256,8 +21266,10 @@ uersas</w>
 <w n="formae" xml:id="w19785">for
 <lb n="5v.b.34" />
 mæ</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="tamen" xml:id="w19788">tamen</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quia" xml:id="w19791">
 	<choice>
@@ -21277,7 +21289,7 @@ a</w>
 	<pc n="space"> </pc>
 <w n="pars" xml:id="w19800">pars</w>
 	<pc n="space"> </pc>
-<w n="possessiorum" xml:id="w19803">possessior
+<w n="possessiuorum" xml:id="w19803">possessiuor
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
@@ -21317,7 +21329,7 @@ a</w>
 cies</w>
 	<pc n="space"> </pc>
 <w n="possessiuorum" xml:id="w19833">possessiuorum</w>
-<pc n=".">|</pc>
+<pc n="0">|</pc>
 <w n="sciendum" xml:id="w19836"><hi rend="larger">s</hi>ciend
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -21361,15 +21373,18 @@ cies</w>
 <w n="significationis" xml:id="w19875">sig
 <lb n="5v.b.38" />
 nificationis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w19878">ut</w>
 <w n="ciuilis" xml:id="w19881">ciuilis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="hostilis" xml:id="w19884">hostilis</w>
 <pc n=",">·</pc>
 <w n="equester" xml:id="w19887">equester</w>
 <pc n=",">·</pc>
 <w n="pedester" xml:id="w19890">pedester</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w19893">quæ</w>
 	<pc n="space"> </pc>
@@ -21390,6 +21405,7 @@ nificationis</w>
 <w n="uariae" xml:id="w19911">uariæ</w>
 	<pc n="space"> </pc>
 <w n="significationis" xml:id="w19914">significationis</w>
+<note type="script">The rest of the line is left blank.</note>
 <pc n=".">|</pc>
 
 </ref>
@@ -21557,7 +21573,7 @@ aturis</w>
 <pc n=".">·</pc>
 </ref>
 
-<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.83.12-2.83.16" type="source">
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.83.12-2.83.15" type="source">
 <w n="non" xml:id="w20061">
 	<choice>
 		<abbr type="superscription"><hi rend="larger">n</hi><am>¯</am></abbr>
@@ -21634,6 +21650,10 @@ mina</w>
 	</choice>
 paratio</w>
 	<pc n="space"> </pc>
+</ref>
+
+
+<ref cRef="unknown" type="source">
 <w n="hoc" xml:id="w20115">hoc</w>
 	<pc n="space"> </pc>
 <w n="modo" xml:id="w20118">mo
@@ -21801,7 +21821,7 @@ sonas</w>
 lere</w>
 	<pc n="space"> </pc>
 <w n="ostenditur" xml:id="w20262">ostenditur</w>
-<pc n=".">|</pc>
+<pc n="0">|</pc>
 <w n="hic" xml:id="w20265"><hi rend="larger">h</hi>ic</w>
 <w n="cui" xml:id="w20268">cui</w>
 <w n="ulterior" xml:id="w20271">ulterior</w>
@@ -21819,6 +21839,11 @@ lere</w>
 	<pc n="space"> </pc>
 <w n="uidentur" xml:id="w20283">uidentur</w>
 <pc n=",">·</pc>
+<note type="emendation">Who is "shown to be excellent" ("excellere ostenditur")? It might be "ipsos" (if "ostenditur" has an impersonal construction), referring back to the people ("personas", plural) mentioned shortly before. Or it might be "hic" (if "ostenditur" has a personal construction). It cannot be both. In favor of "ipsos" is the fact that the phrase "personas uel res" mentioned before is plural (like "ipsos"). Also in favor of "ipsos" might be the puctuation mark (followed by a larger initial) between "ostenditur" and "hic", however this mark should probably be ignored altogether, since "hic, cui 'ulterior' uel 'interior' adiungi uidentur" cannot be a separate main clause: if it were, subject "hic" would not be followed by any verb. In favor of "hic" is the very relative clause "cui 'ulterior' uel 'interior' adiungi uidentur" (where "cui" is singulr, therefore must have a singular antecedent). I think that the case for "hic" is stronger. If "hic" is the subject of "excellere ostenditur", then "ipsos" might be meant as a direct object of "excellere", though in classical Latin the verb does not take an accusative as direct object. My interpretation would then be: "It is shown that a specific person ('hic'), to whom 'ulterior' or 'interior' seem to be attributed, surpasses them ('ipsos')". It should be noted that this sentence is not taken from the source (Priscian Ars grammatica, K.2.86.12-16), but is an addition by Ursus, so a non-classical syntactical construction might be possible.</note>
+</ref>
+
+
+<ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.83.14-2.83.16" type="source">
 <w n="et" xml:id="w20286"><hi rend="larger">e</hi>t</w>
 <w n="in" xml:id="w20289">in</w>
 <lb n="6r.a.13" />
@@ -23556,7 +23581,7 @@ paratur</w>
 </w>
 	<pc n="space"> </pc>
 <w n="Troianis" xml:id="w21885">troianis
-<note type="script">The first hand, writing in brown ink, wrote "Troianus". The second hand, writing in blank ink, corrected it to "Troianis", by overwriting the penultimate grapheme "i" over the previous "u".</note>
+<note type="script">The first hand, writing in brown ink, wrote "Troianus". The second hand, writing in black ink, corrected it to "Troianis", by overwriting the penultimate grapheme "i" over the previous "u".</note>
 </w>
 <pc n=".">·</pc>
 </ref>
@@ -23611,7 +23636,7 @@ paratio</w>
 <w n="sui" xml:id="w21936">sui</w>
 <w n="generis" xml:id="w21939">generis</w>
 <pc n=".">|</pc>
-<note type="script">Many of the punctuation signs in this page have been added by the second hand of the manuscript, writing in blank ink. I am not formally encoding those hand shifts in punctuation.</note>
+<note type="script">Many of the punctuation signs in this page have been added by the second hand of the manuscript, writing in black ink. I am not formally encoding those hand shifts in punctuation.</note>
 <w n="alii" xml:id="w21942"><hi rend="larger">a</hi>lii</w>
 	<pc n="space"> </pc>
 <w n="dicunt" xml:id="w21945">dicunt</w>
@@ -31826,10 +31851,10 @@ nellus</w>
 	<pc n="space"> </pc>
 <w n="omnia" xml:id="w29550">omnia</w>
 	<pc n="space"> </pc>
-<w n="hbent" xml:id="w29553">h
+<w n="habent" xml:id="w29553">h
 	<choice>
 		<abbr type="superscription">ab<am>¯</am></abbr>
-		<expan>bent</expan>
+		<expan>abent</expan>
 	</choice>
 </w>
 <pc n="quote">·</pc>
