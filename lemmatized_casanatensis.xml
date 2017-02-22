@@ -17560,7 +17560,7 @@ bus</w>
 	</choice>
 </w>
 <pc n="quote">·</pc>
-<w n="e" type="alphabemes" xml:id="w16026">e</w>0
+<w n="e" type="alphabemes" xml:id="w16026">e</w>
 <pc n="quote">·</pc>
 <w ana="11B---D3---" lemma="longus" n="longum" xml:id="w16029">long
 	<choice>
@@ -18551,7 +18551,7 @@ tione</w>
 <lb n="5r.b.9" />
 nus</w>
 <pc n=",">·</pc>
-<w n="abienus" type="nonsense" xml:id="w16983">abienus
+<w n="Abienus" type="nonsense" xml:id="w16983">abienus
 <note type="content">On the possible meanings of this word, see Keil's apparatus to the source of this passage, Priscian Ars grammatica, K.2.75.19. Priscian's manuscripts tend to agree on "abienus". Codex H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii") has a glossa saying "nomen poetae".</note>
 </w>
 	<pc n="space"> </pc>
@@ -19029,7 +19029,7 @@ poribus</w>
 <w ana="3-JA1--6---" lemma="consto" n="constat" xml:id="w17496">con
 <lb n="5r.b.27" />
 	stat
-<note type="emendation">Scribal error: "constat" for "constant" (with subject "alia", neuterplural).</note>
+<note type="emendation">Scribal error: "constat" for "constant" (with subject "alia", neuter plural).</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w17502">ut</w>
@@ -19206,7 +19206,7 @@ dictæ</w>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note type="emendation">As "mutarum" modifies "animalium", it should be emended in "mutorum".</note>
+<note type="emendation">As "mutarum" modifies neuter plural "animalium", it should be emended in "mutorum".</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w17713">
@@ -19254,7 +19254,7 @@ dictæ</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w17757">et</w>
 <w ana="11A---F2---" lemma="messala" n="Messala" xml:id="w17760">messala
-<note type="content">The name from which "Messalinus" derives should rather be "Messalla". The source (Priscian, Ars grammatica K.2.77.14 does not mention the primitive names for "Iugurthinus" or "Messalinus".</note>
+<note type="source">The personal name from which "Messalinus" has two spellings: the more common "Messalla" and the rarer one found here, "Messala". The source (Priscian, Ars grammatica K.2.77.14 does not mention the primitive names for "Iugurthinus" or "Messalinus".</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w17763">et</w>
@@ -19298,7 +19298,7 @@ dictæ</w>
 <lb n="5r.b.38" />
 <w ana="2-JM41J2---" lemma="deriuatiua" n="deriuatiua" xml:id="w17817">deriuatiua</w>
 <pc n=",">·</pc>
-<note type="script">This line only has one word, aligned on the right side.</note>
+<note type="script">This line only has one word only, aligned on the right side.</note>
 
 <pb facs="manuscript_images/C_05v.JPG" n="5v" />
 
@@ -19328,7 +19328,7 @@ dictæ</w>
 <pc n="quote">·</pc>
 <w n="na" type="alphabemes" xml:id="w17841">na</w>
 <pc n="quote">·</pc>
-<note type="source">Keil publishes the following text for the source (Priscian, Ars grammatica, K.2.77.17: "a habent ante 'nus' [uel 'na' uel 'num']". However, the text that Keil expunges is present in all manuscripts and was also the text that Ursus knew.</note>
+<note type="source">Keil publishes the following text for the source (Priscian, Ars grammatica, K.2.77.17: "a habent ante 'nus' [uel 'na' uel 'num']". However, the text that Keil expunges is present in all manuscripts and was the text that Ursus knew.</note>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w17844">ut</w>
 <w ana="11B---K1---" lemma="acerrae" n="Acerrae" xml:id="w17847">acerræ</w>
 	<pc n="space"> </pc>
@@ -19389,7 +19389,7 @@ peius</w>
 <w ana="11B---A1---" lemma="cottidianus" n="cottidianus" xml:id="w17916">cotidianus
 </w>
 	<pc n="space"> </pc>
-<note type="script">In both "cotidie" and "cotidianus", the first hand had written a double "t" ("cottidie" and "cottidianus"), but the first "t" was then deleted in both words.</note>
+<note type="script">In both "cotidie" and "cotidianus", the first hand had written a double "t" ("cottidie" and "cottidianus"), in both words but the first "t" was then deleted.</note>
 <pc n=".">·</pc>
 <w ana="4-S-------1" lemma="praeter" n="praeter" xml:id="w17919">
 	<choice>
@@ -19774,7 +19774,7 @@ lucanus</w>
 		<abbr type="superscription">d<am>¯</am></abbr>
 		<expan>ductum</expan>
 	</choice>
-<note type="tech">This word is a very interesting use case for the encoding of abbreviations. The macron that crosses the long ascending trait of the "d" might well be interpreted as being not only over the "d", but also over the first grapheme. The latter, however, already is an abbreviation, since it is a "ŋ" brevigraph normally meaning "prae" ("pre" with monophthongation).  So the first grapheme would be involved in two different abbreviations: it is a brevigraph per se, but it is also part of the abbreviation involving the whole word (marked by the macron above it).  However, in my JavaScript code handling the XML/TEI code, I did not think of handling a case in which an "abbr" element is child of another "abbr" element. Also, the macron is mostly over the "d", so I am encoding this as though the macron was over the "d" only.</note>
+<note type="tech">This word is a very interesting use case for the encoding of abbreviations. The macron that crosses the long ascending trait of the "d" might well be interpreted as spanning not only over the "d", but also over the first grapheme. The latter, however, already is an abbreviation, since it is a "ŋ" brevigraph normally meaning "prae" (which, through monophthongation, becomes "pre").  So the first grapheme would be involved in two different abbreviations: it is a brevigraph per se, but it is also part of the abbreviation involving the whole word (marked by the macron above it).  However, in my JavaScript code handling the XML/TEI code, I did not think of handling a case in which an "abbr" element is child of another "abbr" element. Also, the macron is mostly over the "d", so I am encoding this as though the macron was over the "d" only.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-KA1--9---" lemma="habeo" n="habent" xml:id="w18327">habent</w>
@@ -19941,7 +19941,7 @@ cipiuntur</w>
 </w>
 </unclear>
 <pc n="," />
-<note type="script">I am not sure whether I found this abbreviation of "ea quae" before.</note>
+<note type="script">I am not sure whether I found this abbreviation of "quae" before.</note>
 <lb n="5v.a.26" />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w18528">ut</w>
 <w ana="2-NM41A3--1" lemma="praedico" n="praedictum" xml:id="w18531">
@@ -20185,12 +20185,12 @@ nis</w>
 		<expan>am</expan>
 	</choice>
 </w>
-<w ana="11A---F2---" lemma="ouilla" n="ouilla" xml:id="w18762">ouilla</w>
+<w ana="11A---A2---" lemma="ouilla" n="ouilla" xml:id="w18762">ouilla</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w18765">et</w>
-<w ana="11A---F2---" lemma="suilla" n="suilla" xml:id="w18768">suilla</w>
+<w ana="11A---A2---" lemma="suilla" n="suilla" xml:id="w18768">suilla</w>
 	<pc n="space"> </pc>
-<w ana="2-LM41F2---" lemma="diminutiua" n="diminutiua" xml:id="w18771">diminutiua</w>
+<w ana="11A---A2---" lemma="diminutiua" n="diminutiua" xml:id="w18771">diminutiua</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w18774">
 	<choice>
@@ -20199,7 +20199,6 @@ nis</w>
 	</choice>
 </w>
 <pc n=".">·</pc>
-<w ana="11B---J1---" lemma="§" n="§">[§ Reviewed until here]</w>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w18777"><hi rend="larger">i</hi>n</w>
 <w n="nus" type="alphabemes" xml:id="w18780">nus</w>
 <pc n="quote">·</pc>
@@ -20779,18 +20778,18 @@ nificationes</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="corylus" n="corylus" xml:id="w19386">corylus</w>
 	<pc n="space"> </pc>
-<w ana="11B---A1--1" lemma="colurnus" n="colurnus" xml:id="w19389">colurnus</w>
+<w ana="11B---A1---" lemma="colurnus" n="colurnus" xml:id="w19389">colurnus</w>
 <pc n=",">·</pc>
 <w ana="11D---A1---" lemma="tacitus" n="tacitus" xml:id="w19392">tacitus</w>
 <lb n="5v.b.19" />
-<w ana="11B---A1--1" lemma="taciturnus" n="taciturnus" xml:id="w19395">taciturnus</w>
+<w ana="11D---B1---" lemma="taciturnus" n="taciturnus" xml:id="w19395">taciturnus</w>
 <pc n=",">·</pc>
-<w n="mensus" type="nonsense" xml:id="w19398">mensus
-<note type="emendation">This is probably a banal scribal error. The source Priscian Ars grammatica, K.2.81.12, has: "'mensis mensurnus': sic enim sic enim Cicero posuit pro 'menstruus' in primo rhetoricorum: pars quaedam aeternitatis cum alicuius annui, mensurni, diurni, nocturni, uespertini certa significatione". Keil has a crux desperationis between "nocturni" and "uespertini".
+<w ana="11C---A2--1" lemma="mensis" n="mensis" xml:id="w19398">mensus
+<note type="emendation">This probably is a banal scribal error for "mensis". The source Priscian Ars grammatica, K.2.81.12, has: "'mensis mensurnus': sic enim sic enim Cicero posuit pro 'menstruus' in primo rhetoricorum: pars quaedam aeternitatis cum alicuius annui, mensurni, diurni, nocturni, uespertini certa significatione". Keil has a crux desperationis between "nocturni" and "uespertini".
 </note>
 </w>
 	<pc n="space"> </pc>
-<w ana="11B---A1---" lemma="mensurnus" n="mensurnus" xml:id="w19401">mensurnus</w>
+<w ana="3-JK1--6---" lemma="mensurnus" n="mensurnus" xml:id="w19401">mensurnus</w>
 <pc n=".">·</pc>
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w19404"><hi rend="larger">a</hi>b</w>
 <w ana="11A---B2--1" lemma="hieme" n="hieme" xml:id="w19407">hieme</w>
@@ -21439,6 +21438,7 @@ nificationis</w>
 </w>
 <w ana="11D---F1---" lemma="intellectus" n="intellectu" xml:id="w19932">intellectu</w>
 <w ana="11C---F2H-1" lemma="positiui" n="positiui" xml:id="w19935">positiui</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---B1---" lemma="uel" n="uel" xml:id="w19938">
 	<choice>
@@ -21460,6 +21460,7 @@ nificationis</w>
 <w ana="11D---F1---" lemma="sensus" n="sensu" xml:id="w19950">sensu</w>
 	<pc n="space"> </pc>
 <w ana="3-LQ1------" lemma="positiui" n="positiui" xml:id="w19953">positiui</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="3-JA1--6---" lemma="significo" n="significat" xml:id="w19956">significat</w>
 	<pc n="space"> </pc>
@@ -21493,6 +21494,13 @@ lectu</w>
 	<pc n="space"> </pc>
 <w ana="11C---F2H-1" lemma="collatio" n="collatione" xml:id="w19980">conlatione</w>
 	<pc n="space"> </pc>
+<w ana="11F---D3---" lemma="alter" n="alterum" xml:id="w19982">alter
+	<choice>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
+	</choice>
+</w>
+	<pc n="space"> </pc>
 <w ana="3-NH1------" lemma="praeferre" n="praeferre" xml:id="w19983">
 	<choice>
 		<abbr type="superscription">p<am>¯</am></abbr>
@@ -21522,7 +21530,7 @@ ferre</w>
 <w ana="11F---A1---" lemma="ille" n="ille" xml:id="w20007">ille</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="doctior" n="doctior" xml:id="w20010">doctior</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w ana="11F---F1---" lemma="iste" n="isto" xml:id="w20013">isto
 <note type="script">The final "o" comes from the deletion of a previous "e".</note>
 	<pc n="space"> </pc>
@@ -21984,7 +21992,7 @@ bus</w>
 <w ana="12C---G----" lemma="ulterior" n="ulterius" xml:id="w20415">ulterius</w>
 <pc n=",">·</pc>
 <lb n="6r.a.18" />
-<w ana="2-JD11A3---" lemma="signifcans" n="signifcans" xml:id="w20418">signifcans</w>
+<w ana="2-JD11A3---" lemma="significo" n="significans" xml:id="w20418">significans</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="magis" n="magis" xml:id="w20421">magis</w>
 	<pc n="space"> </pc>
@@ -21999,7 +22007,7 @@ bus</w>
 <w ana="4-O--------" lemma="magis" n="magis" xml:id="w20436">magis</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="intra" n="intra" xml:id="w20439">intra</w>
-<pc n=".">ł</pc>
+<pc n=",">ł</pc>
 <lb n="6r.a.19" />
 <w ana="2-JM41D1---" lemma="citerior" n="citerior" xml:id="w20442">citerior</w>
 	<pc n="space"> </pc>
@@ -22008,7 +22016,7 @@ bus</w>
 <w ana="4-O--------" lemma="magis" n="magis" xml:id="w20448">magis</w>
 	<pc n="space"> </pc>
 <w ana="11B---B1---" lemma="citra" n="citra" xml:id="w20451">citra</w>
-<pc n=".">ł</pc>
+<pc n=",">ł</pc>
 <w ana="12C---A2---" lemma="exterior" n="exterior" xml:id="w20454">exterior</w>
 	<pc n="space"> </pc>
 <w ana="12C---G----" lemma="exterior" n="exterius" xml:id="w20457">exterius</w>
@@ -22141,12 +22149,12 @@ feri</w>
 	</choice>
 <note type="graphic">There is a sign over the grapheme "ŋ" looking like an acute accent.</note>
 </w>
-<w ana="11C---D2---" lemma="manibus0" n="manibus0" xml:id="w20577">mani
+<w ana="11C---O2---" lemma="manibus" n="manibus" xml:id="w20577">mani
 	<choice>
 		<abbr type="after">b<am>;</am></abbr>
 		<expan>bus</expan>
 	</choice>
-0</w>
+</w>
 <pc n=",">·</pc>
 <w ana="11F---A3---" lemma="is" n="id" xml:id="w20580">id</w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w20583">est</w>
@@ -22189,6 +22197,7 @@ feri</w>
 	para
 <lb n="6r.a.24" />
 tiones</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---J2--1" lemma="qui" n="quae" xml:id="w20607">quæ</w>
 	<pc n="space"> </pc>
@@ -22213,7 +22222,7 @@ sonas</w>
 <w ana="3-NJ1--9---" lemma="facio" n="fiunt" xml:id="w20625">fiunt</w>
 	<pc n="space"> </pc>
 <w ana="2-LM41J2---" lemma="positiui" n="positiui" xml:id="w20628">positiui</w>
-<pc n="0">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w ana="3-LJ1--9---" lemma="nascor" n="nascuntur" xml:id="w20631"><hi rend="larger">n</hi>ascuntur
 <note type="script">The larger initial does not seem to have any particular meaning here.</note>
@@ -22333,7 +22342,7 @@ tiæ</w>
 	<pc n="space"> </pc>
 <w ana="11C---K3---" lemma="nomen" n="nominum" xml:id="w20745">nominum</w>
 <pc n=".">ł</pc>
-<w ana="11C---K3---" lemma="accidentiae" n="accidentiae" xml:id="w20748">accidentiæ
+<w ana="11C---K3---" lemma="accidentiae" n="accidentiae" xml:id="w20748"><hi rend="larger">a</hi>ccidentiæ
 <note type="emendation">Scribal error for "accidentia" (also compare the source, Priscian Ars grammatica, K.2.83.18).</note>
 </w>
 	<pc n="space"> </pc>
@@ -22373,9 +22382,9 @@ tiæ</w>
 	<pc n="space"> </pc>
 <gap quantity="1" reason="illegible" unit="words" />
 <w ana="11C---A2--1" lemma="comparatio" n="comparatio" xml:id="w20784">comparatio</w>
-<note type="script">A metamark shaped as a tilde crossed by a vertical line is added above the line and in the space below the column to connect the addition with the text. Both the metamark and the addition are in blank ink.</note>
-<note type="source">This addition is partly taken from the source, partly original. The source, Priscian Ars grammatica, K.2.83.18, has: "accidentia autem sunt, quae ex qualitate uel quantitate animi uel corporis uel extrinsecus forte euenientium trahuntur".</note>
 </add>
+<note type="script">A metamark shaped as a tilde crossed by a vertical line is added above the line and in the space below the column to connect the addition with the text. Both the metamark and the addition are in blank ink.</note>
+<note type="source">"Ab animo... comparatio" is added in a footnote. It is partly taken from the source, partly original. The source, Priscian Ars grammatica, K.2.83.18, has: "accidentia autem sunt, quae ex qualitate uel quantitate animi uel corporis uel extrinsecus forte euenientium trahuntur".</note>
 <w ana="4-S-------2" lemma="e" n="ex" xml:id="w20787">ex</w>
 <w ana="11C---F2---" lemma="qualitas" n="qualitate" xml:id="w20790">qualitate</w>
 	<pc n="space"> </pc>
@@ -22525,11 +22534,16 @@ strari</w>
 	<pc n="space"> </pc>
 <w ana="11A---F2---" lemma="appellatiua" n="appellatiua" xml:id="w20937">appellatiua</w>
 	<pc n="space"> </pc>
-<w ana="3-LJ1--9---" lemma="comparation,e,2,em," n="comparation,e,2,em," xml:id="w20940">com
+<w ana="11C---D2--1" lemma="comparatio" n="comparationem" xml:id="w20940">com
 <lb n="6r.a.36" />
-paration,e,2,em,</w>
+	paration
+	<choice>
+		<abbr type="superscription">e<am>2</am></abbr>
+		<expan>em</expan>
+	</choice>
+</w>
 	<pc n="space"> </pc>
-<w ana="11A---A2--1" lemma="recipientia" n="recipientia" xml:id="w20943">recipientia</w>
+<w ana="2-LD11D2---" lemma="recipientia" n="recipientia" xml:id="w20943">recipientia</w>
 	<pc n="space"> </pc>
 <w ana="3-NH1------" lemma="sum" n="esse" xml:id="w20946">
 	<choice>
@@ -22767,6 +22781,7 @@ ciuntur</w>
 		<expan>am</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---D2---" lemma="quamuis" n="quamuis" xml:id="w21147">qu
 	<choice>
@@ -22955,7 +22970,7 @@ uis</w>
 <w ana="4-S--------" lemma="extra" n="extra" xml:id="w21309">extra</w>
 	<pc n="space"> </pc>
 <w ana="12C---A2---" lemma="exterior" n="exterior" xml:id="w21312">exterior</w>
-<pc n=",">|</pc>
+<pc n="0">|</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w21315">et</w>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w21318">a</w>
 <w ana="11C---O2--1" lemma="localibus" n="localibus" xml:id="w21321">localibus</w>
@@ -23032,7 +23047,10 @@ paratiua</w>
 <w ana="11F---B2---" lemma="domus" n="domus" xml:id="w21381">domus</w>
 	<pc n="space"> </pc>
 <w ana="3-NA4--6---" lemma="dico" n="dixit" xml:id="w21384">dixit</w>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.85.15" type="source" unit="Keil" />
+<note type="source">The quote from Apuleius is only know from indirect tradition, namely from the text of Priscian that Ursus summarizes here (Priscian Ars grammatica, K.2.85.15).</note>
 <pc n=".">|</pc>
+<w ana="11A---B2---" lemma="§" n="§" xml:id="0000">[§ Reviewed until here]</w>
 </ref>
 </ab>
 
@@ -26590,7 +26608,8 @@ paratiui</w>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
-eliis
+<w ana="11B---O3---" lemma="eliis" n="eliis" xml:id="w24771">eliis</w>
+	<pc n="space"> </pc>
 <note type="script">Interestingly, the scribe preferred using the brevigraph "ŋ" (for "pro") and then the grapheme for "e", thus preserving the diphthong, rather than reducing the diphthong "oe" to one "e" ("preliis") and using the abbreviation "p with horizontal trait" for "pre". This shows that the scribe was well aware that the classical Latin spelling included a diphthong in "proeliis".</note>
 </w>
 	<pc n="space"> </pc>
