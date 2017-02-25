@@ -23125,6 +23125,7 @@ a</w>
 	paratio
 <lb n="6r.b.16" />
 nis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w21447">ut</w>
 <w ana="11C---A2---" lemma="doctus" n="doctus" xml:id="w21450">doctus</w>
@@ -23256,6 +23257,7 @@ paratiuo</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w21549">et</w>
 <w ana="12C---A2--1" lemma="doctior" n="doctior" xml:id="w21552">doctior</w>
+<pc n=".">|</pc>
 <w ana="11B---A1---" lemma="comparatiuus" n="comparatiuus" xml:id="w21555"><hi rend="larger">c</hi>
 	<choice>
 		<abbr type="superscription">o<am>2</am></abbr>
@@ -23382,10 +23384,11 @@ paratiuo</w>
 tiuus</w>
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="singularis" n="singularis" xml:id="w21669">singularis</w>
-<pc n=".">·</pc>
+<pc n="0">·</pc>
 <w ana="11F---F1---" lemma="hic" n="hoc" xml:id="w21672">hoc</w>
 	<pc n="space"> </pc>
 <w ana="11B---F1---" lemma="modus" n="modo" xml:id="w21675">modo</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A1--1" lemma="diomedes" n="Diomedes" xml:id="w21678">diomedes</w>
 	<pc n="space"> </pc>
@@ -23458,7 +23461,7 @@ paratiuo</w>
 <w ana="11B---A1---" lemma="ablatiuus" n="ablatiuus" xml:id="w21738">ablatiuus</w>
 	<pc n="space"> </pc>
 <w ana="11C---B2---" lemma="pluralis" n="pluralis" xml:id="w21741">pluralis</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w ana="11F---F1---" lemma="hic" n="hoc" xml:id="w21744">hoc</w>
 <w ana="11B---F1---" lemma="modus" n="modo" xml:id="w21747">mo
 <lb n="6r.b.27" />
@@ -23471,11 +23474,18 @@ do</w>
 <pc n=",">·</pc>
 <w ana="4-O-------1" lemma="sed" n="sed" xml:id="w21759">sed</w>
 	<pc n="space"> </pc>
-<w ana="11C---A1---" lemma="hector" n="Hector" xml:id="w21762">hector</w>
+<w ana="11C---A1---" lemma="hector" n="Hector" xml:id="w21762">hæctor
+<note type="emendation">Scribal error: "Haector" for "Hector".</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="12C---A2---" lemma="fortis" n="fortior" xml:id="w21765">fortior</w>
 	<pc n="space"> </pc>
-<w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w21768">est</w>
+<w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w21768">
+	<choice>
+		<abbr type="brevigraph">÷</abbr>
+		<expan>est</expan>
+	</choice>
+</w>
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="troianis" n="Troianis" xml:id="w21771">troianis</w>
 <pc n=".">|</pc>
@@ -23606,7 +23616,7 @@ paratur</w>
 
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.85.17-2.86.5" type="source">
 <lb n="6r.b.32" />
-<w ana="11B---J1--1" lemma="graecus" n="Graeci" xml:id="w21888">greci</w>
+<w ana="11B---J1--1" lemma="graecus" n="Graeci" xml:id="w21888"><hi rend="larger">g</hi>reci</w>
 	<pc n="space"> </pc>
 <w ana="3-LA1--9---" lemma="assero" n="asserunt" xml:id="w21891">asserunt</w>
 	<pc n="space"> </pc>
@@ -23709,7 +23719,7 @@ latiuo</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w22002">ut</w>
 <w ana="13B---A1---" lemma="fortissimus" n="fortissimus" xml:id="w22005">fortissimus</w>
 	<pc n="space"> </pc>
-<w ana="11B---K1---" lemma="graiorum" n="graiorum" xml:id="w22008">gra
+<w ana="11B---K1---" lemma="graiorum" n="Graiorum" xml:id="w22008">gra
 <lb n="6r.b.36" />
 	ior
 	<choice>
@@ -23720,7 +23730,7 @@ latiuo</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1--1" lemma="achilles" n="Achilles" xml:id="w22011">achilles</w>
 <pc n=".">|</pc>
-<w ana="11B---A1---" lemma="superlatiuus" n="superlatiuus" xml:id="w22014">su
+<w ana="11B---A1---" lemma="superlatiuus" n="superlatiuus" xml:id="w22014"><hi rend="larger">s</hi>u
 	<choice>
 		<abbr type="brevigraph">þ</abbr>
 		<expan>per</expan>
@@ -23902,6 +23912,7 @@ paratio</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w ana="11C---B1---" lemma="uel" n="uel" xml:id="w22179">uel</w>
 	<pc n="space"> </pc>
@@ -24000,6 +24011,7 @@ paratio</w>
 		<expan>sunt</expan>
 	</choice>
 </w>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w ana="2-LD11J3---" lemma="facientia" n="facientia" xml:id="w22269">facientia</w>
 	<pc n="space"> </pc>
@@ -26608,7 +26620,7 @@ paratiui</w>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
-<w ana="11B---O3---" lemma="eliis" n="eliis" xml:id="w24771">eliis</w>
+	eliis
 	<pc n="space"> </pc>
 <note type="script">Interestingly, the scribe preferred using the brevigraph "ŋ" (for "pro") and then the grapheme for "e", thus preserving the diphthong, rather than reducing the diphthong "oe" to one "e" ("preliis") and using the abbreviation "p with horizontal trait" for "pre". This shows that the scribe was well aware that the classical Latin spelling included a diphthong in "proeliis".</note>
 </w>
