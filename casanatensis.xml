@@ -15069,7 +15069,7 @@ uertit</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w n="genitiuus" xml:id="w13488">genitiuus</w>
+<w n="genetiuus" xml:id="w13488">genitiuus</w>
 	<pc n="space"> </pc>
 <pc n="0">·</pc>
 <w n="in" xml:id="w13491">in</w>
@@ -31649,7 +31649,6 @@ tiua</w>
 <pc n="0">·</pc>
 <w n="ulpecula" xml:id="w29199">ulpecula</w>
 <pc n=",">·</pc>
-<w n="§" xml:id="0000">[§ Reviewed until here]</w>
 <w n="dies" xml:id="w29202">dies</w>
 	<pc n="space"> </pc>
 <w n="diecula" xml:id="w29205">diecula</w>
@@ -31658,11 +31657,12 @@ tiua</w>
 <w n="excipiuntur" xml:id="w29208"><hi rend="larger">e</hi>xcipiuntur</w>
 	<pc n="space"> </pc>
 <w n="merces" xml:id="w29211">merces</w>
+<pc n=","></pc>
 <lb n="8r.a.29" />
 <w n="cuius" xml:id="w29214">cuius</w>
 	<pc n="space"> </pc>
 <w n="genetiui" xml:id="w29217">genitiui</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="is" type="alphabemes" xml:id="w29220">is</w>
 <pc n="quote">·</pc>
 <w n="in" xml:id="w29223">in</w>
@@ -31670,13 +31670,17 @@ tiua</w>
 <w n="ula" type="alphabemes" xml:id="w29226">ula</w>
 <pc n="quote">·</pc>
 <w n="uersa" xml:id="w29229">uersa</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
-<w n="faciunt" xml:id="w29232">faciunt</w>
+<w n="faciunt" xml:id="w29232">faciunt
+<note type="emendation">As the subject is singular "merces", I'd correct this to "facit". The scribe probably had in mind both "merces" and "apes" as logical subjects of this verb. However, the syntactical subjectof this specific clause is "merces" alone.</note>
+</w>
 	<pc n="space"> </pc>
 <w n="mercedula" xml:id="w29235">mercedula</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w29238">et</w>
 <w n="apes" xml:id="w29241">apes</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="cuius" xml:id="w29244">cuius</w>
 <lb n="8r.a.30" />
@@ -31706,7 +31710,7 @@ tiua</w>
 </w>
 <pc n="quote">·</pc>
 <w n="i" type="alphabemes" xml:id="w29262">i</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="apicula" xml:id="w29265">apicula</w>
 <pc n=".">|</pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.107.16" type="source" unit="Keil" />
@@ -31757,7 +31761,7 @@ mune</w>
 <w n="abiecta" xml:id="w29316">abiecta</w>
 <pc n="quote">·</pc>
 <w n="s" type="alphabemes" xml:id="w29319">s</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="assumpta" xml:id="w29322">ads
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -31765,7 +31769,7 @@ mune</w>
 	</choice>
 pta</w>
 <w n="cula" type="alphabemes" xml:id="w29325">cula</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="facit" xml:id="w29328">facit</w>
 	<pc n="space"> </pc>
 <w n="deminutiuum" xml:id="w29331">dimi
@@ -31797,7 +31801,7 @@ uertunt</w>
 <w n="in" xml:id="w29352">in</w>
 <pc n="quote">·</pc>
 <w n="un" type="alphabemes" xml:id="w29355">un</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="assumptis" xml:id="w29358">ads
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -31863,6 +31867,7 @@ ptis</w>
 <w n="et" xml:id="w29424">et</w>
 <w n="lenulus" xml:id="w29427">lenulus
 <note type="content">Plautus' text has "lenulle", but all Priscian's manuscripts have "lenulus" (in the discussion) and "lenule" or other forms with one "l" before the final "e" (in the Plautine quote, omitted by Ursus, which is Plautus, Poenulus 470-471: "Ita ut occepi dicere, / lenulle, de illa pugna").  Ursus' source is Priscian, Ars grammatica K.2.109.6 (discussion) and K.2.109.11 (Plautine quote). Keil prints "lenullus" in both loci, but in the apparatus for K.2.109.6 he notes that Priscian's witnesses PBDHrglk have "lenulus", while in the apparatus for K.2.109.11 he writes "lenule DHKg lenulae K laenulae R laenule r" (see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).  Based on a search on the PHI 5.3 corpus with Diogenes 3.2.0, the word "lenulus/lenullus" is a hapax in classical Latin, occurring only in the aforementioned Plautine passage.</note>
+<note type="tech">Perseus' Lewis-Short has lemma "lenullus" (http://www.perseus.tufts.edu), not "lenulus". I'll have to take this into account when I'll review the lemmatization.</note>
 </w>
 <pc n=".">|</pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.109.12" type="source" unit="Keil" />
@@ -31873,9 +31878,9 @@ a</w>
 <w n="in" xml:id="w29433">in</w>
 	<pc n="space"> </pc>
 <w n="us" type="alphabemes" xml:id="w29436">us
-<note type="emendation">Scribal error: "us" for "nus": see the source Priscian, Ars grammatica K.2.109.12 "nus" and the sense of the whole passage. However, this discrepancy between the manuscipt and Priscian occurs in the same way for diminutives in "nus", in "na" and in "num", so it might be a deliberate choice by the scribe.</note>
+<note type="emendation">Scribal error: "us" for "nus", given the source Priscian, Ars grammatica K.2.109.12 "nus" and the sense of the whole passage. However, this discrepancy between the manuscipt and Priscian occurs in the same way for diminutives in "nus" (8r.a.37), in "na" (8r.b.11) and in "num" (8r.b.19), so it might be a deliberate choice by the scribe.</note>
 </w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="siue" xml:id="w29439">siue</w>
 	<pc n="space"> </pc>
 <w n="habeant" xml:id="w29442">habeant</w>
@@ -31911,11 +31916,12 @@ a</w>
 		<expan>non</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w29463">et</w>
 <w n="in" xml:id="w29466">in</w>
 <w n="lus" type="alphabemes" xml:id="w29469">lus</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="si" xml:id="w29472">si</w>
 <lb n="8r.a.38" />
 <w n="non" xml:id="w29475">
@@ -31938,7 +31944,7 @@ a</w>
 <w n="ante" xml:id="w29487">ante</w>
 <pc n="quote">·</pc>
 <w n="us" type="alphabemes" xml:id="w29490">us</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="et" xml:id="w29493">et</w>
 <w n="in" xml:id="w29496">in</w>
 <pc n="quote">·</pc>
@@ -31947,7 +31953,7 @@ a</w>
 <w n="secundae" xml:id="w29502">secundæ</w>
 	<pc n="space"> </pc>
 <w n="declinationis" xml:id="w29505">declinationis</w>
-<pc n="0">·</pc>
+<pc n=",">·</pc>
 <lb n="8r.a.39" />
 <w n="duplicant" xml:id="w29508">duplicant</w>
 <pc n="quote">·</pc>
@@ -31956,7 +31962,7 @@ a</w>
 <w n="ante" xml:id="w29514">ante</w>
 <pc n="quote">·</pc>
 <w n="us" type="alphabemes" xml:id="w29517">us</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="asinus" xml:id="w29520">asinus</w>
 <pc n=",">·</pc>
 <w n="asellus" xml:id="w29523">asellus</w>
@@ -32005,6 +32011,7 @@ nellus</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="excepto" xml:id="w29565">excep
 <lb n="8r.b.2" />
@@ -32096,8 +32103,9 @@ to</w>
 <w n="ideo" xml:id="w29664"><hi rend="larger">i</hi>deo</w>
 	<pc n="space"> </pc>
 <w n="fit" xml:id="w29667">fit</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w n="hoc" xml:id="w29670">hoc</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quia" xml:id="w29673">
 	<choice>
@@ -32119,7 +32127,7 @@ a</w>
 </w>
 	<pc n="space"> </pc>
 <w n="diphthongus" xml:id="w29679">dyphthongus
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
+<note type="emendation">Scribal error: "dyphthongus" for "diphthongus".</note>
 </w>
 <pc n="0">·</pc>
 <w n="post" xml:id="w29682">post</w>
@@ -32152,7 +32160,7 @@ a</w>
 		<expan>eutrum</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
+	<pc n=","> </pc>
 <w n="uelum" xml:id="w29706">uel
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -32175,7 +32183,7 @@ a</w>
 <w n="assumpserunt" xml:id="w29721">adsumpserunt</w>
 <pc n="quote">·</pc>
 <w n="x" type="alphabemes" xml:id="w29724">x</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="quia" xml:id="w29727">
 	<choice>
 		<abbr type="brevigraph">¢</abbr>
@@ -32224,10 +32232,12 @@ bent</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="mala" xml:id="w29778">mala</w>
 	<pc n="space"> </pc>
 <w n="maxilla" xml:id="w29781">maxilla</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="uelum" xml:id="w29784">uel
 	<choice>
@@ -32260,7 +32270,7 @@ bent</w>
 <pc n="quote">·</pc>
 <w n="a" type="alphabemes" xml:id="w29814">a</w>
 <w n="um" type="alphabemes" xml:id="w29817">um</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="in" xml:id="w29820">in</w>
 <pc n="quote">·</pc>
 <w n="ulus" type="alphabemes" xml:id="w29823">ulus</w>
@@ -32290,6 +32300,7 @@ bent</w>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
+<note type="emendation">I would correct this word to "diminutiuum". The reading of the manuscript "diminutiuam" could make sense if "diminutiuam [formam]" is implied. However, the usus scribendi of the text requires neuter "diminutiuum".</note>
 </w>
 <pc n="0">·</pc>
 <w n="ut" xml:id="w29841">ut</w>
@@ -32305,9 +32316,9 @@ bent</w>
 <w n="in" xml:id="w29856">in</w>
 <pc n="quote">·</pc>
 <w n="a" type="alphabemes" xml:id="w29859">a
-<note type="emendation">Scribal error: "a" for "na": see the source Priscian, Ars grammatica K.2.110.12 "nus" and the sense of the whole passage. However, this discrepancy between the manuscipt and Priscian occurs in the same way for diminutives in "nus", in "na" and in "num", so it might be a deliberate choice by the scribe.</note>
+<note type="emendation">Scribal error: "a" for "na": see the source Priscian, Ars grammatica K.2.110.12 "nus" and the sense of the whole passage. However, this discrepancy between the manuscipt and Priscian occurs in the same way for diminutives in "nus" (8r.a.37), in "na" (8r.b.11) and in "num" (8r.b.19), so it might be a deliberate choice by the scribe.</note>
 </w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <lb n="8r.b.12" />
 <w n="siue" xml:id="w29862">siue</w>
 	<pc n="space"> </pc>
@@ -32343,6 +32354,7 @@ bent</w>
 		<expan>non</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="geminant" xml:id="w29886">geminant</w>
 <pc n="quote">·</pc>
@@ -32355,6 +32367,7 @@ bent</w>
 <pc n="quote">·</pc>
 <w n="in" xml:id="w29898">in</w>
 <w n="deminutiuis" xml:id="w29901">diminutiuis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w29904">ut</w>
 <w n="catena" xml:id="w29907">ca<add place="above">te</add>na</w>
@@ -32369,7 +32382,7 @@ bent</w>
 na</w>
 	<pc n="space"> </pc>
 <w n="columella" xml:id="w29916">columella</w>
-<pc n=".">·</pc>
+<pc n=".">|</pc>
 <lb n="8r.b.14" />
 <w n="excipitur" xml:id="w29919"><hi rend="larger">e</hi>xcipitur</w>
 	<pc n="space"> </pc>
@@ -32479,10 +32492,10 @@ lus</w>
 	</choice>
 </w>
 <pc n="0">·</pc>
-<w n="syllabam" xml:id="w30045">s
+<w n="syllaba" xml:id="w30045">s
 	<choice>
 		<abbr type="superscription">yll<am>¯</am></abbr>
-		<expan>yllabam</expan>
+		<expan>yllaba</expan>
 	</choice>
 </w>
 	<pc n="space"> </pc>
@@ -32512,6 +32525,7 @@ lus</w>
 		<expan>em</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w30063">ut</w>
 <w n="ara" xml:id="w30066">ara</w>
@@ -32526,7 +32540,7 @@ lus</w>
 <w n="in" xml:id="w30078">in</w>
 <pc n="quote">·</pc>
 <w n="um" type="alphabemes" xml:id="w30081">um
-<note type="emendation">Scribal error: "um" for "num": see the source Priscian, Ars grammatica K.2.110.23 "num" and the sense of the whole passage. However, this discrepancy between the manuscipt and Priscian occurs in the same way for diminutives in "nus", in "na" and in "num", so it might be a deliberate choice by the scribe.</note>
+<note type="emendation">Scribal error: "um" for "num": see the source Priscian, Ars grammatica K.2.110.23 "num" and the sense of the whole passage. However, this discrepancy between the manuscipt and Priscian occurs in the same way for diminutives in "nus" (8r.a.37), in "na" (8r.b.11) and in "num" (8r.b.19), so it might be a deliberate choice by the scribe.</note>
 </w>
 <pc n="quote">·</pc>
 <w n="geminant" xml:id="w30084">geminant</w>
@@ -32537,7 +32551,7 @@ lus</w>
 nutiuis</w>
 <pc n="quote">·</pc>
 <w n="l" type="alphabemes" xml:id="w30093">l</w>
-<pc n="quote">·</pc>
+<pc n=".">·</pc>
 <w n="si" xml:id="w30096">si</w>
 <w n="uero" xml:id="w30099">uero</w>
 	<pc n="space"> </pc>
@@ -32548,7 +32562,7 @@ nutiuis</w>
 <w n="ante" xml:id="w30108">ante</w>
 <pc n="quote">·</pc>
 <w n="n" type="alphabemes" xml:id="w30111">n</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="non" xml:id="w30114">
 	<choice>
 		<abbr type="superscription">n<am>¯</am></abbr>
@@ -32592,7 +32606,7 @@ minutiui</w>
 <pc n=".">·</pc>
 <w n="alia" xml:id="w30147">alia</w>
 	<pc n="space"> </pc>
-<w n="neuta" xml:id="w30150">neuta</w>
+<w n="neutra" xml:id="w30150">neutra</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w30153">in</w>
 <pc n="quote">·</pc>
@@ -32619,13 +32633,14 @@ nt</w>
 	</choice>
 </w>
 <pc n=",">·</pc>
-<w n="excepto" xml:id="w30174">excepto
-</w>
+<w n="excepto" xml:id="w30174">excepto</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w30177">ut</w>
 <w n="superius" xml:id="w30180">superius</w>
 	<pc n="space"> </pc>
 <w n="diximus" xml:id="w30183">diximus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w30186">quæ</w>
 <note type="emendation">The syntax of the sentence is inconsistent. It could be emended to a consistent ablative absolute, "exceptis, ut superius diximus, (scil. uerbis) quibus", or to a medieval accusative absolute "excepta, ut superius diximus, (scil. uerba) quae".</note>
@@ -32808,7 +32823,7 @@ syllabis</w>
 <w n="assumunt" xml:id="w30333">assumunt</w>
 	<pc n="space"> </pc>
 <w n="una" xml:id="w30336">una
-<note type="emendation">Scribal error: "una" for "unam". I cannot see any "2" abbreviation mark over the "a", though the mark might have been there and might now be completely faded out.</note>
+<note type="emendation">Scribal error: "una" for "unam". I cannot see any "2" abbreviation mark over the "a", though the mark might have been there and now be completely faded out.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="syllabam" xml:id="w30339">s
@@ -32881,6 +32896,7 @@ ter</w>
 </w>
 	<pc n="space"> </pc>
 <w n="desinentia" xml:id="w30393">desinentia</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="nulla" xml:id="w30396">nulla</w>
 	<pc n="space"> </pc>
@@ -32894,7 +32910,7 @@ sonante</w>
 <w n="antecedente" xml:id="w30402">antecedente</w>
 <pc n="quote">·</pc>
 <w n="n" type="alphabemes" xml:id="w30405">n</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="pares" xml:id="w30408">pares</w>
 	<pc n="space"> </pc>
 <w n="syllabas" xml:id="w30411">s
@@ -32917,14 +32933,17 @@ sonante</w>
 	</choice>
 </w>
 <w n="deminutiuis" xml:id="w30420">diminutiuis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="bonus" xml:id="w30423">bonus</w>
 	<pc n="space"> </pc>
 <w n="bellus" xml:id="w30426">bellus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="bona" xml:id="w30429">bona</w>
 	<pc n="space"> </pc>
 <w n="bella" xml:id="w30432">bella</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="bonum" xml:id="w30435">bon
 	<choice>
@@ -32939,7 +32958,7 @@ sonante</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<pc n=".">·</pc>
+<pc n=".">|</pc>
 <lb n="8r.b.32" />
 <w n="similiter" xml:id="w30441"><hi rend="larger">s</hi>imiliter</w>
 	<pc n="space"> </pc>
@@ -32971,6 +32990,7 @@ sonante</w>
 <w n="deminutiua" xml:id="w30468">dimi
 <lb n="8r.b.33" />
 nutiua</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="si" xml:id="w30471">si</w>
 <w n="a" xml:id="w30474">a</w>
@@ -33013,7 +33033,9 @@ lus</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w n="alia" xml:id="w30513">alia</w>
+<w n="alia" xml:id="w30513">alia
+<note type="emendation">Scribal error: "alia" for "aliam" (modifying "consonantem").</note>
+</w>
 	<pc n="space"> </pc>
 <w n="consonantem" xml:id="w30516">
 	<choice>
@@ -33097,7 +33119,7 @@ nella</w>
 <w n="in" xml:id="w30582">in</w>
 <pc n="quote">·</pc>
 <w n="us" type="alphabemes" xml:id="w30585">us</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="antecedentibus" xml:id="w30588">ante
 	<pc n="space"> </pc>
 	cedenti
@@ -33115,7 +33137,7 @@ nella</w>
 </w>
 <pc n="quote">·</pc>
 <w n="i" type="alphabemes" xml:id="w30597">i</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="mutant" xml:id="w30600">mutant</w>
 <pc n="quote">·</pc>
 <w n="us" type="alphabemes" xml:id="w30603">us</w>
@@ -33154,7 +33176,7 @@ nella</w>
 		<abbr type="superscription">p<am>¯</am></abbr>
 		<expan>pre</expan>
 	</choice>
-<note type="script">Interestigly, the abbreviation "p with macron above" (encoded with the graphemes "p" and "¯" in this edition) is not applied here to the preposition/preverb "prae", but to a syllable that also in classical Latin had no "ae" diphthong. A few word later, the primitive of this diminutive is written without abbreviation as "capreus", so most probably the scribe did not mistakingly think of "capraeus" as the classical Latin alphabetical form of the word.</note>
+<note type="script">Interestigly, the abbreviation "p with macron above" (encoded with the graphemes "p" and "¯" in this edition) is not applied here to the preposition/preverb "prae", but to the syllable "pre" (with no "ae" diphthong). A few words later, the primitive of this diminutive is written without abbreviation as "capreus", so most probably the scribe did not mistakingly think of "capraeus" as the classical Latin alphabetical form of the word.</note>
 olus</w>
 	<pc n="space"> </pc>
 <w n="dicitur" xml:id="w30645">d
@@ -33163,6 +33185,7 @@ olus</w>
 		<expan>icitur</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="cuius" xml:id="w30648">cuius</w>
 	<pc n="space"> </pc>
@@ -33185,10 +33208,12 @@ preus</w>
 		<expan>esse</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="unde" xml:id="w30663">unde</w>
 	<pc n="space"> </pc>
 <w n="caprea" xml:id="w30666">caprea</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ex" xml:id="w30669">ex</w>
 <w n="quo" xml:id="w30672">quo</w>
@@ -33243,7 +33268,7 @@ preus</w>
 <w n="in" xml:id="w30720">in</w>
 <pc n="quote">·</pc>
 <w n="ola" type="alphabemes" xml:id="w30723">ola</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <lb n="8v.a.4" />
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.113.1" type="source" unit="Keil" />
 <w n="laurea" xml:id="w30726">laurea</w>
@@ -33291,6 +33316,7 @@ preus</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="laureum" xml:id="w30765">laure
 	<choice>
@@ -33321,15 +33347,16 @@ preus</w>
 pradictæ</w>
 	<pc n="space"> </pc>
 <w n="declinationis" xml:id="w30789">declinationis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="abiecta" xml:id="w30792">abiecta</w>
 <pc n="quote">·</pc>
 <w n="s" type="alphabemes" xml:id="w30795">s</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="addita" xml:id="w30798">addita</w>
 <pc n="quote">·</pc>
 <w n="lus" type="alphabemes" xml:id="w30801">lus</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="faciunt" xml:id="w30804">f
 	<choice>
 		<abbr type="superscription">ac<am>¯</am></abbr>
@@ -33430,14 +33457,14 @@ sonante</w>
 		<abbr type="superscription">a<am>2</am></abbr>
 		<expan>am</expan>
 	</choice>
+<note type="emendation">Scribal error: "unam" for "unā" (ablative of degree of difference).</note>
 </w>
 	<pc n="space"> </pc>
-<w n="syllabam" xml:id="w30900">s
+<w n="syllaba" xml:id="w30900">s
 	<choice>
 		<abbr type="superscription">yll<am>¯</am></abbr>
-		<expan>yllabam</expan>
+		<expan>yllaba</expan>
 	</choice>
-<note type="emendation">Shouldn't this be "unā syllabā" (ablative)?</note>
 </w>
 	<pc n="space"> </pc>
 <w n="primitiua" xml:id="w30903">primitiua</w>
@@ -33458,6 +33485,7 @@ sonante</w>
 <w n="pauca" xml:id="w30930">pauca</w>
 	<pc n="space"> </pc>
 <w n="inueniuntur" xml:id="w30933">inueniuntur</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="catulus" xml:id="w30936">catulus</w>
 	<pc n="space"> </pc>
@@ -33470,12 +33498,13 @@ sonante</w>
 toniaster</w>
 <pc n=",">·</pc>
 <w n="parasitus" xml:id="w30948">parasitus</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w n="parasitaster" xml:id="w30951">parasitaster</w>
 <pc n=",">·</pc>
 <w n="homo" xml:id="w30954">homo</w>
 	<pc n="space"> </pc>
 <w n="homuncio" xml:id="w30957">homuncio</w>
+<pc n=","></pc>
 <lb n="8v.a.13" />
 <w n="senex" xml:id="w30960">senex</w>
 	<pc n="space"> </pc>
@@ -33490,7 +33519,7 @@ toniaster</w>
 <w n="aculeus" xml:id="w30975">aculeus</w>
 <pc n=",">·</pc>
 <w n="oculus" xml:id="w30978">oculus</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <lb n="8v.a.14" />
 <w n="oculeus" xml:id="w30981">oculeus</w>
 <pc n=".">·</pc>
@@ -33546,9 +33575,11 @@ pria</w>
 		<expan>sunt</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w31020">ut</w>
 <w n="cuniculus" xml:id="w31023">cuniculus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="anniculus" xml:id="w31026">anni
 <lb n="8v.a.16" />
@@ -33586,8 +33617,8 @@ uant</w>
 	<pc n="space"> </pc>
 <w n="anguilla" xml:id="w31059">anguilla</w>
 <pc n=",">·</pc>
-<w n="unquis" xml:id="w31062">unquis</w>
-<pc n=",">·</pc>
+<w n="unguis" xml:id="w31062">unguis</w>
+<pc n="0">·</pc>
 <lb n="8v.a.18" />
 <w n="ungula" xml:id="w31065">ungula</w>
 <pc n=",">·</pc>
@@ -33599,6 +33630,7 @@ uant</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.115.13" type="source" unit="Keil" />
 <w n="quae" xml:id="w31074">quæ</w>
@@ -33667,7 +33699,7 @@ a</w>
 </ref>
 
 <ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.373.15-4.373.16" type="source">
-<w n="deminutiuorum" xml:id="w31110">dimi
+<w n="deminutiuorum" xml:id="w31110"><hi rend="larger">d</hi>imi
 <lb n="8v.a.20" />
 	nutiuor
 	<choice>
@@ -33705,6 +33737,7 @@ a</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 </ref>
 
@@ -33717,7 +33750,9 @@ a</w>
 <w n="monticellulus" xml:id="w31143">monticellulus</w>
 <pc n=".">·</pc>
 </ref>
+</ab>
 
+<ab n="Denominatiua nomina" xml:id="ab22">
 <ref cRef="unknown" type="source">
 <w n="deriuatiua" xml:id="w31146"><hi rend="larger">d</hi>eriuatiua</w>
 <lb n="8v.a.22" />
@@ -33831,9 +33866,7 @@ a</w>
 <w n="habitat" xml:id="w31263">habitat</w>
 <pc n=".">·</pc>
 </ref>
-</ab>
 
-<ab n="Deriuatiua nomina" xml:id="ab22">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.117.1-2.117.6" type="source">
 <lb n="8v.a.26" />
 <w n="denominatiua" xml:id="w31266"><hi rend="larger">d</hi>enominatiua</w>
@@ -33897,7 +33930,7 @@ a</w>
 <w n="id" xml:id="w31335">id</w>
 <lb n="8v.a.29" />
 <w n="est" xml:id="w31338">est</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w n="patronymica" xml:id="w31341">patronymica</w>
 <pc n="0">·</pc>
 <w n="et" xml:id="w31344">et</w>
@@ -33927,7 +33960,7 @@ tiua</w>
 <w n="excepto" xml:id="w31368">excepto</w>
 	<pc n="space"> </pc>
 <w n="uerbialia" xml:id="w31371">uerbialia
-<note type="content">The direct source, Priscian, Ars grammatica K.2.117.6 has "uerbalia". The form "uerbialia" is in Pompeius, "Commentum Artis Donati", K.5.149.1. Lewis-Short has a lemma "uerbialis, e, adf.", but reports Pompeius as the only example. Based on a search on the PHI 5.3 corpus with Diogenes 3.2.0, the adjective does never occur in classical Latin.</note>
+<note type="content">The direct source, Priscian, Ars grammatica K.2.117.6 has "uerbalia". The form "uerbialia" is in Pompeius, "Commentum Artis Donati", K.5.149.1. Lewis-Short has a lemma "uerbialis, e, adf.", but reports Pompeius as the only example. Based on a search on the PHI 5.3 corpus with Diogenes 3.2.0, the adjective form "uerbialis" does never occur in classical Latin.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w31374">et</w>
@@ -33964,7 +33997,7 @@ positionibus</w>
 <w n="quae" xml:id="w31401">quæ</w>
 	<pc n="space"> </pc>
 <w n="nominatiuo" xml:id="w31404">nominatiuo
-<note type="emendation">Possible scribal error: "nominatiuo" for "nominatiuum", as direct object of "acceperunt". </note>
+<note type="emendation">Scribal error: "nominatiuo" for "nominatiuum", as direct object of "acceperunt". </note>
 </w>
 <pc n="0">·</pc>
 <unclear cert="medium" reason="faded">
@@ -34053,11 +34086,12 @@ positionibus</w>
 <lb n="8v.a.36" />
 ficationis</w>
 <pc n=",">·</pc>
-<w n="nomen" xml:id="w31482">
+<w n="nominatiuum" xml:id="w31482">
 	<choice>
 		<abbr type="superscription">nom<am>¯</am></abbr>
-		<expan>nomen</expan>
+		<expan>nominatiuum</expan>
 	</choice>
+<note type="content">An easier expansion for this abbreviation would be "nomen", but given the previous sentence "denominatiua quae nominatiuo [scribal error for nominatiuum] acceperunt ab aliis tantum" (8v.a.32-33), I think that the best expansion here is "nominatiuum" again.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="tantum" xml:id="w31485">tant
@@ -34103,7 +34137,7 @@ ficans</w>
 <w n="cetera" xml:id="w31527">cete
 <lb n="8v.a.38" />
 ra</w>
-<pc n=",">·</pc>
+<pc n=".">·</pc>
 </ref>
 
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.117.14-2.140.24" type="source">
@@ -34180,7 +34214,7 @@ lata</w>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note type="content">On the form "uerbialis, -e" as opposed to "uerbalis, -e", see note to the word with id w31371.</note>
+<note type="content">On the form "uerbialis, -e" as opposed to "uerbalis, -e", see note to the word with id w31371 (line 8v.a.30).</note>
 </w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w31578">et</w>
@@ -34209,7 +34243,7 @@ lata</w>
 munes</w>
 	<pc n="space"> </pc>
 <w n="inueniuntur" xml:id="w31593">inueniuntur</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 <w n="nunc" xml:id="w31596">nunc</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
@@ -34251,9 +34285,7 @@ cemus</w>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.118.1" type="source" unit="Keil" />
 <w n="in" xml:id="w31626"><hi rend="larger">i</hi>n</w>
 	<pc n="space"> </pc>
-<w n="i" type="alphabemes" xml:id="w31629">i</w>
-<pc n="quote">·</pc>
-<w n="a" type="alphabemes" xml:id="w31632">a</w>
+<w n="ia" type="alphabemes" xml:id="w31629">i·a</w>
 <pc n="quote">·</pc>
 <w n="ut" xml:id="w31635">ut</w>
 <w n="durus" xml:id="w31638">durus</w>
@@ -34298,7 +34330,7 @@ na</w>
 <w n="in" xml:id="w31680">in</w>
 <pc n="quote">·</pc>
 <w n="i" type="alphabemes" xml:id="w31683">i</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="a" xml:id="w31686">a</w>
 <w n="fruge" xml:id="w31689">fruge</w>
 	<pc n="space"> </pc>
@@ -34308,6 +34340,7 @@ na</w>
 <w n="nihilo" xml:id="w31698">nihilo</w>
 	<pc n="space"> </pc>
 <w n="nihili" xml:id="w31701">nihili</w>
+<pc n=","></pc>
 <lb n="8v.b.6" />
 <w n="quos" xml:id="w31704">quos</w>
 	<pc n="space"> </pc>
@@ -34334,15 +34367,17 @@ na</w>
 <w n="in" xml:id="w31722">in</w>
 	<pc n="space"> </pc>
 <w n="u" type="alphabemes" xml:id="w31725">u</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="ut" xml:id="w31728">ut</w>
 <w n="tono" xml:id="w31731">tono</w>
 	<pc n="space"> </pc>
 <w n="tonitru" xml:id="w31734">tonitru</w>
+<pc n=","></pc>
 <lb n="8v.b.7" />
 <w n="in" xml:id="w31737"><hi rend="larger">i</hi>n</w>
 <pc n="quote">·</pc>
 <w n="al" type="alphabemes" xml:id="w31740">al</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ceruix" xml:id="w31743">ceruix</w>
 	<pc n="space"> </pc>
@@ -34355,10 +34390,11 @@ na</w>
 <w n="in" xml:id="w31755"><hi rend="larger">i</hi>n</w>
 <pc n="quote">·</pc>
 <w n="il" type="alphabemes" xml:id="w31758">il</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="uigilo" xml:id="w31761">uigilo</w>
 	<pc n="space"> </pc>
 <w n="uigil" xml:id="w31764">uigil</w>
+<pc n=","></pc>
 <lb n="8v.b.8" />
 <w n="pugillus" xml:id="w31767"><hi rend="larger">p</hi>ugillus</w>
 	<pc n="space"> </pc>
@@ -34367,7 +34403,7 @@ na</w>
 <w n="in" xml:id="w31773"><hi rend="larger">i</hi>n</w>
 <pc n="quote">·</pc>
 <w n="ul" type="alphabemes" xml:id="w31776">ul</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="exulo" xml:id="w31779">exulo</w>
 	<pc n="space"> </pc>
 <w n="exul" xml:id="w31782">exul</w>
@@ -34375,7 +34411,7 @@ na</w>
 <w n="in" xml:id="w31785"><hi rend="larger">i</hi>n</w>
 <pc n="quote">·</pc>
 <w n="am" type="alphabemes" xml:id="w31788">am</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="nequis" xml:id="w31791">ne
 	<choice>
 		<abbr type="brevigraph">¢</abbr>
@@ -34393,7 +34429,7 @@ s</w>
 <w n="in" xml:id="w31797">in</w>
 	<pc n="space"> </pc>
 <w n="um" type="alphabemes" xml:id="w31800">um</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <lb n="8v.b.9" />
 <w n="oliua" xml:id="w31803">oliua</w>
 	<pc n="space"> </pc>
@@ -34426,7 +34462,7 @@ sideo</w>
 <w n="in" xml:id="w31815"><hi rend="larger">i</hi>n</w>
 <pc n="quote">·</pc>
 <w n="ar" type="alphabemes" xml:id="w31818">ar</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="lacus" xml:id="w31821">lacus</w>
 	<pc n="space"> </pc>
 <w n="lacunar" xml:id="w31824">lacunar</w>
@@ -34434,6 +34470,7 @@ sideo</w>
 <w n="in" xml:id="w31827">in</w>
 <pc n="quote">·</pc>
 <w n="er" type="alphabemes" xml:id="w31830">er</w>
+<pc n=","></pc>
 <lb n="8v.b.10" />
 <w n="eques" xml:id="w31833">eques</w>
 	<pc n="space"> </pc>
@@ -34441,6 +34478,7 @@ sideo</w>
 <pc n=",">·</pc>
 <w n="in" xml:id="w31839"><hi rend="larger">i</hi>n</w>
 <w n="or" type="alphabemes" xml:id="w31842">or</w>
+<pc n=","></pc>
 <w n="senatus" xml:id="w31845">senatus</w>
 	<pc n="space"> </pc>
 <w n="senator" xml:id="w31848">senator</w>
@@ -34448,14 +34486,15 @@ sideo</w>
 <w n="in" xml:id="w31851"><hi rend="larger">i</hi>n</w>
 	<pc n="space"> </pc>
 <w n="ur" type="alphabemes" xml:id="w31854">ur</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="satio" xml:id="w31857">satio</w>
 	<pc n="space"> </pc>
 <w n="satur" xml:id="w31860">satur</w>
 <pc n=",">·</pc>
 <lb n="8v.b.11" />
 <w n="in" xml:id="w31863"><hi rend="larger">i</hi>n</w>
-<w n="ar" type="alphabemes" xml:id="w31866">ar</w>
+<w n="as" type="alphabemes" xml:id="w31866">as</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="primus" xml:id="w31869">primus</w>
 	<pc n="space"> </pc>
@@ -34480,10 +34519,12 @@ sideo</w>
 		<expan>correpta</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="equus" xml:id="w31890">equus</w>
 	<pc n="space"> </pc>
 <w n="eques" xml:id="w31893">eques</w>
+<pc n=","></pc>
 <lb n="8v.b.12" />
 <w n="in" xml:id="w31896">in</w>
 <pc n="quote">·</pc>
@@ -34502,7 +34543,7 @@ sideo</w>
 </w>
 	<pc n="space"> </pc>
 <w n="pauper" xml:id="w31905">pauper</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w n="pauperies" xml:id="w31908">pauperies</w>
 <pc n=",">·</pc>
 <w n="saepio" xml:id="w31911">sepio</w>
@@ -34522,23 +34563,26 @@ sideo</w>
 <pc n="quote">·</pc>
 <w n="is" type="alphabemes" xml:id="w31932">is</w>
 <pc n="quote">·</pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.118.15" type="source" unit="Keil" />
 <w n="aedis" xml:id="w31935">etis
-<note type="emendation">The first two graphemes ("ed") are oddly written with the very common ligature for "et", so I consider this a scribal error: "etis" for "edis" (which is the reading of the source, Priscian, Ars grammatica K.2.118.15).</note>
+<note type="emendation">The first two graphemes ("ed") are oddly written with the very common ligature for "et", so I consider this a scribal error: "etis" for "edis" ("aedis" is the reading of the source, Priscian, Ars grammatica K.2.118.15).</note>
 </w>
 	<pc n="space"> </pc>
 <w n="aedilis" xml:id="w31938">edilis</w>
 <pc n=",">·</pc>
 <w n="rex" xml:id="w31941">rex</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w n="regalis" xml:id="w31944">regalis</w>
 <pc n=",">·</pc>
 <w n="in" xml:id="w31947"><hi rend="larger">i</hi>n</w>
 	<pc n="space"> </pc>
 <w n="os" type="alphabemes" xml:id="w31950">os</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="lepus" xml:id="w31953">lepus</w>
 	<pc n="space"> </pc>
 <w n="lepos" xml:id="w31956">lepos</w>
+<pc n=","></pc>
 <lb n="8v.b.14" />
 <w n="custodio" xml:id="w31959">custodio</w>
 	<pc n="space"> </pc>
@@ -34555,7 +34599,7 @@ sideo</w>
 		<expan>con</expan>
 	</choice>
 sonante</w>
-<pc n="." />
+<pc n="," />
 <w n="ab" xml:id="w31977">ab</w>
 <w n="assideo" xml:id="w31980">assideo</w>
 	<pc n="space"> </pc>
@@ -34587,6 +34631,7 @@ sonante</w>
 <w n="antepositis" xml:id="w32001">ante
 	<pc n="space"> </pc>
 positis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="saxum" xml:id="w32004">sax
 	<choice>
@@ -34598,6 +34643,7 @@ positis</w>
 <w n="saxosus" xml:id="w32007">saxo
 <lb n="8v.b.16" />
 sus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="spuma" xml:id="w32010">spuma</w>
 	<pc n="space"> </pc>
@@ -34605,6 +34651,7 @@ sus</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w32016">et</w>
 <w n="aliis" xml:id="w32019">aliis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w32022">et</w>
 <w n="a" xml:id="w32025">a</w>
@@ -34622,17 +34669,20 @@ rte</w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w32043">ut</w>
 <w n="uersus" xml:id="w32046">uersus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="saltus" xml:id="w32049">saltus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w32052">et</w>
 <w n="ab" xml:id="w32055">ab</w>
 <w n="aduerbiis" xml:id="w32058">aduerbiis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w32061">ut</w>
 <lb n="8v.b.18" />
 <w n="supra" xml:id="w32064">supra
-<note type="source">The source, Priscian, Ars grammatica K.2.118.21, has "super superus", with the agreement of all witnesses taken into account by Keil.</note>
+<note type="emendation">The source, Priscian, Ars grammatica K.2.118.21, has "super superus", with the agreement of all witnesses taken into account by Keil. Still, I would not emend "supra" to "super" here only to make Ursus' text coincide with Priscian's.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="superus" xml:id="w32067">superus</w>
@@ -34640,14 +34690,16 @@ rte</w>
 <w n="in" xml:id="w32070"><hi rend="larger">i</hi>n</w>
 <pc n="quote">·</pc>
 <w n="x" type="alphabemes" xml:id="w32073">x</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="ut" xml:id="w32076">ut</w>
 <w n="fur" xml:id="w32079">fur</w>
 <w n="furax" xml:id="w32082">furax</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="capio" xml:id="w32085">capio</w>
 	<pc n="space"> </pc>
 <w n="capax" xml:id="w32088">capax</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="audeo" xml:id="w32091">audeo</w>
 	<pc n="space"> </pc>
@@ -34664,6 +34716,7 @@ dax</w>
 		<expan>con</expan>
 	</choice>
 sonantes</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w32106">ut</w>
 <w n="Picenum" xml:id="w32109">picen
@@ -34684,6 +34737,7 @@ sonantes</w>
 	<pc n="space"> </pc>
 <w n="Tiburs" xml:id="w32118">tiburs</w>
 <pc n="." />
+<w n="§" xml:id="0000">[§ Reviewed until here]</w>
 <lb n="8v.b.20" />
 <w n="in" xml:id="w32121"><hi rend="larger">i</hi>n</w>
 	<pc n="space"> </pc>
@@ -34753,7 +34807,7 @@ sonantes</w>
 <pc n=".">·</pc>
 <w n="in" xml:id="w32193"><hi rend="larger">i</hi>n</w>
 <w n="uerbialibus" xml:id="w32196">uerbialibus
-<note type="content">On the form "uerbialis, -e" as opposed to "uerbalis, -e", see note to the word with id w31371. This form will recur again later in the manuscript.</note>
+<note type="content">On the form "uerbialis, -e" as opposed to "uerbalis, -e", see note to the word with id w31371 (line 8v.a.30). This form will recur again later in the manuscript, but I'm not repeating this note from this point on.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="habent" xml:id="w32199">habent</w>
@@ -41334,7 +41388,7 @@ pta</w>
 		<expan>pro</expan>
 	</choice>
 </w>
-<w n="tiburs" xml:id="w38523">tiburs</w>
+<w n="Tiburs" xml:id="w38523">tiburs</w>
 <pc n=",">·</pc>
 <lb n="10r.b.13" />
 <w n="Quiritis" xml:id="w38526">quiritis
