@@ -726,6 +726,7 @@ Markup not referring to a specific layer
 			elements belonging not to the graphematic, but to the graphic layer, which is
 			not systematically included in this edition; e.g.: a macron over a grapheme marking
 			its long quantity),
+		- "facsimile" (on the digital photos of the manuscript),
 		- "source" (on the text sources),
 		- "content" (on the text content);
 		- "emendation" (a note proposing an emendation of the text clearly readable in the manuscript);
