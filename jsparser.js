@@ -1,3 +1,20 @@
+/*###########################################
+#      LL LAYER: VISUALIZED OR NOT?         #
+###########################################*/
+// Most 'title' attributes (with the exception of those used for gaps in the
+// manuscript) have the function of visualizing
+// the Linguistic Layer (LL) for each word, on hover.
+// While I am still reviewing the lemmatization, the 'title' attributes should
+// not be added to the HTML elements including words.
+// 	If you want the LL to be visualized, set variable viewLL to true;
+// 	If you want it not to be visualized, set variable viewLL to false.
+// I am today setting viewLL to false. When I'll be finished reviewing the
+// lemmatization, I'll set it back to true to
+// restore the visualization of the Linguistic Layer for words.
+// March 1, 2017.
+var viewLL = false;
+
+
 /*###########################
 #      HTML CLASSES         #
 ###########################*/
@@ -861,7 +878,10 @@ function wordify(word) {
 				// The result will be <span class="AL larger"
 				//                or  <span class="AL dropcap":
 			cells[1].appendChild(classySpanWithLayers(alph(hiText), hiRendAttrValue)[1]);
-			cells[1].setAttribute('title', LLString); // The 'title' will make lemma/morph/spelling appear on hover
+			if (viewLL == true)
+			{
+				cells[1].setAttribute('title', LLString);//The 'title' will make lemma/morph/spelling appear on hover
+			}
 			// GL of larger grapheme (span).
 				// The result will be <span class="GL larger"
 				//                or  <span class="GL dropcap":
@@ -906,7 +926,10 @@ function wordify(word) {
 			auSpanGL.appendChild(auTextGL);
 
 			cells[1].appendChild(auSpanAL); //In the AL cell
-			cells[1].setAttribute('title', LLString);	// The 'title' will make lemma/morph/spelling appear on hover
+			if (viewLL == true)
+			{
+				cells[1].setAttribute('title', LLString);//The 'title' will make lemma/morph/spelling appear on hover
+			}
 			cells[2].appendChild(auSpanGL); //In the GL cell
 		}
 
@@ -1016,7 +1039,10 @@ function wordify(word) {
 			ALTextString = alph(ALTextString);
 			ALTextSpan = classySpanWithLayers(ALTextString, 'abbrExpansion')[1];
 			cells[1].appendChild(ALTextSpan);
-                        cells[1].setAttribute('title', LLString); // The 'title' will make lemma/morph/spelling appear on hover
+			if (viewLL == true)
+			{
+                        	cells[1].setAttribute('title', LLString);//The 'title' will make lemma/morph/spelling appear on hover
+			}
 		}	// End of 'choice', i.e. of the processing of abbreviations
 
 		else if (n.tagName != 'choice') {
@@ -1025,7 +1051,10 @@ function wordify(word) {
 			var ALTextString = n.nodeValue.trim();
 			ALTextString = alph(ALTextString); //Compute the AL based on the graphemes and the GToS
 			cells[1].appendChild(classySpanWithLayers(ALTextString, 'notAbbreviated')[1]);
-			cells[1].setAttribute('title', LLString); // The 'title' will make lemma/morph/spelling appear on hover
+			if (viewLL == true)
+			{
+				cells[1].setAttribute('title', LLString);//The 'title' will make lemma/morph/spelling appear on hover
+			}
 			// GL
 			var GLTextString = n.nodeValue.trim();
 			var GLTextString = graph(GLTextString); // This will make 'æ' show as ̹e etc.
