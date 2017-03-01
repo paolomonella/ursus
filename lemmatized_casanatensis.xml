@@ -41604,8 +41604,7 @@ pta</w>
 </w>
 <note type="emendation">There is no agreement between "nominatiuus" and "sunt" in this clause. The two possible emendations are "quorum nominatiui nunc in usu non sunt" or "quorum nominatiuus nunc in usu non est".</note>
 <pc n=".">·</pc>
-<w ana="11B---A3---" lemma="§" n="§" xml:id="0000">[§ Reviewed until here]</w>
-<w ana="3-MJ1--6---" lemma="inuenitur" n="inuenitur" xml:id="w38571">inuenitur</w>
+<w ana="11C---A1---" lemma="inuenitur" n="inuenitur" xml:id="w38571">inuenitur</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="etiam" n="etiam" xml:id="w38574">eti
 	<choice>
@@ -45077,7 +45076,7 @@ nander</w>
 <pc n="quote">·</pc>
 </ref>
 
-<ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.374.4-urn:cts:latinLit:stoa0110.stoa001:4.374.??" type="source">
+<ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.374.4-4.374.??" type="source">
 <lb n="11r.a.18" />
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w42003"><hi rend="dropcap">e</hi>st</w>
 	<pc n="space"> </pc>

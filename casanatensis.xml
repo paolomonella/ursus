@@ -9,11 +9,13 @@
         <p>Scholarly digital edition of the manuscript by Paolo Monella.</p>
       </publicationStmt>
       <sourceDesc>
-        <p>The digital images of the manuscript.</p>
+        <p>The digital images of the manuscript provided by the Bibliotheca Casanatensis, Rome, Italy.</p>
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+<change type="agenda">Unify all 'agenda' items in this list: move here those items that currently are in my agenda file (and possibly also scattered elsewhere).</change>
 <change type="agenda">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
+<change type="agenda">When I have a punctuation sign at the LL, not corresponds to any punctuation signa at the GL (i.e. in the manuscript), the JS code visualizes a space at the GL. There should be no space at the GL.</change>
 <change type="done">Ricordarsi periodicamente di togliere gli spazi (tag 'space')seguiti da 'lb'. In VIM l'andata a capo è \n</change>
 <change type="agenda">Check (and delete) all space 'pc' elements at the end of empty tags before the backslash (pb, cb, lb etc.).</change>
 <change type="skipped">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC: The c (character) element should be used to mark up any non-lexical character, whether this appears within a word, or outside it. In the following example, the encoder wishes to indicate that the letters are not to be regarded as words (questo potrebbe sostituire il mio w type="alphabemes"?)</change>
@@ -41604,7 +41606,6 @@ pta</w>
 </w>
 <note type="emendation">There is no agreement between "nominatiuus" and "sunt" in this clause. The two possible emendations are "quorum nominatiui nunc in usu non sunt" or "quorum nominatiuus nunc in usu non est".</note>
 <pc n=".">·</pc>
-<w n="§" xml:id="0000">[§ Reviewed until here]</w>
 <w n="inuenitur" xml:id="w38571">inuenitur</w>
 	<pc n="space"> </pc>
 <w n="etiam" xml:id="w38574">eti
@@ -45077,7 +45078,7 @@ nander</w>
 <pc n="quote">·</pc>
 </ref>
 
-<ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.374.4-urn:cts:latinLit:stoa0110.stoa001:4.374.??" type="source">
+<ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.374.4-4.374.??" type="source">
 <lb n="11r.a.18" />
 <w n="est" xml:id="w42003"><hi rend="dropcap">e</hi>st</w>
 	<pc n="space"> </pc>
