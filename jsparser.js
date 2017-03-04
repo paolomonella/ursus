@@ -423,16 +423,11 @@ var tagsetlist = [
 #         MY FUNCTIONS         #
 ##############################*/
 
-function showMe (box) {
-	var chboxs = document.getElementsByName("c1");
-	var vis = "none";
-	for(var i=0;i<chboxs.length;i++) { 
-		if(chboxs[i].checked){
-		vis = "block";
-		break;
-		}
-	}
-	document.getElementById(box).style.display = vis;
+function showMe (it, box) {
+	  var vis = (box.checked) ? 'visible' : 'hidden';
+	  [].forEach.call(document.querySelectorAll('.' + it), function (el) {
+		    el.style.visibility = vis;
+	  });
 }
 
 function translateAnaString(inputAnaString) {
@@ -1278,6 +1273,8 @@ function readXML() {
 			}
 		} // End of 'for each child of <ab>
 	} // End of 'for each <ab>'
-	
-}	// End of function readXML()
 
+// The next line makes sure that at the first load of the page, the GL is not visualized
+showMe('GL', document.getElementsByName('cGL'));
+
+}	// End of function readXML()
