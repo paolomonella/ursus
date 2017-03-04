@@ -39,9 +39,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 		</p>
 	</div>
 
-	<!-form>
-	<input type="checkbox" name="c1" onclick="table.style.display = 'none'">Show Hide Checkbox</input>
-	</form-->
+	<form>
+	<!-- <input type="checkbox" checked="true" name="cLL" onclick="showLL(this); window.location.reload(true)">Show Linguistic Layer</input> -->
+	<input type="checkbox" id="cAL" name="cAL" onclick="showMe('AL', this)" checked="checked">Show Alphabetic Layer</input>
+	<input type="checkbox" id="cGL" name="cGL" onclick="showMe('GL', this)" autocomplete="off">Show Graphematic Layer</input>
+	</form>
 
  	<div id="MSText">
 	 </div>
