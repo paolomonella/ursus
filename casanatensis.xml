@@ -15,15 +15,13 @@
     <revisionDesc>
 
 <listChange type="critical" ordered="true">
-	<change type="agenda">Unify all 'agenda' items in this list: move here those items that currently
-		are in my agenda file (and possibly also scattered elsewhere).</change>
 	<change type="agenda">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
 	<change type="agenda">Notazioni più snelle (magari con icone) per le note in modo da dare
 		all'intera pagina un aspetto meno "overwhelming"</change>
 	<change type="agenda">Creazione di una piccola legenda delle convenzioni/"guida all'uso"
 		che permetta al lettore di capire come accedere alle informazioni contenute nell'edizione</change>
 	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
-	<change type="agenda">Review the actual transcription of the first lines of the MS (e.g.: don't repeat words).</change>
+	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
 	<change type="agenda">Far spuntare il testo di Keil dal CLG direttamente dal link, ma
 		copiato/incollato nel mio progetto (a meno che non si riesca a fare un link al sito CLG)</change>
 	<change type="agenda">I always put a space at the end of the lb, cb, pb elements (XHTML-style).
@@ -110,6 +108,8 @@
 		seguiti da 'lb'. In VIM l'andata a capo è \n</change>
 	<change type="done" when="2017-03-05">In notes, always write Priscian, Ars grammatica
 		(and not Institutiones et sim.).</change>
+	<change type="2017-03-06">Unify all 'agenda' items in this list: move here those items that currently
+		are in my agenda file (and possibly also scattered elsewhere).</change>
 </listChange>
 
 <listChange type="skipped">
