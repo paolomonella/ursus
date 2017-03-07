@@ -1,44 +1,44 @@
-Graphemes	Alphabemes	Grapheme visualization	Type	Notes	Image	Found	Found where
-a	a	a	Alphabetic			1	
-b	b	b	Alphabetic			1	
-c	c	c	Alphabetic			1	
-d	d	d	Alphabetic			1	
-e	e	e	Alphabetic			1	
-æ	ae	e̹	Alphabetic	An 'e' grapheme with a tail on the bottom left or left side. It is often (but not always) used to represent an alphabeme 'e' in lieu of which in classical and modern Latin orthography we would have the diphthong 'ae'. When it is not represented by the 'æ' grapheme, it is represeented by a simple 'e' grapheme.			
-f	f	f	Alphabetic			1	
-g	g	g	Alphabetic			1	1r.a.7
-h	h	h	Alphabetic			1	
-i	i	i	Alphabetic			1	
-k	k	k	Alphabetic	First found in 5r.a.9 when transliterating a Greek word in Latin.		1	5r.a.9
-l	l	l	Alphabetic			1	
-m	m	m	Alphabetic			1	
-n	n	n	Alphabetic			1	
-o	o	o	Alphabetic			1	
-p	p	p	Alphabetic			1	
-q	q	q	Alphabetic			1	
-r	r	r	Alphabetic			1	
-s	s	s	Alphabetic			1	
-t	t	t	Alphabetic			1	
-u	u	u	Alphabetic			1	
-x	x	x	Alphabetic			1	1r.a.17
-y	y	y	Alphabetic			1	1r.a.6
-z	z	z	Alphabetic			1	3r.b.26
-_		 	Space	Space to separate words (sgn - TBA: I'm currently not using this)		1	
-.		.	Punctuation	Full stop, written on the base line		1	
-·		·	Punctuation	Middle dot, written at middle heigth		1	1r.a.7
-|		⸴ 	Punctuation	It looks like a comma, written from the middle to the base line. I think that the glyph in image 'triangle.png' (found in 1r.a.18) is an allograph.	comma.png triangle.png	1	1r.a.8
-⸟		⸟	Punctuation	Punctuation sign for interrogative sentences. The ink is faded, but it seems to look like a tilde with one dot below only (not with two dots, as it normally is in the Beneventan script).	question.png	1	1r.a.23
-:		:	Punctuation	Punctuation sign looking like a modern colon (:)	colon.png	1	1r.b.16
-ł		;	Punctuation	Punctuation sign looking like a modern semicolon (;). It might be just an allograph for the grapheme I'm encoding with ¦ or for the one I'm encoding with ï. It has a bigger vertical size, and a completely different meaning, than the semicolon-like abbreviation mark encoded here with ;	punct_semicolon.png	1	3r.a.16
-ï	 	,̈	Punctuation	It looks like the sign encoded as “|”, but in addition it has two dots (like a diaeresis) above	commadiaeresis.png	1	2r.a.5
-¦		;̇	Punctuation	This punctuation sign is composed by a comma with two dots above it, in a vertical row. It is used starting from folio 2v, column a, line 35 and seems to be due to the second hand, that writes in black ink.	vertical.png	1	2v.a.35
-8		̑	Abbreviation mark	Written over another grapheme, mostly for a missing 'm'. Another option for visualization could be 🎗	8.png	1	1r.a.18
-2		̾	Abbreviation mark	Written over another grapheme, mostly for a missing 's' or 'm'. In 1r its shape resambles a '2' (see 2a.png), then, starting from 1v, it takes a less curved allograph (2b.png). Other options for visualization could be ≀ or ⸊	2a.png 2b.png	1	1r.a.7
-7		̚	Abbreviation mark	Written over another grapheme, mostly for a missing m'	7.png	1	1r.a.18
-¯		̄	Abbreviation mark	Macron/tilde over one or more graphemes (over one 'n' means 'non')	macron.png	1	1r.a.10
-;		;	Abbreviation mark	It looks like a modern semicolon (;), written on the right of a final letter (mostly 'q;' for 'que' and 'b;' for 'bus'). It has a smaller vertical size, and a completely different meaning, than the semicolon-like punctuation mark encoded here with ł	abbr_semicolon.png	1	1r.a.10
-ų	u	̆	Abbreviation mark	A small 'u' written over a 'q'. The 'q-with-ų-above' abbreviation means 'qu' (I might just use the regular 'u': TBA)	usuperscript.png	1	1v.a.2
-þ	per	p̠	Brevigraph	'p' with a horizontal stroke crossing the descending trait	per.png	1	2r.b.8
-ŋ	pro	p̧	Brevigraph	'p' mostly written with a tail continuing from the round trait of the 'p' on the bottom left side (but also with a separate asterisk or another mark on the same side)	pro1.png pro2.png pro3.png	1	1r.a.13
-¢	qui	q̠	Brevigraph	'q' with a horizontal stroke crossing the descending trait	qui.png	1	1r.a.16
-÷	est	∻	Logograph	A dash or tilde with one dot above and a comma below, meaning 'est'.	est.png	1	2v.a.18
+Graphemes,Alphabemes,Grapheme visualization,Type,Notes,Image,Found,Found where,,,,
+a,a,a,Alphabetic,,,1,,,,,
+b,b,b,Alphabetic,,,1,,,,,
+c,c,c,Alphabetic,,,1,,,,,
+d,d,d,Alphabetic,,,1,,,,,
+e,e,e,Alphabetic,,,1,,,,,
+æ,ae,ę,Alphabetic,'E caudatum': an 'e' grapheme with a tail on the bottom left or left side. It is often (but not always) used to represent an alphabeme 'e' in lieu of which in classical and modern Latin orthography we would have the diphthong 'ae'. When it is not represented by the 'æ' grapheme it is represeented by a simple 'e' grapheme. It has one allograph (ecaudatum1.png) with the tail underneath the body of the grapheme  turning right and a second allograph (ecaudatum2.png) with the tail on the left of the body (mostly in ligatures).,ecaudatum1.png ecaudatum2.png,1,1r.a.9,,,,
+f,f,f,Alphabetic,,,1,,,,,
+g,g,g,Alphabetic,,,1,1r.a.7,,,,
+h,h,h,Alphabetic,,,1,,,,,
+i,i,i,Alphabetic,,,1,,,,,
+k,k,k,Alphabetic,First found in 5r.a.9 when transliterating a Greek word in Latin.,,1,5r.a.9,,,,
+l,l,l,Alphabetic,,,1,,,,,
+m,m,m,Alphabetic,,,1,,,,,
+n,n,n,Alphabetic,,,1,,,,,
+o,o,o,Alphabetic,,,1,,,,,
+p,p,p,Alphabetic,,,1,,,,,
+q,q,q,Alphabetic,,,1,,,,,
+r,r,r,Alphabetic,,,1,,,,,
+s,s,s,Alphabetic,,,1,,,,,
+t,t,t,Alphabetic,,,1,,,,,
+u,u,u,Alphabetic,,,1,,,,,
+x,x,x,Alphabetic,,,1,1r.a.17,,,,
+y,y,y,Alphabetic,,,1,1r.a.6,,,,
+z,z,z,Alphabetic,,,1,3r.b.26,,,,
+_,, ,Space,Space to separate words (sgn - TBA: I'm currently not using this),,1,,,,,
+.,,.,Punctuation,Full stop, written on the base line,,1,,,,
+·,,·,Punctuation,Middle dot, written at middle heigth,,1,1r.a.7,,,
+|,,⸴ ,Punctuation,It looks like a comma, written from the middle to the base line. I think that the glyph in image 'triangle.png' (found in 1r.a.18) is an allograph.,comma.png triangle.png,1,1r.a.8,,,
+⸟,,⸟,Punctuation,Punctuation sign for interrogative sentences. The ink is faded, but it seems to look like a tilde with one dot below only (not with two dots, as it normally is in the Beneventan script).,question.png,1,1r.a.23,,
+:,,:,Punctuation,Punctuation sign looking like a modern colon (:),colon.png,1,1r.b.16,,,,
+ł,,;,Punctuation,Punctuation sign looking like a modern semicolon (;). It might be just an allograph for the grapheme I'm encoding with ¦ or for the one I'm encoding with ï. It has a bigger vertical size, and a completely different meaning, than the semicolon-like abbreviation mark encoded here with ;,punct_semicolon.png,1,3r.a.16,,
+ï, ,,Punctuation,It looks like the sign encoded as “|”, but in addition it has two dots (like a diaeresis) above,commadiaeresis.png,1,2r.a.5,,,
+¦,,;̇,Punctuation,This punctuation sign is composed by a comma with two dots above it, in a vertical row. It is used starting from folio 2v, column a, line 35 and seems to be due to the second hand, that writes in black ink.,vertical.png,1,2v.a.35
+8,,̑,Abbreviation mark,Written over another grapheme, mostly for a missing 'm'. Another option for visualization could be 🎗,8.png,1,1r.a.18,,,
+2,,̉,Abbreviation mark,Written over another grapheme, mostly for a missing 's' or 'm'. In 1r its shape resambles a '2' (see 2a.png), then, starting from 1v, it takes a less curved allograph (2b.png). Other options for visualization could be ≀ or ⸊,2a.png 2b.png,1,1r.a.7
+7,,    ,Abbreviation mark,Written over another grapheme, mostly for a missing m',7.png,1,1r.a.18,,,
+¯,,̄,Abbreviation mark,Macron/tilde over one or more graphemes (over one 'n' means 'non'),macron.png,1,1r.a.10,,,,
+;,,;,Abbreviation mark,It looks like a modern semicolon (;), written on the right of a final letter (mostly 'q;' for 'que' and 'b;' for 'bus'). It has a smaller vertical size, and a completely different meaning, than the semicolon-like punctuation mark encoded here with ł,abbr_semicolon.png,1,1r.a.10,
+ų,u,̆,Abbreviation mark,A small 'u' written over a 'q'. The 'q-with-ų-above' abbreviation means 'qu' (I might just use the regular 'u': TBA),usuperscript.png,1,1v.a.2,,,,
+þ,per,ꝑ,Brevigraph,'p' with a horizontal stroke crossing the descending trait,per.png,1,2r.b.8,,,,
+ŋ,pro,ꝓ,Brevigraph,'p' mostly written with a tail continuing from the round trait of the 'p' on the bottom left side (but also with a separate asterisk or another mark on the same side),pro1.png pro2.png pro3.png,1,1r.a.13,,,,
+¢,qui,ꝗ,Brevigraph,'q' with a horizontal stroke crossing the descending trait,qui.png,1,1r.a.16,,,,
+÷,est,∻,Logograph,A dash or tilde with one dot above and a comma below, meaning 'est'.,est.png,1,2v.a.18,,,
