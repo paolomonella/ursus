@@ -18,6 +18,8 @@
 	<change type="agenda">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
 	<change type="agenda">Notazioni più snelle (magari con icone) per le note in modo da dare
 		all'intera pagina un aspetto meno "overwhelming"</change>
+	<change type="agenda">If only AL is shown, have less 'interlinear' space between rows
+		(css / td.ALCell / padding-top: 1.5em; / reduce this value)?.</change>
 	<change type="agenda">Creazione di una piccola legenda delle convenzioni/"guida all'uso"
 		che permetta al lettore di capire come accedere alle informazioni contenute nell'edizione</change>
 	<change type="agenda">Use the glyph images (png) I have to show allographs</change>

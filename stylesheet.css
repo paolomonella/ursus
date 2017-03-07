@@ -83,7 +83,7 @@ td.ALCell {
 	/* I added the following line when I decided that the LL should only
 	 * appear on hover, not in a table row. This means that the ALCell is
 	 * now the uppermost row in the cell. */
-	padding-top: 1.5em;
+	padding-top: 0em;
 }
 
 td.ALCell.alphabemes:before, td.ALCell.alphabemes:after {
