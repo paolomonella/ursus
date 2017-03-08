@@ -424,12 +424,30 @@ var tagsetlist = [
 ##############################*/
 
 function showMe (it, box) {
-	  var vis = (box.checked) ? 'visible' : 'hidden';
-	  [].forEach.call(document.querySelectorAll('.' + it), function (el) {
-		    el.style.visibility = vis;
-	  });
+	var vis = (box.checked) ? 'visible' : 'hidden';
+	[].forEach.call(document.querySelectorAll('.' + it), function (el) {
+		el.style.visibility = vis;
+		});
+	/*
+	// Uncomment this code block to 
+	// make the interlinear space vary when only one layer is visible.
+	if ( it == 'GL' && vis != 'visible' )
+	{
+	alert('Reducing interlinear space');
+	[].forEach.call(document.querySelectorAll('.ALCell'), function (elx) {
+		elx.style.paddingTop = '0em';
+		});
+	}
+	else
+	{
+	alert('Increasing interlinear space');
+	[].forEach.call(document.querySelectorAll('.ALCell'), function (ilx) {
+		ilx.style.paddingTop = '1.5em';
+		});
+	}
+	*/
 }
-
+	
 function translateAnaString(inputAnaString) {
 	var anaList = [];	 // trasforma § write in append (push) to list
 	for (var i = 0; i < tagsetlist.length; i++) {
@@ -671,30 +689,30 @@ function computeWordLikeElements(refElement) {
 		else if (e.tagName == 'pb' || e.tagName == 'cb') {
 			// <pb> or <cb> (they always occur outside <w>)
 			pbCbN = e.attributes.getNamedItem('n').nodeValue;
+			var divPbCb  = classyElem('div', e.tagName, ''); // Create a <div class="pb"> or class="cb"
+			var divPbCbAIcon = document.createElement('img'); // Create an <img> element
+			divPbCbAIcon.setAttribute('src', 'icons/'+e.tagName+'.png'); //Add src="icons/pb.png" or src="icons/cb.png"
 			if (e.tagName == 'pb') {
-				var pbCbTextString = '[Start of folio '+pbCbN+']';
-				var divPbCb  = classyElem('div', e.tagName, '');
+				var pbCbTextString = 'Start of folio '+pbCbN;
+				divPbCbAIcon.setAttribute('title', pbCbTextString); // Add title="Start of folio..." to <img>
 				// Check if the folio number has one digit only
 				var patt = /^\d\D/g;	// 2 digit chars followed by a non-digit char. E.g.: '12r'
 				if (patt.test(pbCbN)) {		// Like '2r'
-					pbCbN = '0' + pbCbN
+					pbCbN = '0' + pbCbN	// If folio is like '2r' (1 digit), make it like '02r'
 				}
 				// Create link to image file
 				var imgURL = 'manuscript_images/C_' + pbCbN + '.JPG';
 				var divPbCbA = document.createElement('a');
 				divPbCbA.setAttribute('href', imgURL);
-				var divPbCbAText = document.createTextNode(pbCbTextString);
-				divPbCbA.appendChild(divPbCbAText);
-				divPbCb.appendChild(divPbCbA);
-				document.getElementById('MSText').appendChild(divPbCb);
+				divPbCbA.appendChild(divPbCbAIcon); // Insert <img> into <a>
+				divPbCb.appendChild(divPbCbA);	// Insert <a> into <div>
 			}
 			else if (e.tagName == 'cb') {
-				var pbCbTextString = '[Start of column ' + pbCbN.split('.')[1];
-				pbCbTextString += ' of folio ' + pbCbN.split('.')[0] + ']';
-				document.getElementById('MSText').appendChild(
-						classyElem('div', e.tagName, pbCbTextString)
-						);
+				var pbCbTextString = 'Column '+pbCbN.split('.')[1]+' of folio '+pbCbN.split('.')[0];
+				divPbCbAIcon.setAttribute('title', pbCbTextString); // Add title="Start of column..." to <img>
+				divPbCb.appendChild(divPbCbAIcon); // Insert <img> into <div>
 			}
+			document.getElementById('MSText').appendChild(divPbCb); //Insert <div> into the main <div> of the page
 		}
 
 		else if (e.tagName == 'pc') {
@@ -758,12 +776,13 @@ function computeWordLikeElements(refElement) {
 		} // End of 'add'/'unclear'
 
 		else if (e.tagName == 'note') {
-			// <note> outside of <w>
+			// <note> outside of <w>, i.e. note to section
 			expandableDiv(
 					document.getElementById('MSText'),
 					'note outsideWord '+e.attributes.getNamedItem('type').nodeValue,
 					'note noteToggleLink',
-					'Note to section (' + e.attributes.getNamedItem('type').nodeValue + ')',
+					//'Note to section (' + e.attributes.getNamedItem('type').nodeValue + ')',
+					'*',
 					e.childNodes[0].nodeValue.trim()
 					);
 		}
@@ -935,7 +954,8 @@ function wordify(word) {
 					cells[1], // Now notes to word are appended to the AL cell row
 					'note withinword '+n.attributes.getNamedItem('type').nodeValue,
 					'note noteToggleLink',
-					'Note to word (' + n.attributes.getNamedItem('type').nodeValue + ')',
+					//'Note to word (' + n.attributes.getNamedItem('type').nodeValue + ')',
+					'*',
 					n.childNodes[0].nodeValue.trim()
 					);
 		}
@@ -1274,7 +1294,7 @@ function readXML() {
 		} // End of 'for each child of <ab>
 	} // End of 'for each <ab>'
 
-// The next line makes sure that at the first load of the page, the GL is not visualized
-showMe('GL', document.getElementsByName('cGL'));
+// The next line makes sure that at the first load of the page, the GL is not visualized (if I did not set checked="checked" in the .html file)
+//showMe('GL', document.getElementsByName('cGL'));
 
 }	// End of function readXML()
