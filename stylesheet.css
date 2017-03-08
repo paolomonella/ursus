@@ -139,8 +139,10 @@ span.AL.gap, span.GL.gap {
 	background-color: #CCFFCC;
 }
 
-.note, .source, .pb, .cb{
+/* .note, .source, .pb, .cb{ */
+.source, .pb, .cb{
 	font-size: 0.8em;
+	/* Whatch out: I'm setting font-size back to 1em in div.note.source below */
 }
 
 div.note {
@@ -154,28 +156,38 @@ div.note {
 }
 
 div.note.tech {
-	background-color: #A9F5E1;
+	background-color: #A9F5E1; /* Light blue */
 }
 
-div.note.script {
-	background-color: #F2F5A9;
-}
-div.note.graphic {
-	background-color: #F2F5A9;
+div.note.script , div.note.graphic {
+	background-color: #FFFF66; /* Yellow */
+	/* background-color: #F2F5A9; /* Yellow */
 }
 
 div.note.source {
-	background-color: #ddf981;
+	/* background-color: #ddf981; /* Light green */
+	background-color: #99FF00;	/* Green: the same as the source start or end */
+	font-size: 1em;
 }
 
 div.note.content {
-	background-color: #F5D0A9;
+	/* background-color: #F5D0A9; */
+	background-color: navy;
+}
+
+div.note.content * , div.note.emendation * {
+	/* color: #A9F5E1; */
+	color: silver;
 }
 
 div.note.emendation {
-	background-color: #F5D0A9;
+	/*background-color: #F5D0A9; 	/* Pink */
+	background-color: maroon; 	
 }
 
+div.note > a {
+	text-decoration: none; /* No underlining */
+}
 
 div.note.contentDiv, div.source.contentDiv {
 	width: 15em;
@@ -185,13 +197,14 @@ div.note.contentDiv, div.source.contentDiv {
 div.pb, div.cb {
 	display:inline-block;
 	vertical-align: bottom;
+	/*
 	border:2px dotted white;
 	padding:0.2em; 
 	margin: 0.5em 0.5em 0em 0.5em;
 	width: 5em;
-
 	background-color: #003333;
 	color: grey;
+	*/
 }
 
 div.pb a {
