@@ -18,10 +18,11 @@
 	<change type="agenda">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
 	<change type="agenda">Notazioni più snelle (magari con icone) per le note in modo da dare
 		all'intera pagina un aspetto meno "overwhelming"</change>
-	<change type="agenda">If only AL is shown, have less 'interlinear' space between rows
-		(css / td.ALCell / padding-top: 1.5em; / reduce this value)?.</change>
-	<change type="agenda">Creazione di una piccola legenda delle convenzioni/"guida all'uso"
-		che permetta al lettore di capire come accedere alle informazioni contenute nell'edizione</change>
+	<change type="agenda">Add to legenda: line numbers, pace=above, abbreviations and brevigraphs, underlining
+		for abbreviations, grey rectangles for space at GL, space within the word,
+		larger initials and dropcaps, punctuation (?) at GL and AL/LL, greek words, nonsense words and other
+		@type(s) of words (e.g. ancientAbbreviation). My own paragraph titles.
+		Pretty much everhthing is in css.</change>
 	<change type="agenda">Use the glyph images (png) I have to show allographs</change>
 	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
 	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
@@ -38,15 +39,18 @@
 	<change type="agenda">Tidy up the documentation (starting from its two 'sgn' bookmarks).</change>
 </listChange>
 
-<listChange type="improvements">
+<listChange type="lemmatization">
 	<change type="agenda">Check lemmatization: when I finish, I'll set variable 'viewLL'
 		in jsparser.js back to 'true'</change>
-	<change type="agenda">Lemmatization: check treetagger documentation</change>
-	<change type="agenda">Lemmatization/treetagger docs: does treetagger make a difference
+	<change type="agenda">Check treetagger documentation</change>
+	<change type="agenda">Treetagger docs: does treetagger make a difference
 		between capitalized and uncapitalized words?</change>
-	<change type="agenda">Lemmatization/treetagger docs: can you pass arguments to treetagger from the command line?</change>
-	<change type="agenda">Lemmatization/treetagger docs: can you make it take punctuation in the sentence into account?</change>
-	<change type="agenda">Lemmatization/treetagger docs: what to do with Greek nouns?</change>
+	<change type="agenda">Treetagger docs: can you pass arguments to treetagger from the command line?</change>
+	<change type="agenda">Treetagger docs: can you make it take punctuation in the sentence into account?</change>
+	<change type="agenda">Treetagger docs: what to do with Greek nouns?</change>
+</listChange>
+
+<listChange type="improvements">
 	<change type="agenda">Problema di visualizzazione: quando inserisco un segno di punteggiatura
 		a livello AL/LL non corrispondente ad alcun segno sul manoscritto, nel browser comunque spunta
 		nella riga GL uno spazio. Potrei usare [pc n="."] [/pc] (cioè uno spazio al GL che 'significa'
@@ -111,11 +115,13 @@
 		seguiti da 'lb'. In VIM l'andata a capo è \n</change>
 	<change type="done" when="2017-03-05">In notes, always write Priscian, Ars grammatica
 		(and not Institutiones et sim.).</change>
-	<change type="2017-03-06">Unify all 'agenda' items in this list: move here those items that currently
+	<change type="done" when="2017-03-06">Unify all 'agenda' items in this list: move here those items that currently
 		are in my agenda file (and possibly also scattered elsewhere).</change>
 </listChange>
 
 <listChange type="skipped">
+	<change type="skipped">If only AL is shown, have less 'interlinear' space between rows
+		(css / td.ALCell / padding-top: 1.5em; / reduce this value)?.</change>
 	<change type="skipped">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC:
 		The c (character) element should be used to mark up any non-lexical character,
 		whether this appears within a word, or outside it. In the following example, the
