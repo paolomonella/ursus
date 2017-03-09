@@ -16,17 +16,12 @@
 
 <listChange type="critical" ordered="true">
 	<change type="agenda">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
-	<change type="agenda">Notazioni più snelle (magari con icone) per le note in modo da dare
-		all'intera pagina un aspetto meno "overwhelming"</change>
-	<change type="agenda">Add to legenda: line numbers, pace=above, abbreviations and brevigraphs, underlining
-		for abbreviations, grey rectangles for space at GL, space within the word,
-		larger initials and dropcaps, punctuation (?) at GL and AL/LL, greek words, nonsense words and other
-		@type(s) of words (e.g. ancientAbbreviation). My own paragraph titles.
-		Pretty much everhthing is in css.</change>
+	<change type="agenda">Add to legenda: Pretty much everything is in css (take a look at the whole css to check).</change>
+	<change type="agenda">Show table of signs</change>
 	<change type="agenda">Use the glyph images (png) I have to show allographs</change>
 	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
 	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
-	<change type="agenda">Far spuntare il testo di Keil dal CLG direttamente dal link, ma
+	<change type="agenda">CTS: Far spuntare il testo di Keil dal CLG direttamente dal link, ma
 		copiato/incollato nel mio progetto (a meno che non si riesca a fare un link al sito CLG)</change>
 	<change type="agenda">I always put a space at the end of the lb, cb, pb elements (XHTML-style).
 		I am afraid that this is not the TEI-style, and that TEI has no space at the end of such elements:
@@ -117,6 +112,8 @@
 		(and not Institutiones et sim.).</change>
 	<change type="done" when="2017-03-06">Unify all 'agenda' items in this list: move here those items that currently
 		are in my agenda file (and possibly also scattered elsewhere).</change>
+	<change type="done" date="2017-03-08">Notazioni più snelle (magari con icone) per le note in modo da dare
+		all'intera pagina un aspetto meno "overwhelming"</change>
 </listChange>
 
 <listChange type="skipped">
