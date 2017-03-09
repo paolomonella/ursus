@@ -23,32 +23,14 @@ div.abTitle {
 	font-size: 1.5em;
 }
 
-div.source {
-	display:inline-block;
-	vertical-align: bottom;
-	/*width: 15em;*/
-	/*height: 5em;*/
-	font-size: 0.8em;
-	border:0.3em brown;
-	padding:0.2em; 
-	margin: 0.5em 0.5em 0em 0.5em;
-	background-color: #99FF00;
-	color: brown;
-}
-
-div.source.start {
-	border-style: dotted none dotted solid;
-	border-left: solid 0.4em;
-}
-
-div.source.end {
-	border-style: dotted solid dotted none;
-	border-right: solid 0.4em;
-	/* background-color: #CCFF66; */
-}
 
 
-/* This was needed when the LL row was diplayed. It applied to the
+
+/************************/
+/* THE 3 TEXTUAL LAYERS */
+/************************/
+
+/* This was needed when the LL row was displayed. It applied to the
  * visualization including only the modern spelling (e.g.: artis)
 .LL {
 	color: blue;
@@ -86,6 +68,14 @@ td.ALCell {
 	padding-top: 1.5em;
 }
 
+
+
+
+
+/*********************************/
+/* TYPES OF WORDS <w type="..."> */
+/*********************************/
+
 td.ALCell.alphabemes:before, td.ALCell.alphabemes:after {
 	/* XML: <w type="alphabemes">
 	 * HTML DOM: <td class="ALCell alphabemes"> */
@@ -105,9 +95,47 @@ td.ALCell.foreign, td.ALCell.ancientAbbreviation, td.ALCell.numeral {
 	font-variant: small-caps;
 }
 
+
+
+
+
+/**********/
+/* TABLES */
+/**********/
+
 table {
 	display: inline-table;
 }
+
+
+
+/*****************/
+/* LEGENDA TABLE */
+/*****************/
+
+table#legendaTable, table#legendaTable td {
+	/* border: 2px solid gray; */
+	border: none;
+	padding: 5px;
+}
+
+table#legendaTable, table#legendaTable td.separator {
+	border: none;
+}
+
+table#legendaTable td.separator {
+	width: 15px;
+}
+
+table#legendaTable td.iconRow {
+	text-align: center;
+	border: 2px solid gray;
+}
+
+
+/****************/
+/* OTHER TABLES */
+/****************/
 
 table.wordTable td {
 }
@@ -120,6 +148,13 @@ table.gapTable td {
 
 table.spaceTable td {
 }
+
+
+
+
+/********************************/
+/* DROPCAP, LARGER INITIAL, GAP */
+/********************************/
 
 span.GL.dropcap { 
 	/*font-weight: bold;*/
@@ -139,10 +174,41 @@ span.AL.gap, span.GL.gap {
 	background-color: #CCFFCC;
 }
 
+
+
+
+/*********************/
+/* NOTES AND SOURCES */
+/*********************/
+
 /* .note, .source, .pb, .cb{ */
 .source, .pb, .cb{
 	font-size: 0.8em;
 	/* Whatch out: I'm setting font-size back to 1em in div.note.source below */
+}
+
+div.source {
+	display:inline-block;
+	vertical-align: bottom;
+	/*width: 15em;*/
+	/*height: 5em;*/
+	font-size: 0.8em;
+	border:0.3em brown;
+	padding:0.2em; 
+	margin: 0.5em 0.5em 0em 0.5em;
+	background-color: #99FF00;
+	color: brown;
+}
+
+div.source.start {
+	border-style: dotted none dotted solid;
+	border-left: solid 0.4em;
+}
+
+div.source.end {
+	border-style: dotted solid dotted none;
+	border-right: solid 0.4em;
+	/* background-color: #CCFF66; */
 }
 
 div.note {
@@ -194,6 +260,13 @@ div.note.contentDiv, div.source.contentDiv {
 	border:none;
 }
 
+
+
+
+/***********************************/
+/* PAGE-/COLUMN-/LINE-BREAK, SPACE */
+/***********************************/
+
 div.pb, div.cb {
 	display:inline-block;
 	vertical-align: bottom;
@@ -227,6 +300,13 @@ span.GL.space {
 	color: #CCCCCC; 		/* nuovo */
 	background-color: #CCCCCC; 	/* nuovo */
 }
+
+
+
+
+/*****************/
+/* ABBREVIATIONS */
+/*****************/
 
 span.GL.base.superscription {
 	color: red;
@@ -266,6 +346,14 @@ span.AL.notAbbreviated {
 span.GL.notAbbreviated {
 }
 
+
+
+
+
+/***********/
+/* UNCLEAR */
+/***********/
+
 span.unclear.certhigh td.GLCell {
 	background-color: #E0E0E0;
 }
@@ -277,6 +365,12 @@ span.unclear.certmedium td.GLCell {
 span.unclear.certlow td.GLCell {
 	background-color: #909090;
 }
+
+
+
+
+
+/* TEXT IN INTERLINEAR SPACE <add place="above"> */
 
 span.add.wholeword.placeabove td.GLCell {
 	/* This applies to original <add place="above"> being _parent_ of <w>, at the GL */
