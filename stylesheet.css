@@ -45,10 +45,7 @@ div.abTitle {
 */
 
 .AL {
-	/*It was
-	 * color: orange;
-	 * before I decided not to display a separate row for the LL*/
-	color: blue;
+	color: blue; /*It was orange before I decided not to display a separate row for the LL*/
 }
 
 .GL {
@@ -127,7 +124,7 @@ table#legendaTable td.separator {
 	width: 15px;
 }
 
-table#legendaTable td.iconRow {
+table#legendaTable td.iconRow, table#legendaTable th {
 	text-align: center;
 	border: 2px solid gray;
 }
@@ -208,7 +205,6 @@ div.source.start {
 div.source.end {
 	border-style: dotted solid dotted none;
 	border-right: solid 0.4em;
-	/* background-color: #CCFF66; */
 }
 
 div.note {
@@ -221,6 +217,13 @@ div.note {
 	background-color: #F2F5A9;
 }
 
+div.note.source {
+	/* background-color: #ddf981; /* Light green */
+	background-color: #99FF00;	/* Green: the same as the source start or end */
+	color: black;
+	font-size: 1em;
+}
+
 div.note.tech {
 	background-color: #A9F5E1; /* Light blue */
 }
@@ -228,12 +231,6 @@ div.note.tech {
 div.note.script , div.note.graphic {
 	background-color: #FFFF66; /* Yellow */
 	/* background-color: #F2F5A9; /* Yellow */
-}
-
-div.note.source {
-	/* background-color: #ddf981; /* Light green */
-	background-color: #99FF00;	/* Green: the same as the source start or end */
-	font-size: 1em;
 }
 
 div.note.content {
@@ -256,7 +253,7 @@ div.note > a {
 }
 
 div.note.contentDiv, div.source.contentDiv {
-	width: 15em;
+	width: 25em; /* It was 15em */
 	border:none;
 }
 
