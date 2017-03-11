@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it"> 
+
+<head>
+  <title>Graphemic table of signs</title>
+  <meta http-equiv="Content-Type" content=  "text/html; charset=utf-8" />
+  <meta name="author" content="Paolo Monella" />
+  <meta name="description" content="Graphemic Table of Signs, Ursus Project" />
+  <meta name="generator" content="vim" />
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+  <script language="JavaScript1.2" for="window" event="onload" src="jsparser.js"></script>
+</head>
+
+ <body onload="javascript:tableOfSignsToHTMLTable();">
+
+	 <h1>Graphemic table of signs (GToS)</h1>
+	 <!-- <h2>Ursus from Benevento, <em>De nomine</em></h2> -->
+	
+
+ 	<div id="gtosDiv">
+
+		<h2>Legenda of column headings</h2>
+		<dl id="gtosLegenda">
+				<dt>
+					Grapheme
+				</dt>
+				<dd>
+					The Unicode character used in the TEI XML source code to encode the grapheme
+				</dd>
+			
+			
+				<dt>
+					Alphabeme
+				</dt>
+				<dd>
+					The standard alphabetic meaning, if any, of the grapheme.
+					In other words, this is the alphabetic letter (alphabeme)
+					that the grapheme ordinarily means,
+					if the graphemes is of type "alphabetic".
+					These Unicode characters will populate the Alphabetic Layer.
+				</dd>
+			
+			
+				<dt>
+					Grapheme visualization 
+				</dt>
+				<dd>
+					The Unicode character used to visualize the grapheme in the HTML file. 
+					These Unicode characters will populate the Graphematic Layer.
+				</dd>
+			
+			
+				<dt>
+					Type 
+				</dt>
+				<dd>
+					Alphabetic (a grapheme representing one or more alphabemes);
+					Space (space between graphic words is considered a grapheme too);
+					Punctuation;
+					Abbreviation mark (a mark that combines with an alphabetic grapheme
+					&ndash; above or after it &ndash; to create an abbreviation);
+					Brevigraph (an individual grapheme that means more than one grapheme);
+				</dd>
+		</dl>
+
+		<h2>Table</h2>
+
+		<table id="gtosHtmlTable">
+		</table>
+
+	 </div>
+
+ </body>
+</html>
