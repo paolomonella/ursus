@@ -424,6 +424,7 @@ var tagsetlist = [
 ##############################*/
 
 function showMe (it, box) {
+	// This function lets the user choose which layer (GL and/or AL) to visualize
 	var vis = (box.checked) ? 'visible' : 'hidden';
 	[].forEach.call(document.querySelectorAll('.' + it), function (el) {
 		el.style.visibility = vis;
@@ -447,7 +448,7 @@ function showMe (it, box) {
 	}
 	*/
 }
-	
+
 function translateAnaString(inputAnaString) {
 	var anaList = [];	 // trasforma § write in append (push) to list
 	for (var i = 0; i < tagsetlist.length; i++) {
@@ -465,7 +466,9 @@ function importTableOfSigns(csvFile) {
 	// 	element 0 is the character representing a grapheme
 	// 	element 1 is the character representing the corresponding alphabeme
 	// 	element 2 is the character to use to visualize the grapheme in an browser
-	// 		(as of 06.01.2015, I'm not using element 2)
+	// 	element 3 is  the 'type'  (Alphabetic, punctuation etc.)
+	// 	element 4 are the 'notes'
+	// 	element 5 are the JPG images of the allographs 
 	var xmlhttp;
 	xmlhttp=new XMLHttpRequest();
 	xmlhttp.open('GET', csvFile, false);
@@ -480,8 +483,52 @@ function importTableOfSigns(csvFile) {
 		ToS[igl][0] = ToSCells[0];
 		ToS[igl][1] = ToSCells[1];
 		ToS[igl][2] = ToSCells[2];
+		ToS[igl][3] = ToSCells[3];	// Only used when showing the GToS in an HTML table
+		ToS[igl][4] = ToSCells[4];	// Only used when showing the GToS in an HTML table
+		ToS[igl][5] = ToSCells[5];	// Only used when showing the GToS in an HTML table
 		}
 	return ToS;
+}
+
+function tableOfSignsToHTMLTable() {
+	// This function transforms the table of sign into an HTML table.
+	// It should be called by a gtos.html file
+	for (var igx = 0; igx < gtos.length; igx++) {
+		gtosTr = document.createElement('tr');
+		document.getElementById('gtosHtmlTable').appendChild(gtosTr);
+		for (var igy = 0; igy < gtos[igx].length; igy++) {
+
+			// Create THs for first row, TDs for the next rows
+			if ( igx == 0 ) { gtosTd = document.createElement('th'); }
+			else { gtosTd = document.createElement('td'); }
+
+			// Set column width
+			if ( igy == 4 ) { gtosTd.setAttribute('width', '400px'); }
+			else if (igy == 2) { gtosTd.setAttribute('width', '10px') }
+
+			if ( igy == 5 && typeof(gtos[igx][igy]) != 'undefined' && igx != 0) {
+				//alert(gtos[igx][igy]);
+				var imagesList = gtos[igx][igy].split(' '); // Filenames in the CSV cell are separated by spaces
+				var gtosTdString = '';
+				for (var imgx = 0; imgx < imagesList.length; imgx++) {	// For each filename in the image list
+					var imgElem = document.createElement('img');
+					imgElem.setAttribute('src', 'glyph_images/' + imagesList[imgx]);
+					//imgElem.setAttribute('height', '50px');
+					imgElem.setAttribute('alt', imagesList[imgx]);
+					gtosTd.appendChild(imgElem);
+					}
+				}
+
+
+			// ...else, create a simple text node and append it
+			else if ( typeof(gtos[igx][igy]) != 'undefined' ) {
+				gtosTdTextNode  = document.createTextNode(gtos[igx][igy]);
+				gtosTd.appendChild(gtosTdTextNode);
+			}
+
+			gtosTr.appendChild(gtosTd);
+		}
+	}
 }
 
 function graph(myString) {
@@ -1184,62 +1231,27 @@ function tagsetify(tagsetAna) {
 #    FUNCTION READING EXTERNAL XML FILE #
 #######################################*/
 
-/* This code detects the browser:  */
-
-// Source: http://stackoverflow.com/questions/4565112/javascript-how-to-find-out-if-the-user-browser-is-chrome#13348618
-// Please note, 
-// that IE11 now returns undefined again for window.chrome
-// and new Opera 30 outputs true for window.chrome
-// and new IE Edge outputs to true now for window.chrome
-// and if not iOS Chrome check
-// so use the below updated condition
-var isChromium = window.chrome,
-    winNav = window.navigator,
-    vendorName = winNav.vendor,
-    isOpera = winNav.userAgent.indexOf("OPR") > -1,
-    isIEedge = winNav.userAgent.indexOf("Edge") > -1,
-    isIOSChrome = winNav.userAgent.match("CriOS"),
-    isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
-if(isIOSChrome){
-    // is Google Chrome on IOS
-} else if(isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false && isIEedge == false) {
-   var isChrome = true // is Google Chrome
-} else { 
-   // not Google Chrome 
-}
-
-
-
-/* The following code reads the external XML file, depending on the browser.
- * Source: http://www.w3schools.com/xml/loadxmldoc.asp */
+/* The following code reads the external XML file, depending on the browser. */
 
 function loadxml() {
-	if (window.ActiveXObject)		// Internet Explorer
-		{
-		xmlDoc=new ActiveXObject('Microsoft.XMLDOM');
-		xmlDoc.async=false;
-		xmlDoc.load('lemmatized_casanatensis.xml');
-		}
-	else if (isIOSChrome || isChrome || isSafari || isIEedge) // Chrome, Safari or Edge
-		{
-		var xmlhttp = new XMLHttpRequest();
-	        xmlhttp.open('GET', 'lemmatized_casanatensis.xml', false);
-	        xmlhttp.setRequestHeader('Content-Type', 'text/xml');
-	        xmlhttp.send('');
-	        xmlDoc = xmlhttp.responseXML;
-		readXML();
-		}
-	else if (document.implementation.createDocument && !isIEedge) // Mozilla, Firefox, Opera, etc.
-		{
-		xmlDoc=document.implementation.createDocument('','',null);
-		xmlDoc.load('lemmatized_casanatensis.xml');
-	        xmlDoc.onload = readXML;
-		}
-	else
-		{
-		alert('Your browser cannot visualize this edition');
-		}
+	if (window.XMLHttpRequest) {
+	    // Code for modern browsers
+	    xmlhttp = new XMLHttpRequest();
+	    xmlhttp.open('GET', 'lemmatized_casanatensis.xml', false);
+	    xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+	    xmlhttp.send('');
+	    xmlDoc = xmlhttp.responseXML;
+	    readXML();
+	 } else {
+	    // Code for old IE browsers
+	    // var xmlDoc=new ActiveXObject('Microsoft.XMLDOM'); // Old code, from http://www.w3schools.com/xml/loadxmldoc.asp
+	    xmlDoc = new ActiveXObject("Microsoft.XMLHTTP"); // New code, from https://www.w3schools.com/xml/xml_http.asp
+	    xmlDoc.async=false;
+	    xmlDoc.load('lemmatized_casanatensis.xml');
+	}
 }
+
+
 
 
 /*############################
