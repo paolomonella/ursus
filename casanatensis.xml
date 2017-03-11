@@ -17,7 +17,6 @@
 <listChange type="critical" ordered="true">
 	<change type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium. Test
 		on Safari and Edge at least.</change>
-	<change type="agenda">Use the glyph images (png) I have to show allographs</change>
 	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
 	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
 	<change type="agenda">CTS: Far spuntare il testo di Keil dal CLG direttamente dal link, ma
@@ -117,6 +116,7 @@
 	<change type="done" when="2017-03-11">Add to legenda: Pretty much everything is in css
 		(take a look at the whole css to check).</change>
 	<change type="done" date="2017-03-11">Show table of signs</change>
+	<change type="done" when="2017-03-11">Use the glyph images (png) I have to show allographs</change>
 </listChange>
 
 <listChange type="skipped">
