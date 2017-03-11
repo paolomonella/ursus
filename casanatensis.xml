@@ -15,6 +15,7 @@
     <revisionDesc>
 
 <listChange type="critical" ordered="true">
+	<change type="agenda">In gtos.html, don't create empty images are created in the 'images' row</change>
 	<change type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium. Test
 		on Safari and Edge at least.</change>
 	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
