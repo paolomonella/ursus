@@ -15,9 +15,8 @@
     <revisionDesc>
 
 <listChange type="critical" ordered="true">
-	<change type="agenda">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
-	<change type="agenda">Add to legenda: Pretty much everything is in css (take a look at the whole css to check).</change>
-	<change type="agenda">Show table of signs</change>
+	<change type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium. Test
+		on Safari and Edge at least.</change>
 	<change type="agenda">Use the glyph images (png) I have to show allographs</change>
 	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
 	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
@@ -104,6 +103,7 @@
 		when I do not. This only is to check until the first note with type "emendation".</change>
 	<change type="done" when="2017-02">Specifica i type di 'note' con i due nuovi tipi 'emendation'
 		e 'graphic'. Ricomincia dalla parola w28905 andando a ritroso.</change>
+	<change type="done" when="2017-03-01">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
 	<change type="done" when="2017-03-05">Periodicamente: check for '0' after closing tags
 		(due to @f or @d in .vimrc).</change>
 	<change type="done" when="2017-03-05">Ricordarsi periodicamente di togliere gli spazi (tag 'pc space')
@@ -114,6 +114,9 @@
 		are in my agenda file (and possibly also scattered elsewhere).</change>
 	<change type="done" date="2017-03-08">Notazioni più snelle (magari con icone) per le note in modo da dare
 		all'intera pagina un aspetto meno "overwhelming"</change>
+	<change type="done" when="2017-03-11">Add to legenda: Pretty much everything is in css
+		(take a look at the whole css to check).</change>
+	<change type="done" date="2017-03-11">Show table of signs</change>
 </listChange>
 
 <listChange type="skipped">
