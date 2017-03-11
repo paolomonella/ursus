@@ -129,6 +129,29 @@ table#legendaTable td.iconRow, table#legendaTable th {
 	border: 2px solid gray;
 }
 
+/**************/
+/* GTOS TABLE */
+/**************/
+
+dl#gtosLegenda dt {
+	font-style: italic;
+	margin-top: 0.5em;
+}
+
+table#gtosHtmlTable * {
+	/* border: 1px solid gray; */
+	border-collapse: collapse;
+	text-align: center;
+	padding: 5px;
+}
+
+table#gtosHtmlTable td {
+	margin: 150px;
+}
+
+table#gtosHtmlTable tr:nth-child(even) {background: #CCC}
+table#gtosHtmlTable tr:nth-child(odd) {background: #FFF}
+
 
 /****************/
 /* OTHER TABLES */
