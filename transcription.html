@@ -22,27 +22,25 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	 <h1>Ursus from Benevento, <em>De nomine</em>
 	</h1>
 	<div class="disclaimer">
-		<p>An experimental scholarly digital edition
-		of the <em>De nomine</em> of Ursus from Benevento from codex Casanatensis 1086 by
-			<a href="http://www.unipa.it/paolo.monella">Paolo Monella</a>, created
-			within the <a href="http://www.alim.dfll.univr.it/">ALIM Project</a>,
-			2016 (work in progress).</p>
-		<p>What you see on this page is the JavaScript transformation of the XML/TEI source code.
+		<p>An <em>experimental</em> scholarly digital edition
+		of section <em>De nomine</em> of the <em>Adbreviatio artis grammaticae</em> by Ursus from Benevento
+		from codex Casanatensis 1086, edited by
+			<a href="http://www.unipa.it/paolo.monella">Paolo Monella</a> 
+			within the <a href="http://www.alim.dfll.univr.it/">ALIM Project</a> (2016).
+			<!--  (work in progress). --></p>
+		<p>What you see on this page is the JavaScript visualization of the XML/TEI source code.
 			For more information on the Ursus Project, the full documentation and for
 			the source code (including XML/TEI and JavaScript), see the
 			<a href="https://github.com/paolomonella/ursus">project home page on GitHub</a>.
 		</p>
 		<p>
-			<em>Warning</em>: I tested this page on Mozilla Firefox (recommended browser),
-			Chrome, Safari and Edge.
-			Please note that the linguistic layer has not been reviewed yet.
+			Recommended browser: Mozilla Firefox. The page was also tested on Chrome, Safari and Edge.
+			<!-- Please note that the linguistic layer has not been reviewed yet. -->
 		</p>
 		<p>
 			<strong><em>Note</em>: Please allow about 10 seconds for the page to load
 			(or to reload after checking/unckecking one of the checkboxes).</strong>
 		</p>
-	</div>
-
 	<form>
 	<!-- <input type="checkbox" checked="true" name="cLL" onclick="showLL(this); window.location.reload(true)">Show Linguistic Layer</input> -->
 	<input type="checkbox" id="cAL" name="cAL" onclick="showMe('AL', this)" checked="checked">Show Alphabetic Layer (blue)</input>
@@ -51,56 +49,28 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	<input type="checkbox" id="cGL" name="cGL" onclick="showMe('GL', this)" checked="checked">Show Graphematic Layer (black)</input>
 	</form>
 
+	</div>
+
+
+
 	<div id="legendaDiv">
-		<h3>Legenda</h3>
 		<table id="legendaTable">
 			<tr>
+				<th colspan="5">Legenda</th>
+			</tr>
+			<tr>
+				<td class="iconRow"><img src="icons/abbr_brevigraph.png" alt="Layers" /></td>
+				<td>The black row below (<strong>Graphemic Layer</strong>) encodes the graphemes,
+					the blue row above (<strong>Alphabetic Layer</strong>) encodes the alphabetic
+					letters (alphabemes) represented by those graphemes.
+					In this case, grapheme "ꝑ" (in green) represents the three alphabetic letters
+					"p", "e" and "r" (underlined).</td>
+				<td class="separator"></td>
 				<td class="iconRow"><img src="icons/pb.png" alt="Start of new folio" width="31" /></td>
 				<td>Start of new <strong>folio</strong> (hover for folio number, click to see manuscript page image
 					-- <em>Note: images are currently unavailable due to copyright restrictions</em>)</td>
-				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/note_source.png" alt="Note on the source" /></td>
-				<td>Note on the <strong>source</strong></td>
 			</tr>
 			<tr>
-				<td class="iconRow"><img src="icons/cb.png" alt="Start of new column" width="31" /></td>
-				<td>Start of new <strong>column</strong> (hover for column number)</td>
-				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/note_content.png" alt="Note on the content" /></td>
-				<td>Note on the <strong>content</strong></td>
-			</tr>
-			<tr>
-				<td class="iconRow"><img src="icons/lb.png" alt="Start of new line" /></td>
-				<td>Start of new <strong>line</strong> (folio 1r, column 1, line 2)</td>
-				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/note_tech.png" alt="Note on technological issues" /></td>
-				<td>Note on <strong>technological</strong> issues</td>
-			</tr>
-			<tr>
-				<td class="iconRow"><img src="icons/gap.png" alt="Gap" height="28" /></td>
-				<td><strong>Gap</strong> (hover for gap extension in characters or words and for reason)</td>
-				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/note_emendation.png" alt="Emendation" /></td>
-				<td>Note on textual criticism or <strong>emendation</strong> (click to expand)</td>
-			</tr>
-			<tr>
-				<td class="iconRow"><img src="icons/unclear.png" alt="Unclear word" height="62" /></td>
-				<td><strong>Unclear</strong> word (darker shades of gray represent less clear reading)</td>
-				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/source_start.png" alt="Start of new source" width="62" /></td>
-				<td><strong>Start of source</strong> (click to expand)</td>
-			</tr>
-			<tr>
-				<td class="iconRow"><img src="icons/add.png" alt="Add" height="24" /></td>
-				<td>Text or graphemes ("in") written in the <strong>interlinear</strong> space</td>
-				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/source_end.png" alt="End of new source" width="62" /></td>
-				<td><strong>End of source</strong> (click to expand)</td>
-			</tr>
-			<tr>
-				<td class="iconRow"><img src="icons/dropcap.png" alt="Dropcap" /></td>
-				<td><strong>Dropcap</strong></td>
-				<td class="separator"></td>
 				<td class="iconRow"><img src="icons/abbr_superscript.png" alt="Superscription"  /></td>
 				<td>Abbreviation with <strong>superscript</strong> abbreviation mark: at the Graphemic Layer
 					the "base graphemes" (the graphemes above which the abbreviation mark
@@ -108,14 +78,79 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 					In this example, the macron spans above both graphems "q" and "m".
 					At the Alphabetic Layer the abbreviated alphabemes are
 					underlined, as for all abbreviation types</td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/cb.png" alt="Start of new column" width="31" /></td>
+				<td>Start of new <strong>column</strong> (hover for column number)</td>
 			</tr>
 			<tr>
-				<td class="iconRow"><img src="icons/larger_initial.png" alt="Larger initial" /></td>
-				<td><strong>Larger initial</strong></td>
-				<td class="separator"></td>
 				<td class="iconRow"><img src="icons/abbr_after.png" alt="After" /></td>
 				<td>Abbreviation with abbreviation mark written <strong>after</strong>
 					the base grapheme(s): purple</td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/lb.png" alt="Start of new line" /></td>
+				<td>Start of new <strong>line</strong> (folio 1r, column 1, line 2)</td>
+			</tr>
+			<tr>
+				<td class="iconRow"><img src="icons/abbr_brevigraph.png" alt="Brevigraph" /></td>
+				<td>Abbreviation through <strong>brevigraph</strong>
+					(no abbreviation mark, one specific grapheme only): green</td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/source_start.png" alt="Start of new source" width="62" /></td>
+				<td><strong>Start of source</strong> (click to expand)</td>
+			</tr>
+			<tr>
+				<td class="iconRow"><img src="icons/abbr_omission.png" alt="Omission" /></td>
+				<td>Abbreviation through <strong>omission</strong> of some graphemes (no abbreviation sign,
+					no specific brevigraph): pink</td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/source_end.png" alt="End of new source" width="62" /></td>
+				<td><strong>End of source</strong> (click to expand)</td>
+			</tr>
+			<tr>
+				<td class="iconRow"><img src="icons/space_between_words.png" alt="Space b/w words"  height="28"/></td>
+				<td><strong>Space between words</strong> in the manuscript (at Graphematic Layer): the MS has
+					a space between "et" and "in", and no space between "in" and "aliis"</td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/dropcap.png" alt="Dropcap" /></td>
+				<td><strong>Dropcap</strong></td>
+			</tr>
+			<tr>
+				<td class="iconRow"><img src="icons/space_within_word.png" alt="Space within word" height="28" /></td> 
+				<td><strong>Space</strong> in the manuscript (at Graphematic Layer)
+					<strong>within a linguistic word</strong></td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/larger_initial.png" alt="Larger initial" /></td>
+				<td><strong>Larger initial</strong></td>
+			</tr>
+			<tr>
+				<td class="iconRow"><img src="icons/unclear.png" alt="Unclear word" height="28" /></td>
+				<td><strong>Unclear</strong> word (darker shades of gray represent less clear reading)</td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/add.png" alt="Add" height="24" /></td>
+				<td>Text or graphemes ("in") written in the <strong>interlinear</strong> space</td>
+			</tr>
+			<tr>
+				<td class="iconRow"><img src="icons/word_nonsense.png" alt="Nonsense" height="62" /></td>
+				<td>Italics in the blue line at the Alphabetic Layer mark <strong>nonsensical</strong>
+					words (due, in this example, to a gap that makes the word unintelligible)</td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/note_emendation.png" alt="Emendation" /></td>
+				<td>Note on textual criticism or <strong>emendation</strong> (click to expand)</td>
+			</tr>
+			<tr>
+				<td class="iconRow"><img src="icons/gap.png" alt="Gap" height="28" /></td>
+				<td><strong>Gap</strong> (hover for gap extension in characters or words and for reason)</td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/note_content.png" alt="Note on the content" /></td>
+				<td>Note on the <strong>content</strong></td>
+			</tr>
+			<tr>
+				<td class="iconRow"><img src="icons/word_alphabemes.png" alt="Alphabemes" /></td>
+				<td>Quotes in the blue line mark groups of <strong>alphabemes</strong>
+					(not actual linguistic words)</td>
+				<td class="separator"></td>
+				<td class="iconRow"><img src="icons/note_source.png" alt="Note on the source" /></td>
+				<td>Note on the <strong>source</strong></td>
 			</tr>
 			<tr>
 				<td class="iconRow"><img src="icons/word_foreign.png" alt="Foreign" /></td>
@@ -123,45 +158,18 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 					ancient <strong>abbreviations</strong> ("gn" for "Gnaeus")
 					and Roman <strong>numerals</strong> ("xxxiiii" for 34)</td>
 				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/abbr_brevigraph.png" alt="Brevigraph" /></td>
-				<td>Abbreviation through <strong>brevigraph</strong>
-					(no abbreviation mark, one specific grapheme only): green</td>
+				<td class="iconRow"><img src="icons/note_script_graphic.png" alt="Note script or graphic" /></td>
+				<td>Note on the <strong>script</strong> or on glyphs with no graphemic value (e.g. allographs)</td>
 			</tr>
 			<tr>
-				<td class="iconRow"><img src="icons/word_alphabemes.png" alt="Alphabemes" /></td>
-				<td>Quotes in the blue line mark groups of <strong>alphabemes</strong>
-					(not actual linguistic words)</td>
-				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/abbr_omission.png" alt="Omission" /></td>
-				<td>Abbreviation through <strong>omission</strong> of some graphemes (no abbreviation sign,
-					no specific brevigraph): pink</td>
-			</tr>
-			<tr>
-				<td class="iconRow"><img src="icons/word_nonsense.png" alt="Nonsense" height="62" /></td>
-				<td>Italics in the blue line at the Alphabetic Layer mark <strong>nonsensical</strong>
-					words (due, in this example, to a gap that makes the word unintelligible)</td>
-				<!-- sgn -->
-				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/space_between_words.png" alt="Space b/w words"  height="28"/></td>
-				<td><strong>Space between words</strong> in the manuscript (at Graphematic Layer): the MS has
-					a space between "et" and "in", and no space between "in" and "aliis"</td>
-			</tr>
-			<tr>
-				<td class="iconRow"><img src="icons/heading.png" alt="Heading" height="32" /></td>
+				<!-- <td class="iconRow"><img src="icons/heading.png" alt="Heading" height="32" /></td> -->
+				<td class="iconRow"><img src="icons/heading.png" alt="Heading" width="150" /></td>
 				<td>Section <strong>heading</strong> (not present in the manuscript, added by the editor)</td>
 				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/space_within_word.png" alt="Space within word" height="28" /></td>
-				<td><strong>Space</strong> in the manuscript (at Graphematic Layer)
-					<strong>within a linguistic word</strong></td>
+				<td class="iconRow"><img src="icons/note_tech.png" alt="Note on technological issues" /></td>
+				<td>Note on <strong>technological</strong> issues</td>
 			</tr>
 			<!--
-			<tr>
-				<td class="iconRow"><img src="icons/" alt="" height="62" /></td>
-				<td>...</td>
-				<td class="separator"></td>
-				<td class="iconRow"><img src="icons/" alt="" height="62" /></td>
-				<td>...</td>
-			</tr>
 			<tr>
 				<td class="iconRow"><img src="icons/" alt="" height="62" /></td>
 				<td>...</td>
@@ -194,6 +202,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 		</table>
 
 	</div>
+
+
 
  	<div id="MSText">
 	 </div>
