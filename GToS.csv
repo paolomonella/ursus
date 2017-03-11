@@ -4,7 +4,7 @@ b	b	b	Alphabetic			1
 c	c	c	Alphabetic			1	
 d	d	d	Alphabetic			1	
 e	e	e	Alphabetic			1	
-æ	ae	ę	Alphabetic	'E caudatum': an 'e' grapheme with a tail on the bottom left or left side. It is often (but not always) used to represent an alphabeme 'e' in lieu of which in classical and modern Latin orthography we would have the diphthong 'ae'. When it is not represented by the 'æ' grapheme, it is represeented by a simple 'e' grapheme. It has one allograph with the tail underneath the body of the grapheme, turning right, and a second allograph with the tail on the left of the body (mostly in ligatures).			
+æ	ae	ę	Alphabetic	'E caudatum': an 'e' grapheme with a tail on the bottom left or left side. It is often (but not always) used to represent an alphabeme 'e' in lieu of which in classical and modern Latin orthography we would have the diphthong 'ae'. When it is not represented by the 'æ' grapheme, it is represeented by a simple 'e' grapheme. It has one allograph with the tail underneath the body of the grapheme, turning right, and a second allograph with the tail on the left of the body (mostly in ligatures).	ecaudatum1.png ecaudatum2.png	1	1r.a.9
 f	f	f	Alphabetic			1	
 g	g	g	Alphabetic			1	1r.a.7
 h	h	h	Alphabetic			1	
@@ -23,7 +23,7 @@ u	u	u	Alphabetic			1
 x	x	x	Alphabetic			1	1r.a.17
 y	y	y	Alphabetic			1	1r.a.6
 z	z	z	Alphabetic			1	3r.b.26
-_		 	Space	Space to separate words (sgn - TBA: I'm currently not using this)		1	
+ 		 	Space	Space to separate words		1	
 .		.	Punctuation	Full stop, written on the base line		1	
 ·		·	Punctuation	Middle dot, written at middle heigth		1	1r.a.7
 |		⸴ 	Punctuation	It looks like a comma, written from the middle to the base line. I think that the glyph in image 'triangle.png' (found in 1r.a.18) is an allograph.	comma.png triangle.png	1	1r.a.8
