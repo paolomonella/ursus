@@ -507,17 +507,18 @@ function tableOfSignsToHTMLTable() {
 			else if (igy == 2) { gtosTd.setAttribute('width', '10px') }
 
 			if ( igy == 5 && typeof(gtos[igx][igy]) != 'undefined' && igx != 0) {
-				//alert(gtos[igx][igy]);
 				var imagesList = gtos[igx][igy].split(' '); // Filenames in the CSV cell are separated by spaces
 				var gtosTdString = '';
 				for (var imgx = 0; imgx < imagesList.length; imgx++) {	// For each filename in the image list
-					var imgElem = document.createElement('img');
-					imgElem.setAttribute('src', 'glyph_images/' + imagesList[imgx]);
-					//imgElem.setAttribute('height', '50px');
-					imgElem.setAttribute('alt', imagesList[imgx]);
-					gtosTd.appendChild(imgElem);
+					if ( imagesList[imgx] ) {
+						var imgElem = document.createElement('img');
+						imgElem.setAttribute('src', 'glyph_images/' + imagesList[imgx]);
+						//imgElem.setAttribute('height', '50px');
+						imgElem.setAttribute('alt', imagesList[imgx]);
+						gtosTd.appendChild(imgElem);
 					}
 				}
+			}
 
 
 			// ...else, create a simple text node and append it
@@ -525,7 +526,6 @@ function tableOfSignsToHTMLTable() {
 				gtosTdTextNode  = document.createTextNode(gtos[igx][igy]);
 				gtosTd.appendChild(gtosTdTextNode);
 			}
-
 			gtosTr.appendChild(gtosTd);
 		}
 	}
