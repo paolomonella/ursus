@@ -15,8 +15,6 @@
     <revisionDesc>
 
 <listChange type="critical" ordered="true">
-	<change type="agenda">Make better photos of allographs (w/o white cropped out rectangles)?</change>
-	<change type="agenda">Make photos of allographs of 'regular' alphabetic graphemes?</change>
 	<change type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium. Test
 		on Safari and Edge at least.</change>
 	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
@@ -89,7 +87,6 @@
 		(per i vari @type).</change>
 </listChange>
 
-
 <listChange type="done">
 	<change type="done" when="2016">Gestisci meglio i 'pc' type=quote</change>
 	<change type="done" when="2016">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein',
@@ -120,6 +117,8 @@
 	<change type="done" date="2017-03-11">Show table of signs</change>
 	<change type="done" when="2017-03-11">Use the glyph images (png) I have to show allographs</change>
 	<change type="done" when="2017-03-12">In gtos.html, don't create empty images in the 'images' column</change>
+	<change type="done" when="2017-03-13">Make better photos of allographs (w/o white cropped out rectangles)?</change>
+	<change type="done" when="2017-03-13">Make photos of allographs of 'regular' alphabetic graphemes?</change>
 </listChange>
 
 <listChange type="skipped">
