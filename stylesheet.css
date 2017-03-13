@@ -143,14 +143,21 @@ table#gtosHtmlTable * {
 	border-collapse: collapse;
 	text-align: center;
 	padding: 5px;
+	font-family: Sans-serif;
 }
 
 table#gtosHtmlTable td {
 	margin: 150px;
 }
 
+table#gtosHtmlTable td.td0 , table#gtosHtmlTable td.td1 , table#gtosHtmlTable td.td2 {
+	font-size: 1.5em;
+}
+
 table#gtosHtmlTable tr:nth-child(even) {background: #CCC}
 table#gtosHtmlTable tr:nth-child(odd) {background: #FFF}
+
+table#gtosHtmlTable img { height: 60px; }
 
 
 /****************/

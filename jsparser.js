@@ -500,12 +500,16 @@ function tableOfSignsToHTMLTable() {
 
 			// Create THs for first row, TDs for the next rows
 			if ( igx == 0 ) { gtosTd = document.createElement('th'); }
-			else { gtosTd = document.createElement('td'); }
+			else {
+				gtosTd = document.createElement('td');
+				gtosTd.setAttribute('class', 'td'+igy);
+			}
 
 			// Set column width
 			if ( igy == 4 ) { gtosTd.setAttribute('width', '400px'); }
 			else if (igy == 2) { gtosTd.setAttribute('width', '10px') }
 
+			// Insert <img>s
 			if ( igy == 5 && typeof(gtos[igx][igy]) != 'undefined' && igx != 0) {
 				var imagesList = gtos[igx][igy].split(' '); // Filenames in the CSV cell are separated by spaces
 				var gtosTdString = '';
