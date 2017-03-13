@@ -258,7 +258,7 @@ div.note.tech {
 	background-color: #A9F5E1; /* Light blue */
 }
 
-div.note.script , div.note.graphic {
+div.note.script , div.note.graphic , div.note.facsimile {
 	background-color: #FFFF66; /* Yellow */
 	/* background-color: #F2F5A9; /* Yellow */
 }
