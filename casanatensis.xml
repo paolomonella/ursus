@@ -18,6 +18,7 @@
 	<change type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium. Test
 		on Safari and Edge at least.</change>
 	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
+	<change type="agenda">Contact TO and GF</change>
 	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
 	<change type="agenda">CTS: Far spuntare il testo di Keil dal CLG direttamente dal link, ma
 		copiato/incollato nel mio progetto (a meno che non si riesca a fare un link al sito CLG)</change>
@@ -55,6 +56,7 @@
 	<change type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype
 		data.enumerated. Questo significa che dovrei limitare formalmente i possibili valori
 		con un elemento  valList?</change>
+	<change type="agenda">Line-level visualization of manuscript page image?</change>
 	<change type="agenda">I might transcribe also marginal glossae in black ink</change>
 	<change type="agenda">Find sources for ab06 based on the comments on Donatus (find ab06 and 'note' there)</change>
 	<change type="agenda">Periodicamente: vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre il significato
