@@ -519,6 +519,7 @@ function tableOfSignsToHTMLTable() {
 						imgElem.setAttribute('src', 'glyph_images/' + imagesList[imgx]);
 						//imgElem.setAttribute('height', '50px');
 						imgElem.setAttribute('alt', imagesList[imgx]);
+						imgElem.setAttribute('title', imagesList[imgx]);
 						gtosTd.appendChild(imgElem);
 					}
 				}
