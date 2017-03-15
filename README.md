@@ -1,6 +1,6 @@
-# ursus
+# Ursus project
 
-An experimental digital scholarly edition of the _De nominibus_, a IX century Latin grammatical work by Ursus Beneventanus, found in manuscript Casanatensis 1086.
+An experimental scholarly digital edition of section _De nomine_ (_folia_ 1r-11r) of the _Adbreviatio artis grammaticae_ by Ursus from Benevento from codex <a href="http://www.mirabileweb.it/manuscript/roma-biblioteca-casanatense-1086-(a-iii-11)-manuscript/2068">Casanatensis  1086</a> (IX century), edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2016).
 
 Full documentation in `documentation.md`.
 
