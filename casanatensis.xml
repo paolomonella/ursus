@@ -14,60 +14,52 @@
     </fileDesc>
     <revisionDesc>
 
-<listChange type="critical" ordered="true">
-	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
-	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
-	<change type="agenda">Final green light to GMD and FS</change>
-	<change type="agenda">Add 'larger' allographs for alphabetic characters to gtos?</change>
-	<change type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium. Test
-		on Safari and Edge at least.</change>
-	<change type="agenda">Contact TO and GF</change>
-	<change type="agenda">CTS: Far spuntare il testo di Keil dal CLG direttamente dal link, ma
-		copiato/incollato nel mio progetto (a meno che non si riesca a fare un link al sito CLG)</change>
-	<change type="agenda">I always put a space at the end of the lb, cb, pb elements (XHTML-style).
-		I am afraid that this is not the TEI-style, and that TEI has no space at the end of such elements:
-		if so, delete it from this file, from vimrc and from the paoloMarkDown.py script.</change>
-	<change type="agenda">Check (and delete) all space characters from within empty tags before
-		the backslash (pb, cb, lb etc.)?</change>
-	<change type="agenda">Periodicamente: vd. se ci sono 'v', o 'ae', o grafemi non dichiarati in GToS, in grafematica</change>
-	<change type="agenda">Periodicamente: check for duplicate and unordered word IDs</change>
-	<change type="agenda">Adopt prefixDef: vd. the discussion in the TEI-L with subject "cRef usage".</change>
-	<change type="agenda">Tidy up the documentation (starting from its two 'sgn' bookmarks).</change>
-</listChange>
+	<change type="agenda" subtype="critical">Final green light to GMD and FS</change>
+	<change type="agenda" subtype="critical">Add 'larger' allographs for alphabetic characters to gtos?</change>
+	<change type="agenda" subtype="critical">Re-test xml load in other browsers. I tested it on Firefox and Chromium.
+		Test on Safari and Edge at least.</change>
+	<change type="agenda" subtype="critical">Contact TO and GF</change>
+	<change type="agenda" subtype="critical">CTS: Show Keil Priscian's text directly from the 'start source' box, but
+		copy/pasted into my website (unless I can make a direct link to the CLG website -- hard to do).</change>
+	<change type="agenda" subtype="critical">From time to time: see if there are 'v', 'ae', or other graphemes not
+	       declared in the GToS.</change>
+	<change type="agenda" subtype="critical">Adopt prefixDef: see discussion in the TEI-L with subject "cRef usage".</change>
+	<change type="agenda" subtype="critical">Review documentation (priority: the two 'sgn' bookmarks).</change>
 
-<listChange type="lemmatization">
-	<change type="agenda">Check lemmatization: when I finish, I'll set variable 'viewLL'
+
+
+	<change type="agenda" subtype="lemma">Check lemmatization: when I finish, I'll set variable 'viewLL'
 		in jsparser.js back to 'true'</change>
-	<change type="agenda">Check treetagger documentation</change>
-	<change type="agenda">Treetagger docs: does treetagger make a difference
+	<change type="agenda" subtype="lemma">Check treetagger documentation</change>
+	<change type="agenda" subtype="lemma">Treetagger docs: does treetagger make a difference
 		between capitalized and uncapitalized words?</change>
-	<change type="agenda">Treetagger docs: can you pass arguments to treetagger from the command line?</change>
-	<change type="agenda">Treetagger docs: can you make it take punctuation in the sentence into account?</change>
-	<change type="agenda">Treetagger docs: what to do with Greek nouns?</change>
-</listChange>
+	<change type="agenda" subtype="lemma">Treetagger docs: can you pass arguments to treetagger from the command line?</change>
+	<change type="agenda" subtype="lemma">Treetagger docs: can it take punctuation in the sentence into account?</change>
+	<change type="agenda" subtype="lemma">Treetagger docs: what to do with Greek nouns?</change>
 
-<listChange type="improvements">
-	<change type="agenda">Problema di visualizzazione: quando inserisco un segno di punteggiatura
+
+
+	<change type="agenda" subtype="improve">Problema di visualizzazione: quando inserisco un segno di punteggiatura
 		a livello AL/LL non corrispondente ad alcun segno sul manoscritto, nel browser comunque spunta
 		nella riga GL uno spazio. Potrei usare [pc n="."] [/pc] (cioè uno spazio al GL che 'significa'
 		un punto -- o altro segno di punteggiatura -- al LL).</change>
-	<change type="agenda">	Check the "Index grammaticus" (Georg Olms) for passages currently
+	<change type="agenda" subtype="improve">Check the "Index grammaticus" (Georg Olms) for passages currently
 		with no identified source.</change>
-	<change type="agenda">Vd. se c'è veramente differenza tra punto al mezzo e punto in basso o se sono
+	<change type="agenda" subtype="improve">Vd. se c'è veramente differenza tra punto al mezzo e punto in basso o se sono
 		allografi. E vd. se ci sono allografi anche tra gli altri segni di punteggiatura.</change>
-	<change type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype
+	<change type="agenda" subtype="improve">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype
 		data.enumerated. Questo significa che dovrei limitare formalmente i possibili valori
 		con un elemento  valList?</change>
-	<change type="agenda">Line-level visualization of manuscript page image?</change>
-	<change type="agenda">I might transcribe also marginal glossae in black ink</change>
-	<change type="agenda">Find sources for ab06 based on the comments on Donatus (find ab06 and 'note' there)</change>
-	<change type="agenda">Periodicamente: vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre il significato
-		che suggerisco nella GToS</change>
-	<change type="agenda">I'm not visualizing the 'milestone' elements in any way: I could think of a
+	<change type="agenda" subtype="improve">Line-level visualization of manuscript page image?</change>
+	<change type="agenda" subtype="improve">I might transcribe also marginal glossae in black ink</change>
+	<change type="agenda" subtype="improve">Find sources for ab06 based on comments on Donatus (find 1st note in ab06)</change>
+	<change type="agenda" subtype="improve">Periodicamente: vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre
+		il significato che suggerisco nella GToS</change>
+	<change type="agenda" subtype="improve">I'm not visualizing the 'milestone' elements in any way: I could think of a
 		possible rendering.</change>
-	<change type="agenda">I might turn the informal quotations (such as K 2.110.22-25) existing within 'note' elements
-		into formal URNs.</change>
-	<change type="agenda">Potrei sostituire le attuali 'note' @type="emendation" con 'corr' (oppure 'supplied')
+	<change type="agenda" subtype="improve">I might turn the informal quotations (such as K 2.110.22-25)
+		existing within 'note' elements into formal URNs.</change>
+	<change type="agenda" subtype="improve">Potrei sostituire le attuali 'note' @type="emendation" con 'corr' (oppure 'supplied')
 		per la parola in versione corretta, con solo il livello linguistico ('w' vuoto con attributi),
 		secondo quanto dice file:///usr/share/doc/tei-p5-doc/en/html/ref-add.html nel paragrafetto 'Note'.
 		Potrei usare la coppia sic/corr ('sic' sarebbe per la stessa parola, in versione non corretta),
@@ -77,21 +69,22 @@
 		will provide documentation explaining the circumstances') in cui dice che potrei inserire
 		in un elemento <tag>correction</tag> dentro la <tag>encodingDesc</tag> dettagli sui valori
 		dell'elemento @type di <tag>corr</tag>.</change>
-	<change type="agenda">Potrei codificare le correzioni/riscritture dello stesso scriba.</change>
-	<change type="agenda">In w14058 I should have an 'add' child of 'abbr', but I do not b/c this is
+	<change type="agenda" subtype="improve">Potrei codificare le correzioni/riscritture dello stesso scriba.</change>
+	<change type="agenda" subtype="improve">In w14058 I should have an 'add' child of 'abbr', but I do not b/c this is
 		not managed by the JS at this time. Make the JS manage it and encode it (not a big deal,
 		though, as there is a 'note' saying it).</change>
-	<change type="agenda">Propose an emendation for the note with id note-4.v.b.2</change>
-	<change type="agenda">Per migliorare l'eleganza del software JavaScript, si potrebbero mettere tutti
+	<change type="agenda" subtype="improve">Propose an emendation for the note with id note-4.v.b.2</change>
+	<change type="agenda" subtype="improve">Per migliorare l'eleganza del software JavaScript, si potrebbero mettere tutti
 		gli elementi al di fuori di 'w' in funzioni, per uniformità con wordify()</change>
-	<change type="agenda">	Inventare un modo (diverso dall'attuale 'hover') per visualizzare la lunghezza del 'gap'?</change>
-	<change type="agenda">	Per migliorare l'eleganza del software JavaScript, potrei usare la funzione
+	<change type="agenda" subtype="improve">Inventare un modo (diverso dall'attuale 'hover') per visualizzare
+		la lunghezza del 'gap'?</change>
+	<change type="agenda" subtype="improve">Per migliorare l'eleganza del software JavaScript, potrei usare la funzione
 		graph() per tutte le stringhe del GL (non solo la punteggiatura). L'ho già fatto per molte cose:
 		vedi se l'ho fatto per tutto. In particolare, vedi se l'ho fatto per tutti i 'w type="...'
 		(per i vari @type).</change>
-</listChange>
 
-<listChange type="done">
+
+
 	<change type="done" when="2016">Gestisci meglio i 'pc' type=quote</change>
 	<change type="done" when="2016">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein',
 		e anche 'plion' seguito da 'pleion' sono da discutere in una complicata discussione
@@ -114,18 +107,22 @@
 		(and not Institutiones et sim.).</change>
 	<change type="done" when="2017-03-06">Unify all 'agenda' items in this list: move here those items that currently
 		are in my agenda file (and possibly also scattered elsewhere).</change>
-	<change type="done" date="2017-03-08">Notazioni più snelle (magari con icone) per le note in modo da dare
+	<change type="done" when="2017-03-08">Notazioni più snelle (magari con icone) per le note in modo da dare
 		all'intera pagina un aspetto meno "overwhelming"</change>
 	<change type="done" when="2017-03-11">Add to legenda: Pretty much everything is in css
 		(take a look at the whole css to check).</change>
-	<change type="done" date="2017-03-11">Show table of signs</change>
+	<change type="done" when="2017-03-11">Show table of signs</change>
 	<change type="done" when="2017-03-11">Use the glyph images (png) I have to show allographs</change>
 	<change type="done" when="2017-03-12">In gtos.html, don't create empty images in the 'images' column</change>
 	<change type="done" when="2017-03-13">Make better photos of allographs (w/o white cropped out rectangles)?</change>
 	<change type="done" when="2017-03-13">Make photos of allographs of 'regular' alphabetic graphemes?</change>
-</listChange>
+	<change type="done" when="2017-03-15">Review LL punctuation of the first lines of the MS.</change>
+	<change type="done" when="2017-03-15">Review transcription of the first lines of the MS
+		(e.g.: don't repeat words, add correct commas).</change>
+	<change type="done" when="2017-03-15">Periodicamente: check for duplicate and unordered word IDs</change>
 
-<listChange type="skipped">
+
+
 	<change type="skipped">If only AL is shown, have less 'interlinear' space between rows
 		(css / td.ALCell / padding-top: 1.5em; / reduce this value)?.</change>
 	<change type="skipped">file:///usr/share/doc/tei-p5-doc/en/html/AI.html#AILC:
@@ -139,7 +136,8 @@
 		of the transcription. I could add them for the initial part too.</change>
 	<change type="skipped">Potrei usare 'gap' per unclear @type="cropped", ma probabilmente
 		è meglio di no. Attualmente ho usato 'unclear' e aggiunto un 'note' @type="script".</change>
-</listChange>
+	<change type="skipped">I always put a space at the end of the lb, cb, pb elements (XHTML-style). Though this doesn't
+		seem to be the TEI-style, it's my Phtyon script that does it, so I can't do anything about it.</change>
 
     </revisionDesc>
   </teiHeader>
@@ -392,7 +390,7 @@ syllabæ</w>
 <w n="syllaba" xml:id="w219">syll
 <lb n="1r.a.10" />
 aba</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="sed" xml:id="w222">sed</w>
 	<pc n="space"> </pc>
@@ -404,7 +402,7 @@ aba</w>
 </w>
 	<pc n="space"> </pc>
 <w n="sincere" xml:id="w228">sincere</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="eo" xml:id="w231">eo</w>
 	<pc n="space"> </pc>
@@ -447,7 +445,7 @@ aba</w>
 <w n="dico" xml:id="w258">dico</w>
 <lb n="1r.a.11" />
 <w n="a" type="alphabemes" xml:id="w261">a</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="nec" xml:id="w264">nec</w>
 	<pc n="space"> </pc>
@@ -852,7 +850,7 @@ siua</w>
 		<expan>am</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 <w n="quid" xml:id="w567">
 	<choice>
 		<abbr type="brevigraph">¢</abbr>
@@ -1185,7 +1183,7 @@ tur</w>
 <w n="erit" xml:id="w690">erit</w>
 	<pc n="space"> </pc>
 <w n="ars" xml:id="w693">ars</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quoniam" xml:id="w696">
 	<choice>
@@ -1580,7 +1578,7 @@ ta</w>
 <w n="composita" xml:id="w921">composita</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w924">est</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="1r.b.6" />
 <unclear cert="low" reason="faded">
 <w n="ab" xml:id="w925">ab</w>
@@ -1613,7 +1611,7 @@ ta</w>
 <w n="oratio" xml:id="w937">oratio</w>
 	<pc n="space"> </pc>
 <w n="hoc" xml:id="w939">hoc</w>
-<pc n=","></pc>
+<pc n="," />
 <w n="quod" xml:id="w942">q
 	<choice>
 		<abbr type="superscription">d<am>¯</am></abbr>
@@ -1927,7 +1925,7 @@ tia</w>
 </w>
 	<pc n="space"> </pc>
 <w n="trahit" xml:id="w1131">trahit</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="1r.b.15" />
 
 <w n="quia" xml:id="w1134">
@@ -2046,7 +2044,7 @@ cedat</w>
 tur</w>
 </unclear>
 	<pc n="space"> </pc>
-	<pc n=","></pc>
+	<pc n="," />
 <unclear cert="medium" reason="faded">
 <w n="ut" xml:id="w1206">ut</w>
 </unclear>
@@ -2078,7 +2076,7 @@ tur</w>
 <lb n="1r.b.19" />
 tur</w>
 </unclear>
-<pc n=","></pc>
+<pc n="," />
 <w n="unde" xml:id="w1233">unde</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
@@ -2203,7 +2201,7 @@ positio</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="1r.b.23" />
 <w n="pronomen" xml:id="w1311">
 	<choice>
@@ -2372,7 +2370,7 @@ nomina</w>
 <unclear cert="low" reason="faded">
 <w n="sequimur" xml:id="w1467">sequimur</w>
 </unclear>
-<pc n=","></pc>
+<pc n="," />
 <w n="quamquam" xml:id="w1470">qu
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
@@ -2453,7 +2451,7 @@ positiuas</w>
 <w n="partes" xml:id="w1524">partes</w>
 	<pc n="space"> </pc>
 <w n="orationis" xml:id="w1527">orationis</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="separantes" xml:id="w1530">se
 <lb n="1r.b.34" />
@@ -2592,7 +2590,7 @@ tes</w>
 <unclear cert="medium" reason="faded">
 <w n="iungunt" xml:id="w1635">iungunt</w>
 </unclear>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quam" xml:id="w1638">qu
 	<choice>
@@ -16210,7 +16208,7 @@ que</w>
 </w>
 	<pc n="space"> </pc>
 <w n="fiunt" xml:id="w14544">fiunt</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="et" xml:id="w14547">et</w>
 	<pc n="space"> </pc>
@@ -16242,7 +16240,7 @@ tinent</w>
 	<pc n="space"> </pc>
 <w n="ad" xml:id="w14580">ad</w>
 <w n="deos" xml:id="w14583">deos</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 </ref>
 
@@ -42703,7 +42701,7 @@ cus</w>
 <w n="formae" xml:id="w39513">formæ</w>
 <pc n=".">·</pc>
 <w n="una" xml:id="w39516">una</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w39519">quæ</w>
 	<pc n="space"> </pc>
@@ -42831,7 +42829,7 @@ sonans</w>
 <w n="tumeo" xml:id="w39642">tumeo</w>
 <lb n="10v.a.13" />
 <w n="tumidus" xml:id="w39645">tumidus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ferueo" xml:id="w39648">ferueo</w>
 	<pc n="space"> </pc>
@@ -42869,7 +42867,7 @@ sonans</w>
 <w n="pando" xml:id="w39678">pando</w>
 	<pc n="space"> </pc>
 <w n="pandus" xml:id="w39681">pandus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="non" xml:id="w39684">non</w>
 	<pc n="space"> </pc>
@@ -42909,7 +42907,7 @@ tur</w>
 <w n="apud" xml:id="w39723">apud</w>
 	<pc n="space"> </pc>
 <w n="Graecos" xml:id="w39726">grecos</w>
-<pc n=","></pc>
+<pc n="," />
 <w n="ut" xml:id="w39729">ut</w>
 <w n="Χαρύβδεως" type="foreign" xml:id="w39732" xml:lang="grc">charibdeos</w>
 <pc n="0">·</pc>
@@ -43228,7 +43226,7 @@ dæ</w>
 <w n="similis" xml:id="w40056">similis</w>
 	<pc n="space"> </pc>
 <w n="uitanti" xml:id="w40059">uitanti</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="moribundus" xml:id="w40062">moribundus</w>
 <pc n=",">·</pc>
@@ -43292,7 +43290,7 @@ gatione</w>
 		<expan>abent</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w40119">ut</w>
 <w n="uito" xml:id="w40122">uito</w>
@@ -43318,7 +43316,7 @@ gatione</w>
 		<expan>orreptum</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w40146">ut</w>
 <w n="ludo" xml:id="w40149">ludo</w>
@@ -43333,7 +43331,7 @@ gatione</w>
 <w n="excipitur" xml:id="w40158">excipitur</w>
 <lb n="10v.a.30" />
 <w n="rubicundus" xml:id="w40161">rubicundus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quod" xml:id="w40164">
 	<choice>
@@ -43386,7 +43384,7 @@ bibundus</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="est" xml:id="w40215">est</w>
 <lb n="10v.a.32" />
@@ -43571,7 +43569,7 @@ bibundus</w>
 <w n="ulus" type="alphabemes" xml:id="w40389">ulus</w>
 	<pc n="space"> </pc>
 <w n="uersa" xml:id="w40392">uersa</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="praeter" xml:id="w40395">
 	<choice>
@@ -43596,7 +43594,7 @@ a</w>
 tiuum</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w40410">est</w>
-<pc n=","></pc>
+<pc n="," />
 
 <cb n="10v.b" />
 
@@ -43619,7 +43617,7 @@ tiuum</w>
 <w n="uerbialia" xml:id="w40440">uerbialia</w>
 <lb n="10v.b.2" />
 <w n="pauca" xml:id="w40443">pauca</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quorum" xml:id="w40446">quor
 	<choice>
@@ -43636,7 +43634,7 @@ tiuum</w>
 		<expan>pro</expan>
 	</choice>
 ducitur</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ex" xml:id="w40455">ex</w>
 <w n="quibus" xml:id="w40458">qui
@@ -43673,7 +43671,7 @@ ducitur</w>
 <w n="decorus" xml:id="w40500">deco
 <lb n="10v.b.4" />
 rus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="et" xml:id="w40503">et</w>
 <w n="ea" xml:id="w40506">ea</w>
@@ -43694,7 +43692,7 @@ rus</w>
 	<pc n="space"> </pc>
 <w n="sonorus" xml:id="w40536">sonorus</w>
 <note type="graphic">There is a macron over the words "honōris", "odōris", "decōrus", "canōrus", "sonōrus" to mark the vowel's long quantity.</note>
-<pc n="."></pc>
+<pc n="." />
 <lb n="10v.b.5" />
 <w n="in" xml:id="w40539"><hi rend="larger">i</hi>n</w>
 <w n="sus" type="alphabemes" xml:id="w40542">sus</w>
@@ -43719,7 +43717,7 @@ rus</w>
 		<expan>abent</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quia" xml:id="w40554">
 	<choice>
@@ -43737,7 +43735,7 @@ a</w>
 		<expan>sunt</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="id" xml:id="w40566">id</w>
 <w n="est" xml:id="w40569">est</w>
@@ -43776,7 +43774,7 @@ senti</w>
 		<expan>clinationis</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="10v.b.7" />
 <w n="ut" xml:id="w40605">ut</w>
 <w n="uisus" xml:id="w40608">uisus</w>
@@ -43811,7 +43809,7 @@ senti</w>
 <w n="ad" xml:id="w40638">ad</w>
 <lb n="10v.b.8" />
 <w n="corporalem" xml:id="w40641">corporalem</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w40644">quæ</w>
 	<pc n="space"> </pc>
@@ -43845,7 +43843,7 @@ senti</w>
 <w n="lassus" xml:id="w40674">las
 <lb n="10v.b.9" />
 sus</w>
-<pc n=","></pc>
+<pc n="," />
 <add place="above">
 <w n="fessus" xml:id="w40677">fessus</w>
 <pc n=",">·</pc>
@@ -43899,7 +43897,7 @@ sus</w>
 <w n="quae" xml:id="w40713">quæ</w>
 <lb n="10v.b.10" />
 <w n="ostendit" xml:id="w40716">ostendit</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w40719">ut</w>
 <w n="saxosus" xml:id="w40722">saxosus</w>
@@ -43964,7 +43962,7 @@ tant</w>
 		<expan>yllabam</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="si" xml:id="w40770">si</w>
 <lb n="10v.b.12" />
@@ -44025,7 +44023,7 @@ tant</w>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.139.1" type="source" unit="Keil" />
 <w n="in" xml:id="w40836"><hi rend="larger">i</hi>n</w>
 <w n="tus" type="alphabemes" xml:id="w40839">tus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="si" xml:id="w40842">si</w>
 <w n="sint" xml:id="w40845">sint</w>
@@ -44042,7 +44040,7 @@ tant</w>
 	</choice>
 </w>
 <w n="incorporalia" xml:id="w40860">incorporalia</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="10v.b.15" />
 <w n="aut" xml:id="w40863">aut</w>
 <w n="fixa" xml:id="w40866">fixa</w>
@@ -44053,7 +44051,7 @@ tant</w>
 		<expan>sunt</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w40872">ut</w>
 <w n="motus" xml:id="w40875">motus</w>
@@ -44061,7 +44059,7 @@ tant</w>
 <w n="tumultus" xml:id="w40878">tumultus</w>
 <pc n=",">·</pc>
 <w n="sonitus" xml:id="w40881">sonitus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="consolatus" xml:id="w40884">
 	<choice>
@@ -44078,7 +44076,7 @@ solatus</w>
 		<expan>clinationis</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="10v.b.16" />
 <w n="aut" xml:id="w40896">aut</w>
 <w n="mouilia" xml:id="w40899">mouilia
@@ -44151,7 +44149,7 @@ solatus</w>
 	</choice>
 </w>
 <w n="tertia" xml:id="w40962">tertia</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="10v.b.18" />
 <w n="in" xml:id="w40965">in</w>
 <w n="aliis" xml:id="w40968">aliis</w>
@@ -44205,16 +44203,16 @@ tus</w>
 <w n="excipitur" xml:id="w41004">excipitur</w>
 	<pc n="space"> </pc>
 <w n="manuleatus" xml:id="w41007">manuleatus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="id" xml:id="w41010">id</w>
 <w n="est" xml:id="w41013">est</w>
 	<pc n="space"> </pc>
 <w n="manicatus" xml:id="w41016">manicatus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quod" xml:id="w41019">quod</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quamuis" xml:id="w41022">qu
 	<choice>
@@ -44291,7 +44289,7 @@ tus</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w41088">et</w>
 <w n="libertus" xml:id="w41091">libertus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w41094">quæ</w>
 	<pc n="space"> </pc>
@@ -44382,10 +44380,10 @@ tus</w>
 <w n="sunt" xml:id="w41184">sunt</w>
 <pc n=",">·</pc>
 <w n="acceptus" xml:id="w41187">acceptus</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="amictus" xml:id="w41190">amictus</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="10v.b.26" />
 <w n="flexus" xml:id="w41193">flexus</w>
 <pc n=".">·</pc>
@@ -44447,7 +44445,7 @@ pore</w>
 	</choice>
 </w>
 <w n="uerbis" xml:id="w41244">uerbis</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="conuersa" xml:id="w41247">conuersa</w>
 	<pc n="space"> </pc>
@@ -44494,7 +44492,7 @@ ma</w>
 <w n="ius" xml:id="w41304">ius</w>
 <pc n="0">·</pc>
 <w n="iustus" xml:id="w41307">iustus</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="10v.b.30" />
 <w n="onus" xml:id="w41310">honus
 <note type="emendation">Scribal error: "honus" for "onus". Compare she source Priscian, Ars grammatica, K 2.140.5 ("onus onustus")</note>
@@ -44540,7 +44538,7 @@ pta</w>
 		<expan>yllaba</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="10v.b.32" />
 <w n="excepta" xml:id="w41358">excepta
 <note type="emendation">Scribal error: "excepta" for "excepto".</note>
@@ -44651,7 +44649,7 @@ gis</w>
 <w n="latex" xml:id="w41469">latex</w>
 <pc n="0">·</pc>
 <w n="laticis" xml:id="w41472">laticis</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="10v.b.36" />
 <w n="uerto" xml:id="w41475">uerto</w>
 	<pc n="space"> </pc>
@@ -44683,7 +44681,7 @@ gis</w>
 		<expan>uctam</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="rego" xml:id="w41499">rego</w>
 	<pc n="space"> </pc>
@@ -44724,14 +44722,14 @@ gis</w>
 <w n="in" xml:id="w41550">in</w>
 	<pc n="space"> </pc>
 <w n="tor" type="alphabemes" xml:id="w41553">tor</w>
-<pc n=","></pc>
+<pc n="," />
 <w n="mutato" xml:id="w41556">mutato</w>
 <pc n="quote">·</pc>
 <w n="or" type="alphabemes" xml:id="w41559">or</w>
 <pc n="quote">·</pc>
 <w n="in" xml:id="w41562">in</w>
 <w n="rix" type="alphabemes" xml:id="w41565">rix</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="11r.a.2" />
 <w n="ut" xml:id="w41568">ut</w>
 <w n="uictor" xml:id="w41571">uictor</w>
@@ -44749,7 +44747,7 @@ gis</w>
 <w n="facere" xml:id="w41589">facere</w>
 	<pc n="space"> </pc>
 <w n="nutritrix" type="nonsense" xml:id="w41592">nutritrix</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="sed" xml:id="w41595">sed</w>
 	<pc n="space"> </pc>
@@ -44804,7 +44802,7 @@ ditur</w>
 <w n="denominatiua" xml:id="w41640">denomi
 <lb n="11r.a.5" />
 natiua</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w41643">ut</w>
 <w n="uoco" xml:id="w41646">uoco</w>
@@ -44852,7 +44850,7 @@ natiua</w>
 <w n="coniungo" xml:id="w41688">coniungo</w>
 	<pc n="space"> </pc>
 <w n="coniunx" xml:id="w41691">coniunx</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="arceo" xml:id="w41694">arceo</w>
 	<pc n="space"> </pc>
@@ -44897,7 +44895,7 @@ pore</w>
 		<expan>sunt</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w41730">ut</w>
 <w n="sapiens" xml:id="w41733">sapiens</w>
@@ -44920,7 +44918,7 @@ pore</w>
 	</choice>
 </w>
 </add>
-<pc n=","></pc>
+<pc n="," />
 <w n="principium" xml:id="w41757">principi
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -44951,7 +44949,7 @@ pore</w>
 <w n="tota" xml:id="w41775">tota</w>
 	<pc n="space"> </pc>
 <w n="Graeca" xml:id="w41778">greca</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w41781">quæ</w>
 <w n="apud" xml:id="w41784">apud</w>
@@ -44968,17 +44966,17 @@ pore</w>
 </w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w41802">ut</w>
-<w n="Θεμιστώ" type="foreign" xml:id="w41805" xml:lang="grc" >temisto
+<w n="Θεμιστώ" type="foreign" xml:id="w41805" xml:lang="grc">temisto
 <note type="emendation">Scribal error: "temisto" for "themisto".</note>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="Καλυψώ" type="foreign" xml:id="w41808" xml:lang="grc">calipso
 <note type="emendation">Scribal error: "calipso" for "calypso" or "kalypso".</note>
 </w>
 <pc n=",">·</pc>
 <w n="Δῑδώ" type="foreign" xml:id="w41811" xml:lang="grc">dido</w>
-<pc n=","></pc>
+<pc n="," />
 <w n="Πάν" type="foreign" xml:id="w41814" xml:lang="grc">pan</w>
 <pc n=".">·</pc>
 <lb n="11r.a.11" />
@@ -45043,7 +45041,7 @@ tur</w>
 <w n="notha" xml:id="w41877">notha</w>
 	<pc n="space"> </pc>
 <w n="species" xml:id="w41880">species</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 </ref>
 
@@ -45052,7 +45050,7 @@ tur</w>
 <w n="est" xml:id="w41886">est</w>
 	<pc n="space"> </pc>
 <w n="corrupta" xml:id="w41889">corrupta</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quia" xml:id="w41892">
 	<choice>
@@ -45098,7 +45096,7 @@ manet</w>
 		<expan>em</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="manentibus" xml:id="w41934">manenti
 	<choice>
@@ -45113,7 +45111,7 @@ manet</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w41943">in</w>
 <w n="Graeco" xml:id="w41946">greco</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="et" xml:id="w41949">et</w>
 <w n="ultimis" xml:id="w41952">ultimis</w>
@@ -45180,7 +45178,7 @@ nander</w>
 <w n="est" xml:id="w42003"><hi rend="dropcap">e</hi>st</w>
 	<pc n="space"> </pc>
 <w n="qualitatis" xml:id="w42006">qualitatis</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w42009">quæ</w>
 	<pc n="space"> </pc>
@@ -45201,7 +45199,7 @@ nander</w>
 		<expan>que</expan>
 	</choice>
 </w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w42024">ut</w>
 <unclear cert="medium" reason="faded">
@@ -45209,18 +45207,18 @@ nander</w>
 <lb n="11r.a.19" />
 dus</w>
 </unclear>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="diues" xml:id="w42030">diues</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="formosus" xml:id="w42033">formosus</w>
-<pc n="."></pc>
+<pc n="." />
 <lb n="11r.a.20" />
 <w n="est" xml:id="w42036"><hi rend="dropcap">e</hi>st</w>
 	<pc n="space"> </pc>
 <w n="quantitatis" xml:id="w42039">quantitatis</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w42042">quæ</w>
 	<pc n="space"> </pc>
@@ -45244,7 +45242,7 @@ dus</w>
 </w>
 	<pc n="space"> </pc>
 <w n="dicta" xml:id="w42060">dicta</w>
-<pc n=","></pc>
+<pc n="," />
 <lb n="11r.a.21" />
 <w n="ut" xml:id="w42063">ut</w>
 <w n="magnus" xml:id="w42066">magnus</w>
@@ -45312,7 +45310,7 @@ tis</w>
 <w n="nomini" xml:id="w42135">nomini</w>
 	<pc n="space"> </pc>
 <w n="adiciatur" xml:id="w42138">adiciatur</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="etiam" xml:id="w42141">eti
 	<choice>
@@ -45358,7 +45356,7 @@ dia</w>
 <w n="doctus" xml:id="w42177">doctus</w>
 <lb n="11r.a.25" />
 <w n="poeta" xml:id="w42180">poeta</w>
-<pc n=","></pc>
+<pc n="," />
 	<pc n="space"> </pc>
 <w n="magnus" xml:id="w42183">magnus</w>
 	<pc n="space"> </pc>

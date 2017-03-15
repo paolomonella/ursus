@@ -4,18 +4,17 @@ from xml.dom.minidom import parse, parseString
 #import xml.dom.minidom
 xmldoc = parse('/home/ilbuonme/siti/paolo.monella/ursus/casanatensis.xml')
 wordElementList = xmldoc.getElementsByTagName('ref')
-x = False
+prevIdN = 0
 for r in wordElementList:
     #print('cRef: '+r.attributes.getNamedItem('cRef').nodeValue)
     for c in r.childNodes:
-        if c.nodeType == c.ELEMENT_NODE:
-            if c.tagName == 'w' and x:
-                print(c.attributes.getNamedItem('xml:id').nodeValue, end=' è la parola che viene dopo ')
-                x = False
-            if c.tagName == 'unclear':
-                for w in c.childNodes:
-                    #print(x, end=', ')
-                    if w.nodeType == w.ELEMENT_NODE and w.tagName == 'pc':
-                        print('Eureka!')
-                        print(w.attributes.getNamedItem('n').nodeValue)
-                        x = True
+        if c.nodeType == c.ELEMENT_NODE and c.tagName == 'w':
+            #print(c.attributes.getNamedItem('xml:id').nodeValue, end=', ')
+            myId = c.attributes.getNamedItem('xml:id').nodeValue
+            myIdN = int(myId[1:])
+            #print(myIdN, end=', ')
+            if not myIdN > prevIdN:
+                print('Trouble! Not greater...')
+                #print(myIdN, 'is greater than ', prevIdN)
+            if myIdN == prevIdN:
+                print('Trouble! Equal')

@@ -176,7 +176,7 @@ with open(inFP) as inFH:
             nL = line[:-1]
             print(nL, file=outFH)
         elif re.match(sewPatt, line[:-1]):    # Starts and ends with whitespace
-            print('start and end!')
+            print('This line starts and ends with whitespace!')
             nL = line[:-1]
             startEndWList.append(nL)
             print(nL, file=outFH)
