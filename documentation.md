@@ -19,15 +19,15 @@ Graphemic Value
 
 An assumption of the present edition is that a graphic sign (e.g. a glyph) or a feature (e.g. the use of blank space on the page) of the graphic system of the manuscript has "graphemic value" if it has a distinctive function, that is if
 
-1. it generates "minimal pairs" of words, i.e. in the manuscript there never is a case in which these signs/features distinguish a a word from another OR
+1. it generates "minimal pairs" of words, i.e. in the manuscript there is at least a case in which these signs/features distinguish a a word from another OR
 
 2. it marks a specific linguistic interpretation of the text. [This part is problematic]
 
-Case 1 applies to those graphemes that have an alphabetic value, such as "a", "b", "c": grapheme "c" generates the minimal pair "como/homo". It also applies to the "capital letters": grapheme "Q" (as distinguished from "q") generates the minimal pair "Quintus/quintus", if we consider the person name and the adjective to be different words.
+Case 1 applies to those graphemes that have an alphabetic value, such as "a", "b", "c": grapheme "c" generates the minimal pair "como/homo". 
 
-Case 2 applies to those paragraphematic signs that do not have an alphabetic meaning, such as punctuation, but do change the text in that they change its meaning (its  linguistic interpretation). For example, the "comma" makes a difference between "Amen dico tibi, hodie mecum eris in paradiso" and "Amen dico tibi hodie, mecum eris in paradiso". On the other side, the same manuscript can have two different glyphs for the same "comma" grapheme which do not make such a difference but are merely position-bound or decorative versions. In this case they would not have graphemic value, but would be considered allographs. If we don't consider "Quintus/quintus" as different words, but as different interpretations of the same word, then case 2 also appies to "capital letters".
+Case 2 applies to those paragraphematic signs that do not have an alphabetic meaning, such as punctuation, but do change the text in that they change its meaning (its  linguistic interpretation). For example, the "comma" makes a difference between "Amen dico tibi, hodie mecum eris in paradiso" and "Amen dico tibi hodie, mecum eris in paradiso". On the other side, the same manuscript might have two different glyphs for the same "comma" grapheme which do not make such a difference but are merely position-bound or decorative versions. In this case they would not have graphemic value, but would be considered allographs. 
 
-[Altra ipotesi: considerare i segni paragrafematici come un 'layer' a sé, parallelo al Graphemic Layer; resterebbe comunque il problema delle lettere maiuscole]
+[Altra ipotesi: considerare i segni paragrafematici come un 'layer' a sé, parallelo al Graphemic Layer.]
 
 
 
