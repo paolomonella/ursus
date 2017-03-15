@@ -15,12 +15,13 @@
     <revisionDesc>
 
 <listChange ordered="true" type="critical">
-	<change type="agenda">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
-	<change type="agenda">Add to legenda: Pretty much everything is in css (take a look at the whole css to check).</change>
-	<change type="agenda">Show table of signs</change>
-	<change type="agenda">Use the glyph images (png) I have to show allographs</change>
 	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
 	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
+	<change type="agenda">Final green light to GMD and FS</change>
+	<change type="agenda">Add 'larger' allographs for alphabetic characters to gtos?</change>
+	<change type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium. Test
+		on Safari and Edge at least.</change>
+	<change type="agenda">Contact TO and GF</change>
 	<change type="agenda">CTS: Far spuntare il testo di Keil dal CLG direttamente dal link, ma
 		copiato/incollato nel mio progetto (a meno che non si riesca a fare un link al sito CLG)</change>
 	<change type="agenda">I always put a space at the end of the lb, cb, pb elements (XHTML-style).
@@ -57,6 +58,7 @@
 	<change type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype
 		data.enumerated. Questo significa che dovrei limitare formalmente i possibili valori
 		con un elemento  valList?</change>
+	<change type="agenda">Line-level visualization of manuscript page image?</change>
 	<change type="agenda">I might transcribe also marginal glossae in black ink</change>
 	<change type="agenda">Find sources for ab06 based on the comments on Donatus (find ab06 and 'note' there)</change>
 	<change type="agenda">Periodicamente: vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre il significato
@@ -89,7 +91,6 @@
 		(per i vari @type).</change>
 </listChange>
 
-
 <listChange type="done">
 	<change type="done" when="2016">Gestisci meglio i 'pc' type=quote</change>
 	<change type="done" when="2016">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein',
@@ -104,6 +105,7 @@
 		when I do not. This only is to check until the first note with type "emendation".</change>
 	<change type="done" when="2017-02">Specifica i type di 'note' con i due nuovi tipi 'emendation'
 		e 'graphic'. Ricomincia dalla parola w28905 andando a ritroso.</change>
+	<change type="done" when="2017-03-01">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
 	<change type="done" when="2017-03-05">Periodicamente: check for '0' after closing tags
 		(due to @f or @d in .vimrc).</change>
 	<change type="done" when="2017-03-05">Ricordarsi periodicamente di togliere gli spazi (tag 'pc space')
@@ -114,6 +116,13 @@
 		are in my agenda file (and possibly also scattered elsewhere).</change>
 	<change date="2017-03-08" type="done">Notazioni più snelle (magari con icone) per le note in modo da dare
 		all'intera pagina un aspetto meno "overwhelming"</change>
+	<change type="done" when="2017-03-11">Add to legenda: Pretty much everything is in css
+		(take a look at the whole css to check).</change>
+	<change date="2017-03-11" type="done">Show table of signs</change>
+	<change type="done" when="2017-03-11">Use the glyph images (png) I have to show allographs</change>
+	<change type="done" when="2017-03-12">In gtos.html, don't create empty images in the 'images' column</change>
+	<change type="done" when="2017-03-13">Make better photos of allographs (w/o white cropped out rectangles)?</change>
+	<change type="done" when="2017-03-13">Make photos of allographs of 'regular' alphabetic graphemes?</change>
 </listChange>
 
 <listChange type="skipped">
@@ -168,7 +177,7 @@
 <w ana="2-LM41A2---" lemma="compono" n="composita" xml:id="w27">composita</w>
 	<pc n="space"> </pc>
 
-<note type="script">This title (marked as "head") is in uncial. The uncial glyphs are also used in the body of the text, to mark larger initials in new sections of the text.</note>
+<note type="script">This heading ("Adbreuiatio... composita") is in uncial. The uncial glyphs are also used in the body of the text, to mark larger initials in new sections of the text.</note>
 </ref>
 </ab>
 
@@ -182,13 +191,9 @@
 <w ana="13A---A2---" lemma="parvus" n="minima" xml:id="w33">minima</w>
 	<pc n="space"> </pc>
 <add place="above">
-<note type="script">Under the well readable "pars" written above the line, there's another word, hardly readable probably because of a hole in the parchment. The deleted word might also be "pars".</note>
 <w ana="11C---A2---" lemma="pars" n="pars" xml:id="w36">pars</w>
 </add>
-<w ana="11C---A2---" lemma="pars" n="pars" xml:id="w39">p
-<gap quantity="2" reason="hole" unit="chars" />
-	s
-</w>
+<note type="script">The word "pars" was probably originally written in line, but then a damage in the parchment made it unreadable. Then a second hand re-wrote the same word over the line.</note>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w42">est</w>
 	<pc n="space"> </pc>
@@ -246,9 +251,7 @@ tinet</w>
 <w ana="11F---B3--1" lemma="totus" n="totius" xml:id="w90">totius</w>
 	<pc n="space"> </pc>
 </add>
-<unclear cert="medium" reason="faded">
-	<w ana="11F---B3--1" lemma="totus" n="totius" xml:id="w93">totius</w>
-</unclear>
+<note type="script">The word "totius" was originally written in line, but it now looks hardly readable. Then a second hand re-wrote the same word over the line.</note>
 	<pc n="space"> </pc>
 <w ana="11D---A1---" lemma="intellectus" n="intellectus" xml:id="w96">intellectus</w>
 	<pc n=".">.</pc>
@@ -266,7 +269,7 @@ tinet</w>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w105">a</w>
 	<pc n="space"> </pc>
 <w ana="11A---F2---" lemma="syllaba" n="syllaba" xml:id="w108">syllaba</w>
-	<pc n=",">.</pc>
+	<pc n="0">.</pc>
 <w ana="4-O--------" lemma="quoniam" n="quoniam" xml:id="w111">
 	<choice>
 		<abbr type="superscription">qm<am>¯</am></abbr>
@@ -389,6 +392,7 @@ syllabæ</w>
 <w ana="3-JH1------" lemma="syllaba" n="syllaba" xml:id="w219">syll
 <lb n="1r.a.10" />
 aba</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="sed" n="sed" xml:id="w222">sed</w>
 	<pc n="space"> </pc>
@@ -400,6 +404,7 @@ aba</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---A3---" lemma="sincere" n="sincere" xml:id="w228">sincere</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---F3---" lemma="is" n="eo" xml:id="w231">eo</w>
 	<pc n="space"> </pc>
@@ -442,6 +447,7 @@ aba</w>
 <w ana="3-NA1--4---" lemma="dico" n="dico" xml:id="w258">dico</w>
 <lb n="1r.a.11" />
 <w n="a" type="alphabemes" xml:id="w261">a</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="nec" n="nec" xml:id="w264">nec</w>
 	<pc n="space"> </pc>
@@ -522,7 +528,7 @@ ra</w>
 		<abbr type="superscription">u<am>8</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note type="graphic">There are signs written above the line that I do not understand: a possible macron above the (very hardly legible "d") and another sign in the space between "deo" and "rum", that might simply mean that the two parts of the word, though written separately, should be read together. The direct source here is Priscian, Ars grammatica, K 2.53.20-21, which has "in 'ara' deorum, 'a' paenultima producitur".</note>
+<note type="graphic">There are signs written above the line that I do not understand: a possible macron above the (very hardly legible) "d" and another sign in the space between "deo" and "rum", that might simply mean that the two parts of the word, though written separately, should be read together. The direct source here is Priscian, Ars grammatica, K 2.53.20-21, which has "in 'ara' deorum, 'a' paenultima producitur".</note>
 </w>
 </unclear>
 <pc n="quote">·</pc>
@@ -674,7 +680,7 @@ gi</w>
 <unclear cert="medium" reason="faded">
 	<w ana="11C---A3---" lemma="clare" n="clare" xml:id="w456">clare</w>
 </unclear>
-	<pc n=",">.</pc>
+	<pc n="0">.</pc>
 <w ana="11C---B1---" lemma="uel" n="uel" xml:id="w459">
 	<choice>
 		<abbr type="superscription">ul<am>¯</am></abbr>
@@ -690,9 +696,9 @@ gi</w>
 </w>
 <add place="above">
 <w n="ter" type="alphabemes" xml:id="w462">ter
-<note type="script">These graphemes written above the line are meant to clarify the explanation of the "t plus macron" abbreviation at (for "ter) the end of "diligenter".</note>
 </w>
 </add>
+<note type="script">A second hand wrote the graphemes "ter" written above the line, to clarify the explanation of the "t plus macron" abbreviation at the end of "diligenter".</note>
 	<pc n=".">.</pc>
 </ref>
 </ab>
@@ -818,13 +824,10 @@ ua</w>
 		<expan>on</expan>
 	</choice>
 siua</w>
-<unclear cert="medium" reason="faded">
-	<pc n="space"> </pc>
-</unclear>
+<note type="emendation">The graphemes around "dicitur" are very hard to read. Another reading might be "oratio dici t(um) [two unclear graphemes] possunt uerba imperatiua et responsiua". In this case, the "u with r rotunda above" abbreviation would be expanded in "um", not "ur". However, the "p" and "o" of "possunt" are very hardly recognizable. The reading "oratio dicitur [...] sunt uerba imperatiua et responsiua" is more likely based on the manuscript.</note>
 	<pc n=".">·</pc>
-	<pc n="space"> </pc>
 <w ana="11B---J3---" lemma="imperatiua" n="imperatiua" xml:id="w546">imperatiua</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="script">
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w549">ut</w>
@@ -834,10 +837,10 @@ siua</w>
 <note type="script">It seems that something similar to "ut lege" was written in the same line, then was erased and a new "ut lege" was written in its place. Also, there is a faded sign over the initial "u". This sign looks like the abbreviation that I am encoding with Unicode character "8" and occurs again later in the same line (above the next "ut", i.e. the word with id w558).</note>
 </w>
 </unclear>
-<pc n="quote">·</pc>
+<pc n=".">·</pc>
 	<pc n="space"> </pc>
 <w ana="11A---F2---" lemma="responsiua" n="responsiua" xml:id="w555">responsiua</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="script">
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w558">ut
@@ -853,6 +856,7 @@ siua</w>
 		<expan>am</expan>
 	</choice>
 </w>
+<pc n="," />
 <w ana="11F---A3---" lemma="quis" n="quid" xml:id="w567">
 	<choice>
 		<abbr type="brevigraph">¢</abbr>
@@ -898,6 +902,7 @@ d</w>
 <ab n="Definition of ars" xml:id="ab05">
 <ref cRef="unknown" type="source">
 <w ana="11C---A2---" lemma="ars" n="ars" xml:id="w585"><hi rend="larger">a</hi>rs</w>
+<note type="content">The section that I entitled "Definition of ars" is almost completely unintelligible in the manuscript, and section "Introduction to the parts of speech" also is very hardly readable. I know of no direct source for either section, so the text cannot be reconstructed based on the source.</note>
 <lb n="1r.a.24" />
 <unclear cert="low" reason="faded">
 <w ana="3-NA1--9---" lemma="dico" n="dicunt" xml:id="w586">dicunt</w>
@@ -1184,6 +1189,7 @@ tur</w>
 <w ana="3-NA3--6---" lemma="sum" n="erit" xml:id="w690">erit</w>
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="ars" n="ars" xml:id="w693">ars</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quoniam" n="quoniam" xml:id="w696">
 	<choice>
@@ -1379,7 +1385,12 @@ a</w>
 <w ana="11A---O2---" lemma="suus" n="suis" xml:id="w834">suis</w>
 	<pc n=",">|</pc>
 <lb n="1r.a.39" />
-<gap quantity="1" reason="illegible" unit="words" />
+<unclear cert="low" reason="faded">
+<w n="rtire" type="nonsense" xml:id="w835">
+<gap quantity="3" reason="illegible" unit="chars" />
+rtire</w>
+</unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 	<w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w837">est</w>
 	<pc n="space"> </pc>
@@ -1404,17 +1415,15 @@ a</w>
 	<pc n="space"> </pc>
 <w ana="3-LK1--6--2" lemma="segregatur" n="segregatur" xml:id="w855">segregatur</w>
 	<pc n=".">.</pc>
-	<pc n="space"> </pc>
-<gap quantity="1" reason="illegible" unit="words" />
-<unclear cert="low" reason="faded">
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w858">ab</w>
-</unclear>
+<unclear cert="low" reason="faded">
 <w ana="11F---F3---" lemma="aliquis" n="aliquo" xml:id="w859">ali
 	<choice>
 		<abbr type="superscription">q<am>ų</am></abbr>
 		<expan>qu</expan>
 	</choice>
 o</w>
+</unclear>
 
 
 <cb n="1r.b" />
@@ -1495,15 +1504,22 @@ o</w>
 <w ana="11C---A2---" lemma="pars" n="pars" xml:id="w885">pars</w>
 	<pc n=",">·</pc>
 <unclear cert="low" reason="faded">
-	<w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w888">que</w>
+	<w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w886">que</w>
 	<pc n="space"> </pc>
 </unclear>
 <unclear cert="low" reason="faded">
-<w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w889">est</w>
+<w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w887">est</w>
 </unclear>
-<gap quantity="5" reason="illegible" unit="chars" />
+	<pc n="space"> </pc>
+<unclear cert="medium" reason="faded">
+<w ana="4-S--------" lemma="in" n="in" xml:id="w888">in</w>
+</unclear>
+<w n="citas" type="nonsense" xml:id="w889">
+<gap quantity="4" reason="illegible" unit="chars" />
 <lb n="1r.b.4" />
-<gap quantity="7" reason="illegible" unit="chars" />
+citas</w>
+<gap quantity="2" reason="illegible" unit="chars" />
+<pc n=".">,</pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w890"><hi rend="larger">e</hi>st</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
@@ -1573,6 +1589,7 @@ ta</w>
 <w ana="2-LM41A2---" lemma="compono" n="composita" xml:id="w921">composita</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w924">est</w>
+<pc n="," />
 <lb n="1r.b.6" />
 <unclear cert="low" reason="faded">
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w925">ab</w>
@@ -1606,6 +1623,7 @@ ta</w>
 <w ana="11C---A2---" lemma="oratio" n="oratio" xml:id="w937">oratio</w>
 	<pc n="space"> </pc>
 <w ana="11F---D3---" lemma="hic" n="hoc" xml:id="w939">hoc</w>
+<pc n="," />
 <w ana="11F---A3---" lemma="qui" n="quod" xml:id="w942">q
 	<choice>
 		<abbr type="superscription">d<am>¯</am></abbr>
@@ -1668,10 +1686,12 @@ cedit</w>
 <w ana="11B---D3---" lemma="peccatis" n="peccatis" xml:id="w984">peccatis</w>
 	<pc n="space"> </pc>
 </unclear>
+<unclear cert="medium" reason="faded">
 <w ana="4-O--------" lemma="et" n="et" xml:id="w985">et</w>
+</unclear>
 <w ana="2-KM41A2---" lemma="uita" n="uita" xml:id="w986">uita</w>
 	<pc n="space"> </pc>
-<w ana="11C---J2---" lemma="imprecamur" n="imprecamur" xml:id="w987">in
+<w ana="11C---J2---" lemma="imprecamur" n="imprecamur" xml:id="w987">im
         <choice>
 		<abbr type="superscription">p<am>¯</am></abbr>
 		<expan>pre</expan>
@@ -1762,7 +1782,6 @@ tit</w>
 <w ana="11C---A2---" lemma="latinitas" n="latinitas" xml:id="w1056">latinitas</w>
 </unclear>
 	<pc n="space"> </pc>
-<gap quantity="3" reason="illegible" unit="words" />
 <unclear cert="high" reason="faded">
 	<w ana="11F---J3--1" lemma="qui" n="quae" xml:id="w1057">quæ</w>
 </unclear>
@@ -1792,7 +1811,7 @@ tit</w>
 		<expan>um</expan>
 	</choice>
 </w>
-	<pc n=",">|</pc>
+	<pc n=".">|</pc>
 <unclear cert="low" reason="faded">
 <w ana="4-S--------" lemma="per" n="per" xml:id="w1071">
 	<choice>
@@ -1918,6 +1937,7 @@ tia</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-LA1--6---" lemma="traho" n="trahit" xml:id="w1131">trahit</w>
+<pc n="," />
 <lb n="1r.b.15" />
 
 <w ana="4-O--------" lemma="quia" n="quia" xml:id="w1134">
@@ -2038,6 +2058,7 @@ tur</w>
 </unclear>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
+<pc n="," />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w1206">ut</w>
 </unclear>
 
@@ -2069,6 +2090,7 @@ tur</w>
 tur</w>
 	<pc n="space"> </pc>
 </unclear>
+<pc n="," />
 <w ana="4-O--------" lemma="unde" n="unde" xml:id="w1233">unde</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
@@ -2104,29 +2126,37 @@ tur</w>
 <lb n="1r.b.20" />
 <gap quantity="1" reason="illegible" unit="words" />
 <unclear cert="medium" reason="faded">
-<w ana="11F---F3H--" lemma="uterque" n="utroque" xml:id="w1254">utro
+<w ana="11F---D2H-2" lemma="uterque" n="utramque" xml:id="w1254">utr
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
 	<choice>
 		<abbr type="after">q<am>;</am></abbr>
 		<expan>que</expan>
 	</choice>
+<note type="script">There is no visible "2-shaped" abbreviation mark over the "a". In fact, the latter looks more like an "o" than as an "a". However, the word is hardly readable, so the abbreviation mark might have faded out.</note>
 </w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w ana="11C---D2---" lemma="pars" n="partem" xml:id="w1257">partem</w>
 	<pc n="space"> </pc>
 <w ana="3-LB1--6---" lemma="capio" n="capiat" xml:id="w1260">capiat</w>
 	<pc n=".">ł</pc>
 <w ana="11C---A2--2" lemma="conjunctio" n="coniunctio" xml:id="w1263"><hi rend="larger">c</hi>oniunctio</w>
-	<pc n=",">·</pc>
-	<pc n="space"> </pc>
-<unclear cert="low" reason="faded">
+	<pc n="0">·</pc>
 <unclear cert="medium" reason="faded">
-<w ana="11C---A2---" lemma="appositio" n="appositio" xml:id="w1266">apposicio
-<note type="emendation">Scribal error: "apposicio" for "appositio".</note>
-</w>
+<w ana="4-O--------" lemma="et" n="et" xml:id="w1264">et</w>
+</unclear>
+<unclear cert="medium" reason="faded">
+<w ana="11C---A2---" lemma="praepositio" n="praepositio" xml:id="w1266">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+positio</w>
 </unclear>
 	<pc n="space"> </pc>
-</unclear>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w1269">in</w>
 <w n="con" type="nonsense" xml:id="w1270">con
 	<pc n="space"> </pc>
@@ -2139,8 +2169,7 @@ tur</w>
 <w ana="3-LQ1-----2" lemma="uerbi" n="uerbi" xml:id="w1278">uerbi</w>
 	<pc n="space"> </pc>
 <w ana="3-LJ1--9---" lemma="accipio" n="accipiuntur" xml:id="w1281">accipiuntur</w>
-	<pc n=",">.</pc>
-	<pc n="space"> </pc>
+	<pc n=".">.</pc>
 </ref>
 
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.54.8-2.54.16" type="source">
@@ -2187,6 +2216,7 @@ tur</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n="," />
 <lb n="1r.b.23" />
 <w ana="11C---A3---" lemma="pronomen" n="pronomen" xml:id="w1311">
 	<choice>
@@ -2205,10 +2235,9 @@ nomen</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w ana="11C---A2---" lemma="interiectio" n="interiectio" xml:id="w1323">interiectio</w>
-<note type="content">In fact, if we include the "interiectio", the parts of the speech become six, not five as announced.</note>
 </unclear>
+<note type="content">In fact, if we include the "interiectio", the parts of the speech become six, not five as announced.</note>
 	<pc n=".">.</pc>
-	<pc n="space"> </pc>
 <w ana="11F---J1--1" lemma="hic" n="hi" xml:id="w1326"><hi rend="larger">h</hi>i</w>
 	<pc n="space"> </pc>
 <w ana="11B---A3---" lemma="participium" n="participium" xml:id="w1329">par
@@ -2224,7 +2253,7 @@ nomen</w>
 	<pc n="space"> </pc>
 <w ana="2-MD11J1---" lemma="iungentes" n="iungentes" xml:id="w1335">iungentes</w>
 	<pc n="space"> </pc>
-<w ana="11C---A3---" lemma="participale" n="participale" xml:id="w1338">participale</w>
+<w ana="11C---A3---" lemma="participiale" n="participiale" xml:id="w1338">participiale</w>
 	<pc n="space"> </pc>
 <w ana="11C---A3---" lemma="uel" n="uel" xml:id="w1341">uel</w>
 	<pc n="space"> </pc>
@@ -2358,6 +2387,7 @@ nomina</w>
 <w ana="3-LJ1--7---" lemma="sequimur" n="sequimur" xml:id="w1467">sequimur</w>
 	<pc n="space"> </pc>
 </unclear>
+<pc n="," />
 <w ana="11F---D2---" lemma="quamquam" n="quamquam" xml:id="w1470">qu
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
@@ -2438,6 +2468,7 @@ positiuas</w>
 <w ana="11C---M2---" lemma="pars" n="partes" xml:id="w1524">partes</w>
 	<pc n="space"> </pc>
 <w ana="11C---D2--1" lemma="orationis" n="orationis" xml:id="w1527">orationis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="2-JD11J1---" lemma="separantes" n="separantes" xml:id="w1530">se
 <lb n="1r.b.34" />
@@ -2575,8 +2606,9 @@ tes</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w ana="3-LA1--9---" lemma="iungunt" n="iungunt" xml:id="w1635">iungunt</w>
-	<pc n="space"> </pc>
 </unclear>
+<pc n="," />
+	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quam" n="quam" xml:id="w1638">qu
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>

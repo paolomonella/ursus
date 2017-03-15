@@ -177,7 +177,7 @@
 <w n="composita" xml:id="w27">composita</w>
 	<pc n="space"> </pc>
 
-<note type="script">This title (marked as "head") is in uncial. The uncial glyphs are also used in the body of the text, to mark larger initials in new sections of the text.</note>
+<note type="script">This heading ("Adbreuiatio... composita") is in uncial. The uncial glyphs are also used in the body of the text, to mark larger initials in new sections of the text.</note>
 </ref>
 </ab>
 
@@ -191,13 +191,9 @@
 <w n="minima" xml:id="w33">minima</w>
 	<pc n="space"> </pc>
 <add place="above">
-<note type="script">Under the well readable "pars" written above the line, there's another word, hardly readable probably because of a hole in the parchment. The deleted word might also be "pars".</note>
 <w n="pars" xml:id="w36">pars</w>
 </add>
-<w n="pars" xml:id="w39">p
-<gap quantity="2" reason="hole" unit="chars" />
-	s
-</w>
+<note type="script">The word "pars" was probably originally written in line, but then a damage in the parchment made it unreadable. Then a second hand re-wrote the same word over the line.</note>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w42">est</w>
 	<pc n="space"> </pc>
@@ -255,9 +251,7 @@ tinet</w>
 <w n="totius" xml:id="w90">totius</w>
 	<pc n="space"> </pc>
 </add>
-<unclear cert="medium" reason="faded">
-	<w n="totius" xml:id="w93">totius</w>
-</unclear>
+<note type="script">The word "totius" was originally written in line, but it now looks hardly readable. Then a second hand re-wrote the same word over the line.</note>
 	<pc n="space"> </pc>
 <w n="intellectus" xml:id="w96">intellectus</w>
 	<pc n=".">.</pc>
@@ -275,7 +269,7 @@ tinet</w>
 <w n="a" xml:id="w105">a</w>
 	<pc n="space"> </pc>
 <w n="syllaba" xml:id="w108">syllaba</w>
-	<pc n=",">.</pc>
+	<pc n="0">.</pc>
 <w n="quoniam" xml:id="w111">
 	<choice>
 		<abbr type="superscription">qm<am>¯</am></abbr>
@@ -398,6 +392,7 @@ syllabæ</w>
 <w n="syllaba" xml:id="w219">syll
 <lb n="1r.a.10" />
 aba</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="sed" xml:id="w222">sed</w>
 	<pc n="space"> </pc>
@@ -409,6 +404,7 @@ aba</w>
 </w>
 	<pc n="space"> </pc>
 <w n="sincere" xml:id="w228">sincere</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="eo" xml:id="w231">eo</w>
 	<pc n="space"> </pc>
@@ -451,6 +447,7 @@ aba</w>
 <w n="dico" xml:id="w258">dico</w>
 <lb n="1r.a.11" />
 <w n="a" type="alphabemes" xml:id="w261">a</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="nec" xml:id="w264">nec</w>
 	<pc n="space"> </pc>
@@ -504,12 +501,8 @@ m</w>
 <w n="qua" xml:id="w306">qua</w>
 	<pc n="0">·</pc>
 <w n="ponitur" xml:id="w309">ponitur</w>
-<unclear cert="medium" reason="faded">
-	<pc n="space"> </pc>
-</unclear>
 	<pc n=".">·</pc>
 	<pc n="space"> </pc>
-
 <w n="nam" xml:id="w312">n
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
@@ -531,7 +524,7 @@ ra</w>
 		<abbr type="superscription">u<am>8</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note type="graphic">There are signs written above the line that I do not understand: a possible macron above the (very hardly legible "d") and another sign in the space between "deo" and "rum", that might simply mean that the two parts of the word, though written separately, should be read together. The direct source here is Priscian, Ars grammatica, K 2.53.20-21, which has "in 'ara' deorum, 'a' paenultima producitur".</note>
+<note type="graphic">There are signs written above the line that I do not understand: a possible macron above the (very hardly legible) "d" and another sign in the space between "deo" and "rum", that might simply mean that the two parts of the word, though written separately, should be read together. The direct source here is Priscian, Ars grammatica, K 2.53.20-21, which has "in 'ara' deorum, 'a' paenultima producitur".</note>
 </w>
 </unclear>
 <pc n="quote">·</pc>
@@ -683,7 +676,7 @@ gi</w>
 <unclear cert="medium" reason="faded">
 	<w n="clare" xml:id="w456">clare</w>
 </unclear>
-	<pc n=",">.</pc>
+	<pc n="0">.</pc>
 <w n="uel" xml:id="w459">
 	<choice>
 		<abbr type="superscription">ul<am>¯</am></abbr>
@@ -699,9 +692,9 @@ gi</w>
 </w>
 <add place="above">
 <w n="ter" type="alphabemes" xml:id="w462">ter
-<note type="script">These graphemes written above the line are meant to clarify the explanation of the "t plus macron" abbreviation at (for "ter) the end of "diligenter".</note>
 </w>
 </add>
+<note type="script">A second hand wrote the graphemes "ter" written above the line, to clarify the explanation of the "t plus macron" abbreviation at the end of "diligenter".</note>
 	<pc n=".">.</pc>
 </ref>
 </ab>
@@ -827,13 +820,10 @@ ua</w>
 		<expan>on</expan>
 	</choice>
 siua</w>
-<unclear cert="medium" reason="faded">
-	<pc n="space"> </pc>
-</unclear>
+<note type="emendation">The graphemes around "dicitur" are very hard to read. Another reading might be "oratio dici t(um) [two unclear graphemes] possunt uerba imperatiua et responsiua". In this case, the "u with r rotunda above" abbreviation would be expanded in "um", not "ur". However, the "p" and "o" of "possunt" are very hardly recognizable. The reading "oratio dicitur [...] sunt uerba imperatiua et responsiua" is more likely based on the manuscript.</note>
 	<pc n=".">·</pc>
-	<pc n="space"> </pc>
 <w n="imperatiua" xml:id="w546">imperatiua</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="script">
 <w n="ut" xml:id="w549">ut</w>
@@ -843,10 +833,10 @@ siua</w>
 <note type="script">It seems that something similar to "ut lege" was written in the same line, then was erased and a new "ut lege" was written in its place. Also, there is a faded sign over the initial "u". This sign looks like the abbreviation that I am encoding with Unicode character "8" and occurs again later in the same line (above the next "ut", i.e. the word with id w558).</note>
 </w>
 </unclear>
-<pc n="quote">·</pc>
+<pc n=".">·</pc>
 	<pc n="space"> </pc>
 <w n="responsiua" xml:id="w555">responsiua</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="script">
 <w n="ut" xml:id="w558">ut
@@ -862,6 +852,7 @@ siua</w>
 		<expan>am</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 <w n="quid" xml:id="w567">
 	<choice>
 		<abbr type="brevigraph">¢</abbr>
@@ -907,6 +898,7 @@ d</w>
 <ab n="Definition of ars" xml:id="ab05">
 <ref cRef="unknown" type="source">
 <w n="ars" xml:id="w585"><hi rend="larger">a</hi>rs</w>
+<note type="content">The section that I entitled "Definition of ars" is almost completely unintelligible in the manuscript, and section "Introduction to the parts of speech" also is very hardly readable. I know of no direct source for either section, so the text cannot be reconstructed based on the source.</note>
 <lb n="1r.a.24" />
 <unclear cert="low" reason="faded">
 <w n="dicunt" xml:id="w586">dicunt</w>
@@ -997,12 +989,12 @@ d</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 	<w n="est" xml:id="w633">est</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 	<w n="apprehensio" xml:id="w634">apprehensio</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="praeceptorum" xml:id="w635">
 	<choice>
@@ -1068,8 +1060,8 @@ bus</w>
 </unclear>
 <unclear cert="high" reason="faded">
 	<w n="coniugationibus" xml:id="w653">coniugationibus</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="consistit" xml:id="w654">
 	<choice>
 		<abbr type="superscription">c<am>¯</am></abbr>
@@ -1089,12 +1081,12 @@ sistit</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 	<w n="dicitur" xml:id="w661">dicitur</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 	<w n="ars" xml:id="w662">ars</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="quia" xml:id="w663">
 	<choice>
 		<abbr type="brevigraph">¢</abbr>
@@ -1193,6 +1185,7 @@ tur</w>
 <w n="erit" xml:id="w690">erit</w>
 	<pc n="space"> </pc>
 <w n="ars" xml:id="w693">ars</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quoniam" xml:id="w696">
 	<choice>
@@ -1212,8 +1205,8 @@ prius</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 	<w n="artis" xml:id="w705">artis</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="in" xml:id="w708">in</w>
 <w n="mente" xml:id="w711">mente</w>
 	<pc n="space"> </pc>
@@ -1269,11 +1262,10 @@ prius</w>
 <lb n="1r.a.35" />
 <unclear cert="medium" reason="faded">
 	<w n="operibus" xml:id="w743">operibus</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 	<w n="fit" xml:id="w744">fit</w>
-	<pc n="space"> </pc>
 </unclear>
 	<pc n=".">.</pc>
 	<pc n="space"> </pc>
@@ -1306,7 +1298,6 @@ prius</w>
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
 	<w n="octo" xml:id="w759">octo</w>
-	<pc n="space"> </pc>
 </unclear>
 <lb n="1r.a.36" />
 <w n="sunt" xml:id="w762">sunt</w>
@@ -1362,12 +1353,12 @@ a</w>
 <lb n="1r.a.38" />
 <unclear cert="low" reason="faded">
 	<w n="suam" xml:id="w810">suam</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 	<w n="appetit" xml:id="w813">appetit</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="et" xml:id="w816">et</w>
 </unclear>
@@ -1388,11 +1379,16 @@ a</w>
 <w n="suis" xml:id="w834">suis</w>
 	<pc n=",">|</pc>
 <lb n="1r.a.39" />
-<gap quantity="1" reason="illegible" unit="words" />
+<unclear cert="low" reason="faded">
+<w n="rtire" type="nonsense" xml:id="w835">
+<gap quantity="3" reason="illegible" unit="chars" />
+rtire</w>
+</unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 	<w n="est" xml:id="w837">est</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="cum" xml:id="w840">c
 	<choice>
@@ -1406,24 +1402,22 @@ a</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 	<w n="intellectu" xml:id="w846">intellectu</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="et" xml:id="w849">et</w>
 <w n="ratione" xml:id="w852">ratione</w>
 	<pc n="space"> </pc>
 <w n="segregatur" xml:id="w855">segregatur</w>
 	<pc n=".">.</pc>
-	<pc n="space"> </pc>
-<gap quantity="1" reason="illegible" unit="words" />
-<unclear cert="low" reason="faded">
 <w n="ab" xml:id="w858">ab</w>
-</unclear>
+<unclear cert="low" reason="faded">
 <w n="aliquo" xml:id="w859">ali
 	<choice>
 		<abbr type="superscription">q<am>ų</am></abbr>
 		<expan>qu</expan>
 	</choice>
 o</w>
+</unclear>
 
 
 <cb n="1r.b" />
@@ -1442,8 +1436,8 @@ o</w>
 <gap quantity="2" reason="illegible" unit="words" />
 <unclear cert="medium" reason="faded">
 	<w n="diuiditur" xml:id="w862">diuiditur</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="et" xml:id="w864">et</w>
 <w n="traditio" xml:id="w865">traditio</w>
 	<pc n="space"> </pc>
@@ -1454,8 +1448,8 @@ o</w>
 		<expan>que</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="quod" xml:id="w868">
 	<choice>
 		<abbr type="superscription">qd<am>¯</am></abbr>
@@ -1496,23 +1490,27 @@ o</w>
 	parauilis
 <note type="emendation">Scribal error: "acomparauilis" for "acomparabilis". The word, however, might also be "comparabilis", and the previous grapheme could be part of another illegible word.</note>
 </w>
-	<pc n="space"> </pc>
-
-
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="pars" xml:id="w885">pars</w>
 	<pc n=",">·</pc>
 <unclear cert="low" reason="faded">
-	<w n="quae" xml:id="w888">que</w>
+	<w n="quae" xml:id="w886">que</w>
+</unclear>
 	<pc n="space"> </pc>
-</unclear>
 <unclear cert="low" reason="faded">
-<w n="est" xml:id="w889">est</w>
+<w n="est" xml:id="w887">est</w>
 </unclear>
-<gap quantity="5" reason="illegible" unit="chars" />
+	<pc n="space"> </pc>
+<unclear cert="medium" reason="faded">
+<w n="in" xml:id="w888">in</w>
+</unclear>
+<w n="citas" type="nonsense" xml:id="w889">
+<gap quantity="4" reason="illegible" unit="chars" />
 <lb n="1r.b.4" />
-<gap quantity="7" reason="illegible" unit="chars" />
+citas</w>
+<gap quantity="2" reason="illegible" unit="chars" />
+<pc n=".">,</pc>
 <w n="est" xml:id="w890"><hi rend="larger">e</hi>st</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
@@ -1535,8 +1533,8 @@ o</w>
 <pc n=".">|</pc>
 <unclear cert="medium" reason="faded">
 	<w n="est" xml:id="w896">est</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="minima" xml:id="w897">minima</w>
 	<pc n="space"> </pc>
 <w n="pars" xml:id="w900">pars</w>
@@ -1564,8 +1562,8 @@ ta</w>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 	<w n="ex" xml:id="w912">ex</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="duobus" xml:id="w915">duo
 	<choice>
@@ -1573,15 +1571,16 @@ ta</w>
 		<expan>bus</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 	<w n="corruptis" xml:id="w918">corruptis</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="composita" xml:id="w921">composita</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w924">est</w>
+<pc n=","></pc>
 <lb n="1r.b.6" />
 <unclear cert="low" reason="faded">
 <w n="ab" xml:id="w925">ab</w>
@@ -1595,7 +1594,6 @@ ta</w>
 </unclear>
 <unclear cert="low" reason="faded">
 	<w n="ratione" xml:id="w930">ratione</w>
-	<pc n="space"> </pc>
 </unclear>
 	<pc n="." />
 <w n="idcirco" xml:id="w933"><hi rend="larger">i</hi>dcirco</w>
@@ -1615,6 +1613,7 @@ ta</w>
 <w n="oratio" xml:id="w937">oratio</w>
 	<pc n="space"> </pc>
 <w n="hoc" xml:id="w939">hoc</w>
+<pc n=","></pc>
 <w n="quod" xml:id="w942">q
 	<choice>
 		<abbr type="superscription">d<am>¯</am></abbr>
@@ -1675,12 +1674,14 @@ cedit</w>
 </w>
 <unclear cert="low" reason="faded">
 <w n="peccatis" xml:id="w984">peccatis</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
+<unclear cert="medium" reason="faded">
 <w n="et" xml:id="w985">et</w>
+</unclear>
 <w n="uita" xml:id="w986">uita</w>
 	<pc n="space"> </pc>
-<w n="imprecamur" xml:id="w987">in
+<w n="imprecamur" xml:id="w987">im
         <choice>
 		<abbr type="superscription">p<am>¯</am></abbr>
 		<expan>pre</expan>
@@ -1702,8 +1703,8 @@ camur</w>
 <w n="et" xml:id="w1002">et</w>
 <unclear cert="medium" reason="faded">
 <w n="ceteros" xml:id="w1005">ceteros</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="dialecticos" xml:id="w1008">dialecticos</w>
 	<pc n="space"> </pc>
 <w n="duae" xml:id="w1011">duæ</w>
@@ -1751,12 +1752,12 @@ camur</w>
 <w n="et" xml:id="w1047"><hi rend="larger">e</hi>t</w>
 <unclear cert="low" reason="faded">
 	<w n="in" xml:id="w1050">in</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 	<w n="his" xml:id="w1053">his</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="consistit" xml:id="w1054">consis
 <lb n="1r.b.11" />
@@ -1771,7 +1772,6 @@ tit</w>
 <w n="latinitas" xml:id="w1056">latinitas</w>
 </unclear>
 	<pc n="space"> </pc>
-<gap quantity="3" reason="illegible" unit="words" />
 <unclear cert="high" reason="faded">
 	<w n="quae" xml:id="w1057">quæ</w>
 </unclear>
@@ -1792,8 +1792,8 @@ tit</w>
 		<expan>am</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="et" xml:id="w1065">et</w>
 <w n="actum" xml:id="w1068">act
 	<choice>
@@ -1801,7 +1801,7 @@ tit</w>
 		<expan>um</expan>
 	</choice>
 </w>
-	<pc n=",">|</pc>
+	<pc n=".">|</pc>
 <unclear cert="low" reason="faded">
 <w n="per" xml:id="w1071">
 	<choice>
@@ -1927,6 +1927,7 @@ tia</w>
 </w>
 	<pc n="space"> </pc>
 <w n="trahit" xml:id="w1131">trahit</w>
+<pc n=","></pc>
 <lb n="1r.b.15" />
 
 <w n="quia" xml:id="w1134">
@@ -1968,7 +1969,6 @@ cedat</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 	<w n="fungatur" xml:id="w1158">fungatur</w>
-	<pc n="space"> </pc>
 </unclear>
 <lb n="1r.b.16" />
 <w n="officio" xml:id="w1161">officio</w>
@@ -2046,6 +2046,7 @@ cedat</w>
 tur</w>
 </unclear>
 	<pc n="space"> </pc>
+	<pc n=","></pc>
 <unclear cert="medium" reason="faded">
 <w n="ut" xml:id="w1206">ut</w>
 </unclear>
@@ -2076,8 +2077,8 @@ tur</w>
 <w n="nascitur" xml:id="w1230">nasci
 <lb n="1r.b.19" />
 tur</w>
-	<pc n="space"> </pc>
 </unclear>
+<pc n=","></pc>
 <w n="unde" xml:id="w1233">unde</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
@@ -2095,8 +2096,8 @@ tur</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="est" xml:id="w1242">est</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="participium" xml:id="w1245">participi
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
@@ -2113,29 +2114,37 @@ tur</w>
 <lb n="1r.b.20" />
 <gap quantity="1" reason="illegible" unit="words" />
 <unclear cert="medium" reason="faded">
-<w n="utroque" xml:id="w1254">utro
+<w n="utramque" xml:id="w1254">utr
+	<choice>
+		<abbr type="superscription">a<am>2</am></abbr>
+		<expan>am</expan>
+	</choice>
 	<choice>
 		<abbr type="after">q<am>;</am></abbr>
 		<expan>que</expan>
 	</choice>
+<note type="script">There is no visible "2-shaped" abbreviation mark over the "a". In fact, the latter looks more like an "o" than as an "a". However, the word is hardly readable, so the abbreviation mark might have faded out.</note>
 </w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="partem" xml:id="w1257">partem</w>
 	<pc n="space"> </pc>
 <w n="capiat" xml:id="w1260">capiat</w>
 	<pc n=".">ł</pc>
 <w n="coniunctio" xml:id="w1263"><hi rend="larger">c</hi>oniunctio</w>
-	<pc n=",">·</pc>
-	<pc n="space"> </pc>
-<unclear cert="low" reason="faded">
+	<pc n="0">·</pc>
 <unclear cert="medium" reason="faded">
-<w n="appositio" xml:id="w1266">apposicio
-<note type="emendation">Scribal error: "apposicio" for "appositio".</note>
-</w>
+<w n="et" xml:id="w1264">et</w>
+</unclear>
+<unclear cert="medium" reason="faded">
+<w n="praepositio" xml:id="w1266">
+	<choice>
+		<abbr type="superscription">p<am>¯</am></abbr>
+		<expan>pre</expan>
+	</choice>
+positio</w>
 </unclear>
 	<pc n="space"> </pc>
-</unclear>
 <w n="in" xml:id="w1269">in</w>
 <w n="con" type="nonsense" xml:id="w1270">con
 	<pc n="space"> </pc>
@@ -2148,8 +2157,7 @@ tur</w>
 <w n="uerbi" xml:id="w1278">uerbi</w>
 	<pc n="space"> </pc>
 <w n="accipiuntur" xml:id="w1281">accipiuntur</w>
-	<pc n=",">.</pc>
-	<pc n="space"> </pc>
+	<pc n=".">.</pc>
 </ref>
 
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.54.8-2.54.16" type="source">
@@ -2180,7 +2188,6 @@ tur</w>
 	<pc n="space"> </pc>
 <w n="orationis" xml:id="w1299">orationis</w>
 <unclear cert="medium" reason="faded">
-	<pc n="space"> </pc>
 </unclear>
 	<pc n=",">·</pc>
 	<pc n="space"> </pc>
@@ -2196,6 +2203,7 @@ tur</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 <lb n="1r.b.23" />
 <w n="pronomen" xml:id="w1311">
 	<choice>
@@ -2214,10 +2222,9 @@ nomen</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="interiectio" xml:id="w1323">interiectio</w>
-<note type="content">In fact, if we include the "interiectio", the parts of the speech become six, not five as announced.</note>
 </unclear>
+<note type="content">In fact, if we include the "interiectio", the parts of the speech become six, not five as announced.</note>
 	<pc n=".">.</pc>
-	<pc n="space"> </pc>
 <w n="hi" xml:id="w1326"><hi rend="larger">h</hi>i</w>
 	<pc n="space"> </pc>
 <w n="participium" xml:id="w1329">par
@@ -2233,7 +2240,7 @@ nomen</w>
 	<pc n="space"> </pc>
 <w n="iungentes" xml:id="w1335">iungentes</w>
 	<pc n="space"> </pc>
-<w n="participale" xml:id="w1338">participale</w>
+<w n="participiale" xml:id="w1338">participiale</w>
 	<pc n="space"> </pc>
 <w n="uel" xml:id="w1341">uel</w>
 	<pc n="space"> </pc>
@@ -2246,7 +2253,6 @@ nomen</w>
 		<expan>um</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
 </unclear>
 <lb n="1r.b.25" />
 <w n="dicebant" xml:id="w1350">dicebant</w>
@@ -2283,14 +2289,14 @@ bis</w>
 	<pc n=".">.</pc>
 <unclear cert="medium" reason="faded">
 <w n="adnumerabant" xml:id="w1383"><hi rend="larger">a</hi>dnumerabant</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="pronomina" xml:id="w1386">pro
 <lb n="1r.b.27" />
 nomina</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="articulis" xml:id="w1389">articulis</w>
 	<pc n=",">·</pc>
 <w n="nominantes" xml:id="w1392">nominantes</w>
@@ -2365,8 +2371,8 @@ nomina</w>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="sequimur" xml:id="w1467">sequimur</w>
-	<pc n="space"> </pc>
 </unclear>
+<pc n=","></pc>
 <w n="quamquam" xml:id="w1470">qu
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
@@ -2447,6 +2453,7 @@ positiuas</w>
 <w n="partes" xml:id="w1524">partes</w>
 	<pc n="space"> </pc>
 <w n="orationis" xml:id="w1527">orationis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="separantes" xml:id="w1530">se
 <lb n="1r.b.34" />
@@ -2498,8 +2505,8 @@ parantes</w>
 <gap quantity="1" reason="illegible" unit="words" />
 <unclear cert="medium" reason="faded">
 <w n="octo" xml:id="w1575">octo</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="partes" xml:id="w1578">par
 <lb n="1r.b.36" />
 tes</w>
@@ -2513,16 +2520,16 @@ tes</w>
 <w n="in" xml:id="w1590">in</w>
 <unclear cert="low" reason="faded">
 <w n="hoc" xml:id="w1593">hoc</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="discrepant" xml:id="w1594">discrepant</w>
 </unclear>
 <pc n=",">·</pc>
 <unclear cert="low" reason="faded">
 <w n="quia" xml:id="w1596">quia</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="non" xml:id="w1597">non</w>
 </unclear>
@@ -2545,8 +2552,8 @@ tes</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="parte" xml:id="w1605">parte</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="ponunt" xml:id="w1608">ponunt</w>
 </unclear>
@@ -2563,8 +2570,8 @@ tes</w>
 		<expan>bus</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="iungunt" xml:id="w1620">iungunt</w>
 </unclear>
@@ -2584,8 +2591,9 @@ tes</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="iungunt" xml:id="w1635">iungunt</w>
-	<pc n="space"> </pc>
 </unclear>
+<pc n=","></pc>
+	<pc n="space"> </pc>
 <w n="quam" xml:id="w1638">qu
 	<choice>
 		<abbr type="superscription">a<am>2</am></abbr>
@@ -4436,8 +4444,8 @@ tinentur</w>
 </w>
 <unclear cert="high" reason="faded">
 <w n="casu" xml:id="w3219">casu</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
 <w n="ostenditur" xml:id="w3222">ostendi
 <lb n="1v.b.22" />
@@ -4465,8 +4473,8 @@ tur</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="sine" xml:id="w3246">sine</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <gap quantity="1" reason="illegible" unit="words" />
 <lb n="1v.b.23" />
 <w n="esse" xml:id="w3249">esse</w>
@@ -4483,17 +4491,16 @@ tur</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="quod" xml:id="w3270">quod</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="caret" xml:id="w3273">caret</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="casu" xml:id="w3276">ca
 <lb n="1v.b.24" />
 su</w>
-	<pc n="space"> </pc>
 </unclear>
 	<pc n=",">·</pc>
 	<pc n="space"> </pc>
@@ -4617,7 +4624,6 @@ prium</w>
 <w n="quod" xml:id="w3432">quod</w>
 <unclear cert="medium" reason="faded">
 <w n="extra" xml:id="w3435">extra</w>
-	<pc n="space"> </pc>
 </unclear>
 <lb n="1v.b.30" />
 <w n="naturam" xml:id="w3438">natur
@@ -4672,7 +4678,6 @@ prium</w>
 <w n="arbor" xml:id="w3486">ar
 <lb n="1v.b.32" />
 bor</w>
-	<pc n="space"> </pc>
 </unclear>
 	<pc n=".">·</pc>
 	<pc n="space"> </pc>
@@ -4711,8 +4716,8 @@ dem</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="carent" xml:id="w3537">carent</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="propriam" xml:id="w3540">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
@@ -4785,9 +4790,13 @@ prie</w>
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
 <w n="cor" xml:id="w3615">cor</w>
+</unclear>
 	<pc n="space"> </pc>
+<unclear cert="high" reason="faded">
 <w n="a" xml:id="w3618">a</w>
+</unclear>
 	<pc n="space"> </pc>
+<unclear cert="high" reason="faded">
 <w n="corde" xml:id="w3621">corde</w>
 </unclear>
 <lb n="1v.b.37" />
@@ -4946,8 +4955,8 @@ d</w>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="notamen" xml:id="w3801">notamen</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 </ref>
 
 <ref cRef="unknown" type="source">
@@ -5010,7 +5019,6 @@ d</w>
 		<expan>us</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
 </unclear>
 <lb n="2r.a.8" />
 </ref>
@@ -5355,8 +5363,8 @@ priam</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="est" xml:id="w4173">est</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="quae" xml:id="w4176">quæ</w>
 	<pc n="space"> </pc>
 <w n="non" xml:id="w4179">
@@ -5387,10 +5395,10 @@ priam</w>
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
 <w n="nascitur" xml:id="w4215">nascitur</w>
-	<pc n="space"> </pc>
 </unclear>
-<note type="content">This is an explanatory interlinear glossa. In the mansucript, it is linked to the main text by means of a cross sign between "nascitur" and "ut". The text in the glossa is closer to the text of Priscianus (the source of this passage).</note>
 </add>
+<note type="content">This is an explanatory interlinear glossa. In the mansucript, it is linked to the main text by means of a cross sign between "nascitur" and "ut". The text in the glossa is closer to the text of Priscianus (the source of this passage).</note>
+	<pc n="space"> </pc>
 <w n="ut" xml:id="w4218">ut</w>
 <w n="a" xml:id="w4221">a</w>
 <w n="Iulo" xml:id="w4224">iulo</w>
@@ -5418,8 +5426,8 @@ bus</w>
 		<expan>bus</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="multae" xml:id="w4245">multæ</w>
 	<pc n="space"> </pc>
 <w n="aliae" xml:id="w4248">aliæ</w>
@@ -5428,8 +5436,8 @@ bus</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="sunt" xml:id="w4254">sunt</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 	<pc n=".">ï</pc>
 	<pc n="space"> </pc>
 </ref>
@@ -5454,8 +5462,8 @@ bus</w>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="imposita" xml:id="w4269">inposita</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="est" xml:id="w4272">est</w>
 	<pc n=",">.</pc>
 <w n="et" xml:id="w4275">et</w>
@@ -5536,8 +5544,8 @@ munione</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="quamuis" xml:id="w4353">quamuis</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="eueniat" xml:id="w4356">eue
 <lb n="2r.a.26" />
 niat</w>
@@ -5802,7 +5810,6 @@ pria</w>
 	<pc n="space"> </pc>
 <w n="qualitas" xml:id="w4578">qualitas</w>
 <unclear cert="medium" reason="faded">
-	<pc n="space"> </pc>
 </unclear>
 	<pc n=",">·</pc>
 	<pc n="space"> </pc>
@@ -5834,9 +5841,6 @@ pria</w>
 <w n="tantum" xml:id="w4593">tantum</w>
 	<pc n="space"> </pc>
 <w n="ostendit" xml:id="w4596">ostendit</w>
-<unclear cert="medium" reason="faded">
-	<pc n="space"> </pc>
-</unclear>
 	<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="non" xml:id="w4599">
@@ -5986,8 +5990,8 @@ a</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="duas" xml:id="w4704">duas</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="species" xml:id="w4705">species</w>
 </unclear>
@@ -6017,9 +6021,8 @@ a</w>
 		<expan>pre</expan>
 	</choice>
 nomen</w>
-<pc n="," />
-	<pc n="space"> </pc>
 </unclear>
+<pc n="," />
 <lb n="2r.b.3" />
 <w n="nomen" xml:id="w4728">nomen</w>
 <pc n=",">·</pc>
@@ -6049,8 +6052,8 @@ a</w>
 		<expan>pre</expan>
 	</choice>
 ponitur</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="nomini" xml:id="w4752">nomini</w>
 	<pc n="space"> </pc>
 <w n="differentiae" xml:id="w4755">differentiæ</w>
@@ -6078,7 +6081,6 @@ s</w>
 <lb n="2r.b.5" />
 <unclear cert="low" reason="faded">
 <w n="nascitur" xml:id="w4773">nascitur</w>
-	<pc n="space"> </pc>
 </unclear>
 	<pc n=",">·</pc>
 	<pc n="space"> </pc>
@@ -6118,8 +6120,8 @@ quam</w>
 </unclear>
 <unclear cert="medium" reason="faded">
 <w n="dignitatis" xml:id="w4812">dignitatis</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="imponitur" xml:id="w4815">imponitur</w>
 	<pc n="space"> </pc>
 <w n="hoc" xml:id="w4818">hoc</w>
@@ -6136,7 +6138,6 @@ quam</w>
 <w n="aut" xml:id="w4836">aut</w>
 <unclear cert="medium" reason="faded">
 <w n="claritate" xml:id="w4839">claritate</w>
-	<pc n="space"> </pc>
 </unclear>
 	<pc n=",">|</pc>
 	<pc n="space"> </pc>
@@ -6174,8 +6175,8 @@ quam</w>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w n="dignus" xml:id="w4872">dignus</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="sit" xml:id="w4875">sit</w>
 	<pc n=".">ï</pc>
 <w n="per" xml:id="w4878">
@@ -6212,8 +6213,8 @@ a</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="singulis" xml:id="w4896">singulis</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="uel" xml:id="w4899">uel</w>
 	<pc n="space"> </pc>
 <w n="binis" xml:id="w4902">binis</w>
@@ -6247,8 +6248,8 @@ notatur</w>
 <w n="et" xml:id="w4938">et</w>
 <unclear cert="medium" reason="faded">
 <w n="clarus" xml:id="w4941">clarus</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="habetur" xml:id="w4944">habetur</w>
 <lb n="2r.b.11" />
 <w n="paucis" xml:id="w4947">paucis</w>
@@ -6279,12 +6280,12 @@ diget</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="litteris" xml:id="w4977">litteris</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="et" xml:id="w4980"><hi rend="larger">e</hi>t</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="tum" xml:id="w4983">t
 	<choice>
@@ -6292,8 +6293,8 @@ diget</w>
 		<expan>um</expan>
 	</choice>
 </w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="singulis" xml:id="w4986">singulis</w>
 	<pc n="space"> </pc>
 <w n="litteris" xml:id="w4989">litteris</w>
@@ -6380,8 +6381,8 @@ sonantibus</w>
 <w n="incipit" xml:id="w5055">inci
 <lb n="2r.b.15" />
 pit</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="ut" xml:id="w5058">ut</w>
 <add place="above">
 <w n="Gnaeus" xml:id="w5061">gneus</w>
@@ -6409,8 +6410,8 @@ pit</w>
 		<expan>pre</expan>
 	</choice>
 nominis</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <w n="a" xml:id="w5088">a</w>
 <w n="consonante" xml:id="w5091">con
 <lb n="2r.b.16" />
@@ -7171,8 +7172,8 @@ sone</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="sine" xml:id="w5730">sine</w>
-	<pc n="space"> </pc>
 </unclear>
+	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="una" xml:id="w5733">una</w>
 </unclear>
@@ -40347,9 +40348,9 @@ pta</w>
 pta</w>
 <pc n="quote">·</pc>
 <w n="elis" type="alphabemes" xml:id="w37401">elis</w>
-<unclear cert="high" reason="faded">
 <pc n="," />
 	<pc n="space"> </pc>
+<unclear cert="high" reason="faded">
 <w n="facit" xml:id="w37404">facit</w>
 </unclear>
 	<pc n="space"> </pc>
