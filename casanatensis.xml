@@ -15,11 +15,13 @@
     <revisionDesc>
 
 <listChange type="critical" ordered="true">
+	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
+	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
+	<change type="agenda">Final green light to GMD and FS</change>
+	<change type="agenda">Add 'larger' allographs for alphabetic characters to gtos?</change>
 	<change type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium. Test
 		on Safari and Edge at least.</change>
-	<change type="agenda">Review LL punctuation of the first lines of the MS.</change>
 	<change type="agenda">Contact TO and GF</change>
-	<change type="agenda">Review transcription of the first lines of the MS (e.g.: don't repeat words, add commas).</change>
 	<change type="agenda">CTS: Far spuntare il testo di Keil dal CLG direttamente dal link, ma
 		copiato/incollato nel mio progetto (a meno che non si riesca a fare un link al sito CLG)</change>
 	<change type="agenda">I always put a space at the end of the lb, cb, pb elements (XHTML-style).
