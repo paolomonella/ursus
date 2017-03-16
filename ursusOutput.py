@@ -20,31 +20,54 @@ import os
 import re
 import xml.etree.ElementTree as ET
 
-
-###################
-# My own markdown #
-###################
-
 # Clear screen
-os.system('clear')
-
-#################
-# Insert xml:id #
-#################
+#os.system('clear')
 
 # The namespaces
-n    = '{http://www.tei-c.org/ns/1.0}'              # for XML/TEI
-nx   = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
-ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
+t    = '{http://www.tei-c.org/ns/1.0}'              # for XML/TEI
+xml   = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
+#ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
+ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
+        'xml': 'http://www.w3.org/XML/1998/namespace'}  # for attributes like xml:id
 
 # Parse the tree
 tree = ET.parse('casanatensis.xml')
+#root = tree.getroot()
 
-for word in tree.findall('.//' + n + 'w'):
+
+def manageWordLikeElem(elem):
+    ow.append(elem.tag)
+
+#for e in tree.findall('.//' + '*', ns):
+ow = [] # Other word-like elements
+for ab in tree.findall('.//' + t + 'ab'):
+    # § Replicate in output xml
+    for ref in ab: # Iterate over the <ref> children of <ab>
+        for w in ref: # Iterate over word-like elements (such as <w>, <gap>, <pc> etc.)
+            manageWordLikeElem(w)
+
+"""
+This is the list of word-like elements, possible children of <ref>:
+{http://www.tei-c.org/ns/1.0}lb     # Replicate
+{http://www.tei-c.org/ns/1.0}cb     # Replicate
+{http://www.tei-c.org/ns/1.0}pb     # Replicate
+{http://www.tei-c.org/ns/1.0}pc     # Use @n
+{http://www.tei-c.org/ns/1.0}note   # Replicate?
+{http://www.tei-c.org/ns/1.0}milestone  # Replicate?
+{http://www.tei-c.org/ns/1.0}w      # Replicate?
+{http://www.tei-c.org/ns/1.0}anchor # Ignore
+{http://www.tei-c.org/ns/1.0}add
+{http://www.tei-c.org/ns/1.0}unclear
+{http://www.tei-c.org/ns/1.0}gap
+
+"""
+for o in set(ow):
+    print(o)
+
+"""
     if word.get(nx + 'id'):
         idstring = word.get(nx + 'id')
         idcount  = int(idstring[1:])
-        # § vd. se copiare tutta questa funzione così com'è, dato che funziona.
     else:
         idcount  = idcount + 3
         idstring = 'w' + str(idcount)
@@ -76,30 +99,5 @@ for word in tree.findall('.//' + n + 'w'):
 
 
 
-############################
-# Zip and archive old file #
-############################
 
-
-def zipArchiveFile(inputFileName, outputFileName, workingFolder, archiveFolder):
-    """ This function zips and archives the old input file.
-        Then, it gives the output file the same name of the old input file.
-        Arguments:
-            inputFileName   = base file name (not complete path) of old input file, including extension
-            outputFileName  = base file name (not complete path) of new output file, including extension
-            workingFolder   = the folder where both the input file and the outpu file are
-            archiveFolder   = the folder where the old input file will be archived
-    """
-    # Zip and store the old input file
-    #dateTag = datetime.datetime.now().strftime("%Y-%m-%d_%H.%M.%S") # A string with current date and time
-    # In next line, 'datetime...' generates a string with current date and time
-    stored = archiveFolder + datetime.datetime.now().strftime("%Y-%m-%d_%H.%M.%S") +'_'+inputFileName
-    shutil.move(workingFolder+inputFileName, stored)
-    zf = zipfile.ZipFile(stored+'.zip', mode='w')
-    zf.write(stored, compress_type=zipfile.ZIP_DEFLATED)
-    zf.close()
-    os.remove(stored)
-    # Give the output file the same filename as the original input file
-    shutil.move(workingFolder+outputFileName,workingFolder+inputFileName)
-
-#zipArchiveFile(inBaseFN, outBaseFN, c, t)
+"""

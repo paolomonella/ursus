@@ -13,7 +13,8 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
-
+	<change type="agenda" subtype="critical">Try to upload this file in ALIM2, see errors.
+		Then maybe contact ALIM2 webmaster.</change>
 	<change type="agenda" subtype="critical">Create ALIM-TEI-Level_1 visualization for ALIM2 website.</change>
 	<change type="agenda" subtype="critical">Add 'larger' allographs for alphabetic characters to gtos?</change>
 	<change type="agenda" subtype="critical">Re-test xml load in other browsers. I tested it on Firefox and Chromium.
