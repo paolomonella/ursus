@@ -20,8 +20,6 @@
 		Test on Safari and Edge at least.</change>
 	<change type="agenda" subtype="critical">CTS: Show Keil Priscian's text directly from the 'start source' box, but
 		copy/pasted into my website (unless I can make a direct link to the CLG website -- hard to do).</change>
-	<change type="agenda" subtype="critical">From time to time: see if there are 'v', 'ae', or other graphemes not
-	       declared in the GToS.</change>
 	<change type="agenda" subtype="critical">Adopt prefixDef: see discussion in the TEI-L with subject "cRef usage".</change>
 	<change type="agenda" subtype="critical">Review documentation (priority: the two 'sgn' bookmarks).</change>
 
@@ -119,6 +117,8 @@
 		(e.g.: don't repeat words, add correct commas).</change>
 	<change type="done" when="2017-03-15">From time to time: check for duplicate and unordered word IDs</change>
 	<change type="done" when="2017-03-16">Final green light to publish link to edition in ALIM website</change>
+	<change type="done" when="2017-03-16">From time to time: see if there are 'v', 'ae', or other graphemes not
+	       declared in the GToS.</change>
 
 
 
