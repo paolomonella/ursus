@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# This script turns my own 'paolomarkdown' conventions into XML/TEI for the digital edition
+# This script turns my own 'ursusmarkdown' conventions into XML/TEI for the digital edition
 # of manuscript Casanatensis 1086.
 # It's written in Python 3.4, but also works with Python 2.7
 #
-# Warning: when writing in 'paolomarkdown', note that every string at the beginning
+# Warning: when writing in 'ursusmarkdown', note that every string at the beginning
 # of the line that does not start with '<' or end with '>'
 # will be substituted by this script with
 # <w n="string">string</w>
