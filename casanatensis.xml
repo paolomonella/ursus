@@ -18,7 +18,6 @@
 	<change type="agenda" subtype="critical">Add 'larger' allographs for alphabetic characters to gtos?</change>
 	<change type="agenda" subtype="critical">Re-test xml load in other browsers. I tested it on Firefox and Chromium.
 		Test on Safari and Edge at least.</change>
-	<change type="agenda" subtype="critical">Contact TO and GF</change>
 	<change type="agenda" subtype="critical">CTS: Show Keil Priscian's text directly from the 'start source' box, but
 		copy/pasted into my website (unless I can make a direct link to the CLG website -- hard to do).</change>
 	<change type="agenda" subtype="critical">From time to time: see if there are 'v', 'ae', or other graphemes not

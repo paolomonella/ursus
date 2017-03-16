@@ -25,4 +25,4 @@ Full documentation in `documentation.md`.
 * `lemma`: this folder includes my experiments with lemmatization/POS (part of speech) tagging
 * `minidomToolBox`: this folder includes the script that I'm using to traverse the DOM of `casanatensis.xml`
 * `documentation.md`: The full documentation on this edition
-* `paoloMarkDown.py`: a Python script facilitating my work of keying in `casanatensis.xml`
+* `ursusMarkDown.py`: a Python script facilitating my work of keying in `casanatensis.xml`
