@@ -14,7 +14,7 @@
     </fileDesc>
     <revisionDesc>
 
-	<change type="agenda" subtype="critical">Final green light to GMD and FS</change>
+	<change type="agenda" subtype="critical">Create ALIM-TEI-Level_1 visualization for ALIM2 website.</change>
 	<change type="agenda" subtype="critical">Add 'larger' allographs for alphabetic characters to gtos?</change>
 	<change type="agenda" subtype="critical">Re-test xml load in other browsers. I tested it on Firefox and Chromium.
 		Test on Safari and Edge at least.</change>
@@ -84,30 +84,29 @@
 
 
 
-	<change type="done" when="2016">Gestisci meglio i 'pc' type=quote</change>
-	<change type="done" when="2016">In 5r.a.10, le lezioni greche 'edein' seguito da 'eidein',
-		e anche 'plion' seguito da 'pleion' sono da discutere in una complicata discussione
-		critico-testuale, anche in considerazione dei testimoni del testo di Prisciano (vd.
-		app. crit. di Keil K 2.71.11). Tra l'altro, dovrei riportare il testo dei testimoni
-		del testo di Prisciano nella nota contenutistica a quel punto [P.S.: ma forse l'ho già fatto].</change>
+	<change type="done" when="2016">Better visualization of 'pc' type=quote</change>
+	<change type="done" when="2016">In 5r.a.10, Greek words 'edein' followed by 'eidein', and also 'plion'
+		followed by 'pleion', need a complex textual-critical discussion, also taking the witnesses of
+		Priscian's text into account (see Keil's app. crit. to K 2.71.11). Also, I should include the text
+		of Priscian as reported by Priscian's witnesses (if I haven't done it already).</change>
 	<change type="done" when="2017-02-04">Fix the JS cross-browser compatibility issues.</change>
 	<change type="done" when="2017-02">For clear 'scribal error[s]', I sometimes correct in the value
 		of @n, sometimes do not. Also, sometimes I insert a @type="script" note, sometimes a
 		@type="content" note. I normally use 'script' when I correct silently, 'content'
 		when I do not. This only is to check until the first note with type "emendation".</change>
-	<change type="done" when="2017-02">Specifica i type di 'note' con i due nuovi tipi 'emendation'
-		e 'graphic'. Ricomincia dalla parola w28905 andando a ritroso.</change>
-	<change type="done" when="2017-03-01">Add new Unicode characters, as suggested by Odd Einer Haugen (see his email).</change>
-	<change type="done" when="2017-03-05">Periodicamente: check for '0' after closing tags
+	<change type="done" when="2017-02">Use two new 'note' types 'emendation' and 'graphic'.
+		Start from word with id w28905 moving backwards.</change>
+	<change type="done" when="2017-03-01">Add new Unicode characters, as suggested by Odd Einer Haugen (see email).</change>
+	<change type="done" when="2017-03-05">From time to time: check for '0' after closing tags
 		(due to @f or @d in .vimrc).</change>
-	<change type="done" when="2017-03-05">Ricordarsi periodicamente di togliere gli spazi (tag 'pc space')
-		seguiti da 'lb'. In VIM l'andata a capo è \n</change>
+	<change type="done" when="2017-03-05">From time to time: delete 'pc space' followed by 'lb'.
+		In VIM newline is \n</change>
 	<change type="done" when="2017-03-05">In notes, always write Priscian, Ars grammatica
-		(and not Institutiones et sim.).</change>
+		(not Institutiones et sim.).</change>
 	<change type="done" when="2017-03-06">Unify all 'agenda' items in this list: move here those items that currently
 		are in my agenda file (and possibly also scattered elsewhere).</change>
-	<change type="done" when="2017-03-08">Notazioni più snelle (magari con icone) per le note in modo da dare
-		all'intera pagina un aspetto meno "overwhelming"</change>
+	<change type="done" when="2017-03-08">'Lighter' signs (possibly icons) for notes: give the page a less
+		overwhelming look.</change>
 	<change type="done" when="2017-03-11">Add to legenda: Pretty much everything is in css
 		(take a look at the whole css to check).</change>
 	<change type="done" when="2017-03-11">Show table of signs</change>
@@ -118,7 +117,8 @@
 	<change type="done" when="2017-03-15">Review LL punctuation of the first lines of the MS.</change>
 	<change type="done" when="2017-03-15">Review transcription of the first lines of the MS
 		(e.g.: don't repeat words, add correct commas).</change>
-	<change type="done" when="2017-03-15">Periodicamente: check for duplicate and unordered word IDs</change>
+	<change type="done" when="2017-03-15">From time to time: check for duplicate and unordered word IDs</change>
+	<change type="done" when="2017-03-16">Final green light to publish link to edition in ALIM website</change>
 
 
 
@@ -16300,7 +16300,7 @@ tronymica</w>
 	<pc n="space"> </pc>
 <w n="posse" xml:id="w14649">posse</w>
 <pc n=".">.</pc>
-<note type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible</note>
+<note type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible.</note>
 <note type="source">I did not check whether the next sentence ("possessiua quae et thetica dicitur...") has a source.</note>
 <w n="possessiua" xml:id="w14652"><hi rend="larger">p</hi>ossessiua</w>
 	<pc n="space"> </pc>
