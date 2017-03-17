@@ -23,6 +23,7 @@ Full documentation in `documentation.md`.
 
 * `glyph_images`: this folder includes jpeg images of the glyphs found in the manuscript
 * `lemma`: this folder includes my experiments with lemmatization/POS (part of speech) tagging
-* `minidomToolBox`: this folder includes the script that I'm using to traverse the DOM of `casanatensis.xml`
+* `minidomToolBox`: this folder includes Python functions that I'm using to traverse the DOM of `casanatensis.xml`
 * `documentation.md`: The full documentation on this edition
 * `ursusMarkDown.py`: a Python script facilitating my work of keying in `casanatensis.xml`
+* `ursusOutput.py`: a Python script exporting 'simplified' versions of the edition (e.d. including only one textual layer) -- under construction
