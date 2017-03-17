@@ -730,6 +730,9 @@ Markup not referring to a specific layer
 		- "source" (on the text sources),
 		- "content" (on the text content);
 		- "emendation" (a note proposing an emendation of the text clearly readable in the manuscript);
+	- To facilitate the processing of these elements, I am making sure that `<note>` elements are only
+		- children of `<ref>` (notes to an entire sentence or section)
+		- children of `<w>` (notes to that specific word)
 
 
 
@@ -800,6 +803,7 @@ Note that in the code above the contemporary comma is placed before the undersco
 
 
 ## Possible values for attribute @ana of `<pc>`
+
 
 `<pc ana=","></pc>`
 
@@ -984,9 +988,9 @@ To encode this differentiation explicitly (which would be ideal), one attribute 
 Boundaries between words
 ========================
 
-1. Contemporary word boundaries: The `<w>` element marks the word boundaries defined by the encoder according to the contemporary linguistic model of Latin. They therefore belong to the LL, not to the gL.
+1. Linguistic word boundaries: The `<w>` element marks the word boundaries defined by the encoder according to the contemporary linguistic model of Latin. They therefore belong to the LL, not to the gL.
 
-2. Manuscript word boundaries: The word boundaries as conceived by the scribe and graphically marked in the manuscript are encoded in the present edition with 
+2. Graphic word boundaries: The word boundaries as conceived by the scribe and graphically marked in the manuscript are encoded in the present edition with 
 
         <pc ana="space"> </pc>
 
