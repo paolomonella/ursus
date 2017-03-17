@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "TEI-ALIM-Lite.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <teiHeader>
+
+    <fileDesc>
+
+      <titleStmt>
+        <!-- Sostituire il testo in maiuscolo con i dati appropriati (non in maiuscolo!) -->
+        <!-- Il titolo completo del testo digitalizzato -->
+        <title>TITOLO</title>
+        <!-- L'autore del testo digitalizzato -->
+        <author>AUTORE</author>
+        <respStmt>
+          <!-- L'edizione critica di riferimento -->
+          <resp>Edizione critica a stampa a cura di</resp>
+          <name>MARIO ROSSI</name>
+        </respStmt>
+        <respStmt>
+          <!-- Il responsabile dell'edizione digitale TEI XML -->
+          <!-- Valori possibili per l'attributo @key: -->
+          <!-- ALIM1_export -->   <!-- per la migrazione da ALIM1 ad ALIM2 -->
+          <!-- ALIM2_new -->      <!-- nuovo testo codificato per ALIM 2 -->
+          <!-- ALIM2_update -->   <!-- testo già presente in ALIM 2 modificato, es. passaggio da livello 1 a 2 -->
+          <resp key="ALIM2_new">Edizione in formato TEI XML a cura di</resp>
+          <name key="GV">GIUSEPPE VERDI</name>
+        </respStmt>
+      </titleStmt>
+
+      <extent>
+        <!-- È necessario uno script per rifare i conteggi in maniera affidabile in ALIM2 -->
+        <measure quantity="159530" unit="words">Parole: 159530</measure>
+        <measure quantity="941396" unit="characters_without_spaces">Caratteri (spazi esclusi): 941396</measure>
+      </extent>
+
+      <publicationStmt>
+        <publisher>
+          <ref target="http://alim.unisi.it/">ALIM</ref>
+        </publisher>
+        <date when="2013-10-20">20/10/2013</date>
+        <availability>
+          <p>Copyright 2006- progetto ALIM</p>
+        </availability>
+      </publicationStmt>
+
+      <sourceDesc>
+        <!-- Scheda bibliografica completa per l'edizione critica a stampa di riferimento -->
+        <!-- Sostituire il testo in maiuscolo con i dati appropriati -->
+        <biblStruct>
+          <monogr>
+            <author>AUTORE</author>
+            <title>TITOLO</title>
+            <editor>CURATORE</editor>
+            <imprint>
+              <pubPlace>LUOGO DI PUBBLICAZIONE</pubPlace>
+              <publisher>CASA EDITRICE</publisher>
+              <date>DATA</date>
+            </imprint>
+          </monogr>
+          <series>
+            <title level="s">TITOLO EVENTUALE SERIE EDITORIALE</title>
+            <biblScope unit="volume">NUMERO VOLUME</biblScope>
+          </series>
+        </biblStruct>
+        <!-- Scheda bibliografica per l'edizione critica di riferimento, versione per edizioni pubblicate su rivista -->
+        <biblStruct>
+          <analytic>
+            <author>AUTORE</author>
+            <title>TITOLO</title>
+          </analytic>
+          <monogr>
+            <title level="j">TITOLO RIVISTA</title>
+            <imprint>
+              <biblScope unit="vol">NUMERO</biblScope>
+              <date>1996</date>
+              <biblScope unit="pages">INTERVALLO-PAGINE</biblScope>
+            </imprint>
+          </monogr>
+        </biblStruct>
+         <!-- Scheda bibliografica per l'edizione critica di riferimento, versione per edizioni pubblicate come saggio in miscellanea -->
+        <biblStruct>
+          <analytic>
+            <author>AUTORE</author>
+            <title>TITOLO</title>
+          </analytic>
+          <monogr>
+            <title level="m">TITOLO MISCELLANEA. [ATTI DEL CONVEGNO DI...]</title>
+            <imprint>
+              <pubPlace>LUOGO DI PUBBLICAZIONE DELLA MISCELLANEA</pubPlace>
+              <publisher>CASA EDITRICE DELLA MISCELLANEA</publisher>
+              <date>DATA DI STAMPA DELLA MISCELLANEA</date>
+              <biblScope unit="pages">INTERVALLO-PAGINE</biblScope>
+            </imprint>
+          </monogr>
+        </biblStruct>
+        <!-- In aggiunta/alternativa il titolo esteso nel formato originale con indicati solo AUTORE e TITOLO -->
+        <bibl>TITOLO ESTESO PER OPERE STAMPATE XVI-XVIII secc.</bibl>
+      </sourceDesc>
+
+    </fileDesc>
+
+    <encodingDesc>
+      <!-- Informazioni generali relative al progetto -->
+      <projectDesc>
+        <p>Testo codificato nel formato TEI XML, versione P5, per essere incluso fra i testi che compongono il progetto
+          ALIM - Archivio della Latinità Italiana del Medioevo.</p>
+      </projectDesc>
+    
+      <editorialDecl>
+        <!-- Qui sono inserite note editoriali che valgono per tutti i testi ALIM -->
+        <ab type="boilerplate">La codifica segue le norme standard stabilite dal progetto ALIM, in dettaglio: <list>
+            <item>Sono state eliminate le sillabazioni: la parola spezzata da un 'a capo' è stata unita alla riga
+              precedente (anche alla pagina precedente, ove necessario). Eccezione: quando una parola è sillabata alla
+              fine di una riga e nella successiva riga appare solo la seconda parte della parola sillabata (quindi il
+              resto della riga a stampa è vuoto), la parola è stata registrata tutta nella riga in cui essa termina. È
+              stato ritenuto prioritario, infatti, mantenere il numero complessivo delle righe di ogni pagina.</item>
+          </list>
+        </ab>
+        <!-- Specificare il livello di codifica per ogni nuovo testo ALIM2: da 1 a 3 -->
+        <ab type="level">ALIM2_1</ab>
+        <!-- Se ci sono note editoriali che riguardano uno specifico testo queste vanno in un elemento <ab> con @type
+          come specificato qui di seguito; se non è necessario cancellare l'<ab> che segue -->
+        <ab type="specific"> </ab>
+      </editorialDecl>
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <!-- Aggiungere nota su attributo che permette di attribuire percentuali di lingue in un testo -->
+        <language ident="lat">Latino</language>
+      </langUsage>
+      <textClass>
+        <!-- Informazioni di catalogazione:
+         Forma: Prosa/Poesia/Prosimetro
+         Tipo di fonte: LETTERARIA/DOCUMENTARIA
+         Genere: GENERE (Epistolografia, Storiografia etc.) -->
+        <keywords>
+          <term type="form">Prosa</term>
+          <term type="source">Documentaria</term>
+          <term type="genre">Storiografia</term>
+        </keywords>
+      </textClass>
+      <creation>
+        <!-- Data di creazione del testo originario: prevedere una serie di esempi -->
+        <date> </date>
+      </creation>
+    </profileDesc>
+
+    <revisionDesc>
+      <!-- Inclusi una serie di esempi relativi a <change>, fra parentesi quadre il livello di codifica raggiunto -->
+      <!-- ATTENZIONE: sono solo esempi, cancellare e/o modificare come appropriato, la modifica più recente in alto -->
+      <change when="2015-06" who="GV">Prima trascrizione nel formato TEI P5 [livello 2]</change>
+      <change when="2015-05" who="GV">Aggiornamento da livello 0 a livello uno, schema TEI ALIM Lite [livello 1]</change>
+      <change when="2015-04" who="GV">Export nel formato TEI P5 a partire da ALIM 1 [livello 0]</change>
+    </revisionDesc>
+
+  </teiHeader>
+
+  <text>
+  </text>
+</TEI>
