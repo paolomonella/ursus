@@ -12,6 +12,7 @@
 #       - but probably it'll be better to take care of this
 #         after improving the management of <w> (I could
 #         dispose of <w> altogether)
+#   - check the space before <add> too.
 
 from __future__ import print_function
 import datetime
@@ -68,15 +69,91 @@ for ab in tree.findall('.//' + n + 'ab'):
             manageWordLikeElem(wLike)
 
 #######################################
-# Substitute/delete specific elements #
+# Delete/substitute specific elements #
 #######################################
 
-# Turn <lb>, <cb> and <pb> into anchors
-for x in ['lb', 'cb', 'pb']:    
-    for br in tree.findall('.//' + n + x):
-        br.tag = 'anchor'
+def deleteAllElements(myElemName, myNameSpace):
+    """ Delete all elements with name myElemName
+        and namespace myNameSpace. 
+    """
+    search = ('.//{0}' + myElemName).format(myNameSpace)
+    my_elem_parents = tree.findall(search + '/..')
+    for x in my_elem_parents:
+        for y in x.findall(myNameSpace + myElemName):
+            x.remove(y)
 
-def remove_whilespace_nodes(node, unlink=False):
+def substituteAllElements(myElemName, newElemName, myNameSpace):
+    """ Substitute all elements with name myElemName and
+        namespace myNameSpace with elements with name newElemName.
+    """
+    for x in tree.findall('.//' + myNameSpace + myElemName):
+        x.tag = newElemName
+
+for i in ['note', 'hi']:
+    deleteAllElements(i, n)
+
+for i in ['lb', 'cb', 'pb']:    
+    # § to-do: if <anchor> generates an empty space, change this to <span>
+    substituteAllElements(i, n + 'anchor', n)
+
+#for i in ['add']:    
+    #substituteAllElements(i, 'span', n)
+
+# Manage <add>s children of <ref>
+mysearch = ('.//{0}' + 'add').format(n)
+my_elem_parents = tree.findall(mysearch + '/..')
+for x in my_elem_parents:
+    for y in x.findall(n + 'add'):
+        # x is the <ref> or <w> parent, y is the <add> child
+        if x.tag == n + 'w':    # if <w>/<add>...
+            pass # § To do: add its text content to <w>'s content...
+                 # ... or, possibly better, manage this when managing
+                 # the content of each <w>
+        elif x.tag == n + 'ref': # if <ref>/<add>, change <add> to <span>
+            y.tag = n + 'span'
+
+wt = []
+for w in tree.findall('.//' + n + 'w'):
+    s = ''  # The string of characters of that word at the AL
+    """ Possible children of <w>:
+        {http://www.tei-c.org/ns/1.0}gap    # This is OK: leave it
+	{http://www.tei-c.org/ns/1.0}anchor # This is OK: leave it
+	{http://www.tei-c.org/ns/1.0}pc
+	{http://www.tei-c.org/ns/1.0}choice
+	{http://www.tei-c.org/ns/1.0}add
+	"""
+    cc = list(w) # Children of w
+    # §§§ To-do: how do I find out it it's a text node
+    # or an element node?
+
+    """
+    abbr = w.findall(n + '*')
+    if len(abbr) == 0:
+        print(abbr)
+        """
+
+
+"""
+searchBis = './/' + n + 'add'
+#searchBis = './/{1}add'.format(n)
+for x in tree.findall(searchBis):
+    my_parent = x.find('../')
+    if my_parent:
+        print(my_parent.tag)
+    if my_parent.tag == n + 'ref':
+        print('The parent is    ref')
+    elif my_parent.tag == n + 'w':
+        print('the parent is    w')
+    #x.tag = newElemName
+    """
+
+# END OF THE WORD
+
+
+
+
+
+def remove_whitespace_nodes(node, unlink=False):
     """Removes all of the whitespace-only text decendants of a DOM node.
     
     When creating a DOM from an XML source, XML parsers are required to
@@ -100,16 +177,12 @@ def remove_whilespace_nodes(node, unlink=False):
         if unlink:
             node.unlink()
 
-# Delete all elements with name 'myElemName' and namespace myNameSpace. 
-def deleteAllElements(myElemName, myNameSpace):
-    search = ('.//{0}' + myElemName).format(myNameSpace)
-    my_elem_parents = tree.findall(search + '/..')
-    for x in my_elem_parents:
-        for y in x.findall(myNameSpace + myElemName):
-            x.remove(y)
-            #print(y.tag)
+"""
 
-deleteAllElements('note', n)
+
+for x in tree.findall('.//{0}add'.format(n)):
+    aoa.append(x.get('place'))
+
 
 temp = open('temp.txt', 'w')
 for pc in tree.findall('.//' + n + 'pc'):
@@ -121,14 +194,7 @@ for pc in tree.findall('.//' + n + 'pc'):
                 print(pc.find('..'))
 temp.close()
 
-"""
-for x in ['note']: # I'm making this a list, just in case I want to get rid of more elements
-    for br in tree.findall('.//' + n + x):
-        #print(br.find('..'))
-        print(.//{0}prop.format(n))
-        """
 
-"""
 This is the list of word-like elements, possible children of <ref>:
 {http://www.tei-c.org/ns/1.0}lb     # Turn into <anchor>... or just delete
 {http://www.tei-c.org/ns/1.0}cb     # same as above, but possibly anchor
