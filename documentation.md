@@ -713,7 +713,7 @@ Markup not referring to a specific layer
         - parent of one or more `<w>` and/or `<pc>`elements (in most cases), if one ore more full words were added above the line
         - or child of `<w>` and parent of plain text (in few cases), if individual graphemes (not full words) were added above the line.
 
-	- possible values of attribute `@place` are:
+	- the three possible values of attribute `@place` are:
 		- "above" for interlinear additions (above the line)
 		- "below" for intelinear additions (below the line)
 		- "footnote" for an addition at the bottom of the column, connected with the text with a metamark
