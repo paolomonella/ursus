@@ -2,12 +2,16 @@
 # -*- coding: utf-8 -*-
 #
 # This script simplifies the encoding of casanatensis.xml
-# and creates a file casanatensis_AL.xml with the Alphabetic
-# Layer only. 
+# and creates a file ALIM2_publication/casanatensis_AL.xml
+# with the Alphabetic Layer only. 
+#
 # It's written in Python 3.4, but also works with Python 2.7
 # To-do: continue checking elements and dealing with them
 #   - <pc> has annoying space before
 #   - <lb> also leaves a blank space
+#       - but probably it'll be better to take care of this
+#         after improving the management of <w> (I could
+#         dispose of <w> altogether)
 
 from __future__ import print_function
 import datetime
@@ -72,6 +76,30 @@ for x in ['lb', 'cb', 'pb']:
     for br in tree.findall('.//' + n + x):
         br.tag = 'anchor'
 
+def remove_whilespace_nodes(node, unlink=False):
+    """Removes all of the whitespace-only text decendants of a DOM node.
+    
+    When creating a DOM from an XML source, XML parsers are required to
+    consider several conditions when deciding whether to include
+    whitespace-only text nodes. This function ignores all of those
+    conditions and removes all whitespace-only text decendants of the
+    specified node. If the unlink flag is specified, the removed text
+    nodes are unlinked so that their storage can be reclaimed. If the
+    specified node is a whitespace-only text node then it is left
+    unmodified."""
+    
+    remove_list = []
+    for child in node.childNodes:
+        if child.nodeType == dom.Node.TEXT_NODE and \
+           not child.data.strip():
+            remove_list.append(child)
+        elif child.hasChildNodes():
+            remove_whilespace_nodes(child, unlink)
+    for node in remove_list:
+        node.parentNode.removeChild(node)
+        if unlink:
+            node.unlink()
+
 # Delete all elements with name 'myElemName' and namespace myNameSpace. 
 def deleteAllElements(myElemName, myNameSpace):
     search = ('.//{0}' + myElemName).format(myNameSpace)
@@ -83,9 +111,15 @@ def deleteAllElements(myElemName, myNameSpace):
 
 deleteAllElements('note', n)
 
+temp = open('temp.txt', 'w')
 for pc in tree.findall('.//' + n + 'pc'):
     if pc.get('n') != '0':
         pc.text = pc.get('n').replace('question', '?').replace('quote', '"').replace('space', ' ')
+        if pc.tail and pc.tail != '\n' and pc.tail != '\n\t':
+            #print('«' + pc.tail + '»\n---', file=temp)
+            if pc.find('..'):
+                print(pc.find('..'))
+temp.close()
 
 """
 for x in ['note']: # I'm making this a list, just in case I want to get rid of more elements
