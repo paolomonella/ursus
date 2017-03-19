@@ -20,7 +20,7 @@ import shutil
 import zipfile
 import os
 import re
-import xml.etree.ElementTree as ET
+from lxml import etree as ET
 
 # Clear screen
 os.system('clear')
@@ -28,7 +28,7 @@ os.system('clear')
 # Namespaces
 n = '{http://www.tei-c.org/ns/1.0}'              # for XML/TEI
 xml = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
-ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
+#ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')   # This used to work when I used ElementTree
 ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
         'xml': 'http://www.w3.org/XML/1998/namespace'}  # for attributes like xml:id
 
@@ -37,7 +37,7 @@ casanaTree = ET.parse('casanatensis.xml')
 # Parse the tree of the ALIM2 template: it will be the base for the output tree
 tree = ET.parse('ALIM2_publication/teiHeader_template.xml')
 root = tree.getroot()
-root.set('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
+#root.set('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
 
 # Append the <body> of casanatensis.xml into <text> of the output xml file
 myBody = casanaTree.getroot().find(n + 'text').find(n + 'body')
@@ -123,6 +123,11 @@ for w in tree.findall('.//' + n + 'w'):
 	{http://www.tei-c.org/ns/1.0}add
 	"""
     cc = list(w) # Children of w
+    for c in cc:
+        if c.tag != '':
+            #print(c.text, end=', ').strip()
+            #print(c.localname, end=', ')
+            print(ET.QName(c).localname, end=', ')
     # §§§ To-do: how do I find out it it's a text node
     # or an element node?
 
@@ -209,4 +214,4 @@ This is the list of word-like elements, possible children of <ref>:
 {http://www.tei-c.org/ns/1.0}gap
 
 """
-tree.write('ALIM2_publication/casanatensis_AL.xml', encoding='UTF-8', method='xml')
+tree.write('ALIM2_publication/casanatensis_AL.xml', encoding='UTF-8', method='xml', xml_declaration=True)
