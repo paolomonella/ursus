@@ -20,7 +20,8 @@ import shutil
 import zipfile
 import os
 import re
-from lxml import etree as ET
+from lxml import etree
+
 
 # Clear screen
 os.system('clear')
@@ -32,10 +33,24 @@ xml = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
 ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
         'xml': 'http://www.w3.org/XML/1998/namespace'}  # for attributes like xml:id
 
+# General variables
+foo = []    # § sgn: needed for debugging
+
 # Parse the tree of casanatensis.xml
-casanaTree = ET.parse('casanatensis.xml')
+casanaTree = etree.parse('casanatensis.xml')
 # Parse the tree of the ALIM2 template: it will be the base for the output tree
-tree = ET.parse('ALIM2_publication/teiHeader_template.xml')
+no_blank = False
+if no_blank:
+    parser = etree.XMLParser(remove_blank_text=True)
+    tree = etree.parse('ALIM2_publication/teiHeader_template.xml', parser)
+else:
+    tree = etree.parse('ALIM2_publication/teiHeader_template.xml')
+
+
+# tree = etree.parse('ALIM2_publication/teiHeader_template.xml') # It works
+
+
+
 root = tree.getroot()
 #root.set('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
 
@@ -48,25 +63,8 @@ myText.append(myBody)
 # Functions #
 #############
 
-def manageWordLikeElem(w):
-    pass
 
 
-
-#######################
-# Traverse the <body> # 
-#######################
-
-#for e in tree.findall('.//' + '*', ns):
-for ab in tree.findall('.//' + n + 'ab'):
-    # Insert a <head> with the title of the section
-    if ab.get('n'):
-        newHead = ET.Element('head')
-        newHead.text = ab.get('n')
-        ab.insert(0, newHead)
-    for ref in ab: # Iterate over the <ref> children of <ab>
-        for wLike in ref: # Iterate over word-like elements (such as <w>, <gap>, <pc> etc.)
-            manageWordLikeElem(wLike)
 
 #######################################
 # Delete/substitute specific elements #
@@ -74,7 +72,9 @@ for ab in tree.findall('.//' + n + 'ab'):
 
 def deleteAllElements(myElemName, myNameSpace):
     """ Delete all elements with name myElemName
-        and namespace myNameSpace. 
+        and namespace myNameSpace. This function could be
+        re-written better now that I'm using lxml, but
+        it words, so it's OK.
     """
     search = ('.//{0}' + myElemName).format(myNameSpace)
     my_elem_parents = tree.findall(search + '/..')
@@ -82,24 +82,35 @@ def deleteAllElements(myElemName, myNameSpace):
         for y in x.findall(myNameSpace + myElemName):
             x.remove(y)
 
-def substituteAllElements(myElemName, newElemName, myNameSpace):
-    """ Substitute all elements with name myElemName and
-        namespace myNameSpace with elements with name newElemName.
+def substituteAllElements(oldName, newName, myNameSpace):
+    """ Substitute all elements with base name oldName and
+        namespace myNameSpace with elements with name newName:
+        <cb n="1r.1"> becomes
+        <pb n="1r.1" type="cb">
     """
-    for x in tree.findall('.//' + myNameSpace + myElemName):
-        x.tag = newElemName
+    for x in tree.findall('.//' + myNameSpace + oldName):
+        x.tag = myNameSpace + newName
+        x.set('type', oldName)
 
-for i in ['note', 'hi']:
+
+for i in ['note', 'abbr', 'pb']:
     deleteAllElements(i, n)
 
-for i in ['lb', 'cb', 'pb']:    
-    # § to-do: if <anchor> generates an empty space, change this to <span>
-    substituteAllElements(i, n + 'anchor', n)
+substituteAllElements('cb', 'pb', n) # § to-do: if <anchor> generates an empty space, change this to <span>
 
-#for i in ['add']:    
-    #substituteAllElements(i, 'span', n)
+"""
+for wrapper in tree.findall('.//' + n + 'unclear'): [MORE RECENT CODE, BUT USELESS]
+    Substitute <add> and <unclear> that are children of <ref>
+        with <span type="add"> and <span type="unclear">.
+        Possible children of 'unclear' are: only 'w'
+        Possible children of 'add' are:     w, pc, gap
+    if wrapper.getparent().tag == n + 'ref':
+        wrapper
+        for u in wrapper:   # The children of 'add'
+            uName = etree.QName(u).localname
+            foo.append(etree.QName(u).localname) # The tag name w/o namespace (e.g.: 'w', 'pc' etc.)
 
-# Manage <add>s children of <ref>
+# Manage <add>s children of <ref> [OLD CODE]
 mysearch = ('.//{0}' + 'add').format(n)
 my_elem_parents = tree.findall(mysearch + '/..')
 for x in my_elem_parents:
@@ -111,107 +122,139 @@ for x in my_elem_parents:
                  # the content of each <w>
         elif x.tag == n + 'ref': # if <ref>/<add>, change <add> to <span>
             y.tag = n + 'span'
+"""
 
-wt = []
-for w in tree.findall('.//' + n + 'w'):
-    s = ''  # The string of characters of that word at the AL
-    """ Possible children of <w>:
-        {http://www.tei-c.org/ns/1.0}gap    # This is OK: leave it
-	{http://www.tei-c.org/ns/1.0}anchor # This is OK: leave it
-	{http://www.tei-c.org/ns/1.0}pc
-	{http://www.tei-c.org/ns/1.0}choice
-	{http://www.tei-c.org/ns/1.0}add
-	"""
-    cc = list(w) # Children of w
-    for c in cc:
-        if c.tag != '':
-            #print(c.text, end=', ').strip()
-            #print(c.localname, end=', ')
-            print(ET.QName(c).localname, end=', ')
-    # §§§ To-do: how do I find out it it's a text node
-    # or an element node?
+#######################
+# Manage <w> and <pc> # 
+#######################
+
+for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' elements (children of <body>)
 
     """
-    abbr = w.findall(n + '*')
-    if len(abbr) == 0:
-        print(abbr)
-        """
-
-
-"""
-searchBis = './/' + n + 'add'
-#searchBis = './/{1}add'.format(n)
-for x in tree.findall(searchBis):
-    my_parent = x.find('../')
-    if my_parent:
-        print(my_parent.tag)
-    if my_parent.tag == n + 'ref':
-        print('The parent is    ref')
-    elif my_parent.tag == n + 'w':
-        print('the parent is    w')
-    #x.tag = newElemName
+    # Insert a <head> with the title of the section
+    newHead = etree.Element('span')
+    newHead.text = ab.get('n')
+    newHead.set('rend', 'bold')
+    ab.insert(0, newHead)
     """
 
-# END OF THE WORD
+    for ref in ab: # Iterate over the <ref> children of <ab>
+        for w in ref: # Iterate over word-like elements (such as <w>, <gap>, <pc> etc.)
+            #manageWordLikeElem(wLike)
+            wt = etree.QName(w).localname   # The tag name w/o namespace (e.g.: 'w', 'pc' etc.)
+            if wt == 'w':
+                # Easy solution (only backdraw: it moves all elements children of <w> after the text). This is
+                # OK (it's actually better) for 'anchor/pb/cb/lb', but it creates a slight inaccuracy with 'gap':
+                tempText = w.xpath('normalize-space()').replace(' ', '') # This is the unified text of the word
+                for y in w:
+                    yt = etree.QName(y).localname
+                    if yt in ['choice', 'add', 'pc', 'hi']:    # I'm removing them b/c they include text, or b/c it's <pc n="space">
+                        y.getparent().remove(y)
+                    y.tail = None
+                w.text = tempText
+
+                """
+                # Complicated solution, not completely functional
+                for y in w:
+                    yt = etree.QName(y).localname
+                    if yt == 'choice':
+                        # I'm changing this from <choice><expan>um</expan></choice> to 
+                        # <expan>um</expan>
+                        expan = y.find(n + 'expan')
+                        expanText = expan.text
+                        y.remove(expan) # Remove the original child <expan>
+                        y.text = expanText
+                        #y.tag = n + 'expan' # Transform the parent <choice> to <expan> (...or to <span>, in the future?)
+                    if y.tag == n + 'gap':
+                        print('Gap within the word: ' + w.get(xml + 'id'))
+                """
+            elif wt == 'anchor':    # These anchors come from <pb>, <cb> or <lb> and have @type="pb", @type="cb" etc.
+                pass
+            elif wt == 'pc':
+                z = [wt, w.attrib]
+                v = w.get('n')
+                if v in ['0', 'quote', 'space']: # Delete <pc>
+                    ref.remove(w)
+                elif v in ['.', 'question', ',']:   # Append to the text content of previous <w>
+                    v = v.replace('question', '?')
+                    if w.getprevious().tag in [n + 'lb', n + 'milestone', n + 'gap']:
+                        # Just give up and leave the <pc> element as it is
+                        if w.getprevious().tag != n + 'gap':
+                            print('Alas! Punctuation sign not coming immediately after <w> or <gap>')
+                            w.set('type', 'trouble')
+                    elif w.getprevious().tag == n + 'w': # If previous sibling is <w>, append punctuation to its textual content
+                        w.getprevious().text = w.getprevious().text + v
+                        #w.getprevious().tail = v + '\n' # Nope: this generates code like
+                                                         # <w n="dicam" xml:id="w564">dicam<lb n="1r.a.23" break="no"/></w>,
+                        ref.remove(w)
+                    elif w.getprevious().tag in [n + 'add', n + 'unclear']:
+                        if w.getprevious().find(n + 'w') is not None and len(w.getprevious().find(n + 'w')) == 0:
+                            # If <add> or <unclear> have a <w> child and this <w> has no children (<lb> or <choice>)
+                            w.getprevious().find(n + 'w').text = w.getprevious().find(n + 'w').text + v
+                            w.getprevious().find(n + 'w').text = w.getprevious().find(n + 'w').text.replace('\n', '')
+                            w.getprevious().find(n + 'w').text = w.getprevious().find(n + 'w').text.replace('\t', '')
+                            #print(w.getprevious().find(n + 'w').text)
+                        elif w.getprevious().find(n + 'w') is not None and len(w.getprevious().find(n + 'w')) > 0:
+                            # If the previous <w> has children (<lb> or <choice>, it's best to leave the <pc> as it is)
+                            pass
+                        else:
+                            print('Alas! Childless element <' + w.getprevious().tag + '>')
+                            w.getprevious().set('type', 'trouble')
+                    #foo.append(pwt) # The tag name w/o namespace (e.g.: 'w', 'pc' etc.)
+                    """
+                    Possible elements that are the previous sibling:
+                        lb          jump to previous
+                        milestone   jump to previous
+                        gap         jump to previous
+                        w           
+                        add         jump to its last <w> child
+                        unclear     jump to its last <w> child
+                    """
+            else:
+                pass
 
 
-
-
-
-def remove_whitespace_nodes(node, unlink=False):
-    """Removes all of the whitespace-only text decendants of a DOM node.
-    
-    When creating a DOM from an XML source, XML parsers are required to
-    consider several conditions when deciding whether to include
-    whitespace-only text nodes. This function ignores all of those
-    conditions and removes all whitespace-only text decendants of the
-    specified node. If the unlink flag is specified, the removed text
-    nodes are unlinked so that their storage can be reclaimed. If the
-    specified node is a whitespace-only text node then it is left
-    unmodified."""
-    
-    remove_list = []
-    for child in node.childNodes:
-        if child.nodeType == dom.Node.TEXT_NODE and \
-           not child.data.strip():
-            remove_list.append(child)
-        elif child.hasChildNodes():
-            remove_whilespace_nodes(child, unlink)
-    for node in remove_list:
-        node.parentNode.removeChild(node)
-        if unlink:
-            node.unlink()
 
 """
+    These are the possible @n <pc>s children of <ref>:
+        0
+        .
+        question
+        space
+        ,
+        quote
 
+    Possible element children of <w>:
+        {http://www.tei-c.org/ns/1.0}gap    # This is OK: leave it where it is
+	{http://www.tei-c.org/ns/1.0}anchor # This is OK: leave it where it is
+	{http://www.tei-c.org/ns/1.0}pc     # Delete this, if it's only n="space"
+	{http://www.tei-c.org/ns/1.0}choice # Extract the text
+	{http://www.tei-c.org/ns/1.0}add    # Extract the text
 
-for x in tree.findall('.//{0}add'.format(n)):
-    aoa.append(x.get('place'))
+    this is the new list of world-like elements, possible children of <ref>:
+            milestone   # leave it
+            gap         # leave it
+            anchor      # leave it (it occurs only once)
+            unclear
+            pc
+            span
 
+    This was the original the list of word-like elements, possible children of <ref>:
+        {http://www.tei-c.org/ns/1.0}lb     # Turn into <anchor>... or just delete
+        {http://www.tei-c.org/ns/1.0}cb     # same as above, but possibly anchor
+        {http://www.tei-c.org/ns/1.0}pb     # same as above, but possibly anchor
+        {http://www.tei-c.org/ns/1.0}pc     # Use @n as text content
+        {http://www.tei-c.org/ns/1.0}note   # Replicate? Nope, delete
+        {http://www.tei-c.org/ns/1.0}milestone  # Replicate?
+        {http://www.tei-c.org/ns/1.0}w      # Replicate
+        {http://www.tei-c.org/ns/1.0}anchor # Replicate
+        {http://www.tei-c.org/ns/1.0}add
+        {http://www.tei-c.org/ns/1.0}unclear
+        {http://www.tei-c.org/ns/1.0}gap
+    
+    """
 
-temp = open('temp.txt', 'w')
-for pc in tree.findall('.//' + n + 'pc'):
-    if pc.get('n') != '0':
-        pc.text = pc.get('n').replace('question', '?').replace('quote', '"').replace('space', ' ')
-        if pc.tail and pc.tail != '\n' and pc.tail != '\n\t':
-            #print('«' + pc.tail + '»\n---', file=temp)
-            if pc.find('..'):
-                print(pc.find('..'))
-temp.close()
+for f in set(foo):
+    print(f)
 
-
-This is the list of word-like elements, possible children of <ref>:
-{http://www.tei-c.org/ns/1.0}lb     # Turn into <anchor>... or just delete
-{http://www.tei-c.org/ns/1.0}cb     # same as above, but possibly anchor
-{http://www.tei-c.org/ns/1.0}pb     # same as above, but possibly anchor
-{http://www.tei-c.org/ns/1.0}pc     # Use @n as text content
-{http://www.tei-c.org/ns/1.0}note   # Replicate? Nope, delete
-{http://www.tei-c.org/ns/1.0}milestone  # Replicate?
-{http://www.tei-c.org/ns/1.0}w      # Replicate
-{http://www.tei-c.org/ns/1.0}anchor # Replicate
-{http://www.tei-c.org/ns/1.0}add
-{http://www.tei-c.org/ns/1.0}unclear
-{http://www.tei-c.org/ns/1.0}gap
-
-"""
 tree.write('ALIM2_publication/casanatensis_AL.xml', encoding='UTF-8', method='xml', xml_declaration=True)

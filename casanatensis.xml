@@ -653,7 +653,7 @@ ducitur</w>
 	<pc n="space"> </pc>
 <w n="examussim" xml:id="w429">examussim</w>
 	<pc n="space"> </pc>
-<w n="intellegi" xml:id="w432">intelle·
+<w n="intellegi" xml:id="w432">intelle
 <lb n="1r.a.18" break="no" />
 gi</w>
 	<pc n="space"> </pc>
@@ -693,8 +693,7 @@ gi</w>
 	</choice>
 </w>
 <add place="above">
-<w n="ter" type="alphabemes" xml:id="w462">ter
-</w>
+<w n="ter" type="alphabemes" xml:id="w462">ter</w>
 </add>
 <note type="script">A second hand wrote the graphemes "ter" written above the line, to clarify the explanation of the "t plus macron" abbreviation at the end of "diligenter".</note>
 	<pc n=".">.</pc>
@@ -2189,8 +2188,6 @@ positio</w>
 <w n="partes" xml:id="w1296">partes</w>
 	<pc n="space"> </pc>
 <w n="orationis" xml:id="w1299">orationis</w>
-<unclear cert="medium" reason="faded">
-</unclear>
 	<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="nomen" xml:id="w1302"><hi rend="larger">n</hi>omen</w>
@@ -3781,8 +3778,6 @@ iens</w>
 <w n="et" xml:id="w2625">et</w>
 <w n="celeriter" xml:id="w2628">celeriter</w>
 <lb n="1v.a.38" break="no" />
-	<pc n="." />
-	<pc n="space"> </pc>
 <w n="hoc" xml:id="w2631"><hi rend="larger">h</hi>oc</w>
 	<pc n="space"> </pc>
 <w n="praepositio" xml:id="w2634">
@@ -4590,12 +4585,11 @@ tione</w>
 <w n="iustitia" xml:id="w3399">iustitia</w>
 	<pc n=",">·</pc>
 <w n="sapientia" xml:id="w3402">sapientia</w>
+	<pc n=".">·</pc>
 	<pc n="space"> </pc>
 </ref>
 
 <ref cRef="unknown" type="source">
-	<pc n=".">·</pc>
-	<pc n="space"> </pc>
 <w n="dicendo" xml:id="w3405"><hi rend="larger">d</hi>icendo</w>
 	<pc n="space"> </pc>
 <w n="proprie" xml:id="w3408">
@@ -5395,9 +5389,7 @@ priam</w>
 	<pc n="space"> </pc>
 <w n="alio" xml:id="w4212">alio</w>
 	<pc n="space"> </pc>
-<unclear cert="high" reason="faded">
 <w n="nascitur" xml:id="w4215">nascitur</w>
-</unclear>
 </add>
 <note type="content">This is an explanatory interlinear glossa. In the mansucript, it is linked to the main text by means of a cross sign between "nascitur" and "ut". The text in the glossa is closer to the text of Priscianus (the source of this passage).</note>
 	<pc n="space"> </pc>
@@ -5811,8 +5803,6 @@ pria</w>
 pria</w>
 	<pc n="space"> </pc>
 <w n="qualitas" xml:id="w4578">qualitas</w>
-<unclear cert="medium" reason="faded">
-</unclear>
 	<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="eo" xml:id="w4581">eo</w>
@@ -21103,7 +21093,6 @@ rinus</w>
 <pc n=".">·</pc>
 <w n="Anagnia" xml:id="w19578"><hi rend="larger">a</hi>nagnia</w>
 	<pc n="space"> </pc>
-<anchor xml:id="brevigraph-switch-1" />
 <w n="quia" xml:id="w19581">
 	<choice>
 		<abbr type="brevigraph">¢</abbr>
@@ -23147,8 +23136,8 @@ paratiua</w>
 	<pc n="space"> </pc>
 <w n="domus" xml:id="w21381">domus</w>
 	<pc n="space"> </pc>
-<w n="dixit" xml:id="w21384">dixit</w>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.85.15" type="source" unit="Keil" />
+<w n="dixit" xml:id="w21384">dixit</w>
 <note type="source">The quote from Apuleius is only know from indirect tradition, namely from the text of Priscian that Ursus summarizes here (Priscian Ars grammatica, K 2.85.15).</note>
 <pc n=".">|</pc>
 </ref>
@@ -25964,9 +25953,9 @@ latiui</w>
 		<expan>obis</expan>
 	</choice>
 </w>
+<pc n=",">·</pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.91.11" type="source" unit="Keil" />
 <note type="source">Classical source: Verg. Aen. 2.370: "Primus se Danaum magna comitante caterua / Androgeos offert nobis" (through Priscian Ars grammatica, K 2.91.11-12).</note>
-<pc n=",">·</pc>
 <w n="et" xml:id="w24084">et</w>
 <w n="quod" xml:id="w24087">quod</w>
 	<pc n="space"> </pc>
@@ -26363,9 +26352,9 @@ tiuo</w>
 <w n="suffusa" xml:id="w24426">suffusa</w>
 	<pc n="space"> </pc>
 <w n="nitentes" xml:id="w24429">nitentes</w>
+<pc n=".">.</pc>
 <note type="source">The source of the example is Verg. Aen. 1.228: "tristior et lacrimis oculos suffusa nitentis" (through Priscian, Ars grammatica, K 2.92.11).</note>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.92.11" type="source" unit="Keil" />
-<pc n=".">.</pc>
 <w n="hic" xml:id="w24432">hic</w>
 <lb n="7r.a.3" break="no" />
 <w n="ex" xml:id="w24435">ex</w>
@@ -44922,7 +44911,6 @@ pore</w>
 	</choice>
 </w>
 </add>
-<pc n="," />
 <w n="principium" xml:id="w41757">principi
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
