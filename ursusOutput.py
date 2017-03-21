@@ -13,6 +13,14 @@
 #         after improving the management of <w> (I could
 #         dispose of <w> altogether)
 #   - check the space before <add> too.
+#   - head 'adbreuiatio' might be bold
+#   - [?] in html
+#   - I see middle dots and ". ."
+#   - æ
+#   - estimabant accipere. ï (the GL punctuation is still there)
+#   - milleni. · est[?] et[?] (larger 'e' in est)
+#   - put quotes around <w type...>?
+#   - remove middle dots within the word?
 
 from __future__ import print_function
 import datetime
@@ -92,11 +100,82 @@ def substituteAllElements(oldName, newName, myNameSpace):
         x.tag = myNameSpace + newName
         x.set('type', oldName)
 
+def manageWord(wordElem):
+    # Easy solution (only backdraw: it moves all elements children of <w> after the text). This is
+    # OK (it's actually better) for 'anchor/pb/cb/lb', but it creates a slight inaccuracy with 'gap':
+    tempText = wordElem.xpath('normalize-space()').replace(' ', '') # This is the unified text of the word
+    for y in wordElem:
+        yt = etree.QName(y).localname
+        if yt in ['choice', 'add', 'pc', 'hi']:    # I'm removing them b/c they include text, or b/c it's <pc n="space">
+            y.getparent().remove(y)
+        y.tail = None
+    wordElem.text = tempText
+    """
+    # Complicated solution, not completely functional:
+    for y in wordElem:
+        yt = etree.QName(y).localname
+        if yt == 'choice':
+            # I'm changing this from <choice><expan>um</expan></choice> to 
+            # <expan>um</expan>
+            expan = y.find(n + 'expan')
+            expanText = expan.text
+            y.remove(expan) # Remove the original child <expan>
+            y.text = expanText
+            #y.tag = n + 'expan' # Transform the parent <choice> to <expan> (...or to <span>, in the future?)
+        if y.tag == n + 'gap':
+            print('Gap within the word: ' + wordElem.get(xml + 'id'))
+    """
 
-for i in ['note', 'abbr', 'pb']:
+def managePunctuation(punctElem):
+    v = punctElem.get('n')
+    if v in ['0', 'quote', 'space']: # Delete <pc>
+        punctElem.getparent().remove(punctElem)
+    elif v in ['.', 'question', ',']:   # Append to the text content of previous <w>
+        v = v.replace('question', '?')
+        if punctElem.getprevious() is None:
+            pass
+        elif punctElem.getprevious().tag in [n + 'lb', n + 'milestone', n + 'gap']:
+            # Just give up and leave the <pc> element as it is
+            if punctElem.getprevious().tag != n + 'gap':
+                print('Alas! Punctuation sign not coming immediately after <w> or <gap>')
+                punctElem.set('type', 'trouble')
+        elif punctElem.getprevious().tag == n + 'w': # If previous sibling is <w>, append punctuation to its textual content
+            punctElem.getprevious().text = punctElem.getprevious().text + v
+            #punctElem.getprevious().tail = v + '\n' # Nope: this generates code like
+                                             # <w n="dicam" xml:id="w564">dicam<lb n="1r.a.23" break="no"/></w>,
+            punctElem.getparent()
+        elif punctElem.getprevious().tag in [n + 'add', n + 'unclear']:
+            if punctElem.getprevious().find(n + 'w') is not None and len(punctElem.getprevious().find(n + 'w')) == 0:
+                # If <add> or <unclear> have a <w> child and this <w> has no children (<lb> or <choice>)
+                punctElem.getprevious().find(n + 'w').text = punctElem.getprevious().find(n + 'w').text + v
+                punctElem.getprevious().find(n + 'w').text = punctElem.getprevious().find(n + 'w').text.replace('\n', '')
+                punctElem.getprevious().find(n + 'w').text = punctElem.getprevious().find(n + 'w').text.replace('\t', '')
+            elif punctElem.getprevious().find(n + 'w') is not None and len(punctElem.getprevious().find(n + 'w')) > 0:
+                # If the previous <w> has children (<lb> or <choice>, it's best to leave the <pc> as it is)
+                pass
+            else:
+                print('Alas! Childless element <' + punctElem.getprevious().tag + '>')
+                punctElem.getprevious().set('type', 'trouble')
+        """
+        Possible elements that are the previous sibling:
+            lb          jump to previous
+            milestone   jump to previous
+            gap         jump to previous
+            w           
+            add         jump to its last <w> child
+            unclear     jump to its last <w> child
+        """
+
+for i in ['note', 'abbr', 'pb', 'milestone']:
     deleteAllElements(i, n)
 
+for cb in tree.findall('.//' + n + 'cb'):
+    ocn = cb.get('n')   # Old Column @n
+    ncn = 'Column_' + ocn   # New Column @n
+    cb.set('n', ncn)
+
 substituteAllElements('cb', 'pb', n) # § to-do: if <anchor> generates an empty space, change this to <span>
+
 
 """
 for wrapper in tree.findall('.//' + n + 'unclear'): [MORE RECENT CODE, BUT USELESS]
@@ -143,73 +222,30 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
             #manageWordLikeElem(wLike)
             wt = etree.QName(w).localname   # The tag name w/o namespace (e.g.: 'w', 'pc' etc.)
             if wt == 'w':
-                # Easy solution (only backdraw: it moves all elements children of <w> after the text). This is
-                # OK (it's actually better) for 'anchor/pb/cb/lb', but it creates a slight inaccuracy with 'gap':
-                tempText = w.xpath('normalize-space()').replace(' ', '') # This is the unified text of the word
-                for y in w:
-                    yt = etree.QName(y).localname
-                    if yt in ['choice', 'add', 'pc', 'hi']:    # I'm removing them b/c they include text, or b/c it's <pc n="space">
-                        y.getparent().remove(y)
-                    y.tail = None
-                w.text = tempText
-
-                """
-                # Complicated solution, not completely functional
-                for y in w:
-                    yt = etree.QName(y).localname
-                    if yt == 'choice':
-                        # I'm changing this from <choice><expan>um</expan></choice> to 
-                        # <expan>um</expan>
-                        expan = y.find(n + 'expan')
-                        expanText = expan.text
-                        y.remove(expan) # Remove the original child <expan>
-                        y.text = expanText
-                        #y.tag = n + 'expan' # Transform the parent <choice> to <expan> (...or to <span>, in the future?)
-                    if y.tag == n + 'gap':
-                        print('Gap within the word: ' + w.get(xml + 'id'))
-                """
-            elif wt == 'anchor':    # These anchors come from <pb>, <cb> or <lb> and have @type="pb", @type="cb" etc.
+                manageWord(w)
+            elif wt == 'add':
+                # Possible children of 'add' are:     w, pc, gap (it may have more than one child)
+                for c in w:
+                    if c.tag == n + 'w':
+                        manageWord(c)
+                    elif c.tag == n + 'pc':
+                        #pass
+                        managePunctuation(c)
+                    elif c.tag == n + 'milestone':
+                        pass
+                    """
+                    if len(w) > 1:
+                        print(c.tag)
+                if len(w) > 1:
+                    print('\n---\n')
+                    """
+            elif wt == 'unclear':    
+                # Possible children of 'unclear' are: only 'w'
                 pass
+            elif wt == 'anchor':    
+                print('I found an <anchor>')
             elif wt == 'pc':
-                z = [wt, w.attrib]
-                v = w.get('n')
-                if v in ['0', 'quote', 'space']: # Delete <pc>
-                    ref.remove(w)
-                elif v in ['.', 'question', ',']:   # Append to the text content of previous <w>
-                    v = v.replace('question', '?')
-                    if w.getprevious().tag in [n + 'lb', n + 'milestone', n + 'gap']:
-                        # Just give up and leave the <pc> element as it is
-                        if w.getprevious().tag != n + 'gap':
-                            print('Alas! Punctuation sign not coming immediately after <w> or <gap>')
-                            w.set('type', 'trouble')
-                    elif w.getprevious().tag == n + 'w': # If previous sibling is <w>, append punctuation to its textual content
-                        w.getprevious().text = w.getprevious().text + v
-                        #w.getprevious().tail = v + '\n' # Nope: this generates code like
-                                                         # <w n="dicam" xml:id="w564">dicam<lb n="1r.a.23" break="no"/></w>,
-                        ref.remove(w)
-                    elif w.getprevious().tag in [n + 'add', n + 'unclear']:
-                        if w.getprevious().find(n + 'w') is not None and len(w.getprevious().find(n + 'w')) == 0:
-                            # If <add> or <unclear> have a <w> child and this <w> has no children (<lb> or <choice>)
-                            w.getprevious().find(n + 'w').text = w.getprevious().find(n + 'w').text + v
-                            w.getprevious().find(n + 'w').text = w.getprevious().find(n + 'w').text.replace('\n', '')
-                            w.getprevious().find(n + 'w').text = w.getprevious().find(n + 'w').text.replace('\t', '')
-                            #print(w.getprevious().find(n + 'w').text)
-                        elif w.getprevious().find(n + 'w') is not None and len(w.getprevious().find(n + 'w')) > 0:
-                            # If the previous <w> has children (<lb> or <choice>, it's best to leave the <pc> as it is)
-                            pass
-                        else:
-                            print('Alas! Childless element <' + w.getprevious().tag + '>')
-                            w.getprevious().set('type', 'trouble')
-                    #foo.append(pwt) # The tag name w/o namespace (e.g.: 'w', 'pc' etc.)
-                    """
-                    Possible elements that are the previous sibling:
-                        lb          jump to previous
-                        milestone   jump to previous
-                        gap         jump to previous
-                        w           
-                        add         jump to its last <w> child
-                        unclear     jump to its last <w> child
-                    """
+                managePunctuation(w)
             else:
                 pass
 
