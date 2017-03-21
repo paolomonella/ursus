@@ -802,7 +802,7 @@ This is a full example of markup of a word simply followed by a space (no ancien
 Note that in the code above the contemporary comma is placed before the underscore (meaning a space in the manuscript), but this is completely arbitrary and is just meant to simplify the further processing of the source file.
 
 
-## Possible values for attribute @ana of `<pc>`
+## Possible values for attribute @ana of `<pc>` (contemporary punctuation)
 
 
 `<pc ana=","></pc>`
