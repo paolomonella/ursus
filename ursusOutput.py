@@ -168,10 +168,7 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
 
     # Insert an <ab type="added_heading"> with the title of the section (that I made up)
     newHead = etree.Element('ab')
-    newBr = etree.Element('lb') # This is extremely ugly from the semantic point of view, but useful for visualization
-    newHead.insert(0, newBr)
-    #newHead.text = '[' + ab.get('n') + ']' # This was the original code, before I decided adding an extra <lb/>
-    newBr.tail = '[' + ab.get('n') + ']'
+    newHead.text = '[' + ab.get('n') + ']'
     newHead.tail = '\n'
     newHead.set('type', 'added_heading')
     newHead.set('rend', 'bold')
