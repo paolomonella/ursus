@@ -3,7 +3,8 @@
 #
 # This script turns my own 'ursusmarkdown' conventions into XML/TEI for the digital edition
 # of manuscript Casanatensis 1086.
-# It's written in Python 3.4, but also works with Python 2.7
+# It's written in Python 3.4, but also works with Python 2.7.
+# It uses library lxml.
 #
 # Warning: when writing in 'ursusmarkdown', note that every string at the beginning
 # of the line that does not start with '<' or end with '>'
@@ -18,7 +19,9 @@ import shutil
 import zipfile
 import os
 import re
-import xml.etree.ElementTree as ET
+#import xml.etree.ElementTree as ET
+from lxml import etree as ET
+
 
 
 ###################
@@ -231,7 +234,7 @@ if len(startEndWList) == 0 and len(endWList) == 0 and len(nofitList) == 0:
 # The namespaces
 n    = '{http://www.tei-c.org/ns/1.0}'              # for XML/TEI
 nx   = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
-ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
+#ET.register_namespace('', 'http://www.tei-c.org/ns/1.0') # This used to be needed when I used ElementTree instead of lxml
 
 # Parse the tree
 tree = ET.parse(outFP)  # It works on the temp output file and adds it xml:ids
@@ -268,7 +271,7 @@ for word in tree.findall('.//' + n + 'w'):
         existing_w_ids.append(idstring)
 
 # Quando risolvo il problema, devo de-commentare la riga seguente:
-tree.write(outFP, encoding="UTF-8", method="xml")
+tree.write(outFP, encoding="UTF-8", method="xml", xml_declaration=True)
 
 ############################
 # Zip and archive old file #
