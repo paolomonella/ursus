@@ -7,9 +7,6 @@
 #
 # It's written in Python 3.4, but also works with Python 2.7.
 # It uses the Python lxml library.
-# To-do: continue checking elements and dealing with them
-#   - put quotes around <w type...>?
-#   - agnobero: correct obvious mistakes?
 
 from __future__ import print_function
 import os
@@ -47,6 +44,33 @@ root = tree.getroot()
 myBody = casanaTree.getroot().find(n + 'text').find(n + 'body')
 myText = root.find(n + 'text')        # <text> of output xml file
 myText.append(myBody)
+
+"""
+#######################################################
+# Temporary section to check notes @type="emendation" #
+#######################################################
+
+f = open('/home/ilbuonme/Scrivania/foo.txt', 'w')
+cc = 0
+cww = 0
+crr = 0
+for x in tree.findall('.//' + n + 'note[@type="emendation"]'):
+    cc = cc + 1
+    daddy = x.getparent()
+    dtag = etree.QName(daddy).localname
+    if dtag == 'w':
+        #print('Daddy is w')
+        cww = cww + 1
+    elif dtag == 'ref':
+        print('"' + x.text + '"', file=f)
+        print('---', file=f)
+        crr = crr + 1
+        x.set('subtype', 'emendation_to_whole_section')
+    else:
+        print(x.text)
+print('Total: %s. Notes to word: %s. Notes to section: %s' % (cc, cww, crr))
+f.close()
+"""
 
 
 #############

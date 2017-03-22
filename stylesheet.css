@@ -394,10 +394,17 @@ span.unclear.certlow td.GLCell {
 }
 
 
+/*****************************************/
+/* APPARATUS <choice> / <sic> and <corr> */
+/*****************************************/
 
+span.apparatus td {
+	background-color: pink;
+}
 
-
+/*************************************************/
 /* TEXT IN INTERLINEAR SPACE <add place="above"> */
+/*************************************************/
 
 span.add.wholeword.placeabove td.GLCell {
 	/* This applies to original <add place="above"> being _parent_ of <w>, at the GL */

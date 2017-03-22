@@ -730,6 +730,9 @@ Markup not referring to a specific layer
 		- "source" (on the text sources),
 		- "content" (on the text content);
 		- "emendation" (a note proposing an emendation of the text clearly readable in the manuscript);
+	- In the case of @type="emendation", it is implied that the note includes an emendation to one word only.
+		If it includes an emendation to a whole phrase (more than one word), it also has attribute
+		@subtype"emendation_to_whole_section"
 	- To facilitate the processing of these elements, I am making sure that `<note>` elements are only
 		- children of `<ref>` (notes to an entire sentence or section)
 		- children of `<w>` (notes to that specific word)

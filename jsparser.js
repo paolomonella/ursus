@@ -778,8 +778,9 @@ function computeWordLikeElements(refElement) {
 			gapify(e);
 		}
 
-		else if (e.tagName == 'add' || e.tagName == 'unclear') {
+		else if (e.tagName == 'add' || e.tagName == 'unclear' || e.tagName == 'choice') {
 			// All elements that can be parents of <w>, <pc> or <gap> elements (i.e. <add> or <unclear>)
+			// (... now also including the case of <choice>/<sic>/<w>)
 			
 			// If XML/TEI has <add place="above">, the HTML DOM will have
 			// <span class="add wholeword placeabove">.
@@ -794,6 +795,14 @@ function computeWordLikeElements(refElement) {
 				// The resulting content of auSpan will be "certlow", "certmedium" or "certhigh"
 				// If XML/TEI has <unclear cert="medium">, the HTML DOM will have
 				// <span class="unclear wholeword certmedium">
+			}
+
+			if (e.tagName == 'choice') {
+				var auClass = 'apparatus';
+				sic = e.getElementsByTagName('sic')[0]; 
+				corr = e.getElementsByTagName('corr')[0];
+				emendNote = e.getElementsByTagName('note')[0];
+				e = sic		// In this case the element parent of <w> or <pc> is <sic>
 			}
 
 			for (var zy = 0; zy < e.childNodes.length; zy++) {
@@ -825,7 +834,80 @@ function computeWordLikeElements(refElement) {
 				}
 			//document.getElementById('MSText').appendChild(auSpan);
 			}
+
+			if (e.tagName == 'sic') {
+				// ... i.e.: if 'e' previously was <choice> (and not it's <sic>),
+				// i.e. we're in a <choice>/<sic>+<corr>+<note> situation.
+				// Then, it's time to use <corr> and <note type="emendation">
+				emendNoteString = 'Emended text: ' 
+				emendNoteString += corr.childNodes[0].nodeValue.trim()
+				//alert(corr.getElementsByTagName('w')[0].childNodes[0].nodeValue.trim())
+				/*
+				 *To do:
+				 - Create strings GL and AL
+				 - for each element (that can be <w> or <pc>)
+				 	if <w>
+						for c in children:
+						if c is text node:
+							add to string
+						if c is choice:
+							add <abbr>/<am> to string GL
+							add <abbr>/text node to string GL
+							add <expan>/text node to string AL
+						if c is <hi>:
+							(complicated stuff: <hi> can be child of <abbr>?)
+					if <pc>
+						add <pc>/text node to GL
+						add @n to AL
+					if <gap>
+						add '[...]' to GL and to AL
+						*/
+				expandableDiv(
+						document.getElementById('MSText'),
+						'note apparatus',
+						'note noteToggleLink',
+						'*',
+						emendNoteString,
+						);
+			}
+
+
 		} // End of 'add'/'unclear'
+
+		//else if (e.tagName == 'choice') {
+		else if (e.tagName == 'never') {
+			// This is the <choice> that has <sic> and <corr> as children
+			var emendClass = 'emendation';
+			sic = e.getElementsByTagName('sic')[0];
+			for (var zzz = 0; zzz < e.childNodes.length; zzz++) {
+				// If <choice>/<sic> includes <w>
+				if (e.childNodes[zzz].tagName == 'w') {
+					// e is <add> or <unclear>
+					// e.childNodes[zzz]) is a <w> child of <add> or <unclear>
+					// The next lines transform the XML/TEI <w> into
+					// an HTML <table> and appends the table
+					// to the <span class="add"> or <span class="unclear"> HTML element.
+					auSpan = document.createElement('span'); //Create the <span> element that
+						//will be parent of a <table>. A <span> should not be parent of
+						// <table> in HTML, but I have no choice. If I chose <div>, it
+						// would not appear inline with the other portions of text in the browser.
+					auSpan.setAttribute('class', auClass);
+					auSpan.appendChild(wordify(e.childNodes[zzz]));
+					document.getElementById('MSText').appendChild(auSpan);
+					//alert('"'+e.childNodes[zzz].textContent+'"')
+				}
+				else if (e.childNodes[zzz].tagName=='pc') { // If <add> or <unclear> include <pc>
+					auSpan = document.createElement('span');
+					auSpan.setAttribute('class', auClass);
+					auSpan.appendChild(punctify(e.childNodes[zzz]));
+					document.getElementById('MSText').appendChild(auSpan);
+				}
+				else if (e.childNodes[zzz].tagName == 'gap') {
+					// <gap> within <add> or <unclear>
+					gapify(e.childNodes[zzz]);
+				}
+			}
+		}
 
 		else if (e.tagName == 'note') {
 			// <note> outside of <w>, i.e. note to section
