@@ -778,19 +778,19 @@ function computeWordLikeElements(refElement) {
 			gapify(e);
 		}
 
-		else if (e.tagName == 'add' || e.tagName == 'unclear' || e.tagName == 'choice') {
+		else if (e.tagName == 'add' || e.tagName == 'unclear' || e.tagName == 'choice') { //sgn6
 			// All elements that can be parents of <w>, <pc> or <gap> elements (i.e. <add> or <unclear>)
 			// (... now also including the case of <choice>/<sic>/<w>)
 			
 			// If XML/TEI has <add place="above">, the HTML DOM will have
 			// <span class="add wholeword placeabove">.
-			if (e.tagName == 'add') {
+			if (e.tagName == 'add') {	// sgn3
 				var auClass = 'add wholeword place'+e.attributes.getNamedItem('place').nodeValue;
 				// The resulting content of auSpan will be "placeabove"
 				// If XML/TEI has <add place="above">, the HTML DOM will have
 				// <span class="add placeabove">
 			}
-			if (e.tagName == 'unclear') {
+			if (e.tagName == 'unclear') {	// sgn4
 				var auClass = 'unclear wholeword cert'+e.attributes.getNamedItem('cert').nodeValue;
 				// The resulting content of auSpan will be "certlow", "certmedium" or "certhigh"
 				// If XML/TEI has <unclear cert="medium">, the HTML DOM will have
@@ -802,9 +802,11 @@ function computeWordLikeElements(refElement) {
 				sic = e.getElementsByTagName('sic')[0]; 
 				corr = e.getElementsByTagName('corr')[0];
 				emendNote = e.getElementsByTagName('note')[0];
-				e = sic		// In this case the element parent of <w> or <pc> is <sic>
+				e = sic		// In this case the element parent of <w> or <pc> is <sic>,
+						// i.e. the 'wrong' text
 			}
 
+			// sgn1
 			for (var zy = 0; zy < e.childNodes.length; zy++) {
 				// If <add> or <unclear> include <w>
 				if (e.childNodes[zy].tagName == 'w') {
@@ -832,18 +834,21 @@ function computeWordLikeElements(refElement) {
 					// <gap> within <add> or <unclear>
 					gapify(e.childNodes[zy]);
 				}
-			//document.getElementById('MSText').appendChild(auSpan);
 			}
+			// sgn2
 
 			if (e.tagName == 'sic') {
 				// ... i.e.: if 'e' previously was <choice> (and not it's <sic>),
 				// i.e. we're in a <choice>/<sic>+<corr>+<note> situation.
-				// Then, it's time to use <corr> and <note type="emendation">
+				// Then, it's time now to visualize <corr> (the 'wrong' text)
+				// and <note type="emendation"> 
 				emendNoteString = 'Emended text: ' 
 				emendNoteString += corr.childNodes[0].nodeValue.trim()
 				//alert(corr.getElementsByTagName('w')[0].childNodes[0].nodeValue.trim())
 				/*
 				 *To do:
+
+				 SOLUTION 1 (append create an expandableDiv, but I can't use tables in it)
 				 - Create strings GL and AL
 				 - for each element (that can be <w> or <pc>)
 				 	if <w>
@@ -861,6 +866,21 @@ function computeWordLikeElements(refElement) {
 						add @n to AL
 					if <gap>
 						add '[...]' to GL and to AL
+
+				SOLUTION 2: 
+				- Create function parseChildrenOfUnclearLikeElement()
+					- with code going from sgn1 to sgn2
+				- put a call for this function into the 'if' statements
+					- sgn3 (if 'add'), sgn4 (if 'clear')
+				- delete the 'else if' in sgn6
+					- make: else if 'add'
+						else if 'unclear'
+						else if 'choice'
+				- if 'choice'
+					- call the function once for 'sic'
+					- and a second time for 'corr'
+				- then, use more javascript to make <span class="sic">
+					or <span class="sic"> alternatively visible
 						*/
 				expandableDiv(
 						document.getElementById('MSText'),
