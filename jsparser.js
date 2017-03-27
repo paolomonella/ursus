@@ -644,6 +644,7 @@ function expandableDiv(parentElement, divClasses, anchorClasses, anchorString, d
 	contentDiv.style.display = 'none';
 	// Tell <a> to toggle visibility of note content <div>
 	ntl.setAttribute('onclick', 'toggle_visibility("' + noteLikeId + '");return false;');
+	return contentDiv;
 }
 
 function makeTable(whereToAppendTable, tableClass) {
@@ -667,6 +668,44 @@ function makeTable(whereToAppendTable, tableClass) {
 	// document.getElementById('MSText').appendChild(table);
 	whereToAppendTable.appendChild(table);
 	return cells;
+}
+
+function computeAddLikeChildren(xmlUnclearLikeElem, htmlParentElem, unclearLikeElemClass) {
+	// Argument xmlUnclearLikeElem is an element like <unclear>,
+	// <add>, <sic> and <corr>, i.e. an element that can include
+	// a number of <w>s, <pc>s or <gap>s.
+	for (var zy = 0; zy < xmlUnclearLikeElem.childNodes.length; zy++) {
+		// If <add> or <unclear> include <w>.
+		// In the case of <choice>/<sic>+<corr>, this 'for' cycle
+		// visualized the content of <corr>
+		if (xmlUnclearLikeElem.childNodes[zy].tagName == 'w') {
+			// xmlUnclearLikeElem is <add> or <unclear>
+			// xmlUnclearLikeElem.childNodes[zy]) is a <w> child of <add> or <unclear>
+			// The next lines transform the XML/TEI <w> into
+			// an HTML <table> and appends the table
+			// to the <span class="add"> or <span class="unclear"> HTML element.
+			auSpan = document.createElement('span'); //Create the <span> element that
+				//will be parent of a <table>. A <span> should not be parent of
+				// <table> in HTML, but I have no choice. If I chose <div>, it
+				// would not appear inline with the other portions of text in the browser.
+			auSpan.setAttribute('class', unclearLikeElemClass);
+			auSpan.appendChild(wordify(xmlUnclearLikeElem.childNodes[zy]));
+			htmlParentElem.appendChild(auSpan);
+			//document.getElementById('MSText').appendChild(auSpan);
+			//alert('"'+xmlUnclearLikeElem.childNodes[zy].textContent+'"')
+		}
+		else if (xmlUnclearLikeElem.childNodes[zy].tagName=='pc') { // If <add> or <unclear> include <pc>
+			auSpan = document.createElement('span');
+			auSpan.setAttribute('class', unclearLikeElemClass);
+			auSpan.appendChild(punctify(xmlUnclearLikeElem.childNodes[zy]));
+			htmlParentElem.appendChild(auSpan);
+			document.getElementById('MSText').appendChild(auSpan);
+		}
+		else if (xmlUnclearLikeElem.childNodes[zy].tagName == 'gap') {
+			// <gap> within <add> or <unclear>
+			gapify(xmlUnclearLikeElem.childNodes[zy]);
+		}
+	}
 }
 
 function computeWordLikeElements(refElement) {
@@ -778,120 +817,72 @@ function computeWordLikeElements(refElement) {
 			gapify(e);
 		}
 
-		else if (e.tagName == 'add' || e.tagName == 'unclear' || e.tagName == 'choice') { //sgn6
-			// All elements that can be parents of <w>, <pc> or <gap> elements (i.e. <add> or <unclear>)
-			// (... now also including the case of <choice>/<sic>/<w>)
-			
-			// If XML/TEI has <add place="above">, the HTML DOM will have
-			// <span class="add wholeword placeabove">.
-			if (e.tagName == 'add') {	// sgn3
-				var auClass = 'add wholeword place'+e.attributes.getNamedItem('place').nodeValue;
-				// The resulting content of auSpan will be "placeabove"
-				// If XML/TEI has <add place="above">, the HTML DOM will have
-				// <span class="add placeabove">
-			}
-			if (e.tagName == 'unclear') {	// sgn4
-				var auClass = 'unclear wholeword cert'+e.attributes.getNamedItem('cert').nodeValue;
-				// The resulting content of auSpan will be "certlow", "certmedium" or "certhigh"
-				// If XML/TEI has <unclear cert="medium">, the HTML DOM will have
-				// <span class="unclear wholeword certmedium">
-			}
+		else if (e.tagName == 'add') {
+			var auClass = 'add wholeword place'+e.attributes.getNamedItem('place').nodeValue;
+			// The resulting content of auSpan will be "placeabove". If XML/TEI has
+			// <add place="above">, the HTML DOM will have <span class="add placeabove">.
+			computeAddLikeChildren(e, document.getElementById('MSText'), auClass)
+		}
 
-			if (e.tagName == 'choice') {
-				var auClass = 'apparatus';
-				sic = e.getElementsByTagName('sic')[0]; 
-				corr = e.getElementsByTagName('corr')[0];
-				emendNote = e.getElementsByTagName('note')[0];
-				e = sic		// In this case the element parent of <w> or <pc> is <sic>,
-						// i.e. the 'wrong' text
-			}
+		else if (e.tagName == 'unclear') {
+			var auClass = 'unclear wholeword cert'+e.attributes.getNamedItem('cert').nodeValue;
+			// The resulting content of auSpan will be "certlow", "certmedium" or "certhigh"
+			// If XML/TEI has <unclear cert="medium">, the HTML DOM will have
+			// <span class="unclear wholeword certmedium">
+			computeAddLikeChildren(e, document.getElementById('MSText'), auClass)
+		}
 
-			// sgn1
-			for (var zy = 0; zy < e.childNodes.length; zy++) {
-				// If <add> or <unclear> include <w>
-				if (e.childNodes[zy].tagName == 'w') {
-					// e is <add> or <unclear>
-					// e.childNodes[zy]) is a <w> child of <add> or <unclear>
-					// The next lines transform the XML/TEI <w> into
-					// an HTML <table> and appends the table
-					// to the <span class="add"> or <span class="unclear"> HTML element.
-					auSpan = document.createElement('span'); //Create the <span> element that
-						//will be parent of a <table>. A <span> should not be parent of
-						// <table> in HTML, but I have no choice. If I chose <div>, it
-						// would not appear inline with the other portions of text in the browser.
-					auSpan.setAttribute('class', auClass);
-					auSpan.appendChild(wordify(e.childNodes[zy]));
-					document.getElementById('MSText').appendChild(auSpan);
-					//alert('"'+e.childNodes[zy].textContent+'"')
-				}
-				else if (e.childNodes[zy].tagName=='pc') { // If <add> or <unclear> include <pc>
-					auSpan = document.createElement('span');
-					auSpan.setAttribute('class', auClass);
-					auSpan.appendChild(punctify(e.childNodes[zy]));
-					document.getElementById('MSText').appendChild(auSpan);
-				}
-				else if (e.childNodes[zy].tagName == 'gap') {
-					// <gap> within <add> or <unclear>
-					gapify(e.childNodes[zy]);
-				}
-			}
-			// sgn2
+		else if (e.tagName == 'choice') {
+			var auClass = 'apparatus';
+			sic = e.getElementsByTagName('sic')[0]; 
+			corr = e.getElementsByTagName('corr')[0];
+			emendNote = e.getElementsByTagName('note')[0];
+			computeAddLikeChildren(corr, document.getElementById('MSText'), 'apparatus corr'); // Result:
+				//for each <w>, <pc> or <gap>, this is created:
+				// <span class="apparatus corr"> <table>[three rows]</table></span>
+			sicDiv = expandableDiv( // sicDiv is <div class="note apparatus contentDiv">
+							// including a text Node with '' as textual content
+					document.getElementById('MSText'),
+					'note emendation',
+					'note noteToggleLink',
+					'*',
+					'The MS has:',
+					);
+			computeAddLikeChildren(sic, sicDiv, 'apparatus sic'); // Result: for each <w>, <pc> or <gap>
+				// this is appended inside <div class="note apparatus contentDiv">:
+				// <span class="apparatus sic"> <table>[three rows]</table></span>
+			emendNoteTable = document.createElement('table');    // Create a table inside which I'll put the
+				// textual content of <note type="emendation">
+			emendNoteTR = document.createElement('tr');
+			emendNoteTD = document.createElement('td');
+			emendNoteString = emendNote.childNodes[0].nodeValue.trim();
+			emendNoteText = document.createTextNode(emendNoteString);
+			emendNoteTD.append(emendNoteText);
+			emendNoteTR.append(emendNoteTD);
+			emendNoteTable.append(emendNoteTR);
+			sicDiv.append(emendNoteTable); // Result:
+				//<table><tr><td>[textual content of <note type="emendation"]</td></tr></table>
+		}
 
+		//else if (e.tagName == 'add' || e.tagName == 'unclear' || e.tagName == 'choice') { //sgn6
+		else if (e.tagName === 'montyPython') { //sgn6
 			if (e.tagName == 'sic') {
 				// ... i.e.: if 'e' previously was <choice> (and not it's <sic>),
 				// i.e. we're in a <choice>/<sic>+<corr>+<note> situation.
 				// Then, it's time now to visualize <corr> (the 'wrong' text)
 				// and <note type="emendation"> 
-				emendNoteString = 'Emended text: ' 
-				emendNoteString += corr.childNodes[0].nodeValue.trim()
+				//emendNoteString = 'Emended text: ' 
+				//emendNoteString += corr.childNodes[0].nodeValue.trim()
 				//alert(corr.getElementsByTagName('w')[0].childNodes[0].nodeValue.trim())
-				/*
-				 *To do:
-
-				 SOLUTION 1 (append create an expandableDiv, but I can't use tables in it)
-				 - Create strings GL and AL
-				 - for each element (that can be <w> or <pc>)
-				 	if <w>
-						for c in children:
-						if c is text node:
-							add to string
-						if c is choice:
-							add <abbr>/<am> to string GL
-							add <abbr>/text node to string GL
-							add <expan>/text node to string AL
-						if c is <hi>:
-							(complicated stuff: <hi> can be child of <abbr>?)
-					if <pc>
-						add <pc>/text node to GL
-						add @n to AL
-					if <gap>
-						add '[...]' to GL and to AL
-
-				SOLUTION 2: 
-				- Create function parseChildrenOfUnclearLikeElement()
-					- with code going from sgn1 to sgn2
-				- put a call for this function into the 'if' statements
-					- sgn3 (if 'add'), sgn4 (if 'clear')
-				- delete the 'else if' in sgn6
-					- make: else if 'add'
-						else if 'unclear'
-						else if 'choice'
-				- if 'choice'
-					- call the function once for 'sic'
-					- and a second time for 'corr'
-				- then, use more javascript to make <span class="sic">
-					or <span class="sic"> alternatively visible
-						*/
-				expandableDiv(
+				var sicDiv = expandableDiv(
 						document.getElementById('MSText'),
 						'note apparatus',
 						'note noteToggleLink',
-						'*',
-						emendNoteString,
+						'[AppCrit]',
+						'',
 						);
+				alert(sicDiv);
 			}
-
-
 		} // End of 'add'/'unclear'
 
 		//else if (e.tagName == 'choice') {

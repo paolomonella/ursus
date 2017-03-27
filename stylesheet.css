@@ -398,8 +398,12 @@ span.unclear.certlow td.GLCell {
 /* APPARATUS <choice> / <sic> and <corr> */
 /*****************************************/
 
-span.apparatus td {
-	background-color: pink;
+span.apparatus.sic td {
+	border: 2px solid silver; 
+}
+
+span.apparatus.corr td {
+	border: 2px solid maroon; /* The same color as the background color of <div class="note emendation"> */
 }
 
 /*************************************************/
