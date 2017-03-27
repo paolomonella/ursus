@@ -13,7 +13,7 @@ I'm using this script to lemmatize casanatensis.xml.
 from __future__ import print_function
 from __future__ import unicode_literals
 import xml.etree.ElementTree as ET
-import treetaggerwrapper
+import treetaggerwrapper # I have this module in my system in ~/.local/lib/python2.7/site-packages/treetaggerwrapper.py
 #import os
 #import sys
 #import re
