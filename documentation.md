@@ -395,9 +395,9 @@ I'm still working on the implementation of the 3-values system by using a lemmat
 	- Other `<ref>`s have @cRef="unknown":  `<ref type="source" cRef="unknown">`
 
 
-## `<w>` elements for which the lemmatizer/POS tagger will need help (values of @type with `<w>`)
+## Difficult words (values of @type with `<w>`)
 
-The possible values marking such cases are:
+The lemmatizer/POS tagger will probably need help with some "difficult" words. For those words, element `<w>` carries a `@type` attribute with one of these values:
 
 - @type="nonsense"
 - @type="alphabemes"
