@@ -373,7 +373,8 @@ or, if I decide to substitute the components of the tagset string (2-LM41A2---) 
 
 ## Tentatively:
 I'm still working on the implementation of the 3-values system by using a lemmatizer/POS tagger such as [TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/). For now, I'm just using the "standardized contemporary spelling" part, listed above under point 3, as follows:
-    <w ana="constructae">cons<g ref="st"/>ructe</w>
+
+    `<w ana="constructae">cons<g ref="st"/>ructe</w>`
 
 
 
@@ -730,9 +731,11 @@ Markup not referring to a specific layer
 		- "source" (on the text sources),
 		- "content" (on the text content);
 		- "emendation" (a note proposing an emendation of the text clearly readable in the manuscript);
-	- In the case of @type="emendation", it is implied that the note includes an emendation to one word only.
+	- In the case of `@type="emendation"`, it is implied that the note includes an emendation to one word only.
 		If it includes an emendation to a whole phrase (more than one word), it also has attribute
 		@subtype"emendation_to_whole_section"
+	- A `<note type="emendation">` mostly (but not always) occurs as child of a `<corr>` element. When this
+		is the case, it is meant as a discussion of the error and of my own emendation
 	- To facilitate the processing of these elements, I am making sure that `<note>` elements are only
 		- children of `<ref>` (notes to an entire sentence or section)
 		- children of `<w>` (notes to that specific word)
