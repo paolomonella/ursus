@@ -1061,3 +1061,5 @@ Every occurrence of choice/corr/sic has one `<note type="emendation">` (child of
 discussing the error and the proposed emendation.
 
 Both `<sic>` and `<corr>` include one or more `<w>` and zero or more `<pc>` or `<gap>`.
+
+A `<note type="emendation">` can also occur outside a `<corr>` element, when it includes a textual-critical discussion but no specific emendation is proposed.
