@@ -395,7 +395,7 @@ I'm still working on the implementation of the 3-values system by using a lemmat
 	- Other `<ref>`s have @cRef="unknown":  `<ref type="source" cRef="unknown">`
 
 
-## Difficult words (values of @type with `<w>`)
+## Difficult words (values of `@type` with `<w>`)
 
 The lemmatizer/POS tagger will probably need help with some "difficult" words. For those words, element `<w>` carries a `@type` attribute with one of these values:
 
@@ -749,7 +749,7 @@ Markup not referring to a specific layer
 Punctuation
 ===========
 
-If we created a modern 'readable' edition of the text, we would
+When we create a modern 'readable' edition of the text, we
 
 1. ignore, accept or change the value of the manuscript puctuation marks (or 'ancient punctuation') and
 2. add 'contemporary punctuation' not present in the manuscript.
@@ -808,7 +808,7 @@ This is a full example of markup of a word simply followed by a space (no ancien
 Note that in the code above the contemporary comma is placed before the underscore (meaning a space in the manuscript), but this is completely arbitrary and is just meant to simplify the further processing of the source file.
 
 
-## Possible values for attribute @ana of `<pc>` (contemporary punctuation)
+## Contemporary punctuation (possible values for attribute `@ana` of `<pc>`)
 
 
 `<pc ana=","></pc>`
@@ -1000,7 +1000,7 @@ Boundaries between words
 
         <pc ana="space"> </pc>
 
-	[Note: they were previously encoded by means of underscores '_', but no longer now].
+	[Note: they were previously encoded by means of underscores '_', but it is no longer now].
 
 Note that the 'contemporary word boundaries' and the 'manuscript word boundaries' do not always coincide. For example, the source code
 
@@ -1022,10 +1022,42 @@ Line breaks
 
 According to the common TEI practice, the
 `<lb/>`
-tag is put before the first line of a page, not after the first line.
+tag is put before the first line of a page, not after it.
 
 When a word is broken up by the line break, the markup looks like
 
     <w ana="consonante">con
     <lb n="2r.b.16"/>
     sonante</w>
+
+
+Textual criticism
+=================
+
+When the text is readable in the manuscript, but the editor considers it erroneous, this is the encoding:
+
+`<choice>
+	<sic>
+		<w ana="11C---A2--1" lemma="hispanus" n="Hispanus" xml:id="w8163">spanus</w>
+	        <pc n="space"> </pc>
+		<w ana="4-S-------2" lemma="a" n="ab" xml:id="w8166">a</w>
+		<w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8169">spanis</w>
+	</sic>
+	<corr>
+		<w ana="11A---B2--1" lemma="hispanus" n="Hispanus" xml:id="w8170">hispanus</w>
+	        <pc n="space"> </pc>
+		<w ana="4-S-------2" lemma="a" n="ab" xml:id="w8171">ab</w>
+		<w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8172">hispanis</w>
+		<note subtype="emendation_to_whole_section" type="emendation">"Spanus a
+			Spanis" is probably a scribal error for "Hispanus ab Hispanis",
+			and I am encoding these words as such at the Linguistic Layer.
+			The source, Priscian, Ars grammatica, K 2.61.3 has different
+			examples: "Gentile est, quod gentem significat, ut 'Graecus',
+			'Latinus'", so it is not helpful here.</note>
+	</corr>
+</choice>`
+
+Every occurrence of choice/corr/sic has one `<note type="emendation">` (child of `<corr>`)
+discussing the error and the proposed emendation.
+
+Both `<sic>` and `<corr>` include one or more `<w>` and zero or more `<pc>` or `<gap>`.
