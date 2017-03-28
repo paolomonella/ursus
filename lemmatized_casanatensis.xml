@@ -484,13 +484,19 @@ m</w>
 	</choice>
 </w>
 <lb break="no" n="1r.a.12" />
-<w ana="3-LH1------" lemma="agnosco" n="agnosco" xml:id="w291">agnosco</w>
+<w ana="11B---F3---" lemma="agnosco" n="agnosco" xml:id="w291">agnosco</w>
 	<pc n=",">·</pc>
 <w ana="4-O--------" lemma="donec" n="donec" xml:id="w294">donec</w>
 	<pc n="space"> </pc>
-<w ana="3-LH1------" lemma="agnouero" n="agnouero" xml:id="w297">agnobero
+<choice>
+<sic>
+<w ana="11B---F3---" lemma="agnouero" n="agnouero" xml:id="w297">agnobero</w>
+</sic>
+<corr>
+<w ana="3-LH1------" lemma="agnouero" n="agnouero" xml:id="w297">agnouero</w>
 <note type="emendation">Scribal error: "agnobero" for "agnouero", due to the scribe"s pronunciation.</note>
-</w>
+</corr>
+</choice>
 	<pc n="space"> </pc>
 <w ana="11C---D2---" lemma="dictionem" n="dictionem" xml:id="w300">diction
 	<choice>
@@ -5393,7 +5399,7 @@ priam</w>
 	<pc n="space"> </pc>
 <w ana="3-LJ1--6---" lemma="nascitur" n="nascitur" xml:id="w4215">nascitur</w>
 </add>
-<note type="content">This is an explanatory interlinear glossa. In the mansucript, it is linked to the main text by means of a cross sign between "nascitur" and "ut". The text in the glossa is closer to the text of Priscianus (the source of this passage).</note>
+<note type="content">This is an explanatory interlinear glossa. In the mansucript, it is linked to the main text by means of a cross sign between "nascitur" and "ut". The text in the glossa is closer to the source of this passage, i.e. Priscian, Ars grammatica, K 2.57.10-11: "principalis, ut 'Iulus', 'mons', deriuativa, ut 'Iulius', 'montanus'".</note>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w4218">ut</w>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w4221">a</w>
@@ -7886,8 +7892,10 @@ sistit</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w6375">ut</w>
 <w ana="11C---A1---" lemma="homo" n="homo" xml:id="w6378">homo</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="albus" n="albus" xml:id="w6381">albus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="magnus" n="magnus" xml:id="w6384">magnus</w>
 <pc n=".">·</pc>
@@ -8009,6 +8017,7 @@ ptione</w>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
+<note type="emendation">Scribal error: "propriae" (with final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs 9r.a.18 and 10r.a.18.</note>
 priæ</w>
 	<pc n="space"> </pc>
 <w ana="11C---J3---" lemma="communis" n="communia" xml:id="w6513">c
@@ -8028,7 +8037,6 @@ munia</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<note subtype="emendation_to_whole_section" type="emendation">There seems to be no agreement between "propriae" and "communia". Possible corrections might be "propriae (scil. qualitates) communes sunt multorum" or "propria (nomina) communia sunt multorum".</note>
 <pc n=".">.</pc>
 	<pc n="space"> </pc>
 <w ana="11A---F2---" lemma="appellatiua" n="appellatiua" xml:id="w6522"><hi rend="larger">a</hi>ppellatiua</w>
@@ -9752,14 +9760,24 @@ d</w>
 <w ana="11B---O1--1" lemma="graecus" n="Graecis" xml:id="w8160">grecis</w>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
+<choice>
+<sic>
 <w ana="11C---A2--1" lemma="hispanus" n="Hispanus" xml:id="w8163">spanus</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w8166">a</w>
 <w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8169">spanis</w>
+</sic>
+<corr>
+<w ana="11A---B2--1" lemma="hispanus" n="Hispanus" xml:id="w8170">hispanus</w>
+	<pc n="space"> </pc>
+<w ana="4-S-------2" lemma="a" n="ab" xml:id="w8171">ab</w>
+<w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8172">hispanis</w>
 <note subtype="emendation_to_whole_section" type="emendation">"Spanus a Spanis" is probably a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
+</corr>
+</choice>
 <pc n=".">·</pc>
 <lb break="no" n="3r.a.10" />
-<w ana="11C---B1---" lemma="patriae" n="patriae" xml:id="w8172"><hi rend="dropcap">p</hi>atriæm
+<w ana="11C---B1---" lemma="patriae" n="patriae" xml:id="w8173"><hi rend="dropcap">p</hi>atriæm
 <note type="emendation">The word, as it stands, makes no sense. The source, Priscian, Ars grammatica, K 2.61.3, has "Patrium est, quod a patria sumitur, ut 'Atheniensis', 'Romanus'". The simplest  emendation could be "patriae", and I am encoding this word as such at the Linguistic Layer. The emendation is likely because Ursus already wrote "gentis" (genitive) instead of Priscian's "gentile" (adjective) shortly above (in line 8 of the same page).</note>
 </w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w8175">est</w>
@@ -35784,7 +35802,7 @@ ducitur</w>
 		<expan>pro</expan>
 	</choice>
 	priæ
-<note type="emendation">Scribal error: "propriae" for the adverb "proprie".</note>
+<note type="emendation">Scribal error: "propriae" (with final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 2v.a.27 and in 10r.a.18.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---B3--1" lemma="feminini" n="feminini" xml:id="w33057">
@@ -40557,7 +40575,7 @@ paras</w>
 		<expan>pro</expan>
 	</choice>
 	priæ
-<note type="emendation">Scribal error: "propriae" (with final "e caudatum" grapheme) for "proprie" (adverbial).</note>
+<note type="emendation">Scribal error: "propriae" (with final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 2v.a.27 and in 9r.a.18.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11C---J2---" lemma="pares" n="pares" xml:id="w37578">pares</w>

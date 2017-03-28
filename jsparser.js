@@ -196,6 +196,13 @@ var viewLL = false;
 // <div class="source start contentDiv"> or
 // <div class="source end contentDiv">: the content of the note marking the start or end
 // 	of a passage imitating a source
+// <div class="apparatus corr">: includes words, punctuation signs or gaps that were in the <corr>
+// 	element in the XML source.
+// <div class="apparatus sic">: includes words, punctuation signs or gaps that were in the <sic>
+// 	element in the XML source.
+// <td class="apparatus apparatusNote">: the full hierarchy is:
+// 	<div class="note outsideWord contentDiv"> / <table> / <tr> / <td class="apparatus apparatusNote">,
+//	where the latter <td> includes the textual content of element <note type="emendation"> in the XML
 //
 //
 // H) Summary for LL and AL
@@ -836,7 +843,7 @@ function computeWordLikeElements(refElement) {
 			var auClass = 'apparatus';
 			sic = e.getElementsByTagName('sic')[0]; 
 			corr = e.getElementsByTagName('corr')[0];
-			emendNote = e.getElementsByTagName('note')[0];
+			emendNote = corr.getElementsByTagName('note')[0];
 			computeAddLikeChildren(corr, document.getElementById('MSText'), 'apparatus corr'); // Result:
 				//for each <w>, <pc> or <gap>, this is created:
 				// <span class="apparatus corr"> <table>[three rows]</table></span>
@@ -846,7 +853,7 @@ function computeWordLikeElements(refElement) {
 					'note emendation',
 					'note noteToggleLink',
 					'*',
-					'The MS has:',
+					'The MS has:'
 					);
 			computeAddLikeChildren(sic, sicDiv, 'apparatus sic'); // Result: for each <w>, <pc> or <gap>
 				// this is appended inside <div class="note apparatus contentDiv">:
@@ -855,6 +862,7 @@ function computeWordLikeElements(refElement) {
 				// textual content of <note type="emendation">
 			emendNoteTR = document.createElement('tr');
 			emendNoteTD = document.createElement('td');
+			emendNoteTD.setAttribute('class', 'apparatus apparatusNote'); // §§§
 			emendNoteString = emendNote.childNodes[0].nodeValue.trim();
 			emendNoteText = document.createTextNode(emendNoteString);
 			emendNoteTD.append(emendNoteText);
@@ -862,62 +870,6 @@ function computeWordLikeElements(refElement) {
 			emendNoteTable.append(emendNoteTR);
 			sicDiv.append(emendNoteTable); // Result:
 				//<table><tr><td>[textual content of <note type="emendation"]</td></tr></table>
-		}
-
-		//else if (e.tagName == 'add' || e.tagName == 'unclear' || e.tagName == 'choice') { //sgn6
-		else if (e.tagName === 'montyPython') { //sgn6
-			if (e.tagName == 'sic') {
-				// ... i.e.: if 'e' previously was <choice> (and not it's <sic>),
-				// i.e. we're in a <choice>/<sic>+<corr>+<note> situation.
-				// Then, it's time now to visualize <corr> (the 'wrong' text)
-				// and <note type="emendation"> 
-				//emendNoteString = 'Emended text: ' 
-				//emendNoteString += corr.childNodes[0].nodeValue.trim()
-				//alert(corr.getElementsByTagName('w')[0].childNodes[0].nodeValue.trim())
-				var sicDiv = expandableDiv(
-						document.getElementById('MSText'),
-						'note apparatus',
-						'note noteToggleLink',
-						'[AppCrit]',
-						'',
-						);
-				alert(sicDiv);
-			}
-		} // End of 'add'/'unclear'
-
-		//else if (e.tagName == 'choice') {
-		else if (e.tagName == 'never') {
-			// This is the <choice> that has <sic> and <corr> as children
-			var emendClass = 'emendation';
-			sic = e.getElementsByTagName('sic')[0];
-			for (var zzz = 0; zzz < e.childNodes.length; zzz++) {
-				// If <choice>/<sic> includes <w>
-				if (e.childNodes[zzz].tagName == 'w') {
-					// e is <add> or <unclear>
-					// e.childNodes[zzz]) is a <w> child of <add> or <unclear>
-					// The next lines transform the XML/TEI <w> into
-					// an HTML <table> and appends the table
-					// to the <span class="add"> or <span class="unclear"> HTML element.
-					auSpan = document.createElement('span'); //Create the <span> element that
-						//will be parent of a <table>. A <span> should not be parent of
-						// <table> in HTML, but I have no choice. If I chose <div>, it
-						// would not appear inline with the other portions of text in the browser.
-					auSpan.setAttribute('class', auClass);
-					auSpan.appendChild(wordify(e.childNodes[zzz]));
-					document.getElementById('MSText').appendChild(auSpan);
-					//alert('"'+e.childNodes[zzz].textContent+'"')
-				}
-				else if (e.childNodes[zzz].tagName=='pc') { // If <add> or <unclear> include <pc>
-					auSpan = document.createElement('span');
-					auSpan.setAttribute('class', auClass);
-					auSpan.appendChild(punctify(e.childNodes[zzz]));
-					document.getElementById('MSText').appendChild(auSpan);
-				}
-				else if (e.childNodes[zzz].tagName == 'gap') {
-					// <gap> within <add> or <unclear>
-					gapify(e.childNodes[zzz]);
-				}
-			}
 		}
 
 		else if (e.tagName == 'note') {
