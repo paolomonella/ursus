@@ -17,23 +17,18 @@
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
-	    <correction>
-		    <p>The following codes are used to categorize corrections identified in this edition:
-			    <list type="gloss">
-				    <label>ub</label>
-				    <item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>
-			    </list>
-		    </p>
-	    </correction>
+	    <editorialDecl>
+		<correction>
+			<p>The following codes are used to categorize corrections identified in this edition:
+				<list type="gloss">
+					<label>ub</label>
+					<item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>
+				</list>
+			</p>
+		</correction>
+	    </editorialDecl>
     </encodingDesc>
     <revisionDesc>
-	<change subtype="critical" type="agenda">Replace 'note' @type="emendation" with 'sic' / 'corr'
-		come in http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COEDCOR per gli errori evidenti.
-		In http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCC si parla di emendazioni più
-		congetturali, e c'è un paragrafo interessante (find 'In addition, the conscientious encoder
-		will provide documentation explaining the circumstances') in cui dice che potrei inserire
-		in un elemento <tag>correction</tag> dentro la <tag>encodingDesc</tag> dettagli sui valori
-		dell'elemento @type di <tag>corr</tag>.</change>
 	<change subtype="critical" type="agenda">Try to upload this file in ALIM2, see errors.
 		Then maybe contact ALIM2 webmaster.</change>
 	<change subtype="critical" type="agenda">Create ALIM-TEI-Level_1 visualization for ALIM2 website.</change>
@@ -131,6 +126,7 @@
 	<change type="done" when="2017-03-16">Final green light to publish link to edition in ALIM website</change>
 	<change type="done" when="2017-03-16">From time to time: see if there are 'v', 'ae', or other graphemes not
 	       declared in the GToS.</change>
+	<change type="done" when="2017-03/29">Replace 'note' @type="emendation" with 'sic'/'corr'/'correction'</change>
 
 
 
