@@ -843,7 +843,30 @@ function computeWordLikeElements(refElement) {
 			var auClass = 'apparatus';
 			sic = e.getElementsByTagName('sic')[0]; 
 			corr = e.getElementsByTagName('corr')[0];
-			emendNote = corr.getElementsByTagName('note')[0];
+			
+			if (corr.getElementsByTagName('note')[0]) {
+				// If <corr> has a <note type="emendation">, store its content in
+				// variable emendNoteString.
+				emendNote = corr.getElementsByTagName('note')[0];
+				emendNoteString = emendNote.childNodes[0].nodeValue.trim();
+			}
+			else {
+				// If <corr> has no <note type="emendation">, then <corr> has a @type.
+				// Find in <correction>/<p>/<list> the <item> whose @n corresponds
+				// to the @type of <corr>, and store the textual content of that
+				// <item> in variable emendNoteString
+				if (corr.attributes.getNamedItem('type').nodeValue == 'ub') {
+					correction = xmlDoc.getElementsByTagName('correction')[0];
+					correctionList = correction.getElementsByTagName('p')[0].getElementsByTagName('list')[0];
+					correctionItems = correctionList.getElementsByTagName('item')
+					for (var icl = 0; icl < correctionItems.length; icl++) {
+						item = correctionItems[icl];
+						if (item.attributes.getNamedItem('n').nodeValue == 'ub') {
+							emendNoteString = item.childNodes[0].nodeValue.trim();
+						}
+					}
+				}
+			}
 			computeAddLikeChildren(corr, document.getElementById('MSText'), 'apparatus corr'); // Result:
 				//for each <w>, <pc> or <gap>, this is created:
 				// <span class="apparatus corr"> <table>[three rows]</table></span>
@@ -862,8 +885,7 @@ function computeWordLikeElements(refElement) {
 				// textual content of <note type="emendation">
 			emendNoteTR = document.createElement('tr');
 			emendNoteTD = document.createElement('td');
-			emendNoteTD.setAttribute('class', 'apparatus apparatusNote'); // §§§
-			emendNoteString = emendNote.childNodes[0].nodeValue.trim();
+			emendNoteTD.setAttribute('class', 'apparatus apparatusNote');
 			emendNoteText = document.createTextNode(emendNoteString);
 			emendNoteTD.append(emendNoteText);
 			emendNoteTR.append(emendNoteTD);

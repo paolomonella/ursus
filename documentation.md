@@ -1034,7 +1034,24 @@ When a word is broken up by the line break, the markup looks like
 Textual criticism
 =================
 
-When the text is readable in the manuscript, but the editor considers it erroneous, this is the encoding:
+When the text is readable in the manuscript, but the editor considers it erroneous, the encoding strategy includes the use of elements `<choice>`, `<sic>`, `<corr>` and `<note type="emendation">`.
+
+This is one encoding strategy:
+
+`<choice> 
+	<sic> 
+		<w n="agnouero" xml:id="w297">agnobero</w> 
+	</sic> 
+	<corr type="ub">
+		<w n="agnouero" xml:id="w298">agnouero</w>
+	</corr>
+</choice>`
+
+In this first example, the origin of the error is banal and common, so `<corr>` only has a `@type` attribute whose value explains the type of error. The meaning of code `ub` is explained in `<TEI>` / `<teiHeader>` / `<encodingDesc>` / `<correction>` / `<p>` / `<list type="gloss">`. This `<list>` has a number of `<item>` children, each with a `@n`. In this case, the meaning of `ub` is explained in this `<item>` element with `@type="ub"`:
+
+	`<item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>`
+
+If the error and the emendation require a more complex discussion, this is the encoding strategy:
 
 `<choice>
 	<sic>
@@ -1057,8 +1074,7 @@ When the text is readable in the manuscript, but the editor considers it erroneo
 	</corr>
 </choice>`
 
-Every occurrence of choice/corr/sic has one `<note type="emendation">` (child of `<corr>`)
-discussing the error and the proposed emendation.
+In this case, `<corr>` has a child `<note type="emendation">` discussing the error and the proposed emendation.
 
 Both `<sic>` and `<corr>` include one or more `<w>` and zero or more `<pc>` or `<gap>`.
 

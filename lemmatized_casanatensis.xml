@@ -16,7 +16,24 @@
 		      manuscript provided by the Bibliotheca Casanatensis, Rome, Italy.</p>
       </sourceDesc>
     </fileDesc>
+    <encodingDesc>
+	    <correction>
+		    <p>The following codes are used to categorize corrections identified in this edition:
+			    <list type="gloss">
+				    <label>ub</label>
+				    <item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>
+			    </list>
+		    </p>
+	    </correction>
+    </encodingDesc>
     <revisionDesc>
+	<change subtype="critical" type="agenda">Replace 'note' @type="emendation" with 'sic' / 'corr'
+		come in http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COEDCOR per gli errori evidenti.
+		In http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCC si parla di emendazioni più
+		congetturali, e c'è un paragrafo interessante (find 'In addition, the conscientious encoder
+		will provide documentation explaining the circumstances') in cui dice che potrei inserire
+		in un elemento <tag>correction</tag> dentro la <tag>encodingDesc</tag> dettagli sui valori
+		dell'elemento @type di <tag>corr</tag>.</change>
 	<change subtype="critical" type="agenda">Try to upload this file in ALIM2, see errors.
 		Then maybe contact ALIM2 webmaster.</change>
 	<change subtype="critical" type="agenda">Create ALIM-TEI-Level_1 visualization for ALIM2 website.</change>
@@ -61,16 +78,6 @@
 		possible rendering.</change>
 	<change subtype="improve" type="agenda">I might turn the informal quotations (such as K 2.110.22-25)
 		existing within 'note' elements into formal URNs.</change>
-	<change subtype="improve" type="agenda">Potrei sostituire le attuali 'note' @type="emendation" con 'corr' (oppure 'supplied')
-		per la parola in versione corretta, con solo il livello linguistico ('w' vuoto con attributi),
-		secondo quanto dice file:///usr/share/doc/tei-p5-doc/en/html/ref-add.html nel paragrafetto 'Note'.
-		Potrei usare la coppia sic/corr ('sic' sarebbe per la stessa parola, in versione non corretta),
-		come in http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COEDCOR per gli errori evidenti.
-		In http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCC si parla di emendazioni più
-		congetturali, e c'è un paragrafo interessante (find 'In addition, the conscientious encoder
-		will provide documentation explaining the circumstances') in cui dice che potrei inserire
-		in un elemento <tag>correction</tag> dentro la <tag>encodingDesc</tag> dettagli sui valori
-		dell'elemento @type di <tag>corr</tag>.</change>
 	<change subtype="improve" type="agenda">Potrei codificare le correzioni/riscritture dello stesso scriba.</change>
 	<change subtype="improve" type="agenda">In w14058 I should have an 'add' child of 'abbr', but I do not b/c this is
 		not managed by the JS at this time. Make the JS manage it and encode it (not a big deal,
@@ -492,9 +499,9 @@ m</w>
 <sic>
 <w ana="11B---F3---" lemma="agnouero" n="agnouero" xml:id="w297">agnobero</w>
 </sic>
-<corr>
+<corr type="ub">
 <w ana="3-LH1------" lemma="agnouero" n="agnouero" xml:id="w298">agnouero</w>
-<note type="emendation">Scribal error: "agnobero" for "agnouero", due to the scribe"s pronunciation.</note>
+<!--note type="emendation">Scribal error: "agnobero" for "agnouero", due to the scribe's pronunciation.</note-->
 </corr>
 </choice>
 	<pc n="space"> </pc>
@@ -828,7 +835,7 @@ ua</w>
 		<expan>on</expan>
 	</choice>
 siua</w>
-<note subtype="emendation_to_whole_section" type="emendation">The graphemes around "dicitur" are very hard to read. Another reading might be "oratio dici t(um) [two unclear graphemes] possunt uerba imperatiua et responsiua". In this case, the "u with r rotunda above" abbreviation would be expanded in "um", not "ur". However, the "p" and "o" of "possunt" are very hardly recognizable. The reading "oratio dicitur [...] sunt uerba imperatiua et responsiua" is more likely based on the manuscript.</note>
+<note subtype="emendationToWholeSection" type="emendation">The graphemes around "dicitur" are very hard to read. Another reading might be "oratio dici t(um) [two unclear graphemes] possunt uerba imperatiua et responsiua". In this case, the "u with r rotunda above" abbreviation would be expanded in "um", not "ur". However, the "p" and "o" of "possunt" are very hardly recognizable. The reading "oratio dicitur [...] sunt uerba imperatiua et responsiua" is more likely based on the manuscript.</note>
 	<pc n=".">·</pc>
 <w ana="11B---J3---" lemma="imperatiua" n="imperatiua" xml:id="w546">imperatiua</w>
 <pc n=",">·</pc>
@@ -9772,7 +9779,7 @@ d</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w8171">ab</w>
 <w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8172">hispanis</w>
-<note subtype="emendation_to_whole_section" type="emendation">"Spanus a Spanis" is probably a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
+<note subtype="emendationToWholeSection" type="emendation">"Spanus a Spanis" is probably a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
 </corr>
 </choice>
 <pc n=".">·</pc>
@@ -15036,7 +15043,7 @@ a</w>
 <w ana="11B---K1---" lemma="paenultima" n="paenultima" xml:id="w13353">penultima</w>
 <lb break="no" n="4r.b.32" />
 <w ana="11B---O3---" lemma="breuis" n="breuis" xml:id="w13356">breuis</w>
-<note subtype="emendation_to_whole_section" type="emendation">The manuscript text is "patronymica in 'des' terminantia, si uenerint ab eisdem grecis quorum nominatiuus terminatur 'as' et genitiuus 'os' dyphthongum debent habere ante 'des' 'a' penultima breuis".  My emendation of the text is: "patronymica in 'des' terminantia, si uenerint ab eisdem grecis, quorum nominatiuus terminatur [scil. in ] 'as' et genitiuus [scil. in ] 'oy' diphthongum, debent habere ante 'des' 'a' penultimam breuem" (in Greek transliteration: "terminatur [scil. in ] 'ας' et genitiuus [scil. in ] 'ου' diphthongum").  The source (Priscian, Ars grammatica, Keil 2.65.18-2.65.20) has: "Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος' desinat, genetiuus uero in 'ου' diphthongum, a paenultima breuis ante 'des' inuenitur in patronymico", but different branches of the textual tradition of Priscian have different Greek letters.  Codex R ("cod. bibl. imp. Paris. 7496"), first and second hand: "in as (with ac written above the word) uel in es (with EC written above the word) uel os (with IOC written above the word)". Codex B ("cod. bibl. publ. Bambergensis"): "ac uel HC uel IOC". Codex b (same codex, second hand): "in ac uel ī HC uel ī IOC". Codex D ("cod. bibl. publ. Bernensis, olim Bongarsianus"): "in as uel in es uel in ios". Codex G ("cod. bibl. conventus Sangallensis"), first and second hand: "in as (with 'uel es' written above the line) uel ios". Codex K ("cod. bibl. Caroliruhensis 223"): "in ac uel IOC uel HC". Codex H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii"): "ac uel HC uel IOC". Codex L ("cod. bibl. publ. Lugd. Bat. olim Gruterianus"): "in as uel in os".  The erroneous reading "os" (for "ου") appears only in codex R, but the "os"/"ου" error of the scribe of this manuscript might have arisen independently.</note>
+<note subtype="emendationToWholeSection" type="emendation">The manuscript text is "patronymica in 'des' terminantia, si uenerint ab eisdem grecis quorum nominatiuus terminatur 'as' et genitiuus 'os' dyphthongum debent habere ante 'des' 'a' penultima breuis".  My emendation of the text is: "patronymica in 'des' terminantia, si uenerint ab eisdem grecis, quorum nominatiuus terminatur [scil. in ] 'as' et genitiuus [scil. in ] 'oy' diphthongum, debent habere ante 'des' 'a' penultimam breuem" (in Greek transliteration: "terminatur [scil. in ] 'ας' et genitiuus [scil. in ] 'ου' diphthongum").  The source (Priscian, Ars grammatica, Keil 2.65.18-2.65.20) has: "Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος' desinat, genetiuus uero in 'ου' diphthongum, a paenultima breuis ante 'des' inuenitur in patronymico", but different branches of the textual tradition of Priscian have different Greek letters.  Codex R ("cod. bibl. imp. Paris. 7496"), first and second hand: "in as (with ac written above the word) uel in es (with EC written above the word) uel os (with IOC written above the word)". Codex B ("cod. bibl. publ. Bambergensis"): "ac uel HC uel IOC". Codex b (same codex, second hand): "in ac uel ī HC uel ī IOC". Codex D ("cod. bibl. publ. Bernensis, olim Bongarsianus"): "in as uel in es uel in ios". Codex G ("cod. bibl. conventus Sangallensis"), first and second hand: "in as (with 'uel es' written above the line) uel ios". Codex K ("cod. bibl. Caroliruhensis 223"): "in ac uel IOC uel HC". Codex H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii"): "ac uel HC uel IOC". Codex L ("cod. bibl. publ. Lugd. Bat. olim Gruterianus"): "in as uel in os".  The erroneous reading "os" (for "ου") appears only in codex R, but the "os"/"ου" error of the scribe of this manuscript might have arisen independently.</note>
 <pc n=",">·</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w13359">ut</w>
 <w ana="11A---M2---" lemma="pelias" n="Pelias" xml:id="w13362">pelias</w>
@@ -16316,7 +16323,7 @@ tronymica</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-NH1------" lemma="possum" n="posse" xml:id="w14649">posse</w>
-<note subtype="emendation_to_whole_section" type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible.</note>
+<note subtype="emendationToWholeSection" type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible.</note>
 <pc n=".">.</pc>
 <w ana="11A---A2---" lemma="possessiua" n="possessiua" xml:id="w14652"><hi rend="larger">p</hi>ossessiua</w>
 <note type="source">I did not check whether the sentence ("possessiua quae et thetica dicitur...") has a source.</note>
@@ -17530,7 +17537,7 @@ a</w>
 <w n="ᾔδειν" type="foreign" xml:id="w15891" xml:lang="grc">eidein</w>
 <pc n="quote">·</pc>
 <w ana="3-NA1--9---" lemma="dico" n="dicunt" xml:id="w15894">dicunt</w>
-<note subtype="emendation_to_whole_section" type="emendation">The Greek words I encoded at the Linguistic Layer (ᾔδην and ᾔδειν) are Keil's corrections. The original text of the Casanatensis is the one encoded at the Graphematic and Alphabetic Layers. The manuscripts of Priscianus (the source here is Priscianus K 2.71.11), as reported in Keil's apparatus criticus, often have the same (transliterated) readings as the Casanatensis.  This is a fairly serious textual critical problem. Keil's apparatus note to ᾔδην has: "11 ᾔδην scripsi, cf. Eustath. ad Hom. Od. XIII 220 Sturzium de dial. Gr. p. 64 C.". As to the readings found in the manuscripts, the apparatus has: "ΗΔΗΝ H ΗΔ.ΙΝ Rr ΗΔΕ*Ν*(Ι) D ΗΔΕΝ K eden GL". For ᾔδειν, Keil's apparatus has: "ᾔδειν scripsi ΕΙΔΕΙΝ R eid*n (i) D eiden HGLK" (see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
+<note subtype="emendationToWholeSection" type="emendation">The Greek words I encoded at the Linguistic Layer (ᾔδην and ᾔδειν) are Keil's corrections. The original text of the Casanatensis is the one encoded at the Graphematic and Alphabetic Layers. The manuscripts of Priscianus (the source here is Priscianus K 2.71.11), as reported in Keil's apparatus criticus, often have the same (transliterated) readings as the Casanatensis.  This is a fairly serious textual critical problem. Keil's apparatus note to ᾔδην has: "11 ᾔδην scripsi, cf. Eustath. ad Hom. Od. XIII 220 Sturzium de dial. Gr. p. 64 C.". As to the readings found in the manuscripts, the apparatus has: "ΗΔΗΝ H ΗΔ.ΙΝ Rr ΗΔΕ*Ν*(Ι) D ΗΔΕΝ K eden GL". For ᾔδειν, Keil's apparatus has: "ᾔδειν scripsi ΕΙΔΕΙΝ R eid*n (i) D eiden HGLK" (see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
 <pc n="," />
 <w n="πλῆον" type="foreign" xml:id="w15897" xml:lang="grc">plion</w>
 	<pc n="space"> </pc>
@@ -17542,7 +17549,7 @@ a</w>
 </w>
 	<pc n="space"> </pc>
 <w n="πλεῖον" type="foreign" xml:id="w15903" xml:lang="grc">pleion</w>
-<note subtype="emendation_to_whole_section" type="emendation">The Greek words I encoded at the Linguistic Layer (πλῆον and πλεῖον) are Keil's corrections. The original text of the Casanatensis is that encoded at the Graphematic and Alphabetic Layers.  The manuscripts of Priscianus (the source here is Priscianus K 2.71.11), as reported in Keil's apparatus criticus, never have "plion", but do have "pleion". This is another fairly serious textual critical problem.  This is Keil's apparatus note for πλῆον: "ΠΑΗΩΝ Rr ΠΑΗΟΝ D ΠΕΛΗΟΝ d ΠΗΛΗΩΝ GL ΠΛΗΟΝ H ΠΛΕΟΝ K". This is his note for πλεῖον: "ΠΛΕΙΟΝ ex ΠΛΕΙΙΟΝ corr. in lit. r peλeion ex ΠΕΑΑΕΙΟΝ ni f. corr. d ΠΗΛΕΙΩΝ L peleion K peion H".</note>
+<note subtype="emendationToWholeSection" type="emendation">The Greek words I encoded at the Linguistic Layer (πλῆον and πλεῖον) are Keil's corrections. The original text of the Casanatensis is that encoded at the Graphematic and Alphabetic Layers.  The manuscripts of Priscianus (the source here is Priscianus K 2.71.11), as reported in Keil's apparatus criticus, never have "plion", but do have "pleion". This is another fairly serious textual critical problem.  This is Keil's apparatus note for πλῆον: "ΠΑΗΩΝ Rr ΠΑΗΟΝ D ΠΕΛΗΟΝ d ΠΗΛΗΩΝ GL ΠΛΗΟΝ H ΠΛΕΟΝ K". This is his note for πλεῖον: "ΠΛΕΙΟΝ ex ΠΛΕΙΙΟΝ corr. in lit. r peλeion ex ΠΕΑΑΕΙΟΝ ni f. corr. d ΠΗΛΕΙΩΝ L peleion K peion H".</note>
 <note type="script">The last part of the line is blank (for about the lenght of a word).</note>
 <pc n=".">,</pc>
 <lb break="no" n="5r.a.11" />
@@ -26111,7 +26118,7 @@ paratiuis</w>
 <w ana="4-S--------" lemma="ante" n="ante" xml:id="w24189">ante</w>
 <pc n="quote">·</pc>
 <w n="or" type="alphabemes" xml:id="w24192">or</w>
-<note subtype="emendation_to_whole_section" type="emendation">The sentence does not have a subject. The final "o" of "comparatiuo" is a correction written over the original final "u" with a "2" abbreviation mark above (for "comparatiuum"). So the first hand meant "in nullo (scil. uerbo) comparatiuum (subject) i productum habet ante or". The simplest emendation of this passage would be to restore the text of the first hand: "in nullo (scil. uerbo) comparatiuum etc.". The source (Priscian Ars grammatica, K 2.91.16) has: "quia in nulla comparatiuo i ante "or" produci potest". </note>
+<note subtype="emendationToWholeSection" type="emendation">The sentence does not have a subject. The final "o" of "comparatiuo" is a correction written over the original final "u" with a "2" abbreviation mark above (for "comparatiuum"). So the first hand meant "in nullo (scil. uerbo) comparatiuum (subject) i productum habet ante or". The simplest emendation of this passage would be to restore the text of the first hand: "in nullo (scil. uerbo) comparatiuum etc.". The source (Priscian Ars grammatica, K 2.91.16) has: "quia in nulla comparatiuo i ante "or" produci potest". </note>
 <pc n=".">|</pc>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w24195"><hi rend="larger">i</hi>n</w>
 <w ana="11B---F3---" lemma="superlatiuo" n="superlatiuo" xml:id="w24198">su
@@ -29302,7 +29309,7 @@ latiua</w>
 <w ana="11F---M2---" lemma="duo" n="duas" xml:id="w27009">duas</w>
 	<pc n="space"> </pc>
 <w ana="3-JH1------" lemma="syllabas" n="syllabas" xml:id="w27012">syllabas</w>
-<note subtype="emendation_to_whole_section" type="emendation">Scribal error: "duas syllabas" for "duabus syllabis".</note>
+<note subtype="emendationToWholeSection" type="emendation">Scribal error: "duas syllabas" for "duabus syllabis".</note>
 <pc n=",">·</pc>
 <w ana="2-JM41J1---" lemma="excepto" n="excepto" xml:id="w27015">excepto</w>
 	<pc n="space"> </pc>
@@ -29385,7 +29392,7 @@ ua</w>
 <w ana="11F---M2---" lemma="duo" n="duas" xml:id="w27069">duas</w>
 	<pc n="space"> </pc>
 <w ana="3-JH1------" lemma="syllabas" n="syllabas" xml:id="w27072">syllabas</w>
-<note subtype="emendation_to_whole_section" type="emendation">I would correct this to "uel una uel duabus syllabis". In the manuscript, the last "a" in "syllabas" is faded out. Could this be a sign of an intentional erasion by a scribe? If so, however, one wonders why the same scribe did not correct "duas" to "duabus".</note>
+<note subtype="emendationToWholeSection" type="emendation">I would correct this to "uel una uel duabus syllabis". In the manuscript, the last "a" in "syllabas" is faded out. Could this be a sign of an intentional erasion by a scribe? If so, however, one wonders why the same scribe did not correct "duas" to "duabus".</note>
 	<pc n="space"> </pc>
 <w ana="3-NA1--9---" lemma="uincunt" n="uincunt" xml:id="w27075">uincunt</w>
 	<pc n="space"> </pc>
@@ -29435,7 +29442,7 @@ latiuus</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="11A---D2---" lemma="syllabam" n="syllabam" xml:id="w27105">syllabam</w>
-<note subtype="emendation_to_whole_section" type="emendation">I would correct "unam syllabam" to "una syllaba" (ablative), as in the source Priscian, Ars grammatica, K 2.100.25 ("superlatiuus uero comparatiuum est quando superat una syllaba").</note>
+<note subtype="emendationToWholeSection" type="emendation">I would correct "unam syllabam" to "una syllaba" (ablative), as in the source Priscian, Ars grammatica, K 2.100.25 ("superlatiuus uero comparatiuum est quando superat una syllaba").</note>
 <pc n=",">·</pc>
 <lb break="no" n="7v.a.29" />
 <w ana="4-O--------" lemma="quando" n="quando" xml:id="w27108">quando</w>
@@ -30327,7 +30334,7 @@ paratur</w>
 	<pc n="space"> </pc>
 <w ana="11A---A2---" lemma="necessarius" n="necessaria" xml:id="w27885">necessaria</w>
 	<pc n="space"> </pc>
-<note subtype="emendation_to_whole_section" type="emendation">Scribal error: "causa necessaria" for "causam necessariam".</note>
+<note subtype="emendationToWholeSection" type="emendation">Scribal error: "causa necessaria" for "causam necessariam".</note>
 <w ana="11C---B2---" lemma="significatio" n="significationis" xml:id="w27888">significatio
 <lb break="no" n="7v.b.18" />
 nis</w>
@@ -34951,7 +34958,7 @@ tes</w>
 <unclear cert="medium" reason="faded">
 <w ana="3-JJ1--9---" lemma="denominatiua" n="denominatiua" xml:id="w32215">denominatiua</w>
 </unclear>
-<note subtype="emendation_to_whole_section" type="emendation">I would add "accipiunt" after "a uerbis": "In uerbialibus habent alias consonantes, quas a verbis [accipiunt]". The source Priscian, Ars grammatica, K. .119.2-4 has: "inueniuntur tamen in uerbalibus etiam alias consonantes ante a habentia, sed quas a uerbis accipiunt, ut 'scribo scriba', 'conuiuo conuiua', 'colligo collega'".</note>
+<note subtype="emendationToWholeSection" type="emendation">I would add "accipiunt" after "a uerbis": "In uerbialibus habent alias consonantes, quas a verbis [accipiunt]". The source Priscian, Ars grammatica, K. .119.2-4 has: "inueniuntur tamen in uerbalibus etiam alias consonantes ante a habentia, sed quas a uerbis accipiunt, ut 'scribo scriba', 'conuiuo conuiua', 'colligo collega'".</note>
 <pc n=".">·</pc>
 	<pc n="space"> </pc>
 <w ana="13A---M2---" lemma="multus" n="plurimas" xml:id="w32217">plurimas</w>
