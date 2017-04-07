@@ -17,25 +17,20 @@
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
-	    <correction>
-		    <p>The following codes are used to categorize corrections identified in this edition:
-			    <list type="gloss">
-				    <label>ub</label>
-				    <item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>
-			    </list>
-		    </p>
-	    </correction>
+	    <editorialDecl>
+		<correction>
+			<p>The following codes are used to categorize corrections identified in this edition:
+				<list type="gloss">
+					<label>ub</label>
+					<item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>
+				</list>
+			</p>
+		</correction>
+	    </editorialDecl>
     </encodingDesc>
     <revisionDesc>
-	<change subtype="critical" type="agenda">Replace 'note' @type="emendation" with 'sic' / 'corr'
-		come in http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COEDCOR per gli errori evidenti.
-		In http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHCC si parla di emendazioni più
-		congetturali, e c'è un paragrafo interessante (find 'In addition, the conscientious encoder
-		will provide documentation explaining the circumstances') in cui dice che potrei inserire
-		in un elemento <tag>correction</tag> dentro la <tag>encodingDesc</tag> dettagli sui valori
-		dell'elemento @type di <tag>corr</tag>.</change>
-	<change subtype="critical" type="agenda">Try to upload this file in ALIM2, see errors.
-		Then maybe contact ALIM2 webmaster.</change>
+	<change subtype="critical" type="agenda">Replace 'note' @type='emendation' with 'sic'/'corr'/'correction'</change>
+	<change subtype="critical" type="agenda">Try to upload this file in ALIM2, see errors.</change>
 	<change subtype="critical" type="agenda">Create ALIM-TEI-Level_1 visualization for ALIM2 website.</change>
 	<change subtype="critical" type="agenda">Add 'larger' allographs for alphabetic characters to gtos?</change>
 	<change subtype="critical" type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium.
@@ -103,7 +98,7 @@
 	<change type="done" when="2017-02">For clear 'scribal error[s]', I sometimes correct in the value
 		of @n, sometimes do not. Also, sometimes I insert a @type="script" note, sometimes a
 		@type="content" note. I normally use 'script' when I correct silently, 'content'
-		when I do not. This only is to check until the first note with type "emendation".</change>
+		when I do not. This only is to check until the first note with type 'emendation'.</change>
 	<change type="done" when="2017-02">Use two new 'note' types 'emendation' and 'graphic'.
 		Start from word with id w28905 moving backwards.</change>
 	<change type="done" when="2017-03-01">Add new Unicode characters, as suggested by Odd Einer Haugen (see email).</change>
@@ -501,7 +496,7 @@ m</w>
 </sic>
 <corr type="ub">
 <w ana="3-LH1------" lemma="agnouero" n="agnouero" xml:id="w298">agnouero</w>
-<!--note type="emendation">Scribal error: "agnobero" for "agnouero", due to the scribe's pronunciation.</note-->
+
 </corr>
 </choice>
 	<pc n="space"> </pc>
@@ -835,7 +830,7 @@ ua</w>
 		<expan>on</expan>
 	</choice>
 siua</w>
-<note subtype="emendationToWholeSection" type="emendation">The graphemes around "dicitur" are very hard to read. Another reading might be "oratio dici t(um) [two unclear graphemes] possunt uerba imperatiua et responsiua". In this case, the "u with r rotunda above" abbreviation would be expanded in "um", not "ur". However, the "p" and "o" of "possunt" are very hardly recognizable. The reading "oratio dicitur [...] sunt uerba imperatiua et responsiua" is more likely based on the manuscript.</note>
+<note subtype="emendationToWholeSection" type="emendation">The graphemes around "dicitur" are very hard to read. Another reading might be "oratio dici t(um) [two unclear graphemes] possunt uerba imperatiua et responsiua". In this case, the "u with r rotunda above" abbreviation would be expanded in "um", not "ur". However, the "p" and "o" of "possunt" are very hardly recognizable. The reading that I am publishing ("oratio dicitur [...] sunt uerba imperatiua et responsiua") is more likely based on the manuscript.</note>
 	<pc n=".">·</pc>
 <w ana="11B---J3---" lemma="imperatiua" n="imperatiua" xml:id="w546">imperatiua</w>
 <pc n=",">·</pc>
@@ -1496,16 +1491,27 @@ o</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<unclear cert="low" reason="script">
-<w ana="11C---A2---" lemma="acomparabilis" n="acomparabilis" xml:id="w884">ac
+<choice>
+<sic>
+<w n="acomparabilis" type="nonsense" xml:id="w883">ac
 	<choice>
 		<abbr type="superscription">o<am>2</am></abbr>
 		<expan>om</expan>
 	</choice>
 	parauilis
-<note type="emendation">Scribal error: "acomparauilis" for "acomparabilis". The word, however, might also be "comparabilis", and the previous grapheme could be part of another illegible word.</note>
 </w>
-</unclear>
+</sic>
+<corr type="ub">
+<w n="acomparabilis" type="nonsense" xml:id="w884">ac
+	<choice>
+		<abbr type="superscription">o<am>2</am></abbr>
+		<expan>om</expan>
+	</choice>
+	parauilis
+</w>
+<note type="emendation">Scribal error: "acomparauilis" for "acomparabilis". The word, however, might also be "comparabilis", and the previous grapheme could be part of another illegible word.</note>
+</corr>
+</choice>
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="pars" n="pars" xml:id="w885">pars</w>
 	<pc n=",">·</pc>
@@ -1659,11 +1665,15 @@ cedit</w>
 		<expan>um</expan>
 	</choice>
 </w>
-<unclear cert="low" reason="faded">
-	<w ana="11C---G---1" lemma="rationabilis" n="rationabiliter" xml:id="w966">rationauiliter
-<note type="emendation">Scribal error: "rationauiliter" for "rationabiliter".</note>
-</w>
-</unclear>
+<choice>
+<sic>
+	<w ana="11C---G---1" lemma="rationabilis" n="rationabiliter" xml:id="w966">rationauiliter</w>
+</sic>
+<corr type="ub">
+	<w ana="11C---G---1" lemma="rationabilis" n="rationabiliter" xml:id="w967">rationabiliter</w>
+
+</corr>
+</choice>
 	<pc n="space"> </pc>
 <w ana="11F---A3---" lemma="aliquis" n="aliquid" xml:id="w969">aliquid</w>
 	<pc n="space"> </pc>
@@ -2752,7 +2762,7 @@ tesis</w>
 <w ana="11F---C2---" lemma="ille" n="illi" xml:id="w1743"><hi rend="larger">i</hi>lli</w>
 	<pc n="space"> </pc>
 <w n="ἄρθρον" type="foreign" xml:id="w1746" xml:lang="grc">artho
-<note type="emendation">This is probably a misspelling for Greek ἄρθρον, which is the word that I encoded it at the Linguistic Layer.</note>
+<note type="emendation">This probably is a misspelling for Greek ἄρθρον, which is the word that I encoded it at the Linguistic Layer.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---A3---" lemma="articulum" n="articulum" xml:id="w1749">arti
@@ -4828,9 +4838,17 @@ prie</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="alibi" n="alibi" xml:id="w3645">alibi</w>
 <lb break="no" n="1v.b.38" />
-<w ana="11A---F2---" lemma="impura" n="impura" xml:id="w3648">inpura
-<note type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments: "Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer: "Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
+<choice>
+<sic>
+<w ana="2-LO-1A3---" lemma="impura" n="impura" xml:id="w3648">inpura
 </w>
+</sic>
+<corr>
+<w ana="4-S--------" lemma="in" n="in" xml:id="w3649">in</w>
+<w ana="11B---G----" lemma="purus" n="pure" xml:id="w3650">pure</w>
+<note type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments: "Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer: "Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
+</corr>
+</choice>
 	<pc n="space"> </pc>
 <w ana="2-LM41O2---" lemma="pono" n="positis" xml:id="w3651">positis</w>
 	<pc n="space"> </pc>
@@ -4885,9 +4903,17 @@ na</w>
 priæ</w>
 	<pc n=",">·</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3711">ut</w>
+<choice>
+<sic>
 <w ana="11A---A2---" lemma="arithmetica" n="arithmetica" xml:id="w3714">aritmetrica
-<note type="emendation">Scribal error: "aritmetrica" for "arithmetica".</note>
 </w>
+</sic>
+<corr>
+<w ana="11A---A2---" lemma="arithmetica" n="arithmetica" xml:id="w3715">arithmetica
+</w>
+<note type="emendation">Scribal error: "aritmetrica" for "arithmetica".</note>
+</corr>
+</choice>
 	<pc n=",">·</pc>
 <w ana="11A---A2---" lemma="grammatica" n="grammatica" xml:id="w3717">gr
 	<choice>
@@ -5523,11 +5549,19 @@ bus</w>
 	<pc n="space"> </pc>
 <w ana="11B---B1---" lemma="philosophus" n="philosophi" xml:id="w4317">philosophi</w>
 	<pc n="space"> </pc>
+<choice>
+<sic>
 <w n="ἄτομας" type="foreign" xml:id="w4320" xml:lang="grc">athomas
-<note type="emendation">In his edition of Priscian, Ars grammatica, K 2.58.26, the source of this passage, Keil corrects the reading "atoma" of all manuscripts to "atomos", which does agree with the previous "quas" because Latin substantive "atomus (or atomos), - i" (like Greek "ἡ ἄτομος") is feminine.  Keil's apparatus says that Priscian's manuscripts BGKL have "quae... atoma" (neuter). For the other manuscripts with "atoma", i.e. for P and H, Keil's apparatus does not mention any variant to "quas", so I am assuming that P and H have "quas... atoma". As far as Ursus is concerned, however, he often uses Greek words (in Latin transliteration) for grammatical concepts.  Compare Morelli 1911, 290 on this: "Ursus aggiunge anche, dicemmo, qualcosa di suo: che non è però molto notevole. Una certa conoscenza della lingua greca, diffusa nella regione cassinese e beneventana specialmente per merito di Paolo Diacono, non gli doveva mancare; egli ne fa simpatica ostentazione, non mancando mai di aggiungere alle denominazioni grammaticali latine le corrispondenti denominazioni greche, e diffondendosi a parlare delle relazioni fra declinazione latina e declinazione greca".  So I believe that the scribe here means to write the Greek version of the word (though, as usual, in Latin transliteration), and therefore he uses the Greek "-ας" ending. I encoded the word as such at the Linguistic Layer. If this is the case, the only scribal error is in the spelling ("th" for "t": a very easily explainable error).</note>
 </w>
+</sic>
+<corr>
+<w n="ἄτομας" type="foreign" xml:id="w4321" xml:lang="grc">atomas
+</w>
+<note type="emendation">In his edition of Priscian, Ars grammatica, K 2.58.26, the source of this passage, Keil corrects the reading "atoma" of all manuscripts to "atomos", which does agree with the previous "quas" because Latin substantive "atomus (or atomos), - i" (like Greek "ἡ ἄτομος") is feminine.  Keil's apparatus says that Priscian's manuscripts BGKL have "quae... atoma" (neuter). For the other manuscripts with "atoma", i.e. for P and H, Keil's apparatus does not mention any variant to "quas", so I am assuming that P and H have "quas... atoma". As far as Ursus is concerned, however, he often uses Greek words (in Latin transliteration) for grammatical concepts.  Compare Morelli 1911, 290 on this: "Ursus aggiunge anche, dicemmo, qualcosa di suo: che non è però molto notevole. Una certa conoscenza della lingua greca, diffusa nella regione cassinese e beneventana specialmente per merito di Paolo Diacono, non gli doveva mancare; egli ne fa simpatica ostentazione, non mancando mai di aggiungere alle denominazioni grammaticali latine le corrispondenti denominazioni greche, e diffondendosi a parlare delle relazioni fra declinazione latina e declinazione greca".  So I believe that the scribe here means to write the Greek version of the word (though, as usual, in Latin transliteration), and therefore he uses the Greek "-ας" ending. I encoded the word as such at the Linguistic Layer. If this is the case, the only scribal error is in the spelling ("th" for "t": a very easily explainable error).</note>
+</corr>
+</choice>
 	<pc n="space"> </pc>
-<w ana="2-JM41J1---" lemma="uocant" n="uocant" xml:id="w4323">uocant</w>
+<w ana="11B---K1---" lemma="uocant" n="uocant" xml:id="w4323">uocant</w>
 	<pc n=",">|</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w4326">ut</w>
 <w ana="11C---A1---" lemma="plato" n="Plato" xml:id="w4329">plato</w>
@@ -6110,11 +6144,20 @@ nominatio</w>
 	</choice>
 quam</w>
 	<pc n="space"> </pc>
-<w ana="11C---O1---" lemma="seruo" n="seruo" xml:id="w4791">seruo</w>
+<w ana="11E---G----" lemma="seruo" n="seruo" xml:id="w4791">seruo</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="aut" n="aut" xml:id="w4794">aut</w>
-<w ana="11C---O1---" lemma="ignobili" n="ignobili" xml:id="w4797">ignouili
-<note type="emendation">Scribal error: "ignouili" for "ignobili".</note></w>
+<choice>
+<sic>
+<w ana="12C---J3---" lemma="ignobili" n="ignobili" xml:id="w4797">ignouili
+</w>
+</sic>
+<corr type="ub">
+<w ana="11C---J3---" lemma="ignobili" n="ignobili" xml:id="w4798">ignobili
+</w>
+
+</corr>
+</choice>
 	<pc n=",">·</pc>
 <lb break="no" n="2r.b.6" />
 <w ana="4-O--------" lemma="quia" n="quia" xml:id="w4800">quia</w>
@@ -9779,7 +9822,7 @@ d</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w8171">ab</w>
 <w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8172">hispanis</w>
-<note subtype="emendationToWholeSection" type="emendation">"Spanus a Spanis" is probably a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
+<note subtype="emendationToWholeSection" type="emendation">"Spanus a Spanis" probably is a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
 </corr>
 </choice>
 <pc n=".">·</pc>
@@ -12150,7 +12193,7 @@ lies</w>
 <pc n=".">·</pc>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="inueniuntur" n="inueniuntur" xml:id="w10602">inueniuntur
-<note type="emendation">In an interpretive edition, the word "inueniuntur" shoud be omitted. The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger font.  As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" is probably that it could seem to belong to the previous sentence, which I do not believe.</note>
+<note type="emendation">In an interpretive edition, the word "inueniuntur" shoud be omitted. The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger font.  As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" probably is that it could seem to belong to the previous sentence, which I do not believe.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---O1---" lemma="infinitus" n="infinitis" xml:id="w10605"><hi rend="larger">i</hi>nfinitis</w>
@@ -12250,7 +12293,7 @@ o</w>
 <w ana="11C---A2---" lemma="trinitas" n="trinitas" xml:id="w10707">trinitas</w>
 <pc n=",">·</pc>
 <w ana="11A---A2---" lemma="septimana" n="septimana" xml:id="w10710">septimania
-<note type="emendation">The handwriting is not clear, but after the "n" there seem to be more than just an "a". If so, this is probably a scribal error ("septimania" for "septimana").</note>
+<note type="emendation">The handwriting is not clear, but after the "n" there seem to be more than just an "a". If so, this probably is a scribal error ("septimania" for "septimana").</note>
 </w>
 <pc n=",">·</pc>
 <w ana="11C---A2---" lemma="senio" n="senio" xml:id="w10713">senio</w>
@@ -17432,7 +17475,7 @@ a</w>
 <w ana="3-MQ1------" lemma="inueniri" n="inueniri" xml:id="w15792">inueniri</w>
 <pc n=",">·</pc>
 <w ana="4-O--------" lemma="quam" n="quam" xml:id="w15795">quæm
-<note type="emendation">The manuscript seems to have a "e caudatum" grapheme. This is probably a scribal error for "quam", pointing back to the feminine "diphthongus" mentioned before, in line 6.</note>
+<note type="emendation">The manuscript seems to have a "e caudatum" grapheme. This probably is a scribal error for "quam", pointing back to the feminine "diphthongus" mentioned before, in line 6.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---L1---" lemma="latini" n="Latini" xml:id="w15798">latini</w>
@@ -38967,7 +39010,7 @@ bi</w>
 <w ana="11C---A2---" lemma="asper" n="asper" xml:id="w36066">asper</w>
 	<pc n="space"> </pc>
 <w ana="11B---L1---" lemma="asperis" n="asperis" xml:id="w36069">asperis
-<note type="emendation">This is probably meant to be the genitive singular of "asper", so I would emend it to "asperi": also compare the source Priscian, Ars grammatica, K 2.128.2: "asper asperi asperĭtas".</note>
+<note type="emendation">This probably is meant to be the genitive singular of "asper", so I would emend it to "asperi": also compare the source Priscian, Ars grammatica, K 2.128.2: "asper asperi asperĭtas".</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11D---F1---" lemma="asperi" n="asperi" xml:id="w36072">asperi</w>
@@ -39731,7 +39774,7 @@ ferri</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w36768">ut</w>
 	<pc n="space"> </pc>
 <w ana="11B---K1---" lemma="equos" n="equos" xml:id="w36771">equos
-<note type="content">This is probably meant as an alternative spelling for "equus". </note>
+<note type="content">This probably is meant as an alternative spelling for "equus". </note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---K1---" lemma="eques" n="eques" xml:id="w36774">eques</w>
