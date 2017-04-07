@@ -866,6 +866,9 @@ function computeWordLikeElements(refElement) {
 						}
 					}
 				}
+				else {
+					alert('This choice/sic/corr emendation has no <note type="emendation" or <corr type="...">');
+				}
 			}
 			computeAddLikeChildren(corr, document.getElementById('MSText'), 'apparatus corr'); // Result:
 				//for each <w>, <pc> or <gap>, this is created:
