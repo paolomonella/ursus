@@ -26,4 +26,4 @@ Full documentation in `documentation.md`.
 * `minidomToolBox`: this folder includes Python functions that I'm using to traverse the DOM of `casanatensis.xml`
 * `documentation.md`: The full documentation on this edition
 * `ursusMarkDown.py`: a Python script facilitating my work of keying in `casanatensis.xml`
-* `ursusOutput.py`: a Python script exporting 'simplified' versions of the edition (e.d. including only one textual layer) -- under construction
+* `ursusOutput.py`: a Python script exporting 'simplified' versions of the edition (e.d. including only one textual layer) -- currently under construction
