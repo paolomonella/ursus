@@ -23,6 +23,11 @@
 				<list type="gloss">
 					<label>ub</label>
 					<item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>
+
+					<label>proprie_e_caudatum</label>
+					<item n="proprie_e_caudatum">Scribal error: "propriae" (with a final "e caudatum" grapheme)
+					for adverb "proprie". This specific error occurs
+					in 2v.a.27, 9r.a.18 and 10r.a.18.</item>
 				</list>
 			</p>
 		</correction>
@@ -707,7 +712,6 @@ gi</w>
 	<pc n=".">.</pc>
 </ref>
 </ab>
-
 
 <ab n="Definition of oratio" xml:id="ab04">
 <ref cRef="urn:cts:latinLit:stoa0234a.stoa001:2.53.27-2.54.4" type="source">
@@ -1507,7 +1511,7 @@ o</w>
 		<abbr type="superscription">o<am>2</am></abbr>
 		<expan>om</expan>
 	</choice>
-	parauilis
+	parabilis
 </w>
 <note type="emendation">Scribal error: "acomparauilis" for "acomparabilis". The word, however, might also be "comparabilis", and the previous grapheme could be part of another illegible word.</note>
 </corr>
@@ -2761,9 +2765,17 @@ tesis</w>
 	<pc n=".">.</pc>
 <w ana="11F---C2---" lemma="ille" n="illi" xml:id="w1743"><hi rend="larger">i</hi>lli</w>
 	<pc n="space"> </pc>
+<choice>
+<sic>
 <w n="ἄρθρον" type="foreign" xml:id="w1746" xml:lang="grc">artho
-<note type="emendation">This probably is a misspelling for Greek ἄρθρον, which is the word that I encoded it at the Linguistic Layer.</note>
 </w>
+</sic>
+<corr>
+<w n="ἄρθρον" type="foreign" xml:id="w1747" xml:lang="grc">arthron
+</w>
+<note type="emendation">This probably is a misspelling for Greek ἄρθρον.</note>
+</corr>
+</choice>
 	<pc n="space"> </pc>
 <w ana="11B---A3---" lemma="articulum" n="articulum" xml:id="w1749">arti
 <lb break="no" n="1v.a.5" />
@@ -8062,13 +8074,27 @@ ptione</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="homo" n="homo" xml:id="w6507">homo</w>
 <pc n=".">·</pc>
-<w ana="11A---B2---" lemma="proprius" n="propriae" xml:id="w6510">
+
+<choice>
+<sic>
+<w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w6510">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
-<note type="emendation">Scribal error: "propriae" (with final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs 9r.a.18 and 10r.a.18.</note>
 priæ</w>
+</sic>
+<corr type="proprie_e_caudatum">
+<w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w6511">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+prie</w>
+
+</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w ana="11C---J3---" lemma="communis" n="communia" xml:id="w6513">c
 	<choice>
@@ -9810,24 +9836,43 @@ d</w>
 <w ana="11B---O1--1" lemma="graecus" n="Graecis" xml:id="w8160">grecis</w>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
+
 <choice>
 <sic>
-<w ana="11C---A2--1" lemma="hispanus" n="Hispanus" xml:id="w8163">spanus</w>
+<w ana="11A---B2--1" lemma="hispanus" n="Hispanus" xml:id="w8162">spanus</w>
+</sic>
+<corr>
+<w ana="11A---B2--1" lemma="hispanus" n="Hispanus" xml:id="w8163">hispanus</w>
+<note type="emendation">See my note to the emendation of "Spanis" to "Hispanis".</note>
+</corr>
+</choice>
+
+
 	<pc n="space"> </pc>
-<w ana="4-S-------2" lemma="a" n="ab" xml:id="w8166">a</w>
+
+<choice>
+<sic>
+<w ana="4-S-------2" lemma="a" n="ab" xml:id="w8164">a</w>
+</sic>
+<corr>
+<w ana="4-S-------2" lemma="a" n="ab" xml:id="w8165">ab</w>
+<note type="emendation">If I correct "Spanis" in "Hispanis", the previous "a" must be changed to "ab".</note>
+</corr>
+</choice>
+
+<choice>
+<sic>
 <w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8169">spanis</w>
 </sic>
 <corr>
-<w ana="11A---B2--1" lemma="hispanus" n="Hispanus" xml:id="w8170">hispanus</w>
-	<pc n="space"> </pc>
-<w ana="4-S-------2" lemma="a" n="ab" xml:id="w8171">ab</w>
-<w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8172">hispanis</w>
-<note subtype="emendationToWholeSection" type="emendation">"Spanus a Spanis" probably is a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
+<w ana="11A---B2--1" lemma="hispanis" n="Hispanis" xml:id="w8170">hispanis</w>
+<note type="emendation">"Spanus a Spanis" probably is a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
 </corr>
 </choice>
+
 <pc n=".">·</pc>
 <lb break="no" n="3r.a.10" />
-<w ana="11C---B1---" lemma="patriae" n="patriae" xml:id="w8173"><hi rend="dropcap">p</hi>atriæm
+<w ana="11A---B2---" lemma="patriae" n="patriae" xml:id="w8173"><hi rend="dropcap">p</hi>atriæm
 <note type="emendation">The word, as it stands, makes no sense. The source, Priscian, Ars grammatica, K 2.61.3, has "Patrium est, quod a patria sumitur, ut 'Atheniensis', 'Romanus'". The simplest  emendation could be "patriae", and I am encoding this word as such at the Linguistic Layer. The emendation is likely because Ursus already wrote "gentis" (genitive) instead of Priscian's "gentile" (adjective) shortly above (in line 8 of the same page).</note>
 </w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w8175">est</w>
@@ -35846,16 +35891,29 @@ ducitur</w>
 <pc n="quote">·</pc>
 <w n="a" type="alphabemes" xml:id="w33048">a</w>
 	<pc n="space"> </pc>
+<choice>
+<sic>
 <w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w33051">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
 	priæ
-<note type="emendation">Scribal error: "propriae" (with final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 2v.a.27 and in 10r.a.18.</note>
 </w>
+</sic>
+<corr type="proprie_e_caudatum">
+<w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w33052">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+prie</w>
+
+</corr>
+</choice>
+
 	<pc n="space"> </pc>
-<w ana="11B---B3--1" lemma="feminini" n="feminini" xml:id="w33057">
+<w ana="11A---A2--1" lemma="feminini" n="feminini" xml:id="w33057">
 	<choice>
 		<abbr type="superscription">fem<am>¯</am></abbr>
 		<expan>feminini</expan>
@@ -40619,14 +40677,29 @@ paras</w>
 <note type="graphic">There is a breve (˘) mark over words "fertĭlis", "utĭlis", "textĭlis", "parĭlis", to mark the vowel's short quantity.</note>
 <pc n=".">·</pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.132.1" type="source" unit="Keil" />
+
+
+<choice>
+<sic>
 <w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w37575">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
 	priæ
-<note type="emendation">Scribal error: "propriae" (with final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 2v.a.27 and in 9r.a.18.</note>
 </w>
+</sic>
+<corr type="proprie_e_caudatum">
+<w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w37576">
+	<choice>
+		<abbr type="brevigraph">ŋ</abbr>
+		<expan>pro</expan>
+	</choice>
+prie</w>
+
+</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w ana="11C---J2---" lemma="pares" n="pares" xml:id="w37578">pares</w>
 	<pc n="space"> </pc>
