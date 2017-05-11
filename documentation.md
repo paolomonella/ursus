@@ -731,14 +731,18 @@ Markup not referring to a specific layer
 		- "source" (on the text sources),
 		- "content" (on the text content);
 		- "emendation" (a note proposing an emendation of the text clearly readable in the manuscript);
-	- In the case of `@type="emendation"`, it is implied that the note includes an emendation to one word only.
-		If it includes an emendation to a whole phrase (more than one word), it also has attribute
-		@subtype"emendation_to_whole_section"
-	- A `<note type="emendation">` mostly (but not always) occurs as child of a `<corr>` element. When this
-		is the case, it is meant as a discussion of the error and of my own emendation
-	- To facilitate the processing of these elements, I am making sure that `<note>` elements are only
-		- children of `<ref>` (notes to an entire sentence or section)
+	- `<note @type="emendation">` may have or not have `@subtype="emendationToWholeSection"`:
+		- `<note @type="emendation">` (not having `@subtype="emendationToWholeSection"`)
+			includes a motivation or discussion of an emendation to one word only. In this case,
+			`<note>` always occurs as a child of a `<corr>` element. 
+		- `<note @type="emendation" @subtype="emendationToWholeSection"`
+			includes an emendation to a whole phrase (more than one word). In this case, `<note>` is
+			never a child of `<corr>`: it is a child of `<ref>` and a sibling of `<w>` elements, instead.
+	- To sum up, in order to facilitate the processing of these elements, I am making sure that `<note>`
+		elements are only
+		- children of `<ref>` (notes to an entire phrase, sentence or section)
 		- children of `<w>` (notes to that specific word)
+		- children of `<corr>` (discussion of an emendation to one word only)
 
 
 
@@ -932,7 +936,7 @@ The glyphs that do not carry 'graphemic value' (as defined above) are not includ
 - ri
 	- Ligature, encoded as two distinct graphemes
 - ti
-	- The 'ti' sequence is alwasy a ligature in the writing system of the manuscript. However:
+	- The 'ti' sequence alwasy is a ligature in the writing system of the manuscript. However:
 
 		1. in some cases the 'ti' sequence is represented by a 't' glyph with its 'low' shape, followed by (and connected with) a descending 'i'. Example: 1r, line 6, last word: 'dictio'). See ti2_a.png (with short 'i') and ti2_b (with long 'i');
 		2. in other cases, the 't' is written with a different shape, tightly connected with the following 'i'. In this case the 'i' is long (ascending and descending). Example: 1r, 3rd line, 1st word ('dic*ti*o est minima pars'). See ti1.png. According to a general rule in the Beneventan script, this allograph should be used when the pronunciation of the 't' is IPA /tsj/. This rule seems not to be always followed in this manuscript.
@@ -1047,9 +1051,10 @@ This is one encoding strategy:
 	</corr>
 </choice>`
 
-In this first example, the origin of the error is banal and common, so `<corr>` only has a `@type` attribute whose value explains the type of error. The meaning of code `ub` is explained in `<TEI>` / `<teiHeader>` / `<encodingDesc>` / `<correction>` / `<p>` / `<list type="gloss">`. This `<list>` has a number of `<item>` children, each with a `@n`. In this case, the meaning of `ub` is explained in this `<item>` element with `@type="ub"`:
+In this first example, the origin of the error is banal and common, so `<corr>` only has a `@type` attribute whose value explains the type of error and no `<note>` child. The meaning of value `ub` is explained in `<TEI>` / `<teiHeader>` / `<encodingDesc>` / `<correction>` / `<p>` / `<list type="gloss">` / `<item type="ub">`:
 
-	`<item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>`
+	`<label>ub</label>
+	<item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>`
 
 If the error and the emendation require a more complex discussion, this is the encoding strategy:
 
