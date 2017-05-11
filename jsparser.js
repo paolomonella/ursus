@@ -850,18 +850,24 @@ function computeWordLikeElements(refElement) {
 				emendNote = corr.getElementsByTagName('note')[0];
 				emendNoteString = emendNote.childNodes[0].nodeValue.trim();
 			}
+
+
+
+
+
 			else {
 				// If <corr> has no <note type="emendation">, then <corr> has a @type.
 				// Find in <correction>/<p>/<list> the <item> whose @n corresponds
 				// to the @type of <corr>, and store the textual content of that
 				// <item> in variable emendNoteString
-				if (corr.attributes.getNamedItem('type').nodeValue == 'ub') {
+				if (corr.attributes.getNamedItem('type')) {
+					corrType = corr.attributes.getNamedItem('type').nodeValue; // eg.: type="ub"
 					correction = xmlDoc.getElementsByTagName('correction')[0];
 					correctionList = correction.getElementsByTagName('p')[0].getElementsByTagName('list')[0];
 					correctionItems = correctionList.getElementsByTagName('item')
 					for (var icl = 0; icl < correctionItems.length; icl++) {
 						item = correctionItems[icl];
-						if (item.attributes.getNamedItem('n').nodeValue == 'ub') {
+						if (item.attributes.getNamedItem('n').nodeValue == corrType) {
 							emendNoteString = item.childNodes[0].nodeValue.trim();
 						}
 					}
@@ -870,6 +876,10 @@ function computeWordLikeElements(refElement) {
 					alert('This choice/sic/corr emendation has no <note type="emendation" or <corr type="...">');
 				}
 			}
+
+
+
+
 			computeAddLikeChildren(corr, document.getElementById('MSText'), 'apparatus corr'); // Result:
 				//for each <w>, <pc> or <gap>, this is created:
 				// <span class="apparatus corr"> <table>[three rows]</table></span>
