@@ -35,6 +35,8 @@
     </encodingDesc>
     <revisionDesc>
 	<change subtype="critical" type="agenda">Replace 'note' @type='emendation' with 'sic'/'corr'/'correction'</change>
+	<change subtype="critical" type="agenda">Talk to GDM about note[@cert="medium"], corr[@cert="medium"] and
+		corr[@type="ub"]</change>
 	<change subtype="critical" type="agenda">Try to upload this file in ALIM2, see errors.</change>
 	<change subtype="critical" type="agenda">Create ALIM-TEI-Level_1 visualization for ALIM2 website.</change>
 	<change subtype="critical" type="agenda">Add 'larger' allographs for alphabetic characters to gtos?</change>
@@ -499,9 +501,9 @@ m</w>
 <sic>
 <w n="agnouero" xml:id="w297">agnobero</w>
 </sic>
-<corr type="ub">
+<corr cert="high" type="ub">
 <w n="agnouero" xml:id="w298">agnouero</w>
-<!--note type="emendation">Scribal error: "agnobero" for "agnouero", due to the scribe's pronunciation.</note-->
+<!--note cert="high" type="emendation">Scribal error: "agnobero" for "agnouero", due to the scribe's pronunciation.</note-->
 </corr>
 </choice>
 	<pc n="space"> </pc>
@@ -834,7 +836,7 @@ ua</w>
 		<expan>on</expan>
 	</choice>
 siua</w>
-<note type="emendation" subtype="emendationToWholeSection">The graphemes around "dicitur" are very hard to read. Another reading might be "oratio dici t(um) [two unclear graphemes] possunt uerba imperatiua et responsiua". In this case, the "u with r rotunda above" abbreviation would be expanded in "um", not "ur". However, the "p" and "o" of "possunt" are very hardly recognizable. The reading that I am publishing ("oratio dicitur [...] sunt uerba imperatiua et responsiua") is more likely based on the manuscript.</note>
+<note cert="medium" type="emendation" subtype="emendationToWholeSection">The graphemes around "dicitur" are very hard to read. Another reading might be "oratio dici t(um) [two unclear graphemes] possunt uerba imperatiua et responsiua". In this case, the "u with r rotunda above" abbreviation would be expanded in "um", not "ur". However, the "p" and "o" of "possunt" are very hardly recognizable. The reading that I am publishing ("oratio dicitur [...] sunt uerba imperatiua et responsiua") is more likely based on the manuscript.</note>
 	<pc n=".">·</pc>
 <w n="imperatiua" xml:id="w546">imperatiua</w>
 <pc n=",">·</pc>
@@ -1505,7 +1507,7 @@ o</w>
 	parauilis
 </w>
 </sic>
-<corr type="ub">
+<corr cert="medium" type="ub">
 <w n="acomparabilis" type="nonsense" xml:id="w884">ac
 	<choice>
 		<abbr type="superscription">o<am>2</am></abbr>
@@ -1513,7 +1515,7 @@ o</w>
 	</choice>
 	parabilis
 </w>
-<note type="emendation">Scribal error: "acomparauilis" for "acomparabilis". The word, however, might also be "comparabilis", and the previous grapheme could be part of another illegible word.</note>
+<note cert="medium" type="emendation">Scribal error: "acomparauilis" for "acomparabilis". The word, however, might also be "comparabilis", and the previous grapheme could be part of another illegible word.</note>
 </corr>
 </choice>
 	<pc n="space"> </pc>
@@ -1673,9 +1675,9 @@ cedit</w>
 <sic>
 	<w n="rationabiliter" xml:id="w966">rationauiliter</w>
 </sic>
-<corr type="ub">
+<corr cert="high" type="ub">
 	<w n="rationabiliter" xml:id="w967">rationabiliter</w>
-<!--note type="emendation">Scribal error: "rationauiliter" for "rationabiliter".</note-->
+<!--note cert="high" type="emendation">Scribal error: "rationauiliter" for "rationabiliter".</note-->
 </corr>
 </choice>
 	<pc n="space"> </pc>
@@ -2770,10 +2772,10 @@ tesis</w>
 <w n="ἄρθρον" type="foreign" xml:id="w1746" xml:lang="grc">artho
 </w>
 </sic>
-<corr>
+<corr cert="high">
 <w n="ἄρθρον" type="foreign" xml:id="w1747" xml:lang="grc">arthron
 </w>
-<note type="emendation">This probably is a misspelling for Greek ἄρθρον.</note>
+<note cert="high" type="emendation">This probably is a misspelling for Greek ἄρθρον.</note>
 </corr>
 </choice>
 	<pc n="space"> </pc>
@@ -4855,10 +4857,10 @@ prie</w>
 <w n="impura" xml:id="w3648">inpura
 </w>
 </sic>
-<corr>
+<corr cert="medium">
 <w n="in" xml:id="w3649">in</w>
 <w n="pure" xml:id="w3650">pure</w>
-<note type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments: "Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer: "Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
+<note cert="medium" type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments: "Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer: "Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
 </corr>
 </choice>
 	<pc n="space"> </pc>
@@ -4920,10 +4922,10 @@ priæ</w>
 <w n="arithmetica" xml:id="w3714">aritmetrica
 </w>
 </sic>
-<corr>
+<corr cert="high">
 <w n="arithmetica" xml:id="w3715">arithmetica
 </w>
-<note type="emendation">Scribal error: "aritmetrica" for "arithmetica".</note>
+<note cert="high" type="emendation">Scribal error: "aritmetrica" for "arithmetica".</note>
 </corr>
 </choice>
 	<pc n=",">·</pc>
@@ -5550,9 +5552,6 @@ bus</w>
 <w n="in" xml:id="w4299">in</w>
 <w n="rebus" xml:id="w4302">rebus</w>
 <lb n="2r.a.24" break="no"/>
-<unclear cert="low" reason="faded">
-<w n="et" xml:id="w4305">et</w>
-</unclear>
 <w n="indiuiduis" xml:id="w4308">indiuiduis</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w4311">est</w>
@@ -5561,15 +5560,16 @@ bus</w>
 	<pc n="space"> </pc>
 <w n="philosophi" xml:id="w4317">philosophi</w>
 	<pc n="space"> </pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.58.26" type="source" unit="Keil"/>
 <choice>
 <sic>
-<w n="ἄτομας" type="foreign" xml:id="w4320" xml:lang="grc">athomas
+<w n="atomos" xml:id="w4320">athomas
 </w>
 </sic>
-<corr>
-<w n="ἄτομας" type="foreign" xml:id="w4321" xml:lang="grc">atomas
+<corr cert="high">
+<w n="atomos" xml:id="w4321">atomos
 </w>
-<note type="emendation">In his edition of Priscian, Ars grammatica, K 2.58.26, the source of this passage, Keil corrects the reading "atoma" of all manuscripts to "atomos", which does agree with the previous "quas" because Latin substantive "atomus (or atomos), - i" (like Greek "ἡ ἄτομος") is feminine.  Keil's apparatus says that Priscian's manuscripts BGKL have "quae... atoma" (neuter). For the other manuscripts with "atoma", i.e. for P and H, Keil's apparatus does not mention any variant to "quas", so I am assuming that P and H have "quas... atoma". As far as Ursus is concerned, however, he often uses Greek words (in Latin transliteration) for grammatical concepts.  Compare Morelli 1911, 290 on this: "Ursus aggiunge anche, dicemmo, qualcosa di suo: che non è però molto notevole. Una certa conoscenza della lingua greca, diffusa nella regione cassinese e beneventana specialmente per merito di Paolo Diacono, non gli doveva mancare; egli ne fa simpatica ostentazione, non mancando mai di aggiungere alle denominazioni grammaticali latine le corrispondenti denominazioni greche, e diffondendosi a parlare delle relazioni fra declinazione latina e declinazione greca".  So I believe that the scribe here means to write the Greek version of the word (though, as usual, in Latin transliteration), and therefore he uses the Greek "-ας" ending. I encoded the word as such at the Linguistic Layer. If this is the case, the only scribal error is in the spelling ("th" for "t": a very easily explainable error).</note>
+<note cert="high" type="emendation">The source of this passage is Priscian, Ars grammatica, K 2.58.26. Keil's apparatus says that Priscian's manuscripts BGKL have "quae... atoma" (neuter), while manuscripts P and H have "quas... atoma". Probably Ursus read a text of Priscian close to that of P and H. I agree with Keil, who corrects "atoma" of all manuscripts to "atomos" ("quas... atomos"). "Atomos" agrees with the previous "quas" because Latin substantive "atomus (or atomos), - i", like Greek "ἡ ἄτομος", is feminine (see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
 </corr>
 </choice>
 	<pc n="space"> </pc>
@@ -6164,10 +6164,10 @@ quam</w>
 <w n="ignobili" xml:id="w4797">ignouili
 </w>
 </sic>
-<corr type="ub">
+<corr cert="high" type="ub">
 <w n="ignobili" xml:id="w4798">ignobili
 </w>
-<!--note type="emendation">Scribal error: "ignouili" for "ignobili".</note-->
+<!--note type="high" type="emendation">Scribal error: "ignouili" for "ignobili".</note-->
 </corr>
 </choice>
 	<pc n=",">·</pc>
@@ -6221,7 +6221,7 @@ quam</w>
 <w n="Publius" xml:id="w4860">pu
 <lb n="2r.b.8" break="no"/>
 	plius
-<note type="emendation">The classical spelling of this name is "Publius", and Keil publishes it as such, though he mentions in his apparatus note to Priscianus, Ars grammatica, K 2.57.19 that Priscian's manuscripts GLK have "puplius" too. So I am unsure whether I should really emend the "Puplius" spelling to classical "Publius" (as I am doing in the encoding of the Linguistic Layer) or not, here and elsewhere in the manuscript text.</note>
+<note cert="medium" type="emendation">In his apparatus note to Priscianus, Ars grammatica, K 2.57.19, Keil mentions that Priscian's manuscripts GLK have "puplius", but corrects the name to its classical spelling "Publius". I, however, think that "Puplius" is the etymological spelling of the name that the scribe meant to write, so I am not correcting the "Puplius" spelling to classical "Publius" here or elsewhere in the text.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="eo" xml:id="w4863">eo</w>
@@ -6404,6 +6404,7 @@ nomen</w>
 <lb n="2r.b.14" break="no"/>
 <w n="ut" xml:id="w5028">ut</w>
 <w n="Publius" xml:id="w5031">puplius
+<note cert="medium" type="emendation">I think that "Puplius" is the etymological spelling of the name that the scribe meant to write, so I am not correcting the "Puplius" spelling to classical "Publius" here or elsewhere in the text.</note>
 </w>
 	<pc n=".">ï</pc>
 <w n="tum" xml:id="w5034"><hi rend="larger">t</hi>um</w>
@@ -6798,7 +6799,7 @@ dens</w>
 <w n="primus" xml:id="w5331">primus</w>
 	<pc n="space"> </pc>
 <w n="fuisset" xml:id="w5334">fuisset
-<note type="emendation">One ore more words of this sentence are illegible, so the specific syntax of the sentence is unclear. However, I would have expected "fuisse" here, while I think that a "t" is clearly readable at the end of the word.</note>
+<note cert="medium" type="emendation">One or more words of this sentence are illegible, so the specific syntax of the sentence is unclear.</note>
 </w>
 	<pc n="space"> </pc>
 <w n="qui" xml:id="w5337">
@@ -7504,9 +7505,19 @@ men</w>
 	<pc n="space"> </pc>
 <w n="aut" xml:id="w5946">aut</w>
 <w n="a" xml:id="w5949">a</w>
+
+<choice>
+<sic>
 <w n="uitio" xml:id="w5952">bitio
-<note type="emendation">Scribal error: "bitio" for "uitio".</note>
 </w>
+</sic>
+<corr cert="high" type="ub">
+<w n="uitio" xml:id="w5953">uitio
+</w>
+<!--note cert="high" type="emendation">Scribal error: "bitio" for "uitio".</note-->
+</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="aut" xml:id="w5955">aut</w>
 <w n="a" xml:id="w5958">a</w>
@@ -7661,8 +7672,8 @@ a</w>
 <w n="a" xml:id="w6093">a</w>
 <w n="futuris" xml:id="w6096">futuris</w>
 	<pc n="space"> </pc>
-<w n="infinitis" xml:id="w6099">infiniti
-<note type="emendation">Scribal error: "infiniti" for "infinitis".</note>
+<w n="infiniti" xml:id="w6099">infiniti
+<note type="content">"From the future (tenses) of the infinite (mood). An emendation of "infiniti" to "infinitis" (modifyring "futuris") might be possible, but is not necessary.</note>
 </w>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
@@ -7834,9 +7845,17 @@ nomina</w>
 	<pc n="space"> </pc>
 <w n="ab" xml:id="w6258">ab</w>
 <lb n="2v.a.18" break="no"/>
+<choice>
+<sic>
 <w n="habitu" xml:id="w6261">abitu
-<note type="emendation">Scribal error: omission of the initial "h", unvoiced at the time of the scribe.</note>
 </w>
+</sic>
+<corr cert="high">
+<w n="habitu" xml:id="w6262">habitu
+</w>
+<note cert="high" type="emendation">Scribal error: omission of the initial "h", unvoiced at the time of the scribe.</note>
+</corr>
+</choice>
 	<pc n="space"> </pc>
 <w n="faciei" xml:id="w6264">faciei</w>
 	<pc n="space"> </pc>
@@ -8084,14 +8103,14 @@ ptione</w>
 	</choice>
 priæ</w>
 </sic>
-<corr type="proprie_e_caudatum">
+<corr cert="high" type="proprie_e_caudatum">
 <w n="proprie" xml:id="w6511">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
 prie</w>
-<!--note type="emendation">Scribal error: "propriae" (with a final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 9r.a.18 and 10r.a.18.</note-->
+<!--note cert="high" type="emendation">Scribal error: "propriae" (with a final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 9r.a.18 and 10r.a.18.</note-->
 </corr>
 </choice>
 
@@ -8362,9 +8381,17 @@ neralis</w>
 <lb n="2v.a.37" break="no"/>
 calis</w>
 <pc n=",">¦</pc>
+<choice>
+<sic>
 <w n="patronymica" xml:id="w6729">patronomica
-<note type="emendation">I am encoding the classical spelling "patronymica" at the Linguistic Layer. The source Priscianus, Ars grammatica, K 2.60.2 has "patronymicum".</note>
 </w>
+</sic>
+<corr cert="high">
+<w n="patronymica" xml:id="w6730">patronymica
+</w>
+<note cert="high" type="emendation">The source Priscianus, Ars grammatica, K 2.60.2, has "patronymicum".</note>
+</corr>
+</choice>
 <pc n=",">¦</pc>
 <w n="possessiua" xml:id="w6732">possessiua</w>
 <pc n=",">¦</pc>
@@ -8744,7 +8771,7 @@ pria</w>
 </w>
 	<pc n="space"> </pc>
 <w n="polyonima" xml:id="w7155">polionima
-<note type="emendation">Scribal error: "polionima" for "polyonima".</note>
+<note type="emendation" subtype="§">Scribal error: "polionima" for "polyonima".</note>
 </w>
 <lb n="2v.b.15" break="no"/>
 <w n="species" xml:id="w7158">species</w>
@@ -8819,7 +8846,9 @@ priis</w>
 <w n="ut" xml:id="w7245">ut</w>
 <w n="Publius" xml:id="w7248">pupli
 <lb n="2v.b.18" break="no"/>
-us</w>
+	us
+<note cert="medium" type="emendation">I think that "Puplius" is the etymological spelling of the name that the scribe meant to write, so I am not correcting the "Puplius" spelling to classical "Publius" here or elsewhere in the text.</note>
+</w>
 	<pc n="space"> </pc>
 <w n="Cornelius" xml:id="w7251">cornelius</w>
 	<pc n="space"> </pc>
@@ -9841,12 +9870,11 @@ d</w>
 <sic>
 <w n="Hispanus" xml:id="w8162">spanus</w>
 </sic>
-<corr>
+<corr cert="high">
 <w n="Hispanus" xml:id="w8163">hispanus</w>
-<note type="emendation">See my note to the emendation of "Spanis" to "Hispanis".</note>
+<note cert="high" type="emendation">See my note to the emendation of "Spanis" to "Hispanis".</note>
 </corr>
 </choice>
-
 
 	<pc n="space"> </pc>
 
@@ -9854,9 +9882,9 @@ d</w>
 <sic>
 <w n="ab" xml:id="w8164">a</w>
 </sic>
-<corr>
+<corr cert="high">
 <w n="ab" xml:id="w8165">ab</w>
-<note type="emendation">If I correct "Spanis" in "Hispanis", the previous "a" must be changed to "ab".</note>
+<note cert="high" type="emendation">If I correct "Spanis" in "Hispanis", the previous "a" must be changed to "ab".</note>
 </corr>
 </choice>
 
@@ -9864,9 +9892,9 @@ d</w>
 <sic>
 <w n="Hispanis" xml:id="w8169">spanis</w>
 </sic>
-<corr>
+<corr cert="high">
 <w n="Hispanis" xml:id="w8170">hispanis</w>
-<note type="emendation">"Spanus a Spanis" probably is a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
+<note cert="high" type="emendation">"Spanus a Spanis" probably is a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
 </corr>
 </choice>
 
@@ -35901,14 +35929,14 @@ ducitur</w>
 	priæ
 </w>
 </sic>
-<corr type="proprie_e_caudatum">
+<corr cert="high" type="proprie_e_caudatum">
 <w n="proprie" xml:id="w33052">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
 prie</w>
-<!--note type="emendation">Scribal error: "propriae" (with a final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 2v.a.27 and in 10r.a.18.</note-->
+<!-- cert="high"note type="emendation">Scribal error: "propriae" (with a final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 2v.a.27 and in 10r.a.18.</note-->
 </corr>
 </choice>
 
@@ -40689,7 +40717,7 @@ paras</w>
 	priæ
 </w>
 </sic>
-<corr type="proprie_e_caudatum">
+<corr cert="high" type="proprie_e_caudatum">
 <w n="proprie" xml:id="w37576">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
