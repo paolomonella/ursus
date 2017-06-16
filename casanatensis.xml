@@ -24,10 +24,16 @@
 					<label>ub</label>
 					<item n="ub">The scribe wrote 'b' for 'u', due to the pronunciation of the time.</item>
 
+					<label>mouilis</label>
+					<item n="mouilis">This could be considered a 'b'/'u' error, due to the pronunciation of
+						the time. However, the scribe consistently wrote "mouil-" in the whole manuscript,
+						which suggests that he was referring to the medieval etymological spelling of
+						the adjective "mouilis, -e" (from verb "moueo, -es, moui, motum").</item>
+
 					<label>proprie_e_caudatum</label>
 					<item n="proprie_e_caudatum">Scribal error: "propriae" (with a final "e caudatum" grapheme)
-					for adverb "proprie". This specific error occurs
-					in 2v.a.27, 9r.a.18 and 10r.a.18.</item>
+						for adverb "proprie". This specific error occurs in 2v.a.27, 9r.a.18
+						and 10r.a.18.</item>
 				</list>
 			</p>
 		</correction>
@@ -37,6 +43,8 @@
 	<change subtype="critical" type="agenda">Replace 'note' @type='emendation' with 'sic'/'corr'/'correction'</change>
 	<change subtype="critical" type="agenda">Talk to GDM about note[@cert="medium"], corr[@cert="medium"] and
 		corr[@type="ub"]</change>
+	<change subtype="critical" type="agenda">Some 'lb' are children of 'choice/sic' and 'choice/corr': check how
+		js and python manage this.</change>
 	<change subtype="critical" type="agenda">Try to upload this file in ALIM2, see errors.</change>
 	<change subtype="critical" type="agenda">Create ALIM-TEI-Level_1 visualization for ALIM2 website.</change>
 	<change subtype="critical" type="agenda">Add 'larger' allographs for alphabetic characters to gtos?</change>
@@ -498,13 +506,13 @@ m</w>
 <w n="donec" xml:id="w294">donec</w>
 	<pc n="space"> </pc>
 <choice>
-<sic>
-<w n="agnouero" xml:id="w297">agnobero</w>
-</sic>
-<corr cert="high" type="ub">
-<w n="agnouero" xml:id="w298">agnouero</w>
-<!--note cert="high" type="emendation">Scribal error: "agnobero" for "agnouero", due to the scribe's pronunciation.</note-->
-</corr>
+	<sic>
+		<w n="agnouero" xml:id="w297">agnobero</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="agnouero" xml:id="w298">agnouero</w>
+		<!--note cert="high" type="emendation">Scribal error: "agnobero" for "agnouero".</note-->
+	</corr>
 </choice>
 	<pc n="space"> </pc>
 <w n="dictionem" xml:id="w300">diction
@@ -8770,9 +8778,15 @@ pria</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w n="polyonima" xml:id="w7155">polionima
-<note type="emendation" subtype="§">Scribal error: "polionima" for "polyonima".</note>
-</w>
+<choice>
+	<sic>
+		<w n="polyonyma" xml:id="w7155">polionima</w>
+	</sic>
+	<corr cert="high">
+		<w n="polyonyma" xml:id="w7156">polyonyma</w>
+		<note cert="high" type="emendation">Scribal error: "polionima" for "polyonyma".</note>
+	</corr>
+</choice>
 <lb n="2v.b.15" break="no"/>
 <w n="species" xml:id="w7158">species</w>
 	<pc n="space"> </pc>
@@ -8844,11 +8858,24 @@ priis</w>
 <w n="fit" xml:id="w7242">fit</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w7245">ut</w>
-<w n="Publius" xml:id="w7248">pupli
-<lb n="2v.b.18" break="no"/>
-	us
-<note cert="medium" type="emendation">I think that "Puplius" is the etymological spelling of the name that the scribe meant to write, so I am not correcting the "Puplius" spelling to classical "Publius" here or elsewhere in the text.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="Publius" xml:id="w7248">pupli
+		<lb n="2v.b.18" break="no"/>
+			us</w>
+	</sic>
+	<corr cert="medium">
+		<w n="Publius" xml:id="w7249">publi
+		<lb n="2v.b.18" break="no"/>
+			us
+		</w>
+		<note cert="medium" type="emendation">I think that "Puplius" is the etymological spelling
+			of the name that the scribe meant to write, so I am not correcting the "Puplius"
+			spelling to classical "Publius" here or elsewhere in the text.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="Cornelius" xml:id="w7251">cornelius</w>
 	<pc n="space"> </pc>
@@ -9066,9 +9093,17 @@ parantur</w>
 priis</w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w7467">ut</w>
-<w n="Gradiuus" xml:id="w7470">gradibus
-<note type="emendation">In the fourth position ("graDibus") two graphemes (a "u" and a "d") are overwritten one above the other. Also in the sixth position ("gradiBus"), two graphemes are overwritten (a "b" and a "d").  Obviously a second hand corrected the original graphemes of the first hand in these positions. I think that the source that the author was drawing from had "gradiuus" (the common epithet for Mars), which is the reading that I am restoring at the Linguistic Layer.  One hypothesis is that the first hand wrote "grauidus" and the second corrected to "gradibus", which is in its turn a misspelling for "gradiuus" (with the very common scribal error "b for u", due to the scribe's pronunciation of "b").  A second hypothesis is the the first hand wrote "gradibus" and the second hand, not understand that it was a misspelled form of "gradiuus", mistakingly corrected it to the common adjective "grauidus".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="Gradiuus" xml:id="w7470">gradibus</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="Gradiuus" xml:id="w7471">gradiuus</w>
+<note cert="high" type="emendation">In the fourth position ("graDibus") two graphemes (a "u" and a "d") are overwritten one in the place of the other. Also in the sixth position ("gradiBus"), two graphemes (a "b" and a "d") are overwritten in the same way. A second hand corrected the original graphemes of the first hand in these positions. What is unclear from the manuscript is which graphemes were written by the first hand and which were written by the second hand. All manuscripts of the source (Priscian, Ars grammatica, K 2.60.12) have "Gradiuus Mars": I think that this was the text that Ursus could read. How did the error arise? One hypothesis is that the first hand wrote "grauidus" and the second corrected to "gradibus", which is in its turn a misspelling for "gradiuus" (with the very common scribal error "b for u", due to the scribe's pronunciation of "b"). A second hypothesis is that the first hand wrote "gradibus" and the second scribe did not understand that it was a misspelled form of "gradiuus" and mistakingly corrected it to the common adjective "grauidus". In either case, I would correct the form back to Priscian's "Gradiuus".</note>
+	</corr>
+</choice>
+
 <w n="Mars" xml:id="w7473">mars</w>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
@@ -9275,21 +9310,38 @@ d</w>
 	</choice>
 	æ
 </w>
+<pc n=","></pc>
 <lb n="2v.b.32" break="no"/>
 <w n="sine" xml:id="w7638">sine</w>
 	<pc n="space"> </pc>
 <w n="intellectu" xml:id="w7641">intellectu</w>
 	<pc n="space"> </pc>
 <w n="illius" xml:id="w7644">illius</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ad" xml:id="w7647">ad</w>
 <w n="quod" xml:id="w7650">quod</w>
 	<pc n="space"> </pc>
-<w n="dictum" xml:id="w7653">dictum
-<note type="emendation">As the grammatical subject is "quae", this should be "dicta est". The source (Priscian, Ars grammatica, 2.60.19) has: "Ad aliquid dictum est, quod sine intellectu illius, ad quod dictum est, proferri non potest". So in that case the pronominal subnect is "quod" and the verb agreement is correctly "dictum est".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="dictum" xml:id="w7653">dictum</w>
+	</sic>
+	<corr cert="medium">
+		<w n="dicta" xml:id="w7654">dicta</w>
+		<note cert="medium" type="emendation">The implied subject of the relative clause
+			should be feminine "ad quod (illa species) dicta est" and thus require "dicta est",
+			as opposed to the manuscript's "dictum est". The source (Priscian, Ars grammatica, 2.60.19)
+			has: "Ad aliquid dictum est, QUOD sine intellectu illius, ad quod dictum est, proferri non
+			potest". So in that case the subject is "quod" and the verb agreement is correctly "dictum est".
+			The scribe probably changed "Ad aliquid dictum est" to "Ad aliquid dicta species est", but
+			forgot to change the verb gender agreement accordingly.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="est" xml:id="w7656">est</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="proferri" xml:id="w7659">
 	<choice>
@@ -9305,6 +9357,7 @@ ferri</w>
 	</choice>
 </w>
 <w n="potest" xml:id="w7665">potest</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w7668">ut</w>
 <w n="dominus" xml:id="w7671">
@@ -9867,42 +9920,58 @@ d</w>
 	<pc n="space"> </pc>
 
 <choice>
-<sic>
-<w n="Hispanus" xml:id="w8162">spanus</w>
-</sic>
-<corr cert="high">
-<w n="Hispanus" xml:id="w8163">hispanus</w>
-<note cert="high" type="emendation">See my note to the emendation of "Spanis" to "Hispanis".</note>
-</corr>
+	<sic>
+		<w n="Hispanus" xml:id="w8162">spanus</w>
+	</sic>
+	<corr cert="high">
+		<w n="Hispanus" xml:id="w8163">hispanus</w>
+		<note cert="high" type="emendation">"Spanus a Spanis" probably is a scribal error
+			for "Hispanus ab Hispanis". The source, Priscian, Ars grammatica, K 2.61.3 has different
+			examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'",
+			so it is not helpful here.</note>
+	</corr>
 </choice>
 
 	<pc n="space"> </pc>
 
 <choice>
-<sic>
-<w n="ab" xml:id="w8164">a</w>
-</sic>
-<corr cert="high">
-<w n="ab" xml:id="w8165">ab</w>
-<note cert="high" type="emendation">If I correct "Spanis" in "Hispanis", the previous "a" must be changed to "ab".</note>
-</corr>
+	<sic>
+		<w n="a" xml:id="w8164">a</w>
+	</sic>
+	<corr cert="high">
+		<w n="ab" xml:id="w8165">ab</w>
+	<note cert="high" type="emendation">If I correct "Spanis" to "Hispanis" below,
+		this previous "a" must be changed to "ab".</note>
+	</corr>
 </choice>
 
 <choice>
-<sic>
-<w n="Hispanis" xml:id="w8169">spanis</w>
-</sic>
-<corr cert="high">
-<w n="Hispanis" xml:id="w8170">hispanis</w>
-<note cert="high" type="emendation">"Spanus a Spanis" probably is a scribal error for "Hispanus ab Hispanis", and I am encoding these words as such at the Linguistic Layer. The source, Priscian, Ars grammatica, K 2.61.3 has different examples: "Gentile est, quod gentem significat, ut 'Graecus', 'Latinus'", so it is not helpful here.</note>
-</corr>
+	<sic>
+		<w n="Hispanis" xml:id="w8169">spanis</w>
+	</sic>
+	<corr cert="high">
+		<w n="Hispanis" xml:id="w8170">hispanis</w>
+		<note cert="high" type="emendation">See my note to the emendation of "Spanus" to "Hispanus" above.</note>
+	</corr>
 </choice>
 
 <pc n=".">·</pc>
 <lb n="3r.a.10" break="no"/>
-<w n="patriae" xml:id="w8173"><hi rend="dropcap">p</hi>atriæm
-<note type="emendation">The word, as it stands, makes no sense. The source, Priscian, Ars grammatica, K 2.61.3, has "Patrium est, quod a patria sumitur, ut 'Atheniensis', 'Romanus'". The simplest  emendation could be "patriae", and I am encoding this word as such at the Linguistic Layer. The emendation is likely because Ursus already wrote "gentis" (genitive) instead of Priscian's "gentile" (adjective) shortly above (in line 8 of the same page).</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="patriae" xml:id="w8172"><hi rend="dropcap">p</hi>atriæm</w>
+	</sic>
+	<corr cert="high">
+		<w n="patriae" xml:id="w8173"><hi rend="dropcap">p</hi>atriæ</w>
+		<note cert="high" type="emendation">The word, as it stands, makes no sense. The source, Priscian,
+			Ars grammatica, K 2.61.3, has "Patrium est, quod a patria sumitur, ut 'Atheniensis',
+			'Romanus'". The simplest  emendation is "patriae", which is likely because Ursus already
+			wrote "gentis" (genitive) instead of Priscian's "gentile" (adjective) shortly above (in
+			line 8 of the same page).</note>
+	</corr>
+</choice>
+
 <w n="est" xml:id="w8175">est</w>
 	<pc n="space"> </pc>
 <w n="quod" xml:id="w8178">quod</w>
@@ -10467,7 +10536,7 @@ prietate</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w8700">ut</w>
 <w n="angelus" xml:id="w8703">angelus
-<note type="source">The source, Priscian, Ars grammatica, K 2.61.26 does not have this example (it has "ut 'animal', 'arbor'"). The Christian example was invented byUrsus, like this whole explanation of the "specialis species".</note>
+<note type="source">The source, Priscian, Ars grammatica, K 2.61.26 does not have this example (it has "ut 'animal', 'arbor'"). The Christian example has been invented by Ursus, like this whole explanation of the "specialis species".</note>
 </w>
 <pc n=".">·</pc>
 <w n="hoc" xml:id="w8706">hoc</w>
@@ -10980,6 +11049,7 @@ tur</w>
 	<pc n="space"> </pc>
 <w n="ad" xml:id="w9219">ad</w>
 <w n="uoces" xml:id="w9222">uoces</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quia" xml:id="w9225">
 	<choice>
@@ -10990,15 +11060,15 @@ a</w>
 	<pc n="space"> </pc>
 <w n="numeri" xml:id="w9228">nu
 <lb n="3r.b.9" break="no"/>
-meri</w>
+	meri
+<note type="content">The only way to explain "numeri" here and "ordinis" below is implying "nomen", as in "(nomen) numeri... (nomen) ordinis", so "numeri" and "ordinis" are genitive.</note>
+</w>
 	<pc n="space"> </pc>
 <w n="unus" xml:id="w9231">unus</w>
 	<pc n="space"> </pc>
 <w n="duo" xml:id="w9234">duo</w>
 	<pc n="space"> </pc>
-<w n="dicitur" xml:id="w9237">dicitur
-<note type="emendation">If the subject is "numeri", the verb agreement should require "dicuntur" here.</note>
-</w>
+<w n="dicitur" xml:id="w9237">dicitur</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w9240">et</w>
 <w n="ordinis" xml:id="w9243">ordinis</w>
@@ -11040,14 +11110,33 @@ meri</w>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w9288">et</w>
-<w n="mobilis" xml:id="w9291">mouilis
-<note type="emendation">Scribal error: "mouili" for "mobili".</note>
-</w>
-<w n="generis" xml:id="w9294">ge
-<lb n="3r.b.11" break="no"/>
-	neri
-<note type="emendation">Scribal error: "generi" for "generis".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="mobilis" xml:id="w9290">mouilis</w>
+	</sic>
+	<corr cert="medium" type="mouilis">
+		<w n="mobilis" xml:id="w9291">mobilis</w>
+		<!--note cert="high" type="emendation">Scribal error: "mouili" for "mobili".</note-->
+	</corr>
+</choice>
+
+<choice>
+	<sic>
+		<w n="generis" xml:id="w9294">ge
+		<lb n="3r.b.11" break="no"/>
+			neri
+		</w>
+	</sic>
+	<corr cert="high">
+		<w n="generis" xml:id="w9295">ge
+		<lb n="3r.b.11" break="no"/>
+			neri
+		</w>
+		<note type="emendation">Scribal error: dative "generi" for genitive "generis".</note>
+	</corr>
+</choice>
+
 <w n="sunt" xml:id="w9297">
 	<choice>
 		<abbr type="superscription">st<am>¯</am></abbr>
@@ -11475,9 +11564,11 @@ tulissent</w>
 <pc n=",">·</pc>
 <w n="quae" xml:id="w9669">quæ</w>
 <w n="Graeci" xml:id="w9672">greci</w>
+
 <w n="ἐπιμεριζόμενα" type="foreign" xml:id="w9675" xml:lang="grc">epimerizomena
-<note type="emendation">The source of this passage is Priscian "De figuris numerorum" (Keil 3.413.24) and has ἐπιμεριζόμενα. The text in this point of the manuscript is almost completely faded, especially the graphemes between "epi-" and "-omena". However, based on the number of graphemes that seem to be in this word the scribe probably wrote a shorter word than ἐπιμεριζόμενα, possibly something like "epirizomena".</note>
+<note type="emendation" n="§-ricomincia-da-qui">The source of this passage, Priscian, De figuris numerorum, K 3.413.24 has ἐπιμεριζόμενα. The text in this point of the manuscript is almost completely faded, especially the graphemes between "epi-" and "-omena". However, based on the number of graphemes that seem to be in this word, the scribe probably wrote a shorter word than ἐπιμεριζόμενα, possibly something like "epirizomena".</note>
 </w>
+
 <lb n="3r.b.27" break="no"/>
 <w n="uocant" xml:id="w9678">uocant</w>
 <pc n=".">·</pc>
@@ -13580,9 +13671,17 @@ lum</w>
 </add>
 <w n="tria" xml:id="w11841">tria</w>
 <lb n="4r.a.5" break="no"/>
-<w n="mobilia" xml:id="w11844">mouilia
-<note type="emendation">Scribal error ("mouilia" for "mobilia") due to the scribe's pronunciation.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="mobilia" xml:id="w11844">mouilia</w>
+	</sic>
+	<corr cert="medium" type="mouilis">
+		<w n="mobilia" xml:id="w11845">mobilia</w>
+		<!--note type="emendation">Scribal error ("mouilia" for "mobilia") due to the scribe's pronunciation.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w11847">
 	<choice>
@@ -16628,9 +16727,17 @@ tinet</w>
 <w n="et" xml:id="w14877">et</w>
 <w n="uel" xml:id="w14880">uel</w>
 	<pc n="space"> </pc>
-<w n="mobilia" xml:id="w14883">mouilia
-<note type="emendation">Scribal error: "mouilia" for "mobilia".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="mobilia" xml:id="w14883">mouilia</w>
+	</sic>
+	<corr cert="medium" type="mouilis">
+		<w n="mobilia" xml:id="w14884">mobilia</w>
+		<!--note cert="medium" type="emendation">Scribal error: "mouilia" for "mobilia".</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w14886">
 	<choice>
@@ -24238,9 +24345,18 @@ paratio</w>
 <pc n="quote">·</pc>
 <w n="et" xml:id="w22260">et</w>
 	<pc n="space"> </pc>
-<w n="mobilia" xml:id="w22263">mouilia
-<note type="emendation">Scribal error: "mouilia" for "mobilia", due to the scribe's pronunciation.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="mobilia" xml:id="w22263">mouilia</w>
+	</sic>
+	<corr cert="medium" type="mouilis">
+		<w n="mobilia" xml:id="w22264">mobilia</w>
+		<!--note cert="medium" type="emendation">Scribal error: "mouilia" for "mobilia", due to the scribe's
+		     pronunciation.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w22266">
 	<choice>
@@ -29846,9 +29962,18 @@ mus</w>
 	</choice>
 latiua</w>
 	<pc n="space"> </pc>
-<w n="mouilia" xml:id="w27369">mouilia
-<note type="emendation">Scribal error: "mouilia" for "mobilia", due to the scribe's pronunciation.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="mobilia" xml:id="w27369">mouilia</w>
+	</sic>
+	<corr cert="medium" type="mouilis">
+		<w n="mobilia" xml:id="w27370">mobilia</w>
+		<!--note cert="medium" type="emendation">Scribal error: "mouilia" for "mobilia", due to the scribe's
+		     pronunciation.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w27372">
 	<choice>
@@ -31192,9 +31317,18 @@ paratiua</w>
 <pc n=",">·</pc>
 <w n="sed" xml:id="w28536">sed</w>
 	<pc n="space"> </pc>
-<w n="mouile" xml:id="w28539">mouile
-<note type="emendation">Scribal error: "mouile" for "mobile", due to the scribe's pronunciation.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="mobile" xml:id="w28539">mouile</w>
+	</sic>
+	<corr cert="medium" type="mouilis">
+		<w n="mobile" xml:id="w28540">mobile</w>
+		<!--note cert="medium" type="emendation">Scribal error: "mouile" for "mobile", due to the scribe's
+		     pronunciation.</note-->
+	</corr>
+</choice>
+
 <pc n=",">·</pc>
 <w n="ut" xml:id="w28542">ut</w>
 	<pc n="space"> </pc>
@@ -43992,9 +44126,18 @@ senti</w>
 <w n="litteris" xml:id="w40653">litteris</w>
 <pc n=",">|</pc>
 <w n="aut" xml:id="w40656">aut</w>
-<w n="mouilia" xml:id="w40659">mouilia
-<note type="emendation">Scribal error: "mouilia" for "mobilia", due to the scribe's pronunciation.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="mobilia" xml:id="w40659">mouilia</w>
+	</sic>
+	<corr cert="medium" type="mouilis">
+		<w n="mobilia" xml:id="w40660">mobilia</w>
+		<!--note cert="high" type="emendation">Scribal error: "mouilia" for "mobilia", due to the scribe's
+		     pronunciation.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w40662">
 	<choice>
@@ -44252,9 +44395,18 @@ solatus</w>
 <pc n=","/>
 <lb n="10v.b.16" break="no"/>
 <w n="aut" xml:id="w40896">aut</w>
-<w n="mouilia" xml:id="w40899">mouilia
-<note type="emendation">Scribal error: "mouilia" for "mobilia", due to the scribe's pronunciation.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="mobilia" xml:id="w40899">mouilia</w>
+	</sic>
+	<corr cert="medium" type="mouilis">
+		<w n="mobilia" xml:id="w40900">mobilia</w>
+		<!--note cert="high" type="emendation">Scribal error: "mouilia" for "mobilia", due to the scribe's
+		     pronunciation.</note-->
+	</corr>
+</choice>
+
 <pc n=",">·</pc>
 <w n="ut" xml:id="w40902">ut</w>
 <w n="togatus" xml:id="w40905">togatus</w>
