@@ -11492,6 +11492,7 @@ gentesimus</w>
 <w n="millesimus" xml:id="w9615">millesimus</w>
 <pc n=".">|</pc>
 	<pc n="space"> </pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:3.413.23" type="source" unit="Keil"/>
 <w n="habent" xml:id="w9618"><hi rend="larger">h</hi>abent</w>
 	<pc n="space"> </pc>
 <w n="Latini" xml:id="w9621">latini</w>
@@ -11526,6 +11527,7 @@ gentesimus</w>
 		<expan>sunt</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quamuis" xml:id="w9648">qu
 	<choice>
@@ -11565,9 +11567,19 @@ tulissent</w>
 <w n="quae" xml:id="w9669">quæ</w>
 <w n="Graeci" xml:id="w9672">greci</w>
 
-<w n="ἐπιμεριζόμενα" type="foreign" xml:id="w9675" xml:lang="grc">epimerizomena
-<note type="emendation" n="§-ricomincia-da-qui">The source of this passage, Priscian, De figuris numerorum, K 3.413.24 has ἐπιμεριζόμενα. The text in this point of the manuscript is almost completely faded, especially the graphemes between "epi-" and "-omena". However, based on the number of graphemes that seem to be in this word, the scribe probably wrote a shorter word than ἐπιμεριζόμενα, possibly something like "epirizomena".</note>
-</w>
+<choice>
+	<sic>
+		<w n="ἐπεριζόμενα" type="nonsense" xml:id="w9675">eperizomena</w>
+	</sic>
+	<corr cert="high">
+		<w n="ἐπιμεριζόμενα" type="foreign" xml:id="w9676" xml:lang="grc">epimerizomena</w>
+		<note cert="high" type="emendation">The source of this passage, Priscian, De figuris
+		numerorum, K 3.413.24 has ἐπιμεριζόμενα. The text in this point of the manuscript is almost completely
+		faded, especially the graphemes between "epi-" and "-omena". However, based on the number of graphemes
+		that seem to be in this word, the scribe probably wrote a shorter word than ἐπιμεριζόμενα, apparently
+		something like "eperizomena".</note>
+	</corr>
+<choice>
 
 <lb n="3r.b.27" break="no"/>
 <w n="uocant" xml:id="w9678">uocant</w>
@@ -12356,9 +12368,17 @@ ties</w>
 lies</w>
 <pc n=".">·</pc>
 	<pc n="space"> </pc>
-<w n="inueniuntur" xml:id="w10602">inueniuntur
-<note type="emendation">In an interpretive edition, the word "inueniuntur" shoud be omitted. The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger font.  As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" probably is that it could seem to belong to the previous sentence, which I do not believe.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="inueniuntur" xml:id="w10602">inueniuntur</w>
+	</sic>
+	<corr cert="high">
+		<w n="inueniuntur" xml:id="w10602">inueniuntur</w>
+		<note cert="high" type="emendation" n="§-yet-to-process">In an interpretive edition, the word "inueniuntur" shoud be omitted. The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger font.  As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" probably is that it could seem to belong to the previous sentence, which I do not believe.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="infinitis" xml:id="w10605"><hi rend="larger">i</hi>nfinitis</w>
 	<pc n="space"> </pc>
