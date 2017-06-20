@@ -45,14 +45,12 @@
 		corr[@type="ub"]</change>
 	<change subtype="critical" type="agenda">Some 'lb' are children of 'choice/sic' and 'choice/corr': check how
 		js and python manage this.</change>
-	<change subtype="critical" type="agenda">Try to upload this file in ALIM2, see errors.</change>
 	<change subtype="critical" type="agenda">Create ALIM-TEI-Level_1 visualization for ALIM2 website.</change>
-	<change subtype="critical" type="agenda">Add 'larger' allographs for alphabetic characters to gtos?</change>
+	<change subtype="critical" type="agenda">Try to upload this file in ALIM2, see errors.</change>
 	<change subtype="critical" type="agenda">Re-test xml load in other browsers. I tested it on Firefox and Chromium.
 		Test on Safari and Edge at least.</change>
 	<change subtype="critical" type="agenda">CTS: Show Keil Priscian's text directly from the 'start source' box, but
 		copy/pasted into my website (unless I can make a direct link to the CLG website -- hard to do).</change>
-	<change subtype="critical" type="agenda">Adopt prefixDef: see discussion in the TEI-L with subject "cRef usage".</change>
 	<change subtype="critical" type="agenda">Review documentation (priority: the two 'sgn' bookmarks).</change>
 
 
@@ -74,6 +72,7 @@
 		un punto -- o altro segno di punteggiatura -- al LL).</change>
 	<change subtype="improve" type="agenda">Check the "Index grammaticus" (Georg Olms) for passages currently
 		with no identified source.</change>
+	<change subtype="improve" type="agenda">Adopt prefixDef: see discussion in the TEI-L with subject "cRef usage".</change>
 	<change subtype="improve" type="agenda">Vd. se c'è veramente differenza tra punto al mezzo e punto in basso o se sono
 		allografi. E vd. se ci sono allografi anche tra gli altri segni di punteggiatura.</change>
 	<change subtype="improve" type="agenda">Alcuni attributi (ad es. force, function, e altri) hanno valori di datatype
@@ -159,6 +158,7 @@
 		è meglio di no. Attualmente ho usato 'unclear' e aggiunto un 'note' @type="script".</change>
 	<change type="skipped">I always put a space at the end of the lb, cb, pb elements (XHTML-style). Though this doesn't
 		seem to be the TEI-style, it's my Phtyon script that does it, so I can't do anything about it.</change>
+	<change subtype="skipped" type="agenda">Add 'larger' allographs for alphabetic characters to gtos?</change>
 
     </revisionDesc>
   </teiHeader>
