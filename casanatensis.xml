@@ -34,6 +34,12 @@
 					<item n="proprie_e_caudatum">Scribal error: "propriae" (with a final "e caudatum" grapheme)
 						for adverb "proprie". This specific error occurs in 2v.a.27, 9r.a.18
 						and 10r.a.18.</item>
+
+					<label>dyp</label>
+					<item n="dyp">The scribe consistently spells "dyphthongus"
+						instead of "diphthongus". The confusion arises because "y" and "i"
+						used to be have the same pronunciation at the time.</item>
+
 				</list>
 			</p>
 		</correction>
@@ -505,6 +511,7 @@ m</w>
 	<pc n=",">·</pc>
 <w n="donec" xml:id="w294">donec</w>
 	<pc n="space"> </pc>
+
 <choice>
 	<sic>
 		<w n="agnouero" xml:id="w297">agnobero</w>
@@ -514,6 +521,7 @@ m</w>
 		<!--note cert="high" type="emendation">Scribal error: "agnobero" for "agnouero".</note-->
 	</corr>
 </choice>
+
 	<pc n="space"> </pc>
 <w n="dictionem" xml:id="w300">diction
 	<choice>
@@ -1506,25 +1514,25 @@ o</w>
 </w>
 	<pc n="space"> </pc>
 <choice>
-<sic>
-<w n="acomparabilis" type="nonsense" xml:id="w883">ac
-	<choice>
-		<abbr type="superscription">o<am>2</am></abbr>
-		<expan>om</expan>
-	</choice>
-	parauilis
-</w>
-</sic>
-<corr cert="medium" type="ub">
-<w n="acomparabilis" type="nonsense" xml:id="w884">ac
-	<choice>
-		<abbr type="superscription">o<am>2</am></abbr>
-		<expan>om</expan>
-	</choice>
-	parabilis
-</w>
-<note cert="medium" type="emendation">Scribal error: "acomparauilis" for "acomparabilis". The word, however, might also be "comparabilis", and the previous grapheme could be part of another illegible word.</note>
-</corr>
+	<sic>
+		<w n="acomparabilis" type="nonsense" xml:id="w883">ac
+			<choice>
+				<abbr type="superscription">o<am>2</am></abbr>
+				<expan>om</expan>
+			</choice>
+		parauilis</w>
+	</sic>
+	<corr cert="medium" type="ub">
+		<w n="acomparabilis" type="nonsense" xml:id="w884">ac
+			<choice>
+				<abbr type="superscription">o<am>2</am></abbr>
+				<expan>om</expan>
+			</choice>
+		parabilis</w>
+		<note cert="medium" type="emendation">Scribal error: "acomparauilis" for "acomparabilis".
+			The word, however, might also be "comparabilis", and the previous grapheme
+			could be part of another illegible word.</note>
+	</corr>
 </choice>
 	<pc n="space"> </pc>
 <w n="pars" xml:id="w885">pars</w>
@@ -5569,17 +5577,23 @@ bus</w>
 <w n="philosophi" xml:id="w4317">philosophi</w>
 	<pc n="space"> </pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.58.26" type="source" unit="Keil"/>
+
 <choice>
-<sic>
-<w n="atomos" xml:id="w4320">athomas
-</w>
-</sic>
-<corr cert="high">
-<w n="atomos" xml:id="w4321">atomos
-</w>
-<note cert="high" type="emendation">The source of this passage is Priscian, Ars grammatica, K 2.58.26. Keil's apparatus says that Priscian's manuscripts BGKL have "quae... atoma" (neuter), while manuscripts P and H have "quas... atoma". Probably Ursus read a text of Priscian close to that of P and H. I agree with Keil, who corrects "atoma" of all manuscripts to "atomos" ("quas... atomos"). "Atomos" agrees with the previous "quas" because Latin substantive "atomus (or atomos), - i", like Greek "ἡ ἄτομος", is feminine (see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
-</corr>
+	<sic>
+		<w n="atomos" xml:id="w4320">athomas</w>
+	</sic>
+	<corr cert="high">
+		<w n="atomos" xml:id="w4321">atomos</w>
+		<note cert="high" type="emendation">The source of this passage is Priscian, Ars grammatica, K 2.58.26.
+			Keil's apparatus says that Priscian's manuscripts BGKL have "quae... atoma" (neuter),
+			while manuscripts P and H have "quas... atoma". Probably Ursus read a text of Priscian
+			close to that of P and H. I agree with Keil, who corrects "atoma" of all manuscripts to
+			"atomos" ("quas... atomos"). "Atomos" agrees with the previous "quas" because Latin
+			substantive "atomus (or atomos), - i", like Greek "ἡ ἄτομος", is feminine
+			(see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
+	</corr>
 </choice>
+
 	<pc n="space"> </pc>
 <w n="uocant" xml:id="w4323">uocant</w>
 	<pc n=",">|</pc>
@@ -6167,17 +6181,17 @@ quam</w>
 <w n="seruo" xml:id="w4791">seruo</w>
 	<pc n="space"> </pc>
 <w n="aut" xml:id="w4794">aut</w>
+
 <choice>
-<sic>
-<w n="ignobili" xml:id="w4797">ignouili
-</w>
-</sic>
-<corr cert="high" type="ub">
-<w n="ignobili" xml:id="w4798">ignobili
-</w>
-<!--note type="high" type="emendation">Scribal error: "ignouili" for "ignobili".</note-->
-</corr>
+	<sic>
+		<w n="ignobili" xml:id="w4797">ignouili</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="ignobili" xml:id="w4798">ignobili</w>
+		<!--note type="high" type="emendation">Scribal error: "ignouili" for "ignobili".</note-->
+	</corr>
 </choice>
+
 	<pc n=",">·</pc>
 <lb n="2r.b.6" break="no"/>
 <w n="quia" xml:id="w4800">quia</w>
@@ -7515,15 +7529,13 @@ men</w>
 <w n="a" xml:id="w5949">a</w>
 
 <choice>
-<sic>
-<w n="uitio" xml:id="w5952">bitio
-</w>
-</sic>
-<corr cert="high" type="ub">
-<w n="uitio" xml:id="w5953">uitio
-</w>
-<!--note cert="high" type="emendation">Scribal error: "bitio" for "uitio".</note-->
-</corr>
+	<sic>
+		<w n="uitio" xml:id="w5952">bitio</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="uitio" xml:id="w5953">uitio</w>
+		<!--note cert="high" type="emendation">Scribal error: "bitio" for "uitio".</note-->
+	</corr>
 </choice>
 
 	<pc n="space"> </pc>
@@ -7854,15 +7866,13 @@ nomina</w>
 <w n="ab" xml:id="w6258">ab</w>
 <lb n="2v.a.18" break="no"/>
 <choice>
-<sic>
-<w n="habitu" xml:id="w6261">abitu
-</w>
-</sic>
-<corr cert="high">
-<w n="habitu" xml:id="w6262">habitu
-</w>
-<note cert="high" type="emendation">Scribal error: omission of the initial "h", unvoiced at the time of the scribe.</note>
-</corr>
+	<sic>
+		<w n="habitu" xml:id="w6261">abitu</w>
+	</sic>
+	<corr cert="high">
+		<w n="habitu" xml:id="w6262">habitu</w>
+	<note cert="high" type="emendation">Scribal error: omission of the initial "h", unvoiced at the time of the scribe.</note>
+	</corr>
 </choice>
 	<pc n="space"> </pc>
 <w n="faciei" xml:id="w6264">faciei</w>
@@ -8118,7 +8128,7 @@ priæ</w>
 		<expan>pro</expan>
 	</choice>
 prie</w>
-<!--note cert="high" type="emendation">Scribal error: "propriae" (with a final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 9r.a.18 and 10r.a.18.</note-->
+	<!--note cert="high" type="emendation">Scribal error: "propriae" (with a final "e caudatum" grapheme) for adverb "proprie". This specific error also occurs in 9r.a.18 and 10r.a.18.</note-->
 </corr>
 </choice>
 
@@ -8389,17 +8399,17 @@ neralis</w>
 <lb n="2v.a.37" break="no"/>
 calis</w>
 <pc n=",">¦</pc>
+
 <choice>
-<sic>
-<w n="patronymica" xml:id="w6729">patronomica
-</w>
-</sic>
-<corr cert="high">
-<w n="patronymica" xml:id="w6730">patronymica
-</w>
-<note cert="high" type="emendation">The source Priscianus, Ars grammatica, K 2.60.2, has "patronymicum".</note>
-</corr>
+	<sic>
+		<w n="patronymica" xml:id="w6729">patronomica</w>
+	</sic>
+	<corr cert="high">
+		<w n="patronymica" xml:id="w6730">patronymica</w>
+		<note cert="high" type="emendation">The source Priscianus, Ars grammatica, K 2.60.2, has "patronymicum".</note>
+	</corr>
 </choice>
+
 <pc n=",">¦</pc>
 <w n="possessiua" xml:id="w6732">possessiua</w>
 <pc n=",">¦</pc>
@@ -11133,7 +11143,7 @@ a</w>
 		<lb n="3r.b.11" break="no"/>
 			neri
 		</w>
-		<note type="emendation">Scribal error: dative "generi" for genitive "generis".</note>
+		<note cert="high" type="emendation">Scribal error: dative "generi" for genitive "generis".</note>
 	</corr>
 </choice>
 
@@ -11579,7 +11589,7 @@ tulissent</w>
 		that seem to be in this word, the scribe probably wrote a shorter word than ἐπιμεριζόμενα, apparently
 		something like "eperizomena".</note>
 	</corr>
-<choice>
+</choice>
 
 <lb n="3r.b.27" break="no"/>
 <w n="uocant" xml:id="w9678">uocant</w>
@@ -12373,9 +12383,8 @@ lies</w>
 	<sic>
 		<w n="inueniuntur" xml:id="w10602">inueniuntur</w>
 	</sic>
-	<corr cert="high">
-		<w n="inueniuntur" xml:id="w10602">inueniuntur</w>
-		<note cert="high" type="emendation" n="§-yet-to-process">In an interpretive edition, the word "inueniuntur" shoud be omitted. The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger font.  As usual, I kept the the original punctuation in the Graphemic Layer and put my contemporary punctuation in the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" probably is that it could seem to belong to the previous sentence, which I do not believe.</note>
+	<corr cert="medium">
+		<note cert="medium" type="emendation">I expunged the word "inueniuntur" in this position. The original text of the manuscript was "inueniuntur infinitis tamen numerorum...". The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger allograph.  As usual, I kept the the original punctuation at the Graphemic Layer and put my propossed contemporary punctuation at the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" probably is that it could seem to belong to the previous sentence, which I do not believe.</note>
 	</corr>
 </choice>
 
@@ -12476,9 +12485,19 @@ o</w>
 <w n="uel" xml:id="w10704">uel</w>
 <w n="trinitas" xml:id="w10707">trinitas</w>
 <pc n=",">·</pc>
-<w n="septimana" xml:id="w10710">septimania
-<note type="emendation">The handwriting is not clear, but after the "n" there seem to be more than just an "a". If so, this probably is a scribal error ("septimania" for "septimana").</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="septimana" xml:id="w10710">septimania</w>
+	</sic>
+	<corr cert="high">
+		<w n="septimana" xml:id="w10711">septimana</w>
+		<note cert="high" type="emendation">The handwriting is not clear, but after the "n"
+			there seem to be more than just an "a". If so, this is a scribal
+			error ("septimania" for "septimana").</note>
+	</corr>
+</choice>
+
 <pc n=",">·</pc>
 <w n="senio" xml:id="w10713">senio</w>
 <pc n=".">|</pc>
@@ -13123,9 +13142,18 @@ nquagessis</w>
 <pc n=".">·</pc>
 <w n="post" xml:id="w11331"><hi rend="larger">p</hi>ost</w>
 	<pc n="space"> </pc>
-<w n="quem" xml:id="w11334">quæm
-<note type="emendation">The scribe mistakenly wrote "quæm", with the "e caudatum" grapheme, for "quem".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="quem" xml:id="w11334">quæm</w>
+	</sic>
+	<corr cert="high">
+		<w n="quem" xml:id="w11335">quem</w>
+		<note cert="high" type="emendation">The scribe mistakenly wrote "quæm", with the "e caudatum"
+			grapheme, for "quem".</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="numerum" xml:id="w11337">numer
 	<choice>
@@ -13136,9 +13164,26 @@ nquagessis</w>
 	<pc n="space"> </pc>
 <w n="teste" xml:id="w11340">teste</w>
 	<pc n="space"> </pc>
-<w n="Uarrone" xml:id="w11343">bar
-<lb n="3v.b.19" break="no"/>
-rone<note type="emendation">Scribal error: "barrone" for "uarrone". A common confusion between "u" and "b" due to the scribe's pronunciation pronunciation.</note></w>
+
+
+
+<choice>
+	<sic>
+		<w n="Uarrone" xml:id="w11343">bar
+		<lb n="3v.b.19" break="no"/>
+		rone</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="Uarrone" xml:id="w11344">uar
+		<lb n="3v.b.19" break="no"/>
+		rone</w>
+		<!--note cert="high" type="emendation">Scribal error: "barrone" for "uarrone". A common
+		confusion between "u" and "b" due to the scribe's pronunciation.</note-->
+	</corr>
+</choice>
+
+
+
 	<pc n="space"> </pc>
 <w n="non" xml:id="w11346">non</w>
 	<pc n="space"> </pc>
@@ -13698,7 +13743,7 @@ lum</w>
 	</sic>
 	<corr cert="medium" type="mouilis">
 		<w n="mobilia" xml:id="w11845">mobilia</w>
-		<!--note type="emendation">Scribal error ("mouilia" for "mobilia") due to the scribe's pronunciation.</note-->
+		<!--note cert="medium" type="emendation">Scribal error ("mouilia" for "mobilia") due to the scribe's pronunciation.</note-->
 	</corr>
 </choice>
 
@@ -13741,9 +13786,18 @@ lum</w>
 <lb n="4r.a.6" break="no"/>
 <w n="mille" xml:id="w11877">mille</w>
 	<pc n="space"> </pc>
-<w n="indeclinabilia" xml:id="w11880">indeclinauilia
-<note type="emendation">Scribal error: "indeclinauilia" for "indeclinabilia", due to the scribe's pronunciation.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="indeclinabilia" xml:id="w11880">indeclinauilia</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="indeclinabilia" xml:id="w11881">indeclinabilia</w>
+		<!--note cert="high" type="emendation">Scribal error: "indeclinauilia" for "indeclinabilia",
+			due to the scribe's pronunciation.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="sunt" xml:id="w11883">sunt</w>
 <pc n=".">·</pc>
@@ -13994,9 +14048,18 @@ munes</w>
 <pc n="0">·</pc>
 <w n="quae" xml:id="w12114">quæ</w>
 	<pc n="space"> </pc>
-<w n="deriuatur" xml:id="w12117">deribatur
-<note type="emendation">Scribal error ("deribatur" for "deriuatur") due to the scribe's pronunciation.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="deriuatur" xml:id="w12117">deribatur</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="deriuatur" xml:id="w12118">deriuatur</w>
+		<!--note cert="high" type="emendation">Scribal error ("deribatur" for "deriuatur")
+			due to the scribe's pronunciation.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="a" xml:id="w12120">a</w>
 <w n="propriis" xml:id="w12123">
@@ -14439,11 +14502,24 @@ a</w>
 <w n="nominati" xml:id="w12498">nominati</w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w12501">ut</w>
-<w n="Euripides" xml:id="w12504">euri
-<lb n="4r.b.3" break="no"/>
-	pedes
-<note type="emendation">Scribal error: "euripedes" for "euripides". The source, Priscian, Ars grammatica, K 2.63.3 has "Euripides" too.</note>
-</w>
+
+
+
+<choice>
+	<sic>
+		<w n="Euripides" xml:id="w12504">euri
+		<lb n="4r.b.3" break="no"/>
+		pedes</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="Euripides" xml:id="w12505">euri
+		<lb n="4r.b.3" break="no"/>
+		pides</w>
+		<note cert="high" type="emendation">Scribal error: "euripedes" for "euripides". The source, 
+			Priscian, Ars grammatica, K 2.63.3 has "Euripides" too.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="non" xml:id="w12507">
 	<choice>
@@ -14552,6 +14628,7 @@ prium</w>
 <w n="fieri" xml:id="w12615">fieri</w>
 	<pc n="space"> </pc>
 <w n="potest" xml:id="w12618">potest</w>
+	<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w12621">ut</w>
 	<pc n="space"> </pc>
@@ -14562,6 +14639,7 @@ prium</w>
 <w n="sint" xml:id="w12630">sint</w>
 	<pc n="space"> </pc>
 <w n="appellatiua" xml:id="w12633">appellatiua</w>
+	<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w12636">ut</w>
 <w n="magnus" xml:id="w12639">magnus</w>
@@ -14586,9 +14664,18 @@ diderint</w>
 <lb n="4r.b.8" break="no"/>
 <w n="appellatiuorum" xml:id="w12657">appellatiuorum</w>
 	<pc n="space"> </pc>
-<w n="sit" xml:id="w12660">sit
-<note type="emendation">The agreement with "propria [scil. nomina]" requires "sint", not "sit".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="sit" xml:id="w12660">sit</w>
+	</sic>
+	<corr cert="high">
+		<w n="sint" xml:id="w12661">sint</w>
+		<note cert="high" type="emendation">The agreement with "propria (scil. nomina)"
+			requires "sint", not "sit".</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="propria" xml:id="w12663">
 	<choice>
@@ -14736,10 +14823,22 @@ ca</w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w12789">ut</w>
 	<pc n="space"> </pc>
-<w n="Meiades" xml:id="w12792">meiades
-<note type="emendation">All manuscripts of the source (Priscian, Ars grammatica, K 2.64.3) have "Maiades", which might be a good correction here.</note>
-<note type="graphic">The manuscript has a macron sign over the first "e" ("mēiades").</note>
-</w>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.64.3" type="source" unit="Keil"/>
+
+<choice>
+	<sic>
+		<w n="Meiades" xml:id="w12792">meiades</w>
+	</sic>
+	<corr cert="high">
+		<w n="Maiades" xml:id="w12793">maiades</w>
+		<note cert="high" type="emendation">All manuscripts of the source
+			(Priscian, Ars grammatica, K 2.64.3) have "Maiades", which
+			might be a good correction here.</note>
+	</corr>
+</choice>
+
+<note type="graphic">The manuscript has a macron sign over the first "e" of "mēiades".</note>
+
 <w n="Mercurius" xml:id="w12795">mercu
 <lb n="4r.b.13" break="no"/>
 rius</w>
@@ -15157,13 +15256,22 @@ a</w>
 	<pc n="space"> </pc>
 <w n="utuntur" xml:id="w13227">utuntur</w>
 <pc n=",">·</pc>
-<w n="quam" xml:id="w13230">qu
-	<choice>
-		<abbr type="superscription">a<am>2</am></abbr>
-		<expan>am</expan>
-	</choice>
-<note type="emendation">Scribal error: "quam" for "qua".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="quam" xml:id="w13230">qu
+		<choice>
+			<abbr type="superscription">a<am>2</am></abbr>
+			<expan>am</expan>
+		</choice>
+		</w>
+	</sic>
+	<corr cert="medium">
+		<w n="quam" xml:id="w13231">qua</w>
+		<note cert="medium" type="emendation">"Utuntur" requires an ablative here.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="et" xml:id="w13233">et</w>
 <w n="Latinorum" xml:id="w13236">latinor
@@ -15186,12 +15294,12 @@ a</w>
 	<pc n="space"> </pc>
 <w n="in" xml:id="w13248">in</w>
 <pc n="quote">·</pc>
-<w n="us" type="emendation" xml:id="w13251">us</w>
+<w n="us" type="alphabemes" xml:id="w13251">us</w>
 <pc n="quote">·</pc>
 <w n="et" xml:id="w13254">et</w>
 <w n="in" xml:id="w13257">in</w>
 <pc n="quote">·</pc>
-<w n="on" type="emendation" xml:id="w13260">on</w>
+<w n="on" type="alphabemes" xml:id="w13260">on</w>
 <pc n="quote">·</pc>
 <w n="terminata" xml:id="w13263">terminata</w>
 	<pc n="space"> </pc>
@@ -15247,24 +15355,80 @@ a</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.85.18" type="source" unit="Keil"/>
 <w n="nominatiuus" xml:id="w13317">nominatiuus</w>
 	<pc n="space"> </pc>
 <w n="terminatur" xml:id="w13320">terminatur</w>
 <pc n="quote">·</pc>
-<w n="as" type="alphabemes" xml:id="w13323">as</w>
+<w n="ας" type="alphabemes" xml:id="w13323" xml:lang="grc">as</w>
 <w n="et" xml:id="w13326">et</w>
 <lb n="4r.b.31" break="no"/>
 <w n="genetiuus" xml:id="w13329">genitiuus</w>
 <pc n="quote">·</pc>
-<w n="os" type="alphabemes" xml:id="w13332">os</w>
+
+<choice>
+	<sic>
+		<w n="ος" type="alphabemes" xml:id="w13332" xml:lang="grc">os</w>
+	</sic>
+	<corr cert="high">
+		<w n="ου" type="alphabemes" xml:id="w13333" xml:lang="grc">oy</w>
+		<note cert="high" type="emendation"><!--The manuscript text is
+		"patronymica in 'des' terminantia, si uenerint ab eisdem grecis quorum nominatiuus
+		terminatur 'as' et genitiuus 'os' dyphthongum debent habere ante 'des' 'a' penultima breuis".
+		My emendation of the text for the whole passage is:
+		"patronymica in 'des' terminantia, si uenerint ab eisdem grecis, quorum nominatiuus
+		terminatur (scil. in) 'as' et genitiuus (scil. in) 'oy' diphthongum, debent habere ante 'des' 'a' penultimam breuem"
+		(in Greek transliteration:
+		"terminatur [scil. in] 'ας' et genitiuus [scil. in] 'ου' diphthongum").-->
+		The text printed by Keil for the source (Priscian, Ars grammatica, Keil 2.65.18-2.65.20) mentions three
+		different Greek nominative endings:
+		"Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος'
+		desinat, genetiuus uero in 'ου' diphthongum, a paenultima breuis ante 'des' inuenitur in patronymico".
+		Ursus chose to mention one Greek nominative ending only ("ας").
+		However, different branches of the textual tradition of Priscian mention different Greek nominative endings,
+		some of which (namely those of codd. R and L) might explain the error of codex Casanatensis
+		for the genitive ("ος" for "ου").
+		Codex B ("cod. bibl. publ. Bambergensis"): "ac uel HC uel IOC".
+		Codex b (same codex, second hand): "in ac uel ī HC uel ī IOC".
+		Codex D ("cod. bibl. publ. Bernensis, olim Bongarsianus"): "in as uel in es uel in ios".
+		Codex G ("cod. bibl. conventus Sangallensis"), first and second hand:
+			"in as (with 'uel es' written above the line) uel ios".
+		Codex K ("cod. bibl. Caroliruhensis 223"): "in ac uel IOC uel HC".
+		Codex H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii"): "ac uel HC uel IOC".
+		Codex R ("cod. bibl. imp. Paris. 7496"), first and second hand:
+			"in as (with ac written above the word) uel in es (with EC written above the word)
+			uel os (with IOC written above the word)".
+		Codex L ("cod. bibl. publ. Lugd. Bat. olim Gruterianus"): "in as uel in os".
+		As far as the ending for genitive is concerned, the erroneous reading "ος" (for "ου")
+		appears in no manuscript of Priscian. The error in codex Casanatensis might have arisen
+		from a misunderstanding of the text that we can read in codex R or, more likeky, of the text
+		that we read in codex L: the scribe might have mistaken Priscian's nominative ending
+		"ος" in codex R or L for a genitive ending.</note>
+	</corr>
+</choice>
+
 <pc n="0">·</pc>
-<w n="diphthongum" xml:id="w13335">dyphthong
-	<choice>
-		<abbr type="superscription">u<am>2</am></abbr>
-		<expan>um</expan>
-	</choice>
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongum" xml:id="w13335">dyphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice>
+		</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongum" xml:id="w13336">diphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice>
+		</w>
+		<!--note type="emendation" cert="high">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 <pc n=","/>
 	<pc n="space"> </pc>
 <w n="debent" xml:id="w13338">debent</w>
@@ -15275,10 +15439,31 @@ a</w>
 <w n="des" type="alphabemes" xml:id="w13347">des</w>
 <w n="a" type="alphabemes" xml:id="w13350">a</w>
 <pc n="0">·</pc>
-<w n="paenultima" xml:id="w13353">penultima</w>
+
+<choice>
+	<sic>
+		<w n="paenultima" xml:id="w13353">penultima</w>
+	</sic>
+	<corr cert="high">
+		<w n="paenultimam" xml:id="w13354">penultimam</w>
+		<note type="emendation" cert="high">This is the direct object of "habere", so it must be accusative.</note>
+	</corr>
+</choice>
+
 <lb n="4r.b.32" break="no"/>
-<w n="breuis" xml:id="w13356">breuis</w>
-<note type="emendation" subtype="emendationToWholeSection">The manuscript text is "patronymica in 'des' terminantia, si uenerint ab eisdem grecis quorum nominatiuus terminatur 'as' et genitiuus 'os' dyphthongum debent habere ante 'des' 'a' penultima breuis".  My emendation of the text is: "patronymica in 'des' terminantia, si uenerint ab eisdem grecis, quorum nominatiuus terminatur [scil. in ] 'as' et genitiuus [scil. in ] 'oy' diphthongum, debent habere ante 'des' 'a' penultimam breuem" (in Greek transliteration: "terminatur [scil. in ] 'ας' et genitiuus [scil. in ] 'ου' diphthongum").  The source (Priscian, Ars grammatica, Keil 2.65.18-2.65.20) has: "Si nominatiuus Graecus in 'ας' uel in 'ης' uel 'ιος' desinat, genetiuus uero in 'ου' diphthongum, a paenultima breuis ante 'des' inuenitur in patronymico", but different branches of the textual tradition of Priscian have different Greek letters.  Codex R ("cod. bibl. imp. Paris. 7496"), first and second hand: "in as (with ac written above the word) uel in es (with EC written above the word) uel os (with IOC written above the word)". Codex B ("cod. bibl. publ. Bambergensis"): "ac uel HC uel IOC". Codex b (same codex, second hand): "in ac uel ī HC uel ī IOC". Codex D ("cod. bibl. publ. Bernensis, olim Bongarsianus"): "in as uel in es uel in ios". Codex G ("cod. bibl. conventus Sangallensis"), first and second hand: "in as (with 'uel es' written above the line) uel ios". Codex K ("cod. bibl. Caroliruhensis 223"): "in ac uel IOC uel HC". Codex H ("cod. bibl. gymn. Halberstadiensis, Lutherius Krehlii"): "ac uel HC uel IOC". Codex L ("cod. bibl. publ. Lugd. Bat. olim Gruterianus"): "in as uel in os".  The erroneous reading "os" (for "ου") appears only in codex R, but the "os"/"ου" error of the scribe of this manuscript might have arisen independently.</note>
+
+<choice>
+	<sic>
+		<w n="breuis" xml:id="w13356">breuis</w>
+	</sic>
+	<corr cert="high">
+		<w n="breuem" xml:id="w13357">breuem</w>
+		<note type="emendation" cert="high">This adjective modifies "paenultimam", so it must be in the same case.</note>
+	</corr>
+</choice>
+
+
+
 <pc n=",">·</pc>
 <w n="ut" xml:id="w13359">ut</w>
 <w n="Pelias" xml:id="w13362">pelias</w>
@@ -15458,9 +15643,17 @@ uertit</w>
 <lb n="4r.b.38" break="no"/>
 <w n="sed" xml:id="w13539">sed</w>
 	<pc n="space"> </pc>
-<w n="rationabilius" xml:id="w13542">rationauilius
-<note type="emendation">Scribal error: "rationauilius" for "rationabilius" ("u" for "b").</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="rationabilius" xml:id="w13542">rationauilius</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="rationabilius" xml:id="w13543">rationabilius</w>
+		<!--note cert="high" type="emendation">Scribal error: "rationauilius" for "rationabilius" ("u" for "b").</note-->
+	</corr>
+</choice>
+
 <pc n="quote">·</pc>
 <w n="a" type="alphabemes" xml:id="w13545">a</w>
 <pc n="quote">·</pc>
@@ -15551,9 +15744,17 @@ ca</w>
 <pc n="quote">·</pc>
 <w n="oys" type="alphabemes" xml:id="w13635">oys</w>
 	<pc n="space"> </pc>
-<w n="diphthongo" xml:id="w13638">dyphthongo
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongo" xml:id="w13638">dyphthongo</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongo" xml:id="w13639">diphthongo</w>
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 <lb n="4v.a.4" break="no"/>
 <w n="terminatur" xml:id="w13641">terminatur</w>
 <pc n=",">·</pc>
@@ -15566,16 +15767,30 @@ ca</w>
 <w n="ante" xml:id="w13653">ante</w>
 <pc n="quote">·</pc>
 <w n="des" type="alphabemes" xml:id="w13656">des</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 <w n="ut" xml:id="w13659">ut</w>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.66.14" type="source" unit="Keil"/>
 <w n="Πρίαμος" type="foreign" xml:id="w13662" xml:lang="grc">priamos
 <note type="graphic">There is an acute accent sign over the "i", marking the quantity of the vowel, or possibly simply the stress on that syllable. I am not recording such signs because they do not have graphemic value, i.e. they do not create "minimal pairs" of words.</note>
 </w>
 	<pc n="space"> </pc>
-<w n="Πριάμου" type="foreign" xml:id="w13665" xml:lang="grc">priamoys
-<note type="emendation">Scribal error: "priamoys" ("Πριάμους") for "priamoy" ("Πριάμου"). Compare the source, Priscian, Ars grammatica, K 2.66.39: "Πρίαμος Πριάμου". In line 3 above the scribe wrote only two possible genitive endings for this category of nouns ("ος" and "ους"), while the source (Priscian, Ars grammatica, K 2.66.37-38) has three genitive endings: "ου", "ος" and "ους". One line below (here, in line 4) the scribe gave to the genitive of Πρίαμος an erroneous ending Πριάμους (instead of the correct Πριάμους), probably also because the correct ending "ου" was not listed among the possible genitive endings in line 3.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="Πριάμου" type="foreign" xml:id="w13665" xml:lang="grc">priamoys</w>
+	</sic>
+	<corr cert="high">
+		<w n="Πριάμου" type="foreign" xml:id="w13666" xml:lang="grc">priamoy</w>
+		<note cert="high" type="emendation">Scribal error: "priamoys" ("Πριάμους") for "priamoy" ("Πριάμου").
+			Compare the source, Priscian, Ars grammatica, K 2.66.39: "Πρίαμος Πριάμου". In line 4v.a.3 above
+			the scribe wrote only two possible genitive endings for this category of nouns ("ος" and "ους"),
+			while the source (Priscian, Ars grammatica, K 2.66.37-38) has three genitive endings:
+			"ου", "ος" and "ους". Here, the scribe gave an erroneous ending Πριάμους
+			(instead of the correct Πριάμου) to the genitive of Πρίαμος probably also because
+			the correct ending "ου" was not listed among the possible genitive endings in line 4v.a.3.</note>
+	</corr>
+</choice>
+
 <pc n=",">·</pc>
 <lb n="4v.a.5" break="no"/>
 <w n="Priamides" xml:id="w13668">priamides</w>
@@ -15586,10 +15801,19 @@ ca</w>
 <pc n=",">·</pc>
 <w n="Nestorides" xml:id="w13677">nestorides</w>
 <pc n=",">·</pc>
-<w n="Πηλεύς" type="foreign" xml:id="w13680" xml:lang="grc">peleis
-<note type="graphic">There is an acute accent mark over the "i".</note>
-<note type="emendation">Scribal error in translitteration: "Peleis" for "Peleys" ("Πηλεύς").</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="Πηλεύς" type="foreign" xml:id="w13680" xml:lang="grc">peleis</w>
+	</sic>
+	<corr cert="high">
+		<w n="Πηλεύς" type="foreign" xml:id="w13680" xml:lang="grc">peleys</w>
+		<note cert="high" type="emendation">Scribal error in the Latin transliteration of Greek Πηλεύς.</note>
+	</corr>
+</choice>
+
+<note type="graphic">There is an acute accent mark over the second "e" of the manuscript's reading "peléis".</note>
+
 <pc n=",">·</pc>
 <w n="Πηλέως" type="foreign" xml:id="w13683" xml:lang="grc">peleos
 <note type="graphic">There is an acute accent mark over the second "e".</note>
@@ -15600,9 +15824,18 @@ ca</w>
 <lb n="4v.a.6" break="no"/>
 <w n="illi" xml:id="w13689">illi</w>
 <w n="per" xml:id="w13692">per</w>
-<w n="συναίρεσιν" type="foreign" xml:id="w13695" xml:lang="grc">synheresin
-<note type="emendation">There should not be an "h" in the Latin transliteration of this Greek word. My emendation would be "syneresin" at the Graphematic and Alphabetic Layers, and "συναίρεσιν" at the Linguistic Layer (as I actually encoded here).</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="συναίρεσιν" type="foreign" xml:id="w13695" xml:lang="grc">synheresin</w>
+	</sic>
+	<corr cert="high">
+		<w n="συναίρεσιν" type="foreign" xml:id="w13696" xml:lang="grc">syneresin</w>
+		<note cert="high" type="emendation">There should be no "h" in the Latin transliteration 
+			of Greek συναίρεσιν. The same spelling for the same word appeared in line 4v.a.22 below.</note>
+	</corr>
+</choice>
+
 <pc n="quote">·</pc>
 <w n="e" type="alphabemes" xml:id="w13698">e</w>
 	<pc n="space"> </pc>
@@ -15629,9 +15862,21 @@ ferunt</w>
 <w n="in" xml:id="w13716">in</w>
 	<pc n="space"> </pc>
 <w n="ei" type="alphabemes" xml:id="w13719">ei</w>
-<w n="diphthongum" xml:id="w13722">dyphthon
-<lb n="4v.a.7" break="no"/>
-gum<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note></w>
+
+<choice>
+	<sic>
+		<w n="diphthongum" xml:id="w13722">dyphthon
+		<lb n="4v.a.7" break="no"/>
+		gum</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongum" xml:id="w13723">diphthon
+		<lb n="4v.a.7" break="no"/>
+		gum</w>
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 <pc n=".">·</pc>
 <w n="nos" xml:id="w13725">nos</w>
 	<pc n="space"> </pc>
@@ -15843,13 +16088,27 @@ a</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w n="diphthongum" xml:id="w13908">dyphthong
-	<choice>
-		<abbr type="superscription">u<am>2</am></abbr>
-		<expan>um</expan>
-	</choice>
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongum" xml:id="w13908">dyphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice>
+		</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongum" xml:id="w13909">diphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice>
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+		</w>
+	</corr>
+</choice>
+
 <w n="pro" xml:id="w13911">
 	<choice>
 		<abbr type="brevigraph">ŋ</abbr>
@@ -16055,9 +16314,18 @@ tur</w>
 		<expan>per</expan>
 	</choice>
 </w>
-<w n="συναίρεσιν" type="foreign" xml:id="w14124" xml:lang="grc">synheresin
-<note type="emendation">There should not be an "h" in the Latin transliteration of this Greek word. My emendation would be "syneresin" at the Graphematic and Alphabetic Layers, and "συναίρεσιν" at the Linguistic Layer (as I actually encoded here).</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="συναίρεσιν" type="foreign" xml:id="w14124" xml:lang="grc">synheresin</w>
+	</sic>
+	<corr cert="high">
+		<w n="συναίρεσιν" type="foreign" xml:id="w14125" xml:lang="grc">syneresin</w>
+		<note cert="high" type="emendation">There should be no "h" in the Latin transliteration 
+			of Greek συναίρεσιν. The same spelling for the same word appeared in line 4v.a.6 above.</note>
+	</corr>
+</choice>
+
 <pc n=",">·</pc>
 <w n="apud" xml:id="w14127">apud</w>
 <w n="nos" xml:id="w14130">nos</w>
@@ -16258,9 +16526,17 @@ tos</w>
 <w n="gentilia" xml:id="w14337">gentilia</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w14340">ut</w>
-<w n="Haemonis" xml:id="w14343">æmonis
-<note type="emendation">Scribal error. The scribe omitted the initial "h" and wrote "æmonis" for "hæmonis".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="Haemonis" xml:id="w14343">æmonis</w>
+	</sic>
+	<corr cert="high">
+		<w n="Haemonis" xml:id="w14344">hæmonis</w>
+		<note cert="high" type="emendation">Omission of the initial "h" due to the pronunciation of the time.</note>
+	</corr>
+</choice>
+
 <pc n=","/>
 <lb n="4v.a.30" break="no"/>
 <w n="Thessalis" xml:id="w14346">thessalis</w>
@@ -16290,11 +16566,21 @@ tos</w>
 pria</w>
 <pc n=",">·</pc>
 <w n="ut" xml:id="w14370">ut</w>
-<w n="Bacchis" xml:id="w14373">ba
-<lb n="4v.a.31" break="no"/>
-	chis
-<note type="emendation">Scribal error: "bachis" for "bacchis".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="Bacchis" xml:id="w14373">ba
+		<lb n="4v.a.31" break="no"/>
+		chis</w>
+	</sic>
+	<corr cert="high">
+		<w n="Bacchis" xml:id="w14374">bac
+		<lb n="4v.a.31" break="no"/>
+		chis</w>
+		<note cert="high" type="emendation">Haplography error.</note>
+	</corr>
+</choice>
+
 <pc n=","/>
 	<pc n="space"> </pc>
 <w n="Doris" xml:id="w14376">doris</w>
@@ -16417,14 +16703,29 @@ nificant</w>
 </w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w14496">a</w>
-<w n="propriis" xml:id="w14499">
-	<choice>
-		<abbr type="brevigraph">ŋ</abbr>
-		<expan>pro</expan>
-	</choice>
-	pris
-<note type="emendation">Scribal error: "propris" for "propriis".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="propriis" xml:id="w14499">
+			<choice>
+				<abbr type="brevigraph">ŋ</abbr>
+				<expan>pro</expan>
+			</choice>
+			pris
+		</w>
+	</sic>
+	<corr cert="high">
+		<w n="propriis" xml:id="w14500">
+			<choice>
+				<abbr type="brevigraph">ŋ</abbr>
+				<expan>pro</expan>
+			</choice>
+			priis
+		</w>
+		<note cert="high" type="emendation">Haplography error.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="nominibus" xml:id="w14502">nomini
 	<choice>
@@ -16558,7 +16859,7 @@ tronymica</w>
 </w>
 	<pc n="space"> </pc>
 <w n="posse" xml:id="w14649">posse</w>
-<note type="emendation" subtype="emendationToWholeSection" xml:id="note-4.v.b.2" >The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible.</note>
+<note type="emendation" subtype="emendationToWholeSection" xml:id="note-4.v.b.2" n="§">The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible.</note>
 <pc n=".">.</pc>
 <w n="possessiua" xml:id="w14652"><hi rend="larger">p</hi>ossessiua</w>
 <note type="source">I did not check whether the sentence ("possessiua quae et thetica dicitur...") has a source.</note>
@@ -17180,9 +17481,17 @@ cunt</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w n="deriuantur" xml:id="w15345">deribantur
-<note type="emendation">Scribal error: "b" for "u", due to the pronunciation of the time.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="deriuantur" xml:id="w15345">deribantur</w>
+	</sic>
+	<corr cert="high" type="ub">
+		<w n="deriuantur" xml:id="w15346">deriuantur</w>
+		<!--note cert="high" type="emendation">Scribal error: "b" for "u", due to the pronunciation of the time.</note-->
+	</corr>
+</choice>
+
 <pc n=",">·</pc>
 <w n="et" xml:id="w15348"><hi rend="larger">e</hi>t</w>
 	<pc n="space"> </pc>
@@ -17414,17 +17723,33 @@ ducta</w>
 	<pc n="space"> </pc>
 <w n="ae" type="alphabemes" xml:id="w15561">ae</w>
 <pc n="quote">·</pc>
-<w n="diphthongo" xml:id="w15564">dyphthongo
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongo" xml:id="w15564">dyphthongo</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongo" xml:id="w15565">diphthongo</w>
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 <lb n="4v.b.37" break="no"/>
 <w n="uel" xml:id="w15567">uel</w>
 	<pc n="space"> </pc>
 <w n="oe" type="alphabemes" xml:id="w15570">oe</w>
 <pc n="quote">·</pc>
-<w n="diphthongo" xml:id="w15573">dyphthongo
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongo" xml:id="w15573">dyphthongo</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongo" xml:id="w15574">diphthongo</w>
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 <pc n=".">·</pc>
 <w n="e" type="alphabemes" xml:id="w15576">e</w>
 <pc n="quote">·</pc>
@@ -17533,9 +17858,17 @@ tinentia</w>
 <note type="graphic">The "a" is not particulalry large, but it is written with the glyph usually used when it is larger then the rest of the text.</note>
 </w>
 <pc n="quote">·</pc>
-<w n="diphthongo" xml:id="w15648">dyphthongo
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongo" xml:id="w15648">dyphthongo</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongo" xml:id="w15649">diphthongo</w>
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 <w n="Sabaeus" xml:id="w15651">sabaeus
 <note type="script">In this case the diphthong "ae" is written with two separate graphemes: "a" and "e".</note>
 </w>
@@ -17555,20 +17888,44 @@ tinentia</w>
 <pc n="quote">·</pc>
 <w n="ae" type="alphabemes" xml:id="w15666">ae</w>
 <pc n="quote">·</pc>
-<w n="diphthongum" xml:id="w15669">dyphthong
-	<choice>
-		<abbr type="superscription">u<am>2</am></abbr>
-		<expan>um</expan>
-	</choice>
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongum" xml:id="w15669">dyphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice>
+		</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongum" xml:id="w15670">diphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice>
+		</w>
+		<!--note type="emendation" cert="high">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="quae" xml:id="w15672">quæ</w>
 	<pc n="space"> </pc>
 <w n="a" xml:id="w15675">a</w>
-<w n="feminis" xml:id="w15678">feminis
-<note type="emendation">The source of this passage (Priscian, Ars grammatica, K 2.70.46), has "femininis", which is an obvious correction here.</note>
-</w>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.70.46" type="source" unit="Keil"/>
+
+<choice>
+	<sic>
+		<w n="feminis" xml:id="w15678">feminis</w>
+	</sic>
+	<corr cert="high">
+		<w n="femininis" xml:id="w15679">femininis</w>
+		<note cert="high" type="emendation">The source of this passage (Priscian, Ars grammatica, K 2.70.46),
+			has "femininis", which is an obvious correction here.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="Graecis" xml:id="w15681">grecis</w>
 <lb n="5r.a.3" break="no"/>
@@ -17624,16 +17981,25 @@ mo</w>
 <note type="graphic">The glyph for "o" has a dot in the middle of the circle.</note>
 </w>
 	<pc n="space"> </pc>
-<w n="diphthongo" xml:id="w15744">dyphthongo
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongo" xml:id="w15744">dyphthongo</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongo" xml:id="w15745">diphthongo</w>
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 <w n="ut" xml:id="w15747">ut</w>
 <w n="Euboea" xml:id="w15750">euboea
 <note type="script">In this case the diphthong "ae" is written with two graphemes "a" and "e".</note>
 </w>
 	<pc n="space"> </pc>
 <w n="Euroea" xml:id="w15753">eyroea
-<note type="emendation">Scribal error: "y" for "u" in the second grapheme ("Euroea" is the common Latin spelling for this city name). Or, more probably, the scribe is reproducing the Greek spelling of the word.</note>
+<note type="emendation" n="§">Scribal error: "y" for "u" in the second grapheme ("Euroea" is the common Latin spelling for this city name). Or, more probably, the scribe is reproducing the Greek spelling of the word.</note>
+<!-- non è un errore: è la traslitteraz. greca. La parola 'euroea' dovrebbe  ess. language="grc". Ma allora anche "Euboea" prima... vd. se nel MS euboea è scritto con eu- o con ey-, e poi codifica di conseguenza -->
 </w>
 <pc n=".">:</pc>
 <w n="sciendum" xml:id="w15756"><hi rend="larger">s</hi>ciend
@@ -17663,9 +18029,17 @@ a</w>
 <pc n="quote">·</pc>
 <w n="ει" type="alphabemes" xml:id="w15780" xml:lang="grc">ei</w>
 <pc n="quote">·</pc>
-<w n="diphthongus" xml:id="w15783">dyphthongus
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongus" xml:id="w15783">dyphthongus</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongus" xml:id="w15784">diphthongus</w>
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 <pc n="0">·</pc>
 <w n="ante" xml:id="w15786">ante</w>
 <pc n="quote">·</pc>
@@ -18103,9 +18477,17 @@ tur</w>
 	<pc n="space"> </pc>
 <w n="ei" type="alphabemes" xml:id="w16215">ei</w>
 	<pc n="space"> </pc>
-<w n="diphthongus" xml:id="w16218">dyphthongus
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongus" xml:id="w16218">dyphthongus</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongus" xml:id="w16219">diphthongus</w>
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="in" xml:id="w16221">in</w>
 <pc n="quote">·</pc>
@@ -18362,9 +18744,21 @@ ducitur</w>
 <w n="ει" type="alphabemes" xml:id="w16470">ei
 <note type="source">The source (Priscian Ars grammatica, K 2.74.17) has "ai" here, which would be more consistent with the following example of Greek Ἀχαιός. Keil's apparatus says that "ai" is the reading of r, d and h, while "ae" is the reading of R, D and H (see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
 </w>
-<w n="diphthongus" xml:id="w16473">dyphthon
-<lb n="5r.a.30" break="no"/>
-gus<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note></w>
+
+<choice>
+	<sic>
+		<w n="diphthongus" xml:id="w16473">dyphthon
+		<lb n="5r.a.30" break="no"/>
+		gus</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongus" xml:id="w16474">diphthon
+		<lb n="5r.a.30" break="no"/>
+		gus</w>
+		<!--note type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="in" xml:id="w16476">in</w>
 <pc n="quote">·</pc>
@@ -18427,13 +18821,28 @@ os</w>
 <note type="source">The manuscript has the Latin diphthong "ae". Among the manuscripts of Priscianus, according to Keil's apparatus, H and g (which is the second hand of G) have the Latin diphthong "ae", while h (the second hand of H) has corrected it to the Greek diphthong "ai".</note>
 </w>
 	<pc n="space"> </pc>
-<w n="diphthongum" xml:id="w16527">dyphthong
-	<choice>
-		<abbr type="superscription">u<am>2</am></abbr>
-		<expan>um</expan>
-	</choice> 
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+
+		<w n="diphthongum" xml:id="w16527">dyphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice> 
+		</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongum" xml:id="w16528">diphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice> 
+		</w>
+		<!--note type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="uertunt" xml:id="w16530">uertunt</w>
 <pc n=",">·</pc>
@@ -19643,13 +20052,27 @@ dictæ</w>
 <w n="in" xml:id="w17796">in</w>
 <w n="ae" type="alphabemes" xml:id="w17799">ae</w>
 <pc n="quote">·</pc>
-<w n="diphthongum" xml:id="w17802">dyphthong
-	<choice>
-		<abbr type="superscription">u<am>2</am></abbr>
-		<expan>um</expan>
-	</choice>
-<note type="emendation">Scribal error: "y" for "i" in the first syllable.</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongum" xml:id="w17802">dyphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice>
+		</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongum" xml:id="w17803">diphthong
+			<choice>
+				<abbr type="superscription">u<am>2</am></abbr>
+				<expan>um</expan>
+			</choice>
+		</w>
+		<!--note type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="uel" xml:id="w17805">uel</w>
 	<pc n="space"> </pc>
@@ -32520,9 +32943,17 @@ a</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
-<w n="diphthongus" xml:id="w29679">dyphthongus
-<note type="emendation">Scribal error: "dyphthongus" for "diphthongus".</note>
-</w>
+
+<choice>
+	<sic>
+		<w n="diphthongus" xml:id="w29679">dyphthongus</w>
+	</sic>
+	<corr cert="high" type="dyp">
+		<w n="diphthongus" xml:id="w29680">diphthongus</w>
+		<!--note cert="high" type="emendation">Scribal error: "dyphthongus" for "diphthongus".</note-->
+	</corr>
+</choice>
+
 <pc n="0">·</pc>
 <w n="post" xml:id="w29682">post</w>
 <lb n="8r.b.6" break="no"/>
