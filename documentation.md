@@ -731,17 +731,13 @@ Markup not referring to a specific layer
 		- "source" (on the text sources),
 		- "content" (on the text content);
 		- "emendation" (a note proposing an emendation of the text clearly readable in the manuscript);
-	- `<note @type="emendation">` may have or not have `@subtype="emendationToWholeSection"`:
-		- `<note @type="emendation">` (not having `@subtype="emendationToWholeSection"`)
-			includes a motivation or discussion of an emendation to one word only. In this case,
-			`<note>` always occurs as a child of a `<corr>` element. 
-		- `<note @type="emendation" @subtype="emendationToWholeSection"`
-			includes an emendation to a whole phrase (more than one word). In this case, `<note>` is
-			never a child of `<corr>`: it is a child of `<ref>` and a sibling of `<w>` elements, instead.
+	- `<note @type="emendation">` may have or not have attribute `@subtype`. Possible values of `@subtype` are:
+		- `@subtype="noEmendation"`: the note discusses possible emendations, that I have decided not to adopt
+		- `@subtype="§"`: I still have to make a final decision as to how to emend the passage
 	- To sum up, in order to facilitate the processing of these elements, I am making sure that `<note>`
 		elements are only
-		- children of `<ref>` (notes to an entire phrase, sentence or section)
-		- children of `<w>` (notes to that specific word)
+		- children of `<ref>` (notes to an entire phrase, sentence or section), or
+		- children of `<w>` (notes to that specific word), or
 		- children of `<corr>` (discussion of an emendation to one word only)
 
 
