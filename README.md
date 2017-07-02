@@ -2,6 +2,8 @@
 
 An experimental scholarly digital edition of section _De nomine_ (_folia_ 1r-11r) of the _Adbreviatio artis grammaticae_ by Ursus from Benevento from codex [Casanatensis  1086](http://manus.iccu.sbn.it/opac_SchedaScheda.php?ID=15974) (IX century), edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2016).
 
+To view the edition in your browser, and not just its source code, go to http://www.unipa.it/paolo.monella/ursus/transcription.html
+
 Full documentation in `documentation.md`.
 
 ## Source files
