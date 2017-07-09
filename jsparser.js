@@ -12,7 +12,7 @@
 // lemmatization, I'll set it back to true to
 // restore the visualization of the Linguistic Layer for words.
 // March 1, 2017.
-var viewLL = true;
+var viewLL = false;
 
 
 /*###########################
