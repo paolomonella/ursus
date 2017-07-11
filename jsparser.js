@@ -840,20 +840,19 @@ function computeWordLikeElements(refElement) {
 		}
 
 		else if (e.tagName == 'choice') {
-			var auClass = 'apparatus';
 			sic = e.getElementsByTagName('sic')[0]; 
 			corr = e.getElementsByTagName('corr')[0];
-			
+
+			if (corr.attributes.getNamedItem('cert')) {
+				var corrCert = corr.attributes.getNamedItem('cert').nodeValue; // eg.: cert="medium"
+				}
+
 			if (corr.getElementsByTagName('note')[0]) {
 				// If <corr> has a <note type="emendation">, store its content in
 				// variable emendNoteString.
 				emendNote = corr.getElementsByTagName('note')[0];
 				emendNoteString = emendNote.childNodes[0].nodeValue.trim();
 			}
-
-
-
-
 
 			else {
 				// If <corr> has no <note type="emendation">, then <corr> has a @type.
@@ -877,12 +876,11 @@ function computeWordLikeElements(refElement) {
 				}
 			}
 
-
-
-
-			computeAddLikeChildren(corr, document.getElementById('MSText'), 'apparatus corr'); // Result:
+			computeAddLikeChildren(corr, document.getElementById('MSText'), 'apparatus corr ' + corrCert); // Result:
 				//for each <w>, <pc> or <gap>, this is created:
-				// <span class="apparatus corr"> <table>[three rows]</table></span>
+				// <span class="apparatus corr medium"> <table>[three rows]</table></span>
+				// (or: class="apparatus corr high", or: class="apparatus corr low")
+				
 			sicDiv = expandableDiv( // sicDiv is <div class="note apparatus contentDiv">
 							// including a text Node with '' as textual content
 					document.getElementById('MSText'),
@@ -891,7 +889,7 @@ function computeWordLikeElements(refElement) {
 					'*',
 					'The MS has:'
 					);
-			computeAddLikeChildren(sic, sicDiv, 'apparatus sic'); // Result: for each <w>, <pc> or <gap>
+			computeAddLikeChildren(sic, sicDiv, auClass + 'apparatus sic'); // Result: for each <w>, <pc> or <gap>
 				// this is appended inside <div class="note apparatus contentDiv">:
 				// <span class="apparatus sic"> <table>[three rows]</table></span>
 			emendNoteTable = document.createElement('table');    // Create a table inside which I'll put the
