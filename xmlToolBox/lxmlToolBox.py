@@ -27,10 +27,14 @@ ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
 tree = etree.parse('../casanatensis.xml')
 
 L = []
-for x in tree.findall('.//' + n + 'note[@type="emendation"]'):
-#for x in tree.findall('.//' + n + 'corr'):
-    if x.get('cert') is None:
-        print(x.get('subtype'))
+#for x in tree.findall('.//' + n + 'note[@type="emendation"]'):
+for x in tree.findall('.//' + n + 'corr'):
+    if x.get('cert') == 'medium':
+        #print(x.get('subtype'))
+        y = x.find(n + 'note')
+        print(y.text)
+        print()
+        print()
 for l in set(L):
     print(l)
 
