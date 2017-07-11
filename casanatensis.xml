@@ -50,7 +50,7 @@
 	<change subtype="critical" type="agenda">Find '§' (XML comments with § mark required checks).</change>
 	<change subtype="critical" type="agenda">Make a decision about note[@subtype="§"]</change>
 	<change subtype="critical" type="agenda">Talk to GDM about note[@cert="medium"], corr[@cert="medium"] and
-		corr[@type="ub"]</change>
+		corr[@type="ub"] (and other types of 'corr')</change>
 	<change subtype="critical" type="agenda">Some 'lb' are children of 'choice/sic' and 'choice/corr': check how
 		js and python manage this.</change>
 	<change subtype="critical" type="agenda">Use 'surplus' for expunction instead of sic/corr?</change>
@@ -4879,7 +4879,9 @@ prie</w>
 <corr cert="medium">
 <w n="in" xml:id="w3649">in</w>
 <w n="pure" xml:id="w3650">pure</w>
-<note cert="medium" type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments: "Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer: "Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
+<note cert="medium" type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments:
+	"Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer:
+	"Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
 </corr>
 </choice>
 	<pc n="space"> </pc>
