@@ -103,6 +103,7 @@ def manageWord(wordElem):
     # Easy solution (only backdraw: it moves all elements children of <w> after the text). This is
     # OK (it's actually better) for 'anchor/pb/cb/lb', but it creates a slight inaccuracy with 'gap':
     tempText = wordElem.xpath('normalize-space()').replace(' ', '').replace('·', '') # This is the unified text of the word
+    print(wordElem.text)
     if wordElem.get('type') in ['alphabemes', 'foreign']:
         tempText = '"' + tempText + '"'
     for y in wordElem:
@@ -170,6 +171,8 @@ def managePunctuation(punctElem):
             unclear     jump to its last <w> child
         """
 
+
+
 ##################################
 # Take care of specific elements #
 ##################################
@@ -184,9 +187,11 @@ for cb in tree.findall('.//' + n + 'cb'):
 
 substituteAllElements('cb', 'pb', n) # § to-do: if <anchor> generates an empty space, change this to <span>
 
-#######################
-# Manage <w> and <pc> # 
-#######################
+
+
+#####################################################################################
+# Traverse the tree and manage <w>, <pc> and all parents of <w> (<add>, <sic> etc.) # 
+#####################################################################################
 
 for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' elements (children of <body>)
 
@@ -200,7 +205,8 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
     ab.getparent().insert(previousPosition, newHead)
 
     for ref in ab: # Iterate over the <ref> children of <ab>
-        for w in ref: # Iterate over word-like elements (such as <w>, <gap>, <pc> etc.)
+        for w in ref:   # Iterate over children of <ref>, i.e. word-like elements (such as <w>, <gap>, <pc> etc.)
+                        # or parents of <w> such as that <add>, <unclear>, <choice>/<sic>/<corr> etc.
             wt = etree.QName(w).localname   # The tag name w/o namespace (e.g.: 'w', 'pc' etc.)
             if wt == 'w':
                 manageWord(w)
