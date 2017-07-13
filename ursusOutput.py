@@ -5,7 +5,8 @@
 # and creates a file ALIM2_publication/casanatensis_AL.xml
 # with the Alphabetic Layer only. 
 #
-# It's written in Python 3.4, but also works with Python 2.7.
+# It's written in Python 3.4. If one runs it with Python 2.7,
+# it raises a Unicode-related exception.
 # It uses the Python lxml library.
 
 from __future__ import print_function
@@ -100,10 +101,10 @@ def substituteAllElements(oldName, newName, myNameSpace):
         x.set('type', oldName)
 
 def manageWord(wordElem):
+    # debug: print('Working on word\t' + wordElem.get(xml + 'id'))
     # Easy solution (only backdraw: it moves all elements children of <w> after the text). This is
     # OK (it's actually better) for 'anchor/pb/cb/lb', but it creates a slight inaccuracy with 'gap':
     tempText = wordElem.xpath('normalize-space()').replace(' ', '').replace('·', '') # This is the unified text of the word
-    print(wordElem.text)
     if wordElem.get('type') in ['alphabemes', 'foreign']:
         tempText = '"' + tempText + '"'
     for y in wordElem:
@@ -111,6 +112,11 @@ def manageWord(wordElem):
         if yt in ['choice', 'add', 'pc', 'hi']:    # I'm removing them b/c they include text, or b/c it's <pc n="space">
             y.getparent().remove(y)
         y.tail = None
+    tempText = tempText.replace('æ', 'ae') # The alphabetic meaning of graphemes 'æ' are alphabemes 'ae'
+    """ N.B.: In jsparser.js I'm using a function alph() to replace each grapheme with its alphabetic meaning
+        based on the GToS. I'm not doing it here for brevity, since all graphemes outside <abbr> correspond
+        to the alphabeme encoded with the same Unicode character, except for grapheme 'æ', so I'm just replacing
+        'æ' with 'ae' in the line above. """
     wordElem.text = tempText
     """
     # Complicated solution, not completely functional:
@@ -189,9 +195,9 @@ substituteAllElements('cb', 'pb', n) # § to-do: if <anchor> generates an empty 
 
 
 
-#####################################################################################
-# Traverse the tree and manage <w>, <pc> and all parents of <w> (<add>, <sic> etc.) # 
-#####################################################################################
+##########################################################################
+# Traverse the tree and manage <w>, <pc> and all other children of <ref> # 
+##########################################################################
 
 for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' elements (children of <body>)
 
@@ -216,7 +222,6 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
                     if c.tag == n + 'w':
                         manageWord(c)
                     elif c.tag == n + 'pc':
-                        #pass
                         managePunctuation(c)
                     elif c.tag == n + 'milestone':
                         pass
@@ -234,6 +239,13 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
                 print('I found an <anchor>')
             elif wt == 'pc':
                 managePunctuation(w)
+            elif wt == 'choice':    # Since this <choice> is child of <ref>, then it must be parent of <sic> and <corr>
+                if w.find(n + 'sic').find(n + 'w') is not None:
+                    mySicWord = w.find(n + 'sic').find(n + 'w')
+                    manageWord(mySicWord)
+                if w.find(n + 'corr').find(n + 'w') is not None:
+                    myCorrWord = w.find(n + 'corr').find(n + 'w')
+                    manageWord(myCorrWord)
             else:
                 pass
 
