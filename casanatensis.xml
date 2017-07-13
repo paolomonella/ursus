@@ -2988,6 +2988,7 @@ tatem</w>
 <w n="et" xml:id="w1917">et</w>
 <w n="in" xml:id="w1920">in</w>
 <w n="infinitis" xml:id="w1923">infi
+<pc n=","></pc>
 <lb n="1v.a.11" break="no"/>
 nitis</w>
 	<pc n="space"> </pc>
@@ -3027,6 +3028,7 @@ a</w>
 <w n="habet" xml:id="w1959">habet</w>
 	<pc n="space"> </pc>
 <w n="casus" xml:id="w1962">casus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quibus" xml:id="w1965">
 	<choice>
@@ -3130,7 +3132,7 @@ bus</w>
 		<expan>am</expan>
 	</choice>
 </w>
-	<pc n=",">·</pc>
+	<pc n=".">·</pc>
 <w n="idcirco" xml:id="w2037">idcirco</w>
 	<pc n="space"> </pc>
 <w n="quis" xml:id="w2040">
@@ -3319,6 +3321,7 @@ nomina</w>
 </w>
 <lb n="1v.a.22" break="no"/>
 <w n="declinatio" xml:id="w2208">declinatio</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quia" xml:id="w2211">
 	<choice>
@@ -3536,6 +3539,7 @@ poni</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w2373">et</w>
 <w n="postponi" xml:id="w2376">postponi</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w2379">ut</w>
 <w n="pone" xml:id="w2382">pone
@@ -3681,6 +3685,7 @@ iunctim</w>
 poni</w>
 	<pc n="space"> </pc>
 <w n="casualibus" xml:id="w2499">casuali
+<pc n=","></pc>
 	<choice>
 		<abbr type="after">b<am>;</am></abbr>
 		<expan>bus</expan>
@@ -3800,7 +3805,7 @@ iones</w>
 <w n="uel" xml:id="w2577">uel</w>
 	<pc n="space"> </pc>
 <w n="aduerbia" xml:id="w2580">aduerbia</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w2583">ut</w>
 <w n="formosus" xml:id="w2586">formosus</w>
@@ -3834,6 +3839,7 @@ iens</w>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w2625">et</w>
 <w n="celeriter" xml:id="w2628">celeriter</w>
+<pc n="."></pc>
 <lb n="1v.a.38" break="no"/>
 <w n="hoc" xml:id="w2631"><hi rend="larger">h</hi>oc</w>
 	<pc n="space"> </pc>
@@ -4034,7 +4040,7 @@ est</w>
 </w>
 	<pc n="space"> </pc>
 <w n="nomen" xml:id="w2769">nomen</w>
-	<pc n=",">|</pc>
+	<pc n=".">|</pc>
 <w n="sine" xml:id="w2772">sine</w>
 	<pc n="space"> </pc>
 <w n="nomine" xml:id="w2775">nomine</w>
@@ -4045,7 +4051,7 @@ est</w>
 		<expan>im</expan>
 	</choice>
 </w>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 <w n="perit" xml:id="w2778">perit</w>
 	<pc n="space"> </pc>
 <w n="rerum" xml:id="w2781">rer
@@ -16119,12 +16125,12 @@ a</w>
 		</w>
 	</sic>
 	<corr cert="high" type="dyp">
+		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
 		<w n="diphthongum" xml:id="w13909">diphthong
 			<choice>
 				<abbr type="superscription">u<am>2</am></abbr>
 				<expan>um</expan>
 			</choice>
-		<!--note cert="high" type="emendation">Scribal error: "y" for "i" in the first syllable.</note-->
 		</w>
 	</corr>
 </choice>
