@@ -12389,7 +12389,22 @@ lies</w>
 		<w n="inueniuntur" xml:id="w10602">inueniuntur</w>
 	</sic>
 	<corr cert="medium">
-		<note cert="medium" type="emendation">I expunged the word "inueniuntur" in this position. The original text of the manuscript was "inueniuntur infinitis tamen numerorum...". The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger allograph.  As usual, I kept the the original punctuation at the Graphemic Layer and put my propossed contemporary punctuation at the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" probably is that it could seem to belong to the previous sentence, which I do not believe.</note>
+		<note cert="medium" type="emendation">I expunged the word "inueniuntur" in this position. The original
+			text of the manuscript was "inueniuntur infinitis tamen numerorum...". The source of this
+			passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis
+			tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens.
+			Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...". 
+			Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and
+			started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so
+			he wrote "inueniuntur" (which originally had the initial "i" written with a larger size). 
+			Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after
+			"inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic.
+			The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur",
+			overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis"
+			with a larger allograph.  As usual, I kept the the original punctuation at the Graphemic Layer
+			and put my propossed contemporary punctuation at the Linguistic Layer. The reason why no scribe
+			decided to erase "inueniuntur" probably is that it could seem to belong to the previous sentence,
+			which I do not believe.</note>
 	</corr>
 </choice>
 
@@ -37934,7 +37949,6 @@ sonæ</w>
 <note type="graphic">There is a macron sign over the second "e" ("intercapēdo") to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
-<unclear cert="medium" reason="faded">
 
 <choice>
 	<sic>
@@ -37950,7 +37964,6 @@ sonæ</w>
 	</corr>
 </choice>
 
-</unclear>
 <lb n="9r.b.2" break="no"/>
 <w n="ante" xml:id="w33693">ante</w>
 	<pc n="space"> </pc>
