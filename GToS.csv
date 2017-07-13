@@ -1,10 +1,10 @@
-/Grapheme	Alphabeme(s)	Grapheme visualization	Type	Notes	Image(s)	Found	Found where
+Grapheme	Alphabeme(s)	Grapheme visualization	Type	Notes	Image(s)	Found	Found where
 a	a	a	Alphabetic		a.png	1	
 b	b	b	Alphabetic		b.png	1	
 c	c	c	Alphabetic		c1.png c2.png	1	
 d	d	d	Alphabetic		d.png	1	
-e	e	e	Alphabetic	The grapheme has many allographs depending on the ligature. For example, allograph e2.png is often found in the common ligature "&" for "et".	e1.png e2.png	1	
-æ	ae	ę	Alphabetic	"E caudatum": an "e" grapheme with a tail on the bottom left or left side. It is often (but not always) used to represent an alphabeme "e" in lieu of which in classical and modern Latin orthography we would have the diphthong "ae". When that alphabeme "e" is not represented by the "æ" grapheme, it is represented by a simple "e" grapheme. It has one allograph (see image ecaudatum1.png) with the tail underneath the body of the grapheme, turning right, and a second allograph (ecaudatum2.png) with the tail on the left of the body (mostly in ligatures).	ecaudatum1.png ecaudatum2.png	1	1r.a.9
+e	e	e	Alphabetic		The grapheme has many allographs depending on the ligature. For example, allograph e2.png is often found in the common ligature "&" for "et".	e1.png e2.png	1	
+æ	ae	ę	Alphabetic		This is an "e caudatum": an "e" grapheme with a tail on the bottom left or left side. It is often (but not always) used to represent an alphabeme "e" in lieu of which in classical and modern Latin orthography we would have the diphthong "ae". When that alphabeme "e" is not represented by the "æ" grapheme, it is represented by a simple "e" grapheme. It has one allograph (see image ecaudatum1.png) with the tail underneath the body of the grapheme, turning right, and a second allograph (ecaudatum2.png) with the tail on the left of the body (mostly in ligatures).	ecaudatum1.png ecaudatum2.png	1	1r.a.9
 f	f	f	Alphabetic		f.png	1	
 g	g	g	Alphabetic		g.png	1	1r.a.7
 h	h	h	Alphabetic		h.png	1	
