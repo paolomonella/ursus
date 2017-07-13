@@ -27,16 +27,24 @@ ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
 tree = etree.parse('../casanatensis.xml')
 
 L = []
+c = 0
+d = 0
 #for x in tree.findall('.//' + n + 'note[@type="emendation"]'):
 for x in tree.findall('.//' + n + 'corr'):
     if x.get('cert') == 'medium':
         #print(x.get('subtype'))
-        y = x.find(n + 'note')
-        print(y.text)
-        print()
+        if x.find(n + 'note') is not None:
+            y = x.find(n + 'note')
+            print(y.text.encode('utf-8'))
+            c = c + 1
+        else:
+            z = x.get('type')
+            print(z)
+            d = d + 1
         print()
 for l in set(L):
     print(l)
+print(str(c) + ' notes on general matters\n' + str(d) + ' notes with a "correction" type')
 
 """
 # Parse the tree of the ALIM2 template: it will be the base for the output tree
