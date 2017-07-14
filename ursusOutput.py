@@ -105,7 +105,7 @@ def manageWord(wordElem):
     # Easy solution (only backdraw: it moves all elements children of <w> after the text). This is
     # OK (it's actually better) for 'anchor/pb/cb/lb', but it creates a slight inaccuracy with 'gap':
     tempText = wordElem.xpath('normalize-space()').replace(' ', '').replace('·', '') # This is the unified text of the word
-    if wordElem.get('type') in ['alphabemes', 'foreign']:
+    if wordElem.get('type') in ['alphabemes', 'foreign', 'ancientAbbreviation']:
         tempText = '"' + tempText + '"'
     for y in wordElem:
         yt = etree.QName(y).localname
