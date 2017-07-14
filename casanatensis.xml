@@ -4393,6 +4393,7 @@ numeratio</w>
 		<expan>per</expan>
 	</choice>
 sona</w>
+<pc n=","></pc>
 </ref>
 
 <ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.373.2-4.373.3" type="source">
@@ -4505,6 +4506,7 @@ tinentur</w>
 <unclear cert="high" reason="faded">
 <w n="casu" xml:id="w3219">casu</w>
 </unclear>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
 <w n="ostenditur" xml:id="w3222">ostendi
@@ -4562,19 +4564,19 @@ tur</w>
 <lb n="1v.b.24" break="no"/>
 su</w>
 </unclear>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w3279">et</w>
 <w n="ab" xml:id="w3282">ab</w>
 <w n="aduerbio" xml:id="w3285">aduerbio</w>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 <w n="et" xml:id="w3288">et</w>
 <w n="a" xml:id="w3291">a</w>
 <w n="coniunctione" xml:id="w3294">coniunctione</w>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 <w n="et" xml:id="w3297">et</w>
 <w n="appositione" xml:id="w3300">appositione</w>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 <w n="et" xml:id="w3303">et</w>
 <w n="interiectione" xml:id="w3306">interiec
 <lb n="1v.b.25" break="no"/>
@@ -4613,6 +4615,7 @@ tione</w>
 <w n="ut" xml:id="w3354">ut</w>
 	<pc n="space"> </pc>
 <w n="homo" xml:id="w3357">homo</w>
+<pc n=","></pc>
 <lb n="1v.b.27" break="no"/>
 <w n="caelum" xml:id="w3360">cæl
 	<choice>
@@ -4620,6 +4623,7 @@ tione</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="aer" xml:id="w3363">aer
 <note type="script">Note that since here "ae" is no diphthong, it is written with two separate graphemes "a" and "e".</note>
@@ -4640,6 +4644,7 @@ tione</w>
 <w n="tangi" xml:id="w3387">tangi</w>
 	<pc n="space"> </pc>
 <w n="potest" xml:id="w3390">potest</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w3393">ut</w>
 <lb n="1v.b.28" break="no"/>
@@ -4702,6 +4707,7 @@ prium</w>
 <w n="Cicero" xml:id="w3454">cicero</w>
 <pc n=",">·</pc>
 <w n="Uergilius" xml:id="w3456">uirgilius</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="aut" xml:id="w3457"><hi rend="larger">a</hi>ut</w>
 	<pc n="space"> </pc>
@@ -4732,6 +4738,7 @@ prium</w>
 <ref cRef="unknown" type="source">
 <w n="ut" xml:id="w3480">ut</w>
 <w n="homo" xml:id="w3483">homo</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w n="arbor" xml:id="w3486">ar
@@ -4821,15 +4828,19 @@ prie</w>
 <w n="ut" xml:id="w3570">ut</w>
 	<pc n="space"> </pc>
 <w n="Petrus" xml:id="w3573">petrus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="Salomon" xml:id="w3576">salomon</w>
+<pc n=","></pc>
 	<pc n=",">·</pc>
 <w n="appellatiuae" xml:id="w3579"><hi rend="larger">a</hi>ppellatiuæ</w>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w3582">ut</w>
 <w n="ciuitas" xml:id="w3585">ciuitas</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="flumen" xml:id="w3588">flumen</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="mons" xml:id="w3591">mons</w>
 <pc n="."/>
@@ -4848,7 +4859,7 @@ prie</w>
 <pc n=".">·</pc>
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
-<w n="cor" xml:id="w3615">cor</w>
+<w n="cor" type="alphabemes" xml:id="w3615">cor</w>
 </unclear>
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
@@ -4858,12 +4869,14 @@ prie</w>
 <unclear cert="high" reason="faded">
 <w n="corde" xml:id="w3621">corde</w>
 </unclear>
+<pc n=","></pc>
 <lb n="1v.b.37" break="no"/>
 <w n="pus" xml:id="w3624">pus</w>
 	<pc n="space"> </pc>
 <w n="integrum" xml:id="w3627">integrum</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w3630">est</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="quod" xml:id="w3633">quod</w>
 	<pc n="space"> </pc>
@@ -4871,24 +4884,34 @@ prie</w>
 <pc n="quote">·</pc>
 	<pc n="space"> </pc>
 <w n="custodia" xml:id="w3639">custodia</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="sicut" xml:id="w3642">sicut</w>
 	<pc n="space"> </pc>
 <w n="alibi" xml:id="w3645">alibi</w>
 <lb n="1v.b.38" break="no"/>
 <choice>
-<sic>
-<w n="impura" xml:id="w3648">inpura
-</w>
-</sic>
-<corr cert="medium">
-<w n="in" xml:id="w3649">in</w>
-<w n="pure" xml:id="w3650">pure</w>
-<note cert="medium" type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments:
-	"Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer:
-	"Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
-</corr>
+	<sic>
+		<w n="impura" xml:id="w3648">inpura</w>
+	</sic>
+	<corr cert="medium">
+		<w n="in" xml:id="w3649">in</w>
+		<w n="pure" xml:id="w3650">pure</w>
+		<note cert="medium" type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments:
+			"Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer:
+			"Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".
+			The passage therefore discusses an etymology for word "corpus", composed ex an abbreviated
+			("corruptum") form of "corpus", namely "cor-", and the complete ("integrum") word "pus"
+			(pus, -ris, neuter), which in this context means "custodia".
+			Therefore "cor(dis) + pus (=custodia)" means "cordis custodia": the body is the custody, the shelter
+			of the heart. To prove the meaning of "pus" as "custodia", Ursus cites Virgilius Grammaticus who,
+			in his turn, cites Origenes. On this medieval meaning of "pus", see Jeudy, C. and Grondeux, A.
+			(2002), 'À propos de "pus": sens médiéval d'un mot antique', Archivum Latinitatis Medii Aevi,
+			139-162, https://halshs.archives-ouvertes.fr/halshs-00008443. The text of Virgilius Grammaticus
+			is readable online in https://archive.org/details/virgiliimaronisg00virguoft (J. Huemer, ed.,
+			Virgilii Maronis grammatici opera, Leipzig, 1886).
+			</note>
+	</corr>
 </choice>
 	<pc n="space"> </pc>
 <w n="positis" xml:id="w3651">positis</w>
@@ -4899,7 +4922,7 @@ prie</w>
 	<pc n="space"> </pc>
 <w n="euasit" xml:id="w3660">euasit</w>
 	<pc n="space"> </pc>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w n="et" xml:id="w3663">et</w>
 <w n="intellegitur" xml:id="w3666">intellegitur</w>
@@ -4910,6 +4933,7 @@ prie</w>
 	<pc n="space"> </pc>
 <lb n="1v.b.39" break="no"/>
 <w n="custodia" xml:id="w3675">custodia</w>
+<pc n="."></pc>
 
 <pb facs="manuscript_images/C_02r.JPG" n="2r" break="no"/>
 
