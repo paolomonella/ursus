@@ -539,7 +539,10 @@ that includes Latin, Greek, inscriptions etc. and is the working list of the Per
 	- urn:cts:latinLit:stoa0258a.stoa001
 - Pompeius Inst
 	- urn:cts:latinLit:stoa0233c.stoa001
-	
+- Virgilius Grammaticus, Opera
+    - urn:cts:latinLit:stoa0290a.stoa001
+    - urn:cts:latinLit:stoa0290a.stoa001.opp-lat1 (Huemer, Johann, ed., Virgilii Maronis grammatici opera, Leipzig, 1886)
+
 ### Classical sources of citations in those grammarians, in order of appearance in the manuscript
 
 - Persius, Saturae
@@ -586,6 +589,10 @@ that includes Latin, Greek, inscriptions etc. and is the working list of the Per
 	- Aelius Donatus, "De Schematibus". URN: stoa0110.stoa006 (pp. 397-399)
 	- Aelius Donatus, "De Solecismo". URN: stoa0110.stoa007 (pp. 393-394)
 	- Aelius Donatus, "De Tropis". URN: stoa0110.stoa008 (pp. 399-402)
+
+### Virgilius Grammaticus, Opera
+- List #3 has the author and the work. URN: stoa0290a.stoa001 (where opp-lat1 represents Huemer's 1886 edition)
+
 
 
 

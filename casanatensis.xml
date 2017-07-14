@@ -2988,9 +2988,9 @@ tatem</w>
 <w n="et" xml:id="w1917">et</w>
 <w n="in" xml:id="w1920">in</w>
 <w n="infinitis" xml:id="w1923">infi
-<pc n=","></pc>
 <lb n="1v.a.11" break="no"/>
 nitis</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="idcirco" xml:id="w1926">idcirco</w>
 	<pc n="space"> </pc>
@@ -3685,12 +3685,12 @@ iunctim</w>
 poni</w>
 	<pc n="space"> </pc>
 <w n="casualibus" xml:id="w2499">casuali
-<pc n=","></pc>
 	<choice>
 		<abbr type="after">b<am>;</am></abbr>
 		<expan>bus</expan>
 	</choice>
 </w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w2502">ut</w>
 	<pc n="space"> </pc>
@@ -4831,7 +4831,6 @@ prie</w>
 <pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="Salomon" xml:id="w3576">salomon</w>
-<pc n=","></pc>
 	<pc n=",">·</pc>
 <w n="appellatiuae" xml:id="w3579"><hi rend="larger">a</hi>ppellatiuæ</w>
 	<pc n="space"> </pc>
@@ -4871,6 +4870,9 @@ prie</w>
 </unclear>
 <pc n=","></pc>
 <lb n="1v.b.37" break="no"/>
+</ref>
+
+<ref cRef="urn:cts:latinLit:stoa0290a.stoa001.opp-lat1:85.23" type="source">
 <w n="pus" xml:id="w3624">pus</w>
 	<pc n="space"> </pc>
 <w n="integrum" xml:id="w3627">integrum</w>
@@ -4924,6 +4926,9 @@ prie</w>
 	<pc n="space"> </pc>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
+</ref>
+
+<ref cRef="unknown" type="source">
 <w n="et" xml:id="w3663">et</w>
 <w n="intellegitur" xml:id="w3666">intellegitur</w>
 	<pc n="space"> </pc>
@@ -4947,15 +4952,19 @@ prie</w>
 <w n="qualitatis" xml:id="w3684">qualitatis</w>
 	<pc n="space"> </pc>
 <w n="est" xml:id="w3687">est</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ut" xml:id="w3690">ut</w>
 <w n="iustitia" xml:id="w3693">iustitia</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="sanctitas" xml:id="w3696">sanctitas</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="disciplina" xml:id="w3699">discipli
 <lb n="2r.a.2" break="no"/>
 na</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="ars" xml:id="w3702">ars</w>
 	<pc n="space"> </pc>
@@ -4970,8 +4979,7 @@ priæ</w>
 <w n="ut" xml:id="w3711">ut</w>
 <choice>
 <sic>
-<w n="arithmetica" xml:id="w3714">aritmetrica
-</w>
+<w n="arithmetica" xml:id="w3714">aritmetrica</w>
 </sic>
 <corr cert="high">
 <w n="arithmetica" xml:id="w3715">arithmetica
@@ -4979,6 +4987,7 @@ priæ</w>
 <note cert="high" type="emendation">Scribal error: "aritmetrica" for "arithmetica".</note>
 </corr>
 </choice>
+<pc n=","></pc>
 	<pc n=",">·</pc>
 <w n="grammatica" xml:id="w3717">gr
 	<choice>
@@ -5001,10 +5010,13 @@ les</w>
 <w n="ut" xml:id="w3735">ut</w>
 	<pc n="space"> </pc>
 <w n="Saturnus" xml:id="w3738">saturnus</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="Iuppiter" xml:id="w3741">iuppiter</w>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 <w n="Mercurius" xml:id="w3744">mercurius</w>
+<pc n=","></pc>
 	<pc n=",">·</pc>
 <w n="quos" xml:id="w3747">quos</w>
 <lb n="2r.a.4" break="no"/>
@@ -5058,6 +5070,7 @@ d</w>
 <unclear cert="low" reason="faded">
 <w n="notamen" xml:id="w3801">notamen</w>
 </unclear>
+<pc n=","></pc>
 	<pc n="space"> </pc>
 </ref>
 

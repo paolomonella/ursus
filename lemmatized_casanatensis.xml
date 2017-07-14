@@ -50,7 +50,7 @@
 	<change subtype="critical" type="agenda">Find '§' (XML comments with § mark required checks).</change>
 	<change subtype="critical" type="agenda">Make a decision about note[@subtype="§"]</change>
 	<change subtype="critical" type="agenda">Talk to GDM about note[@cert="medium"], corr[@cert="medium"] and
-		corr[@type="ub"]</change>
+		corr[@type="ub"] (and other types of 'corr')</change>
 	<change subtype="critical" type="agenda">Some 'lb' are children of 'choice/sic' and 'choice/corr': check how
 		js and python manage this.</change>
 	<change subtype="critical" type="agenda">Use 'surplus' for expunction instead of sic/corr?</change>
@@ -2990,6 +2990,7 @@ tatem</w>
 <w ana="11B---O1---" lemma="infinitus" n="infinitis" xml:id="w1923">infi
 <lb break="no" n="1v.a.11" />
 nitis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="idcirco" n="idcirco" xml:id="w1926">idcirco</w>
 	<pc n="space"> </pc>
@@ -3027,6 +3028,7 @@ a</w>
 <w ana="3-KA1--6---" lemma="habeo" n="habet" xml:id="w1959">habet</w>
 	<pc n="space"> </pc>
 <w ana="11D---A1---" lemma="casus" n="casus" xml:id="w1962">casus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---O2---" lemma="qui" n="quibus" xml:id="w1965">
 	<choice>
@@ -3130,7 +3132,7 @@ bus</w>
 		<expan>am</expan>
 	</choice>
 </w>
-	<pc n=",">·</pc>
+	<pc n=".">·</pc>
 <w ana="4-O-------1" lemma="idcirco" n="idcirco" xml:id="w2037">idcirco</w>
 	<pc n="space"> </pc>
 <w ana="11F---A1-A-" lemma="quis" n="quis" xml:id="w2040">
@@ -3319,6 +3321,7 @@ nomina</w>
 </w>
 <lb break="no" n="1v.a.22" />
 <w ana="11C---A2---" lemma="declinatio" n="declinatio" xml:id="w2208">declinatio</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quia" n="quia" xml:id="w2211">
 	<choice>
@@ -3536,6 +3539,7 @@ poni</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w2373">et</w>
 <w ana="3-LQ1------" lemma="postponi" n="postponi" xml:id="w2376">postponi</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w2379">ut</w>
 <w ana="11C---F3H-1" lemma="pone" n="pone" xml:id="w2382">pone
@@ -3686,6 +3690,7 @@ poni</w>
 		<expan>bus</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w2502">ut</w>
 	<pc n="space"> </pc>
@@ -3800,7 +3805,7 @@ iones</w>
 <w ana="11C---B1---" lemma="uel" n="uel" xml:id="w2577">uel</w>
 	<pc n="space"> </pc>
 <w ana="11A---A2--2" lemma="aduerbia" n="aduerbia" xml:id="w2580">aduerbia</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w2583">ut</w>
 <w ana="11B---A1---" lemma="formosus" n="formosus" xml:id="w2586">formosus</w>
@@ -3834,6 +3839,7 @@ iens</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w2625">et</w>
 <w ana="11C---G----" lemma="celeriter" n="celeriter" xml:id="w2628">celeriter</w>
+<pc n="." />
 <lb break="no" n="1v.a.38" />
 <w ana="11F---D3---" lemma="hic" n="hoc" xml:id="w2631"><hi rend="larger">h</hi>oc</w>
 	<pc n="space"> </pc>
@@ -4034,7 +4040,7 @@ est</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="11C---D3---" lemma="nomen" n="nomen" xml:id="w2769">nomen</w>
-	<pc n=",">|</pc>
+	<pc n=".">|</pc>
 <w ana="4-S--------" lemma="sine" n="sine" xml:id="w2772">sine</w>
 	<pc n="space"> </pc>
 <w ana="11C---F3H--" lemma="nomen" n="nomine" xml:id="w2775">nomine</w>
@@ -4045,7 +4051,7 @@ est</w>
 		<expan>im</expan>
 	</choice>
 </w>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 <w ana="3-NA1--6---" lemma="pereo" n="perit" xml:id="w2778">perit</w>
 	<pc n="space"> </pc>
 <w ana="11E---K2---" lemma="res" n="rerum" xml:id="w2781">rer
@@ -4387,6 +4393,7 @@ numeratio</w>
 		<expan>per</expan>
 	</choice>
 sona</w>
+<pc n="," />
 </ref>
 
 <ref cRef="urn:cts:latinLit:stoa0110.stoa001:4.373.2-4.373.3" type="source">
@@ -4499,6 +4506,7 @@ tinentur</w>
 <unclear cert="high" reason="faded">
 <w ana="11D---F1---" lemma="casus" n="casu" xml:id="w3219">casu</w>
 </unclear>
+<pc n="," />
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
 <w ana="3-LJ1--6---" lemma="ostendo" n="ostenditur" xml:id="w3222">ostendi
@@ -4556,19 +4564,19 @@ tur</w>
 <lb break="no" n="1v.b.24" />
 su</w>
 </unclear>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w3279">et</w>
 <w ana="4-S-------2" lemma="a" n="ab" xml:id="w3282">ab</w>
 <w ana="11B---F3---" lemma="aduerbio" n="aduerbio" xml:id="w3285">aduerbio</w>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w3288">et</w>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w3291">a</w>
 <w ana="11C---F2H-2" lemma="conjunctio" n="coniunctione" xml:id="w3294">coniunctione</w>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w3297">et</w>
 <w ana="11C---F2H--" lemma="appositione" n="appositione" xml:id="w3300">appositione</w>
-	<pc n=",">·</pc>
+	<pc n="0">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w3303">et</w>
 <w ana="11C---F2H--" lemma="interiectione" n="interiectione" xml:id="w3306">interiec
 <lb break="no" n="1v.b.25" />
@@ -4607,6 +4615,7 @@ tione</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3354">ut</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="homo" n="homo" xml:id="w3357">homo</w>
+<pc n="," />
 <lb break="no" n="1v.b.27" />
 <w ana="11B---A3--1" lemma="caelum" n="caelum" xml:id="w3360">cæl
 	<choice>
@@ -4614,6 +4623,7 @@ tione</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="aer" n="aer" xml:id="w3363">aer
 <note type="script">Note that since here "ae" is no diphthong, it is written with two separate graphemes "a" and "e".</note>
@@ -4634,6 +4644,7 @@ tione</w>
 <w ana="3-LQ1------" lemma="tango" n="tangi" xml:id="w3387">tangi</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="possum" n="potest" xml:id="w3390">potest</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3393">ut</w>
 <lb break="no" n="1v.b.28" />
@@ -4696,6 +4707,7 @@ prium</w>
 <w ana="11B---F3---" lemma="cicero" n="Cicero" xml:id="w3454">cicero</w>
 <pc n=",">·</pc>
 <w ana="12C---A3---" lemma="uergilius" n="Uergilius" xml:id="w3456">uirgilius</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="aut" n="aut" xml:id="w3457"><hi rend="larger">a</hi>ut</w>
 	<pc n="space"> </pc>
@@ -4726,6 +4738,7 @@ prium</w>
 <ref cRef="unknown" type="source">
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3480">ut</w>
 <w ana="11C---A1---" lemma="homo" n="homo" xml:id="w3483">homo</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
 <w ana="11C---A2---" lemma="arbor" n="arbor" xml:id="w3486">ar
@@ -4815,6 +4828,7 @@ prie</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3570">ut</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="petrus" n="Petrus" xml:id="w3573">petrus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="salomon" n="Salomon" xml:id="w3576">salomon</w>
 	<pc n=",">·</pc>
@@ -4822,8 +4836,10 @@ prie</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3582">ut</w>
 <w ana="11C---A2---" lemma="ciuitas" n="ciuitas" xml:id="w3585">ciuitas</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---A3---" lemma="flumen" n="flumen" xml:id="w3588">flumen</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="3-JJ1--6---" lemma="mons" n="mons" xml:id="w3591">mons</w>
 <pc n="." />
@@ -4842,7 +4858,7 @@ prie</w>
 <pc n=".">·</pc>
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
-<w ana="11C---A3---" lemma="cor" n="cor" xml:id="w3615">cor</w>
+<w n="cor" type="alphabemes" xml:id="w3615">cor</w>
 </unclear>
 	<pc n="space"> </pc>
 <unclear cert="high" reason="faded">
@@ -4852,12 +4868,17 @@ prie</w>
 <unclear cert="high" reason="faded">
 <w ana="11C---F3---" lemma="cor" n="corde" xml:id="w3621">corde</w>
 </unclear>
+<pc n="," />
 <lb break="no" n="1v.b.37" />
+</ref>
+
+<ref cRef="urn:cts:latinLit:stoa0290a.stoa001.opp-lat1:85.23" type="source">
 <w ana="11C---A3---" lemma="pus" n="pus" xml:id="w3624">pus</w>
 	<pc n="space"> </pc>
 <w ana="11B---A3---" lemma="integrum" n="integrum" xml:id="w3627">integrum</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w3630">est</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quod" n="quod" xml:id="w3633">quod</w>
 	<pc n="space"> </pc>
@@ -4865,22 +4886,34 @@ prie</w>
 <pc n="quote">·</pc>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="custodia" n="custodia" xml:id="w3639">custodia</w>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="sicut" n="sicut" xml:id="w3642">sicut</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="alibi" n="alibi" xml:id="w3645">alibi</w>
 <lb break="no" n="1v.b.38" />
 <choice>
-<sic>
-<w ana="2-LO-1A3---" lemma="impura" n="impura" xml:id="w3648">inpura
-</w>
-</sic>
-<corr cert="medium">
-<w ana="4-S--------" lemma="in" n="in" xml:id="w3649">in</w>
-<w ana="11B---G----" lemma="purus" n="pure" xml:id="w3650">pure</w>
-<note cert="medium" type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments: "Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer: "Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".</note>
-</corr>
+	<sic>
+		<w ana="2-LO-1A3---" lemma="impura" n="impura" xml:id="w3648">inpura</w>
+	</sic>
+	<corr cert="medium">
+		<w ana="4-S--------" lemma="in" n="in" xml:id="w3649">in</w>
+		<w ana="11B---G----" lemma="purus" n="pure" xml:id="w3650">pure</w>
+		<note cert="medium" type="emendation">Morelli 1910, p. 291, n. 3 corrects "inpura" to "in pure" and comments:
+			"Cod. inpura. Correggo secondo la fonte di Ursus, Virg. gramm. p. 85,23 Huemer:
+			"Pus in philosophia custodia dicitur, ut ait Origenes: Positis in pure fratribus solus evasit".
+			The passage therefore discusses an etymology for word "corpus", composed ex an abbreviated
+			("corruptum") form of "corpus", namely "cor-", and the complete ("integrum") word "pus"
+			(pus, -ris, neuter), which in this context means "custodia".
+			Therefore "cor(dis) + pus (=custodia)" means "cordis custodia": the body is the custody, the shelter
+			of the heart. To prove the meaning of "pus" as "custodia", Ursus cites Virgilius Grammaticus who,
+			in his turn, cites Origenes. On this medieval meaning of "pus", see Jeudy, C. and Grondeux, A.
+			(2002), 'À propos de "pus": sens médiéval d'un mot antique', Archivum Latinitatis Medii Aevi,
+			139-162, https://halshs.archives-ouvertes.fr/halshs-00008443. The text of Virgilius Grammaticus
+			is readable online in https://archive.org/details/virgiliimaronisg00virguoft (J. Huemer, ed.,
+			Virgilii Maronis grammatici opera, Leipzig, 1886).
+			</note>
+	</corr>
 </choice>
 	<pc n="space"> </pc>
 <w ana="2-LM41O2---" lemma="pono" n="positis" xml:id="w3651">positis</w>
@@ -4891,8 +4924,11 @@ prie</w>
 	<pc n="space"> </pc>
 <w ana="3-NB1--6---" lemma="euasit" n="euasit" xml:id="w3660">euasit</w>
 	<pc n="space"> </pc>
-<pc n="quote">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
+</ref>
+
+<ref cRef="unknown" type="source">
 <w ana="4-O--------" lemma="et" n="et" xml:id="w3663">et</w>
 <w ana="3-LJ1--6---" lemma="intellegitur" n="intellegitur" xml:id="w3666">intellegitur</w>
 	<pc n="space"> </pc>
@@ -4902,6 +4938,7 @@ prie</w>
 	<pc n="space"> </pc>
 <lb break="no" n="1v.b.39" />
 <w ana="2-ME-1D----" lemma="custodia" n="custodia" xml:id="w3675">custodia</w>
+<pc n="." />
 
 <pb break="no" facs="manuscript_images/C_02r.JPG" n="2r" />
 
@@ -4915,15 +4952,19 @@ prie</w>
 <w ana="11C---B2---" lemma="qualitas" n="qualitatis" xml:id="w3684">qualitatis</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w3687">est</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3690">ut</w>
 <w ana="11A---A2--1" lemma="iustitia" n="iustitia" xml:id="w3693">iustitia</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="sanctitas" n="sanctitas" xml:id="w3696">sanctitas</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11A---A2---" lemma="disciplina" n="disciplina" xml:id="w3699">discipli
 <lb break="no" n="2r.a.2" />
 na</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="ars" n="ars" xml:id="w3702">ars</w>
 	<pc n="space"> </pc>
@@ -4938,8 +4979,7 @@ priæ</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3711">ut</w>
 <choice>
 <sic>
-<w ana="11A---A2---" lemma="arithmetica" n="arithmetica" xml:id="w3714">aritmetrica
-</w>
+<w ana="11A---A2---" lemma="arithmetica" n="arithmetica" xml:id="w3714">aritmetrica</w>
 </sic>
 <corr cert="high">
 <w ana="11A---A2---" lemma="arithmetica" n="arithmetica" xml:id="w3715">arithmetica
@@ -4947,6 +4987,7 @@ priæ</w>
 <note cert="high" type="emendation">Scribal error: "aritmetrica" for "arithmetica".</note>
 </corr>
 </choice>
+<pc n="," />
 	<pc n=",">·</pc>
 <w ana="11A---A2---" lemma="grammatica" n="grammatica" xml:id="w3717">gr
 	<choice>
@@ -4969,10 +5010,13 @@ les</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3735">ut</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="saturnus" n="Saturnus" xml:id="w3738">saturnus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---G----" lemma="iuppiter" n="Iuppiter" xml:id="w3741">iuppiter</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="12C---A3---" lemma="mercurius" n="Mercurius" xml:id="w3744">mercurius</w>
+<pc n="," />
 	<pc n=",">·</pc>
 <w ana="11F---M1---" lemma="qui" n="quos" xml:id="w3747">quos</w>
 <lb break="no" n="2r.a.4" />
@@ -5026,6 +5070,7 @@ d</w>
 <unclear cert="low" reason="faded">
 <w ana="11C---A3---" lemma="notamen" n="notamen" xml:id="w3801">notamen</w>
 </unclear>
+<pc n="," />
 	<pc n="space"> </pc>
 </ref>
 
@@ -12387,7 +12432,22 @@ lies</w>
 		<w ana="11C---A1---" lemma="inueniuntur" n="inueniuntur" xml:id="w10602">inueniuntur</w>
 	</sic>
 	<corr cert="medium">
-		<note cert="medium" type="emendation">I expunged the word "inueniuntur" in this position. The original text of the manuscript was "inueniuntur infinitis tamen numerorum...". The source of this passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens. Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...".  Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so he wrote "inueniuntur" (which originally had the initial "i" written with a larger size).  Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after "inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic. The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur", overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis" with a larger allograph.  As usual, I kept the the original punctuation at the Graphemic Layer and put my propossed contemporary punctuation at the Linguistic Layer. The reason why no scribe decided to erase "inueniuntur" probably is that it could seem to belong to the previous sentence, which I do not believe.</note>
+		<note cert="medium" type="emendation">I expunged the word "inueniuntur" in this position. The original
+			text of the manuscript was "inueniuntur infinitis tamen numerorum...". The source of this
+			passage, Priscian "De figuris numerorum" (Keil 3.415.24-26), after "milies", has: "Infinitis
+			tamen numerorum aduerbiis etiam n interponitur, quotiens totiens, similiter multotiens.
+			Inueniuntur et aliae deriuationes uel compositiones multae a nominibus numerorum, ut unicus...". 
+			Probably the scribe initially skipped the sentence "Infinitis... multotiens" (line 24 in Keil) and
+			started copying from the sentence "Inueniuntur et aliae deriuationes" (line 26 in Keil), so
+			he wrote "inueniuntur" (which originally had the initial "i" written with a larger size). 
+			Then, he decided not to skip the sentence "Infinitis tamen numerorum..." and copied it after
+			"inueniuntur", but he forgot to erase "inueniuntur", which remained in the manuscript as a relic.
+			The same scribe at a later time (or someone else) then erased the large initial "i" of "inueniuntur",
+			overwrote it in rasura with a smaller size, and also overwrote the initial "i" of "infinitis"
+			with a larger allograph.  As usual, I kept the the original punctuation at the Graphemic Layer
+			and put my propossed contemporary punctuation at the Linguistic Layer. The reason why no scribe
+			decided to erase "inueniuntur" probably is that it could seem to belong to the previous sentence,
+			which I do not believe.</note>
 	</corr>
 </choice>
 
@@ -16092,12 +16152,12 @@ a</w>
 		</w>
 	</sic>
 	<corr cert="high" type="dyp">
+		
 		<w ana="11B---D3---" lemma="diphthongum" n="diphthongum" xml:id="w13909">diphthong
 			<choice>
 				<abbr type="superscription">u<am>2</am></abbr>
 				<expan>um</expan>
 			</choice>
-		
 		</w>
 	</corr>
 </choice>
@@ -37911,7 +37971,6 @@ sonæ</w>
 <note type="graphic">There is a macron sign over the second "e" ("intercapēdo") to mark the vowel's long quantity.</note>
 </w>
 	<pc n="space"> </pc>
-<unclear cert="medium" reason="faded">
 
 <choice>
 	<sic>
@@ -37927,7 +37986,6 @@ sonæ</w>
 	</corr>
 </choice>
 
-</unclear>
 <lb break="no" n="9r.b.2" />
 <w ana="4-S--------" lemma="ante" n="ante" xml:id="w33693">ante</w>
 	<pc n="space"> </pc>
