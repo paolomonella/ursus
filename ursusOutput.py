@@ -101,7 +101,7 @@ def substituteAllElements(oldName, newName, myNameSpace):
         x.set('type', oldName)
 
 def manageWord(wordElem):
-    # debug: print('Working on word\t' + wordElem.get(xml + 'id'))
+    # print('Working on word\t' + wordElem.get(xml + 'id')) # debug
     # Easy solution (only backdraw: it moves all elements children of <w> after the text). This is
     # OK (it's actually better) for 'anchor/pb/cb/lb', but it creates a slight inaccuracy with 'gap':
     tempText = wordElem.xpath('normalize-space()').replace(' ', '').replace('·', '') # This is the unified text of the word
@@ -240,12 +240,12 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
             elif wt == 'pc':
                 managePunctuation(w)
             elif wt == 'choice':    # Since this <choice> is child of <ref>, then it must be parent of <sic> and <corr>
-                if w.find(n + 'sic').find(n + 'w') is not None:
+                if w.find(n + 'sic').find(n + 'w') is not None: # <sic> always has one <w> child only
                     mySicWord = w.find(n + 'sic').find(n + 'w')
                     manageWord(mySicWord)
-                if w.find(n + 'corr').find(n + 'w') is not None:
-                    myCorrWord = w.find(n + 'corr').find(n + 'w')
-                    manageWord(myCorrWord)
+                if w.find(n + 'corr').findall(n + 'w') is not None:
+                    for myCorrWord in w.find(n + 'corr').findall(n + 'w'):      # <corr> may have more than one <w> child
+                        manageWord(myCorrWord)
             else:
                 pass
 
