@@ -117,7 +117,7 @@ def manageWord(wordElem):
         based on the GToS. I'm not doing it here for brevity, since all graphemes outside <abbr> correspond
         to the alphabeme encoded with the same Unicode character, except for grapheme 'æ', so I'm just replacing
         'æ' with 'ae' in the line above. """
-    wordElem.text = tempText.strip()
+    wordElem.text = tempText.replace(' ', '')
     """
     # Complicated solution, not completely functional:
     for y in wordElem:
