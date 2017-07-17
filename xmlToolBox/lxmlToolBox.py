@@ -32,6 +32,19 @@ d = 0
 #for x in tree.findall('.//' + n + 'note[@type="emendation"]'):
 for x in tree.findall('.//' + n + 'corr'):
     if x.get('cert') == 'medium':
+        choice = x.getparent()
+        sic = choice.find(n + 'sic')
+        sicw = sic.find(n + 'w')        # 'wrong' word
+        sicwtxt = sicw.xpath('normalize-space()').encode('utf8')
+        if x.find(n + 'w') is not None:
+            corrw = x.find(n + 'w')         # 'right' word
+            corrwid = corrw.get(xml + 'id')
+            print(corrwid, end = ':\t')
+            corrwtxt = corrw.xpath('normalize-space()').encode('utf8')
+            #wtxt = corrw.text.strip()
+        else:
+            corrwtxt = ''
+        print('"' + sicwtxt + '" → "' + corrwtxt + '"')
         #print(x.get('subtype'))
         if x.find(n + 'note') is not None:
             y = x.find(n + 'note')
@@ -39,7 +52,7 @@ for x in tree.findall('.//' + n + 'corr'):
             c = c + 1
         else:
             z = x.get('type')
-            print(z)
+            print('Error type: "' + z + '"')
             d = d + 1
         print()
 for l in set(L):

@@ -46,7 +46,6 @@
 	    </editorialDecl>
     </encodingDesc>
     <revisionDesc>
-	<change subtype="critical" type="agenda">Replace 'note' @type='emendation' with 'sic'/'corr'/'correction'</change>
 	<change subtype="critical" type="agenda">Find '§' (XML comments with § mark required checks).</change>
 	<change subtype="critical" type="agenda">Make a decision about note[@subtype="§"]</change>
 	<change subtype="critical" type="agenda">Talk to GDM about note[@cert="medium"], corr[@cert="medium"] and
@@ -149,6 +148,7 @@
 	<change type="done" when="2017-03-16">Final green light to publish link to edition in ALIM website</change>
 	<change type="done" when="2017-03-16">From time to time: see if there are 'v', 'ae', or other graphemes not
 	       declared in the GToS.</change>
+	<change type="done" when="2017-06-28">Replace 'note' @type='emendation' with 'sic'/'corr'/'correction'</change>
 
 
 
@@ -4872,7 +4872,7 @@ prie</w>
 <lb break="no" n="1v.b.37" />
 </ref>
 
-<ref cRef="urn:cts:latinLit:stoa0290a.stoa001.opp-lat1:85.23" type="source">
+<ref cRef="urn:cts:latinLit:stoa0290a.stoa001.opp-lat1:85.23-85.23" type="source">
 <w ana="11C---A3---" lemma="pus" n="pus" xml:id="w3624">pus</w>
 	<pc n="space"> </pc>
 <w ana="11B---A3---" lemma="integrum" n="integrum" xml:id="w3627">integrum</w>
@@ -5016,7 +5016,6 @@ les</w>
 <pc n="," />
 	<pc n="space"> </pc>
 <w ana="12C---A3---" lemma="mercurius" n="Mercurius" xml:id="w3744">mercurius</w>
-<pc n="," />
 	<pc n=",">·</pc>
 <w ana="11F---M1---" lemma="qui" n="quos" xml:id="w3747">quos</w>
 <lb break="no" n="2r.a.4" />
@@ -6689,6 +6688,7 @@ pter</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---F3---" lemma="qui" n="quo" xml:id="w5199">quo</w>
 <w ana="11C---F3---" lemma="romani" n="Romani" xml:id="w5202">romani</w>
@@ -6702,6 +6702,7 @@ pter</w>
 <w ana="11C---D2---" lemma="sociati" n="sociati" xml:id="w5208">sociati</w>
 	<pc n="space"> </pc>
 <w ana="11B---K1---" lemma="sabinis" n="Sabinis" xml:id="w5211">sabinis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A1---" lemma="qui" n="qui" xml:id="w5214">
 	<choice>
@@ -6709,6 +6710,7 @@ pter</w>
 		<expan>qui</expan>
 	</choice>
 </w>
+<pc n="," />
 <w ana="4-S--------" lemma="ad" n="ad" xml:id="w5217">ad</w>
 <w ana="2-JE-1D----" lemma="confirmo" n="confirmandum" xml:id="w5220">confirmand
 	<choice>
@@ -6737,6 +6739,7 @@ pter</w>
 		<expan>em</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---M3---" lemma="nomen" n="nomina" xml:id="w5229">nomina</w>
 <w ana="11F---K1---" lemma="is" n="eorum" xml:id="w5232">eor
@@ -6771,6 +6774,7 @@ ponebant</w>
 ni</w>
 	<pc n="space"> </pc>
 <w ana="11B---K1---" lemma="romanorum" n="Romanorum" xml:id="w5253">romanorum</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w5256">et</w>
 <w ana="4-S-------2" lemma="e" n="ex" xml:id="w5259">ex</w>
@@ -6842,15 +6846,24 @@ nomine</w>
 rimos</w>
 	<pc n="space"> </pc>
 
-<unclear cert="low" reason="faded">
-<w n="os" type="nonsense" xml:id="w5310">os</w>
-</unclear>
-<gap quantity="5" reason="illegible" unit="chars" />
-<unclear cert="low" reason="faded">
-<w n="nu" type="nonsense" xml:id="w5312">nu</w>
-</unclear>
+<choice>
+	<sic>
+		<w n="os" type="nonsense" xml:id="w5310">os</w>
+		<gap quantity="5" reason="illegible" unit="chars" />
+	</sic>
+	<corr cert="medium">
+		<w ana="3-LA1--6---" lemma="ostendo" n="ostendit" xml:id="w5311">ostendit</w>
+		<note cert="medium" type="emendation">The manuscript only has "ostendit", followed by a gap
+			(due to completely faded ink) of about 5 to 6 characters. I cannot find a possible
+			integration for the next graphemes, which might be either "nu", "mu" (or "num", "mum"
+			with an illegible abbreviation mark above), "nis" or "mis".</note>
+	</corr>
+</choice>
+
+<w n="nis" type="nonsense" xml:id="w5312">nis</w>
+
 	<pc n="space"> </pc>
-<w ana="11C---B2---" lemma="familiae" n="familiae" xml:id="w5313">familiæ</w>
+<w ana="11C---B2---" lemma="familiae" n="familiae" xml:id="w5314">familiæ</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quod" n="quod" xml:id="w5316">quod</w>
 	<pc n="space"> </pc>
@@ -6869,7 +6882,8 @@ dens</w>
 <w ana="11B---A1---" lemma="primus" n="primus" xml:id="w5331">primus</w>
 	<pc n="space"> </pc>
 <w ana="3-NB5--6---" lemma="sum" n="fuisset" xml:id="w5334">fuisset
-<note cert="medium" subtype="§" type="emendation">One or more words of this sentence are illegible, so the specific syntax of the sentence is unclear.</note>
+<note cert="medium" subtype="§" type="emendation">One or more words of this sentence are illegible,
+	so the specific syntax of the sentence is unclear.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11F---A1---" lemma="qui" n="qui" xml:id="w5337">
@@ -7268,14 +7282,12 @@ sone</w>
 		<abbr type="brevigraph">ŋ</abbr>
 		<expan>pro</expan>
 	</choice>
-	prio
-	<add place="above">
-	r
+	prior
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
-	</add>
+<note type="graphic">The three final graphemes ("r", "u" and the "2"-like abbreviation mark above the "u") have been added above the line.</note>
 </w>
 	<pc n="space"> </pc>
 <w ana="11E---J2---" lemma="species" n="species" xml:id="w5697">species</w>
@@ -7312,17 +7324,26 @@ sone</w>
 </unclear>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
-<w ana="11F---D2--1" lemma="idem" n="eandem" xml:id="w5739">e
+<w ana="11F---D1---" lemma="is" n="eum" xml:id="w5736">e
 	<choice>
-		<abbr type="superscription">a<am>2</am></abbr>
-		<expan>an</expan>
+		<abbr type="superscription">u<am>2</am></abbr>
+		<expan>um</expan>
 	</choice>
+</w>
+</unclear>
+<unclear cert="low" reason="faded">
+<w ana="11F---A3--1" lemma="idem" n="idem" xml:id="w5739">i
 	<choice>
 		<abbr type="after">d<am>;</am></abbr>
 		<expan>dem</expan>
 	</choice>
 </w>
 </unclear>
+<note cert="medium" subtype="§" type="emendation">The ink here is hardly legible. I cannot find an amendation for
+	these words. Also the punctuation sign after "idem" is very hardly recognizable, so these words might
+	belong to the next sentence.
+</note>
+<pc n=".">ï</pc>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
 <w ana="11F---M3---" lemma="is" n="ea" xml:id="w5745">ea</w>
@@ -7360,6 +7381,7 @@ sone</w>
 <w ana="3-NA4--9---" lemma="dico" n="dixerunt" xml:id="w5757">dixerunt</w>
 	<pc n="space"> </pc>
 <w ana="11C---A3---" lemma="cognomen" n="cognomen" xml:id="w5760">cognomen</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A3---" lemma="is" n="id" xml:id="w5763">id</w>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w5766">est</w>
@@ -7413,6 +7435,7 @@ priæ</w>
 		<expan>que</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="non" n="non" xml:id="w5814">non</w>
 	<pc n="space"> </pc>
@@ -7433,6 +7456,22 @@ priæ</w>
 pria</w>
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="qualitas" n="qualitas" xml:id="w5826">qualitas</w>
+<note cert="medium" subtype="§§§" type="emendation">The sense of the whole passage is obscure. The words between
+	"aut duae aut una" and "Donatus" might belong to this sentence too. If, instead, the sentence starts
+	with "eam quam Donatus", then "eam quam" might refer to the case in which a person only has one
+	personal name. In this case, the whole sentence might mean that Donatus and most of the grammarians
+	call this unique name a "cognomen", while Priscian calls it a "nomen". A possible translation might
+	be: "That ('ea', scil. 'ea propriorum species') which Donatus and most (scil. grammarians) called
+	'cognomen', that is a denomination of a specific type, about which ('de qua', scil. 'de qua
+	propriorum species') also Priscian said that the 'nomen' is specific of any single individuall
+	('uniuscuiusque'); (this 'propriorum species', i.e. the name of a person who has only one name)
+	cannot be a proper type of name ('non potest esse propria qualitas', lit. 'cannot be a
+	specific/proper type of name')". This translation, however, does not make much sense anyway, at
+	least if the main clause is "non potest esse propria qualitas", since the rest of the sentence
+	mentions names that seem to belong to the "propria qualitas". I consider this passage a "locus
+	disperatus".
+	
+</note>
 <pc n=".">ï</pc>
 	<pc n="space"> </pc>
 <w ana="11C---A3---" lemma="praenomen" n="praenomen" xml:id="w5829"><hi rend="larger">p</hi>rænomen</w>
@@ -16912,7 +16951,8 @@ tronymica</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-NH1------" lemma="possum" n="posse" xml:id="w14649">posse</w>
-<note subtype="§" type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent, though the sense is clear. An emendation might be possible.</note>
+<note subtype="§" type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent,
+	though the sense is clear. An emendation might be possible.</note>
 <pc n=".">.</pc>
 <w ana="11A---A2---" lemma="possessiua" n="possessiua" xml:id="w14652"><hi rend="larger">p</hi>ossessiua</w>
 <note type="source">I did not check whether the sentence ("possessiua quae et thetica dicitur...") has a source.</note>
@@ -18183,8 +18223,7 @@ mo</w>
 				<expan>um</expan>
 			</choice>
 		</w>
-		<note cert="high" subtype="§" type="emendation">Scribal error:
-			initial "c" for "g".</note>
+		<note cert="high" type="emendation">Initial "c" for "g".</note>
 	</corr>
 </choice>
 
@@ -18845,17 +18884,28 @@ mo</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---D3---" lemma="interpositum" n="interpositum" xml:id="w16485">interposit
 	<choice>
 		<abbr type="superscription">u<am>2</am></abbr>
 		<expan>um</expan>
 	</choice>
-<note subtype="§" type="emendation">The first version of the text in the manuscript was "solet conuerti ει dyphthongus [sic] in 'i' longum interpositum pro consonante", where "interpositum" was probably meant to modify "i".  A second hand added the word "u"  above the line, thus changing the text into "solet conuerti ει dyphthongus in 'i' longum, interpositum 'u' pro consonante", where "solet conuerti ει dyphthongus in 'i' longum" is the main clause and "interpositum 'u' pro consonante" is an accusative absolute. I think that the latter (the text of the second hand) is the best one. The source Priscian Ars grammatica, K 2.74.18 had an ablative absolute "interposita similiter u pro consonante".</note>
 </w>
 <add place="above">
 <pc n="quote">·</pc>
-<w n="u" type="alphabemes" xml:id="w16488">u</w>
+<w n="u" type="alphabemes" xml:id="w16488">u
+	<note cert="high" subtype="noEmendation" type="emendation">The first version of the text in the manuscript was "solet 
+		conuerti ει dyphthongus [sic] in 'i' longum interpositum pro consonante", where "interpositum" was probably
+		meant to modify "i".  A second hand added the word "u"  above the line, thus changing the text into
+		"solet conuerti ει dyphthongus in 'i' longum, interpositum 'u' pro consonante",
+		where "solet conuerti ει dyphthongus in 'i' longum" is the main clause and "interpositum 'u' pro consonante"
+		is an accusative absolute. I think that the latter (the text of the second hand) is the best one,
+		so I am changing the punctuation at the Linguistic and Alphabetic Layers accordingly (I am adding
+		a comma between "longum" and "interpositum" and other comma between "pro consonante" and "ut achiuus").
+		The source Priscian Ars grammatica, K 2.74.18 had an ablative absolute
+		"interposita similiter u pro consonante".</note>
+</w>
 <pc n="quote">·</pc>
 </add>
 <w ana="4-S--------" lemma="pro" n="pro" xml:id="w16491">
@@ -18865,6 +18915,7 @@ mo</w>
 	</choice>
 </w>
 <w ana="11B---D3--1" lemma="consonante" n="consonante" xml:id="w16494">consonante</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.74.50" type="source" unit="Keil" />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w16497">ut</w>
@@ -27108,25 +27159,41 @@ paratiuis</w>
 </w>
 	<pc n="space"> </pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.91.16" type="source" unit="Keil" />
-<w ana="11B---F1---" lemma="comparatituo" n="comparatituo" xml:id="w24177">c
-	<choice>
-		<abbr type="superscription">o<am>2</am></abbr>
-		<expan>om</expan>
-	</choice>
-	para
-<lb break="no" n="6v.b.32" />
-	tiuo
-	<note cert="medium" subtype="noEmendation" type="emendation">
-		If we translate "habet" as
-		"(it) has", the sentence does not seem to have a subject. The final "o" of "comparatiuo" is a
-		correction written over the original final "u" with a "2" abbreviation mark above (for "comparatiuum").
-		So the first hand meant "in nullo (scil. uerbo) comparatiuum (subject) i productum habet ante or".
-		A possible emendation of this passage would be to restore the text of the first hand:
-		"in nullo (scil. uerbo) comparatiuum etc.". However, I prefer to accept the correction of the second hand
-		("in nullo comparatiuo 'i' productum habet") and interpret "habet" as "there is...", with "'i'
-		productum" as subject. The source (Priscian Ars grammatica, K 2.91.16) has: "quia in nulla (sic)
-		comparatiuo i ante 'or' produci potest".</note>
-</w>
+
+<choice>
+	<sic>
+		<w ana="11B---F1---" lemma="comparatituo" n="comparatituo" xml:id="w24177">c
+			<choice>
+				<abbr type="superscription">o<am>2</am></abbr>
+				<expan>om</expan>
+			</choice>
+			para
+			<lb break="no" n="6v.b.32" />
+			tiuo
+		</w>
+	</sic>
+	<corr cert="medium">
+		<w ana="11D---K1---" lemma="comparatituum" n="comparatituum" xml:id="w24178">c
+			<choice>
+				<abbr type="superscription">o<am>2</am></abbr>
+				<expan>om</expan>
+			</choice>
+			para
+			<lb break="no" n="6v.b.32" />
+			tiuum
+		</w>
+		<note cert="medium" type="emendation">
+			If we translate "habet" as
+			"(it) has", the sentence does not seem to have a subject. The final "o" of "comparatiuo" is a
+			correction written over the original final "u" with a "2" abbreviation mark above (for "comparatiuum").
+			So the first hand meant "in nullo (i.e. 'in no adjective') comparatiuum (subject, i.e. 'the comparative
+			form of the adjective') i productum habet ante or".
+			I prefer the text of the first hand, so I am restoring it.
+			The source (Priscian Ars grammatica, K 2.91.16) has: "quia in nulla (sic)
+			comparatiuo i ante 'or' produci potest".</note>
+	</corr>
+</choice>
+
 <pc n="quote">·</pc>
 <w n="i" type="alphabemes" xml:id="w24180">i</w>
 <pc n="quote">·</pc>
@@ -36385,12 +36452,25 @@ tes</w>
 <w ana="11F---M2---" lemma="qui" n="quas" xml:id="w32208">quas</w>
 	<pc n="space"> </pc>
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w32211">a</w>
-<w ana="11C---F3---" lemma="uerbis" n="uerbis" xml:id="w32214">uerbis</w>
+<w ana="11C---F3---" lemma="uerbis" n="uerbis" xml:id="w32213">uerbis</w>
+
+<choice>
+	<sic>
+	</sic>
+	<corr cert="medium">
+		<w ana="3-LA1--9---" lemma="accipio" n="accipiunt" xml:id="w32214">accipiunt</w>
+		<note cert="medium" type="emendation">I would add "accipiunt" after "a uerbis": "In uerbialibus habent
+			alias consonantes, quas a verbis [accipiunt], denominatiua". The source
+			Priscian, Ars grammatica, K. .119.2-4 has: "inueniuntur tamen in uerbalibus etiam alias
+			consonantes ante a habentia, sed quas a uerbis accipiunt, ut 'scribo scriba', 'conuiuo conuiua',
+			'colligo collega'".</note>
+	</corr>
+</choice>
+
 <pc n=",">|</pc>
 <unclear cert="medium" reason="faded">
 <w ana="3-JJ1--9---" lemma="denominatiua" n="denominatiua" xml:id="w32215">denominatiua</w>
 </unclear>
-<note subtype="§" type="emendation">I would add "accipiunt" after "a uerbis": "In uerbialibus habent alias consonantes, quas a verbis [accipiunt]". The source Priscian, Ars grammatica, K. .119.2-4 has: "inueniuntur tamen in uerbalibus etiam alias consonantes ante a habentia, sed quas a uerbis accipiunt, ut 'scribo scriba', 'conuiuo conuiua', 'colligo collega'".</note>
 <pc n=".">·</pc>
 	<pc n="space"> </pc>
 <w ana="13A---M2---" lemma="multus" n="plurimas" xml:id="w32217">plurimas</w>
