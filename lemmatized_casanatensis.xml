@@ -40,6 +40,9 @@
 						instead of "diphthongus". The confusion arises because "y" and "i"
 						used to be have the same pronunciation at the time of the scribe.</item>
 
+					<label>iy</label>
+					<item n="iy">The scribe wrote "i" for "y", due to the pronunciation of the time.</item>
+
 				</list>
 			</p>
 		</correction>
@@ -89,6 +92,7 @@
 	<change subtype="improve" type="agenda">Line-level visualization of manuscript page image?</change>
 	<change subtype="improve" type="agenda">I might transcribe also marginal glossae in black ink</change>
 	<change subtype="improve" type="agenda">Find sources for ab06 based on comments on Donatus (find 1st note in ab06)</change>
+	<change subtype="improve" type="agenda">Find a source for words w14586-w14811.</change>
 	<change subtype="improve" type="agenda">Periodicamente: vd. se i brevigrafi (þ, ŋ etc.) hanno per_lo_più o sempre
 		il significato che suggerisco nella GToS</change>
 	<change subtype="improve" type="agenda">I'm not visualizing the 'milestone' elements in any way: I could think of a
@@ -4977,17 +4981,17 @@ na</w>
 priæ</w>
 	<pc n=",">·</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w3711">ut</w>
+
 <choice>
-<sic>
-<w ana="11A---A2---" lemma="arithmetica" n="arithmetica" xml:id="w3714">aritmetrica</w>
-</sic>
-<corr cert="high">
-<w ana="11A---A2---" lemma="arithmetica" n="arithmetica" xml:id="w3715">arithmetica
-</w>
-<note cert="high" type="emendation">Scribal error: "aritmetrica" for "arithmetica".</note>
-</corr>
+	<sic>
+		<w ana="11A---A2---" lemma="arithmetica" n="arithmetica" xml:id="w3714">aritmetrica</w>
+	</sic>
+	<corr cert="high">
+		<w ana="11A---A2---" lemma="arithmetica" n="arithmetica" xml:id="w3715">arithmetica</w>
+		<note cert="high" type="emendation">Scribal error: "aritmetrica" for "arithmetica".</note>
+	</corr>
 </choice>
-<pc n="," />
+
 	<pc n=",">·</pc>
 <w ana="11A---A2---" lemma="grammatica" n="grammatica" xml:id="w3717">gr
 	<choice>
@@ -6870,6 +6874,7 @@ rimos</w>
 <w ana="3-JA1--6--1" lemma="indicat" n="indicat" xml:id="w5319">indicat</w>
 	<pc n="space"> </pc>
 <w ana="11C---D3---" lemma="genus" n="genus" xml:id="w5320">genus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w5322">ut</w>
 <w ana="11F---B1---" lemma="cornelius" n="Cornelius" xml:id="w5325">cornelius</w>
@@ -7005,8 +7010,10 @@ aui</w>
 		<expan>que</expan>
 	</choice>
 </w>
+<pc n="," />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w5424">ut</w>
 <w ana="11B---A1---" lemma="paulus" n="Paulus" xml:id="w5427">paulus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="petrus" n="Petrus" xml:id="w5430">petrus</w>
 <pc n=".">ï</pc>
@@ -7090,6 +7097,7 @@ s</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n="," />
 <lb break="no" n="2r.b.31" />
 <w ana="11C---B2---" lemma="cognationis" n="cognationis" xml:id="w5490">cognationis</w>
 	<pc n="space"> </pc>
@@ -7151,7 +7159,7 @@ mune</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="anchisades" n="Anchisades" xml:id="w5556">anchisades</w>
 <note type="source">Verg. Aen. 5.407 has "magnanimusque Anchisiades". Note the different spelling: Vergil has "Anchisiades", Ursus "Anchisades". Both spellings occur in the manuscript: "Anchisiades" is found twice, in 4r.b.20 (folio 4r, column b, line 20) and in 4v.a.2. "Anchisades" is found here and in 4v.a.1, so I woul not emend this reading in "Anchisiades".</note>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w ana="2-NM41A1---" lemma="dictus" n="dictus" xml:id="w5559">dictus</w>
 	<pc n="space"> </pc>
@@ -7195,6 +7203,8 @@ a</w>
 <w ana="11F---B1---" lemma="iulius" n="Iulius" xml:id="w5604">iulius</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="pulcher" n="Pulcher" xml:id="w5607">pulcer</w>
+<note type="tech">"Pulcer" is an alternative spelling for "Pulcher", so I am not emending this word, but I am encoding "Pulcher" at the Linguistic Layer to facilitate the work of the lemmatizer.</note>
+<pc n="," />
 <lb break="no" n="2r.b.35" />
 <w ana="11B---A1---" lemma="ouidius" n="Ouidius" xml:id="w5610">ouidius</w>
 <pc n="quote">·</pc>
@@ -7209,7 +7219,7 @@ a</w>
 <w ana="3-KA4--6---" lemma="habeo" n="habuit" xml:id="w5625">habuit</w>
 	<pc n="space"> </pc>
 <w ana="3-LA3--5---" lemma="grandes" n="grandes" xml:id="w5628">grandes</w>
-<pc n=".">ï</pc>
+<pc n=",">ï</pc>
 <w ana="4-O--------" lemma="aut" n="aut" xml:id="w5631"><hi rend="larger">a</hi>ut</w>
 	<pc n="space"> </pc>
 <w ana="11B---G----" lemma="extrinsecus" n="extrinsecus" xml:id="w5634">extrinsecus</w>
@@ -7339,10 +7349,6 @@ sone</w>
 	</choice>
 </w>
 </unclear>
-<note cert="medium" subtype="§" type="emendation">The ink here is hardly legible. I cannot find an amendation for
-	these words. Also the punctuation sign after "idem" is very hardly recognizable, so these words might
-	belong to the next sentence.
-</note>
 <pc n=".">ï</pc>
 	<pc n="space"> </pc>
 <unclear cert="low" reason="faded">
@@ -7456,21 +7462,22 @@ priæ</w>
 pria</w>
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="qualitas" n="qualitas" xml:id="w5826">qualitas</w>
-<note cert="medium" subtype="§§§" type="emendation">The sense of the whole passage is obscure. The words between
-	"aut duae aut una" and "Donatus" might belong to this sentence too. If, instead, the sentence starts
-	with "eam quam Donatus", then "eam quam" might refer to the case in which a person only has one
+<note cert="medium" subtype="§" type="emendation">The sense of the whole passage is obscure.
+	I cannot find an emendation for the (very hardly legible) words "sine una eum idem".
+	Also the punctuation sign after "idem" is very hardly recognizable, so the words "sine una eum idem"
+	might or might not belong to the sentence "ea quam Donatus...".
+	If, instead, "sine una eum idem" do not belong to that sentence, and the latter sentence starts
+	with "ea quam Donatus", then "ea" might refer to the case in which a person only has one
 	personal name. In this case, the whole sentence might mean that Donatus and most of the grammarians
 	call this unique name a "cognomen", while Priscian calls it a "nomen". A possible translation might
-	be: "That ('ea', scil. 'ea propriorum species') which Donatus and most (scil. grammarians) called
-	'cognomen', that is a denomination of a specific type, about which ('de qua', scil. 'de qua
-	propriorum species') also Priscian said that the 'nomen' is specific of any single individuall
+	be: "That (scil. 'kind of proper noun') which Donatus and most (scil. grammarians) called 'cognomen',
+	that is a denomination of a specific type, about which ('de qua', scil. 'de qua
+	propriorum species') also Priscian said that the 'nomen' is specific of any single individual
 	('uniuscuiusque'); (this 'propriorum species', i.e. the name of a person who has only one name)
 	cannot be a proper type of name ('non potest esse propria qualitas', lit. 'cannot be a
-	specific/proper type of name')". This translation, however, does not make much sense anyway, at
-	least if the main clause is "non potest esse propria qualitas", since the rest of the sentence
-	mentions names that seem to belong to the "propria qualitas". I consider this passage a "locus
-	disperatus".
-	
+	specific/proper type of name')". This translation, however, does not make much sense anyway: if a
+	person only has one name, how can this name not belong to the "propria qualitas"?
+	I consider this passage a "locus desperatus".
 </note>
 <pc n=".">ï</pc>
 	<pc n="space"> </pc>
@@ -7780,7 +7787,7 @@ a</w>
 <w ana="11B---O3---" lemma="futurus" n="futuris" xml:id="w6096">futuris</w>
 	<pc n="space"> </pc>
 <w ana="11B---J1---" lemma="infinitus" n="infiniti" xml:id="w6099">infiniti
-<note type="content">"From the future (tenses) of the infinite (mood). An emendation of "infiniti" to "infinitis" (modifyring "futuris") might be possible, but is not necessary.</note>
+<note type="content">"From the future (tenses) of the infinite (mood). An emendation of "infiniti" to "infinitis" (modifyring "futuris") might be possible, but is not necessary, if one interprets "infiniti" as genitive.</note>
 </w>
 <pc n=",">·</pc>
 	<pc n="space"> </pc>
@@ -7938,9 +7945,11 @@ nomina</w>
 	</choice>
 </w>
 <w ana="4-S--------" lemma="contra" n="contra" xml:id="w6243">contra</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w6246">ut</w>
 <w ana="11C---B1---" lemma="cicero" n="Cicero" xml:id="w6249">cicero</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A1---" lemma="qui" n="qui" xml:id="w6252">
 	<choice>
@@ -8086,8 +8095,10 @@ sistit</w>
 <w ana="11B---A1---" lemma="magnus" n="magnus" xml:id="w6384">magnus</w>
 <pc n=".">·</pc>
 	<pc n="space"> </pc>
-<w ana="11F---J3--1" lemma="hic" n="haec" xml:id="w6387"><hi rend="larger">h</hi>ec</w>
-<w ana="11F---A2H--" lemma="appellatiuaque" n="appellatiuaque" xml:id="w6390">appellatiuaque</w>
+<w ana="11F---A2--1" lemma="hic" n="haec" xml:id="w6387"><hi rend="larger">h</hi>ec</w>
+<w ana="11A---F2---" lemma="appellatiua" n="appellatiua" xml:id="w6390">appellatiua</w>
+<pc n="," />
+<w ana="11F---J3--1" lemma="qui" n="quae" xml:id="w6391">quæ</w>
 <lb break="no" n="2v.a.23" />
 <w ana="3-LJ1--9---" lemma="sumo" n="sumuntur" xml:id="w6393">sumuntur</w>
 	<pc n="space"> </pc>
@@ -8096,6 +8107,7 @@ sistit</w>
 	<pc n="space"> </pc>
 <w ana="11C---B1---" lemma="uel" n="uel" xml:id="w6402">uel</w>
 <w ana="11C---F2---" lemma="quantitas" n="quantitate" xml:id="w6405">quantitate</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---J3--1" lemma="qui" n="quae" xml:id="w6408">que</w>
 	<pc n="space"> </pc>
@@ -8197,26 +8209,26 @@ ptione</w>
 <w ana="11B---A1---" lemma="magnus" n="magnus" xml:id="w6504">magnus</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="homo" n="homo" xml:id="w6507">homo</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 
 <choice>
-<sic>
-<w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w6510">
-	<choice>
-		<abbr type="brevigraph">ŋ</abbr>
-		<expan>pro</expan>
-	</choice>
-priæ</w>
-</sic>
-<corr cert="high" type="proprie_e_caudatum">
-<w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w6511">
-	<choice>
-		<abbr type="brevigraph">ŋ</abbr>
-		<expan>pro</expan>
-	</choice>
-prie</w>
-	
-</corr>
+	<sic>
+		<w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w6510">
+			<choice>
+				<abbr type="brevigraph">ŋ</abbr>
+				<expan>pro</expan>
+			</choice>
+		priæ</w>
+	</sic>
+	<corr cert="high" type="proprie_e_caudatum">
+		<w ana="11B---G----" lemma="proprius" n="proprie" xml:id="w6511">
+			<choice>
+				<abbr type="brevigraph">ŋ</abbr>
+				<expan>pro</expan>
+			</choice>
+		prie</w>
+		
+	</corr>
 </choice>
 
 	<pc n="space"> </pc>
@@ -8237,6 +8249,8 @@ munia</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<note type="content">The main clause of this long sentence is "haec appellatiua (line 2v.a.23) ... proprie
+	communia sunt multorum".</note>
 <pc n=".">.</pc>
 	<pc n="space"> </pc>
 <w ana="11A---F2---" lemma="appellatiua" n="appellatiua" xml:id="w6522"><hi rend="larger">a</hi>ppellatiua</w>
@@ -8311,8 +8325,11 @@ munia</w>
 <w ana="11E---J2---" lemma="species" n="species" xml:id="w6570">species</w>
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w6573">sunt</w>
 	<pc n="space"> </pc>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.59.9" type="source" unit="Keil" />
 <w n="xxxiiii" type="numeral" xml:id="w6574">xxxiiii
-<note type="source">The source, Priscian, Ars grammatica, K 2.59.9, does not mention the number of the species, but simply writes: "Appellatiuorum multae sunt species".</note>
+<note type="source">In the ensuing list in Ursus, I count no less than 40 types (42 if we include "primitiuae" and "deriuatiuae").
+	The source, Priscian, Ars grammatica, K 2.59.9, does not mention the number of the species,
+	but simply writes: "Appellatiuorum multae sunt species".</note>
 </w>
 	<pc n="space"> </pc>
 <pc n=",">·</pc>
@@ -8381,16 +8398,46 @@ les</w>
 <note type="script">The word "sunt" and the first three graphemes of "incorporales" ("inc") are written in black ink, possibly over a correction. "Sunt" is written above the line.</note>
 <pc n=",">.</pc>
 	<pc n="space"> </pc>
-<w ana="11A---A2---" lemma="homonyma" n="homonyma" xml:id="w6621"><hi rend="larger">o</hi>monima</w>
-<w ana="11A---A2---" lemma="synonima" n="synonima" xml:id="w6624"><hi rend="larger">s</hi>ynonima
-<note type="script">The initial "s" is written with black ink.</note>
-</w>
+
+<choice>
+	<sic>
+		<w ana="11A---A2---" lemma="homonyma" n="homonyma" xml:id="w6621"><hi rend="larger">o</hi>monima</w>
+	</sic>
+	<corr cert="high" type="iy">
+		<w ana="11A---A2---" lemma="homonyma" n="homonyma" xml:id="w6622"><hi rend="larger">h</hi>omonyma</w>
+		<note cert="high" type="emendation">Two errors: missing initial "h" and "i"/"y" mistake.</note>
+	</corr>
+</choice>
+
+<pc n="," />
+
+<choice>
+	<sic>
+		<w ana="11B---J3--1" lemma="synonymus" n="synonyma" xml:id="w6624"><hi rend="larger">s</hi>ynonima</w>
+	</sic>
+	<corr cert="high" type="iy">
+		<w ana="11B---J3--1" lemma="synonymus" n="synonyma" xml:id="w6625"><hi rend="larger">s</hi>ynonyma</w>
+	</corr>
+</choice>
+
+<note type="script">The initial "s" in "synonima" (sic) is written with black ink.</note>
+
+<pc n="," />
 	<pc n="space"> </pc>
-<w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w6627">quæ</w>
+<w ana="11F---J3--1" lemma="qui" n="quae" xml:id="w6627">quæ</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w6630">et</w>
-<w ana="11A---A2---" lemma="polionima" n="polionima" xml:id="w6633">polionima</w>
+
+<choice>
+	<sic>
+		<w ana="11A---A2---" lemma="polyonyma" n="polyonyma" xml:id="w6633">polionima</w>
+	</sic>
+	<corr cert="high" type="iy">
+		<w ana="11A---A2---" lemma="polyonyma" n="polyonyma" xml:id="w6633">polyonyma</w>
+	</corr>
+</choice>
 <pc n=",">·</pc>
+
 	<pc n="space"> </pc>
 <w ana="11A---A2---" lemma="adiectiua" n="adiectiua" xml:id="w6636"><hi rend="larger">a</hi>diec
 <lb break="no" n="2v.a.33" />
@@ -8612,11 +8659,11 @@ uersa</w>
 <w ana="3-LQ1------" lemma="tango" n="tangi" xml:id="w6837">tangi</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="possum" n="potest" xml:id="w6840">potest</w>
-<pc n=".">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w6843">ut</w>
 <w ana="11C---A1---" lemma="homo" n="homo" xml:id="w6846">homo</w>
-<pc n="0">·</pc>
+<pc n=".">·</pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w6849">est</w>
 <lb break="no" n="2v.b.5" />
 <w ana="4-O--------" lemma="et" n="et" xml:id="w6852">et</w>
@@ -8627,6 +8674,7 @@ uersa</w>
 		<expan>pro</expan>
 	</choice>
 priis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w6861">ut</w>
 <w ana="11B---A1---" lemma="petrus" n="petrus" xml:id="w6864">petrus</w>
@@ -8652,6 +8700,7 @@ priis</w>
 <w ana="3-LQ1------" lemma="tango" n="tangi" xml:id="w6897">tangi</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="possum" n="potest" xml:id="w6900">potest</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w6903">quæ</w>
 	<pc n="space"> </pc>
@@ -8666,9 +8715,11 @@ priis</w>
 	</choice>
 <note type="graphic">This allograph of the "÷" grapheme (logograph for "est") has a comma-like sign below the horizonta line and a regular dot above that line.</note>
 </w>
+<pc n="," />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w6918">ut</w>
 <lb break="no" n="2v.b.7" />
 <w ana="11D---A1---" lemma="uirtus" n="uirtus" xml:id="w6921">uirtus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w6924">et</w>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w6927">in</w>
@@ -8680,10 +8731,21 @@ priis</w>
 priis</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w6933">ut</w>
+<pc n="," />
 <w ana="11A---A2---" lemma="pudicitia" n="pudicitia" xml:id="w6936">pudicitia</w>
 <pc n=".">|</pc>
 	<pc n="space"> </pc>
-<w ana="11A---A2---" lemma="homonyma" n="homonyma" xml:id="w6939"><hi rend="dropcap">o</hi>monima</w>
+
+<choice>
+	<sic>
+		<w ana="11A---A2---" lemma="homonyma" n="homonyma" xml:id="w6939"><hi rend="dropcap">o</hi>monima</w>
+	</sic>
+	<corr cert="high" type="iy">
+		<w ana="11A---A2---" lemma="homonyma" n="homonyma" xml:id="w6940"><hi rend="larger">h</hi>omonyma</w>
+		<note cert="high" type="emendation">Two errors: missing initial "h" and "i"/"y" mistake.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w6942">
 	<choice>
@@ -8725,7 +8787,7 @@ mia</w>
 lius</w>
 	<pc n="space"> </pc>
 <w ana="11B---B1---" lemma="filius" n="filii" xml:id="w6984">filii</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w6987">et</w>
 <w ana="11B---A1---" lemma="luxuriosus" n="luxuriosus" xml:id="w6990">luxuriosus</w>
 	<pc n="space"> </pc>
@@ -8840,7 +8902,17 @@ priis</w>
 <pc n=".">.</pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.60.28" type="source" unit="Keil" />
 <w ana="3-NA1--9---" lemma="sum" n="sunt" xml:id="w7113"><hi rend="larger">s</hi>unt</w>
-<w ana="11A---A2---" lemma="homonyma" n="homonyma" xml:id="w7116">omonima</w>
+
+<choice>
+	<sic>
+		<w ana="11A---A2---" lemma="homonyma" n="homonyma" xml:id="w7116">omonima</w>
+	</sic>
+	<corr cert="high" type="iy">
+		<w ana="11A---A2---" lemma="homonyma" n="homonyma" xml:id="w7117">homonyma</w>
+		<note cert="high" type="emendation">Two errors: missing initial "h" and "i"/"y" mistake.</note>
+	</corr>
+</choice>
+
 <w ana="11F---F2---" lemma="idem" n="eadem" xml:id="w7119">eadem</w>
 	<pc n="space"> </pc>
 <w ana="11A---F2---" lemma="proprius" n="propria" xml:id="w7122">
@@ -8852,6 +8924,7 @@ pria</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w7125">et</w>
 <w ana="11A---F2---" lemma="appellatiua" n="appellatiua" xml:id="w7128">appellatiua</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w7131">ut</w>
 <lb break="no" n="2v.b.14" />
@@ -8862,11 +8935,20 @@ pria</w>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w7140">et</w>
 <w ana="11B---A1---" lemma="magnus" n="magnus" xml:id="w7143">magnus</w>
 	<pc n="space"> </pc>
-<w ana="11C---A1---" lemma="ciuis" n="ciuis" xml:id="w7146">ciuis</w>
+<w ana="11B---K1---" lemma="ciuis" n="ciuis" xml:id="w7146">ciuis</w>
 <pc n=".">·</pc>
 	<pc n="space"> </pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.60.29" type="source" unit="Keil" />
-<w ana="11B---O2---" lemma="synonima" n="synonima" xml:id="w7149"><hi rend="dropcap">s</hi>ynonima</w>
+
+<choice>
+	<sic>
+		<w ana="11B---M3--1" lemma="synonymus" n="synonyma" xml:id="w7149"><hi rend="dropcap">s</hi>ynonima</w>
+	</sic>
+	<corr cert="high" type="iy">
+		<w ana="11B---M3--1" lemma="synonymus" n="synonyma" xml:id="w7150"><hi rend="dropcap">s</hi>ynonyma</w>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w ana="11C---D3---" lemma="uel" n="uel" xml:id="w7152">
 	<choice>
@@ -8875,6 +8957,7 @@ pria</w>
 	</choice>
 </w>
 	<pc n="space"> </pc>
+
 <choice>
 	<sic>
 		<w ana="11A---F2---" lemma="polyonyma" n="polyonyma" xml:id="w7155">polionima</w>
@@ -8884,12 +8967,25 @@ pria</w>
 		<note cert="high" type="emendation">Scribal error: "polionima" for "polyonyma".</note>
 	</corr>
 </choice>
+
 <lb break="no" n="2v.b.15" />
 <w ana="11E---A2---" lemma="species" n="species" xml:id="w7158">species</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w7161">est</w>
 	<pc n="space"> </pc>
-<w ana="11F---J3--1" lemma="qui" n="quae" xml:id="w7164">quæ</w>
+
+<choice>
+	<sic>
+		<w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w7164">quæ</w>
+	</sic>
+	<corr cert="high">
+		<w ana="4-S--------" lemma="in" n="in" xml:id="w7165">in</w>
+		<w ana="11F---F2-A-" lemma="qui" n="qua" xml:id="w7166">qua</w>
+		<note cert="high" type="emendation">The handwriting here is clear, but the syntax
+			does now work with "quae" as nominative here.</note>
+	</corr>
+</choice>
+
 <w ana="4-S--------" lemma="in" n="in" xml:id="w7167">in</w>
 <w ana="11B---O3---" lemma="plurimis" n="plurimis" xml:id="w7170">plurimis</w>
 	<pc n="space"> </pc>
@@ -8937,8 +9033,10 @@ nificant</w>
 <w ana="11C---G----" lemma="similis" n="similiter" xml:id="w7221">similiter</w>
 	<pc n="space"> </pc>
 <w ana="11B---O3--1" lemma="ensis" n="ensis" xml:id="w7224">ensis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---O3---" lemma="mucro" n="mucro" xml:id="w7227">mucro</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="12C---A3---" lemma="gladius" n="gladius" xml:id="w7230">gladius</w>
 <pc n=".">·</pc>
@@ -8953,6 +9051,7 @@ nificant</w>
 priis</w>
 	<pc n="space"> </pc>
 <w ana="3-NJ1--6---" lemma="facio" n="fit" xml:id="w7242">fit</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w7245">ut</w>
 
@@ -9013,6 +9112,7 @@ latur</w>
 <w ana="11C---B1---" lemma="uel" n="uel" xml:id="w7284">uel</w>
 	<pc n="space"> </pc>
 <w ana="11A---A2---" lemma="tetronyma" n="tetronyma" xml:id="w7287">tetronyma</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quod" n="quod" xml:id="w7290">
 	<choice>
@@ -9058,10 +9158,11 @@ nificans</w>
 <pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w ana="11C---D2---" lemma="laus" n="laudem" xml:id="w7329">laudem</w>
-<pc n="0">·</pc>
+<pc n=",">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w7332">ut</w>
 <w ana="11B---A1--1" lemma="iustus" n="iustus" xml:id="w7335">iustus</w>
+<pc n="," />
 <w ana="4-O--------" lemma="aut" n="aut" xml:id="w7338">aut</w>
 <w ana="11C---D2---" lemma="uituperationem" n="uituperationem" xml:id="w7341">uituperation
 	<choice>
@@ -9069,6 +9170,7 @@ nificans</w>
 		<expan>em</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w7344">ut</w>
 <w ana="11B---A1--2" lemma="iniustus" n="iniustus" xml:id="w7347">iniustus</w>
@@ -9087,6 +9189,7 @@ nificans</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quod" n="quod" xml:id="w7356">quod</w>
 <w ana="4-S--------" lemma="inter" n="inter" xml:id="w7359">inter</w>
@@ -9126,6 +9229,7 @@ nificans</w>
 <w ana="11B---A1---" lemma="magnus" n="magnus" xml:id="w7392">magnus</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="imperator" n="imperator" xml:id="w7395">imperator</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w7398">et</w>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w7401">in</w>
@@ -9232,6 +9336,7 @@ rinus</w>
 </w>
 </add>
 <w ana="3-JJ1--9---" lemma="comparo" n="comparantur" xml:id="w7497">conparantur</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quia" n="quia" xml:id="w7500">
 	<choice>
@@ -9331,6 +9436,7 @@ munia</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w7563">ut</w>
 <w ana="11C---A2---" lemma="prudens" n="prudens" xml:id="w7566">prudens</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---A2---" lemma="magnanimus" n="magnanimus" xml:id="w7569">magnanimus</w>
 <pc n=",">·</pc>
@@ -9356,8 +9462,10 @@ ris</w>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w7590">ut</w>
 <w ana="11B---A1---" lemma="albus" n="albus" xml:id="w7593">albus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---D3---" lemma="longus" n="longus" xml:id="w7596">longus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---D3---" lemma="uel" n="uel" xml:id="w7599">
 	<choice>
@@ -9377,6 +9485,7 @@ secus</w>
 		<expan>um</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w7611">ut</w>
 <w ana="11C---A2---" lemma="diues" n="diues" xml:id="w7614">diues</w>
@@ -9611,16 +9720,12 @@ modo</w>
 	<pc n="space"> </pc>
 <w ana="11C---G---1" lemma="aequalis" n="aequaliter" xml:id="w7803">æqualiter</w>
 	<pc n="space"> </pc>
-<unclear cert="high" reason="script">
 <w ana="11F---M3---" lemma="sui" n="se" xml:id="w7806">se</w>
-</unclear>
 	<pc n="space"> </pc>
 <w ana="2-KD11J3---" lemma="habeo" n="habentia" xml:id="w7809">habentia</w>
 	<pc n="space"> </pc>
-<unclear cert="high" reason="script">
 <w ana="3-NA1--9---" lemma="dico" n="dicunt" xml:id="w7812">dicunt</w>
-</unclear>
-<pc n=",">.</pc>
+<pc n=".">.</pc>
 	<pc n="space"> </pc>
 <w ana="11F---J2--1" lemma="qui" n="quae" xml:id="w7815">quæ</w>
 	<pc n="space"> </pc>
@@ -9700,13 +9805,14 @@ quod</w>
 <w ana="11C---A3---" lemma="nomen" n="nomen" xml:id="w7872">nomen</w>
 	<pc n="space"> </pc>
 <w ana="3-LA4--6---" lemma="accipio" n="accepit" xml:id="w7875">accepit</w>
-<pc n=",">·</pc>
+<pc n="0">·</pc>
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="sicut" n="sicut" xml:id="w7878">sicut</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="supra" n="supra" xml:id="w7881">supra</w>
 	<pc n="space"> </pc>
 <w ana="2-NM41M3---" lemma="dico" n="dicta" xml:id="w7884">dicta</w>
+<pc n="," />
 <lb break="no" n="3r.a.2" />
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w7887">ut</w>
 <w ana="2-KD11G----" lemma="dexter" n="dexter" xml:id="w7890">dexter</w>
@@ -9894,6 +10000,7 @@ uis</w>
 <w ana="3-NA1--6---" lemma="possum" n="potest" xml:id="w8043">potest</w>
 	<pc n="space"> </pc>
 <w ana="11B---A1--1" lemma="sinister" n="sinister" xml:id="w8046">sinister</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A1---" lemma="qui" n="qui" xml:id="w8049">
 	<choice>
@@ -9912,6 +10019,7 @@ uis</w>
 		<expan>con</expan>
 	</choice>
 trarius</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="3-KH1------" lemma="permanere" n="permanere" xml:id="w8061">per
 <lb break="no" n="3r.a.7" />
@@ -9920,6 +10028,17 @@ manere</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="quod" n="quod" xml:id="w8064">quod</w>
 	<pc n="space"> </pc>
+
+<choice>
+	<sic>
+	</sic>
+	<corr cert="high">
+		<w ana="4-S--------" lemma="in" n="in" xml:id="w8066">in</w>
+		<note cert="high" type="emendation">The manuscript has: "quod ad aliquid dicta (scil. species, subject) non fit".
+			With my correction "quod in ad aliquid dictā (scil. speciē) non fit", the subject is "quod".</note>
+	</corr>
+</choice>
+
 <w ana="4-S--------" lemma="ad" n="ad" xml:id="w8067">ad</w>
 <w ana="11F---D3---" lemma="aliquis" n="aliquid" xml:id="w8070">ali
 	<choice>
@@ -10070,6 +10189,7 @@ d</w>
 </choice>
 
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w8175">est</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A3---" lemma="qui" n="quod" xml:id="w8178">quod</w>
 	<pc n="space"> </pc>
@@ -10082,6 +10202,7 @@ d</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-NJ1--6---" lemma="dico" n="dicitur" xml:id="w8187">dicitur</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="per" n="per" xml:id="w8190">
 	<choice>
@@ -10107,6 +10228,7 @@ tus</w>
 <w ana="3-NB1--6---" lemma="sum" n="sit" xml:id="w8208">sit</w>
 	<pc n="space"> </pc>
 <w ana="11A---F2---" lemma="patrius" n="patria" xml:id="w8211">patria</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w8214">ut</w>
 <w ana="11B---A1---" lemma="italicus" n="Italicus" xml:id="w8217">italicus</w>
@@ -10158,6 +10280,7 @@ fertur</w>
 <w ana="1-G--------" lemma="quot" n="quot" xml:id="w8268">quot</w>
 <pc n=",">·</pc>
 <w ana="1-G--------" lemma="quotus" n="quotus" xml:id="w8271">quotus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <note type="graphic">Over the words "quis", "qualis", "quantus" and "quot" the scribe wrote a horizontal dash meaning their interrogative role in a sentence. Over "quotus" this sign has the shape of a French circumflex accent.</note>
 	<pc n="space"> </pc>
@@ -10296,9 +10419,11 @@ s</w>
 <w ana="11C---A1---" lemma="uel" n="uel" xml:id="w8394">uel</w>
 	<pc n="space"> </pc>
 <w ana="11C---B2---" lemma="qualitas" n="qualitatis" xml:id="w8397">qualitatis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w8400">ut</w>
 <w ana="11C---A2---" lemma="qualis" n="qualis" xml:id="w8403">qualis</w>
+<pc n="," />
 <lb break="no" n="3r.a.18" />
 <w ana="11C---A2---" lemma="talis" n="talis" xml:id="w8406">talis</w>
 <pc n=",">·</pc>
@@ -10310,6 +10435,7 @@ s</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="11C---B2---" lemma="quantitas" n="quantitatis" xml:id="w8412">quantitatis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w8415">ut</w>
 <w ana="11D---A1---" lemma="quantus" n="quantus" xml:id="w8418">quantus</w>
@@ -10324,6 +10450,7 @@ s</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="11B---B1---" lemma="numerus" n="numeri" xml:id="w8427">numeri</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w8430">ut</w>
 <w ana="1-G--------" lemma="quot" n="quot" xml:id="w8433">quot</w>
@@ -10437,6 +10564,7 @@ dinem</w>
 <pc n=",">·</pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w8523">ut</w>
 <w ana="11B---M1---" lemma="populus" n="populus" xml:id="w8526">populus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="plebs" n="plebs" xml:id="w8529">plebs</w>
 <pc n=".">·</pc>
@@ -10492,10 +10620,13 @@ dinem</w>
 		<expan>que</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A1---" lemma="alter" n="alter" xml:id="w8592">alter</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A1H--" lemma="uter" n="uter" xml:id="w8595">uter</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A1H--" lemma="quisque" n="quisque" xml:id="w8598">
 	<choice>
@@ -10508,12 +10639,14 @@ dinem</w>
 		<expan>que</expan>
 	</choice>
 </w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---B3---" lemma="singuli" n="singuli" xml:id="w8601">singuli</w>
 <pc n=",">·</pc>
 <w ana="11B---B3--1" lemma="bini" n="bini" xml:id="w8604">bi
 <lb break="no" n="3r.a.25" />
 ni</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---B3---" lemma="terni" n="terni" xml:id="w8607">terni</w>
 <pc n=",">·</pc>
@@ -10559,6 +10692,7 @@ prietate</w>
 <w ana="2-NM41A2---" lemma="facio" n="facta" xml:id="w8640">facta</w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="sum" n="est" xml:id="w8643">est</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w8646">ut</w>
 <w ana="11B---A3---" lemma="tintinnabulum" n="tintinnabulum" xml:id="w8649">tintinnabul
@@ -10630,6 +10764,7 @@ prietate</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-NA1--6---" lemma="possum" n="potest" xml:id="w8697">potest</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w8700">ut</w>
 <w ana="11B---A1---" lemma="angelus" n="angelus" xml:id="w8703">angelus
@@ -10736,9 +10871,10 @@ d</w>
 <w ana="11C---A3---" lemma="animal" n="animal" xml:id="w8835"><hi rend="larger">a</hi>nimal</w>
 	<pc n="space"> </pc>
 <w ana="4-S--------" lemma="de" n="de" xml:id="w8838">de</w>
-<unclear cert="medium" reason="faded">
+<unclear cert="high" reason="faded">
 <w ana="11B---G----" lemma="boue" n="boue" xml:id="w8841">boue</w>
 </unclear>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---F1---" lemma="equus" n="equo" xml:id="w8844">e
 	<choice>
@@ -10749,7 +10885,7 @@ o</w>
 <lb break="no" n="3r.a.33" />
 <w ana="4-O--------" lemma="et" n="et" xml:id="w8847">et</w>
 	<pc n="space"> </pc>
-<unclear cert="medium" reason="faded">
+<unclear cert="high" reason="faded">
 <w ana="11C---F1---" lemma="pecude" n="pecude" xml:id="w8850">pecude</w>
 </unclear>
 	<pc n="space"> </pc>
@@ -10833,9 +10969,7 @@ citur</w>
 	<pc n="space"> </pc>
 <w ana="11C---L1---" lemma="similis" n="similibus" xml:id="w8916">similibus</w>
 	<pc n="space"> </pc>
-<unclear cert="low" reason="faded">
 <w ana="11C---A2---" lemma="facturis" n="facturis" xml:id="w8919">facturis</w>
-</unclear>
 <w ana="11C---B2---" lemma="generalis" n="generalis" xml:id="w8922">generalis</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
@@ -10867,6 +11001,7 @@ citur</w>
 <w ana="4-O-------1" lemma="ut" n="ut" xml:id="w8946">ut</w>
 	<pc n="space"> </pc>
 <w ana="11C---A1---" lemma="homo" n="homo" xml:id="w8949">homo</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11B---A1---" lemma="equus" n="equus" xml:id="w8952">equus</w>
 <pc n=".">·</pc>
@@ -10916,6 +11051,7 @@ citur</w>
 <w ana="3-LK1--9---" lemma="uocantur" n="uocantur" xml:id="w8976">uocantur</w>
 	<pc n="space"> </pc>
 <w ana="11C---F3H--" lemma="nomen" n="nomine" xml:id="w8979">nomine</w>
+<pc n="," />
 <lb break="no" n="3r.a.38" />
 <unclear cert="medium" reason="faded">
 <w ana="4-O--------" lemma="nam" n="nam" xml:id="w8982">n
@@ -10925,9 +11061,12 @@ citur</w>
 	</choice>
 </w>
 </unclear>
-<w ana="11F---B3---" lemma="alter" n="alterius" xml:id="w8985">alterius</w>
+<w ana="11F---B2---" lemma="alter" n="alterius" xml:id="w8985">alterius</w>
 	<pc n="space"> </pc>
 <gap quantity="3" reason="illegible" unit="words" />
+<unclear cert="low" reason="faded">
+<w ana="11A---B2--1" lemma="facturae" n="facturae" xml:id="w8987">facturæ</w>
+</unclear>
 <w ana="11C---A3---" lemma="nomen" n="nomen" xml:id="w8988">nomen</w>
 	<pc n="space"> </pc>
 <unclear cert="medium" reason="faded">
@@ -10947,6 +11086,7 @@ citur</w>
 
 <w ana="4-O-------1" lemma="sicut" n="sicut" xml:id="w8997">sicut</w>
 <w ana="11C---A2---" lemma="generalis" n="generalis" xml:id="w9000">generalis</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w9003">quæ</w>
 	<pc n="space"> </pc>
@@ -11162,10 +11302,13 @@ a</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="11F---A1---" lemma="unus" n="unus" xml:id="w9231">unus</w>
+<pc n="," />
 	<pc n="space"> </pc>
 <w ana="11F---M3---" lemma="duo" n="duo" xml:id="w9234">duo</w>
 	<pc n="space"> </pc>
-<w ana="3-NJ1--6---" lemma="dico" n="dicitur" xml:id="w9237">dicitur</w>
+<w ana="3-NJ1--6---" lemma="dico" n="dicitur" xml:id="w9237">dicitur
+<note subtype="noEmendation" type="emendation">I think that an emendation to "dicuntur" is not necessary</note>
+</w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="et" n="et" xml:id="w9240">et</w>
 <w ana="11C---B1---" lemma="ordo" n="ordinis" xml:id="w9243">ordinis</w>
@@ -11228,7 +11371,7 @@ a</w>
 	<corr cert="high">
 		<w ana="11C---B3---" lemma="genus" n="generis" xml:id="w9295">ge
 		<lb break="no" n="3r.b.11" />
-			neri
+			neris
 		</w>
 		<note cert="high" type="emendation">Scribal error: dative "generi" for genitive "generis".</note>
 	</corr>
@@ -16010,9 +16153,20 @@ ferunt</w>
 <w ana="4-S--------" lemma="in" n="in" xml:id="w13755">in</w>
 <w ana="11F---O3--1" lemma="hic" n="his" xml:id="w13758">his</w>
 	<pc n="space"> </pc>
-<w ana="11B---O3---" lemma="patronimicis" n="patronimicis" xml:id="w13761">pa
-<lb break="no" n="4v.a.8" />
-tronimicis</w>
+
+<choice>
+	<sic>
+		<w ana="11B---O3---" lemma="patronymicis" n="patronymicis" xml:id="w13761">pa
+		<lb break="no" n="4v.a.8" />
+		tronimicis</w>
+	</sic>
+	<corr cert="high" type="iy">
+		<w ana="3-JA5--6--2" lemma="patronymicis" n="patronymicis" xml:id="w13762">pa
+		<lb break="no" n="4v.a.8" />
+		tronymicis</w>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w ana="11A---J1---" lemma="poeta" n="poetae" xml:id="w13764">poetæ</w>
 	<pc n="space"> </pc>
@@ -16468,7 +16622,16 @@ tur</w>
 <lb break="no" n="4v.a.24" />
 <w ana="3-LA1--6---" lemma="desinentia" n="desinentia" xml:id="w14181">desinentia</w>
 	<pc n="space"> </pc>
-<w ana="11C---D1---" lemma="patronymica" n="patronymica" xml:id="w14184">patronimica</w>
+
+<choice>
+	<sic>
+		<w ana="11C---D1---" lemma="patronymica" n="patronymica" xml:id="w14184">patronimica</w>
+	</sic>
+	<corr cert="high" type="iy">
+		<w ana="11C---D1---" lemma="patronymica" n="patronymica" xml:id="w14185">patronymica</w>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w ana="11F---J3--1" lemma="qui" n="quae" xml:id="w14187">quæ</w>
 	<pc n="space"> </pc>
@@ -16896,6 +17059,8 @@ tinent</w>
 </ref>
 
 <ref cRef="unknown" type="source">
+
+
 <w ana="11F---F3---" lemma="is" n="eo" xml:id="w14586">eo</w>
 <w ana="4-O--------" lemma="quod" n="quod" xml:id="w14589">quod</w>
 	<pc n="space"> </pc>
@@ -16919,30 +17084,67 @@ tinent</w>
 	<pc n="space"> </pc>
 <w ana="3-NA2--9---" lemma="dico" n="dicebant" xml:id="w14613">dicebant</w>
 	<pc n="space"> </pc>
-<w ana="11F---M1---" lemma="qui" n="quos" xml:id="w14616">quos</w>
-	<pc n="space"> </pc>
-<w ana="4-O-------1" lemma="iam" n="iam" xml:id="w14619">iam</w>
-	<pc n="space"> </pc>
-<w ana="11C---J1---" lemma="homo" n="homines" xml:id="w14622">homines</w>
-	<pc n="space"> </pc>
+
+<choice>
+	<sic>
+		<w ana="11F---M1---" lemma="qui" n="quos" xml:id="w14616">quos</w>
+			<pc n="space"> </pc>
+		<w ana="4-O-------1" lemma="iam" n="iam" xml:id="w14617">iam</w>
+			<pc n="space"> </pc>
+		<w ana="11C---J1---" lemma="homo" n="homines" xml:id="w14618">homines</w>
+			<pc n="space"> </pc>
+	</sic>
+	<corr cert="medium">
+		<w ana="11F---K3---" lemma="is" n="eorum" xml:id="w14620">eorum</w>
+			<pc n="space"> </pc>
+		<w ana="4-O-------1" lemma="iam" n="iam" xml:id="w14622">iam</w>
+			<pc n="space"> </pc>
+		<w ana="11C---K1---" lemma="homo" n="hominum" xml:id="w14624">hominum</w>
+			<pc n="space"> </pc>
+		<note cert="medium" type="emendation">"(Patronymicam speciem) eorum hominum":
+			"a patronymic kind of nouns of men (regarding men) who (scil. had)
+			an actual origin ('quibus ipsa derivatio') from the gods ('a dis')".
+			See the next textual note for a possible translation of the whole
+			emended sentence.</note>
+	</corr>
+</choice>
+
+
+
 <w ana="11F---O2---" lemma="qui" n="quibus" xml:id="w14625">quibus</w>
 	<pc n="space"> </pc>
 <w ana="11F---A2---" lemma="ipse" n="ipsa" xml:id="w14628">ipsa</w>
 	<pc n="space"> </pc>
-<unclear cert="medium" reason="faded">
 <w ana="4-S-------1" lemma="a" n="a" xml:id="w14631">a</w>
-</unclear>
-<unclear cert="medium" reason="faded">
-<w ana="11C---O3---" lemma="dis" n="dis" xml:id="w14634">dis</w>
-</unclear>
+<w ana="11C---F3---" lemma="dis" n="dis" xml:id="w14634">dis</w>
 	<pc n="space"> </pc>
-<w ana="2-JM41J2---" lemma="deriuatio" n="deriuatio" xml:id="w14637">deriuatio</w>
+<w ana="11C---A2---" lemma="deriuatio" n="deriuatio" xml:id="w14637">deriuatio</w>
 	<pc n="space"> </pc>
-<w ana="3-JA5--6--2" lemma="patronymica" n="patronymica" xml:id="w14640">pa
-<lb break="no" n="4v.b.3" />
-tronymica</w>
-<w ana="11E---M2---" lemma="species" n="species" xml:id="w14643">species</w>
-	<pc n="space"> </pc>
+
+<choice>
+	<sic>
+		<w ana="11A---A2---" lemma="patronymica" n="patronymica" xml:id="w14639">pa
+		<lb break="no" n="4v.b.3" />
+		tronymica</w>
+		<w ana="11E---A2---" lemma="species" n="species" xml:id="w14641">species</w>
+			<pc n="space"> </pc>
+	</sic>
+	<corr cert="medium">
+		<w ana="11C---D1---" lemma="patronymicam" n="patronymicam" xml:id="w14643">pa
+		<lb break="no" n="4v.b.3" />
+		tronymicam</w>
+		<w ana="11E---D2---" lemma="species" n="speciem" xml:id="w14645">speciem</w>
+			<pc n="space"> </pc>
+		<note cert="medium" type="emendation">With my emendation, "patronyicam speciem" is the
+			subject of the infinitive clause. This is my interpretation of this passage:
+			"...because they (the 'gentiles') thought that there were many gods,
+			and said that from their descent ('ex eorum genere', from the descent of the gods)
+			there could be a patronymic kind of nouns ('dicebant... patronymicam speciem esse posse')
+			of those men ('eorum iam hominum') who (scil. had) that origin
+			('quibus - scil. erat - ipsa derivatio') from the gods ('a dis')".</note>
+	</corr>
+</choice>
+
 <w ana="3-NH1------" lemma="sum" n="esse" xml:id="w14646">
 	<choice>
 		<abbr type="superscription">ee<am>¯</am></abbr>
@@ -16951,11 +17153,10 @@ tronymica</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="3-NH1------" lemma="possum" n="posse" xml:id="w14649">posse</w>
-<note subtype="§" type="emendation" xml:id="note-4.v.b.2">The syntax of this sentence is inconsistent,
-	though the sense is clear. An emendation might be possible.</note>
+
+
 <pc n=".">.</pc>
 <w ana="11A---A2---" lemma="possessiua" n="possessiua" xml:id="w14652"><hi rend="larger">p</hi>ossessiua</w>
-<note type="source">I did not check whether the sentence ("possessiua quae et thetica dicitur...") has a source.</note>
 	<pc n="space"> </pc>
 <w ana="11F---A2--1" lemma="qui" n="quae" xml:id="w14655">quæ</w>
 	<pc n="space"> </pc>
@@ -28465,10 +28666,11 @@ sa</w>
 		<w ana="4-O--------" lemma="non" n="non" xml:id="w25245">non</w>
 	</sic>
 	<corr cert="high">
-		<note cert="high" type="emendation">Lewis-Short, lemma "prohibeo" includes objective clauses such as
-			"non posse" among the possible contructions of the verb: "with ut, ne, quominus, or an obj.-clause".
-			The real problem lies in the two negations ("prohibeo" and "non"), that notoriously affirm.
-			 I am therefore expunging "non" to make the sense clearer.
+		<note cert="high" type="emendation">Lemma "prohibeo" in the Lewis-Short dictionary includes
+			objective clauses such as "non posse" among the possible contructions of the verb:
+			"with ut, ne, quominus, or an obj.-clause".
+			The real problem lies in the double negative ("prohibeo" and "non"), that notoriously affirms.
+			I am therefore expunging "non" to make the sense clearer.
 			(Lewis-Short: A Latin Dictionary. Founded on Andrews' edition of Freund's Latin dictionary.
 			Revised, enlarged, and in great part rewritten by. Charlton T. Lewis, Ph.D. and. Charles Short,
 			LL.D. Oxford. Clarendon Press. 1879, retrieved from
@@ -43615,8 +43817,8 @@ pta</w>
 	</sic>
 	<corr cert="high">
 		<w ana="11B---O3---" lemma="caeritis" n="Caeritis" xml:id="w38587">ceritis</w>
-		<note cert="high" subtype="§" type="emendation">The sense requires
-			the graphemes "ceritis" (alphabemes "ceritis", linguistic word "Caeritis"),
+		<note cert="high" type="emendation">The sense requires
+			the graphemes "ceritis" (alphabemes "ceritis", linguistic word "Caeritis" in classical Latin),
 			as this is an example of a word with a short penultimate "i" (not "e"). Also see the source,
 			Priscian, Ars grammatica, K 2.134.5-7: "inuenitur tamen et correptam i habens paenultimam
 			apud eundem Uirgilium: Est ingens gelidum lucus prope Caerĭtis amnem".</note>
