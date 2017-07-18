@@ -740,7 +740,7 @@ Markup not referring to a specific layer
 		- "emendation" (a note proposing an emendation of the text clearly readable in the manuscript);
 	- `<note @type="emendation">` may have or not have attribute `@subtype`. Possible values of `@subtype` are:
 		- `@subtype="noEmendation"`: the note discusses possible emendations, that I have decided not to adopt
-		- `@subtype="§"`: I still have to make a final decision as to how to emend the passage
+		- `@subtype="crux"`: crux desperationis (I did not find a satisfactory emendation)
 	- To sum up, in order to facilitate the processing of these elements, I am making sure that `<note>`
 		elements are only
 		- children of `<ref>` (notes to an entire phrase, sentence or section), or
