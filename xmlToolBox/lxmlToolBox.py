@@ -94,9 +94,7 @@ print('\n\n###########\n# SUMMARY #\n###########\n\n')
 
 print(str(c) + ' notes on general matters\n' \
         + str(d) + ' notes with a <correction> type\n' \
-        + str(cc) + ' cruces desperationis')
-
-print('\n\n\n')
+        + str(cc) + ' cruces desperationis\n')
 
 """
 # Parse the tree of the ALIM2 template: it will be the base for the output tree
