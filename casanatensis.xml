@@ -49,10 +49,12 @@
 	    </editorialDecl>
     </encodingDesc>
     <revisionDesc>
-	<change subtype="critical" type="agenda">Find '§' (XML comments with § mark required checks).</change>
 	<change subtype="critical" type="agenda">Make a decision about note[@subtype="§"]</change>
 	<change subtype="critical" type="agenda">Talk to GDM about note[@cert="medium"], corr[@cert="medium"] and
 		corr[@type="ub"] (and other types of 'corr')</change>
+	<change subtype="critical" type="agenda">Delete @subtype="crux" from the note after w15894.</change>
+	<change subtype="critical" type="agenda">Find anchor @type="codexR" for places which give us hints as
+		what famlily of MSS of Priscian is closer to Ursus' text.</change>
 	<change subtype="critical" type="agenda">Some 'lb' are children of 'choice/sic' and 'choice/corr': check how
 		js and python manage this.</change>
 	<change subtype="critical" type="agenda">Use 'surplus' for expunction instead of sic/corr?</change>
@@ -6887,9 +6889,9 @@ dens</w>
 <w n="primus" xml:id="w5331">primus</w>
 	<pc n="space"> </pc>
 <w n="fuisset" xml:id="w5334">fuisset
-<note cert="medium" type="emendation" subtype="§">One or more words of this sentence are illegible,
-	so the specific syntax of the sentence is unclear.</note>
 </w>
+<note cert="medium" type="emendation" subtype="crux">One or more words of this sentence are illegible,
+	so the specific syntax of the sentence is unclear.</note>
 	<pc n="space"> </pc>
 <w n="qui" xml:id="w5337">
 	<choice>
@@ -7462,7 +7464,7 @@ priæ</w>
 pria</w>
 	<pc n="space"> </pc>
 <w n="qualitas" xml:id="w5826">qualitas</w>
-<note cert="medium" type="emendation" subtype="§">The sense of the whole passage is obscure.
+<note cert="medium" type="emendation" subtype="crux">The sense of the whole passage is obscure.
 	I cannot find an emendation for the (very hardly legible) words "sine una eum idem".
 	Also the punctuation sign after "idem" is very hardly recognizable, so the words "sine una eum idem"
 	might or might not belong to the sentence "ea quam Donatus...".
@@ -15613,6 +15615,7 @@ a</w>
 <w n="genetiuus" xml:id="w13329">genitiuus</w>
 <pc n="quote">·</pc>
 
+<anchor type="codexR"/>
 <choice>
 	<sic>
 		<w n="ος" type="alphabemes" xml:id="w13332" xml:lang="grc">os</w>
@@ -18471,8 +18474,33 @@ mo</w>
 	a</w>
 <pc n="space"> </pc>
 <w n="illi" xml:id="w15882">illi</w>
+<milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.71.11" type="source" unit="Keil"/>
 <pc n="space"> </pc>
-<w n="ᾔδην" type="foreign" xml:id="w15885" xml:lang="grc">edein</w>
+
+<anchor type="codexR"/>
+<choice>
+	<sic>
+		<w n="ᾔδην" type="foreign" xml:id="w15885" xml:lang="grc">edein</w>
+	</sic>
+	<corr cert="medium">
+		<w n="ᾔδην" type="foreign" xml:id="w15886" xml:lang="grc">eiden</w>
+		<note cert="medium" type="emendation">The source here is Priscianus, Ars grammatica K 2.71.11.
+			Keil's apparatus note reports:
+			"11 ᾔδην scripsi, cf. Eustath. ad Hom. Od. XIII 220 Sturzium de dial. Gr. p. 64 C.".
+			and mentions the following readings in Priscian's manuscripts for this word:
+			"ΗΔΗΝ H ΗΔ.ΙΝ Rr ΗΔΕ*Ν*(Ι) D ΗΔΕΝ K eden GL".
+			The scribe undoubtedly wrote "edein pro eidein", a reading that comes from the manuscript(s)
+			of Priscian that he could read. 
+			I am "correcting" the text only to make it match with what we know about the the ancient Greek
+			and Ionian morphology. I remain unsure as to whether this correction is methodologically appropriate.
+			<!-- §§§ -->
+			Note that the text written by the scribe is closer to that of codex R (and its second hand r) that
+			to that of codex L.
+			(see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
+		</note>
+	</corr>
+</choice>
+
 <pc n="quote">·</pc>
 <w n="pro" xml:id="w15888">
 	<choice>
@@ -18480,10 +18508,16 @@ mo</w>
 		<expan>pro</expan>
 	</choice>
 </w>
+<anchor type="codexR"/>
 <w n="ᾔδειν" type="foreign" xml:id="w15891" xml:lang="grc">eidein</w>
+<note cert="medium" type="emendation" subtype="crux">
+	Kei'ls apparatus to Priscianus, Ars grammatica K 2.71.11 has:
+	"ᾔδειν scripsi ΕΙΔΕΙΝ R eid*n (i) D eiden HGLK".
+	The text written by the scribe is the same of codex R. It is different from that of codex L, which
+	often was closer to Ursus' text.
+	(see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
 <pc n="quote">·</pc>
 <w n="dicunt" xml:id="w15894">dicunt</w>
-<note type="emendation" subtype="§">The Greek words I encoded at the Linguistic Layer (ᾔδην and ᾔδειν) are Keil's corrections. The original text of the Casanatensis is the one encoded at the Graphematic and Alphabetic Layers. The manuscripts of Priscianus (the source here is Priscianus K 2.71.11), as reported in Keil's apparatus criticus, often have the same (transliterated) readings as the Casanatensis.  This is a fairly serious textual critical problem. Keil's apparatus note to ᾔδην has: "11 ᾔδην scripsi, cf. Eustath. ad Hom. Od. XIII 220 Sturzium de dial. Gr. p. 64 C.". As to the readings found in the manuscripts, the apparatus has: "ΗΔΗΝ H ΗΔ.ΙΝ Rr ΗΔΕ*Ν*(Ι) D ΗΔΕΝ K eden GL". For ᾔδειν, Keil's apparatus has: "ᾔδειν scripsi ΕΙΔΕΙΝ R eid*n (i) D eiden HGLK" (see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
 <pc n=","/>
 <w n="πλῆον" type="foreign" xml:id="w15897" xml:lang="grc">plion</w>
 <pc n="space"> </pc>
@@ -18495,7 +18529,14 @@ mo</w>
 </w>
 <pc n="space"> </pc>
 <w n="πλεῖον" type="foreign" xml:id="w15903" xml:lang="grc">pleion</w>
-<note type="emendation" subtype="§">The Greek words I encoded at the Linguistic Layer (πλῆον and πλεῖον) are Keil's corrections. The original text of the Casanatensis is that encoded at the Graphematic and Alphabetic Layers.  The manuscripts of Priscianus (the source here is Priscianus K 2.71.11), as reported in Keil's apparatus criticus, never have "plion", but do have "pleion". This is another fairly serious textual critical problem.  This is Keil's apparatus note for πλῆον: "ΠΑΗΩΝ Rr ΠΑΗΟΝ D ΠΕΛΗΟΝ d ΠΗΛΗΩΝ GL ΠΛΗΟΝ H ΠΛΕΟΝ K". This is his note for πλεῖον: "ΠΛΕΙΟΝ ex ΠΛΕΙΙΟΝ corr. in lit. r peλeion ex ΠΕΑΑΕΙΟΝ ni f. corr. d ΠΗΛΕΙΩΝ L peleion K peion H".</note>
+<note cert="medium" type="emendation" subtype="crux">The Greek words I encoded at the Linguistic Layer (πλῆον and πλεῖον)
+	are Keil's corrections. The original text of the Casanatensis is that encoded at the Graphematic
+	and Alphabetic Layers.  The manuscripts of Priscianus (the source here is Priscianus K 2.71.11),
+	as reported in Keil's apparatus criticus, never have "plion", but do have "pleion".
+	This is another fairly serious textual critical problem.
+	This is Keil's apparatus note for πλῆον: "ΠΑΗΩΝ Rr ΠΑΗΟΝ D ΠΕΛΗΟΝ d ΠΗΛΗΩΝ GL ΠΛΗΟΝ H ΠΛΕΟΝ K".
+	This is his note for πλεῖον:
+	"ΠΛΕΙΟΝ ex ΠΛΕΙΙΟΝ corr. in lit. r peλeion ex ΠΕΑΑΕΙΟΝ ni f. corr. d ΠΗΛΕΙΩΝ L peleion K peion H".</note>
 <note type="script">The last part of the line is blank (for about the lenght of a word).</note>
 <pc n=".">,</pc>
 <lb n="5r.a.11" break="no"/>
@@ -36756,6 +36797,7 @@ tecedente</w>
 <w n="c" type="alphabemes" xml:id="w32274">c</w>
 <pc n=",">·</pc>
 
+<anchor type="codexR"/>
 <choice>
 	<sic>
 		<w n="quodcumque" xml:id="w32277">quodc
@@ -44443,6 +44485,7 @@ nationis</w>
 <pc n=",">·</pc>
 <milestone n="urn:cts:latinLit:stoa0234a.stoa001:2.136.3" type="source" unit="Keil"/>
 
+<anchor type="codexR"/>
 <choice>
 	<sic>
 		<w n="chartina" xml:id="w39117">carthi
