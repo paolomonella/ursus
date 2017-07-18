@@ -26,25 +26,34 @@ ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
 # Parse the tree of casanatensis.xml
 tree = etree.parse('../casanatensis.xml')
 
+# Corr with cert=medium
+
+print('\n################################\n# CORRECTIONS WITH CERT=MEDIUM #\n################################\n\n')
+
 L = []
 c = 0
 d = 0
-#for x in tree.findall('.//' + n + 'note[@type="emendation"]'):
 for x in tree.findall('.//' + n + 'corr'):
     if x.get('cert') == 'medium':
         choice = x.getparent()
         sic = choice.find(n + 'sic')
-        sicw = sic.find(n + 'w')        # 'wrong' word
-        sicwtxt = sicw.xpath('normalize-space()').encode('utf8')
+
+        if sic.find(n + 'w') is not None:
+            sicw = sic.find(n + 'w')        # 'wrong' word
+            sicwtxt = sicw.xpath('normalize-space()').encode('utf8')
+        else:
+            sicwtxt = ''
+
         if x.find(n + 'w') is not None:
             corrw = x.find(n + 'w')         # 'right' word
             corrwid = corrw.get(xml + 'id')
-            print(corrwid, end = ':\t')
+            print(corrwid, end = '\t')
             corrwtxt = corrw.xpath('normalize-space()').encode('utf8')
             #wtxt = corrw.text.strip()
         else:
             corrwtxt = ''
-        print('"' + sicwtxt + '" → "' + corrwtxt + '"')
+
+        print('"' + str(sicwtxt) + '" → "' + str(corrwtxt) + '"')
         #print(x.get('subtype'))
         if x.find(n + 'note') is not None:
             y = x.find(n + 'note')
@@ -57,7 +66,37 @@ for x in tree.findall('.//' + n + 'corr'):
         print()
 for l in set(L):
     print(l)
-print(str(c) + ' notes on general matters\n' + str(d) + ' notes with a "correction" type')
+
+
+
+
+
+# Notes with subtype='crux'
+
+print('\n\n#############################\n# NOTES WITH SUBTYPE="CRUX" #\n#############################\n\n')
+
+cc = 0
+for x in tree.findall('.//' + n + 'note'):
+    if x.get('type') == 'emendation' and x.get('subtype') == 'crux':
+        prevWord = x.getprevious()      # The previous word
+        print('\n' + prevWord.get(xml + 'id') + '\t"' + prevWord.xpath(".//text()")[0].strip() + '"')
+        print(x.text.encode('utf-8'))
+        cc = cc + 1
+
+
+
+
+
+
+# Summary
+
+print('\n\n###########\n# SUMMARY #\n###########\n\n')
+
+print(str(c) + ' notes on general matters\n' \
+        + str(d) + ' notes with a <correction> type\n' \
+        + str(cc) + ' cruces desperationis')
+
+print('\n\n\n')
 
 """
 # Parse the tree of the ALIM2 template: it will be the base for the output tree
