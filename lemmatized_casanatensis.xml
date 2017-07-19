@@ -18466,27 +18466,22 @@ mo</w>
 <pc n="space"> </pc>
 
 <anchor type="codexR" />
-<choice>
-	<sic>
-		<w n="ᾔδην" type="foreign" xml:id="w15885" xml:lang="grc">edein</w>
-	</sic>
-	<corr cert="medium">
-		<w n="ᾔδην" type="foreign" xml:id="w15886" xml:lang="grc">eiden</w>
-		<note cert="medium" type="emendation">The source here is Priscianus, Ars grammatica K 2.71.11.
-			Keil's apparatus note reports:
-			"11 ᾔδην scripsi, cf. Eustath. ad Hom. Od. XIII 220 Sturzium de dial. Gr. p. 64 C.".
-			and mentions the following readings in Priscian's manuscripts for this word:
-			"ΗΔΗΝ H ΗΔ.ΙΝ Rr ΗΔΕ*Ν*(Ι) D ΗΔΕΝ K eden GL".
-			The scribe undoubtedly wrote "edein pro eidein", a reading that comes from the manuscript(s)
-			of Priscian that he could read. 
-			I am "correcting" the text only to make it match with what we know about the the ancient Greek
-			and Ionian morphology. I remain unsure as to whether this correction is methodologically appropriate.
-			
-			Note that the text written by the scribe is closer to that of codex R (and its second hand r) that
-			to that of codex L.
-			(see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
-	</corr>
-</choice>
+<w n="ἤδειν" type="foreign" xml:id="w15885" xml:lang="grc">edein</w>
+<note cert="medium" subtype="crux" type="emendation">
+	The source here is Priscianus, Ars grammatica K 2.71.11.
+	Keil prints: "ᾔδην pro ᾔδειν".
+	Kei'ls apparatus to the second word (ᾔδην) has:
+	"11 ᾔδην scripsi, cf. Eustath. ad Hom. Od. XXIII 220 Sturzium de dial. Gr. p. 64 C.".
+	and mentions the following readings in Priscian's manuscripts for this word:
+	"ΗΔΗΝ H ΗΔ.ΙΝ Rr ΗΔΕ*Ν*(Ι) D ΗΔΕΝ K eden GL".
+	The scribe undoubtedly wrote "edein pro eidein", a reading that comes from the manuscript(s)
+	of Priscian that he could read. 
+	I am "correcting" the text only to make it match with what we know about the the ancient Greek
+	and Ionian morphology. I remain unsure as to whether this correction is methodologically appropriate.
+	
+	Note that the text written by the scribe is closer to that of codex R (and its second hand r) that
+	to that of codex L.
+	(see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
 
 <pc n="quote">·</pc>
 <w ana="4-S--------" lemma="pro" n="pro" xml:id="w15888">
@@ -18496,17 +18491,26 @@ mo</w>
 	</choice>
 </w>
 <anchor type="codexR" />
-<w n="ᾔδειν" type="foreign" xml:id="w15891" xml:lang="grc">eidein</w>
+<w n="εἴδειν" type="foreign" xml:id="w15891" xml:lang="grc">eidein</w>
 <note cert="medium" subtype="crux" type="emendation">
-	Kei'ls apparatus to Priscianus, Ars grammatica K 2.71.11 has:
+	The source here is Priscianus, Ars grammatica K 2.71.11.
+	Keil prints: "ᾔδην pro ᾔδειν".
+	Kei'ls apparatus to the second word (ᾔδειν) has:
 	"ᾔδειν scripsi ΕΙΔΕΙΝ R eid*n (i) D eiden HGLK".
 	The text written by the scribe is the same of codex R. It is different from that of codex L, which
-	often was closer to Ursus' text.
+	on other occasions was closer to Ursus' text.
 	(see http://www.unipa.it/paolo.monella/ursus/sigla.pdf for Keil's sigla codicum).</note>
 <pc n="quote">·</pc>
 <w ana="3-NA1--9---" lemma="dico" n="dicunt" xml:id="w15894">dicunt</w>
 <pc n="," />
-<w n="πλῆον" type="foreign" xml:id="w15897" xml:lang="grc">plion</w>
+<anchor type="codexR" />
+
+<w n="πλῆων" type="foreign" xml:id="w15897" xml:lang="grc">plion</w>
+<note cert="medium" subtype="crux" type="emendation">
+	The source here is Priscianus K 2.71.11. Keil publishes: "πλῆον pro πλεῖον".
+	This is Keil's apparatus note for his πλῆον (the first form):
+	"ΠΛΗΩΝ Rr ΠΑΗΟΝ D ΠΕΛΗΟΝ d ΠΗΛΗΩΝ GL ΠΛΗΟΝ H ΠΛΕΟΝ K".</note>
+
 <pc n="space"> </pc>
 <w ana="4-S--------" lemma="pro" n="pro" xml:id="w15900">
 	<choice>
@@ -18515,15 +18519,14 @@ mo</w>
 	</choice>
 </w>
 <pc n="space"> </pc>
-<w n="πλεῖον" type="foreign" xml:id="w15903" xml:lang="grc">pleion</w>
-<note cert="medium" subtype="crux" type="emendation">The Greek words I encoded at the Linguistic Layer (πλῆον and πλεῖον)
-	are Keil's corrections. The original text of the Casanatensis is that encoded at the Graphematic
-	and Alphabetic Layers.  The manuscripts of Priscianus (the source here is Priscianus K 2.71.11),
-	as reported in Keil's apparatus criticus, never have "plion", but do have "pleion".
-	This is another fairly serious textual critical problem.
-	This is Keil's apparatus note for πλῆον: "ΠΑΗΩΝ Rr ΠΑΗΟΝ D ΠΕΛΗΟΝ d ΠΗΛΗΩΝ GL ΠΛΗΟΝ H ΠΛΕΟΝ K".
-	This is his note for πλεῖον:
-	"ΠΛΕΙΟΝ ex ΠΛΕΙΙΟΝ corr. in lit. r peλeion ex ΠΕΑΑΕΙΟΝ ni f. corr. d ΠΗΛΕΙΩΝ L peleion K peion H".</note>
+
+<anchor type="codexR" />
+<w n="πλεῖων" type="foreign" xml:id="w15903" xml:lang="grc">pleion</w>
+<note cert="medium" subtype="crux" type="emendation">
+	The source here is Priscianus K 2.71.11. Keil publishes: "πλῆον pro πλεῖον".
+	This is Keil's apparatus note for πλεῖον (the second form):
+	"ΠΛΕΙΟΝ ex ΠΛΕΙΙΟΝ corr. in lit. r peλeion ex ΠΕΑΑΕΙΟΝ ni f. corr. d ΠΗΛΕΙΩΝ L peleion G pleion K peion H".</note>
+
 <note type="script">The last part of the line is blank (for about the lenght of a word).</note>
 <pc n=".">,</pc>
 <lb break="no" n="5r.a.11" />
