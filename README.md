@@ -23,9 +23,10 @@ Full documentation in `documentation.md`.
 
 ## Other
 
+* `documentation.md`: The full documentation on this edition
 * `glyph_images`: this folder includes jpeg images of the glyphs found in the manuscript
 * `lemma`: this folder includes my experiments with lemmatization/POS (part of speech) tagging
-* `xmlToolBox`: this folder includes Python functions that I'm using to traverse the DOM of `casanatensis.xml`
-* `documentation.md`: The full documentation on this edition
 * `ursusMarkDown.py`: a Python script facilitating my work of keying in `casanatensis.xml`
 * `ursusOutput.py`: a Python script exporting 'simplified' versions of the edition (e.d. including only one textual layer) -- currently under construction
+* `vim_macros_for_ursus.vimrc`: This is a backup copy of the `.vimrc` configuration file for VIM that includes the macros I used to type in file `casanatensis.xml`
+* `xmlToolBox`: this folder includes Python functions that I'm using to traverse the DOM of `casanatensis.xml`
