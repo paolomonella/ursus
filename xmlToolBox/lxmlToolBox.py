@@ -96,7 +96,6 @@ print(str(c) + ' notes on general matters\n' \
         + str(d) + ' notes with a <correction> type\n' \
         + str(cc) + ' cruces desperationis\n')
 
-"""
 # Parse the tree of the ALIM2 template: it will be the base for the output tree
 no_blank = False
 if no_blank:
@@ -295,4 +294,3 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
         {http://www.tei-c.org/ns/1.0}gap
     
 tree.write('ALIM2_publication/casanatensis_AL.xml', encoding='UTF-8', method='xml', xml_declaration=True)
-"""
