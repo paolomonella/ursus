@@ -19,8 +19,8 @@ import shutil
 import zipfile
 import os
 import re
-#import xml.etree.ElementTree as ET
-from lxml import etree as ET
+import xml.etree.ElementTree as ET
+#from lxml import etree as ET
 
 
 
@@ -55,7 +55,7 @@ endWList    = []    # not substituted because ending   with whitespace
 startEndWList = []  # not substituted because starting end ending with whitespace
 nofitList   = []    # not substituted because not fitting my regexes
 
-# Define patterns for my own 'markdown' conventions
+# Define regex patterns for my own 'markdown' conventions
 abPatt  =   "(.*),(.*),(.*),(.*),(.*)" # Single abbreviation
 dAbPatt  =   "(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*)" # Double abbreviation
 stPatt  =   "<.*" # Lines that [s]tart with a [t]ag
@@ -270,7 +270,6 @@ for word in tree.findall('.//' + n + 'w'):
         word.set(nx + 'id', idstring)
         existing_w_ids.append(idstring)
 
-# Quando risolvo il problema, devo de-commentare la riga seguente:
 tree.write(outFP, encoding="UTF-8", method="xml", xml_declaration=True)
 
 ############################
