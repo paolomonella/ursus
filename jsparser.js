@@ -246,10 +246,11 @@ var URNArray = [
 	['stoa0110.stoa008:', 'Aelius Donatus, "De Tropis", '],
 	['stoa0233c.stoa001:', 'Pompeius, "Commentum Artis Donati", '],
 	['stoa0259.stoa001:', 'Servius, "Commentarius in Artem Donati", '],
-	['stoa0258a.stoa001:', 'Sergius, "Explanationem in Artem Donati", '],
+	['stoa0258a.stoa001:', 'Sergius, "Explanatio in Artem Donati", '],
 	['stoa0290a.stoa001.opp - lat1:',
 		'Virgilius Grammaticus, "Opera" (Huemer, Johann, ed., "Virgilii Maronis grammatici opera", Leipzig, 1886), '],
 		// I don't know why, but if I don't put spaced around the "-" in "opp-lat1", it doesn't work
+		// For the origin of those URNs, see documentation.md
 ];
 
 /*##############################
