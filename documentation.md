@@ -518,7 +518,8 @@ This spreadsheet only includes Latin authors. My understanding is that it is a w
 <https://docs.google.com/spreadsheets/d/1RHN6KBulDGbpKATLU6PtwU4o5xVsaBB6xbQRtKjMyWE/edit?usp=sharing>
 that includes Latin, Greek, inscriptions etc. and is the working list of the Perseus Project.
 3. Most (but not all) the entries of list #2 have entered the Perseus Catalog in
-<http://catalog.perseus.org/catalog/urn:cite:perseus:author.1179>
+<http://catalog.perseus.org>
+[<http://catalog.perseus.org/catalog/urn:cite:perseus:author.1179>]
 
 
 ## My URNs short explanation
