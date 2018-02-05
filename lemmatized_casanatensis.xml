@@ -47604,7 +47604,17 @@ tis</w>
 </w>
 	<pc n="space"> </pc>
 <w ana="4-O--------" lemma="nisi" n="nisi" xml:id="w42129">nisi</w>
-<w ana="11F---F3---" lemma="alius" n="alio" xml:id="w42132">alio</w>
+
+<choice>
+	<sic>
+                <w ana="11F---F3---" lemma="alius" n="alio" xml:id="w42132">alio</w>
+	</sic>
+	<corr cert="high">
+                <w ana="11F---C3---" lemma="alius" n="alii" xml:id="w42133">alii</w>
+		<note cert="high" type="emendation">Wrong dative ending.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w ana="11C---C3---" lemma="nomini" n="nomini" xml:id="w42135">nomini</w>
 	<pc n="space"> </pc>
