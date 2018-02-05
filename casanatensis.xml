@@ -47641,7 +47641,17 @@ tis</w>
 </w>
 	<pc n="space"> </pc>
 <w n="nisi" xml:id="w42129">nisi</w>
-<w n="alio" xml:id="w42132">alio</w>
+
+<choice>
+	<sic>
+                <w n="alio" xml:id="w42132">alio</w>
+	</sic>
+	<corr cert="high">
+                <w n="alii" xml:id="w42133">alii</w>
+		<note cert="high" type="emendation">Wrong dative ending.</note>
+	</corr>
+</choice>
+
 	<pc n="space"> </pc>
 <w n="nomini" xml:id="w42135">nomini</w>
 	<pc n="space"> </pc>
