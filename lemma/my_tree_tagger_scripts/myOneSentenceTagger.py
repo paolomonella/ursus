@@ -13,7 +13,7 @@ import pprint
 import treetaggerwrapper
 tagger = treetaggerwrapper.TreeTagger(TAGLANG='la')
 #textToParse = ['x', 'est', 'omnis', 'divisa', 'in', 'partes', 'tres']
-sentence = u'Uergilius poeta est'
+sentence = u'nemo poeta est'
 textToParse = (sentence).split()
 print(textToParse)
 tags = tagger.tag_text(textToParse, numlines=True, tagonly=True)
@@ -158,14 +158,24 @@ tagsetlist = [
 
 
 def parse_IT_tagset(ITString):
-        # This function returns a list with a human-readable version of the Index Thomisticus tag.
-        # It turns 11B---A1--- into ['Nominal', 'Positive' etc.]
+        '''This function returns a list with a human-readable version of the Index Thomisticus tag.
+        It turns 11B---A1--- into ['Nominal', 'Positive' etc.]
+        Update 02.03.2019. The tagset for treetagger seems to have changed, so this visualization seems
+        not to work any longer.
+        The new tagset seems to be the one in
+        http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/Lamap-Tagset.pdf
+        '''
+        
         outList = []
         for p in range(len(ITString)):  # i.e. range(11). Variable 'p' is an integer
             ITCode      = ITString[p]               # for example, '1'
-            ITMeaning   = tagsetlist[p][ITCode]   # for example, 'Nominal'
-            outList.append(ITMeaning)
+            try:
+                ITMeaning   = tagsetlist[p][ITCode]   # for example, 'Nominal'
+                outList.append(ITMeaning)
+            except(KeyError):
+                print('Il tag', ITCode, 'non viene riconosciuto, all\'interno della stringa', ITString)
         return outList
+
 
 #print('%10s %10s %16s' %  ('FORM', 'LEMMA', 'POS TAG'))
 for t in tags:
