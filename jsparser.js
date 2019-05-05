@@ -549,8 +549,8 @@ function tableOfSignsToHTMLTable() {
 
 function graph(myString) {
 	// This function inputs a string of characters representing graphemes
-	// in the XML/TEI source file and returns a string of characters that will be used to
-	// display the graphemes in the browser
+	// in the XML/TEI source file and returns a string of characters
+	// that will be used to display the graphemes in the browser
 	for (var igr = 0; igr < gtos.length; igr++) {
 		// gtos[igr][0] (value of first column of GToS.csv):
 		// 	character representing the grapheme in the XML/TEI file
