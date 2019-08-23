@@ -32,8 +32,8 @@ nx   = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
 ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
 
 # Parse the tree
-tree = ET.parse('/home/ilbuonme/ursus/casanatensis.xml')
-#tree = ET.parse('/home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/lemmatized_casanatensis.xml')
+tree = ET.parse('../../casanatensis.xml')
+#tree = ET.parse('../../lemma/tree_tagger_and_related_files/lemmatized_casanatensis.xml')
 #root = tree.getroot()
 
 # Create list of words to tag
@@ -80,7 +80,7 @@ print('\t - ' + str(e) + ' words unparsable')
 ###############################
 
 # This 'explanation' of the PoS tags is based on
-# /home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
+# ../../lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
 
 tagsetlist = [
         #1 Flexional-Type
@@ -260,5 +260,5 @@ def print_tagging_output_to_terminal(my_tags):
 # PRINT TO FILE #
 #################
 
-tree.write('/home/ilbuonme/ursus/lemmatized_casanatensis.xml', encoding="UTF-8", method="xml")
-#tree.write('/home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/lemmatized_casanatensis2.xml', encoding="UTF-8", method="xml")
+tree.write('../../lemmatized_casanatensis.xml', encoding="UTF-8", method="xml")
+#tree.write('../../lemma/tree_tagger_and_related_files/lemmatized_casanatensis2.xml', encoding="UTF-8", method="xml")

@@ -195,7 +195,7 @@ for t in tags:
 
 
 #La 'spiegazione' dei POS tag è in
-#/home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
+#../../ursus/lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
 
 
 # ALTERNATIVE WAYS OF PRINTING THE OUTPUT:
