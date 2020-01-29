@@ -1,5 +1,5 @@
 Run
-python paoloUrsusTagger.py
+python2 paoloUrsusTagger.py
 in this folder to run the script that inputs
 casanatensis.xml
 and outputs

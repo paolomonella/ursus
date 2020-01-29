@@ -61,7 +61,7 @@ for i in range(len(tags)):
             #ursus_words[i].set('n',     ursus_words[i].get('n'))
             if tags[i].split('\t')[0] != ursus_words[i].get('n').lower():
                 print('\nWARNING: check modern spelling (@n) of the word with xml:id ' + ursus_words[i].get(nx + 'id'))
-            ursus_words[i].set('ana',   tags[i].split('\t')[1])
+            ursus_words[i].set('ana',   tags[i].split('\t')[1]) # § change 'ana' to 'msd'
             ursus_words[i].set('lemma', tags[i].split('\t')[2])
             d = d + 1
         else:
