@@ -68,15 +68,15 @@ endif
 let @a='vyi,A,2,pam,o'
 let @b='o§§§cicciobello§§§?<lbyy/§§§cicciobello§§§pkddf"f"i'
 let @c=':w | ! /home/ilbuonme/ursus/ursusMarkDown.py'
-"let @d=':set indentexpr=A0<pc n=",">·</pc>0f,'
-let @d=':set indentexpr=o<pc n=",">·</pc>0f,'
+"let @d=':set indentexpr=A0<pc type=",">·</pc>0f,'
+let @d=':set indentexpr=o<pc type=",">·</pc>0f,'
 let @e=':set indentexpr=i,÷,,est,o'
-"let @f=':set indentexpr=A0<pc n=",">·</pc>o'
-"let @f=':set indentexpr=A0<pc n=",">·</pc>o'
-let @f=':set indentexpr=o<pc n=","></pc>0f,'
+"let @f=':set indentexpr=A0<pc type=",">·</pc>o'
+"let @f=':set indentexpr=A0<pc type=",">·</pc>o'
+let @f=':set indentexpr=o<pc type=","></pc>0f,'
 let @g='I<gap reason="illegible" quantity="f i" unit="lxea"/>o'
 let @h='@wk0f>a<hi rend="larger">la</hi>0/larger'
-"let @i='o<pc n=".">ï</pc>	<pc n="space"> </pc>k0f.'
+"let @i='o<pc type=".">ï</pc>	<pc type="space"> </pc>k0f.'
 let @i='/xml:idhd/>'
 let @j='i<hi rend="larger">la</hi>0/larger'
 let @k='a the source Priscian, Ars grammatica K.2..a'
@@ -85,19 +85,19 @@ let @n='o<note type="emendation">§</note>0f§xi'
 "let @n='@wk0/<\/wi<note type="script">§</note>k0f§xi'
 let @o='k0f0xj'
 let @p='@wk0f"lvlhU'
-"let @q=':set indentexpr=A0<pc n="quote">·</pc>o'
-let @q=':set indentexpr=A0o<pc n="quote">·</pc>o'
+"let @q=':set indentexpr=A0<pc type="quote">·</pc>o'
+let @q=':set indentexpr=A0o<pc type="quote">·</pc>o'
 let @r='I<ref cRef="Priscianus.Inst.K.2.53.8-Priscianus.Inst.K.2.53.12" type="source">0f"f"f"'
-"let @s='o	<pc n="space"> </pc>o'
-let @s='i	<pc n="space"> </pc>o'
+"let @s='o	<pc type="space"> </pc>o'
+let @s='i	<pc type="space"> </pc>o'
 let @t='@wk0f-xf-xik@b'
 let @u='O<unclear cert="medium" reason="faded">jo</unclear>'
 "let @x='@wk0f i type="alphabemes"'
 let @v='0f"ld/"i,'
 "let @v='i,ul,-,uel,0'
 let @x='@wk0f i type="alphabemes"jdd2k@qdd@q2kf0xjo'
-let @w=':set indentexpr=:s/v/u/geyypk:s/æ/ae/gej:s/ae/e/gekI<w n="A">JxA</w>	<pc n="space"> </pc>'
-"let @z=':set indentexpr=o<pc n=",">·</pc>o'
+let @w=':set indentexpr=:s/v/u/geyypk:s/æ/ae/gej:s/ae/e/gekI<w n="A">JxA</w>	<pc type="space"> </pc>'
+"let @z=':set indentexpr=o<pc type=",">·</pc>o'
 "let @z=':set indentexpr=0f<i<note type="source">The source Priscian, Ars grammatica K.2._. has: </note>k0f_xi'
 "let @z='?<w V/<\/wyPO<choice><sic>/<w nO</sic><corr cert="high">/<\/wo</corr></choice>?<notendd/<note cert="high"dd/<\/corrP?xml:idfx'
 let @z=':set pastekjjddkkpkJxyypkO<choice><�kb	<sic>jI		o	</sc�kbic>o	<corr cert="high">jI		jI		/type=icert="high" o	</corr></choice>?choice>nO/xml:idn/"n'

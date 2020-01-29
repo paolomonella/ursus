@@ -84,14 +84,14 @@ with open(inFP) as inFH:
         # Clear variables
         nL = ''     # Clear the nL (newLine) variable
         #wSpace= '_' # Old version
-        wSpace= '\n\t<pc n="space"> </pc>' # Reset the wSpace variable; maybe this was not necessary
+        wSpace= '\n\t<pc type="space"> </pc>' # Reset the wSpace variable; maybe this was not necessary
 
         # Check if word has a space after it in the MSS
         if line[-2:-1] == "0":   # Words that don't have a space after them
             wSpace = ''
             line = line[:-2]  # Remove the final '0'
         else:
-            wSpace= '\n\t<pc n="space"> </pc>'  # Words that have a space
+            wSpace= '\n\t<pc type="space"> </pc>'  # Words that have a space
             #wSpace = '_'    # Old version
 
         # Perform changes

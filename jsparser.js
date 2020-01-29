@@ -258,7 +258,7 @@ var URNArray = [
 ##############################*/
 
 // This 'explanation' of the PoS tags is based on
-// /home/ilbuonme/ursus/lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
+// ~/ursus/lemma/tree_tagger_and_related_files/parameter_files/from_treetagger_website/index_thomisticus/Tagset_IT.pdf
 
 var tagsetlist = [
 			[
@@ -818,7 +818,7 @@ function computeWordLikeElements(refElement) {
 		}
 
 		else if (e.tagName == 'pc') {
-			// <pc n="space"> (spaces) or punctuation signs outside of <w>
+			// <pc type="space"> (spaces) or punctuation signs outside of <w>
 			punctify(e)
 		}
 
@@ -1101,8 +1101,8 @@ function wordify(word) {
 			cells[2].appendChild(classyElem('span', 'lb lbWithinWord', lbTextString));
 		}
 	
-		else if (n.tagName == 'pc' && n.attributes.getNamedItem('n').nodeValue == 'space') {
-			// <pc n="space"> (spaces) within <w>
+		else if (n.tagName == 'pc' && n.attributes.getNamedItem('type').nodeValue == 'space') {
+			// <pc type="space"> (spaces) within <w>
 			// 	Yes, sometimes there is a (graphical) space within a (linguistic) word.
 			// 	This means that the scribe considers it to be two words, while contemporary
 			// 	conventions consider it one word. Example:
@@ -1232,8 +1232,8 @@ function punctify(pchar) {
 		cells[y].setAttribute('class', cellClasses[y]);		// Set attribute class (LL, AL or GL)
 	}
 		
-	if (pchar.attributes.getNamedItem('n').nodeValue == 'space') {
-		// <pc n="space"> (spaces) outside of <w> 
+	if (pchar.attributes.getNamedItem('type').nodeValue == 'space') {
+		// <pc type="space"> (spaces) outside of <w> 
 		// Graphical spaces occurring outside a <w> element
 		var myCells = makeTable(document.getElementById('MSText'), 'spaceTable');
 		cells[0].appendChild(classySpanWithLayers(space, 'space')[0]);
@@ -1241,11 +1241,11 @@ function punctify(pchar) {
 		cells[2].appendChild(classySpanWithLayers(space, 'space')[2]);
 	}
 
-	else if (pchar.attributes.getNamedItem('n').nodeValue != 'space') {
+	else if (pchar.attributes.getNamedItem('type').nodeValue != 'space') {
 		// <pc> for punctuation
 	
 		// Corresponding modern punctuation (for the LL)
-		var modernPunctString = pchar.attributes.getNamedItem('n').nodeValue;
+		var modernPunctString = pchar.attributes.getNamedItem('type').nodeValue;
 		modernPunctString = modernPunctString.replace('quote', space).replace('question', '?').replace('0', space);
 		//modernPunctString = modernPunctString.replace('quote', space).replace('question', '?');
 		//modernPunctString = modernPunctString.replace('question', '?');
@@ -1263,15 +1263,15 @@ function punctify(pchar) {
 			var GLPunctClass = 'space';
 		}
 
-		if (pchar.attributes.getNamedItem('n').nodeValue=='0' || pchar.attributes.getNamedItem('n').nodeValue=='quote') {
+		if (pchar.attributes.getNamedItem('type').nodeValue=='0' || pchar.attributes.getNamedItem('type').nodeValue=='quote') {
 			// If <pc> is has textual content (i.e. there is punctuation in the manuscript here),
-			// but no punctuation should be visualized at the LL or AL. E.g.: <pc n="0">·</pc>
+			// but no punctuation should be visualized at the LL or AL. E.g.: <pc type="0">·</pc>
 			var ALPunctString = space;
 			var ALPunctClass = 'space';
 		}
 		else {
-			// if @n is not "0", i.e. if some punctuation should be visualized at the LL or AL.
-			// E.g.: <pc n=",">·</pc>
+			// if typen is not "0", i.e. if some punctuation should be visualized at the LL or AL.
+			// E.g.: <pc type=",">·</pc>
 			var ALPunctClass = 'punct';
 		}
 

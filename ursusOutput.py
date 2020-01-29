@@ -109,7 +109,7 @@ def manageWord(wordElem):
         tempText = '"' + tempText + '"'
     for y in wordElem:
         yt = etree.QName(y).localname
-        if yt in ['choice', 'add', 'pc', 'hi']:    # I'm removing them b/c they include text, or b/c it's <pc n="space">
+        if yt in ['choice', 'add', 'pc', 'hi']:    # I'm removing them b/c they include text, or b/c it's <pc type="space">
             y.getparent().remove(y)
         y.tail = None
     tempText = tempText.replace('æ', 'ae') # The alphabetic meaning of graphemes 'æ' are alphabemes 'ae'
@@ -135,7 +135,7 @@ def manageWord(wordElem):
     """
 
 def managePunctuation(punctElem):
-    v = punctElem.get('n').replace('question', '?')
+    v = punctElem.get('type').replace('question', '?')
     punctElem.text = v
     if v in ['0', 'quote', 'space']: # Delete <pc> altogether
         punctElem.getparent().remove(punctElem)
@@ -252,7 +252,7 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
 
 
 """
-    These are the possible @n <pc>s children of <ref>:
+    These are the possible @type <pc>s children of <ref>:
         0
         .
         question
@@ -263,7 +263,7 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
     Possible element children of <w>:
         {http://www.tei-c.org/ns/1.0}gap    # This is OK: leave it where it is
 	{http://www.tei-c.org/ns/1.0}anchor # This is OK: leave it where it is
-	{http://www.tei-c.org/ns/1.0}pc     # Delete this, if it's only n="space"
+	{http://www.tei-c.org/ns/1.0}pc     # Delete this, if it's only type="space"
 	{http://www.tei-c.org/ns/1.0}choice # Extract the text
 	{http://www.tei-c.org/ns/1.0}add    # Extract the text
 
@@ -279,7 +279,7 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
         {http://www.tei-c.org/ns/1.0}lb     # Turn into <anchor>... or just delete
         {http://www.tei-c.org/ns/1.0}cb     # same as above, but possibly anchor
         {http://www.tei-c.org/ns/1.0}pb     # same as above, but possibly anchor
-        {http://www.tei-c.org/ns/1.0}pc     # Use @n as text content
+        {http://www.tei-c.org/ns/1.0}pc     # Use @type as text content
         {http://www.tei-c.org/ns/1.0}note   # Replicate? Nope, delete
         {http://www.tei-c.org/ns/1.0}milestone  # Replicate?
         {http://www.tei-c.org/ns/1.0}w      # Replicate

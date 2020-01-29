@@ -92,7 +92,7 @@ In addition, the following also belongs to the graphemic layer:
 
 1.  '_' Unicode character, representing the space between words
 	- Note: at this point, I'm not using '_' but a simple Unicode space ' ' tagged as
-		`<pc ana="space"> </pc>`
+		`<pc type="space"> </pc>`
 	- Note: this is problematic. Does it belong to the graphic or to the graphemic layer?
 		- It's probably a paragraphematic sign, just like punctuation
 
@@ -719,8 +719,8 @@ Markup not referring to a specific layer
 		- or, if the addition is meant to supply one or more missing word, in the point of the text where the supplied words logically belong.
 
 	- it can be either
-        - parent of one or more `<w>` and/or `<pc>`elements (in most cases), if one ore more full words were added above the line
-        - or child of `<w>` and parent of plain text (in few cases), if individual graphemes (not full words) were added above the line.
+        	- parent of one or more `<w>` and/or `<pc>`elements (in most cases), if one ore more full words were added above the line
+        	- or child of `<w>` and parent of plain text (in few cases), if individual graphemes (not full words) were added above the line.
 
 	- the three possible values of attribute `@place` are:
 		- "above" for interlinear additions (above the line)
@@ -767,47 +767,52 @@ The 'ancient punctuation' found in the manuscript is part of the Graphemic Layer
 
 ## Case 1: manuscript punctuation (GL)
 
-`<pc ana=".">.</pc>`
+`<pc type=".">.</pc>`
 
 - means that the manuscript has a full stop and that we would 
 	also use a full stop in a contemporary edition.
-- In this code, the value of the @ana attribute records the contemporary 
-	punctuation counterpart of the manuscript glyph and belonging to the LL, 
+- In this code, the value of the @type attribute records the value of
+	the manuscript glyph and belonging to the LL, 
 	while the content of the element ('.') represents the manuscript glyph and 
 	belongs to the GL.
 
-`<pc ana=",">.</pc>`
+`<pc type=",">.</pc>`
 
-- means that the manuscript has a comma, but we would use a full stop in a contemporary edition.
-- In this code, the ',' belongs to the GL and the 
-	'.' (the value of the @ana attribute) belongs to the LL.
+- means that the manuscript has a dot, and that it represents a weak phrase/sentence distinction (conventionally represented by value "," of @type)
 
-`<pc ana="0">·</pc>`
+- In the above code, the '.' and the '·' characters belong to the GL, while
+	the value of the @type attribute refers to the LL.
 
-- means that the manuscript has a middle dot, but we would use 
-	no punctuation sign in a contemporary edition.
-- In this code, the '·' belongs to the GL and the '0
-	' (the value of the @ana attribute) belongs to the LL.
+`<pc type="0">·</pc>`
 
-`<pc ana="quote">·</pc>`
+- means that the manuscript has a middle dot, but it merely is a separator between words:
+        we would use no punctuation sign in a contemporary edition
+- In this code, the '·' belongs to the GL and the '0'
+    (the value of the @type attribute) belongs to the LL.
+
+`<pc type="quote">·</pc>`
 
 - means that the manuscript has a middle dot used as graphical markup 
-	to surround a quoted element (for example: «letter "a"»).
+	to surround a quoted or emphasized element (for example: «letter "a"»).
 	We would probably use quotes in a contemporary edition.
 - In this code, the '·' belongs to the GL and the 
-	string 'quote' (the value of the @ana attribute)
+	string 'quote' (the value of the @type attribute)
 	refers to the LL. I'm using a string ('quote')
 	because I cannot use the " quote sign as value of an 
 	attribute in XML.
+
+`<pc type="question">⸟</pc>`
+
+- means that the manuscript has a "⸟" grapheme, whose meaning/function is similar to our question mark
 
 
 ## Case 2: contemporary punctuation not present in the manuscript
 
 For adding contemporary punctuation not present in the manuscript, I am tentatively inserting some 'contemporary punctuation' in the transcription, but clearly marking it as separate from the GL, as follows:
 
-    <pc ana=","></pc>
+    <pc type=","></pc>
 
-where the value of the @ana attribute (belonging to the LL) records the contemporary punctuation, while the fact that the element is void (has no text content) means that there is no glyph in the GL.
+where the value of the @type attribute (belonging to the LL) records the contemporary punctuation, while the fact that the element is void (has no text content) means that there is no glyph in the GL.
 
 This is a full example of markup of a word simply followed by a space (no ancient punctuation) in the manuscript, but after which we would insert a comma in a contemporary 'readable' edition:
 
@@ -816,30 +821,30 @@ This is a full example of markup of a word simply followed by a space (no ancien
 Note that in the code above the contemporary comma is placed before the underscore (meaning a space in the manuscript), but this is completely arbitrary and is just meant to simplify the further processing of the source file.
 
 
-## Contemporary punctuation (possible values for attribute `@ana` of `<pc>`)
+## Contemporary punctuation (possible values for attribute `@type` of `<pc>`)
 
 
-`<pc ana=","></pc>`
+`<pc type=","></pc>`
 
 - Contemporary comma (short pause or syntactic distinction)
 
 
-`<pc ana=".">.</pc>`
+`<pc type=".">.</pc>`
 
 - Contemporary full stop (long/strong pause or syntactic distinction)
 
 
-`<pc ana="quote">·</pc>`
+`<pc type="quote">·</pc>`
 
 - This marks the case in which a middle dot is used (before, after or before and after the word) by the scribe to mark that a word is quoted. This is often used for individual alphabetical letters ('alphabemes') or morphemes.
 
 
-`<pc ana="question">~</pc>`
+`<pc type="question">~</pc>`
 
 - Contemporary question mark
 
 
-`<pc ana="0">·</pc>`
+`<pc type="0">·</pc>`
 
 - In a contemporary edition, we would include no punctuation sign here. If the punctuation sign has a specific meaning not falling in the cases listed here, a `<note>` element is added next to the `<pc>` element to explain the specific value
 
@@ -1006,9 +1011,9 @@ Boundaries between words
 
 2. Graphic word boundaries: The word boundaries as conceived by the scribe and graphically marked in the manuscript are encoded in the present edition with 
 
-        <pc ana="space"> </pc>
+        <pc type="space"> </pc>
 
-	[Note: they were previously encoded by means of underscores '_', but it is no longer now].
+	[Note: they were previously encoded by means of underscores '_', but it is no longer the case now].
 
 Note that the 'contemporary word boundaries' and the 'manuscript word boundaries' do not always coincide. For example, the source code
 
@@ -1065,13 +1070,13 @@ If the error and the emendation require a more complex discussion, this is the e
 `<choice>
 	<sic>
 		<w ana="11C---A2--1" lemma="hispanus" n="Hispanus" xml:id="w8163">spanus</w>
-	        <pc n="space"> </pc>
+	        <pc type="space"> </pc>
 		<w ana="4-S-------2" lemma="a" n="ab" xml:id="w8166">a</w>
 		<w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8169">spanis</w>
 	</sic>
 	<corr>
 		<w ana="11A---B2--1" lemma="hispanus" n="Hispanus" xml:id="w8170">hispanus</w>
-	        <pc n="space"> </pc>
+	        <pc type="space"> </pc>
 		<w ana="4-S-------2" lemma="a" n="ab" xml:id="w8171">ab</w>
 		<w ana="11B---O1---" lemma="hispanis" n="Hispanis" xml:id="w8172">hispanis</w>
 		<note subtype="emendation_to_whole_section" type="emendation">"Spanus a
