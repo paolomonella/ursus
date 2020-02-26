@@ -490,7 +490,7 @@ Where value(s) in the @cRef attribute are URNs (Universal Resouce Name) based on
 7. "53" refers to page 53 of that volume;
 8. "8" refers to line 8 within that page.
 
-The dash between "2.53.8" and "2.53.12", as for the CTS/CITE architecture, means that the URN refers to a whole passage, from line 8 to line 12.
+The dash between "2.53.8" and "2.53.12", as per the CTS/CITE architecture, means that the URN refers to a whole passage, from line 8 to line 12.
 
 Elements #4 and #5 of all URNs used in this edition derive from [list #2](https://docs.google.com/spreadsheets/d/1RHN6KBulDGbpKATLU6PtwU4o5xVsaBB6xbQRtKjMyWE/edit?usp=sharing) in the section "Lists of URNs" below.
 
@@ -544,7 +544,7 @@ that includes Latin, Greek, inscriptions etc. and is the working list of the Per
     - urn:cts:latinLit:stoa0290a.stoa001
     - urn:cts:latinLit:stoa0290a.stoa001.opp-lat1 (Huemer, Johann, ed., Virgilii Maronis grammatici opera, Leipzig, 1886)
 
-### Classical sources of citations in those grammarians, in order of appearance in the manuscript
+### Classical sources of citations in those grammarians, in order of appearance in the manuscript (partial list)
 
 - Persius, Saturae
     - urn:cts:latinLit:phi0969.phi001
