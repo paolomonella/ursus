@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/49644277.svg)](https://zenodo.org/badge/latestdoi/49644277)
 
-An experimental scholarly digital edition of section _De nomine_ (_folia_ 1r-11r) of the _Adbreviatio artis grammaticae_ by Ursus from Benevento from codex [Casanatensis  1086](http://manus.iccu.sbn.it/opac_SchedaScheda.php?ID=15974) (IX century), edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2016).
+An experimental scholarly digital edition of section *De nomine* (*folia* 1r-11r) of the *Adbreviatio artis grammaticae* by Ursus from Benevento from codex [Casanatensis 1086](http://manus.iccu.sbn.it/opac_SchedaScheda.php?ID=15974) (IX century), edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2016).
 
 To view this edition in your browser, and not just its source code, go to http://www.unipa.it/paolo.monella/ursus/transcription.html
 
@@ -13,15 +13,14 @@ Full documentation in `documentation.md`.
 * `AToS.csv`: the table of signs of the Alphabetic Layer of the edition
 * `GToS.csv`: the table of signs of the Graphematic Layer of the edition (a key part of this edition)
 * `casanatensis.xml`: the source XML/TEI transcription of the manuscript (the heart of this edition)
-* `lemmatized_casanatensis.xml`: in this version of `casanatensis.xml`, each `<w>` (word) element has a `@lemma` and an `@ana` element to identify it as, for example, the genitive singular of lemma _homo, -inis_ (this is a temporary file as of March 20, 2016: when I'll review the result of the automatic lemmatization, this will become the only version; also, eventually I'll use `@msd` instead of `@ana`)
+* `lemmatized_casanatensis.xml`: in this version of `casanatensis.xml`, each `<w>` (word) element has a `@lemma` and an `@ana` element to identify it as, for example, the genitive singular of lemma *homo, -inis* (this is a temporary file as of March 20, 2016: when I'll review the result of the automatic lemmatization, this will become the only version; also, eventually I'll use `@msd` instead of `@ana`)
 
 ## Visualization
 
 * `jsparser.js`: the JavaScript to visualize `casanatensis.xml` in a browser
 * `sheet.xsl`: a first experiment in creating a XSLT file to visualize `casanatensis.xml` in a browser. I then abandoned XSLT and used JavaScript instead (see `jsparser.js`)
 * `stylesheet.css`: the CSS stylesheet for `transcription.html`
-* `transcription.html`: the HMTL file in which, thanks to `jsparser.js`, the user can read the edition. To view this file (and therefore the edition) in your browser, and not just its source code, go to http://www.unipa.it/paolo.monella/ursus/transcription.html 
-
+* `transcription.html`: the HMTL file in which, thanks to `jsparser.js`, the user can read the edition. To view this file (and therefore the edition) in your browser, and not just its source code, go to http://www.unipa.it/paolo.monella/ursus/transcription.html
 
 ## Other
 
