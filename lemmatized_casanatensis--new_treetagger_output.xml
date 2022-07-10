@@ -872,8 +872,7 @@ siua</w>
 <unclear cert="medium" reason="script">
 <w ana="N:abl" lemma="lex" n="lege" xml:id="w552">lege
 <note type="script">It seems that something similar to "ut lege" was written in the same line, then was erased and a new "ut lege" was written in its place. Also, there is a faded sign over the initial "u". This sign looks like the abbreviation that I am encoding with Unicode character "8" and occurs again later in the same line (above the next "ut", i.e. the word with id w558).</note>
-</w>
-</unclear>
+</w> </unclear>
 <pc type=".">·</pc>
 	<pc type="space"> </pc>
 <w ana="ADJ:abl" lemma="responsiua" n="responsiua" xml:id="w555">responsiua</w>
