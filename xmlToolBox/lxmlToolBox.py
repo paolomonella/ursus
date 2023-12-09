@@ -3,7 +3,7 @@
 #
 # This script simplifies the encoding of casanatensis.xml
 # and creates a file ALIM2_publication/casanatensis_AL.xml
-# with the Alphabetic Layer only. 
+# with the Alphabetic Layer only.
 #
 # It's written in Python 3.4, but also works with Python 2.7.
 # It uses the Python lxml library.
@@ -19,7 +19,8 @@ os.system('clear')
 # Namespaces
 n = '{http://www.tei-c.org/ns/1.0}'              # for XML/TEI
 xml = '{http://www.w3.org/XML/1998/namespace}'   # for attributes like xml:id
-#ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')   # This used to work when I used ElementTree
+# ET.register_namespace('', 'http://www.tei-c.org/ns/1.0')
+# This used to work when I used ElementTree
 ns = {'tei': 'http://www.tei-c.org/ns/1.0',             # for TEI XML
         'xml': 'http://www.w3.org/XML/1998/namespace'}  # for attributes like xml:id
 
@@ -105,7 +106,7 @@ else:
     tree = etree.parse('ALIM2_publication/teiHeader_template.xml')
 
 root = tree.getroot()
-#root.set('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
+# root.set('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
 
 # Append the <body> of casanatensis.xml into <text> of the output xml file
 myBody = casanaTree.getroot().find(n + 'text').find(n + 'body')
@@ -257,40 +258,40 @@ for ab in root.findall(n + 'text/' + n + 'body/' + n + 'ab'):   # All 'ab' eleme
                 pass
 
 
-    These are the possible @n <pc>s children of <ref>:
-        0
-        .
-        question
-        space
-        ,
-        quote
-
-    Possible element children of <w>:
-        {http://www.tei-c.org/ns/1.0}gap    # This is OK: leave it where it is
-	{http://www.tei-c.org/ns/1.0}anchor # This is OK: leave it where it is
-	{http://www.tei-c.org/ns/1.0}pc     # Delete this, if it's only n="space"
-	{http://www.tei-c.org/ns/1.0}choice # Extract the text
-	{http://www.tei-c.org/ns/1.0}add    # Extract the text
-
-    this is the new list of world-like elements, possible children of <ref>:
-            milestone   # leave it
-            gap         # leave it
-            anchor      # leave it (it occurs only once)
-            unclear
-            pc
-            span
-
-    This was the original the list of word-like elements, possible children of <ref>:
-        {http://www.tei-c.org/ns/1.0}lb     # Turn into <anchor>... or just delete
-        {http://www.tei-c.org/ns/1.0}cb     # same as above, but possibly anchor
-        {http://www.tei-c.org/ns/1.0}pb     # same as above, but possibly anchor
-        {http://www.tei-c.org/ns/1.0}pc     # Use @n as text content
-        {http://www.tei-c.org/ns/1.0}note   # Replicate? Nope, delete
-        {http://www.tei-c.org/ns/1.0}milestone  # Replicate?
-        {http://www.tei-c.org/ns/1.0}w      # Replicate
-        {http://www.tei-c.org/ns/1.0}anchor # Replicate
-        {http://www.tei-c.org/ns/1.0}add
-        {http://www.tei-c.org/ns/1.0}unclear
-        {http://www.tei-c.org/ns/1.0}gap
+#    These are the possible @n <pc>s children of <ref>:
+#        0
+#        .
+#        question
+#        space
+#        ,
+#        quote
+#
+#    Possible element children of <w>:
+#        {http://www.tei-c.org/ns/1.0}gap    # This is OK: leave it where it is
+#	{http://www.tei-c.org/ns/1.0}anchor # This is OK: leave it where it is
+#	{http://www.tei-c.org/ns/1.0}pc     # Delete this, if it's only n="space"
+#	{http://www.tei-c.org/ns/1.0}choice # Extract the text
+#	{http://www.tei-c.org/ns/1.0}add    # Extract the text
+#
+#    this is the new list of world-like elements, possible children of <ref>:
+#            milestone   # leave it
+#            gap         # leave it
+#            anchor      # leave it (it occurs only once)
+#            unclear
+#            pc
+#            span
+#
+#    This was the original the list of word-like elements, possible children of <ref>:
+#        {http://www.tei-c.org/ns/1.0}lb     # Turn into <anchor>... or just delete
+#        {http://www.tei-c.org/ns/1.0}cb     # same as above, but possibly anchor
+#        {http://www.tei-c.org/ns/1.0}pb     # same as above, but possibly anchor
+#        {http://www.tei-c.org/ns/1.0}pc     # Use @n as text content
+#        {http://www.tei-c.org/ns/1.0}note   # Replicate? Nope, delete
+#        {http://www.tei-c.org/ns/1.0}milestone  # Replicate?
+#        {http://www.tei-c.org/ns/1.0}w      # Replicate
+#        {http://www.tei-c.org/ns/1.0}anchor # Replicate
+#        {http://www.tei-c.org/ns/1.0}add
+#        {http://www.tei-c.org/ns/1.0}unclear
+#        {http://www.tei-c.org/ns/1.0}gap
     
 tree.write('ALIM2_publication/casanatensis_AL.xml', encoding='UTF-8', method='xml', xml_declaration=True)

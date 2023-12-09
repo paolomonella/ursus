@@ -6,15 +6,16 @@
 ##################
 
 from __future__ import print_function
-from xml.dom.minidom import parse, parseString
-#import xml.dom.minidom
+# from xml.dom.minidom import parseString
+from xml.dom.minidom import parse
+# import xml.dom.minidom
 
 
 #################
 # Parse the XML #
 #################
 
-xmldoc=parse('/home/ilbuonme/siti/paolo.monella/ursus/casanatensis.xml')
+xmldoc = parse('/home/ilbuonme/siti/paolo.monella/ursus/casanatensis.xml')
 
 
 ###########
@@ -29,18 +30,18 @@ def checkIDs():
     wordElementList = xmldoc.getElementsByTagName('ref')
     prevIdN = 0
     for r in wordElementList:
-        #print('cRef: '+r.attributes.getNamedItem('cRef').nodeValue)
+        # print('cRef: '+r.attributes.getNamedItem('cRef').nodeValue)
         for c in r.childNodes:
             if c.nodeType == c.ELEMENT_NODE and c.tagName == 'w':
-                #print(c.attributes.getNamedItem('xml:id').nodeValue, end=', ')
                 myId = c.attributes.getNamedItem('xml:id').nodeValue
                 myIdN = int(myId[1:])
-                #print(myIdN, end=', ')
+                # print(myIdN, end=', ')
                 if not myIdN > prevIdN:
                     print('Trouble! Not greater...')
-                    #print(myIdN, 'is greater than ', prevIdN)
+                    # print(myIdN, 'is greater than ', prevIdN)
                 if myIdN == prevIdN:
                     print('Trouble! Equal')
+
 
 def searchPcChildrenOfUnclear():
     """
@@ -49,19 +50,21 @@ def searchPcChildrenOfUnclear():
     wordElementList = xmldoc.getElementsByTagName('ref')
     x = False
     for r in wordElementList:
-        #print('cRef: '+r.attributes.getNamedItem('cRef').nodeValue)
+        # print('cRef: '+r.attributes.getNamedItem('cRef').nodeValue)
         for c in r.childNodes:
             if c.nodeType == c.ELEMENT_NODE:
                 if c.tagName == 'w' and x:
-                    print(c.attributes.getNamedItem('xml:id').nodeValue, end=' viene dopo ')
+                    print(c.attributes.getNamedItem('xml:id').nodeValue,
+                          end=' viene dopo ')
                     x = False
                 if c.tagName == 'unclear':
                     for w in c.childNodes:
-                        #print(x, end=', ')
+                        # print(x, end=', ')
                         if w.nodeType == w.ELEMENT_NODE and w.tagName == 'pc':
                             print('Eureka!')
                             print(w.attributes.getNamedItem('n').nodeValue)
                             x = True
+
 
 def searchTextNodesChildrenOfUnclear():
     """
@@ -69,16 +72,18 @@ def searchTextNodesChildrenOfUnclear():
     """
     wordElementList = xmldoc.getElementsByTagName('ref')
     for r in wordElementList:
-        #print('cRef: '+r.attributes.getNamedItem('cRef').nodeValue)
+        # print('cRef: '+r.attributes.getNamedItem('cRef').nodeValue)
         for c in r.childNodes:
             if c.nodeType == c.ELEMENT_NODE:
                 if c.tagName == 'unclear':
                     for w in c.childNodes:
                         if w.nodeType == w.ELEMENT_NODE and w.tagName != 'w':
-                            #print(w.attributes.getNamedItem('n').nodeValue)
+                            # print(w.attributes.getNamedItem('n').nodeValue)
                             print(w.tagName)
-                        if w.nodeType != w.ELEMENT_NODE and w.nodeValue != '\n' and w.nodeValue != '\n\t':
+                        if w.nodeType != w.ELEMENT_NODE and\
+                           w.nodeValue != '\n' and w.nodeValue != '\n\t':
                             print('"'+w.nodeValue+'"\n---\n')
+
 
 def listChildrenOfAnElement(elemName):
     """
@@ -86,12 +91,13 @@ def listChildrenOfAnElement(elemName):
     element with tag name elemName (e.g. 'w' or 'ref').
     """
     wordElementList = xmldoc.getElementsByTagName(elemName)
-    cs=[]
+    cs = []
     for e in wordElementList:
         for c in e.childNodes:
             if c.nodeType == c.ELEMENT_NODE:
                 cs.append(c.tagName)
     return(set(cs))
+
 
 def searchAttrib(elemName):
     """
@@ -105,7 +111,7 @@ def searchAttrib(elemName):
             if  n == 'emendation':
                 if not e.attributes.getNamedItem('cert'):
                     L.append(e.attributes.getNamedItem('subtype').nodeValue)
-                    #L.append(e.attributes.getNamedItem('subtype').nodeValue)
+                    # L.append(e.attributes.getNamedItem('subtype').nodeValue)
     for l in set(L):
         print(l)
 
@@ -117,7 +123,7 @@ def listDescendantsOfElement(myElement):
     for w in elementList:
         d = w.getElementsByTagName('*')
         for x in d:
-            #if x.nodeType == x.ELEMENT_NODE and x.tagName != 'note':
+            # if x.nodeType == x.ELEMENT_NODE and x.tagName != 'note':
             if x.nodeType == x.ELEMENT_NODE:
                 ds.append(x.tagName)
     for y in set(ds):
@@ -190,6 +196,6 @@ def graphemeLint():
 # print()
 
 # List descendants of <w>
-#graphemeLint()
-#listDescendantsOfElement('choice')
+# graphemeLint()
+# listDescendantsOfElement('choice')
 searchAttrib('note')
